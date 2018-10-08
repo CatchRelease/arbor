@@ -48,3 +48,26 @@ export const colors = {
   ...greens,
   ...reds
 };
+
+export const fontSizes = {
+  size1: 0.6875,
+  size2: 0.875,
+  size3: 1,
+  size4: 1.125,
+  size5: 1.375,
+  size6: 1.75,
+  size7: 2.125
+};
+
+export const fontWeights = {
+  regular: 400,
+  medium: 600,
+  bold: 700
+};
+
+export const lineHeights = {
+  small: 1.25,
+  large: 1.5
+};
+
+export const brandFont = 'Open Sans';

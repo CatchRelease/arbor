@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import styled, { css } from 'react-emotion';
 
 import { blues, greys, whites, reds, greens, black } from '../src/theme';
+import Heading from '../src/Heading';
 
 const SwatchRow = styled.div`
   display: flex;
@@ -21,7 +22,7 @@ const Swatch = styled.div`
 
 const SwatchCollection = ({ title, colors }) => (
   <div>
-    <h1>{title}</h1>
+    <Heading.h1>{title}</Heading.h1>
     <SwatchRow>
       {Object.entries(colors).map(([name, hex]) => (
         <Swatch key={name} style={{ backgroundColor: hex }}>
