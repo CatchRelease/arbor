@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import styled, { css } from 'react-emotion';
 
-import { spacings, blues, greys, whites, reds, greens, black } from '../src/theme';
+import { colors, fontSizes, borderRadius, spacings, blues, greys, whites, reds, greens, black } from '../src/theme';
 import Heading from '../src/Heading';
 
 const SwatchRow = styled.div`
@@ -22,6 +22,17 @@ const Swatch = styled.div`
   margin: ${spacings.larger} ${spacings.larger} 0 0;
   width: 176px;
   color: ${whites.white};
+  border-radius: ${borderRadius.large};
+  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+`;
+
+const SwatchTitle = styled.p`
+  position: absolute;
+  bottom: ${spacings.smaller};
+  left: ${spacings.smaller};
+  font-size: ${fontSizes.size2};
+  color: ${colors.white};
 `;
 
 const SwatchCollection = ({ title, colors }) => (
@@ -30,7 +41,8 @@ const SwatchCollection = ({ title, colors }) => (
     <Swatches>
       {Object.entries(colors).map(([name, hex]) => (
         <Swatch key={name} style={{ backgroundColor: hex }}>
-          <Heading.h3>{name}</Heading.h3>
+          <Heading.h3>{hex}</Heading.h3>
+          <SwatchTitle>{name}</SwatchTitle>
         </Swatch>
       ))}
     </Swatches>
