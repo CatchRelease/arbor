@@ -81,3 +81,14 @@ export const spacings = {
   larger: '32px',
   largest: '64px'
 };
+
+export const borderRadius = {
+  small: '3px',
+  large: '6px'
+};
+
+export const borderWidth = {
+  small: '1px',
+  medium: '2px',
+  large: '4px'
+};
