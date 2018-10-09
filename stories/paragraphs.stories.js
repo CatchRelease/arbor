@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Paragraph from '../src/Paragraph';
+import { Paragraph } from '../src';
 
 storiesOf('Paragraphs', module).add('default', () => (
   <Fragment>

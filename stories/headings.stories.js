@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import Heading from '../src/Heading';
+import { Heading } from '../src';
 
 storiesOf('Headings', module).add('default', () => (
   <Fragment>
