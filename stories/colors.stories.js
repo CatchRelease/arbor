@@ -2,8 +2,7 @@ import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import styled, { css } from 'react-emotion';
 
-import { colors, fontSizes, borderRadius, spacings, blues, greys, whites, reds, greens, black } from '../src/theme';
-import Heading from '../src/Heading';
+import { Heading, colors, fontSizes, borderRadius, spacings, blues, greys, whites, reds, greens, black } from '../src';
 
 const blackAndWhites = { ...whites, black };
 
