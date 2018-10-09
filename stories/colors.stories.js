@@ -5,6 +5,8 @@ import styled, { css } from 'react-emotion';
 import { colors, fontSizes, borderRadius, spacings, blues, greys, whites, reds, greens, black } from '../src/theme';
 import Heading from '../src/Heading';
 
+const blackAndWhites = { ...whites, black };
+
 const SwatchRow = styled.div`
   padding: ${spacings.small};
 `;
@@ -24,15 +26,12 @@ const Swatch = styled.div`
   color: ${whites.white};
   border-radius: ${borderRadius.large};
   box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.1);
-  position: relative;
 `;
 
-const SwatchTitle = styled.p`
-  position: absolute;
-  bottom: ${spacings.smaller};
-  left: ${spacings.smaller};
+const SwatchTitle = styled(Heading.h4)`
   font-size: ${fontSizes.size2};
-  color: ${colors.white};
+  color: ${colors.grey70};
+  margin-top: ${spacings.regular};
 `;
 
 const SwatchCollection = ({ title, colors }) => (
@@ -40,10 +39,13 @@ const SwatchCollection = ({ title, colors }) => (
     <Heading.h1>{title}</Heading.h1>
     <Swatches>
       {Object.entries(colors).map(([name, hex]) => (
-        <Swatch key={name} style={{ backgroundColor: hex }}>
-          <Heading.h3>{hex}</Heading.h3>
+        <div>
+          <Swatch key={name} style={{ backgroundColor: hex }}>
+            <Heading.h3>{hex}</Heading.h3>
+          </Swatch>
+
           <SwatchTitle>{name}</SwatchTitle>
-        </Swatch>
+        </div>
       ))}
     </Swatches>
   </SwatchRow>
@@ -51,7 +53,7 @@ const SwatchCollection = ({ title, colors }) => (
 
 storiesOf('Colors', module).add('default', () => (
   <Fragment>
-    <SwatchCollection title="Whites" colors={whites} />
+    <SwatchCollection title="Black and Whites" colors={blackAndWhites} />
     <SwatchCollection title="Greys" colors={greys} />
     <SwatchCollection title="Blues" colors={blues} />
     <SwatchCollection title="Reds" colors={reds} />
