@@ -71,3 +71,13 @@ export const lineHeights = {
 };
 
 export const brandFont = 'Open Sans';
+
+export const spacings = {
+  smallest: '4px',
+  smaller: '8px',
+  small: '12px',
+  regular: '16px',
+  large: '24px',
+  larger: '32px',
+  largest: '64px'
+};

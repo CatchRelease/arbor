@@ -2,10 +2,14 @@ import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import styled, { css } from 'react-emotion';
 
-import { blues, greys, whites, reds, greens, black } from '../src/theme';
+import { spacings, blues, greys, whites, reds, greens, black } from '../src/theme';
 import Heading from '../src/Heading';
 
 const SwatchRow = styled.div`
+  padding: ${spacings.small};
+`;
+
+const Swatches = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
@@ -15,22 +19,22 @@ const Swatch = styled.div`
   display: flex;
   height: 144px;
   justify-content: center;
-  margin: 10px;
+  margin: ${spacings.larger} ${spacings.larger} 0 0;
   width: 176px;
   color: ${whites.white};
 `;
 
 const SwatchCollection = ({ title, colors }) => (
-  <div>
+  <SwatchRow>
     <Heading.h1>{title}</Heading.h1>
-    <SwatchRow>
+    <Swatches>
       {Object.entries(colors).map(([name, hex]) => (
         <Swatch key={name} style={{ backgroundColor: hex }}>
-          <p>{name}</p>
+          <Heading.h3>{name}</Heading.h3>
         </Swatch>
       ))}
-    </SwatchRow>
-  </div>
+    </Swatches>
+  </SwatchRow>
 );
 
 storiesOf('Colors', module).add('default', () => (
