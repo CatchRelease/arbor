@@ -11,8 +11,8 @@ const lineHeightMultiplier = 0.5;
 
 const calculatedHeadingStyles = size =>
   css({
-    fontSize: `${size}rem`,
-    marginBottom: `calc(${size}rem * ${lineHeightMultiplier})`
+    fontSize: size,
+    marginBottom: `calc(${size} * ${lineHeightMultiplier})`
   });
 
 const Heading = styled.h1`

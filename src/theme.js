@@ -50,13 +50,13 @@ export const colors = {
 };
 
 export const fontSizes = {
-  size1: 0.6875,
-  size2: 0.875,
-  size3: 1,
-  size4: 1.125,
-  size5: 1.375,
-  size6: 1.75,
-  size7: 2.125
+  size1: '0.6875rem',
+  size2: '0.875rem',
+  size3: '1rem',
+  size4: '1.125rem',
+  size5: '1.375rem',
+  size6: '1.75rem',
+  size7: '2.125rem'
 };
 
 export const fontWeights = {
