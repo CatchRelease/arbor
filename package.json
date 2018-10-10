@@ -16,6 +16,7 @@
   "dependencies": {
     "babel-plugin-emotion": "^9.2.10",
     "emotion": "^9.2.10",
+    "polished": "^2.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
