@@ -1,8 +1,21 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
-import styled, { css } from 'react-emotion';
+import styled from 'react-emotion';
 
-import { Heading, colors, fontSizes, borderRadius, spacings, blues, greys, whites, reds, greens, black } from '../src';
+import {
+  Heading,
+  colors,
+  fontSizes,
+  borderRadius,
+  spacings,
+  blues,
+  greys,
+  whites,
+  reds,
+  greens,
+  black
+} from '../src';
 
 const blackAndWhites = { ...whites, black };
 
@@ -33,12 +46,12 @@ const SwatchTitle = styled(Heading.h4)`
   margin-top: ${spacings.regular};
 `;
 
-const SwatchCollection = ({ title, colors }) => (
+const SwatchCollection = ({ title, pallete }) => (
   <SwatchRow>
     <Heading.h1>{title}</Heading.h1>
     <Swatches>
-      {Object.entries(colors).map(([name, hex]) => (
-        <div>
+      {Object.entries(pallete).map(([name, hex]) => (
+        <div key={name}>
           <Swatch key={name} style={{ backgroundColor: hex }}>
             <Heading.h3>{hex}</Heading.h3>
           </Swatch>
@@ -50,12 +63,17 @@ const SwatchCollection = ({ title, colors }) => (
   </SwatchRow>
 );
 
+SwatchCollection.propTypes = {
+  title: PropTypes.string.isRequired,
+  pallete: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
+};
+
 storiesOf('Colors', module).add('default', () => (
   <Fragment>
-    <SwatchCollection title="Black and Whites" colors={blackAndWhites} />
-    <SwatchCollection title="Greys" colors={greys} />
-    <SwatchCollection title="Blues" colors={blues} />
-    <SwatchCollection title="Reds" colors={reds} />
-    <SwatchCollection title="Greens" colors={greens} />
+    <SwatchCollection title="Black and Whites" pallete={blackAndWhites} />
+    <SwatchCollection title="Greys" pallete={greys} />
+    <SwatchCollection title="Blues" pallete={blues} />
+    <SwatchCollection title="Reds" pallete={reds} />
+    <SwatchCollection title="Greens" pallete={greens} />
   </Fragment>
 ));
