@@ -7,7 +7,8 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint src tests stories .storybook"
+    "lint": "eslint src tests stories .storybook",
+    "test:ci": "yarn test && yarn lint"
   },
   "author": "Damian Galarza",
   "license": "MIT",
