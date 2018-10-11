@@ -51,4 +51,4 @@ const reset = `
   }
 `;
 
-export const injectGlobalStyles = () => injectGlobal(reset);
+export default () => injectGlobal(reset);

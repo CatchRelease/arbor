@@ -1,7 +1,7 @@
 import { configure } from '@storybook/react';
-import { injectGlobalStyles } from '../src/global-styles';
+import { globalStyles } from '../src';
 
-injectGlobalStyles();
+globalStyles();
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../stories', true, /.stories.js$/);

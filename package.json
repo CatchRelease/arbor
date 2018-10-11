@@ -4,9 +4,11 @@
   "description": "React component library for Catch and Release",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "eslint src tests stories .storybook",
+    "test:ci": "yarn test && yarn lint"
   },
   "author": "Damian Galarza",
   "license": "MIT",
@@ -14,6 +16,7 @@
   "dependencies": {
     "babel-plugin-emotion": "^9.2.10",
     "emotion": "^9.2.10",
+    "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-emotion": "^9.2.10"
@@ -21,12 +24,27 @@
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^3.4.11",
     "@storybook/addon-links": "^3.4.11",
     "@storybook/addons": "^3.4.11",
     "@storybook/react": "4.0.0-alpha.24",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "babel-runtime": "^6.26.0",
-    "prettier": "^1.14.3"
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "jest-emotion": "^9.2.11",
+    "prettier": "^1.14.3",
+    "react-test-renderer": "^16.5.2",
+    "regenerator-runtime": "^0.12.1"
   }
 }

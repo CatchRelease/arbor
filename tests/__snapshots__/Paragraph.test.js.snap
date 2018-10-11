@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a LongForm 1`] = `
+.emotion-0 {
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #222222;
+}
+
+<p
+  className="emotion-0 emotion-1"
+>
+  Hello World
+</p>
+`;
+
+exports[`renders a Tiny 1`] = `
+.emotion-0 {
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 0.6875rem;
+  margin-bottom: 0.6875rem;
+  color: #666666;
+}
+
+<p
+  className="emotion-0 emotion-1"
+>
+  Hello World
+</p>
+`;
+
+exports[`renders a UI 1`] = `
+.emotion-0 {
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  margin-bottom: 0.875rem;
+  color: #222222;
+}
+
+<p
+  className="emotion-0 emotion-1"
+>
+  Hello World
+</p>
+`;
