@@ -1,3 +1,5 @@
+import { rem } from 'polished';
+
 export const blues = {
   blueLighter: '#6688FF',
   blueLight: '#5577FF',
@@ -73,13 +75,13 @@ export const lineHeights = {
 export const brandFont = 'Open Sans';
 
 export const spacings = {
-  smallest: '4px',
-  smaller: '8px',
-  small: '12px',
-  regular: '16px',
-  large: '24px',
-  larger: '32px',
-  largest: '64px'
+  smallest: rem('4px'),
+  smaller: rem('8px'),
+  small: rem('12px'),
+  regular: rem('16px'),
+  large: rem('24px'),
+  larger: rem('32px'),
+  largest: rem('64px')
 };
 
 export const borderRadius = {

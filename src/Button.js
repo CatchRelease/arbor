@@ -1,7 +1,13 @@
 import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import { transparentize } from 'polished';
-import { colors, borderRadius, fontWeights, lineHeights } from './theme';
+import {
+  colors,
+  borderRadius,
+  fontWeights,
+  lineHeights,
+  spacings
+} from './theme';
 
 import Paragraph from './Paragraph';
 
@@ -20,7 +26,7 @@ Button.CTA = styled(Button.withComponent('button'))`
   border-radius: ${borderRadius.large};
   box-shadow: 0px 1px 3px ${transparentize(0.7, colors.blue)},
     inset 0px -1px 0px ${transparentize(0.9, colors.black)};
-  padding: 12px 0;
+  padding: ${spacings.small} 0;
   text-transform: uppercase;
   width: 328px;
 
