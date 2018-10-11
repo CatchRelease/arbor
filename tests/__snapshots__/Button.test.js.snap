@@ -19,7 +19,7 @@ exports[`renders a CTA button 1`] = `
   background: #4466EE;
   border-radius: 6px;
   box-shadow: 0px 1px 3px rgba(68,102,238,0.3),inset 0px -1px 0px rgba(0,0,0,0.1);
-  padding: 12px 0;
+  padding: 0.75rem 0;
   text-transform: uppercase;
   width: 328px;
 }
