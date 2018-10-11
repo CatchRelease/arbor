@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { Button, Heading } from '../src';
 
 storiesOf('Buttons', module).add('default', () => (
-  <div style={{ padding: '10px' }}>
+  <div style={{ padding: '10px', width: '500px' }}>
     <Heading.h2>Call to Action</Heading.h2>
 
     <Heading.h3>Enabled</Heading.h3>

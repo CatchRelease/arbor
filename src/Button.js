@@ -19,6 +19,10 @@ const Button = styled(Paragraph.UI.withComponent('button'))`
   margin-bottom: 0;
   outline: none;
   transition: box-shadow 0.3s ease, background 0.2s ease;
+
+  &:enabled {
+    cursor: pointer;
+  }
 `;
 
 Button.CTA = styled(Button.withComponent('button'))`
@@ -28,7 +32,7 @@ Button.CTA = styled(Button.withComponent('button'))`
     inset 0px -1px 0px ${transparentize(0.9, colors.black)};
   padding: ${spacings.small} 0;
   text-transform: uppercase;
-  width: 328px;
+  width: 100%;
 
   &:hover:enabled {
     background: ${colors.blueLight};
@@ -40,7 +44,7 @@ Button.CTA = styled(Button.withComponent('button'))`
     box-shadow: none;
   }
 
-  &:active:enabled {
+  &:focus:enabled {
     background: ${colors.blue};
     box-shadow: 0px 0px 0px 1px ${colors.white},
       ${colors.blueDark} 0px 0px 0px 2px;
