@@ -52,13 +52,13 @@ export const colors = {
 };
 
 export const fontSizes = {
-  size1: '0.6875rem',
-  size2: '0.875rem',
-  size3: '1rem',
-  size4: '1.125rem',
-  size5: '1.375rem',
-  size6: '1.75rem',
-  size7: '2.125rem'
+  size1: rem('11px'),
+  size2: rem('14px'),
+  size3: rem('16px'),
+  size4: rem('18px'),
+  size5: rem('22px'),
+  size6: rem('28px'),
+  size7: rem('34px')
 };
 
 export const fontWeights = {

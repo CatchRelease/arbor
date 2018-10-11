@@ -9,7 +9,8 @@ module.exports = {
         devDependencies: [
           '.storybook/**',
           'stories/**',
-          'tests/**'
+          'tests/**',
+          'jest.setup.js'
         ]
       },
     ]
@@ -18,8 +19,10 @@ module.exports = {
     {
       files: ['tests/**/*.test.js'],
       globals: {
+        describe: true,
         test: true,
-        expect: true
+        expect: true,
+        it: true
       }
     }
   ]
