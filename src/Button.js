@@ -8,7 +8,6 @@ import {
   lineHeights,
   spacings
 } from './theme';
-
 import Paragraph from './Paragraph';
 
 const Button = styled(Paragraph.UI.withComponent('button'))`
@@ -28,26 +27,25 @@ const Button = styled(Paragraph.UI.withComponent('button'))`
 Button.CTA = styled(Button.withComponent('button'))`
   background: ${colors.blue};
   border-radius: ${borderRadius.large};
-  box-shadow: 0px 1px 3px ${transparentize(0.7, colors.blue)},
-    inset 0px -1px 0px ${transparentize(0.9, colors.black)};
+  box-shadow: 0 1px 3px ${transparentize(0.7, colors.blue)},
+    inset 0 -1px 0 ${transparentize(0.9, colors.black)};
   padding: ${spacings.small} 0;
   text-transform: uppercase;
   width: 100%;
-
-  &:hover:enabled {
-    background: ${colors.blueLight};
-    box-shadow: 0px 2px 6px ${transparentize(0.8, colors.blueLight)};
-  }
 
   &:disabled {
     background: ${colors.grey80};
     box-shadow: none;
   }
 
+  &:hover:enabled {
+    background: ${colors.blueLight};
+    box-shadow: 0 2px 6px ${transparentize(0.8, colors.blueLight)};
+  }
+
   &:focus:enabled {
     background: ${colors.blue};
-    box-shadow: 0px 0px 0px 1px ${colors.white},
-      ${colors.blueDark} 0px 0px 0px 2px;
+    box-shadow: 0 0 0 1px ${colors.white}, ${colors.blueDark} 0 0 0 2px;
   }
 `;
 

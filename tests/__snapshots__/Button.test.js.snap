@@ -18,7 +18,7 @@ exports[`renders a CTA button 1`] = `
   transition: box-shadow 0.3s ease,background 0.2s ease;
   background: #4466EE;
   border-radius: 6px;
-  box-shadow: 0px 1px 3px rgba(68,102,238,0.3),inset 0px -1px 0px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
   padding: 0.75rem 0;
   text-transform: uppercase;
   width: 100%;
@@ -28,19 +28,19 @@ exports[`renders a CTA button 1`] = `
   cursor: pointer;
 }
 
-.emotion-0:hover:enabled {
-  background: #5577FF;
-  box-shadow: 0px 2px 6px rgba(85,119,255,0.2);
-}
-
 .emotion-0:disabled {
   background: #666666;
   box-shadow: none;
 }
 
+.emotion-0:hover:enabled {
+  background: #5577FF;
+  box-shadow: 0 2px 6px rgba(85,119,255,0.2);
+}
+
 .emotion-0:focus:enabled {
   background: #4466EE;
-  box-shadow: 0px 0px 0px 1px #FFFFFF,#4455CC 0px 0px 0px 2px;
+  box-shadow: 0 0 0 1px #FFFFFF,#4455CC 0 0 0 2px;
 }
 
 <button

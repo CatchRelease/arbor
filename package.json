@@ -7,7 +7,7 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "eslint src tests stories .storybook",
+    "lint": "eslint src tests stories .storybook && stylelint src",
     "test:ci": "yarn test && yarn lint",
     "deploy-storybook": "storybook-to-ghpages"
   },
@@ -50,6 +50,10 @@
     "jest-emotion": "^9.2.11",
     "prettier": "^1.14.3",
     "react-test-renderer": "^16.5.2",
-    "regenerator-runtime": "^0.12.1"
+    "regenerator-runtime": "^0.12.1",
+    "stylelint": "^9.6.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.5.0"
   }
 }
