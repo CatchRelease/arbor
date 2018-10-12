@@ -8,7 +8,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint src tests stories .storybook",
-    "test:ci": "yarn test && yarn lint"
+    "test:ci": "yarn test && yarn lint",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "author": "Damian Galarza",
   "license": "MIT",
@@ -30,6 +31,7 @@
     "@storybook/addon-links": "^3.4.11",
     "@storybook/addons": "^3.4.11",
     "@storybook/react": "4.0.0-alpha.24",
+    "@storybook/storybook-deployer": "^2.3.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
