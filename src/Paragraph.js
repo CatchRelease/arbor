@@ -1,51 +1,40 @@
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 
-import {
-  brandFont,
-  colors,
-  fontWeights,
-  fontSizes,
-  lineHeights
-} from './theme';
+import { brandFont, colors, lineHeights, typography } from './theme';
+
+const baseStyles = css`
+  font-family: ${brandFont};
+  line-height: ${lineHeights.large};
+`;
+
+const variantStyles = ({ color, variant }) => css`
+  color: ${color ? colors[color] : typography.text[variant].color};
+  font-size: ${typography.text[variant].fontSize};
+  margin-bottom: ${typography.text[variant].fontSize};
+`;
+
+const withoutMarginStyles = ({ withoutMargin }) =>
+  withoutMargin &&
+  css`
+    margin-bottom: 0;
+  `;
 
 const Paragraph = styled.p`
-  font-family: ${brandFont};
-  font-weight: ${fontWeights.regular};
-  line-height: ${lineHeights.large};
-  color: ${props => colors[props.color]};
+  ${baseStyles};
+  ${variantStyles};
+  ${withoutMarginStyles};
 `;
 
 Paragraph.propTypes = {
-  color: PropTypes.oneOf(Object.keys(colors)).isRequired
+  color: PropTypes.oneOf(Object.keys(colors).concat('')),
+  variant: PropTypes.oneOf(['ui', 'longForm', 'tiny']).isRequired,
+  withoutMargin: PropTypes.bool
 };
 
-Paragraph.UI = styled(Paragraph.withComponent('p'))`
-  font-size: ${fontSizes.size2};
-  margin-bottom: ${fontSizes.size2};
-  color: ${colors.grey100};
-`;
-
-Paragraph.UI.defaultProps = {
-  color: 'grey100'
-};
-
-Paragraph.LongForm = styled(Paragraph.withComponent('p'))`
-  font-size: ${fontSizes.size3};
-  margin-bottom: ${fontSizes.size3};
-`;
-
-Paragraph.LongForm.defaultProps = {
-  color: 'grey100'
-};
-
-Paragraph.Tiny = styled(Paragraph.withComponent('p'))`
-  font-size: ${fontSizes.size1};
-  margin-bottom: ${fontSizes.size1};
-`;
-
-Paragraph.Tiny.defaultProps = {
-  color: 'grey80'
+Paragraph.defaultProps = {
+  color: '',
+  withoutMargin: false
 };
 
 export default Paragraph;

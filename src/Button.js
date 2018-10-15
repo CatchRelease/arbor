@@ -2,20 +2,22 @@ import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 import { transparentize } from 'polished';
 import {
-  colors,
   borderRadius,
+  brandFont,
+  colors,
   fontWeights,
   lineHeights,
-  spacings
+  spacings,
+  typography
 } from './theme';
-import Paragraph from './Paragraph';
 
-const Button = styled(Paragraph.UI.withComponent('button'))`
+const Button = styled.button`
+  font-family: ${brandFont};
+  font-size: ${typography.text.ui.fontSize};
   border: none;
   color: ${colors.white};
   font-weight: ${fontWeights.medium};
   line-height: ${lineHeights.large};
-  margin-bottom: 0;
   outline: none;
   transition: box-shadow 0.3s ease, background 0.2s ease;
 

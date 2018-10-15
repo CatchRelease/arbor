@@ -72,6 +72,23 @@ export const lineHeights = {
   large: 1.5
 };
 
+export const typography = {
+  text: {
+    ui: {
+      fontSize: fontSizes.size2,
+      color: colors.grey100
+    },
+    longForm: {
+      fontSize: fontSizes.size3,
+      color: colors.grey100
+    },
+    tiny: {
+      fontSize: fontSizes.size1,
+      color: colors.grey80
+    }
+  }
+};
+
 export const brandFont = 'Open Sans';
 
 export const spacings = {

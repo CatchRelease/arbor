@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 import { create } from 'react-test-renderer';
 
 import Input from '../src/Input';
-import Paragraph from '../src/Paragraph';
 
 describe('<Input />', () => {
   it('renders an Input correctly', () => {
@@ -24,7 +23,7 @@ describe('<Input />', () => {
     it('renders the caption', () => {
       const input = shallow(<Input caption="My Caption" id="example" />);
 
-      expect(input.find(Paragraph.Tiny).props().children).toEqual('My Caption');
+      expect(input.find('Caption').props().children).toEqual('My Caption');
     });
   });
 
@@ -32,7 +31,7 @@ describe('<Input />', () => {
     it('does not render the caption', () => {
       const input = shallow(<Input id="example" />);
 
-      expect(input.find(Paragraph.Tiny).length).toBe(0);
+      expect(input.find('Caption').length).toBe(0);
     });
   });
 });

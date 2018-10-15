@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a LongForm 1`] = `
+exports[`<Paragraph /> props variant renders a longForm variant 1`] = `
 .emotion-0 {
   font-family: Open Sans;
   font-weight: 400;
@@ -12,13 +12,13 @@ exports[`renders a LongForm 1`] = `
 
 <p
   className="emotion-0 emotion-1"
-  color="grey100"
+  color=""
 >
   Hello World
 </p>
 `;
 
-exports[`renders a Tiny 1`] = `
+exports[`<Paragraph /> props variant renders a tiny variant 1`] = `
 .emotion-0 {
   font-family: Open Sans;
   font-weight: 400;
@@ -30,13 +30,13 @@ exports[`renders a Tiny 1`] = `
 
 <p
   className="emotion-0 emotion-1"
-  color="grey80"
+  color=""
 >
   Hello World
 </p>
 `;
 
-exports[`renders a UI 1`] = `
+exports[`<Paragraph /> props variant renders a ui variant 1`] = `
 .emotion-0 {
   font-family: Open Sans;
   font-weight: 400;
@@ -44,12 +44,11 @@ exports[`renders a UI 1`] = `
   color: #222222;
   font-size: 0.875rem;
   margin-bottom: 0.875rem;
-  color: #222222;
 }
 
 <p
   className="emotion-0 emotion-1"
-  color="grey100"
+  color=""
 >
   Hello World
 </p>

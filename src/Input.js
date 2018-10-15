@@ -19,7 +19,7 @@ const StyledInput = styled.input`
   border-radius: ${borderRadius.small};
   border: ${borderWidth.small} solid ${colors.grey20};
   box-sizing: border-box;
-  color: ${colors.black};
+  color: ${colors.grey100};
   font-size: ${fontSizes.size2};
   line-height: ${lineHeights.small};
   padding: ${spacings.smaller};
@@ -37,11 +37,17 @@ const StyledInput = styled.input`
   }
 `;
 
+const Caption = Paragraph.withComponent('span');
+
 const Input = ({ caption, label, id, ...props }) => (
   <Fragment>
     <Label htmlFor={id}>{label}</Label>
     <StyledInput {...{ ...props, id }} />
-    {caption && <Paragraph.Tiny color="red">{caption}</Paragraph.Tiny>}
+    {caption && (
+      <Caption variant="tiny" color="red" withoutMargin>
+        {caption}
+      </Caption>
+    )}
   </Fragment>
 );
 

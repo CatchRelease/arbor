@@ -1,12 +1,14 @@
 import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 
-import Heading from './Heading';
-import { fontWeights } from './theme';
+import { brandFont, colors, fontSizes, lineHeights } from './theme';
 
-const Label = styled(Heading.h6.withComponent('label'))`
+const Label = styled.label`
+  color: ${colors.grey80};
   display: block;
-  font-weight: ${fontWeights.regular};
+  font-family: ${brandFont};
+  font-size: ${fontSizes.size2};
+  line-height: ${lineHeights.large};
 `;
 
 Label.propTypes = {

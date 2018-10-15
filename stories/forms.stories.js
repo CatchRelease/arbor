@@ -16,6 +16,7 @@ storiesOf('Forms', module).add('default', () => (
     />
     <Input
       label="Disabled"
+      id="disabled-input"
       disabled
       caption="Disabled field"
       type="text"

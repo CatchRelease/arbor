@@ -3,16 +3,11 @@
 exports[`renders a CTA button 1`] = `
 .emotion-0 {
   font-family: Open Sans;
-  font-weight: 400;
-  line-height: 1.5;
   font-size: 0.875rem;
-  margin-bottom: 0.875rem;
-  color: #222222;
   border: none;
   color: #FFFFFF;
   font-weight: 600;
   line-height: 1.5;
-  margin-bottom: 0;
   outline: none;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;

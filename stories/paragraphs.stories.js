@@ -5,8 +5,8 @@ import { Paragraph } from '../src';
 
 storiesOf('Paragraphs', module).add('default', () => (
   <Fragment>
-    <Paragraph.UI>Paragraph (UI)</Paragraph.UI>
-    <Paragraph.LongForm>Paragraph (Long Form)</Paragraph.LongForm>
-    <Paragraph.Tiny>Paragraph (Tiny)</Paragraph.Tiny>
+    <Paragraph variant="ui">Paragraph (UI)</Paragraph>
+    <Paragraph variant="longForm">Paragraph (Long Form)</Paragraph>
+    <Paragraph variant="tiny">Paragraph (Tiny)</Paragraph>
   </Fragment>
 ));
