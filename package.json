@@ -1,6 +1,5 @@
 {
   "name": "@catchandrelease/arbor",
-  "UNLICENSE://www.npmjs.com/docs/orgs/publishing-an-org-scoped-package.html
   version": "0.1.0",
   "description": "React component library for Catch and Release",
   "main": "src/index.js",
