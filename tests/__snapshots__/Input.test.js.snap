@@ -45,6 +45,7 @@ exports[`<Input /> renders a large Input correctly 1`] = `
 .emotion-2:focus {
   border: 1px solid #5577FF;
   box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
 }
 
 .emotion-2:disabled {
@@ -113,6 +114,7 @@ exports[`<Input /> renders an Input correctly 1`] = `
 .emotion-2:focus {
   border: 1px solid #5577FF;
   box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
 }
 
 .emotion-2:disabled {

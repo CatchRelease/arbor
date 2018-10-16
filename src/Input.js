@@ -51,6 +51,7 @@ const StyledInput = styled.input`
   &:focus {
     border: ${borderWidth.small} solid ${colors.blueLight};
     box-shadow: 0 0 8px ${transparentize(0.9, colors.blueLight)};
+    outline: none;
   }
 
   &:disabled {
