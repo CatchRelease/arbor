@@ -20,21 +20,24 @@ const withoutMarginStyles = ({ withoutMargin }) =>
     margin-bottom: 0;
   `;
 
-const Paragraph = styled.p`
+const Text = styled.p`
   ${baseStyles};
   ${variantStyles};
   ${withoutMarginStyles};
 `;
 
-Paragraph.propTypes = {
+Text.propTypes = {
   color: PropTypes.oneOf(Object.keys(colors).concat('')),
   variant: PropTypes.oneOf(['ui', 'longForm', 'tiny']).isRequired,
   withoutMargin: PropTypes.bool
 };
 
-Paragraph.defaultProps = {
+Text.defaultProps = {
   color: '',
   withoutMargin: false
 };
 
-export default Paragraph;
+Text.span = Text.withComponent('span');
+Text.p = Text.withComponent('p');
+
+export default Text;

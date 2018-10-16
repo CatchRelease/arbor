@@ -13,7 +13,7 @@ import {
 } from './theme';
 
 import Label from './Label';
-import Paragraph from './Paragraph';
+import Text from './Text';
 
 const StyledInput = styled.input`
   border-radius: ${borderRadius.small};
@@ -37,16 +37,14 @@ const StyledInput = styled.input`
   }
 `;
 
-const Caption = Paragraph.withComponent('span');
-
 const Input = ({ caption, label, id, ...props }) => (
   <Fragment>
     <Label htmlFor={id}>{label}</Label>
     <StyledInput {...{ ...props, id }} />
     {caption && (
-      <Caption variant="tiny" color="red" withoutMargin>
+      <Text.span variant="tiny" color="red" withoutMargin>
         {caption}
-      </Caption>
+      </Text.span>
     )}
   </Fragment>
 );
