@@ -18,7 +18,6 @@ storiesOf('Forms', module).add('default', () => (
       label="Disabled"
       id="disabled-input"
       disabled
-      caption="Disabled field"
       type="text"
       name="disabled"
     />
@@ -29,6 +28,7 @@ storiesOf('Forms', module).add('default', () => (
       type="text"
       caption="This is a large field"
       name="large"
+      placeholder="Placeholder"
     />
   </form>
 ));

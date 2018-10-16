@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { placeholder, transparentize } from 'polished';
@@ -15,6 +15,19 @@ import {
 import Label from './Label';
 import Text from './Text';
 
+const InputContainer = styled.div`
+  margin-bottom: ${props =>
+    props.caption ? spacings.smaller : spacings.regular};
+`;
+
+InputContainer.propTypes = {
+  caption: PropTypes.string
+};
+
+InputContainer.defaultProps = {
+  caption: ''
+};
+
 const largeStyles = ({ large }) =>
   large &&
   css`
@@ -28,6 +41,7 @@ const StyledInput = styled.input`
   color: ${colors.grey100};
   font-size: ${fontSizes.size2};
   line-height: ${lineHeights.small};
+  margin: ${spacings.smallest} 0;
   padding: ${spacings.smaller};
   width: 100%;
   ${largeStyles};
@@ -45,7 +59,7 @@ const StyledInput = styled.input`
 `;
 
 const Input = ({ caption, label, id, ...props }) => (
-  <Fragment>
+  <InputContainer caption={caption}>
     <Label htmlFor={id}>{label}</Label>
     <StyledInput {...{ ...props, id }} />
     {caption && (
@@ -53,7 +67,7 @@ const Input = ({ caption, label, id, ...props }) => (
         {caption}
       </Text.span>
     )}
-  </Fragment>
+  </InputContainer>
 );
 
 Input.propTypes = {

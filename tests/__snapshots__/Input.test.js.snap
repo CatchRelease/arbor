@@ -1,8 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Input /> renders a large Input correctly 1`] = `
-Array [
-  .emotion-0 {
+.emotion-4 {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
   color: #666666;
   display: block;
   font-family: Open Sans;
@@ -10,61 +13,68 @@ Array [
   line-height: 1.5;
 }
 
-<label
-    className="emotion-0 emotion-1"
-    htmlFor="example"
-  >
-    My Input
-  </label>,
-  .emotion-0 {
+.emotion-2 {
   border-radius: 3px;
   border: 1px solid #DDDDDD;
   box-sizing: border-box;
   color: #222222;
   font-size: 0.875rem;
   line-height: 1.25;
+  margin: 0.25rem 0;
   padding: 0.5rem;
   width: 100%;
   padding: 0.75rem 0.5rem;
 }
 
-.emotion-0::-webkit-input-placeholder {
+.emotion-2::-webkit-input-placeholder {
   color: #AAAAAA;
 }
 
-.emotion-0:-moz-placeholder {
+.emotion-2:-moz-placeholder {
   color: #AAAAAA;
 }
 
-.emotion-0::-moz-placeholder {
+.emotion-2::-moz-placeholder {
   color: #AAAAAA;
 }
 
-.emotion-0:-ms-input-placeholder {
+.emotion-2:-ms-input-placeholder {
   color: #AAAAAA;
 }
 
-.emotion-0:focus {
+.emotion-2:focus {
   border: 1px solid #5577FF;
   box-shadow: 0 0 8px rgba(85,119,255,0.1);
 }
 
-.emotion-0:disabled {
+.emotion-2:disabled {
   background: #FAFAFA;
 }
 
-<input
+<div
+  className="emotion-4 emotion-5"
+>
+  <label
     className="emotion-0 emotion-1"
+    htmlFor="example"
+  >
+    My Input
+  </label>
+  <input
+    className="emotion-2 emotion-3"
     id="example"
     type="text"
-  />,
-  "",
-]
+  />
+  
+</div>
 `;
 
 exports[`<Input /> renders an Input correctly 1`] = `
-Array [
-  .emotion-0 {
+.emotion-4 {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
   color: #666666;
   display: block;
   font-family: Open Sans;
@@ -72,53 +82,140 @@ Array [
   line-height: 1.5;
 }
 
-<label
-    className="emotion-0 emotion-1"
-    htmlFor="example"
-  >
-    My Input
-  </label>,
-  .emotion-0 {
+.emotion-2 {
   border-radius: 3px;
   border: 1px solid #DDDDDD;
   box-sizing: border-box;
   color: #222222;
   font-size: 0.875rem;
   line-height: 1.25;
+  margin: 0.25rem 0;
   padding: 0.5rem;
   width: 100%;
 }
 
-.emotion-0::-webkit-input-placeholder {
+.emotion-2::-webkit-input-placeholder {
   color: #AAAAAA;
 }
 
-.emotion-0:-moz-placeholder {
+.emotion-2:-moz-placeholder {
   color: #AAAAAA;
 }
 
-.emotion-0::-moz-placeholder {
+.emotion-2::-moz-placeholder {
   color: #AAAAAA;
 }
 
-.emotion-0:-ms-input-placeholder {
+.emotion-2:-ms-input-placeholder {
   color: #AAAAAA;
 }
 
-.emotion-0:focus {
+.emotion-2:focus {
   border: 1px solid #5577FF;
   box-shadow: 0 0 8px rgba(85,119,255,0.1);
 }
 
-.emotion-0:disabled {
+.emotion-2:disabled {
   background: #FAFAFA;
 }
 
-<input
+<div
+  className="emotion-4 emotion-5"
+>
+  <label
     className="emotion-0 emotion-1"
+    htmlFor="example"
+  >
+    My Input
+  </label>
+  <input
+    className="emotion-2 emotion-3"
     id="example"
     type="text"
-  />,
-  "",
-]
+  />
+  
+</div>
+`;
+
+exports[`<Input /> renders an Input with a caption correctly 1`] = `
+.emotion-0 {
+  color: #666666;
+  display: block;
+  font-family: Open Sans;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.emotion-2 {
+  border-radius: 3px;
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+  color: #222222;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #AAAAAA;
+}
+
+.emotion-2:-moz-placeholder {
+  color: #AAAAAA;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #AAAAAA;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #AAAAAA;
+}
+
+.emotion-2:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-2:disabled {
+  background: #FAFAFA;
+}
+
+.emotion-6 {
+  margin-bottom: 0.5rem;
+}
+
+.emotion-4 {
+  font-family: Open Sans;
+  line-height: 1.5;
+  color: #EE2200;
+  font-size: 0.6875rem;
+  margin-bottom: 0.6875rem;
+  margin-bottom: 0;
+}
+
+<div
+  className="emotion-6 emotion-7"
+>
+  <label
+    className="emotion-0 emotion-1"
+    htmlFor="example"
+  >
+    My Input
+  </label>
+  <input
+    className="emotion-2 emotion-3"
+    id="example"
+    type="text"
+  />
+  <span
+    className="emotion-4 emotion-5"
+    color="red"
+  >
+    I am a caption
+  </span>
+</div>
 `;

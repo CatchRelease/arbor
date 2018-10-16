@@ -22,6 +22,19 @@ describe('<Input />', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it('renders an Input with a caption correctly', () => {
+    const tree = create(
+      <Input
+        label="My Input"
+        id="example"
+        type="text"
+        caption="I am a caption"
+      />
+    ).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
   it('associates label with input', () => {
     const input = shallow(<Input type="text" id="example" />);
 
