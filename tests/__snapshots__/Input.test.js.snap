@@ -1,5 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Input /> renders a large Input correctly 1`] = `
+Array [
+  .emotion-0 {
+  color: #666666;
+  display: block;
+  font-family: Open Sans;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+<label
+    className="emotion-0 emotion-1"
+    htmlFor="example"
+  >
+    My Input
+  </label>,
+  .emotion-0 {
+  border-radius: 3px;
+  border: 1px solid #DDDDDD;
+  box-sizing: border-box;
+  color: #222222;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  padding: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #AAAAAA;
+}
+
+.emotion-0:-moz-placeholder {
+  color: #AAAAAA;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #AAAAAA;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #AAAAAA;
+}
+
+.emotion-0:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+}
+
+.emotion-0:disabled {
+  background: #FAFAFA;
+}
+
+<input
+    className="emotion-0 emotion-1"
+    id="example"
+    type="text"
+  />,
+  "",
+]
+`;
+
 exports[`<Input /> renders an Input correctly 1`] = `
 Array [
   .emotion-0 {

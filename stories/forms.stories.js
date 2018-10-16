@@ -22,5 +22,13 @@ storiesOf('Forms', module).add('default', () => (
       type="text"
       name="disabled"
     />
+    <Input
+      large
+      label="Large"
+      id="large-input"
+      type="text"
+      caption="This is a large field"
+      name="large"
+    />
   </form>
 ));

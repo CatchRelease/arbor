@@ -14,6 +14,14 @@ describe('<Input />', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it('renders a large Input correctly', () => {
+    const tree = create(
+      <Input large label="My Input" id="example" type="text" />
+    ).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
   it('associates label with input', () => {
     const input = shallow(<Input type="text" id="example" />);
 

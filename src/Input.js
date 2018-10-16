@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { placeholder, transparentize } from 'polished';
 
@@ -15,6 +15,12 @@ import {
 import Label from './Label';
 import Text from './Text';
 
+const largeStyles = ({ large }) =>
+  large &&
+  css`
+    padding: ${spacings.small} ${spacings.smaller};
+  `;
+
 const StyledInput = styled.input`
   border-radius: ${borderRadius.small};
   border: ${borderWidth.small} solid ${colors.grey20};
@@ -24,6 +30,7 @@ const StyledInput = styled.input`
   line-height: ${lineHeights.small};
   padding: ${spacings.smaller};
   width: 100%;
+  ${largeStyles};
 
   ${placeholder({ color: colors.grey50 })};
 
@@ -51,11 +58,13 @@ const Input = ({ caption, label, id, ...props }) => (
 
 Input.propTypes = {
   caption: PropTypes.string,
-  id: PropTypes.string.isRequired
+  id: PropTypes.string.isRequired,
+  large: PropTypes.bool
 };
 
 Input.defaultProps = {
-  caption: ''
+  caption: '',
+  large: false
 };
 
 export default Input;
