@@ -6,7 +6,6 @@ exports[`<Text /> props variant renders a longForm variant 1`] = `
   line-height: 1.5;
   color: #222222;
   font-size: 1rem;
-  margin-bottom: 1rem;
 }
 
 <p
@@ -23,7 +22,6 @@ exports[`<Text /> props variant renders a tiny variant 1`] = `
   line-height: 1.5;
   color: #666666;
   font-size: 0.6875rem;
-  margin-bottom: 0.6875rem;
 }
 
 <p
@@ -40,7 +38,6 @@ exports[`<Text /> props variant renders a ui variant 1`] = `
   line-height: 1.5;
   color: #222222;
   font-size: 0.875rem;
-  margin-bottom: 0.875rem;
 }
 
 <p

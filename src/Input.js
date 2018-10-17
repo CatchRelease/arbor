@@ -64,7 +64,7 @@ const Input = ({ caption, label, id, ...props }) => (
     <Label htmlFor={id}>{label}</Label>
     <StyledInput {...{ ...props, id }} />
     {caption && (
-      <Text.span variant="tiny" color="red" withoutMargin>
+      <Text.span variant="tiny" color="red">
         {caption}
       </Text.span>
     )}

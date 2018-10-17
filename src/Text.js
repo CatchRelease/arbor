@@ -11,30 +11,20 @@ const baseStyles = css`
 const variantStyles = ({ color, variant }) => css`
   color: ${color ? colors[color] : typography.text[variant].color};
   font-size: ${typography.text[variant].fontSize};
-  margin-bottom: ${typography.text[variant].fontSize};
 `;
-
-const withoutMarginStyles = ({ withoutMargin }) =>
-  withoutMargin &&
-  css`
-    margin-bottom: 0;
-  `;
 
 const Text = styled.p`
   ${baseStyles};
   ${variantStyles};
-  ${withoutMarginStyles};
 `;
 
 Text.propTypes = {
   color: PropTypes.oneOf(Object.keys(colors).concat('')),
-  variant: PropTypes.oneOf(['ui', 'longForm', 'tiny']).isRequired,
-  withoutMargin: PropTypes.bool
+  variant: PropTypes.oneOf(['ui', 'longForm', 'tiny']).isRequired
 };
 
 Text.defaultProps = {
-  color: '',
-  withoutMargin: false
+  color: ''
 };
 
 Text.span = Text.withComponent('span');

@@ -32,17 +32,5 @@ describe('<Text />', () => {
         });
       });
     });
-
-    describe('withoutMargin', () => {
-      it('renders a paragraph with no margin', () => {
-        const tree = create(
-          <Text variant="ui" withoutMargin>
-            Hello World
-          </Text>
-        ).toJSON();
-
-        expect(tree).toHaveStyleRule('margin-bottom', '0');
-      });
-    });
   });
 });

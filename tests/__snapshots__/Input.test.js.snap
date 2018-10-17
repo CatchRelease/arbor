@@ -195,8 +195,6 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
   line-height: 1.5;
   color: #EE2200;
   font-size: 0.6875rem;
-  margin-bottom: 0.6875rem;
-  margin-bottom: 0;
 }
 
 <div
