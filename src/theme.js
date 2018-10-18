@@ -111,3 +111,8 @@ export const borderWidth = {
   medium: '2px',
   large: '4px'
 };
+
+export default {
+  colors,
+  space: spacings
+};

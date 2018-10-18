@@ -1,5 +1,6 @@
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
+import { space, textAlign } from 'styled-system';
 
 import { brandFont, colors, lineHeights, typography } from './theme';
 
@@ -14,13 +15,17 @@ const variantStyles = ({ color, variant }) => css`
 `;
 
 const Text = styled.p`
+  ${textAlign};
+  ${space};
   ${baseStyles};
   ${variantStyles};
 `;
 
 Text.propTypes = {
   color: PropTypes.oneOf(Object.keys(colors).concat('')),
-  variant: PropTypes.oneOf(['ui', 'longForm', 'tiny']).isRequired
+  variant: PropTypes.oneOf(['ui', 'longForm', 'tiny']).isRequired,
+  ...textAlign.propTypes,
+  ...space.propTypes
 };
 
 Text.defaultProps = {
