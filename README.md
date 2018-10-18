@@ -1,6 +1,6 @@
 # Arbor
 
-React component library for Catch and Release
+React component library for Catch&Release
 
 # License
 
