@@ -1,5 +1,7 @@
 import { rem } from 'polished';
 
+export const breakpoints = ['768px'];
+
 export const blues = {
   blueLighter: '#6688FF',
   blueLight: '#5577FF',
@@ -115,10 +117,11 @@ export const borderWidth = {
 export default {
   borderRadius,
   brandFont,
+  breakpoints,
   colors,
   fontWeights,
+  iconFontPrefix: 'fa',
   lineHeights,
   space: spacings,
-  typography,
-  breakpoints: ['768px']
+  typography
 };

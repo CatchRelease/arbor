@@ -1,5 +1,12 @@
 import styled from 'react-emotion';
-import { color, space, width, height, maxWidth } from 'styled-system';
+import {
+  color,
+  space,
+  width,
+  height,
+  maxWidth,
+  textAlign
+} from 'styled-system';
 
 const Box = styled.div`
   ${space};
@@ -7,6 +14,7 @@ const Box = styled.div`
   ${width};
   ${height};
   ${maxWidth};
+  ${textAlign};
 `;
 
 Box.propTypes = {
@@ -14,7 +22,8 @@ Box.propTypes = {
   ...color.propTypes,
   ...width.propTypes,
   ...height.propTypes,
-  ...maxWidth.propTypes
+  ...maxWidth.propTypes,
+  ...textAlign.propTypes
 };
 
 Box.section = Box.withComponent('section');
