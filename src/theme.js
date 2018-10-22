@@ -114,5 +114,6 @@ export const borderWidth = {
 
 export default {
   colors,
-  space: spacings
+  space: spacings,
+  breakpoints: ['768px']
 };

@@ -122,6 +122,7 @@ var borderWidth = {
 exports.borderWidth = borderWidth;
 var _default = {
   colors: colors,
-  space: spacings
+  space: spacings,
+  breakpoints: ['768px']
 };
 exports.default = _default;
