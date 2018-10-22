@@ -34,6 +34,7 @@ Button.CTA = styled(Button.withComponent('button'))`
   padding: ${spacings.small} 0;
   text-transform: uppercase;
   width: 100%;
+  margin-top: ${props => props.theme.space.regular};
 
   &:disabled {
     background: ${colors.grey80};

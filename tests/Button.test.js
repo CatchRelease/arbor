@@ -1,10 +1,12 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import { Button } from '../src';
+import { Button, theme } from '../src';
 
-test('renders a CTA button', () => {
-  const tree = create(<Button.CTA>CTA</Button.CTA>);
+describe('<Button />', () => {
+  it('renders a CTA button', () => {
+    const tree = create(<Button.CTA theme={theme}>CTA</Button.CTA>);
 
-  expect(tree).toMatchSnapshot();
+    expect(tree).toMatchSnapshot();
+  });
 });

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a CTA button 1`] = `
+exports[`<Button /> renders a CTA button 1`] = `
 .emotion-0 {
   font-family: Open Sans;
   font-size: 0.875rem;
@@ -17,6 +17,7 @@ exports[`renders a CTA button 1`] = `
   padding: 0.75rem 0;
   text-transform: uppercase;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .emotion-0:enabled {
