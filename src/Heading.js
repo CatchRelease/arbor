@@ -1,29 +1,31 @@
-import styled, { css } from 'react-emotion';
-import { color, textAlign } from 'styled-system';
-import { brandFont, fontSizes, fontWeights, lineHeights } from './theme';
+import styled from 'react-emotion';
+import { color, textAlign, space } from 'styled-system';
 
-const lineHeightMultiplier = 0.5;
+const marginBottomMultiplier = 0.5;
 
-const calculatedHeadingStyles = size =>
-  css({
-    fontSize: size,
-    marginBottom: `calc(${size} * ${lineHeightMultiplier})`
-  });
+const calculatedMarginBottom = fontSize =>
+  `calc(${fontSize} * ${marginBottomMultiplier})`;
 
 const Heading = styled.h1`
-  font-family: '${brandFont}';
-  font-weight: ${fontWeights.bold};
-  line-height: ${lineHeights.small};
+  font-family: '${props => props.theme.brandFont}';
+  font-weight: ${props => props.theme.fontWeights.bold};
+  line-height: ${props => props.theme.lineHeights.small};
   ${textAlign};
   ${color};
+  ${space};
 `;
 
 Heading.propTypes = {
-  ...textAlign.propTypes
+  ...textAlign.propTypes,
+  ...space.propTypes
 };
 
 Heading.h1 = styled(Heading.withComponent('h1'))`
-  ${calculatedHeadingStyles(fontSizes.size7)};
+  font-size: ${props => props.theme.fontSizes.size7};
+  margin-bottom: ${props =>
+    props.mb
+      ? props.theme.space[props.mb]
+      : calculatedMarginBottom(props.theme.fontSizes.size7)};
 `;
 
 Heading.h1.defaultProps = {
@@ -31,7 +33,11 @@ Heading.h1.defaultProps = {
 };
 
 Heading.h2 = styled(Heading.withComponent('h2'))`
-  ${calculatedHeadingStyles(fontSizes.size6)};
+  font-size: ${props => props.theme.fontSizes.size6};
+  margin-bottom: ${props =>
+    props.mb
+      ? props.theme.space[props.mb]
+      : calculatedMarginBottom(props.theme.fontSizes.size6)};
 `;
 
 Heading.h2.defaultProps = {
@@ -39,7 +45,11 @@ Heading.h2.defaultProps = {
 };
 
 Heading.h3 = styled(Heading.withComponent('h3'))`
-  ${calculatedHeadingStyles(fontSizes.size5)};
+  font-size: ${props => props.theme.fontSizes.size5};
+  margin-bottom: ${props =>
+    props.mb
+      ? props.theme.space[props.mb]
+      : calculatedMarginBottom(props.theme.fontSizes.size5)};
 `;
 
 Heading.h3.defaultProps = {
@@ -47,7 +57,11 @@ Heading.h3.defaultProps = {
 };
 
 Heading.h4 = styled(Heading.withComponent('h4'))`
-  ${calculatedHeadingStyles(fontSizes.size4)};
+  font-size: ${props => props.theme.fontSizes.size4};
+  margin-bottom: ${props =>
+    props.mb
+      ? props.theme.space[props.mb]
+      : calculatedMarginBottom(props.theme.fontSizes.size4)};
 `;
 
 Heading.h4.defaultProps = {
@@ -55,9 +69,13 @@ Heading.h4.defaultProps = {
 };
 
 Heading.h5 = styled(Heading.withComponent('h5'))`
-  ${calculatedHeadingStyles(fontSizes.size2)};
-  font-weight: ${fontWeights.medium};
-  line-height: ${lineHeights.large};
+  font-size: ${props => props.theme.fontSizes.size2};
+  margin-bottom: ${props =>
+    props.mb
+      ? props.theme.space[props.mb]
+      : calculatedMarginBottom(props.theme.fontSizes.size2)};
+  font-weight: ${props => props.theme.fontWeights.medium};
+  line-height: ${props => props.theme.lineHeights.large};
 `;
 
 Heading.h5.defaultProps = {
@@ -65,9 +83,13 @@ Heading.h5.defaultProps = {
 };
 
 Heading.h6 = styled(Heading.withComponent('h6'))`
-  ${calculatedHeadingStyles(fontSizes.size2)};
-  font-weight: ${fontWeights.regular};
-  line-height: ${lineHeights.large};
+  font-size: ${props => props.theme.fontSizes.size2};
+  margin-bottom: ${props =>
+    props.mb
+      ? props.theme.space[props.mb]
+      : calculatedMarginBottom(props.theme.fontSizes.size2)};
+  font-weight: ${props => props.theme.fontWeights.regular};
+  line-height: ${props => props.theme.lineHeights.large};
 `;
 
 Heading.h6.defaultProps = {
