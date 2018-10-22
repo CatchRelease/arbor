@@ -121,12 +121,13 @@ var borderWidth = {
 };
 exports.borderWidth = borderWidth;
 var _default = {
+  borderRadius: borderRadius,
   brandFont: brandFont,
   colors: colors,
-  fontSizes: fontSizes,
   fontWeights: fontWeights,
   lineHeights: lineHeights,
   space: spacings,
+  typography: typography,
   breakpoints: ['768px']
 };
 exports.default = _default;
