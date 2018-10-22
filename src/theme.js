@@ -113,7 +113,12 @@ export const borderWidth = {
 };
 
 export default {
+  borderRadius,
+  brandFont,
   colors,
+  fontWeights,
+  lineHeights,
   space: spacings,
+  typography,
   breakpoints: ['768px']
 };
