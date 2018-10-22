@@ -20,11 +20,20 @@ const Button = styled.button`
   line-height: ${lineHeights.large};
   outline: none;
   transition: box-shadow 0.3s ease, background 0.2s ease;
+  ${space};
 
   &:enabled {
     cursor: pointer;
   }
 `;
+
+Button.propTypes = {
+  disabled: PropTypes.bool
+};
+
+Button.defaultProps = {
+  disabled: false
+};
 
 Button.CTA = styled(Button.withComponent('button'))`
   background: ${colors.blue};
@@ -53,12 +62,8 @@ Button.CTA = styled(Button.withComponent('button'))`
 
 Button.CTA.displayName = 'Button.CTA';
 
-Button.CTA.propTypes = {
-  disabled: PropTypes.bool
-};
-
 Button.CTA.defaultProps = {
-  disabled: false
+  py: 'small'
 };
 
 export default Button;
