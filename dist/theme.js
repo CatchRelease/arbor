@@ -121,7 +121,11 @@ var borderWidth = {
 };
 exports.borderWidth = borderWidth;
 var _default = {
+  brandFont: brandFont,
   colors: colors,
+  fontSizes: fontSizes,
+  fontWeights: fontWeights,
+  lineHeights: lineHeights,
   space: spacings,
   breakpoints: ['768px']
 };
