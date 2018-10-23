@@ -6,6 +6,7 @@ import { Box, Icon, Text } from '../src';
 
 const AVAILABLE_ICONS = [
   'checkbox-marked-circle-outline',
+  'cr-logo',
   'download',
   'chat-bubble-outline',
   'thumb-up-outline',
