@@ -1,11 +1,12 @@
 import React from 'react';
 import styled, { cx } from 'react-emotion';
-import { color, fontSize, textAlign, space } from 'styled-system';
+import { color, display, fontSize, textAlign, space } from 'styled-system';
 import { withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 
 const StyledIcon = styled.i`
   ${color};
+  ${display};
   ${fontSize};
   ${space};
   ${textAlign};
