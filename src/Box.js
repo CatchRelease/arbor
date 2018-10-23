@@ -1,5 +1,6 @@
 import styled from 'react-emotion';
 import {
+  boxShadow,
   color,
   space,
   width,
@@ -9,6 +10,7 @@ import {
 } from 'styled-system';
 
 const Box = styled.div`
+  ${boxShadow};
   ${space};
   ${color};
   ${width};
@@ -23,7 +25,8 @@ Box.propTypes = {
   ...width.propTypes,
   ...height.propTypes,
   ...maxWidth.propTypes,
-  ...textAlign.propTypes
+  ...textAlign.propTypes,
+  ...boxShadow.propTypes
 };
 
 Box.section = Box.withComponent('section');
