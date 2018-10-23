@@ -9,6 +9,7 @@ var _exportNames = {
   Button: true,
   Flex: true,
   Heading: true,
+  Icon: true,
   Input: true,
   Label: true,
   Text: true,
@@ -42,6 +43,12 @@ Object.defineProperty(exports, "Heading", {
   enumerable: true,
   get: function get() {
     return _Heading.default;
+  }
+});
+Object.defineProperty(exports, "Icon", {
+  enumerable: true,
+  get: function get() {
+    return _Icon.default;
   }
 });
 Object.defineProperty(exports, "Input", {
@@ -89,6 +96,8 @@ var _Button = _interopRequireDefault(require("./Button"));
 var _Flex = _interopRequireDefault(require("./Flex"));
 
 var _Heading = _interopRequireDefault(require("./Heading"));
+
+var _Icon = _interopRequireDefault(require("./Icon"));
 
 var _Input = _interopRequireDefault(require("./Input"));
 

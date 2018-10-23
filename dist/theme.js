@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.borderWidth = exports.borderRadius = exports.spacings = exports.brandFont = exports.typography = exports.lineHeights = exports.fontWeights = exports.fontSizes = exports.colors = exports.black = exports.greens = exports.reds = exports.whites = exports.greys = exports.blues = void 0;
+exports.default = exports.borderWidth = exports.borderRadius = exports.spacings = exports.brandFont = exports.typography = exports.lineHeights = exports.fontWeights = exports.fontSizes = exports.colors = exports.black = exports.greens = exports.reds = exports.whites = exports.greys = exports.blues = exports.breakpoints = void 0;
 
 var _polished = require("polished");
 
@@ -11,6 +11,8 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+var breakpoints = ['768px'];
+exports.breakpoints = breakpoints;
 var blues = {
   blueLighter: '#6688FF',
   blueLight: '#5577FF',
@@ -123,11 +125,12 @@ exports.borderWidth = borderWidth;
 var _default = {
   borderRadius: borderRadius,
   brandFont: brandFont,
+  breakpoints: breakpoints,
   colors: colors,
   fontWeights: fontWeights,
+  iconFontPrefix: 'fa',
   lineHeights: lineHeights,
   space: spacings,
-  typography: typography,
-  breakpoints: ['768px']
+  typography: typography
 };
 exports.default = _default;
