@@ -10,6 +10,7 @@ import {
 } from 'styled-system';
 
 const Box = styled.div`
+  box-sizing: border-box;
   ${boxShadow};
   ${space};
   ${color};
