@@ -62,7 +62,7 @@ var colors = _objectSpread({
 
 exports.colors = colors;
 var fontSizes = {
-  size1: (0, _polished.rem)('11px'),
+  size1: (0, _polished.rem)('12px'),
   size2: (0, _polished.rem)('14px'),
   size3: (0, _polished.rem)('16px'),
   size4: (0, _polished.rem)('18px'),
