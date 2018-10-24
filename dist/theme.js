@@ -99,7 +99,7 @@ var typography = {
   }
 };
 exports.typography = typography;
-var brandFont = 'Open Sans';
+var brandFont = 'Motiva Sans';
 exports.brandFont = brandFont;
 var spacings = {
   smallest: (0, _polished.rem)('4px'),
