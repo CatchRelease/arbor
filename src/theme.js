@@ -54,7 +54,7 @@ export const colors = {
 };
 
 export const fontSizes = {
-  size1: rem('11px'),
+  size1: rem('12px'),
   size2: rem('14px'),
   size3: rem('16px'),
   size4: rem('18px'),
