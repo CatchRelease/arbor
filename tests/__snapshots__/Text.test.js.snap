@@ -2,7 +2,7 @@
 
 exports[`<Text /> props variant renders a longForm variant 1`] = `
 .emotion-0 {
-  font-family: Open Sans;
+  font-family: Motiva Sans;
   line-height: 1.5;
   color: #222222;
   font-size: 1rem;
@@ -18,7 +18,7 @@ exports[`<Text /> props variant renders a longForm variant 1`] = `
 
 exports[`<Text /> props variant renders a tiny variant 1`] = `
 .emotion-0 {
-  font-family: Open Sans;
+  font-family: Motiva Sans;
   line-height: 1.5;
   color: #666666;
   font-size: 0.75rem;
@@ -34,7 +34,7 @@ exports[`<Text /> props variant renders a tiny variant 1`] = `
 
 exports[`<Text /> props variant renders a ui variant 1`] = `
 .emotion-0 {
-  font-family: Open Sans;
+  font-family: Motiva Sans;
   line-height: 1.5;
   color: #222222;
   font-size: 0.875rem;

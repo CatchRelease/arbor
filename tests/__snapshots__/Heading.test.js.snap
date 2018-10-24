@@ -2,7 +2,7 @@
 
 exports[`renders a h1 1`] = `
 .emotion-0 {
-  font-family: 'Open Sans';
+  font-family: 'Motiva Sans';
   font-weight: 700;
   line-height: 1.25;
   color: #222222;
@@ -20,7 +20,7 @@ exports[`renders a h1 1`] = `
 
 exports[`renders a h2 1`] = `
 .emotion-0 {
-  font-family: 'Open Sans';
+  font-family: 'Motiva Sans';
   font-weight: 700;
   line-height: 1.25;
   color: #666666;
@@ -38,7 +38,7 @@ exports[`renders a h2 1`] = `
 
 exports[`renders a h3 1`] = `
 .emotion-0 {
-  font-family: 'Open Sans';
+  font-family: 'Motiva Sans';
   font-weight: 700;
   line-height: 1.25;
   color: #666666;
@@ -56,7 +56,7 @@ exports[`renders a h3 1`] = `
 
 exports[`renders a h4 1`] = `
 .emotion-0 {
-  font-family: 'Open Sans';
+  font-family: 'Motiva Sans';
   font-weight: 700;
   line-height: 1.25;
   color: #666666;
@@ -74,7 +74,7 @@ exports[`renders a h4 1`] = `
 
 exports[`renders a h5 1`] = `
 .emotion-0 {
-  font-family: 'Open Sans';
+  font-family: 'Motiva Sans';
   font-weight: 700;
   line-height: 1.25;
   color: #222222;
@@ -94,7 +94,7 @@ exports[`renders a h5 1`] = `
 
 exports[`renders a h6 1`] = `
 .emotion-0 {
-  font-family: 'Open Sans';
+  font-family: 'Motiva Sans';
   font-weight: 700;
   line-height: 1.25;
   color: #666666;

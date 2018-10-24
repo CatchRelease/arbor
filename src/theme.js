@@ -91,7 +91,7 @@ export const typography = {
   }
 };
 
-export const brandFont = 'Open Sans';
+export const brandFont = 'Motiva Sans';
 
 export const spacings = {
   smallest: rem('4px'),
