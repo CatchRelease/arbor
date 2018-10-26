@@ -120,6 +120,7 @@ export default {
   breakpoints,
   colors,
   fontWeights,
+  fontSizes,
   iconFontPrefix: 'fa',
   lineHeights,
   space: spacings,

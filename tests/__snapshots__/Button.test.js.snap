@@ -1,48 +1,627 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> renders a CTA button 1`] = `
+exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  font-size: 0.875rem;
-  border: none;
-  color: #FFFFFF;
+  border: 1px solid transparent;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  background: #4466EE;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
-  padding: 0.75rem 0;
-  text-transform: uppercase;
-  width: 100%;
+  border-radius: 3px;
   margin-top: 1rem;
+  padding: 0 1rem;
+  height: 3rem;
+  font-size: 0.875rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+.emotion-0:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .emotion-0:enabled {
   cursor: pointer;
 }
 
-.emotion-0:disabled {
-  background: #666666;
+.emotion-0:active:enabled {
   box-shadow: none;
 }
 
-.emotion-0:hover:enabled {
-  background: #5577FF;
-  box-shadow: 0 2px 6px rgba(85,119,255,0.2);
+.emotion-0:focus:enabled {
+  border: 1px solid #4455CC;
 }
 
 .emotion-0:focus:enabled {
-  background: #4466EE;
-  box-shadow: 0 0 0 1px #FFFFFF,#4455CC 0 0 0 2px;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+.emotion-0:hover:enabled {
+  background-color: #5577FF;
+  box-shadow: 0 2px 6px rgba(68,102,238,0.2);
+}
+
+.emotion-0:active:enabled {
+  background: #4455CC;
 }
 
 <button
   className="emotion-0 emotion-1"
   disabled={false}
+  size="jumbo"
 >
-  CTA
+  Button Label
+</button>
+`;
+
+exports[`<Button /> Sizes properly renders a large sized button 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  border: 1px solid transparent;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+.emotion-0:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-0:enabled {
+  cursor: pointer;
+}
+
+.emotion-0:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-0:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-0:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+.emotion-0:hover:enabled {
+  background-color: #5577FF;
+  box-shadow: 0 2px 6px rgba(68,102,238,0.2);
+}
+
+.emotion-0:active:enabled {
+  background: #4455CC;
+}
+
+<button
+  className="emotion-0 emotion-1"
+  disabled={false}
+  size="large"
+>
+  Button Label
+</button>
+`;
+
+exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  border: 1px solid transparent;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+  height: 2rem;
+  font-size: 0.875rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+.emotion-0:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-0:enabled {
+  cursor: pointer;
+}
+
+.emotion-0:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-0:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-0:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+.emotion-0:hover:enabled {
+  background-color: #5577FF;
+  box-shadow: 0 2px 6px rgba(68,102,238,0.2);
+}
+
+.emotion-0:active:enabled {
+  background: #4455CC;
+}
+
+<button
+  className="emotion-0 emotion-1"
+  disabled={false}
+  size="medium"
+>
+  Button Label
+</button>
+`;
+
+exports[`<Button /> Sizes properly renders a small sized button 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  border: 1px solid transparent;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  padding: 0 0.5rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+.emotion-0:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-0:enabled {
+  cursor: pointer;
+}
+
+.emotion-0:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-0:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-0:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+.emotion-0:hover:enabled {
+  background-color: #5577FF;
+  box-shadow: 0 2px 6px rgba(68,102,238,0.2);
+}
+
+.emotion-0:active:enabled {
+  background: #4455CC;
+}
+
+<button
+  className="emotion-0 emotion-1"
+  disabled={false}
+  size="small"
+>
+  Button Label
+</button>
+`;
+
+exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  border: 1px solid transparent;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background: none;
+  border: 1px solid transparent;
+  color: #666666;
+}
+
+.emotion-0:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-0:enabled {
+  cursor: pointer;
+}
+
+.emotion-0:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-0:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-0:hover:enabled {
+  background-color: #FAFAFA;
+  color: #222222;
+}
+
+.emotion-0:active:enabled {
+  color: #222222;
+  background-color: #EEEEEE;
+}
+
+.emotion-0:focus:enabled {
+  color: #4466EE;
+}
+
+.emotion-0:disabled {
+  background: none;
+  color: #BBBBBB;
+}
+
+<button
+  className="emotion-0 emotion-1"
+  disabled={true}
+  size="large"
+>
+  Button Label
+</button>
+`;
+
+exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  border: 1px solid transparent;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+.emotion-0:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-0:enabled {
+  cursor: pointer;
+}
+
+.emotion-0:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-0:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-0:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+.emotion-0:hover:enabled {
+  background-color: #5577FF;
+  box-shadow: 0 2px 6px rgba(68,102,238,0.2);
+}
+
+.emotion-0:active:enabled {
+  background: #4455CC;
+}
+
+<button
+  className="emotion-0 emotion-1"
+  disabled={true}
+  size="large"
+>
+  Button Label
+</button>
+`;
+
+exports[`<Button /> Variants properly renders a disabled secondary button 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  border: 1px solid transparent;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #FFFFFF;
+  color: #222222;
+  font-weight: 400;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1),0 1px 0 rgba(0,0,0,0.05);
+  border: 1px solid #EEEEEE;
+}
+
+.emotion-0:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-0:enabled {
+  cursor: pointer;
+}
+
+.emotion-0:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-0:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-0:hover:enabled {
+  color: #4466EE;
+  box-shadow: 0 1px 7px rgba(0,0,0,0.1);
+}
+
+.emotion-0:active:enabled {
+  color: #4455CC;
+  background-color: #FAFAFA;
+  border: none;
+}
+
+.emotion-0:focus:enabled {
+  outline: #4455CC;
+  border: 1px solid #EEEEEE;
+  color: #222222;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+<button
+  className="emotion-0 emotion-1"
+  disabled={true}
+  size="large"
+>
+  Button Label
+</button>
+`;
+
+exports[`<Button /> Variants properly renders a minimal button 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  border: 1px solid transparent;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background: none;
+  border: 1px solid transparent;
+  color: #666666;
+}
+
+.emotion-0:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-0:enabled {
+  cursor: pointer;
+}
+
+.emotion-0:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-0:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-0:hover:enabled {
+  background-color: #FAFAFA;
+  color: #222222;
+}
+
+.emotion-0:active:enabled {
+  color: #222222;
+  background-color: #EEEEEE;
+}
+
+.emotion-0:focus:enabled {
+  color: #4466EE;
+}
+
+.emotion-0:disabled {
+  background: none;
+  color: #BBBBBB;
+}
+
+<button
+  className="emotion-0 emotion-1"
+  disabled={false}
+  size="large"
+>
+  Button Label
+</button>
+`;
+
+exports[`<Button /> Variants properly renders a primary button 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  border: 1px solid transparent;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+.emotion-0:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-0:enabled {
+  cursor: pointer;
+}
+
+.emotion-0:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-0:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-0:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+.emotion-0:hover:enabled {
+  background-color: #5577FF;
+  box-shadow: 0 2px 6px rgba(68,102,238,0.2);
+}
+
+.emotion-0:active:enabled {
+  background: #4455CC;
+}
+
+<button
+  className="emotion-0 emotion-1"
+  disabled={false}
+  size="large"
+>
+  Button Label
+</button>
+`;
+
+exports[`<Button /> Variants properly renders a secondary button 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  border: 1px solid transparent;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #FFFFFF;
+  color: #222222;
+  font-weight: 400;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1),0 1px 0 rgba(0,0,0,0.05);
+  border: 1px solid #EEEEEE;
+}
+
+.emotion-0:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-0:enabled {
+  cursor: pointer;
+}
+
+.emotion-0:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-0:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-0:hover:enabled {
+  color: #4466EE;
+  box-shadow: 0 1px 7px rgba(0,0,0,0.1);
+}
+
+.emotion-0:active:enabled {
+  color: #4455CC;
+  background-color: #FAFAFA;
+  border: none;
+}
+
+.emotion-0:focus:enabled {
+  outline: #4455CC;
+  border: 1px solid #EEEEEE;
+  color: #222222;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+<button
+  className="emotion-0 emotion-1"
+  disabled={false}
+  size="large"
+>
+  Button Label
 </button>
 `;
