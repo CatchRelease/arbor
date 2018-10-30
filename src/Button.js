@@ -1,33 +1,84 @@
+import React from 'react';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { rem, transparentize } from 'polished';
 
-const sizeStyles = ({ theme, size }) => {
+const verticalAlignSmall = '-4px';
+const verticalAlignSmaller = '-6px';
+
+const sizeStyles = ({ theme, size, text }) => {
   const sizeMap = {
     small: {
       padding: `0 ${theme.space.smaller}`,
       height: rem('24px'),
-      fontSize: theme.fontSizes.size1
+      fontSize: theme.fontSizes.size1,
+      i: {
+        fontSize: rem('24px'),
+        verticalAlign: text === undefined ? 0 : verticalAlignSmall
+      }
     },
     medium: {
       padding: `0 ${theme.space.smaller}`,
       height: rem('32px'),
-      fontSize: theme.fontSizes.size2
+      fontSize: theme.fontSizes.size2,
+      i: {
+        fontSize: rem('24px'),
+        verticalAlign: verticalAlignSmall
+      }
     },
     large: {
       padding: `0 ${theme.space.regular}`,
       height: rem('40px'),
-      fontSize: theme.fontSizes.size2
+      fontSize: theme.fontSizes.size2,
+      i: {
+        fontSize: rem('32px'),
+        verticalAlign: verticalAlignSmaller
+      }
     },
     jumbo: {
       padding: `0 ${theme.space.regular}`,
       height: rem('48px'),
-      fontSize: theme.fontSizes.size2
+      fontSize: theme.fontSizes.size2,
+      i: {
+        fontSize: rem('32px'),
+        verticalAlign: verticalAlignSmaller
+      }
     }
   };
 
   return sizeMap[size];
 };
+
+const iconStyles = ({ theme, size, iconStart, text }) => {
+  const sizeMap = {
+    small: {
+      paddingLeft: 0,
+      paddingRight: text === undefined ? 0 : undefined
+    },
+    medium: {
+      paddingLeft: theme.space.smallest,
+      paddingRight: text === undefined ? theme.space.smallest : undefined
+    },
+    large: {
+      paddingLeft: theme.space.smallest,
+      paddingRight: text === undefined ? theme.space.smallest : undefined
+    },
+    jumbo: {
+      paddingLeft: theme.space.smaller,
+      paddingRight: text === undefined ? theme.space.smaller : undefined
+    }
+  };
+
+  return iconStart && sizeMap[size];
+};
+
+const iconOnlyStyles = ({ text }) =>
+  text === undefined &&
+  css`
+    i {
+      margin-right: 0;
+    }
+  `;
 
 const variantStyles = ({ theme, variant }) => {
   const variantMap = {
@@ -109,15 +160,16 @@ const fullWidthStyles = ({ fullWidth }) =>
     width: 100%;
   `;
 
-const Button = styled.button`
+const StyledButton = styled.button`
   font-family: ${props => props.theme.brandFont};
-  border: 1px solid transparent;
+  border: none;
   font-weight: ${props => props.theme.fontWeights.medium};
   line-height: ${props => props.theme.lineHeights.large};
   outline: none;
   transition: box-shadow 0.3s ease, background 0.2s ease;
   border-radius: ${props => props.theme.borderRadius.small};
   margin-top: ${props => props.theme.space.regular};
+  text-align: center;
 
   &:disabled {
     background: ${props => props.theme.colors.grey20};
@@ -138,10 +190,23 @@ const Button = styled.button`
     border: 1px solid ${props => props.theme.colors.blueDark};
   }
 
+  i {
+    margin-right: ${props => props.theme.space.smallest};
+  }
+
   ${sizeStyles};
   ${variantStyles};
   ${fullWidthStyles};
+  ${iconStyles};
+  ${iconOnlyStyles};
 `;
+
+const Button = ({ iconStart, children, ...props }) => (
+  <StyledButton {...{ ...props, iconStart, text: children }}>
+    {iconStart}
+    {children}
+  </StyledButton>
+);
 
 Button.propTypes = {
   /**
@@ -163,14 +228,17 @@ Button.propTypes = {
    * Property to set for a button to take the full width of it's parent
    * container.
    * */
-  fullWidth: PropTypes.bool
+  fullWidth: PropTypes.bool,
+
+  iconStart: PropTypes.element
 };
 
 Button.defaultProps = {
   disabled: false,
   size: 'large',
   variant: 'primary',
-  fullWidth: false
+  fullWidth: false,
+  iconStart: undefined
 };
 
 export default Button;

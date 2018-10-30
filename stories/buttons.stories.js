@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Button, Heading } from '../src';
+import { Box, Button, Heading, Icon } from '../src';
 
 const SizeGrid = styled.div`
   display: grid;
@@ -14,6 +14,9 @@ const ButtonGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px 138px;
 `;
+
+const icon = <Icon name="cr-logo" />;
+const icon2 = <Icon name="download" />;
 
 storiesOf('Buttons', module).add('default', () => (
   <div style={{ padding: '10px', width: '500px' }}>
@@ -49,10 +52,52 @@ storiesOf('Buttons', module).add('default', () => (
       </Button>
     </ButtonGrid>
 
-    <Box width="500px">
+    <Box width="500px" my="regular">
       <Button fullWidth variant="primary">
         Full width button
       </Button>
     </Box>
+
+    <Button iconStart={icon} size="small" variant="primary">
+      Button Label
+    </Button>
+
+    <br />
+
+    <Button iconStart={icon} size="medium" variant="primary">
+      Button Label
+    </Button>
+
+    <br />
+
+    <Button iconStart={icon} size="large" variant="primary">
+      Button Label
+    </Button>
+
+    <br />
+
+    <Button iconStart={icon} size="jumbo" variant="primary">
+      Button Label
+    </Button>
+
+    <div>
+      <Button iconStart={icon} size="small" variant="primary" />
+      <br />
+      <Button iconStart={icon} size="medium" variant="primary" />
+      <br />
+      <Button iconStart={icon} size="large" variant="primary" />
+      <br />
+      <Button iconStart={icon} size="jumbo" variant="primary" />
+    </div>
+
+    <div>
+      <Button iconStart={icon2} size="small" variant="primary" />
+      <br />
+      <Button iconStart={icon2} size="medium" variant="primary" />
+      <br />
+      <Button iconStart={icon2} size="large" variant="primary" />
+      <br />
+      <Button iconStart={icon2} size="jumbo" variant="primary" />
+    </div>
   </div>
 ));

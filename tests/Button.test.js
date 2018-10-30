@@ -1,6 +1,7 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
+import { Icon } from '../src/Icon';
 import { Button, theme } from '../src';
 
 describe('<Button />', () => {
@@ -38,6 +39,19 @@ describe('<Button />', () => {
         );
 
         expect(button).toMatchSnapshot();
+      });
+
+      describe('iconStart', () => {
+        it('properly renders a button with an iconStart', () => {
+          const icon = <Icon theme={theme} name="cr-logo" />;
+          const button = create(
+            <Button theme={theme} iconStart={icon}>
+              Button with Icon
+            </Button>
+          );
+
+          expect(button).toMatchSnapshot();
+        });
       });
     });
   });

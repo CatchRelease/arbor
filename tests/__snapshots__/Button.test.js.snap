@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
-.emotion-0 {
+exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 1`] = `
+.emotion-2 {
   font-family: Motiva Sans;
-  border: 1px solid transparent;
+  border: none;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
@@ -11,6 +11,303 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   transition: box-shadow 0.3s ease,background 0.2s ease;
   border-radius: 3px;
   margin-top: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
+  padding-left: 0.25rem;
+}
+
+.emotion-2:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-2:enabled {
+  cursor: pointer;
+}
+
+.emotion-2:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-2:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-2 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-2 i {
+  font-size: 2rem;
+  vertical-align: -6px;
+}
+
+.emotion-2:hover:enabled {
+  background-color: #5577FF;
+  box-shadow: 0 2px 6px rgba(68,102,238,0.2);
+}
+
+.emotion-2:active:enabled {
+  background: #4455CC;
+}
+
+.emotion-2:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+<button
+  className="emotion-2 emotion-3"
+  disabled={false}
+  size="large"
+>
+  <i
+    className="fa fa-cr-logo emotion-0 emotion-1"
+  />
+  Button with Icon
+</button>
+`;
+
+exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 2`] = `
+.emotion-2 {
+  font-family: Motiva Sans;
+  border: none;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
+  padding-left: 0.25rem;
+}
+
+.emotion-2:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-2:enabled {
+  cursor: pointer;
+}
+
+.emotion-2:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-2:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-2 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-2 i {
+  font-size: 2rem;
+  vertical-align: -6px;
+}
+
+.emotion-2:hover:enabled {
+  background-color: #5577FF;
+  box-shadow: 0 2px 6px rgba(68,102,238,0.2);
+}
+
+.emotion-2:active:enabled {
+  background: #4455CC;
+}
+
+.emotion-2:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+<button
+  className="emotion-2 emotion-3"
+  disabled={false}
+  size="large"
+>
+  <i
+    className="fa fa-cr-logo emotion-0 emotion-1"
+  />
+  Button with Icon
+</button>
+`;
+
+exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 3`] = `
+.emotion-2 {
+  font-family: Motiva Sans;
+  border: none;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
+  padding-left: 0.25rem;
+}
+
+.emotion-2:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-2:enabled {
+  cursor: pointer;
+}
+
+.emotion-2:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-2:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-2 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-2 i {
+  font-size: 2rem;
+  vertical-align: -6px;
+}
+
+.emotion-2:hover:enabled {
+  background-color: #5577FF;
+  box-shadow: 0 2px 6px rgba(68,102,238,0.2);
+}
+
+.emotion-2:active:enabled {
+  background: #4455CC;
+}
+
+.emotion-2:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+<button
+  className="emotion-2 emotion-3"
+  disabled={false}
+  size="large"
+>
+  <i
+    className="fa fa-cr-logo emotion-0 emotion-1"
+  />
+  Button with Icon
+</button>
+`;
+
+exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 4`] = `
+.emotion-2 {
+  font-family: Motiva Sans;
+  border: none;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(68,102,238,0.3),inset 0 -1px 0 rgba(0,0,0,0.1);
+  padding-left: 0.25rem;
+}
+
+.emotion-2:disabled {
+  background: #DDDDDD;
+  color: #AAAAAA;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.emotion-2:enabled {
+  cursor: pointer;
+}
+
+.emotion-2:active:enabled {
+  box-shadow: none;
+}
+
+.emotion-2:focus:enabled {
+  border: 1px solid #4455CC;
+}
+
+.emotion-2 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-2 i {
+  font-size: 2rem;
+  vertical-align: -6px;
+}
+
+.emotion-2:hover:enabled {
+  background-color: #5577FF;
+  box-shadow: 0 2px 6px rgba(68,102,238,0.2);
+}
+
+.emotion-2:active:enabled {
+  background: #4455CC;
+}
+
+.emotion-2:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+<button
+  className="emotion-2 emotion-3"
+  disabled={false}
+  size="large"
+>
+  <i
+    className="fa fa-cr-logo emotion-0 emotion-1"
+  />
+  Button with Icon
+</button>
+`;
+
+exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  border: none;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  border-radius: 3px;
+  margin-top: 1rem;
+  text-align: center;
   padding: 0 1rem;
   height: 3rem;
   font-size: 0.875rem;
@@ -38,6 +335,15 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   border: 1px solid #4455CC;
 }
 
+.emotion-0 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-0 i {
+  font-size: 2rem;
+  vertical-align: -6px;
+}
+
 .emotion-0:hover:enabled {
   background-color: #5577FF;
   box-shadow: 0 2px 6px rgba(68,102,238,0.2);
@@ -63,7 +369,7 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 exports[`<Button /> Sizes properly renders a large sized button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  border: 1px solid transparent;
+  border: none;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
@@ -71,6 +377,7 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   transition: box-shadow 0.3s ease,background 0.2s ease;
   border-radius: 3px;
   margin-top: 1rem;
+  text-align: center;
   padding: 0 1rem;
   height: 2.5rem;
   font-size: 0.875rem;
@@ -96,6 +403,15 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
 
 .emotion-0:focus:enabled {
   border: 1px solid #4455CC;
+}
+
+.emotion-0 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-0 i {
+  font-size: 2rem;
+  vertical-align: -6px;
 }
 
 .emotion-0:hover:enabled {
@@ -123,7 +439,7 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
 exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  border: 1px solid transparent;
+  border: none;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
@@ -131,6 +447,7 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   transition: box-shadow 0.3s ease,background 0.2s ease;
   border-radius: 3px;
   margin-top: 1rem;
+  text-align: center;
   padding: 0 0.5rem;
   height: 2rem;
   font-size: 0.875rem;
@@ -158,6 +475,15 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   border: 1px solid #4455CC;
 }
 
+.emotion-0 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-0 i {
+  font-size: 1.5rem;
+  vertical-align: -4px;
+}
+
 .emotion-0:hover:enabled {
   background-color: #5577FF;
   box-shadow: 0 2px 6px rgba(68,102,238,0.2);
@@ -183,7 +509,7 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
 exports[`<Button /> Sizes properly renders a small sized button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  border: 1px solid transparent;
+  border: none;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
@@ -191,6 +517,7 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   transition: box-shadow 0.3s ease,background 0.2s ease;
   border-radius: 3px;
   margin-top: 1rem;
+  text-align: center;
   padding: 0 0.5rem;
   height: 1.5rem;
   font-size: 0.75rem;
@@ -218,6 +545,15 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   border: 1px solid #4455CC;
 }
 
+.emotion-0 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-0 i {
+  font-size: 1.5rem;
+  vertical-align: -4px;
+}
+
 .emotion-0:hover:enabled {
   background-color: #5577FF;
   box-shadow: 0 2px 6px rgba(68,102,238,0.2);
@@ -243,7 +579,7 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
 exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  border: 1px solid transparent;
+  border: none;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
@@ -251,6 +587,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   transition: box-shadow 0.3s ease,background 0.2s ease;
   border-radius: 3px;
   margin-top: 1rem;
+  text-align: center;
   padding: 0 1rem;
   height: 2.5rem;
   font-size: 0.875rem;
@@ -276,6 +613,15 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 
 .emotion-0:focus:enabled {
   border: 1px solid #4455CC;
+}
+
+.emotion-0 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-0 i {
+  font-size: 2rem;
+  vertical-align: -6px;
 }
 
 .emotion-0:hover:enabled {
@@ -309,7 +655,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  border: 1px solid transparent;
+  border: none;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
@@ -317,6 +663,7 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   transition: box-shadow 0.3s ease,background 0.2s ease;
   border-radius: 3px;
   margin-top: 1rem;
+  text-align: center;
   padding: 0 1rem;
   height: 2.5rem;
   font-size: 0.875rem;
@@ -344,6 +691,15 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   border: 1px solid #4455CC;
 }
 
+.emotion-0 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-0 i {
+  font-size: 2rem;
+  vertical-align: -6px;
+}
+
 .emotion-0:hover:enabled {
   background-color: #5577FF;
   box-shadow: 0 2px 6px rgba(68,102,238,0.2);
@@ -369,7 +725,7 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
 exports[`<Button /> Variants properly renders a disabled secondary button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  border: 1px solid transparent;
+  border: none;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
@@ -377,6 +733,7 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
   transition: box-shadow 0.3s ease,background 0.2s ease;
   border-radius: 3px;
   margin-top: 1rem;
+  text-align: center;
   padding: 0 1rem;
   height: 2.5rem;
   font-size: 0.875rem;
@@ -404,6 +761,15 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
 
 .emotion-0:focus:enabled {
   border: 1px solid #4455CC;
+}
+
+.emotion-0 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-0 i {
+  font-size: 2rem;
+  vertical-align: -6px;
 }
 
 .emotion-0:hover:enabled {
@@ -436,7 +802,7 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
 exports[`<Button /> Variants properly renders a minimal button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  border: 1px solid transparent;
+  border: none;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
@@ -444,6 +810,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
   transition: box-shadow 0.3s ease,background 0.2s ease;
   border-radius: 3px;
   margin-top: 1rem;
+  text-align: center;
   padding: 0 1rem;
   height: 2.5rem;
   font-size: 0.875rem;
@@ -469,6 +836,15 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 
 .emotion-0:focus:enabled {
   border: 1px solid #4455CC;
+}
+
+.emotion-0 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-0 i {
+  font-size: 2rem;
+  vertical-align: -6px;
 }
 
 .emotion-0:hover:enabled {
@@ -502,7 +878,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 exports[`<Button /> Variants properly renders a primary button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  border: 1px solid transparent;
+  border: none;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
@@ -510,6 +886,7 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   transition: box-shadow 0.3s ease,background 0.2s ease;
   border-radius: 3px;
   margin-top: 1rem;
+  text-align: center;
   padding: 0 1rem;
   height: 2.5rem;
   font-size: 0.875rem;
@@ -537,6 +914,15 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   border: 1px solid #4455CC;
 }
 
+.emotion-0 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-0 i {
+  font-size: 2rem;
+  vertical-align: -6px;
+}
+
 .emotion-0:hover:enabled {
   background-color: #5577FF;
   box-shadow: 0 2px 6px rgba(68,102,238,0.2);
@@ -562,7 +948,7 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
 exports[`<Button /> Variants properly renders a secondary button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  border: 1px solid transparent;
+  border: none;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
@@ -570,6 +956,7 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
   transition: box-shadow 0.3s ease,background 0.2s ease;
   border-radius: 3px;
   margin-top: 1rem;
+  text-align: center;
   padding: 0 1rem;
   height: 2.5rem;
   font-size: 0.875rem;
@@ -597,6 +984,15 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
 
 .emotion-0:focus:enabled {
   border: 1px solid #4455CC;
+}
+
+.emotion-0 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-0 i {
+  font-size: 2rem;
+  vertical-align: -6px;
 }
 
 .emotion-0:hover:enabled {
@@ -629,7 +1025,7 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
 exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  border: 1px solid transparent;
+  border: none;
   font-weight: 600;
   line-height: 1.5;
   outline: none;
@@ -637,6 +1033,7 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
   transition: box-shadow 0.3s ease,background 0.2s ease;
   border-radius: 3px;
   margin-top: 1rem;
+  text-align: center;
   padding: 0 1rem;
   height: 2.5rem;
   font-size: 0.875rem;
@@ -663,6 +1060,15 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
 
 .emotion-0:focus:enabled {
   border: 1px solid #4455CC;
+}
+
+.emotion-0 i {
+  margin-right: 0.25rem;
+}
+
+.emotion-0 i {
+  font-size: 2rem;
+  vertical-align: -6px;
 }
 
 .emotion-0:hover:enabled {
