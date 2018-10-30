@@ -38,17 +38,17 @@ const variantStyles = ({ theme, variant }) => {
         0.7,
         theme.colors.blue
       )}, inset 0 -1px 0 ${transparentize(0.9, theme.colors.black)}`,
-      '&:focus:enabled': {
-        boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 2px ${
-          theme.colors.blueDark
-        }`
-      },
       '&:hover:enabled': {
         backgroundColor: theme.colors.blueLight,
         boxShadow: `0 2px 6px ${transparentize(0.8, theme.colors.blue)}`
       },
       '&:active:enabled': {
         background: theme.colors.blueDark
+      },
+      '&:focus:enabled': {
+        boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 2px ${
+          theme.colors.blueDark
+        }`
       }
     },
     secondary: {
