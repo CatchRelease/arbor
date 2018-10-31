@@ -41,4 +41,16 @@ describe('<Button />', () => {
       });
     });
   });
+
+  describe('fullWidth', () => {
+    it('properly renders a fullWidth button', () => {
+      const button = create(
+        <Button theme={theme} fullWidth>
+          Full Width
+        </Button>
+      );
+
+      expect(button).toMatchSnapshot();
+    });
+  });
 });

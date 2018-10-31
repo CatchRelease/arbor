@@ -1,4 +1,4 @@
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { rem, transparentize } from 'polished';
 
@@ -103,6 +103,12 @@ const variantStyles = ({ theme, variant }) => {
   return variantMap[variant];
 };
 
+const fullWidthStyles = ({ fullWidth }) =>
+  fullWidth &&
+  css`
+    width: 100%;
+  `;
+
 const Button = styled.button`
   font-family: ${props => props.theme.brandFont};
   border: 1px solid transparent;
@@ -134,6 +140,7 @@ const Button = styled.button`
 
   ${sizeStyles};
   ${variantStyles};
+  ${fullWidthStyles};
 `;
 
 Button.propTypes = {
@@ -150,13 +157,20 @@ Button.propTypes = {
   /**
    * Button variant.
    * */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'minimal'])
+  variant: PropTypes.oneOf(['primary', 'secondary', 'minimal']),
+
+  /**
+   * Property to set for a button to take the full width of it's parent
+   * container.
+   * */
+  fullWidth: PropTypes.bool
 };
 
 Button.defaultProps = {
   disabled: false,
   size: 'large',
-  variant: 'primary'
+  variant: 'primary',
+  fullWidth: false
 };
 
 export default Button;

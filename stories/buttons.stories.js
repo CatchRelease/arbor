@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'react-emotion';
 import { storiesOf } from '@storybook/react';
 
-import { Button, Heading } from '../src';
+import { Box, Button, Heading } from '../src';
 
 const SizeGrid = styled.div`
   display: grid;
@@ -48,5 +48,11 @@ storiesOf('Buttons', module).add('default', () => (
         Minimal
       </Button>
     </ButtonGrid>
+
+    <Box width="500px">
+      <Button fullWidth variant="primary">
+        Full width button
+      </Button>
+    </Box>
   </div>
 ));
