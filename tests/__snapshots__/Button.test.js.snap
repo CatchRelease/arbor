@@ -38,10 +38,6 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   border: 1px solid #4455CC;
 }
 
-.emotion-0:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
-}
-
 .emotion-0:hover:enabled {
   background-color: #5577FF;
   box-shadow: 0 2px 6px rgba(68,102,238,0.2);
@@ -49,6 +45,10 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 
 .emotion-0:active:enabled {
   background: #4455CC;
+}
+
+.emotion-0:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
 }
 
 <button
@@ -98,10 +98,6 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   border: 1px solid #4455CC;
 }
 
-.emotion-0:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
-}
-
 .emotion-0:hover:enabled {
   background-color: #5577FF;
   box-shadow: 0 2px 6px rgba(68,102,238,0.2);
@@ -109,6 +105,10 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
 
 .emotion-0:active:enabled {
   background: #4455CC;
+}
+
+.emotion-0:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
 }
 
 <button
@@ -158,10 +158,6 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   border: 1px solid #4455CC;
 }
 
-.emotion-0:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
-}
-
 .emotion-0:hover:enabled {
   background-color: #5577FF;
   box-shadow: 0 2px 6px rgba(68,102,238,0.2);
@@ -169,6 +165,10 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
 
 .emotion-0:active:enabled {
   background: #4455CC;
+}
+
+.emotion-0:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
 }
 
 <button
@@ -218,10 +218,6 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   border: 1px solid #4455CC;
 }
 
-.emotion-0:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
-}
-
 .emotion-0:hover:enabled {
   background-color: #5577FF;
   box-shadow: 0 2px 6px rgba(68,102,238,0.2);
@@ -229,6 +225,10 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
 
 .emotion-0:active:enabled {
   background: #4455CC;
+}
+
+.emotion-0:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
 }
 
 <button
@@ -344,10 +344,6 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   border: 1px solid #4455CC;
 }
 
-.emotion-0:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
-}
-
 .emotion-0:hover:enabled {
   background-color: #5577FF;
   box-shadow: 0 2px 6px rgba(68,102,238,0.2);
@@ -355,6 +351,10 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
 
 .emotion-0:active:enabled {
   background: #4455CC;
+}
+
+.emotion-0:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
 }
 
 <button
@@ -537,10 +537,6 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   border: 1px solid #4455CC;
 }
 
-.emotion-0:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
-}
-
 .emotion-0:hover:enabled {
   background-color: #5577FF;
   box-shadow: 0 2px 6px rgba(68,102,238,0.2);
@@ -548,6 +544,10 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
 
 .emotion-0:active:enabled {
   background: #4455CC;
+}
+
+.emotion-0:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
 }
 
 <button
