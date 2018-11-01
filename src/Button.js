@@ -89,6 +89,9 @@ const variantStyles = ({ theme, variant }) => {
         0.7,
         theme.colors.blue
       )}, inset 0 -1px 0 ${transparentize(0.9, theme.colors.black)}`,
+      '&:enabled': {
+        border: `1px solid ${theme.colors.blue}`
+      },
       '&:hover:enabled': {
         backgroundColor: theme.colors.blueLight,
         boxShadow: `0 2px 6px ${transparentize(0.8, theme.colors.blue)}`
