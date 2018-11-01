@@ -110,7 +110,9 @@ const variantStyles = ({ theme, variant }) => {
         0.9,
         theme.colors.black
       )}, 0 1px 0 ${transparentize(0.95, theme.colors.black)}`,
-      border: `1px solid ${theme.colors.grey10}`,
+      '&:enabled': {
+        border: `1px solid ${theme.colors.grey10}`
+      },
       '&:hover:enabled': {
         color: theme.colors.blue,
         boxShadow: `0 1px 7px ${transparentize(0.9, theme.colors.black)}`
