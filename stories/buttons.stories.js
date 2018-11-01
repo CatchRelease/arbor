@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 import { storiesOf } from '@storybook/react';
+import { withKnobs, select } from '@storybook/addon-knobs';
 
 import { Box, Button, Heading, Icon } from '../src';
 
@@ -9,16 +10,28 @@ const SizeGrid = styled.div`
   grid-template-columns: repeat(4, max-content);
   grid-gap: 10px 138px;
 `;
+
 const ButtonGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px 138px;
 `;
 
+const ButtonTable = styled.table`
+  width: 100%;
+
+  td {
+    padding: 10px;
+  }
+`;
+
 const icon = <Icon name="cr-logo" />;
 const icon2 = <Icon name="download" />;
 
-storiesOf('Buttons', module).add('default', () => (
+const stories = storiesOf('Buttons', module);
+stories.addDecorator(withKnobs);
+
+stories.add('default', () => (
   <div style={{ padding: '10px', width: '500px' }}>
     <Heading.h1>Sizes</Heading.h1>
 
@@ -57,47 +70,195 @@ storiesOf('Buttons', module).add('default', () => (
         Full width button
       </Button>
     </Box>
-
-    <Button iconStart={icon} size="small" variant="primary">
-      Button Label
-    </Button>
-
-    <br />
-
-    <Button iconStart={icon} size="medium" variant="primary">
-      Button Label
-    </Button>
-
-    <br />
-
-    <Button iconStart={icon} size="large" variant="primary">
-      Button Label
-    </Button>
-
-    <br />
-
-    <Button iconStart={icon} size="jumbo" variant="primary">
-      Button Label
-    </Button>
-
-    <div>
-      <Button iconStart={icon} size="small" variant="primary" />
-      <br />
-      <Button iconStart={icon} size="medium" variant="primary" />
-      <br />
-      <Button iconStart={icon} size="large" variant="primary" />
-      <br />
-      <Button iconStart={icon} size="jumbo" variant="primary" />
-    </div>
-
-    <div>
-      <Button iconStart={icon2} size="small" variant="primary" />
-      <br />
-      <Button iconStart={icon2} size="medium" variant="primary" />
-      <br />
-      <Button iconStart={icon2} size="large" variant="primary" />
-      <br />
-      <Button iconStart={icon2} size="jumbo" variant="primary" />
-    </div>
   </div>
+));
+
+const variantOptions = ['primary', 'secondary', 'minimal'];
+
+stories.add('Icon button', () => (
+  <Box m="regular">
+    <ButtonTable>
+      <thead>
+        <tr className={css({ marginBottom: '10px' })}>
+          <th>
+            <Heading.h3 textAlign="left">iconStart</Heading.h3>
+          </th>
+          <th>
+            <Heading.h3 textAlign="left">iconEnd</Heading.h3>
+          </th>
+          <th>
+            <Heading.h3 textAlign="left">iconStart and iconEnd</Heading.h3>
+          </th>
+          <th>
+            <Heading.h3 textAlign="left">Icon Only</Heading.h3>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr className={css({ marginBottom: '10px' })}>
+          <td>
+            <Button
+              iconStart={icon}
+              size="small"
+              variant={select('Variant', variantOptions)}
+            >
+              Button Label
+            </Button>
+          </td>
+
+          <td>
+            <Button
+              size="small"
+              variant={select('Variant', variantOptions)}
+              iconEnd={icon2}
+            >
+              Button label
+            </Button>
+          </td>
+
+          <td>
+            <Button
+              iconStart={icon}
+              size="small"
+              variant={select('Variant', variantOptions)}
+              iconEnd={icon2}
+            >
+              Button label
+            </Button>
+          </td>
+          <td>
+            <Button
+              iconStart={icon}
+              size="small"
+              variant={select('Variant', variantOptions)}
+            />
+          </td>
+        </tr>
+
+        <tr className={css({ marginBottom: '10px' })}>
+          <td>
+            <Button
+              iconStart={icon}
+              size="medium"
+              variant={select('Variant', variantOptions)}
+            >
+              Button Label
+            </Button>
+          </td>
+
+          <td>
+            <Button
+              size="medium"
+              variant={select('Variant', variantOptions)}
+              iconEnd={icon2}
+            >
+              Button label
+            </Button>
+          </td>
+
+          <td>
+            <Button
+              iconStart={icon}
+              size="medium"
+              variant={select('Variant', variantOptions)}
+              iconEnd={icon2}
+            >
+              Button label
+            </Button>
+          </td>
+
+          <td>
+            <Button
+              iconStart={icon}
+              size="medium"
+              variant={select('Variant', variantOptions)}
+            />
+          </td>
+        </tr>
+
+        <tr className={css({ marginBottom: '10px' })}>
+          <td>
+            <Button
+              iconStart={icon}
+              size="large"
+              variant={select('Variant', variantOptions)}
+            >
+              Button Label
+            </Button>
+          </td>
+
+          <td>
+            <Button
+              size="large"
+              variant={select('Variant', variantOptions)}
+              iconEnd={icon2}
+            >
+              Button label
+            </Button>
+          </td>
+
+          <td>
+            <Button
+              iconStart={icon}
+              size="large"
+              variant={select('Variant', variantOptions)}
+              iconEnd={icon2}
+            >
+              Button label
+            </Button>
+          </td>
+
+          <td>
+            <Button
+              iconStart={icon}
+              size="large"
+              variant={select('Variant', variantOptions)}
+            />
+          </td>
+        </tr>
+
+        <tr className={css({ marginBottom: '10px' })}>
+          <td>
+            <Button
+              iconStart={icon}
+              size="jumbo"
+              variant={select('Variant', variantOptions)}
+            >
+              Button Label
+            </Button>
+          </td>
+
+          <td>
+            <Button
+              size="jumbo"
+              variant={select('Variant', variantOptions)}
+              iconEnd={icon2}
+            >
+              Button label
+            </Button>
+          </td>
+
+          <td>
+            <Button
+              iconStart={icon}
+              size="jumbo"
+              variant={select('Variant', variantOptions)}
+              iconEnd={icon2}
+            >
+              Button label
+            </Button>
+          </td>
+
+          <td>
+            <Button
+              iconStart={icon}
+              size="jumbo"
+              variant={select('Variant', variantOptions)}
+            />
+          </td>
+        </tr>
+      </tbody>
+    </ButtonTable>
+  </Box>
 ));

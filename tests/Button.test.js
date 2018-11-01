@@ -45,7 +45,39 @@ describe('<Button />', () => {
         it('properly renders a button with an iconStart', () => {
           const icon = <Icon theme={theme} name="cr-logo" />;
           const button = create(
-            <Button theme={theme} iconStart={icon}>
+            <Button theme={theme} size={size} iconStart={icon}>
+              Button with Icon
+            </Button>
+          );
+
+          expect(button).toMatchSnapshot();
+        });
+      });
+
+      describe('iconEnd', () => {
+        it('properly renders a button with an iconEnd', () => {
+          const icon = <Icon theme={theme} name="cr-logo" />;
+          const button = create(
+            <Button theme={theme} size={size} iconEnd={icon}>
+              Button with Icon
+            </Button>
+          );
+
+          expect(button).toMatchSnapshot();
+        });
+      });
+
+      describe('iconStart and iconEnd', () => {
+        it('properly renders a button with an iconStart and an iconEdn', () => {
+          const iconStart = <Icon theme={theme} name="cr-logo" />;
+          const iconEnd = <Icon theme={theme} name="download" />;
+          const button = create(
+            <Button
+              theme={theme}
+              size={size}
+              iconStart={iconStart}
+              iconEnd={iconEnd}
+            >
               Button with Icon
             </Button>
           );

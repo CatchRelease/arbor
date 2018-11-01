@@ -2,47 +2,100 @@ import React from 'react';
 import { space } from 'styled-system';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
-import { rem, transparentize } from 'polished';
+import { rem } from 'polished';
 
-const verticalAlignSmall = '-4px';
-const verticalAlignSmaller = '-6px';
+const calculatePadding = ({ xDefault, iconStart, iconEnd, theme, text }) => {
+  if (text === undefined || (iconStart && iconEnd)) {
+    return `0 ${theme.space.smallest}`;
+  }
 
-const sizeStyles = ({ theme, size, text }) => {
+  if (iconStart) {
+    return `0 ${xDefault} 0 ${theme.space.smallest}`;
+  }
+
+  if (iconEnd) {
+    return `0 ${theme.space.smallest} 0 ${xDefault}`;
+  }
+
+  return `0 ${xDefault}`;
+};
+
+const sizeStyles = ({ theme, iconStart, iconEnd, size, text }) => {
   const sizeMap = {
     small: {
-      padding: `0 ${theme.space.smaller}`,
+      padding: (() => {
+        if (text === undefined || (iconEnd && iconStart)) {
+          return 0;
+        }
+
+        if (iconStart) {
+          return `0 ${theme.space.smaller} 0 0`;
+        }
+
+        if (iconEnd) {
+          return `0 0 0 ${theme.space.smaller}`;
+        }
+
+        return `0 ${theme.space.smaller}`;
+      })(),
       height: rem('24px'),
       fontSize: theme.fontSizes.size1,
       i: {
-        fontSize: rem('24px'),
-        verticalAlign: text === undefined ? 0 : verticalAlignSmall
+        fontSize: rem('22px')
       }
     },
     medium: {
-      padding: `0 ${theme.space.smaller}`,
+      padding: calculatePadding({
+        iconStart,
+        iconEnd,
+        text,
+        theme,
+        xDefault: theme.space.smaller
+      }),
       height: rem('32px'),
       fontSize: theme.fontSizes.size2,
       i: {
-        fontSize: rem('24px'),
-        verticalAlign: verticalAlignSmall
+        fontSize: rem('24px')
       }
     },
     large: {
-      padding: `0 ${theme.space.regular}`,
+      padding: calculatePadding({
+        iconStart,
+        iconEnd,
+        text,
+        theme,
+        xDefault: theme.space.regular
+      }),
       height: rem('40px'),
       fontSize: theme.fontSizes.size2,
       i: {
-        fontSize: rem('32px'),
-        verticalAlign: verticalAlignSmaller
+        fontSize: rem('32px')
       }
     },
     jumbo: {
-      padding: `0 ${theme.space.regular}`,
+      padding: (() => {
+        if (text === undefined) {
+          return theme.space.smaller;
+        }
+
+        if (iconStart && iconEnd) {
+          return `0 ${theme.space.smallest}`;
+        }
+
+        if (iconStart) {
+          return `0 ${theme.space.regular} 0 ${theme.space.smallest}`;
+        }
+
+        if (iconEnd) {
+          return `0 ${theme.space.smallest} 0 ${theme.space.regular}`;
+        }
+
+        return `${theme.space.smaller} ${theme.space.regular}`;
+      })(),
       height: rem('48px'),
       fontSize: theme.fontSizes.size2,
       i: {
-        fontSize: rem('32px'),
-        verticalAlign: verticalAlignSmaller
+        fontSize: rem('32px')
       }
     }
   };
@@ -50,52 +103,13 @@ const sizeStyles = ({ theme, size, text }) => {
   return sizeMap[size];
 };
 
-const iconStyles = ({ theme, size, iconStart, text }) => {
-  const sizeMap = {
-    small: {
-      paddingLeft: 0,
-      paddingRight: text === undefined ? 0 : undefined
-    },
-    medium: {
-      paddingLeft: theme.space.smallest,
-      paddingRight: text === undefined ? theme.space.smallest : undefined
-    },
-    large: {
-      paddingLeft: theme.space.smallest,
-      paddingRight: text === undefined ? theme.space.smallest : undefined
-    },
-    jumbo: {
-      paddingLeft: theme.space.smaller,
-      paddingRight: text === undefined ? theme.space.smaller : undefined
-    }
-  };
-
-  return iconStart && sizeMap[size];
-};
-
-const iconOnlyStyles = ({ text }) =>
-  text === undefined &&
-  css`
-    i {
-      margin-right: 0;
-    }
-  `;
-
 const variantStyles = ({ theme, variant }) => {
   const variantMap = {
     primary: {
       backgroundColor: theme.colors.blue,
       color: theme.colors.white,
-      boxShadow: `0 1px 3px ${transparentize(
-        0.7,
-        theme.colors.blue
-      )}, inset 0 -1px 0 ${transparentize(0.9, theme.colors.black)}`,
-      '&:enabled': {
-        border: `1px solid ${theme.colors.blue}`
-      },
       '&:hover:enabled': {
-        backgroundColor: theme.colors.blueLight,
-        boxShadow: `0 2px 6px ${transparentize(0.8, theme.colors.blue)}`
+        backgroundColor: theme.colors.blueLight
       },
       '&:active:enabled': {
         background: theme.colors.blueDark
@@ -110,21 +124,16 @@ const variantStyles = ({ theme, variant }) => {
       backgroundColor: theme.colors.white,
       color: theme.colors.grey100,
       fontWeight: theme.fontWeights.regular,
-      boxShadow: `0 1px 3px ${transparentize(
-        0.9,
-        theme.colors.black
-      )}, 0 1px 0 ${transparentize(0.95, theme.colors.black)}`,
       '&:enabled': {
         border: `1px solid ${theme.colors.grey10}`
       },
       '&:hover:enabled': {
-        color: theme.colors.blue,
-        boxShadow: `0 1px 7px ${transparentize(0.9, theme.colors.black)}`
+        color: theme.colors.blue
       },
       '&:active:enabled': {
         color: theme.colors.blueDark,
         backgroundColor: theme.colors.white10,
-        border: 'none'
+        border: '1px solid transparent'
       },
       '&:focus:enabled': {
         outline: theme.colors.blueDark,
@@ -168,7 +177,7 @@ const fullWidthStyles = ({ fullWidth }) =>
 
 const StyledButton = styled.button`
   border-radius: ${props => props.theme.borderRadius.small};
-  border: none;
+  border: 1px solid transparent;
   font-family: ${props => props.theme.brandFont};
   font-weight: ${props => props.theme.fontWeights.medium};
   line-height: ${props => props.theme.lineHeights.large};
@@ -179,7 +188,6 @@ const StyledButton = styled.button`
   &:disabled {
     background: ${props => props.theme.colors.grey20};
     color: ${props => props.theme.colors.grey50};
-    box-shadow: none;
     cursor: not-allowed;
   }
 
@@ -187,30 +195,31 @@ const StyledButton = styled.button`
     cursor: pointer;
   }
 
-  &:active:enabled {
-    box-shadow: none;
-  }
-
-  &:focus:enabled {
-    border: 1px solid ${props => props.theme.colors.blueDark};
-  }
-
   i {
-    margin-right: ${props => props.theme.space.smallest};
+    vertical-align: middle;
   }
 
   ${sizeStyles};
   ${variantStyles};
   ${fullWidthStyles};
-  ${iconStyles};
-  ${iconOnlyStyles};
   ${space};
 `;
 
-const Button = ({ iconStart, children, ...props }) => (
-  <StyledButton {...{ ...props, iconStart, text: children }}>
+const ButtonText = styled.span`
+  margin-left: ${props =>
+    props.iconStart === undefined ? 0 : props.theme.space.smallest};
+  margin-right: ${props =>
+    props.iconEnd === undefined ? 0 : props.theme.space.smallest};
+  vertical-align: middle;
+`;
+
+const Button = ({ iconStart, iconEnd, children, ...props }) => (
+  <StyledButton {...{ ...props, iconStart, iconEnd, text: children }}>
     {iconStart}
-    {children}
+    {children && (
+      <ButtonText {...{ iconStart, iconEnd, ...props }}>{children}</ButtonText>
+    )}
+    {iconEnd}
   </StyledButton>
 );
 
@@ -238,6 +247,8 @@ Button.propTypes = {
 
   iconStart: PropTypes.element,
 
+  iconEnd: PropTypes.element,
+
   ...space.propTypes
 };
 
@@ -246,7 +257,8 @@ Button.defaultProps = {
   size: 'large',
   variant: 'primary',
   fullWidth: false,
-  iconStart: undefined
+  iconStart: undefined,
+  iconEnd: undefined
 };
 
 export default Button;
