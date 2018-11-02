@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link /> Variants properly renders a default Link 1`] = `
+.emotion-0 {
+  font-size: 0.875rem;
+  font-family: Motiva Sans;
+  line-height: 1.5;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #4466EE;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:focus {
+  outline-offset: 2px;
+}
+
+.emotion-0:visited {
+  color: #4466EE;
+}
+
+.emotion-0:hover {
+  color: #5577FF;
+}
+
+.emotion-0:active {
+  color: #4455CC;
+}
+
+.emotion-0:focus {
+  outline: 1px solid #4455CC;
+}
+
+<a
+  className="emotion-0 emotion-1"
+  fontSize="size2"
+  href="#test"
+>
+  Link
+</a>
+`;
+
+exports[`<Link /> Variants properly renders a muted Link 1`] = `
+.emotion-0 {
+  font-size: 0.875rem;
+  font-family: Motiva Sans;
+  line-height: 1.5;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #888888;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:focus {
+  outline-offset: 2px;
+}
+
+.emotion-0:visited {
+  color: #888888;
+}
+
+.emotion-0:hover {
+  color: #666666;
+}
+
+.emotion-0:active {
+  color: #444444;
+}
+
+.emotion-0:focus {
+  outline: 1px solid #222222;
+}
+
+<a
+  className="emotion-0 emotion-1"
+  fontSize="size2"
+  href="#test"
+>
+  Link
+</a>
+`;

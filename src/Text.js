@@ -1,5 +1,5 @@
 import styled, { css } from 'react-emotion';
-import { space, textAlign, color } from 'styled-system';
+import { color, fontSize, space, textAlign } from 'styled-system';
 
 const baseStyles = ({ theme }) => css`
   font-family: ${theme.brandFont};
@@ -7,16 +7,18 @@ const baseStyles = ({ theme }) => css`
 `;
 
 const Text = styled.p`
-  ${textAlign};
   ${color};
+  ${fontSize};
   ${space};
+  ${textAlign};
   ${baseStyles};
 `;
 
 Text.propTypes = {
   ...color.propTypes,
-  ...textAlign.propTypes,
-  ...space.propTypes
+  ...fontSize.propTypes,
+  ...space.propTypes,
+  ...textAlign.propTypes
 };
 
 export default Text;
