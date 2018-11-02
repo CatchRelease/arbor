@@ -128,6 +128,7 @@ var _default = {
   breakpoints: breakpoints,
   colors: colors,
   fontWeights: fontWeights,
+  fontSizes: fontSizes,
   iconFontPrefix: 'fa',
   lineHeights: lineHeights,
   space: spacings,
