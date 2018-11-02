@@ -1,14 +1,12 @@
 import styled from 'react-emotion';
 import PropTypes from 'prop-types';
 
-import { brandFont, colors, fontSizes, lineHeights } from './theme';
-
 const Label = styled.label`
-  color: ${colors.grey80};
+  color: ${props => props.theme.colors.grey80};
   display: block;
-  font-family: ${brandFont};
-  font-size: ${fontSizes.size2};
-  line-height: ${lineHeights.large};
+  font-family: ${props => props.theme.brandFont};
+  font-size: ${props => props.theme.fontSizes.size2};
+  line-height: ${props => props.theme.lineHeights.large};
 `;
 
 Label.propTypes = {

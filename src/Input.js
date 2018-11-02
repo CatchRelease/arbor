@@ -1,23 +1,15 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
+import { withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import { placeholder, transparentize } from 'polished';
 
-import {
-  borderRadius,
-  borderWidth,
-  colors,
-  fontSizes,
-  lineHeights,
-  spacings
-} from './theme';
-
 import Label from './Label';
-import Text from './Text';
+import Paragraph from './Paragraph';
 
 const InputContainer = styled.div`
   margin-bottom: ${props =>
-    props.caption ? spacings.smaller : spacings.regular};
+    props.caption ? props.theme.space.smaller : props.theme.space.regular};
 `;
 
 InputContainer.propTypes = {
@@ -28,45 +20,51 @@ InputContainer.defaultProps = {
   caption: ''
 };
 
-const largeStyles = ({ large }) =>
-  large &&
-  css`
-    padding: ${spacings.small} ${spacings.smaller};
-  `;
-
-const StyledInput = styled.input`
-  border-radius: ${borderRadius.small};
-  border: ${borderWidth.small} solid ${colors.grey20};
+const baseStyles = ({ theme }) => css`
+  border-radius: ${theme.borderRadius.small};
+  border: ${theme.borderWidth.small} solid ${theme.colors.grey20};
   box-sizing: border-box;
-  color: ${colors.grey100};
-  font-size: ${fontSizes.size2};
-  line-height: ${lineHeights.small};
-  margin: ${spacings.smallest} 0;
-  padding: ${spacings.smaller};
+  color: ${theme.colors.grey100};
+  font-size: ${theme.fontSizes.size2};
+  line-height: ${theme.lineHeights.small};
+  margin: ${theme.space.smallest} 0;
+  padding: ${theme.space.smaller};
   width: 100%;
-  ${largeStyles};
 
-  ${placeholder({ color: colors.grey50 })};
+  ${placeholder({ color: theme.colors.grey50 })};
 
   &:focus {
-    border: ${borderWidth.small} solid ${colors.blueLight};
-    box-shadow: 0 0 8px ${transparentize(0.9, colors.blueLight)};
+    border: ${theme.borderWidth.small} solid ${theme.colors.blueLight};
+    box-shadow: 0 0 8px ${transparentize(0.9, theme.colors.blueLight)};
     outline: none;
   }
 
   &:disabled {
-    background: ${colors.white10};
+    background: ${theme.colors.white10};
   }
 `;
 
-const Input = ({ caption, label, id, ...props }) => (
-  <InputContainer caption={caption}>
-    <Label htmlFor={id}>{label}</Label>
-    <StyledInput {...{ ...props, id }} />
+const largeStyles = ({ theme, large }) =>
+  large &&
+  css`
+    padding: ${theme.space.small} ${theme.space.smaller};
+  `;
+
+const StyledInput = styled.input`
+  ${baseStyles};
+  ${largeStyles};
+`;
+
+export const Input = ({ caption, label, id, theme, ...props }) => (
+  <InputContainer theme={theme} caption={caption}>
+    <Label theme={theme} htmlFor={id}>
+      {label}
+    </Label>
+    <StyledInput {...{ ...props, id, theme }} />
     {caption && (
-      <Text.span variant="tiny" color="red">
+      <Paragraph.span theme={theme} variant="tiny" color="red">
         {caption}
-      </Text.span>
+      </Paragraph.span>
     )}
   </InputContainer>
 );
@@ -82,4 +80,4 @@ Input.defaultProps = {
   large: false
 };
 
-export default Input;
+export default withTheme(Input);

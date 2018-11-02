@@ -116,6 +116,7 @@ export const borderWidth = {
 
 export default {
   borderRadius,
+  borderWidth,
   brandFont,
   breakpoints,
   colors,

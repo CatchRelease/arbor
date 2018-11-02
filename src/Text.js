@@ -1,38 +1,22 @@
 import styled, { css } from 'react-emotion';
-import PropTypes from 'prop-types';
-import { space, textAlign } from 'styled-system';
+import { space, textAlign, color } from 'styled-system';
 
-import { brandFont, colors, lineHeights, typography } from './theme';
-
-const baseStyles = css`
-  font-family: ${brandFont};
-  line-height: ${lineHeights.large};
-`;
-
-const variantStyles = ({ color, variant }) => css`
-  color: ${color ? colors[color] : typography.text[variant].color};
-  font-size: ${typography.text[variant].fontSize};
+const baseStyles = ({ theme }) => css`
+  font-family: ${theme.brandFont};
+  line-height: ${theme.lineHeights.large};
 `;
 
 const Text = styled.p`
   ${textAlign};
+  ${color};
   ${space};
   ${baseStyles};
-  ${variantStyles};
 `;
 
 Text.propTypes = {
-  color: PropTypes.oneOf(Object.keys(colors).concat('')),
-  variant: PropTypes.oneOf(['ui', 'longForm', 'tiny']).isRequired,
+  ...color.propTypes,
   ...textAlign.propTypes,
   ...space.propTypes
 };
-
-Text.defaultProps = {
-  color: ''
-};
-
-Text.span = Text.withComponent('span');
-Text.p = Text.withComponent('p');
 
 export default Text;

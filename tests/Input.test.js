@@ -2,13 +2,14 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { create } from 'react-test-renderer';
 
-import Input from '../src/Input';
-import Text from '../src/Text';
+import theme from '../src/theme';
+import { Input } from '../src/Input';
+import Paragraph from '../src/Paragraph';
 
 describe('<Input />', () => {
   it('renders an Input correctly', () => {
     const tree = create(
-      <Input label="My Input" id="example" type="text" />
+      <Input theme={theme} label="My Input" id="example" type="text" />
     ).toJSON();
 
     expect(tree).toMatchSnapshot();
@@ -16,7 +17,7 @@ describe('<Input />', () => {
 
   it('renders a large Input correctly', () => {
     const tree = create(
-      <Input large label="My Input" id="example" type="text" />
+      <Input large theme={theme} label="My Input" id="example" type="text" />
     ).toJSON();
 
     expect(tree).toMatchSnapshot();
@@ -28,6 +29,7 @@ describe('<Input />', () => {
         label="My Input"
         id="example"
         type="text"
+        theme={theme}
         caption="I am a caption"
       />
     ).toJSON();
@@ -36,24 +38,26 @@ describe('<Input />', () => {
   });
 
   it('associates label with input', () => {
-    const input = shallow(<Input type="text" id="example" />);
+    const input = shallow(<Input theme={theme} type="text" id="example" />);
 
     expect(input.find('Label').props().htmlFor).toEqual('example');
   });
 
   describe('caption exists', () => {
     it('renders the caption', () => {
-      const input = shallow(<Input caption="My Caption" id="example" />);
+      const input = shallow(
+        <Input theme={theme} caption="My Caption" id="example" />
+      );
 
-      expect(input.find(Text.span).props().children).toEqual('My Caption');
+      expect(input.find(Paragraph.span).props().children).toEqual('My Caption');
     });
   });
 
   describe('caption does not exist', () => {
     it('does not render the caption', () => {
-      const input = shallow(<Input id="example" />);
+      const input = shallow(<Input theme={theme} id="example" />);
 
-      expect(input.find(Text.span).length).toBe(0);
+      expect(input.find(Paragraph.span).length).toBe(0);
     });
   });
 });

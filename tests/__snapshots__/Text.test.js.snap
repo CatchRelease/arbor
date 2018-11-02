@@ -1,49 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Text /> props variant renders a longForm variant 1`] = `
+exports[`<Text /> properly renders a Text component 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   line-height: 1.5;
-  color: #222222;
-  font-size: 1rem;
 }
 
 <p
   className="emotion-0 emotion-1"
-  color=""
 >
-  Hello World
-</p>
-`;
-
-exports[`<Text /> props variant renders a tiny variant 1`] = `
-.emotion-0 {
-  font-family: Motiva Sans;
-  line-height: 1.5;
-  color: #666666;
-  font-size: 0.75rem;
-}
-
-<p
-  className="emotion-0 emotion-1"
-  color=""
->
-  Hello World
-</p>
-`;
-
-exports[`<Text /> props variant renders a ui variant 1`] = `
-.emotion-0 {
-  font-family: Motiva Sans;
-  line-height: 1.5;
-  color: #222222;
-  font-size: 0.875rem;
-}
-
-<p
-  className="emotion-0 emotion-1"
-  color=""
->
-  Hello World
+  The quick brown fox jumps over the lazy dog
 </p>
 `;
