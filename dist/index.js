@@ -12,6 +12,8 @@ var _exportNames = {
   Icon: true,
   Input: true,
   Label: true,
+  Link: true,
+  Paragraph: true,
   Text: true,
   globalStyles: true
 };
@@ -63,6 +65,18 @@ Object.defineProperty(exports, "Label", {
     return _Label.default;
   }
 });
+Object.defineProperty(exports, "Link", {
+  enumerable: true,
+  get: function get() {
+    return _Link.default;
+  }
+});
+Object.defineProperty(exports, "Paragraph", {
+  enumerable: true,
+  get: function get() {
+    return _Paragraph.default;
+  }
+});
 Object.defineProperty(exports, "Text", {
   enumerable: true,
   get: function get() {
@@ -102,6 +116,10 @@ var _Icon = _interopRequireDefault(require("./Icon"));
 var _Input = _interopRequireDefault(require("./Input"));
 
 var _Label = _interopRequireDefault(require("./Label"));
+
+var _Link = _interopRequireDefault(require("./Link"));
+
+var _Paragraph = _interopRequireDefault(require("./Paragraph"));
 
 var _Text = _interopRequireDefault(require("./Text"));
 

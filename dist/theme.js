@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.borderWidth = exports.borderRadius = exports.spacings = exports.brandFont = exports.typography = exports.lineHeights = exports.fontWeights = exports.fontSizes = exports.colors = exports.black = exports.greens = exports.reds = exports.whites = exports.greys = exports.blues = exports.breakpoints = void 0;
+exports.default = exports.borderWidth = exports.borderRadius = exports.spacings = exports.brandFont = exports.typography = exports.lineHeights = exports.fontWeights = exports.fontSizes = exports.colors = exports.bronzes = exports.black = exports.greens = exports.reds = exports.whites = exports.greys = exports.blues = exports.breakpoints = void 0;
 
 var _polished = require("polished");
 
@@ -55,10 +55,16 @@ var greens = {
 exports.greens = greens;
 var black = '#000000';
 exports.black = black;
+var bronzes = {
+  bronzeLight: '#CC9900',
+  bronze: '#CC7700',
+  bronzeDark: '#AA5500'
+};
+exports.bronzes = bronzes;
 
 var colors = _objectSpread({
   black: black
-}, blues, greys, whites, greens, reds);
+}, blues, greys, whites, greens, reds, bronzes);
 
 exports.colors = colors;
 var fontSizes = {
@@ -124,6 +130,7 @@ var borderWidth = {
 exports.borderWidth = borderWidth;
 var _default = {
   borderRadius: borderRadius,
+  borderWidth: borderWidth,
   brandFont: brandFont,
   breakpoints: breakpoints,
   colors: colors,
