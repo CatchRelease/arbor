@@ -10,6 +10,7 @@ import {
   borderRadius,
   spacings,
   blues,
+  bronzes,
   greys,
   whites,
   reds,
@@ -37,7 +38,7 @@ const Swatch = styled.div`
   width: 176px;
   color: ${whites.white};
   border-radius: ${borderRadius.large};
-  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
 `;
 
 const SwatchTitle = styled(Heading.h4)`
@@ -75,5 +76,6 @@ storiesOf('Colors', module).add('default', () => (
     <SwatchCollection title="Blues" pallete={blues} />
     <SwatchCollection title="Reds" pallete={reds} />
     <SwatchCollection title="Greens" pallete={greens} />
+    <SwatchCollection title="Bronzes" pallete={bronzes} />
   </Fragment>
 ));

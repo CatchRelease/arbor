@@ -44,13 +44,20 @@ export const greens = {
 
 export const black = '#000000';
 
+export const bronzes = {
+  bronzeLight: '#CC9900',
+  bronze: '#CC7700',
+  bronzeDark: '#AA5500'
+};
+
 export const colors = {
   black,
   ...blues,
   ...greys,
   ...whites,
   ...greens,
-  ...reds
+  ...reds,
+  ...bronzes
 };
 
 export const fontSizes = {
