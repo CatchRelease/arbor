@@ -3,19 +3,7 @@ import styled, { css } from 'react-emotion';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs';
 
-import { Box, Button, Heading, Icon } from '../src';
-
-const SizeGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, max-content);
-  grid-gap: 10px 138px;
-`;
-
-const ButtonGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px 138px;
-`;
+import { Box, Button, Grid, Heading, Icon } from '../src';
 
 const ButtonTable = styled.table`
   width: 100%;
@@ -35,7 +23,7 @@ stories.add('default', () => (
   <div style={{ padding: '10px', width: '500px' }}>
     <Heading.h1>Sizes</Heading.h1>
 
-    <SizeGrid>
+    <Grid gridGap="10px 138px" gridTemplateColumns="repeat(4, max-content)">
       <Heading.h5>Small</Heading.h5>
       <Heading.h5>Medium</Heading.h5>
       <Heading.h5>Large</Heading.h5>
@@ -45,11 +33,11 @@ stories.add('default', () => (
       <Button size="medium">Button Label</Button>
       <Button size="large">Button Label</Button>
       <Button size="jumbo">Button Label</Button>
-    </SizeGrid>
+    </Grid>
 
     <Heading.h1>Style</Heading.h1>
 
-    <ButtonGrid>
+    <Grid gridGap="10px 138px" gridTemplateColumns="repeat(3, 1fr)">
       <Button variant="primary">Primary</Button>
       <Button variant="secondary">Secondary</Button>
       <Button variant="minimal">Minimal</Button>
@@ -63,7 +51,7 @@ stories.add('default', () => (
       <Button variant="minimal" disabled>
         Minimal
       </Button>
-    </ButtonGrid>
+    </Grid>
 
     <Box width="500px" my="regular">
       <Button fullWidth variant="primary">

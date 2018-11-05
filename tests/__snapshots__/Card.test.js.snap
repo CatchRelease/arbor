@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> renders a Card properly 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #DDDDDD;
+  width: 100%;
+}
+
+<div
+  className="emotion-0 emotion-1"
+/>
+`;

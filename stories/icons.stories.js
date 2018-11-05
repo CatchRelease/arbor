@@ -1,8 +1,7 @@
 import React from 'react';
-import styled from 'react-emotion';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Icon, Text } from '../src';
+import { Box, Grid, Icon, Text } from '../src';
 
 const AVAILABLE_ICONS = [
   'checkbox-marked-circle-outline',
@@ -13,19 +12,15 @@ const AVAILABLE_ICONS = [
   'thumb-down-outline'
 ];
 
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(${AVAILABLE_ICONS.length}, 1fr);
-  grid-column-gap: ${props => props.theme.space.large};
-  grid-row-gap: ${props => props.theme.space.large};
-  justify-items: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-`;
-
 storiesOf('Icons', module).add('default', () => (
-  <Grid>
+  <Grid
+    gridTemplateColumns={`repeat(${AVAILABLE_ICONS.length}, 1fr)`}
+    gridGap="large"
+    justifyItems="center"
+    alignItems="center"
+    width="100vw"
+    height="100vh"
+  >
     {AVAILABLE_ICONS.map(icon => (
       <Box textAlign="center">
         <Icon name={icon} color="grey100" fontSize="38px" />
