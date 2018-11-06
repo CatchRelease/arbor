@@ -1,0 +1,445 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tooltip /> properly renders a tooltip 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Tooltip
+    text="Hello World"
+    theme={
+      Object {
+        "borderRadius": Object {
+          "large": "6px",
+          "small": "3px",
+        },
+        "borderWidth": Object {
+          "large": "4px",
+          "medium": "2px",
+          "small": "1px",
+        },
+        "brandFont": "Motiva Sans",
+        "breakpoints": Array [
+          "768px",
+        ],
+        "colors": Object {
+          "black": "#000000",
+          "blue": "#4466EE",
+          "blueDark": "#4455CC",
+          "blueDarkest": "#2E374E",
+          "blueLight": "#5577FF",
+          "blueLighter": "#6688FF",
+          "bronze": "#CC7700",
+          "bronzeDark": "#AA5500",
+          "bronzeLight": "#CC9900",
+          "green": "#00AA44",
+          "greenDark": "#008833",
+          "greenLight": "#00BB44",
+          "greenLighter": "#00CC66",
+          "grey10": "#EEEEEE",
+          "grey100": "#222222",
+          "grey20": "#DDDDDD",
+          "grey30": "#CCCCCC",
+          "grey40": "#BBBBBB",
+          "grey50": "#AAAAAA",
+          "grey60": "#999999",
+          "grey70": "#888888",
+          "grey80": "#666666",
+          "grey90": "#444444",
+          "red": "#EE2200",
+          "redDark": "#DD1100",
+          "redLight": "#FF4444",
+          "redLighter": "#FF6655",
+          "white": "#FFFFFF",
+          "white10": "#FAFAFA",
+        },
+        "fontSizes": Object {
+          "size1": "0.75rem",
+          "size2": "0.875rem",
+          "size3": "1rem",
+          "size4": "1.125rem",
+          "size5": "1.375rem",
+          "size6": "1.75rem",
+          "size7": "2.125rem",
+        },
+        "fontWeights": Object {
+          "bold": 700,
+          "medium": 600,
+          "regular": 400,
+        },
+        "iconFontPrefix": "fa",
+        "lineHeights": Object {
+          "large": 1.5,
+          "small": 1.25,
+        },
+        "space": Object {
+          "large": "1.5rem",
+          "larger": "2rem",
+          "largest": "4rem",
+          "regular": "1rem",
+          "small": "0.75rem",
+          "smaller": "0.5rem",
+          "smallest": "0.25rem",
+        },
+        "typography": Object {
+          "text": Object {
+            "longForm": Object {
+              "color": "#222222",
+              "fontSize": "1rem",
+            },
+            "tiny": Object {
+              "color": "#666666",
+              "fontSize": "0.75rem",
+            },
+            "ui": Object {
+              "color": "#222222",
+              "fontSize": "0.875rem",
+            },
+          },
+        },
+      }
+    }
+  >
+    <p>
+      I have a tooltip
+    </p>
+  </Tooltip>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "animateFill": true,
+      "animation": "shift",
+      "arrow": true,
+      "arrowSize": "regular",
+      "children": <p>
+        I have a tooltip
+      </p>,
+      "className": "",
+      "delay": 0,
+      "disabled": false,
+      "distance": 10,
+      "duration": 375,
+      "followCursor": false,
+      "hideDelay": 0,
+      "hideDuration": 375,
+      "hideOnClick": true,
+      "html": <Paragraph
+        color="white"
+        px="smaller"
+        py="smallest"
+        theme={
+          Object {
+            "borderRadius": Object {
+              "large": "6px",
+              "small": "3px",
+            },
+            "borderWidth": Object {
+              "large": "4px",
+              "medium": "2px",
+              "small": "1px",
+            },
+            "brandFont": "Motiva Sans",
+            "breakpoints": Array [
+              "768px",
+            ],
+            "colors": Object {
+              "black": "#000000",
+              "blue": "#4466EE",
+              "blueDark": "#4455CC",
+              "blueDarkest": "#2E374E",
+              "blueLight": "#5577FF",
+              "blueLighter": "#6688FF",
+              "bronze": "#CC7700",
+              "bronzeDark": "#AA5500",
+              "bronzeLight": "#CC9900",
+              "green": "#00AA44",
+              "greenDark": "#008833",
+              "greenLight": "#00BB44",
+              "greenLighter": "#00CC66",
+              "grey10": "#EEEEEE",
+              "grey100": "#222222",
+              "grey20": "#DDDDDD",
+              "grey30": "#CCCCCC",
+              "grey40": "#BBBBBB",
+              "grey50": "#AAAAAA",
+              "grey60": "#999999",
+              "grey70": "#888888",
+              "grey80": "#666666",
+              "grey90": "#444444",
+              "red": "#EE2200",
+              "redDark": "#DD1100",
+              "redLight": "#FF4444",
+              "redLighter": "#FF6655",
+              "white": "#FFFFFF",
+              "white10": "#FAFAFA",
+            },
+            "fontSizes": Object {
+              "size1": "0.75rem",
+              "size2": "0.875rem",
+              "size3": "1rem",
+              "size4": "1.125rem",
+              "size5": "1.375rem",
+              "size6": "1.75rem",
+              "size7": "2.125rem",
+            },
+            "fontWeights": Object {
+              "bold": 700,
+              "medium": 600,
+              "regular": 400,
+            },
+            "iconFontPrefix": "fa",
+            "lineHeights": Object {
+              "large": 1.5,
+              "small": 1.25,
+            },
+            "space": Object {
+              "large": "1.5rem",
+              "larger": "2rem",
+              "largest": "4rem",
+              "regular": "1rem",
+              "small": "0.75rem",
+              "smaller": "0.5rem",
+              "smallest": "0.25rem",
+            },
+            "typography": Object {
+              "text": Object {
+                "longForm": Object {
+                  "color": "#222222",
+                  "fontSize": "1rem",
+                },
+                "tiny": Object {
+                  "color": "#666666",
+                  "fontSize": "0.75rem",
+                },
+                "ui": Object {
+                  "color": "#222222",
+                  "fontSize": "0.875rem",
+                },
+              },
+            },
+          }
+        }
+        variant="tiny"
+      >
+        Hello World
+      </Paragraph>,
+      "inertia": false,
+      "interactive": false,
+      "interactiveBorder": 2,
+      "multiple": false,
+      "offset": 0,
+      "onHidden": [Function],
+      "onHide": [Function],
+      "onRequestClose": [Function],
+      "onShow": [Function],
+      "onShown": [Function],
+      "popperOptions": Object {},
+      "position": "top",
+      "size": "regular",
+      "sticky": false,
+      "stickyDuration": 200,
+      "style": Object {},
+      "theme": "arbor",
+      "touchHold": false,
+      "trigger": "mouseenter focus",
+      "unmountHTMLWhenHide": false,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "I have a tooltip",
+      },
+      "ref": null,
+      "rendered": "I have a tooltip",
+      "type": "p",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "animateFill": true,
+        "animation": "shift",
+        "arrow": true,
+        "arrowSize": "regular",
+        "children": <p>
+          I have a tooltip
+        </p>,
+        "className": "",
+        "delay": 0,
+        "disabled": false,
+        "distance": 10,
+        "duration": 375,
+        "followCursor": false,
+        "hideDelay": 0,
+        "hideDuration": 375,
+        "hideOnClick": true,
+        "html": <Paragraph
+          color="white"
+          px="smaller"
+          py="smallest"
+          theme={
+            Object {
+              "borderRadius": Object {
+                "large": "6px",
+                "small": "3px",
+              },
+              "borderWidth": Object {
+                "large": "4px",
+                "medium": "2px",
+                "small": "1px",
+              },
+              "brandFont": "Motiva Sans",
+              "breakpoints": Array [
+                "768px",
+              ],
+              "colors": Object {
+                "black": "#000000",
+                "blue": "#4466EE",
+                "blueDark": "#4455CC",
+                "blueDarkest": "#2E374E",
+                "blueLight": "#5577FF",
+                "blueLighter": "#6688FF",
+                "bronze": "#CC7700",
+                "bronzeDark": "#AA5500",
+                "bronzeLight": "#CC9900",
+                "green": "#00AA44",
+                "greenDark": "#008833",
+                "greenLight": "#00BB44",
+                "greenLighter": "#00CC66",
+                "grey10": "#EEEEEE",
+                "grey100": "#222222",
+                "grey20": "#DDDDDD",
+                "grey30": "#CCCCCC",
+                "grey40": "#BBBBBB",
+                "grey50": "#AAAAAA",
+                "grey60": "#999999",
+                "grey70": "#888888",
+                "grey80": "#666666",
+                "grey90": "#444444",
+                "red": "#EE2200",
+                "redDark": "#DD1100",
+                "redLight": "#FF4444",
+                "redLighter": "#FF6655",
+                "white": "#FFFFFF",
+                "white10": "#FAFAFA",
+              },
+              "fontSizes": Object {
+                "size1": "0.75rem",
+                "size2": "0.875rem",
+                "size3": "1rem",
+                "size4": "1.125rem",
+                "size5": "1.375rem",
+                "size6": "1.75rem",
+                "size7": "2.125rem",
+              },
+              "fontWeights": Object {
+                "bold": 700,
+                "medium": 600,
+                "regular": 400,
+              },
+              "iconFontPrefix": "fa",
+              "lineHeights": Object {
+                "large": 1.5,
+                "small": 1.25,
+              },
+              "space": Object {
+                "large": "1.5rem",
+                "larger": "2rem",
+                "largest": "4rem",
+                "regular": "1rem",
+                "small": "0.75rem",
+                "smaller": "0.5rem",
+                "smallest": "0.25rem",
+              },
+              "typography": Object {
+                "text": Object {
+                  "longForm": Object {
+                    "color": "#222222",
+                    "fontSize": "1rem",
+                  },
+                  "tiny": Object {
+                    "color": "#666666",
+                    "fontSize": "0.75rem",
+                  },
+                  "ui": Object {
+                    "color": "#222222",
+                    "fontSize": "0.875rem",
+                  },
+                },
+              },
+            }
+          }
+          variant="tiny"
+        >
+          Hello World
+        </Paragraph>,
+        "inertia": false,
+        "interactive": false,
+        "interactiveBorder": 2,
+        "multiple": false,
+        "offset": 0,
+        "onHidden": [Function],
+        "onHide": [Function],
+        "onRequestClose": [Function],
+        "onShow": [Function],
+        "onShown": [Function],
+        "popperOptions": Object {},
+        "position": "top",
+        "size": "regular",
+        "sticky": false,
+        "stickyDuration": 200,
+        "style": Object {},
+        "theme": "arbor",
+        "touchHold": false,
+        "trigger": "mouseenter focus",
+        "unmountHTMLWhenHide": false,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "I have a tooltip",
+        },
+        "ref": null,
+        "rendered": "I have a tooltip",
+        "type": "p",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

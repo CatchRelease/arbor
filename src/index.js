@@ -12,5 +12,6 @@ export { default as Label } from './Label';
 export { default as Link } from './Link';
 export { default as Paragraph } from './Paragraph';
 export { default as Text } from './Text';
+export { default as Tooltip } from './Tooltip';
 export { default as globalStyles } from './global-styles';
 export { default as theme } from './theme';
