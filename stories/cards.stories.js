@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { number, withKnobs } from '@storybook/addon-knobs';
 
-import { Box, Card, Grid, Heading, Paragraph } from '../src';
+import { Box, Card, CardRow, Grid, Heading, Paragraph } from '../src';
 
 const stories = storiesOf('Cards', module);
 stories.addDecorator(withKnobs);
@@ -10,7 +10,9 @@ stories.addDecorator(withKnobs);
 const renderCard = () => (
   <Card>
     <Box height="320px">
-      <Paragraph variant="ui">Hello world</Paragraph>
+      <CardRow>
+        <Paragraph variant="ui">Card Row</Paragraph>
+      </CardRow>
     </Box>
   </Card>
 );
@@ -31,7 +33,6 @@ stories.add('Card', () => {
       <Grid
         gridGap="large"
         gridTemplateColumns={`repeat(${numberOfCards}, 1fr)`}
-        textAlign="center"
       >
         {cards}
       </Grid>

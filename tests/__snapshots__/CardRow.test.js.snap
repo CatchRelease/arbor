@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardRow /> renders a CardRow properly 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+}
+
+<div
+  className="emotion-0 emotion-1"
+/>
+`;
