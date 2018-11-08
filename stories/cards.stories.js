@@ -4,10 +4,13 @@ import { storiesOf } from '@storybook/react';
 import {
   Box,
   Card,
+  CardActions,
   CardPreview,
   CardRow,
+  Flex,
   Grid,
   Heading,
+  Icon,
   Paragraph
 } from '../src';
 
@@ -55,7 +58,18 @@ stories.add('Card', () => (
 
           <CardPreview image={card.preview} />
 
-          <CardRow>Footer</CardRow>
+          <CardRow>
+            <Flex justifyContent="space-between">
+              <Paragraph variant="ui">20 Action Items</Paragraph>
+
+              <CardActions>
+                <Icon color="grey50" fontSize="24" name="chat-bubble-outline" />
+                <Icon color="grey50" fontSize="24" name="download" />
+                <Icon color="grey50" fontSize="24" name="thumb-down-outline" />
+                <Icon color="grey50" fontSize="24" name="thumb-up-outline" />
+              </CardActions>
+            </Flex>
+          </CardRow>
         </Card>
       ))}
     </Grid>
