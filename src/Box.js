@@ -12,22 +12,22 @@ import {
 const Box = styled.div`
   box-sizing: border-box;
   ${boxShadow};
-  ${space};
   ${color};
-  ${width};
   ${height};
   ${maxWidth};
+  ${space};
   ${textAlign};
+  ${width};
 `;
 
 Box.propTypes = {
-  ...space.propTypes,
+  ...boxShadow.propTypes,
   ...color.propTypes,
-  ...width.propTypes,
   ...height.propTypes,
   ...maxWidth.propTypes,
+  ...space.propTypes,
   ...textAlign.propTypes,
-  ...boxShadow.propTypes
+  ...width.propTypes
 };
 
 Box.section = Box.withComponent('section');
