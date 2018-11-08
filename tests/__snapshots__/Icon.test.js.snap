@@ -5,3 +5,39 @@ exports[`<Icon /> renders an icon properly 1`] = `
   className="fa fa-my-icon emotion-0 emotion-1"
 />
 `;
+
+exports[`<Icon /> supports 90 degree rotation 1`] = `
+.emotion-0 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+<i
+  className="fa fa-my-icon emotion-0 emotion-1"
+/>
+`;
+
+exports[`<Icon /> supports 180 degree rotation 1`] = `
+.emotion-0 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+<i
+  className="fa fa-my-icon emotion-0 emotion-1"
+/>
+`;
+
+exports[`<Icon /> supports 270 degree rotation 1`] = `
+.emotion-0 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+<i
+  className="fa fa-my-icon emotion-0 emotion-1"
+/>
+`;

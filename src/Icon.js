@@ -1,8 +1,14 @@
 import React from 'react';
-import styled, { cx } from 'react-emotion';
+import styled, { css, cx } from 'react-emotion';
 import { color, display, fontSize, textAlign, space } from 'styled-system';
 import { withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
+
+const rotationStyles = ({ rotation }) =>
+  rotation &&
+  css`
+    transform: rotate(${rotation}deg);
+  `;
 
 const StyledIcon = styled.i`
   ${color};
@@ -10,6 +16,7 @@ const StyledIcon = styled.i`
   ${fontSize};
   ${space};
   ${textAlign};
+  ${rotationStyles};
 `;
 
 StyledIcon.propTypes = {
@@ -31,7 +38,12 @@ export const Icon = ({ name, theme, ...props }) => {
 };
 
 Icon.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  rotation: PropTypes.oneOf(['90', '180', '270', null])
+};
+
+Icon.defaultProps = {
+  rotation: null
 };
 
 export default withTheme(Icon);
