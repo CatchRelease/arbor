@@ -17,9 +17,9 @@ const Grid = styled(Box.withComponent('div'))`
 `;
 
 Grid.propTypes = {
-  ...gridGap,
-  ...gridTemplateColumns,
-  ...justifyItems
+  ...gridGap.propTypes,
+  ...gridTemplateColumns.propTypes,
+  ...justifyItems.propTypes
 };
 
 export default Grid;
