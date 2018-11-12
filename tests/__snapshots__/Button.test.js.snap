@@ -1342,23 +1342,23 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
 }
 
 .emotion-2:enabled {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #DDDDDD;
 }
 
 .emotion-2:hover:enabled {
+  background-color: #F5F5F5;
   color: #4466EE;
+  border: 1px solid #4466EE;
 }
 
 .emotion-2:active:enabled {
   color: #4455CC;
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
   border: 1px solid transparent;
 }
 
 .emotion-2:focus:enabled {
-  outline: #4455CC;
-  border: 1px solid #EEEEEE;
-  color: #222222;
+  border: 1px solid transparent;
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
 }
 
@@ -1567,23 +1567,23 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
 }
 
 .emotion-2:enabled {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #DDDDDD;
 }
 
 .emotion-2:hover:enabled {
+  background-color: #F5F5F5;
   color: #4466EE;
+  border: 1px solid #4466EE;
 }
 
 .emotion-2:active:enabled {
   color: #4455CC;
-  background-color: #F5F5F5;
+  background-color: #EEEEEE;
   border: 1px solid transparent;
 }
 
 .emotion-2:focus:enabled {
-  outline: #4455CC;
-  border: 1px solid #EEEEEE;
-  color: #222222;
+  border: 1px solid transparent;
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
 }
 

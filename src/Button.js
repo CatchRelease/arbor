@@ -125,20 +125,20 @@ const variantStyles = ({ theme, variant }) => {
       color: theme.colors.grey100,
       fontWeight: theme.fontWeights.regular,
       '&:enabled': {
-        border: `1px solid ${theme.colors.grey10}`
+        border: `1px solid ${theme.colors.grey20}`
       },
       '&:hover:enabled': {
-        color: theme.colors.blue
+        backgroundColor: theme.colors.white10,
+        color: theme.colors.blue,
+        border: `1px solid ${theme.colors.blue}`
       },
       '&:active:enabled': {
         color: theme.colors.blueDark,
-        backgroundColor: theme.colors.white10,
+        backgroundColor: theme.colors.grey10,
         border: '1px solid transparent'
       },
       '&:focus:enabled': {
-        outline: theme.colors.blueDark,
-        border: `1px solid ${theme.colors.grey10}`,
-        color: theme.colors.grey100,
+        border: '1px solid transparent',
         boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 2px ${
           theme.colors.blueDark
         }`
