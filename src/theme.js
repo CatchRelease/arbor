@@ -25,7 +25,7 @@ export const greys = {
 
 export const whites = {
   white: '#FFFFFF',
-  white10: '#FAFAFA'
+  white10: '#F5F5F5'
 };
 
 export const reds = {

@@ -49,7 +49,7 @@ ShallowWrapper {
           "redLight": "#FF4444",
           "redLighter": "#FF6655",
           "white": "#FFFFFF",
-          "white10": "#FAFAFA",
+          "white10": "#F5F5F5",
         },
         "fontSizes": Object {
           "size1": "0.75rem",
@@ -179,7 +179,7 @@ ShallowWrapper {
               "redLight": "#FF4444",
               "redLighter": "#FF6655",
               "white": "#FFFFFF",
-              "white10": "#FAFAFA",
+              "white10": "#F5F5F5",
             },
             "fontSizes": Object {
               "size1": "0.75rem",
@@ -336,7 +336,7 @@ ShallowWrapper {
                 "redLight": "#FF4444",
                 "redLighter": "#FF6655",
                 "white": "#FFFFFF",
-                "white10": "#FAFAFA",
+                "white10": "#F5F5F5",
               },
               "fontSizes": Object {
                 "size1": "0.75rem",
