@@ -157,7 +157,9 @@ const variantStyles = ({ theme, variant }) => {
         backgroundColor: theme.colors.grey10
       },
       '&:focus:enabled': {
-        color: theme.colors.blue
+        boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 2px ${
+          theme.colors.blueDark
+        }`
       },
       '&:disabled': {
         background: 'none',

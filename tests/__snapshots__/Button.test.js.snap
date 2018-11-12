@@ -1206,7 +1206,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 }
 
 .emotion-2:focus:enabled {
-  color: #4466EE;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
 }
 
 .emotion-2:disabled {
@@ -1431,7 +1431,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 }
 
 .emotion-2:focus:enabled {
-  color: #4466EE;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
 }
 
 .emotion-2:disabled {
