@@ -36,7 +36,7 @@ var greys = {
 exports.greys = greys;
 var whites = {
   white: '#FFFFFF',
-  white10: '#FAFAFA'
+  white10: '#F5F5F5'
 };
 exports.whites = whites;
 var reds = {
