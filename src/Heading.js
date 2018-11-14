@@ -1,77 +1,71 @@
 import styled, { css } from 'react-emotion';
-import { color, textAlign } from 'styled-system';
-import { brandFont, fontSizes, fontWeights, lineHeights } from './theme';
+
+import Text from './Text';
 
 const lineHeightMultiplier = 0.5;
 
-const calculatedHeadingStyles = size =>
-  css({
-    fontSize: size,
-    marginBottom: `calc(${size} * ${lineHeightMultiplier})`
-  });
-
-const Heading = styled.h1`
-  font-family: '${brandFont}';
-  font-weight: ${fontWeights.bold};
-  line-height: ${lineHeights.small};
-  ${textAlign};
-  ${color};
+const baseStyles = ({ theme }) => css`
+  font-weight: ${theme.fontWeights.bold};
+  line-height: ${theme.lineHeights.small};
 `;
 
-Heading.propTypes = {
-  ...textAlign.propTypes
-};
+const calculatedMargin = ({ mb, fontSize, theme }) =>
+  !mb &&
+  css`
+    margin-bottom: calc(${theme.fontSizes[fontSize]} * ${lineHeightMultiplier});
+  `;
 
-Heading.h1 = styled(Heading.withComponent('h1'))`
-  ${calculatedHeadingStyles(fontSizes.size7)};
+const Heading = styled(Text.withComponent('h1'))`
+  ${baseStyles};
+  ${calculatedMargin};
 `;
+
+Heading.h1 = Heading.withComponent('h1');
 
 Heading.h1.defaultProps = {
-  color: 'grey100'
+  color: 'grey100',
+  fontSize: 'size7'
 };
 
-Heading.h2 = styled(Heading.withComponent('h2'))`
-  ${calculatedHeadingStyles(fontSizes.size6)};
-`;
+Heading.h2 = Heading.withComponent('h2');
 
 Heading.h2.defaultProps = {
-  color: 'grey80'
+  color: 'grey80',
+  fontSize: 'size6'
 };
 
-Heading.h3 = styled(Heading.withComponent('h3'))`
-  ${calculatedHeadingStyles(fontSizes.size5)};
-`;
+Heading.h3 = Heading.withComponent('h3');
 
 Heading.h3.defaultProps = {
-  color: 'grey80'
+  color: 'grey80',
+  fontSize: 'size5'
 };
 
-Heading.h4 = styled(Heading.withComponent('h4'))`
-  ${calculatedHeadingStyles(fontSizes.size4)};
-`;
+Heading.h4 = Heading.withComponent('h4');
 
 Heading.h4.defaultProps = {
-  color: 'grey80'
+  color: 'grey80',
+  fontSize: 'size4'
 };
 
 Heading.h5 = styled(Heading.withComponent('h5'))`
-  ${calculatedHeadingStyles(fontSizes.size2)};
-  font-weight: ${fontWeights.medium};
-  line-height: ${lineHeights.large};
+  font-weight: ${props => props.theme.fontWeights.medium};
+  line-height: ${props => props.theme.lineHeights.large};
 `;
 
 Heading.h5.defaultProps = {
-  color: 'grey100'
+  color: 'grey100',
+  fontSize: 'size2'
 };
 
 Heading.h6 = styled(Heading.withComponent('h6'))`
-  ${calculatedHeadingStyles(fontSizes.size2)};
-  font-weight: ${fontWeights.regular};
-  line-height: ${lineHeights.large};
+  font-weight: ${props => props.theme.fontWeights.regular};
+  line-height: ${props => props.theme.lineHeights.large};
 `;
 
 Heading.h6.defaultProps = {
-  color: 'grey80'
+  color: 'grey80',
+  fontSize: 'size2'
 };
 
 export default Heading;
