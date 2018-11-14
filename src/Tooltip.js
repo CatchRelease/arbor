@@ -5,26 +5,28 @@ import PropTypes from 'prop-types';
 import 'react-tippy/dist/tippy.css';
 import { Tooltip as TippyTooltip } from 'react-tippy';
 
-import Paragraph from './Paragraph';
+import { borderRadius } from './theme';
+import Text from './Text';
 
 // eslint-disable-next-line no-unused-expressions
 injectGlobal`
   .tippy-tooltip.arbor-theme {
     padding: 0;
+    border-radius: ${borderRadius.small};
   }
 `;
 
 export const Tooltip = ({ text, theme, children, ...props }) => {
   const tooltipText = (
-    <Paragraph
+    <Text
       px="smaller"
       py="smallest"
       theme={theme}
-      variant="tiny"
+      fontSize="size2"
       color="white"
     >
       {text}
-    </Paragraph>
+    </Text>
   );
 
   return (
@@ -33,7 +35,14 @@ export const Tooltip = ({ text, theme, children, ...props }) => {
         ...props,
         theme: 'arbor',
         arrow: true,
-        html: tooltipText
+        html: tooltipText,
+        distance: 8,
+        duration: 300,
+        updateDuration: 0,
+        arrowSize: 'small',
+        animation: 'fade',
+        inertia: true,
+        animateFill: false
       }}
     >
       {children}

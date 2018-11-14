@@ -115,24 +115,25 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "animateFill": true,
-      "animation": "shift",
+      "animateFill": false,
+      "animation": "fade",
       "arrow": true,
-      "arrowSize": "regular",
+      "arrowSize": "small",
       "children": <p>
         I have a tooltip
       </p>,
       "className": "",
       "delay": 0,
       "disabled": false,
-      "distance": 10,
-      "duration": 375,
+      "distance": 8,
+      "duration": 300,
       "followCursor": false,
       "hideDelay": 0,
       "hideDuration": 375,
       "hideOnClick": true,
-      "html": <Paragraph
+      "html": <Text
         color="white"
+        fontSize="size2"
         px="smaller"
         py="smallest"
         theme={
@@ -227,11 +228,10 @@ ShallowWrapper {
             },
           }
         }
-        variant="tiny"
       >
         Hello World
-      </Paragraph>,
-      "inertia": false,
+      </Text>,
+      "inertia": true,
       "interactive": false,
       "interactiveBorder": 2,
       "multiple": false,
@@ -251,6 +251,7 @@ ShallowWrapper {
       "touchHold": false,
       "trigger": "mouseenter focus",
       "unmountHTMLWhenHide": false,
+      "updateDuration": 0,
     },
     "ref": null,
     "rendered": Object {
@@ -272,24 +273,25 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "animateFill": true,
-        "animation": "shift",
+        "animateFill": false,
+        "animation": "fade",
         "arrow": true,
-        "arrowSize": "regular",
+        "arrowSize": "small",
         "children": <p>
           I have a tooltip
         </p>,
         "className": "",
         "delay": 0,
         "disabled": false,
-        "distance": 10,
-        "duration": 375,
+        "distance": 8,
+        "duration": 300,
         "followCursor": false,
         "hideDelay": 0,
         "hideDuration": 375,
         "hideOnClick": true,
-        "html": <Paragraph
+        "html": <Text
           color="white"
+          fontSize="size2"
           px="smaller"
           py="smallest"
           theme={
@@ -384,11 +386,10 @@ ShallowWrapper {
               },
             }
           }
-          variant="tiny"
         >
           Hello World
-        </Paragraph>,
-        "inertia": false,
+        </Text>,
+        "inertia": true,
         "interactive": false,
         "interactiveBorder": 2,
         "multiple": false,
@@ -408,6 +409,7 @@ ShallowWrapper {
         "touchHold": false,
         "trigger": "mouseenter focus",
         "unmountHTMLWhenHide": false,
+        "updateDuration": 0,
       },
       "ref": null,
       "rendered": Object {
