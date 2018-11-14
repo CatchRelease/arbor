@@ -62,7 +62,6 @@ Link.propTypes = {
 };
 
 Link.defaultProps = {
-  fontSize: 'size2',
   variant: 'default'
 };
 
