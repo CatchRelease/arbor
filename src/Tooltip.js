@@ -12,7 +12,6 @@ injectGlobal`
   .tippy-tooltip.arbor-theme {
     padding: 0;
     border-radius: 3px;
-    max-width: 240px;
   }
 `;
 
