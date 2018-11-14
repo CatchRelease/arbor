@@ -37,7 +37,7 @@ stories.add('default', () => (
     </Box>
 
     <Box>
-      <Tooltip text="Eight action item have been accepted.">
+      <Tooltip text="Eight action items have been accepted.">
         <Link href="#tooltip" variant="muted" onClick={e => e.preventDefault()}>
           8 Action Items
         </Link>
