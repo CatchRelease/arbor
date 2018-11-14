@@ -21,4 +21,7 @@ Text.propTypes = {
   ...textAlign.propTypes
 };
 
+Text.p = Text.withComponent('p');
+Text.span = Text.withComponent('span');
+
 export default Text;
