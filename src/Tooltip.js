@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 import 'react-tippy/dist/tippy.css';
 import { Tooltip as TippyTooltip } from 'react-tippy';
 
-import theme from './theme';
+import { borderRadius } from './theme';
 import Text from './Text';
 
 // eslint-disable-next-line no-unused-expressions
 injectGlobal`
   .tippy-tooltip.arbor-theme {
     padding: 0;
-    border-radius: ${theme.borderRadius.small};
+    border-radius: ${borderRadius.small};
   }
 `;
 
