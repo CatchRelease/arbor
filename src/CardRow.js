@@ -1,13 +1,18 @@
-import styled, { css } from 'react-emotion';
-import Box from './Box';
+import React from 'react';
 
-const spaceStyles = ({ theme }) => css`
-  padding: ${theme.space.smaller} ${theme.space.regular};
-  margin: ${theme.space.smaller} 0;
-`;
+import Flex from './Flex';
 
-const CardRow = styled(Box.withComponent('div'))`
-  ${spaceStyles};
-`;
+const CardRow = ({ props, children }) => (
+  <Flex
+    px="regular"
+    py="smallest"
+    my="smaller"
+    alignItems="center"
+    justifyContent="space-between"
+    {...props}
+  >
+    {children}
+  </Flex>
+);
 
 export default CardRow;
