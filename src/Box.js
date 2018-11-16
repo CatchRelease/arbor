@@ -6,7 +6,10 @@ import {
   width,
   height,
   maxWidth,
-  textAlign
+  textAlign,
+  border,
+  borderColor,
+  borderRadius
 } from 'styled-system';
 
 const Box = styled.div`
@@ -18,6 +21,9 @@ const Box = styled.div`
   ${space};
   ${textAlign};
   ${width};
+  ${border};
+  ${borderColor};
+  ${borderRadius};
 `;
 
 Box.propTypes = {
@@ -27,7 +33,10 @@ Box.propTypes = {
   ...maxWidth.propTypes,
   ...space.propTypes,
   ...textAlign.propTypes,
-  ...width.propTypes
+  ...width.propTypes,
+  ...border.propTypes,
+  ...borderColor.propTypes,
+  ...borderRadius.propTypes
 };
 
 Box.section = Box.withComponent('section');

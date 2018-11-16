@@ -1,5 +1,5 @@
 import React from 'react';
-import { space } from 'styled-system';
+import { space, fontSize, color } from 'styled-system';
 import styled, { css } from 'react-emotion';
 import PropTypes from 'prop-types';
 import { rem } from 'polished';
@@ -178,7 +178,7 @@ const fullWidthStyles = ({ fullWidth }) =>
   `;
 
 const StyledButton = styled.button`
-  border-radius: ${props => props.theme.borderRadius.small};
+  border-radius: ${props => props.theme.radii.small};
   border: 1px solid transparent;
   font-family: ${props => props.theme.brandFont};
   font-weight: ${props => props.theme.fontWeights.medium};
@@ -199,12 +199,15 @@ const StyledButton = styled.button`
 
   i {
     vertical-align: middle;
+    color: inherit;
   }
 
   ${sizeStyles};
   ${variantStyles};
   ${fullWidthStyles};
   ${space};
+  ${fontSize};
+  ${color};
 `;
 
 const ButtonText = styled.span`
@@ -251,7 +254,9 @@ Button.propTypes = {
 
   iconEnd: PropTypes.element,
 
-  ...space.propTypes
+  ...space.propTypes,
+
+  ...color.propTypes
 };
 
 Button.defaultProps = {
