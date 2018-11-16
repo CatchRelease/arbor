@@ -92,17 +92,17 @@ const Checkbox = ({
       disabled={disabled}
       aria-invalid={isInvalid}
     />
-    {!checked && !disabled && <StyledCheckbox />}
-    {checked &&
-      !disabled && (
-        <StyledCheckbox
-          borderColor="blue"
-          bg={indeterminate ? 'white' : 'blue'}
-          color={indeterminate ? 'blue' : 'white'}
-        >
-          {indeterminate ? <MinusIcon /> : <CheckIcon />}
-        </StyledCheckbox>
-      )}
+    {!disabled && checked ? (
+      <StyledCheckbox
+        borderColor="blue"
+        bg={indeterminate ? 'white' : 'blue'}
+        color={indeterminate ? 'blue' : 'white'}
+      >
+        {indeterminate ? <MinusIcon /> : <CheckIcon />}
+      </StyledCheckbox>
+    ) : (
+      !disabled && <StyledCheckbox />
+    )}
     {disabled && (
       <StyledCheckbox
         borderColor="grey20"
