@@ -12,7 +12,7 @@ const CardActions = styled(Grid.withComponent('div'))`
 `;
 
 CardActions.defaultProps = {
-  gridGap: 'small'
+  gridGap: 'smaller'
 };
 
 export default CardActions;

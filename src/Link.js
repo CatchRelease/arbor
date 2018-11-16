@@ -1,11 +1,13 @@
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
+import { color } from 'styled-system';
 
 import Text from './Text';
 
 const baseStyles = css`
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     text-decoration: underline;
@@ -13,6 +15,10 @@ const baseStyles = css`
 
   &:focus {
     outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
   }
 `;
 
@@ -56,6 +62,7 @@ const variantStyles = ({ variant, theme: { colors } }) => {
 const Link = styled(Text.withComponent('a'))`
   ${baseStyles};
   ${variantStyles};
+  ${color};
 `;
 
 Link.propTypes = {
