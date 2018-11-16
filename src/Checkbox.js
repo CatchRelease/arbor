@@ -160,7 +160,7 @@ Checkbox.propTypes = {
 
   /**
    * State in addition to "checked" and "unchecked".
-   * When true, the radio displays a "minus" icon.
+   * When true, the checkbox displays a "minus" icon.
    */
   indeterminate: PropTypes.bool,
 
@@ -170,7 +170,7 @@ Checkbox.propTypes = {
   onChange: PropTypes.func,
 
   /**
-   * When true, the radio is disabled.
+   * When true, the checkbox is disabled.
    */
   disabled: PropTypes.bool,
 
