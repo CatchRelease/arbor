@@ -21,7 +21,7 @@ InputContainer.defaultProps = {
 };
 
 const baseStyles = ({ theme }) => css`
-  border-radius: ${theme.borderRadius.small};
+  border-radius: ${theme.radii.small};
   border: ${theme.borderWidth.small} solid ${theme.colors.grey20};
   box-sizing: border-box;
   color: ${theme.colors.grey100};

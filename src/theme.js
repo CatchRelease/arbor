@@ -122,7 +122,7 @@ export const borderWidth = {
 };
 
 export default {
-  borderRadius,
+  radii: borderRadius,
   borderWidth,
   brandFont,
   breakpoints,
