@@ -5,7 +5,6 @@ exports[`renders a h1 1`] = `
   color: #222222;
   font-size: 2.125rem;
   font-family: Motiva Sans;
-  line-height: 1.5;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: calc(2.125rem * 0.5);
@@ -25,7 +24,6 @@ exports[`renders a h2 1`] = `
   color: #666666;
   font-size: 1.75rem;
   font-family: Motiva Sans;
-  line-height: 1.5;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: calc(1.75rem * 0.5);
@@ -45,7 +43,6 @@ exports[`renders a h3 1`] = `
   color: #666666;
   font-size: 1.375rem;
   font-family: Motiva Sans;
-  line-height: 1.5;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: calc(1.375rem * 0.5);
@@ -65,7 +62,6 @@ exports[`renders a h4 1`] = `
   color: #666666;
   font-size: 1.125rem;
   font-family: Motiva Sans;
-  line-height: 1.5;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: calc(1.125rem * 0.5);
@@ -85,7 +81,6 @@ exports[`renders a h5 1`] = `
   color: #222222;
   font-size: 0.875rem;
   font-family: Motiva Sans;
-  line-height: 1.5;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: calc(0.875rem * 0.5);
@@ -107,7 +102,6 @@ exports[`renders a h6 1`] = `
   color: #666666;
   font-size: 0.875rem;
   font-family: Motiva Sans;
-  line-height: 1.5;
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: calc(0.875rem * 0.5);
