@@ -3,9 +3,9 @@
 exports[`<Link /> Variants properly renders a default Link 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  line-height: 1.5;
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: pointer;
   color: #4466EE;
 }
 
@@ -16,6 +16,10 @@ exports[`<Link /> Variants properly renders a default Link 1`] = `
 
 .emotion-0:focus {
   outline-offset: 2px;
+}
+
+.emotion-0:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-0:visited {
@@ -45,9 +49,9 @@ exports[`<Link /> Variants properly renders a default Link 1`] = `
 exports[`<Link /> Variants properly renders a muted Link 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  line-height: 1.5;
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: pointer;
   color: #888888;
 }
 
@@ -58,6 +62,10 @@ exports[`<Link /> Variants properly renders a muted Link 1`] = `
 
 .emotion-0:focus {
   outline-offset: 2px;
+}
+
+.emotion-0:disabled {
+  cursor: not-allowed;
 }
 
 .emotion-0:visited {

@@ -7,10 +7,6 @@ ShallowWrapper {
     text="Hello World"
     theme={
       Object {
-        "borderRadius": Object {
-          "large": "6px",
-          "small": "3px",
-        },
         "borderWidth": Object {
           "large": "4px",
           "medium": "2px",
@@ -69,6 +65,10 @@ ShallowWrapper {
         "lineHeights": Object {
           "large": 1.5,
           "small": 1.25,
+        },
+        "radii": Object {
+          "large": "6px",
+          "small": "3px",
         },
         "space": Object {
           "large": "1.5rem",
@@ -134,14 +134,11 @@ ShallowWrapper {
       "html": <Text
         color="white"
         fontSize="size2"
-        px="smaller"
-        py="smallest"
+        lineHeight="small"
+        px="small"
+        py="smaller"
         theme={
           Object {
-            "borderRadius": Object {
-              "large": "6px",
-              "small": "3px",
-            },
             "borderWidth": Object {
               "large": "4px",
               "medium": "2px",
@@ -200,6 +197,10 @@ ShallowWrapper {
             "lineHeights": Object {
               "large": 1.5,
               "small": 1.25,
+            },
+            "radii": Object {
+              "large": "6px",
+              "small": "3px",
             },
             "space": Object {
               "large": "1.5rem",
@@ -292,14 +293,11 @@ ShallowWrapper {
         "html": <Text
           color="white"
           fontSize="size2"
-          px="smaller"
-          py="smallest"
+          lineHeight="small"
+          px="small"
+          py="smaller"
           theme={
             Object {
-              "borderRadius": Object {
-                "large": "6px",
-                "small": "3px",
-              },
               "borderWidth": Object {
                 "large": "4px",
                 "medium": "2px",
@@ -358,6 +356,10 @@ ShallowWrapper {
               "lineHeights": Object {
                 "large": 1.5,
                 "small": 1.25,
+              },
+              "radii": Object {
+                "large": "6px",
+                "small": "3px",
               },
               "space": Object {
                 "large": "1.5rem",
