@@ -1,9 +1,8 @@
 import styled, { css } from 'react-emotion';
-import { color, fontSize, space, textAlign } from 'styled-system';
+import { color, fontSize, space, textAlign, lineHeight } from 'styled-system';
 
 const baseStyles = ({ theme }) => css`
   font-family: ${theme.brandFont};
-  line-height: ${theme.lineHeights.large};
 `;
 
 const Text = styled.p`
@@ -11,6 +10,7 @@ const Text = styled.p`
   ${fontSize};
   ${space};
   ${textAlign};
+  ${lineHeight};
   ${baseStyles};
 `;
 
@@ -18,7 +18,8 @@ Text.propTypes = {
   ...color.propTypes,
   ...fontSize.propTypes,
   ...space.propTypes,
-  ...textAlign.propTypes
+  ...textAlign.propTypes,
+  ...lineHeight.propTypes
 };
 
 Text.p = Text.withComponent('p');

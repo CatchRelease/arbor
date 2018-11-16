@@ -19,8 +19,9 @@ injectGlobal`
 export const Tooltip = ({ text, theme, children, ...props }) => {
   const tooltipText = (
     <Text
-      px="smaller"
-      py="smallest"
+      lineHeight="small"
+      px="small"
+      py="smaller"
       theme={theme}
       fontSize="size2"
       color="white"
