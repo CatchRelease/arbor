@@ -1,13 +1,12 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { ThemeProvider } from 'emotion-theming';
+import createWithTheme from '../utils/createWithTheme';
 
-import { Icon } from '../src/Icon';
-import theme from '../src/theme';
+import Icon from '../src/Icon';
 
 describe('<Icon />', () => {
   it('renders an icon properly', () => {
-    const tree = create(<Icon theme={theme} name="my-icon" />);
+    const tree = createWithTheme(<Icon name="my-icon" />);
 
     expect(tree).toMatchSnapshot();
   });
@@ -16,10 +15,13 @@ describe('<Icon />', () => {
     const customTheme = {
       iconFontPrefix: 'super'
     };
+    const icon = createWithTheme(
+      <ThemeProvider theme={customTheme}>
+        <Icon name="example-icon" />
+      </ThemeProvider>
+    );
 
-    const icon = shallow(<Icon theme={customTheme} name="example-icon" />);
-
-    expect(icon.props().className).toContain('super-example-icon');
+    expect(icon).toMatchSnapshot();
   });
 
   it('applies a class of just the icon font prefix', () => {
@@ -27,14 +29,18 @@ describe('<Icon />', () => {
       iconFontPrefix: 'super'
     };
 
-    const icon = shallow(<Icon theme={customTheme} name="example-icon" />);
+    const icon = createWithTheme(
+      <ThemeProvider theme={customTheme}>
+        <Icon name="example-icon" />
+      </ThemeProvider>
+    );
 
-    expect(icon.props().className).toContain('super');
+    expect(icon).toMatchSnapshot();
   });
 
   ['90', '180', '270'].forEach(rotation => {
     it(`supports ${rotation} degree rotation`, () => {
-      const tree = create(<Icon {...{ rotation, theme, name: 'my-icon' }} />);
+      const tree = createWithTheme(<Icon {...{ rotation, name: 'my-icon' }} />);
 
       expect(tree).toMatchSnapshot();
     });

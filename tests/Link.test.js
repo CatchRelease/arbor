@@ -1,14 +1,14 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
+import createWithTheme from '../utils/createWithTheme';
 
-import { Link, theme } from '../src';
+import { Link } from '../src';
 
 describe('<Link />', () => {
   describe('Variants', () => {
     ['default', 'muted'].forEach(variant => {
       it(`properly renders a ${variant} Link`, () => {
-        const link = create(
-          <Link theme={theme} href="#test" variant={variant}>
+        const link = createWithTheme(
+          <Link href="#test" variant={variant}>
             Link
           </Link>
         );

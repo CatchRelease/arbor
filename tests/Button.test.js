@@ -1,25 +1,22 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
+import createWithTheme from '../utils/createWithTheme';
 
-import { Icon } from '../src/Icon';
-import { Button, theme } from '../src';
+import { Button, Icon } from '../src';
 
 describe('<Button />', () => {
   describe('Variants', () => {
     ['primary', 'secondary', 'minimal'].forEach(variant => {
       it(`properly renders a ${variant} button`, () => {
-        const button = create(
-          <Button theme={theme} variant={variant}>
-            Button Label
-          </Button>
+        const button = createWithTheme(
+          <Button variant={variant}>Button Label</Button>
         );
 
         expect(button).toMatchSnapshot();
       });
 
       it(`properly renders a disabled ${variant} button`, () => {
-        const button = create(
-          <Button theme={theme} disabled variant={variant}>
+        const button = createWithTheme(
+          <Button disabled variant={variant}>
             Button Label
           </Button>
         );
@@ -32,10 +29,8 @@ describe('<Button />', () => {
   describe('Sizes', () => {
     ['small', 'medium', 'large', 'jumbo'].forEach(size => {
       it(`properly renders a ${size} sized button`, () => {
-        const button = create(
-          <Button theme={theme} size={size}>
-            Button Label
-          </Button>
+        const button = createWithTheme(
+          <Button size={size}>Button Label</Button>
         );
 
         expect(button).toMatchSnapshot();
@@ -43,9 +38,9 @@ describe('<Button />', () => {
 
       describe('iconStart', () => {
         it('properly renders a button with an iconStart', () => {
-          const icon = <Icon theme={theme} name="cr-logo" />;
-          const button = create(
-            <Button theme={theme} size={size} iconStart={icon}>
+          const icon = <Icon name="cr-logo" />;
+          const button = createWithTheme(
+            <Button size={size} iconStart={icon}>
               Button with Icon
             </Button>
           );
@@ -56,9 +51,9 @@ describe('<Button />', () => {
 
       describe('iconEnd', () => {
         it('properly renders a button with an iconEnd', () => {
-          const icon = <Icon theme={theme} name="cr-logo" />;
-          const button = create(
-            <Button theme={theme} size={size} iconEnd={icon}>
+          const icon = <Icon name="cr-logo" />;
+          const button = createWithTheme(
+            <Button size={size} iconEnd={icon}>
               Button with Icon
             </Button>
           );
@@ -69,15 +64,10 @@ describe('<Button />', () => {
 
       describe('iconStart and iconEnd', () => {
         it('properly renders a button with an iconStart and an iconEdn', () => {
-          const iconStart = <Icon theme={theme} name="cr-logo" />;
-          const iconEnd = <Icon theme={theme} name="download" />;
-          const button = create(
-            <Button
-              theme={theme}
-              size={size}
-              iconStart={iconStart}
-              iconEnd={iconEnd}
-            >
+          const iconStart = <Icon name="cr-logo" />;
+          const iconEnd = <Icon name="download" />;
+          const button = createWithTheme(
+            <Button size={size} iconStart={iconStart} iconEnd={iconEnd}>
               Button with Icon
             </Button>
           );
@@ -90,11 +80,7 @@ describe('<Button />', () => {
 
   describe('fullWidth', () => {
     it('properly renders a fullWidth button', () => {
-      const button = create(
-        <Button theme={theme} fullWidth>
-          Full Width
-        </Button>
-      );
+      const button = createWithTheme(<Button fullWidth>Full Width</Button>);
 
       expect(button).toMatchSnapshot();
     });

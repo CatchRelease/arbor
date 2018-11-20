@@ -1,12 +1,11 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
+import createWithTheme from '../utils/createWithTheme';
 
 import CardPreview from '../src/CardPreview';
-import theme from '../src/theme';
 
 describe('<CardPreview />', () => {
   it('renders a CardPreview properly', () => {
-    const tree = create(<CardPreview theme={theme} image="example.gif" />);
+    const tree = createWithTheme(<CardPreview image="example.gif" />);
 
     expect(tree).toMatchSnapshot();
   });

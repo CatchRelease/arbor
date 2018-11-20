@@ -1,12 +1,12 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
+import createWithTheme from '../utils/createWithTheme';
 
-import { Text, theme } from '../src';
+import { Text } from '../src';
 
 describe('<Text />', () => {
   it('properly renders a Text component', () => {
-    const tree = create(
-      <Text theme={theme}>The quick brown fox jumps over the lazy dog</Text>
+    const tree = createWithTheme(
+      <Text>The quick brown fox jumps over the lazy dog</Text>
     );
 
     expect(tree).toMatchSnapshot();

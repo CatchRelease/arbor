@@ -1,6 +1,5 @@
 import React from 'react';
 import { injectGlobal } from 'react-emotion';
-import { withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import 'react-tippy/dist/tippy.css';
 import { Tooltip as TippyTooltip } from 'react-tippy';
@@ -16,15 +15,9 @@ injectGlobal`
   }
 `;
 
-export const Tooltip = ({ text, theme, children, ...props }) => {
+const Tooltip = ({ text, children, ...props }) => {
   const tooltipText = (
-    <Text
-      px="smaller"
-      py="smallest"
-      theme={theme}
-      fontSize="size2"
-      color="white"
-    >
+    <Text px="smaller" py="smallest" fontSize="size2" color="white">
       {text}
     </Text>
   );
@@ -63,4 +56,4 @@ Tooltip.propTypes = {
   children: PropTypes.element.isRequired
 };
 
-export default withTheme(Tooltip);
+export default Tooltip;

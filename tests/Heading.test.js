@@ -1,12 +1,12 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
+import createWithTheme from '../utils/createWithTheme';
 
-import { Heading, theme } from '../src';
+import { Heading } from '../src';
 
 ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].forEach(variant => {
   test(`renders a ${variant}`, () => {
     const Variant = Heading[variant];
-    const tree = create(<Variant theme={theme}>Hello World</Variant>);
+    const tree = createWithTheme(<Variant>Hello World</Variant>);
 
     expect(tree).toMatchSnapshot();
   });

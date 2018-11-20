@@ -26,7 +26,7 @@ StyledIcon.propTypes = {
   ...textAlign.propTypes
 };
 
-export const Icon = ({ name, theme, ...props }) => {
+const Icon = ({ name, theme, ...props }) => {
   const { iconFontPrefix } = theme;
 
   return (

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { css } from 'react-emotion';
-import { withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import { placeholder, transparentize } from 'polished';
 
@@ -55,14 +54,12 @@ const StyledInput = styled.input`
   ${largeStyles};
 `;
 
-export const Input = ({ caption, label, id, theme, ...props }) => (
-  <InputContainer theme={theme} caption={caption}>
-    <Label theme={theme} htmlFor={id}>
-      {label}
-    </Label>
-    <StyledInput {...{ ...props, id, theme }} />
+const Input = ({ caption, label, id, ...props }) => (
+  <InputContainer caption={caption}>
+    <Label htmlFor={id}>{label}</Label>
+    <StyledInput {...{ ...props, id }} />
     {caption && (
-      <Paragraph.span theme={theme} variant="tiny" color="red">
+      <Paragraph.span variant="tiny" color="red">
         {caption}
       </Paragraph.span>
     )}
@@ -80,4 +77,4 @@ Input.defaultProps = {
   large: false
 };
 
-export default withTheme(Input);
+export default Input;
