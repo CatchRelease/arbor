@@ -12,17 +12,25 @@ module.exports = {
           'tests/**',
           'jest.setup.js'
         ]
-      },
+      }
     ]
   },
   overrides: [
     {
+      files: ['tests/**/*.test.js', 'src/**/*.js'],
+      globals: {
+        document: true
+      }
+    },
+    {
       files: ['tests/**/*.test.js'],
       globals: {
         describe: true,
-        test: true,
         expect: true,
-        it: true
+        it: true,
+        jest: true,
+        test: true,
+        window: true
       }
     }
   ]
