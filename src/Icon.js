@@ -1,5 +1,6 @@
-import React from 'react';
-import styled, { css, cx } from 'react-emotion';
+/** @jsx jsx */
+import { ClassNames, css, jsx } from '@emotion/core';
+import styled from '@emotion/styled';
 import { color, display, fontSize, textAlign, space } from 'styled-system';
 import { withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
@@ -30,10 +31,14 @@ const Icon = ({ name, theme, ...props }) => {
   const { iconFontPrefix } = theme;
 
   return (
-    <StyledIcon
-      className={cx(iconFontPrefix, `${iconFontPrefix}-${name}`)}
-      {...props}
-    />
+    <ClassNames>
+      {({ cx }) => (
+        <StyledIcon
+          className={cx(iconFontPrefix, `${iconFontPrefix}-${name}`)}
+          {...props}
+        />
+      )}
+    </ClassNames>
   );
 };
 

@@ -16,5 +16,5 @@ export { default as Paragraph } from './Paragraph';
 export { default as Popover } from './Popover';
 export { default as Text } from './Text';
 export { default as Tooltip } from './Tooltip';
-export { default as globalStyles } from './global-styles';
+export { default as reset } from './reset';
 export { default as theme } from './theme';

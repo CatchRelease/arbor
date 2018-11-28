@@ -2,19 +2,19 @@
 
 exports[`<Icon /> applies a class based off the icon name using the theme prefix 1`] = `
 <i
-  className="super super-example-icon emotion-0 emotion-1"
+  className="super super-example-icon css-ui3h2r-StyledIcon emotion-0"
 />
 `;
 
 exports[`<Icon /> applies a class of just the icon font prefix 1`] = `
 <i
-  className="super super-example-icon emotion-0 emotion-1"
+  className="super super-example-icon css-ui3h2r-StyledIcon emotion-0"
 />
 `;
 
 exports[`<Icon /> renders an icon properly 1`] = `
 <i
-  className="fa fa-my-icon emotion-0 emotion-1"
+  className="fa fa-my-icon css-ui3h2r-StyledIcon emotion-0"
 />
 `;
 

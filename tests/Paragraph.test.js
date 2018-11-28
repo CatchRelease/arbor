@@ -1,11 +1,10 @@
 import React from 'react';
-import { createMatchers } from 'jest-emotion';
-import * as emotion from 'emotion';
+import { matchers } from 'jest-emotion';
 import createWithTheme from '../utils/createWithTheme';
 
 import { Paragraph } from '../src';
 
-expect.extend(createMatchers(emotion));
+expect.extend(matchers);
 
 describe('<Paragraph />', () => {
   describe('props', () => {

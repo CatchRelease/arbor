@@ -81,17 +81,26 @@ describe('<Popover />', () => {
 
   describe('pressing escape', () => {
     it('closes the popover', () => {
-      const popover = mount(
-        <Popover content="Hello World">
-          <button type="button">Trigger</button>
-        </Popover>
+      const popover = renderPopover(
+        <button type="submit">Inside the popover</button>
       );
       popover.setState({ isOpen: true });
+
+      const wrapper = mount(
+        <div>
+          <div id="outside">Outside of the popover</div>
+          {popover}
+        </div>
+      );
+
+      const node = wrapper
+        .find('button')
+        .filterWhere(button => button.props().children === 'Inside the popover')
+        .getDOMNode();
 
       const event = new window.KeyboardEvent('keypress', {
         key: 'Escape'
       });
-      const node = popover.getDOMNode();
       node.dispatchEvent(event);
 
       expect(popover.state().isOpen).toBe(false);

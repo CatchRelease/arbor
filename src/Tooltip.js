@@ -1,5 +1,7 @@
-import React from 'react';
-import { injectGlobal } from 'react-emotion';
+/** @jsx jsx */
+import { Global, css, jsx } from '@emotion/core';
+import { Fragment } from 'react';
+import { withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import 'react-tippy/dist/tippy.css';
 import { Tooltip as TippyTooltip } from 'react-tippy';
@@ -7,39 +9,50 @@ import { Tooltip as TippyTooltip } from 'react-tippy';
 import { borderRadius } from './theme';
 import Text from './Text';
 
-// eslint-disable-next-line no-unused-expressions
-injectGlobal`
+const globalTippyStyles = css`
   .tippy-tooltip.arbor-theme {
-    padding: 0;
     border-radius: ${borderRadius.small};
+    padding: 0;
   }
 `;
 
-const Tooltip = ({ text, children, ...props }) => {
+const Tooltip = ({ text, children, theme, ...props }) => {
   const tooltipText = (
-    <Text px="smaller" py="smallest" fontSize="size2" color="white">
+    <Text
+      {...{
+        px: 'smaller',
+        py: 'smallest',
+        fontSize: 'size2',
+        color: 'white',
+        theme
+      }}
+    >
       {text}
     </Text>
   );
 
   return (
-    <TippyTooltip
-      {...{
-        ...props,
-        theme: 'arbor',
-        arrow: true,
-        html: tooltipText,
-        distance: 8,
-        duration: 300,
-        updateDuration: 0,
-        arrowSize: 'small',
-        animation: 'fade',
-        inertia: true,
-        animateFill: false
-      }}
-    >
-      {children}
-    </TippyTooltip>
+    <Fragment>
+      <Global styles={globalTippyStyles} />
+
+      <TippyTooltip
+        {...{
+          ...props,
+          theme: 'arbor',
+          arrow: true,
+          html: tooltipText,
+          distance: 8,
+          duration: 300,
+          updateDuration: 0,
+          arrowSize: 'small',
+          animation: 'fade',
+          inertia: true,
+          animateFill: false
+        }}
+      >
+        {children}
+      </TippyTooltip>
+    </Fragment>
   );
 };
 
@@ -56,4 +69,4 @@ Tooltip.propTypes = {
   children: PropTypes.element.isRequired
 };
 
-export default Tooltip;
+export default withTheme(Tooltip);

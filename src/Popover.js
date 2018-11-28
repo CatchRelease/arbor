@@ -1,5 +1,7 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
 import React from 'react';
-import styled from 'react-emotion';
+import styled from '@emotion/styled';
 import { transparentize } from 'polished';
 import ReactPopover from 'react-popover';
 import PropTypes from 'prop-types';

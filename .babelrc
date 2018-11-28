@@ -15,7 +15,7 @@
     },
     "test": {
       "plugins": [
-        ["emotion", { "sourceMap": true, "autoLabel": true }],
+        ["emotion", { "sourceMap": false, "autoLabel": true }],
         ["@babel/plugin-proposal-class-properties", { "loose": true }]
       ]
     }

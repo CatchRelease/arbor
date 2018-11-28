@@ -1,5 +1,6 @@
-import React from 'react';
-import styled, { css } from 'react-emotion';
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core';
+import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { placeholder, transparentize } from 'polished';
 
