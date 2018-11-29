@@ -74,7 +74,13 @@ export class Popover extends React.Component {
   };
 
   render() {
-    const { children, content, preferPlace, ...popoverProps } = this.props;
+    const {
+      children,
+      content,
+      preferPlace,
+      place,
+      ...popoverProps
+    } = this.props;
     const { isOpen } = this.state;
 
     const styledContent = <PopoverContent>{content}</PopoverContent>;
@@ -89,6 +95,7 @@ export class Popover extends React.Component {
         isOpen={isOpen}
         body={styledContent}
         preferPlace={preferPlace}
+        place={place}
         tipSize={0.01}
         {...{ popoverProps }}
       >
@@ -130,11 +137,28 @@ Popover.propTypes = {
     'column',
     'start',
     'end'
+  ]),
+
+  /**
+   * Required location or scope to place the popover when it's opened in the event that
+   * there are multiple available areas where the popover would fit. This list
+   * is based off the supported places provided by [littlebits/react-popover](https://github.com/littlebits/react-popover#code-place-string-null-code)
+   */
+  place: PropTypes.oneOf([
+    'above',
+    'right',
+    'below',
+    'left',
+    'row',
+    'column',
+    'start',
+    'end'
   ])
 };
 
 Popover.defaultProps = {
   preferPlace: 'below',
+  place: 'column',
   onClose: () => null
 };
 
