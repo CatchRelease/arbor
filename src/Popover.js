@@ -11,12 +11,12 @@ import Box from './Box';
 const PopoverContent = styled(Box)`
   background: ${props => props.theme.colors.white};
   border-radius: ${props => props.theme.borderRadius.large};
-  border: 1px solid ${props => props.theme.colors.grey10};
   box-shadow: 0 4px 8px
       ${props => transparentize(0.9, props.theme.colors.black)},
-    inset 0 -1px 0 ${props => transparentize(0.9, props.theme.colors.black)};
+    0 0 1px ${props => props.theme.colors.grey20};
   min-height: 40px;
   min-width: 200px;
+  overflow: hidden;
 `;
 
 export class Popover extends React.Component {
@@ -89,6 +89,7 @@ export class Popover extends React.Component {
         isOpen={isOpen}
         body={styledContent}
         preferPlace={preferPlace}
+        tipSize={0.01}
         {...{ popoverProps }}
       >
         {trigger}
