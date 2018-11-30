@@ -1,0 +1,669 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> properly renders a checkbox 1`] = `
+.emotion-6 {
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #999999;
+  color: #FFFFFF;
+  height: 1rem;
+  width: 1rem;
+}
+
+.emotion-4 {
+  color: #222222;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  font-family: Motiva Sans;
+}
+
+<label
+  className="emotion-6 emotion-7"
+>
+  <input
+    aria-invalid={false}
+    checked={false}
+    className="emotion-0 emotion-1"
+    disabled={false}
+    id="example"
+    name="example"
+    onChange={[Function]}
+    type="checkbox"
+    value="1"
+  />
+  <div
+    checked={false}
+    className="emotion-2 emotion-3"
+    disabled={false}
+  />
+  <span
+    className="emotion-4 emotion-5"
+    color="grey100"
+    fontSize="size2"
+  >
+    My Checkbox
+  </span>
+</label>
+`;
+
+exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
+.emotion-8 {
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #999999;
+  color: #FFFFFF;
+  height: 1rem;
+  width: 1rem;
+}
+
+.emotion-4 {
+  color: #AAAAAA;
+  font-size: 24px;
+  margin-left: 0.5rem;
+}
+
+.emotion-6 {
+  color: #222222;
+  font-size: 0.875rem;
+  margin-left: 0.25rem;
+  font-family: Motiva Sans;
+}
+
+<label
+  className="emotion-8 emotion-9"
+>
+  <input
+    aria-invalid={false}
+    checked={false}
+    className="emotion-0 emotion-1"
+    disabled={false}
+    id="example"
+    name="example"
+    onChange={[Function]}
+    type="checkbox"
+    value="1"
+  />
+  <div
+    checked={false}
+    className="emotion-2 emotion-3"
+    disabled={false}
+  />
+  <i
+    className="fa fa-cr-logo emotion-4 emotion-5"
+    color="grey50"
+    fontSize="24px"
+  />
+  <span
+    className="emotion-6 emotion-7"
+    color="grey100"
+    fontSize="size2"
+  >
+    My Checkbox
+  </span>
+</label>
+`;
+
+exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] = `
+.emotion-8 {
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-6 {
+  color: #222222;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  font-family: Motiva Sans;
+}
+
+.emotion-2 {
+  font-size: 16px;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #999999;
+  color: #FFFFFF;
+  height: 1rem;
+  width: 1rem;
+  background-color: #FFFFFF;
+  border-color: #4466EE;
+  color: #4466EE;
+}
+
+<label
+  className="emotion-8 emotion-9"
+>
+  <input
+    aria-invalid={false}
+    checked={true}
+    className="emotion-0 emotion-1"
+    disabled={false}
+    id="example"
+    name="example"
+    onChange={[Function]}
+    type="checkbox"
+    value="1"
+  />
+  <div
+    checked={true}
+    className="emotion-4 emotion-5"
+    disabled={false}
+  >
+    <i
+      className="fa fa-checkbox-indeterminate emotion-2 emotion-3"
+      fontSize="16px"
+    />
+  </div>
+  <span
+    className="emotion-6 emotion-7"
+    color="grey100"
+    fontSize="size2"
+  >
+    My Checkbox
+  </span>
+</label>
+`;
+
+exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
+.emotion-8 {
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-6 {
+  color: #222222;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  font-family: Motiva Sans;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #999999;
+  color: #FFFFFF;
+  height: 1rem;
+  width: 1rem;
+  background-color: #4466EE;
+  border-color: #4466EE;
+  color: #FFFFFF;
+}
+
+.emotion-2 {
+  font-size: 16px;
+}
+
+<label
+  className="emotion-8 emotion-9"
+>
+  <input
+    aria-invalid={false}
+    checked={true}
+    className="emotion-0 emotion-1"
+    disabled={false}
+    id="example"
+    name="example"
+    onChange={[Function]}
+    type="checkbox"
+    value="1"
+  />
+  <div
+    checked={true}
+    className="emotion-4 emotion-5"
+    disabled={false}
+  >
+    <i
+      className="fa fa-checkbox-checked emotion-2 emotion-3"
+      fontSize="16px"
+    />
+  </div>
+  <span
+    className="emotion-6 emotion-7"
+    color="grey100"
+    fontSize="size2"
+  >
+    My Checkbox
+  </span>
+</label>
+`;
+
+exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
+.emotion-6 {
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #999999;
+  color: #FFFFFF;
+  height: 1rem;
+  width: 1rem;
+  background: #FFFFFF;
+  border-color: #DDDDDD;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  color: #BBBBBB;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  font-family: Motiva Sans;
+}
+
+<label
+  className="emotion-6 emotion-7"
+>
+  <input
+    aria-invalid={false}
+    checked={false}
+    className="emotion-0 emotion-1"
+    disabled={true}
+    id="example"
+    name="example"
+    onChange={[Function]}
+    type="checkbox"
+    value="1"
+  />
+  <div
+    checked={false}
+    className="emotion-2 emotion-3"
+    disabled={true}
+  />
+  <span
+    className="emotion-4 emotion-5"
+    color="grey40"
+    fontSize="size2"
+  >
+    My Checkbox
+  </span>
+</label>
+`;
+
+exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
+.emotion-8 {
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  font-size: 16px;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #999999;
+  color: #FFFFFF;
+  height: 1rem;
+  width: 1rem;
+  background: #FFFFFF;
+  border-color: #DDDDDD;
+  color: #FFFFFF;
+}
+
+.emotion-6 {
+  color: #BBBBBB;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  font-family: Motiva Sans;
+}
+
+<label
+  className="emotion-8 emotion-9"
+>
+  <input
+    aria-invalid={false}
+    checked={true}
+    className="emotion-0 emotion-1"
+    disabled={true}
+    id="example"
+    name="example"
+    onChange={[Function]}
+    type="checkbox"
+    value="1"
+  />
+  <div
+    checked={false}
+    className="emotion-4 emotion-5"
+    disabled={true}
+  >
+    <i
+      className="fa fa-checkbox-indeterminate emotion-2 emotion-3"
+      fontSize="16px"
+    />
+  </div>
+  <span
+    className="emotion-6 emotion-7"
+    color="grey40"
+    fontSize="size2"
+  >
+    My Checkbox
+  </span>
+</label>
+`;
+
+exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
+.emotion-8 {
+  box-sizing: border-box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: 1px solid #999999;
+  color: #FFFFFF;
+  height: 1rem;
+  width: 1rem;
+}
+
+.emotion-6 {
+  color: #222222;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  font-family: Motiva Sans;
+}
+
+.emotion-2 {
+  font-size: 16px;
+}
+
+<label
+  className="emotion-8 emotion-9"
+>
+  <input
+    aria-invalid={false}
+    checked={true}
+    className="emotion-0 emotion-1"
+    disabled={false}
+    id="example"
+    name="example"
+    onChange={[Function]}
+    type="checkbox"
+    value="1"
+  />
+  <div
+    checked={false}
+    className="emotion-4 emotion-5"
+    disabled={false}
+  >
+    <i
+      className="fa fa-checkbox-indeterminate emotion-2 emotion-3"
+      fontSize="16px"
+    />
+  </div>
+  <span
+    className="emotion-6 emotion-7"
+    color="grey100"
+    fontSize="size2"
+  >
+    My Checkbox
+  </span>
+</label>
+`;

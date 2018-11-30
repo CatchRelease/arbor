@@ -4,6 +4,7 @@ export { default as Button } from './Button';
 export { default as Card } from './Card';
 export { default as CardActions } from './CardActions';
 export { default as CardPreview } from './CardPreview';
+export { default as Checkbox } from './Checkbox';
 export { default as CardRow } from './CardRow';
 export { default as Flex } from './Flex';
 export { default as Grid } from './Grid';

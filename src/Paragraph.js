@@ -14,7 +14,8 @@ const variantStyles = ({ theme, variant }) => css`
   font-size: ${theme.typography.text[variant].fontSize};
 `;
 
-const Paragraph = styled(Text.withComponent('p'))`
+const Paragraph = styled(Text)`
+  line-height: ${props => props.theme.lineHeights.small};
   ${variantColor};
   ${variantStyles};
 `;

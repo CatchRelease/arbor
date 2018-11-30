@@ -3,7 +3,6 @@
 exports[`<Text /> properly renders a Text component 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  line-height: 1.5;
 }
 
 <p
