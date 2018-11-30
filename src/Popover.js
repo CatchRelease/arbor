@@ -97,6 +97,7 @@ export class Popover extends React.Component {
         preferPlace={preferPlace}
         place={place}
         tipSize={0.01}
+        enterExitTransitionDurationMs={0}
         {...{ popoverProps }}
       >
         {trigger}
