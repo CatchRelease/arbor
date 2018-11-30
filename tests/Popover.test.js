@@ -109,16 +109,33 @@ describe('<Popover />', () => {
 
   describe('Trigger', () => {
     describe('onClick', () => {
-      it('opens the popover', () => {
-        const popover = shallow(
-          <Popover content="Hello World">
-            <button type="button">Popover</button>
-          </Popover>
-        );
+      context('popover is closed', () => {
+        it('opens the popover', () => {
+          const popover = shallow(
+            <Popover content="Hello World">
+              <button type="button">Popover</button>
+            </Popover>
+          );
 
-        popover.find('button').simulate('click');
+          popover.find('button').simulate('click');
 
-        expect(popover.state().isOpen).toBe(true);
+          expect(popover.state().isOpen).toBe(true);
+        });
+      });
+
+      context('popover is open', () => {
+        it('closes the popover', () => {
+          const popover = shallow(
+            <Popover content="Hello World">
+              <button type="button">Popover</button>
+            </Popover>
+          );
+          popover.setState({ isOpen: true });
+
+          popover.find('button').simulate('click');
+
+          expect(popover.state().isOpen).toBe(false);
+        });
       });
     });
   });

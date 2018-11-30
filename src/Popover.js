@@ -63,14 +63,24 @@ export class Popover extends React.Component {
     }
   };
 
-  open = () => {
+  open() {
     this.setState({ isOpen: true });
-  };
+  }
 
-  close = () => {
+  close() {
     const { onClose } = this.props;
 
     this.setState({ isOpen: false }, onClose);
+  }
+
+  toggle = () => {
+    const { isOpen } = this.state;
+
+    if (isOpen) {
+      this.close();
+    } else {
+      this.open();
+    }
   };
 
   render() {
@@ -80,7 +90,7 @@ export class Popover extends React.Component {
     const styledContent = <PopoverContent>{content}</PopoverContent>;
 
     const trigger = React.cloneElement(children, {
-      onClick: this.open
+      onClick: this.toggle
     });
 
     return (

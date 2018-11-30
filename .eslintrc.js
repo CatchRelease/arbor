@@ -25,6 +25,7 @@ module.exports = {
     {
       files: ['tests/**/*.test.js'],
       globals: {
+        context: true,
         describe: true,
         expect: true,
         it: true,
