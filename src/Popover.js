@@ -11,12 +11,12 @@ import Box from './Box';
 const PopoverContent = styled(Box)`
   background: ${props => props.theme.colors.white};
   border-radius: ${props => props.theme.borderRadius.large};
-  border: 1px solid ${props => props.theme.colors.grey10};
   box-shadow: 0 4px 8px
       ${props => transparentize(0.9, props.theme.colors.black)},
-    inset 0 -1px 0 ${props => transparentize(0.9, props.theme.colors.black)};
+    0 0 1px ${props => props.theme.colors.grey20};
   min-height: 40px;
   min-width: 200px;
+  overflow: hidden;
 `;
 
 export class Popover extends React.Component {
@@ -84,7 +84,13 @@ export class Popover extends React.Component {
   };
 
   render() {
-    const { children, content, preferPlace, ...popoverProps } = this.props;
+    const {
+      children,
+      content,
+      preferPlace,
+      place,
+      ...popoverProps
+    } = this.props;
     const { isOpen } = this.state;
 
     const styledContent = <PopoverContent>{content}</PopoverContent>;
@@ -99,6 +105,9 @@ export class Popover extends React.Component {
         isOpen={isOpen}
         body={styledContent}
         preferPlace={preferPlace}
+        place={place}
+        tipSize={0.01}
+        enterExitTransitionDurationMs={0}
         {...{ popoverProps }}
       >
         {trigger}
@@ -139,11 +148,28 @@ Popover.propTypes = {
     'column',
     'start',
     'end'
+  ]),
+
+  /**
+   * Required location or scope to place the popover when it's opened in the event that
+   * there are multiple available areas where the popover would fit. This list
+   * is based off the supported places provided by [littlebits/react-popover](https://github.com/littlebits/react-popover#code-place-string-null-code)
+   */
+  place: PropTypes.oneOf([
+    'above',
+    'right',
+    'below',
+    'left',
+    'row',
+    'column',
+    'start',
+    'end'
   ])
 };
 
 Popover.defaultProps = {
   preferPlace: 'below',
+  place: 'column',
   onClose: () => null
 };
 
