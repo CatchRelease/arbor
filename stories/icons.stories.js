@@ -10,7 +10,8 @@ const AVAILABLE_ICONS = [
   'download',
   'chat-bubble-outline',
   'thumb-up-outline',
-  'thumb-down-outline'
+  'thumb-down-outline',
+  'status'
 ];
 
 const rotationOptions = {
