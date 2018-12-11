@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MenuItem /> renders a MenuItem properly 1`] = `
+.emotion-5 {
+  box-sizing: border-box;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #666666;
+  padding: 0 1rem;
+}
+
+.emotion-5:hover {
+  background: #F5F5F5;
+}
+
+.emotion-5:active {
+  background: #EEEEEE;
+}
+
+.emotion-5:focus {
+  background: #F5F5F5;
+}
+
+.emotion-0 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-1 {
+  color: grey;
+  font-size: 16px;
+  margin-right: 0.75rem;
+}
+
+.emotion-3 {
+  font-size: 0.875rem;
+  font-family: Motiva Sans;
+}
+
+<label
+  className="emotion-5 emotion-6"
+  height="40px"
+  htmlFor="menu-item_clearance_state_ready_to_clear"
+  selected={false}
+>
+  <input
+    checked={false}
+    className="emotion-0"
+    id="menu-item_clearance_state_ready_to_clear"
+    name="clearance_state"
+    onChange={[Function]}
+    type="radio"
+    value="ready_to_clear"
+  />
+  <i
+    className="fa fa-status emotion-1 emotion-2"
+    color="grey"
+    fontSize="16px"
+  />
+  <span
+    className="emotion-3 emotion-4"
+    fontSize="size2"
+  >
+    Ready to Clear
+  </span>
+</label>
+`;
+
+exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
+.emotion-0 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-1 {
+  color: grey;
+  font-size: 16px;
+  margin-right: 0.75rem;
+}
+
+.emotion-3 {
+  font-size: 0.875rem;
+  font-family: Motiva Sans;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #666666;
+  padding: 0 1rem;
+  color: #222222;
+  font-weight: 700;
+  padding-right: 0.5rem;
+}
+
+.emotion-5:hover {
+  background: #F5F5F5;
+}
+
+.emotion-5:active {
+  background: #EEEEEE;
+}
+
+.emotion-5:focus {
+  background: #F5F5F5;
+}
+
+<label
+  className="emotion-5 emotion-6"
+  height="40px"
+  htmlFor="menu-item_clearance_state_ready_to_clear"
+  selected={true}
+>
+  <input
+    checked={true}
+    className="emotion-0"
+    id="menu-item_clearance_state_ready_to_clear"
+    name="clearance_state"
+    onChange={[Function]}
+    type="radio"
+    value="ready_to_clear"
+  />
+  <i
+    className="fa fa-status emotion-1 emotion-2"
+    color="grey"
+    fontSize="16px"
+  />
+  <span
+    className="emotion-3 emotion-4"
+    fontSize="size2"
+  >
+    Ready to Clear
+  </span>
+</label>
+`;
