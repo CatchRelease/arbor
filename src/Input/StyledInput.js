@@ -1,24 +1,6 @@
-/** @jsx jsx */
-import { css, jsx } from '@emotion/core';
+import { css } from '@emotion/core';
 import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
 import { placeholder, transparentize } from 'polished';
-
-import Label from './Label';
-import Paragraph from './Paragraph';
-
-const InputContainer = styled.div`
-  margin-bottom: ${props =>
-    props.caption ? props.theme.space.smaller : props.theme.space.regular};
-`;
-
-InputContainer.propTypes = {
-  caption: PropTypes.string
-};
-
-InputContainer.defaultProps = {
-  caption: ''
-};
 
 const baseStyles = ({ theme }) => css`
   border-radius: ${theme.borderRadius.small};
@@ -55,27 +37,4 @@ const StyledInput = styled.input`
   ${largeStyles};
 `;
 
-const Input = ({ caption, label, id, ...props }) => (
-  <InputContainer caption={caption}>
-    <Label htmlFor={id}>{label}</Label>
-    <StyledInput {...{ ...props, id }} />
-    {caption && (
-      <Paragraph.span variant="tiny" color="red">
-        {caption}
-      </Paragraph.span>
-    )}
-  </InputContainer>
-);
-
-Input.propTypes = {
-  caption: PropTypes.string,
-  id: PropTypes.string.isRequired,
-  large: PropTypes.bool
-};
-
-Input.defaultProps = {
-  caption: '',
-  large: false
-};
-
-export default Input;
+export default StyledInput;
