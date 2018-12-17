@@ -54,19 +54,19 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   font-family: Motiva Sans;
 }
 
-<label
+<div
+  aria-selected={false}
   className="emotion-5 emotion-6"
   height="40px"
-  htmlFor="menu-item_clearance_state_ready_to_clear"
+  onClick={[Function]}
+  role="Menuitem"
   selected={false}
 >
   <input
-    checked={false}
     className="emotion-0"
     id="menu-item_clearance_state_ready_to_clear"
     name="clearance_state"
-    onChange={[Function]}
-    type="radio"
+    type="hidden"
     value="ready_to_clear"
   />
   <i
@@ -80,7 +80,7 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   >
     Ready to Clear
   </span>
-</label>
+</div>
 `;
 
 exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
@@ -140,19 +140,19 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   background: #F5F5F5;
 }
 
-<label
+<div
+  aria-selected={true}
   className="emotion-5 emotion-6"
   height="40px"
-  htmlFor="menu-item_clearance_state_ready_to_clear"
+  onClick={[Function]}
+  role="Menuitem"
   selected={true}
 >
   <input
-    checked={true}
     className="emotion-0"
     id="menu-item_clearance_state_ready_to_clear"
     name="clearance_state"
-    onChange={[Function]}
-    type="radio"
+    type="hidden"
     value="ready_to_clear"
   />
   <i
@@ -166,5 +166,5 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   >
     Ready to Clear
   </span>
-</label>
+</div>
 `;

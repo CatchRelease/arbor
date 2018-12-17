@@ -2,37 +2,38 @@
 import { jsx } from '@emotion/core';
 import { hideVisually } from 'polished';
 import PropTypes from 'prop-types';
-import snakeCase from 'lodash/snakeCase';
 
-import MenuItemLabel from './MenuItemLabel';
+import StyledMenuItem from './StyledMenuItem';
 import Text from '../Text';
 import Icon from '../Icon';
 
-const MenuItem = ({ selected, baseColor, label, name, onSelect, value }) => {
-  const id = `menu-item_${name}_${snakeCase(label)}`;
-
-  return (
-    <MenuItemLabel
-      baseColor={baseColor}
-      selected={selected}
-      htmlFor={id}
-      alignItems="center"
-      height="40px"
-    >
-      <input
-        onChange={() => onSelect(value)}
-        css={hideVisually()}
-        id={id}
-        checked={selected}
-        type="radio"
-        name={name}
-        value={value}
-      />
-      <Icon name="status" mr="small" color={baseColor} fontSize="16px" />
-      <Text.span fontSize="size2">{label}</Text.span>
-    </MenuItemLabel>
-  );
-};
+const MenuItem = ({
+  selected,
+  baseColor,
+  id,
+  label,
+  name,
+  onSelect,
+  value,
+  focused
+}) => (
+  <StyledMenuItem
+    {...{
+      baseColor,
+      selected,
+      focused,
+      role: 'Menuitem',
+      'aria-selected': selected,
+      alignItems: 'center',
+      height: '40px',
+      onClick: () => onSelect(value)
+    }}
+  >
+    <input {...{ id, name, value, css: hideVisually(), type: 'hidden' }} />
+    <Icon name="status" mr="small" color={baseColor} fontSize="16px" />
+    <Text.span fontSize="size2">{label}</Text.span>
+  </StyledMenuItem>
+);
 
 MenuItem.propTypes = {
   /**
@@ -65,12 +66,23 @@ MenuItem.propTypes = {
    * Base color to use for the menu item
    */
   baseColor: PropTypes.oneOf(['blue', 'grey', 'green', 'red', 'bronze'])
-    .isRequired
+    .isRequired,
+
+  /**
+   * HTML ID for the menu item
+   */
+  id: PropTypes.string.isRequired,
+
+  /**
+   * Whether or not the current menu item is focused
+   */
+  focused: PropTypes.bool
 };
 
 MenuItem.defaultProps = {
   selected: false,
-  onSelect: () => null
+  onSelect: () => null,
+  focused: false
 };
 
 export default MenuItem;

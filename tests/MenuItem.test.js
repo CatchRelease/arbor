@@ -9,7 +9,8 @@ describe('<MenuItem />', () => {
     label: 'Ready to Clear',
     baseColor: 'grey',
     name: 'clearance_state',
-    value: 'ready_to_clear'
+    value: 'ready_to_clear',
+    id: 'menu-item_clearance_state_ready_to_clear'
   };
 
   function createWithProps(additionalProps) {
@@ -34,13 +35,13 @@ describe('<MenuItem />', () => {
     expect(menuItem).toMatchSnapshot();
   });
 
-  describe('input onChange', () => {
+  describe('onClick', () => {
     it('calls the onSelect callback with the value', () => {
       const onSelect = jest.fn();
       const value = 'ready_to_clear';
       const menuItem = mountWithProps({ onSelect, value });
 
-      menuItem.find('input').simulate('change');
+      menuItem.simulate('click');
 
       expect(onSelect).toHaveBeenCalledWith(value);
     });

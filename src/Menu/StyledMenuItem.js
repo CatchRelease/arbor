@@ -3,6 +3,8 @@ import styled from '@emotion/styled';
 
 import Flex from '../Flex';
 
+const FOCUSED_BACKGROUND = 'white10';
+
 const darker = (theme, base) => {
   const darkerColor = `${base}Dark`;
   return theme.colors[darkerColor];
@@ -23,7 +25,7 @@ const baseStyles = ({ theme, baseColor }) => css`
   }
 
   :focus {
-    background: ${theme.colors.white10};
+    background: ${theme.colors[FOCUSED_BACKGROUND]};
   }
 `;
 
@@ -35,9 +37,16 @@ const selectedStyles = ({ selected, theme }) =>
     padding-right: ${theme.space.smaller};
   `;
 
-const Label = styled(Flex.withComponent('label'))`
+const focusedStyles = ({ theme, focused }) =>
+  focused &&
+  css`
+    background: ${theme.colors[FOCUSED_BACKGROUND]};
+  `;
+
+const StyledMenuItem = styled(Flex)`
   ${baseStyles};
   ${selectedStyles};
+  ${focusedStyles};
 `;
 
-export default Label;
+export default StyledMenuItem;
