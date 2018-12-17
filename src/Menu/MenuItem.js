@@ -1,39 +1,66 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/core';
-import { hideVisually } from 'polished';
+import React from 'react';
 import PropTypes from 'prop-types';
+import { hideVisually } from 'polished';
 
 import StyledMenuItem from './StyledMenuItem';
 import Text from '../Text';
 import Icon from '../Icon';
 
-const MenuItem = ({
-  selected,
-  baseColor,
-  id,
-  label,
-  name,
-  onSelect,
-  value,
-  focused
-}) => (
-  <StyledMenuItem
-    {...{
-      baseColor,
-      selected,
-      focused,
-      role: 'Menuitem',
-      'aria-selected': selected,
-      alignItems: 'center',
-      height: '40px',
-      onClick: () => onSelect(value)
-    }}
-  >
-    <input {...{ id, name, value, css: hideVisually(), type: 'hidden' }} />
-    <Icon name="status" mr="small" color={baseColor} fontSize="16px" />
-    <Text.span fontSize="size2">{label}</Text.span>
-  </StyledMenuItem>
-);
+export const ENTER_KEY = 'Enter';
+export const SPACEBAR = ' ';
+
+class MenuItem extends React.PureComponent {
+  componentDidMount() {
+    document.addEventListener('keydown', this.onKeyDown, true);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.onKeyDown, true);
+  }
+
+  onKeyDown = e => {
+    const { key } = e;
+    const { focused } = this.props;
+
+    if (!focused) {
+      return;
+    }
+
+    if (key === ENTER_KEY || key === SPACEBAR) {
+      e.preventDefault();
+      this.onSelect();
+    }
+  };
+
+  onSelect = () => {
+    const { onSelect, value } = this.props;
+    onSelect(value);
+  };
+
+  render() {
+    const { selected, baseColor, id, label, name, value, focused } = this.props;
+
+    return (
+      <StyledMenuItem
+        {...{
+          baseColor,
+          selected,
+          focused,
+          role: 'Menuitem',
+          'aria-selected': selected,
+          alignItems: 'center',
+          height: '40px',
+          onClick: this.onSelect,
+          onKeyPress: this.onKeyDown
+        }}
+      >
+        <input {...{ id, name, value, css: hideVisually(), type: 'hidden' }} />
+        <Icon name="status" mr="small" color={baseColor} fontSize="16px" />
+        <Text.span fontSize="size2">{label}</Text.span>
+      </StyledMenuItem>
+    );
+  }
+}
 
 MenuItem.propTypes = {
   /**
