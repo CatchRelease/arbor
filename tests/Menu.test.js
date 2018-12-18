@@ -1,7 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Menu, { ARROW_DOWN, ARROW_UP, HOME_KEY, END_KEY } from '../src/Menu';
+import { ARROW_DOWN, ARROW_UP, HOME_KEY, END_KEY } from '../src/constants';
+import Menu from '../src/Menu';
 
 describe('<Menu />', () => {
   const baseProps = {
