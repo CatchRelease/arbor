@@ -2,7 +2,8 @@ import React from 'react';
 import mountWithTheme from '../utils/mountWithTheme';
 import createWithTheme from '../utils/createWithTheme';
 
-import MenuItem, { ENTER_KEY, SPACEBAR } from '../src/Menu/MenuItem';
+import { ENTER_KEY, SPACEBAR } from '../src/constants';
+import MenuItem from '../src/Menu/MenuItem';
 
 describe('<MenuItem />', () => {
   const noop = () => null;

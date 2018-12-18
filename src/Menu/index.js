@@ -2,13 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import snakeCase from 'lodash/snakeCase';
 
+import { ARROW_DOWN, ARROW_UP, HOME_KEY, END_KEY } from '../constants';
 import StyledMenu from './StyledMenu';
 import MenuItem from './MenuItem';
-
-export const ARROW_DOWN = 'ArrowDown';
-export const ARROW_UP = 'ArrowUp';
-export const HOME_KEY = 'Home';
-export const END_KEY = 'End';
 
 const NAVIGATION_KEYS = [ARROW_UP, ARROW_DOWN];
 

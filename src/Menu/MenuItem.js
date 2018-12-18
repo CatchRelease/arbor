@@ -2,12 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { hideVisually } from 'polished';
 
+import { ENTER_KEY, SPACEBAR } from '../constants';
 import StyledMenuItem from './StyledMenuItem';
 import Text from '../Text';
 import Icon from '../Icon';
-
-export const ENTER_KEY = 'Enter';
-export const SPACEBAR = ' ';
 
 class MenuItem extends React.PureComponent {
   componentDidMount() {
