@@ -19,7 +19,7 @@ const PopoverContent = styled(Box)`
   overflow: hidden;
 `;
 
-export class Popover extends React.Component {
+class Popover extends React.Component {
   state = {
     isOpen: false
   };
@@ -64,11 +64,23 @@ export class Popover extends React.Component {
   };
 
   open() {
-    this.setState({ isOpen: true });
+    const { onOpen } = this.props;
+    const { isOpen } = this.state;
+
+    if (isOpen) {
+      return;
+    }
+
+    this.setState({ isOpen: true }, onOpen);
   }
 
   close() {
     const { onClose } = this.props;
+    const { isOpen } = this.state;
+
+    if (!isOpen) {
+      return;
+    }
 
     this.setState({ isOpen: false }, onClose);
   }
@@ -130,6 +142,11 @@ Popover.propTypes = {
   children: PropTypes.node.isRequired,
 
   /**
+   * Optional callback that will be fired once the Popover's state is set to opened
+   */
+  onOpen: PropTypes.func,
+
+  /**
    * Optional callback that will be fired once the Popover's state is set to closed
    */
   onClose: PropTypes.func,
@@ -170,6 +187,7 @@ Popover.propTypes = {
 Popover.defaultProps = {
   preferPlace: 'below',
   place: 'column',
+  onOpen: () => null,
   onClose: () => null
 };
 
