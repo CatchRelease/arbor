@@ -52,10 +52,10 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   color: #222222;
   font-size: 0.875rem;
   margin-left: 0.5rem;
-  font-family: Motiva Sans;
 }
 
 <label
@@ -145,10 +145,10 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
 }
 
 .emotion-6 {
+  font-family: Motiva Sans;
   color: #222222;
   font-size: 0.875rem;
   margin-left: 0.25rem;
-  font-family: Motiva Sans;
 }
 
 <label
@@ -215,10 +215,10 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
 }
 
 .emotion-6 {
+  font-family: Motiva Sans;
   color: #222222;
   font-size: 0.875rem;
   margin-left: 0.5rem;
-  font-family: Motiva Sans;
 }
 
 .emotion-2 {
@@ -314,10 +314,10 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
 }
 
 .emotion-6 {
+  font-family: Motiva Sans;
   color: #222222;
   font-size: 0.875rem;
   margin-left: 0.5rem;
-  font-family: Motiva Sans;
 }
 
 .emotion-4 {
@@ -438,10 +438,10 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   color: #BBBBBB;
   font-size: 0.875rem;
   margin-left: 0.5rem;
-  font-family: Motiva Sans;
 }
 
 <label
@@ -532,10 +532,10 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
 }
 
 .emotion-6 {
+  font-family: Motiva Sans;
   color: #BBBBBB;
   font-size: 0.875rem;
   margin-left: 0.5rem;
-  font-family: Motiva Sans;
 }
 
 <label
@@ -624,10 +624,10 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
 }
 
 .emotion-6 {
+  font-family: Motiva Sans;
   color: #222222;
   font-size: 0.875rem;
   margin-left: 0.5rem;
-  font-family: Motiva Sans;
 }
 
 .emotion-2 {

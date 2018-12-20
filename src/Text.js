@@ -1,26 +1,36 @@
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
-import { color, fontSize, space, textAlign, lineHeight } from 'styled-system';
+import {
+  color,
+  fontSize,
+  fontWeight,
+  lineHeight,
+  space,
+  textAlign
+} from 'styled-system';
 
 const baseStyles = ({ theme }) => css`
   font-family: ${theme.brandFont};
 `;
 
 const Text = styled.p`
+  ${baseStyles};
+
   ${color};
   ${fontSize};
+  ${fontWeight};
+  ${lineHeight};
   ${space};
   ${textAlign};
-  ${lineHeight};
-  ${baseStyles};
 `;
 
 Text.propTypes = {
   ...color.propTypes,
   ...fontSize.propTypes,
+  ...fontWeight.propTypes,
+  ...lineHeight.propTypes,
   ...space.propTypes,
-  ...textAlign.propTypes,
-  ...lineHeight.propTypes
+  ...textAlign.propTypes
 };
 
 Text.p = Text.withComponent('p');

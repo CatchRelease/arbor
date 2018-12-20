@@ -35,8 +35,8 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
 }
 
 .emotion-2 {
-  font-size: 0.875rem;
   font-family: Motiva Sans;
+  font-size: 0.875rem;
 }
 
 <div
@@ -90,8 +90,8 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
 }
 
 .emotion-2 {
-  font-size: 0.875rem;
   font-family: Motiva Sans;
+  font-size: 0.875rem;
 }
 
 .emotion-4 {
