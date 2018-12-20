@@ -71,9 +71,7 @@ class Dropdown extends React.Component {
 
 Dropdown.propTypes = {
   /**
-   * The trigger which will open the dropdown when it is clicked. By default,
-   * the child will be cloned and an onClick handler will be attached to open
-   * the dropdown when it is clicked.
+   * The content inside the menu button trigger
    */
   children: PropTypes.node.isRequired,
   /**
