@@ -150,11 +150,17 @@ Menu.propTypes = {
       name: PropTypes.string,
       value: PropTypes.string
     })
-  ).isRequired
+  ).isRequired,
+
+  /**
+   * Initial selected menu item value
+   */
+  selected: PropTypes.string
 };
 
 Menu.defaultProps = {
-  onChange: () => null
+  onChange: () => null,
+  selected: undefined
 };
 
 export default Menu;

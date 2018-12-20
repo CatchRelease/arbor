@@ -47,11 +47,15 @@ class Dropdown extends React.Component {
   };
 
   render() {
-    const { children, menuItems, ...props } = this.props;
+    const { children, menuItems, selected, ...props } = this.props;
     const isOpen = this.popover.current && this.popover.current.state.isOpen;
 
     const menu = (
-      <Menu ref={this.menu} menuItems={menuItems} onChange={this.onChange} />
+      <Menu
+        {...{ menuItems, selected }}
+        ref={this.menu}
+        onChange={this.onChange}
+      />
     );
 
     return (
@@ -88,11 +92,17 @@ Dropdown.propTypes = {
       name: PropTypes.string,
       value: PropTypes.string
     })
-  ).isRequired
+  ).isRequired,
+
+  /**
+   * Initial selected menu item value
+   */
+  selected: PropTypes.string
 };
 
 Dropdown.defaultProps = {
-  onChange: () => null
+  onChange: () => null,
+  selected: undefined
 };
 
 export default Dropdown;

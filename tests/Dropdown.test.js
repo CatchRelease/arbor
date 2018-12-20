@@ -38,16 +38,29 @@ describe('<Dropdown />', () => {
       });
     });
 
-    it('renders a Menu', () => {
-      const dropdown = mountWithProps();
-      const instance = dropdown.instance();
-      const popover = dropdown.find(Popover);
-      const menu = shallow(<div>{popover.props().content}</div>).find(Menu);
+    describe('Menu', () => {
+      it('renders a Menu', () => {
+        const dropdown = mountWithProps();
+        const instance = dropdown.instance();
+        const popover = dropdown.find(Popover);
+        const menu = shallow(<div>{popover.props().content}</div>).find(Menu);
 
-      expect(menu).toExist();
-      expect(menu).toHaveProp({
-        menuItems: baseProps.menuItems,
-        onChange: instance.onChange
+        expect(menu).toExist();
+        expect(menu).toHaveProp({
+          menuItems: baseProps.menuItems,
+          onChange: instance.onChange,
+          selected: undefined
+        });
+      });
+
+      it('sets initial selected item', () => {
+        const dropdown = mountWithProps({ selected: 'ready_to_clear' });
+        const popover = dropdown.find(Popover);
+        const menu = shallow(<div>{popover.props().content}</div>).find(Menu);
+
+        expect(menu).toHaveProp({
+          selected: 'ready_to_clear'
+        });
       });
     });
 

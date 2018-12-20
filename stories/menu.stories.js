@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Button, Menu, Popover, Flex } from '../src';
+import { Menu, Flex } from '../src';
 
 const stories = storiesOf('Menu', module);
 
@@ -74,12 +74,8 @@ const menuItems = [
   }
 ];
 
-const menu = <Menu menuItems={menuItems} />;
-
 stories.add('default', () => (
   <Flex mt="100px" justifyContent="center">
-    <Popover content={menu}>
-      <Button variant="minimal">Clearance Status</Button>
-    </Popover>
+    <Menu menuItems={menuItems} />
   </Flex>
 ));

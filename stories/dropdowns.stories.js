@@ -74,10 +74,33 @@ const menuItems = [
   }
 ];
 
+class DropdownContainer extends React.Component {
+  state = {
+    selected: 'clearance_cancelled'
+  };
+
+  onChange = value => {
+    this.setState({ selected: value });
+  };
+
+  render() {
+    const { selected } = this.state;
+
+    return (
+      <Dropdown
+        menuItems={menuItems}
+        selected={selected}
+        variant="minimal"
+        onChange={this.onChange}
+      >
+        Clearance Status
+      </Dropdown>
+    );
+  }
+}
+
 stories.add('default', () => (
   <Flex mt="100px" justifyContent="center">
-    <Dropdown menuItems={menuItems} variant="minimal">
-      Clearance Status
-    </Dropdown>
+    <DropdownContainer />
   </Flex>
 ));
