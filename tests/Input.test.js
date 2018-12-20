@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import createWithTheme from '../utils/createWithTheme';
+import createWithTheme from './utils/createWithTheme';
 
 import Input from '../src/Input';
 import Paragraph from '../src/Paragraph';

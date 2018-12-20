@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import mountWithTheme from '../utils/mountWithTheme';
+import mountWithTheme from './utils/mountWithTheme';
 
 import Button from '../src/Button';
 import Dropdown from '../src/Dropdown';

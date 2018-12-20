@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import mountWithTheme from '../utils/mountWithTheme';
+import mountWithTheme from './utils/mountWithTheme';
 
 import Popover from '../src/Popover';
 
