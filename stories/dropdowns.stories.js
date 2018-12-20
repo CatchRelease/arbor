@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Menu, Flex } from '../src';
+import { Dropdown, Flex } from '../src';
 
-const stories = storiesOf('Menu', module);
+const stories = storiesOf('Dropdown', module);
 
 const menuItems = [
   {
@@ -74,8 +74,33 @@ const menuItems = [
   }
 ];
 
+class DropdownContainer extends React.Component {
+  state = {
+    selected: 'clearance_cancelled'
+  };
+
+  onChange = value => {
+    this.setState({ selected: value });
+  };
+
+  render() {
+    const { selected } = this.state;
+
+    return (
+      <Dropdown
+        menuItems={menuItems}
+        selected={selected}
+        variant="minimal"
+        onChange={this.onChange}
+      >
+        Clearance Status
+      </Dropdown>
+    );
+  }
+}
+
 stories.add('default', () => (
   <Flex mt="100px" justifyContent="center">
-    <Menu menuItems={menuItems} />
+    <DropdownContainer />
   </Flex>
 ));

@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import React from 'react';
 import { css, jsx } from '@emotion/core';
 import { space } from 'styled-system';
 import styled from '@emotion/styled';
@@ -216,14 +217,18 @@ const ButtonText = styled.span`
   vertical-align: middle;
 `;
 
-const Button = ({ iconStart, iconEnd, children, ...props }) => (
-  <StyledButton {...{ ...props, iconStart, iconEnd, text: children }}>
-    {iconStart}
-    {children && (
-      <ButtonText {...{ iconStart, iconEnd, ...props }}>{children}</ButtonText>
-    )}
-    {iconEnd}
-  </StyledButton>
+const Button = React.forwardRef(
+  ({ iconStart, iconEnd, children, ...props }, ref) => (
+    <StyledButton {...{ ...props, iconStart, iconEnd, ref }} text={children}>
+      {iconStart}
+      {children && (
+        <ButtonText {...{ iconStart, iconEnd, ...props }}>
+          {children}
+        </ButtonText>
+      )}
+      {iconEnd}
+    </StyledButton>
+  )
 );
 
 Button.propTypes = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import createWithTheme from '../utils/createWithTheme';
+import createWithTheme from './utils/createWithTheme';
 
 import { Heading } from '../src';
 

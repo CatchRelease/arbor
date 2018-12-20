@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import mountWithTheme from '../utils/mountWithTheme';
+import mountWithTheme from './utils/mountWithTheme';
 
-import { Popover } from '../src/Popover';
+import Popover from '../src/Popover';
 
 const mountNode = document.createElement('div');
 document.body.appendChild(mountNode);
@@ -137,6 +137,29 @@ describe('<Popover />', () => {
           expect(popover.state().isOpen).toBe(false);
         });
       });
+    });
+  });
+
+  describe('open', () => {
+    const onOpenSpy = jest.fn();
+    const popover = shallow(
+      <Popover content="Hello World" onOpen={onOpenSpy}>
+        <button type="button">Popover</button>
+      </Popover>
+    );
+
+    it('calls the onOpen callback if provided', () => {
+      popover.setState({ isOpen: false });
+      popover.instance().open();
+
+      expect(onOpenSpy).toHaveBeenCalled();
+    });
+
+    it('does not callsthe onOpen callback if provided', () => {
+      popover.setState({ isOpen: false });
+      popover.instance().open();
+
+      expect(onOpenSpy).toHaveBeenCalled();
     });
   });
 

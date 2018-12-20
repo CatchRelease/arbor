@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
-import createWithTheme from '../utils/createWithTheme';
+import createWithTheme from './utils/createWithTheme';
 
 import Icon from '../src/Icon';
 
