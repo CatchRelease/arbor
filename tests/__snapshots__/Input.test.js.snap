@@ -191,8 +191,8 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
 }
 
 .emotion-4 {
-  color: #EE2200;
   font-family: Motiva Sans;
+  color: #EE2200;
   line-height: 1.25;
   font-size: 0.75rem;
 }
