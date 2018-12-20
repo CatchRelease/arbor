@@ -141,25 +141,57 @@ describe('<Popover />', () => {
   });
 
   describe('open', () => {
-    const onOpenSpy = jest.fn();
-    const popover = shallow(
-      <Popover content="Hello World" onOpen={onOpenSpy}>
-        <button type="button">Popover</button>
-      </Popover>
-    );
+    let onOpenSpy;
+    let popover;
 
-    it('calls the onOpen callback if provided', () => {
-      popover.setState({ isOpen: false });
-      popover.instance().open();
-
-      expect(onOpenSpy).toHaveBeenCalled();
+    beforeEach(() => {
+      onOpenSpy = jest.fn();
+      popover = shallow(
+        <Popover content="Hello World" onOpen={onOpenSpy}>
+          <button type="button">Popover</button>
+        </Popover>
+      );
     });
 
-    it('does not callsthe onOpen callback if provided', () => {
-      popover.setState({ isOpen: false });
-      popover.instance().open();
+    context('not yet opened', () => {
+      beforeEach(() => {
+        popover.setState({ isOpen: false });
+      });
 
-      expect(onOpenSpy).toHaveBeenCalled();
+      it('opens the popover', () => {
+        popover.instance().open();
+        expect(popover).toHaveState('isOpen', true);
+      });
+
+      it('calls the onOpen prop', () => {
+        popover.instance().open();
+        expect(onOpenSpy).toHaveBeenCalledTimes(1);
+      });
+
+      it('calls the provided callback', () => {
+        const callbackSpy = jest.fn();
+
+        popover.instance().open(callbackSpy);
+        expect(callbackSpy).toHaveBeenCalledTimes(1);
+      });
+    });
+
+    context('already opened', () => {
+      beforeEach(() => {
+        popover.setState({ isOpen: true });
+      });
+
+      it('does not call the onOpen prop', () => {
+        popover.instance().open();
+        expect(onOpenSpy).not.toHaveBeenCalled();
+      });
+
+      it('does not call the provided callback', () => {
+        const callbackSpy = jest.fn();
+
+        popover.instance().open(callbackSpy);
+        expect(callbackSpy).not.toHaveBeenCalled();
+      });
     });
   });
 
