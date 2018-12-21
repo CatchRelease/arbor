@@ -61,7 +61,7 @@ class Pagination extends React.Component {
           {...{ size }}
           variant="minimal"
           mx="smallest"
-          key={index}
+          key={`${item}-${index}`}
           disabled
         >
           {item}
@@ -74,7 +74,7 @@ class Pagination extends React.Component {
         <Button
           {...{ size, variant }}
           mx="smallest"
-          key={index}
+          key={item}
           onClick={() => this.paginate(item)}
         >
           {item}

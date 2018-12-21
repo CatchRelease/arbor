@@ -17,7 +17,7 @@ class PaginationContainer extends React.Component {
 
   state = {
     currentPage: 1,
-    totalPages: 10
+    totalPages: 11
   };
 
   paginate = newPage => {
