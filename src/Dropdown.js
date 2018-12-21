@@ -36,7 +36,7 @@ class Dropdown extends React.Component {
     }
 
     e.preventDefault();
-    this.popover.current.open();
+    this.popover.current.open(this.onOpen);
   };
 
   onChange = value => {
@@ -59,7 +59,7 @@ class Dropdown extends React.Component {
     );
 
     return (
-      <Popover ref={this.popover} content={menu} onOpen={this.onOpen}>
+      <Popover ref={this.popover} content={menu}>
         <Button
           {...props}
           ref={this.button}

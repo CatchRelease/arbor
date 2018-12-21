@@ -29,13 +29,9 @@ describe('<Dropdown />', () => {
   describe('children', () => {
     it('renders a Popover', () => {
       const dropdown = mountWithProps();
-      const instance = dropdown.instance();
       const popover = dropdown.find(Popover);
 
       expect(popover).toExist();
-      expect(popover).toHaveProp({
-        onOpen: instance.onOpen
-      });
     });
 
     describe('Menu', () => {
@@ -153,6 +149,7 @@ describe('<Dropdown />', () => {
           instance.onKeyDown({ key: ARROW_DOWN, preventDefault: () => null });
 
           expect(popoverOpenSpy).toHaveBeenCalledTimes(1);
+          expect(popoverOpenSpy).toHaveBeenLastCalledWith(instance.onOpen);
         });
       });
     });

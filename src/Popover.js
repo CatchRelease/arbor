@@ -63,7 +63,7 @@ class Popover extends React.Component {
     }
   };
 
-  open() {
+  open(callback) {
     const { onOpen } = this.props;
     const { isOpen } = this.state;
 
@@ -71,7 +71,13 @@ class Popover extends React.Component {
       return;
     }
 
-    this.setState({ isOpen: true }, onOpen);
+    this.setState({ isOpen: true }, () => {
+      if (callback) {
+        callback();
+      }
+
+      onOpen();
+    });
   }
 
   close() {
