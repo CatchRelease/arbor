@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 
 import { Pagination, Flex } from '../src';
@@ -6,6 +7,14 @@ import { Pagination, Flex } from '../src';
 const stories = storiesOf('Pagination', module);
 
 class PaginationContainer extends React.Component {
+  static propTypes = {
+    size: PropTypes.string
+  };
+
+  static defaultProps = {
+    size: undefined
+  };
+
   state = {
     currentPage: 1,
     totalPages: 10
@@ -16,10 +25,14 @@ class PaginationContainer extends React.Component {
   };
 
   render() {
+    const { size } = this.props;
     const { currentPage, totalPages } = this.state;
 
     return (
-      <Pagination {...{ currentPage, totalPages }} paginate={this.paginate} />
+      <Pagination
+        {...{ currentPage, totalPages, size }}
+        paginate={this.paginate}
+      />
     );
   }
 }
@@ -32,12 +45,12 @@ stories.add('default', () => (
 
 stories.add('small', () => (
   <Flex mt="100px" justifyContent="center">
-    <PaginationContainer />
+    <PaginationContainer size="small" />
   </Flex>
 ));
 
 stories.add('medium', () => (
   <Flex mt="100px" justifyContent="center">
-    <PaginationContainer />
+    <PaginationContainer size="medium" />
   </Flex>
 ));
