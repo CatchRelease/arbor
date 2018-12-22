@@ -1,6 +1,6 @@
 import { rem } from 'polished';
 
-export const breakpoints = ['768px'];
+export const breakpoints = ['512px', '768px', '1024px', '1600px'];
 
 export const blues = {
   blueLighter: '#6688FF',
