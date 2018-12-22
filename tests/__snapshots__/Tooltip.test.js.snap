@@ -19,7 +19,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
         },
         "brandFont": "Motiva Sans",
         "breakpoints": Array [
+          "512px",
           "768px",
+          "1024px",
+          "1600px",
         ],
         "colors": Object {
           "black": "#000000",
@@ -178,7 +181,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
               },
               "brandFont": "Motiva Sans",
               "breakpoints": Array [
+                "512px",
                 "768px",
+                "1024px",
+                "1600px",
               ],
               "colors": Object {
                 "black": "#000000",
