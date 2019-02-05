@@ -47,6 +47,9 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
   border-radius: 3px;
   border: 1px solid #999999;
   color: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 1rem;
   width: 1rem;
 }
@@ -134,6 +137,9 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
   border-radius: 3px;
   border: 1px solid #999999;
   color: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 1rem;
   width: 1rem;
 }
@@ -243,6 +249,9 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
   border-radius: 3px;
   border: 1px solid #999999;
   color: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 1rem;
   width: 1rem;
   background-color: #FFFFFF;
@@ -338,6 +347,9 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   border-radius: 3px;
   border: 1px solid #999999;
   color: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 1rem;
   width: 1rem;
   background-color: #4466EE;
@@ -430,6 +442,9 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
   border-radius: 3px;
   border: 1px solid #999999;
   color: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 1rem;
   width: 1rem;
   background: #FFFFFF;
@@ -524,6 +539,9 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   border-radius: 3px;
   border: 1px solid #999999;
   color: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 1rem;
   width: 1rem;
   background: #FFFFFF;
@@ -619,6 +637,9 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
   border-radius: 3px;
   border: 1px solid #999999;
   color: #FFFFFF;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   height: 1rem;
   width: 1rem;
 }
