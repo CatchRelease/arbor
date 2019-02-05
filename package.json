@@ -14,6 +14,10 @@
     "build": "babel src -d dist"
   },
   "author": "Damian Galarza",
+  "contributors": [
+    "Anthony Costanzo",
+    "Euan Lau"
+  ],
   "license": "MIT",
   "repository": "git@github.com:CatchRelease/arbor.git",
   "dependencies": {
