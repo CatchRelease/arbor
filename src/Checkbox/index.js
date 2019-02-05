@@ -88,7 +88,7 @@ Checkbox.propTypes = {
   /**
    * Label of the checkbox.
    */
-  label: PropTypes.string.isRequired,
+  label: PropTypes.node.isRequired,
 
   /**
    * The name attribute of the checkbox.
@@ -103,7 +103,7 @@ Checkbox.propTypes = {
   /**
    * The value attribute of the checkbox.
    */
-  value: PropTypes.string.isRequired
+  value: PropTypes.string
 };
 
 Checkbox.defaultProps = {
@@ -111,7 +111,8 @@ Checkbox.defaultProps = {
   disabled: false,
   indeterminate: false,
   isInvalid: false,
-  onChange: () => {}
+  onChange: () => {},
+  value: ''
 };
 
 export default Checkbox;
