@@ -9,6 +9,7 @@ const baseStyles = ({ theme }) => css`
   border-radius: ${theme.borderRadius.small};
   border: 1px solid ${theme.colors.grey60};
   color: ${theme.colors.white};
+  flex-shrink: 0;
   height: ${rem('16px')};
   width: ${rem('16px')};
 `;
