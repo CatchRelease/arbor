@@ -202,12 +202,18 @@ Menu.propTypes = {
     label: _propTypes.default.string,
     name: _propTypes.default.string,
     value: _propTypes.default.string
-  })).isRequired
+  })).isRequired,
+
+  /**
+   * Initial selected menu item value
+   */
+  selected: _propTypes.default.string
 };
 Menu.defaultProps = {
   onChange: function onChange() {
     return null;
-  }
+  },
+  selected: undefined
 };
 var _default = Menu;
 exports.default = _default;

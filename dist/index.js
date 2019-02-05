@@ -10,8 +10,9 @@ var _exportNames = {
   Card: true,
   CardActions: true,
   CardPreview: true,
-  Checkbox: true,
   CardRow: true,
+  Checkbox: true,
+  Dropdown: true,
   Flex: true,
   Grid: true,
   Heading: true,
@@ -20,6 +21,7 @@ var _exportNames = {
   Label: true,
   Link: true,
   Menu: true,
+  Pagination: true,
   Paragraph: true,
   Popover: true,
   Text: true,
@@ -62,16 +64,22 @@ Object.defineProperty(exports, "CardPreview", {
     return _CardPreview.default;
   }
 });
+Object.defineProperty(exports, "CardRow", {
+  enumerable: true,
+  get: function get() {
+    return _CardRow.default;
+  }
+});
 Object.defineProperty(exports, "Checkbox", {
   enumerable: true,
   get: function get() {
     return _Checkbox.default;
   }
 });
-Object.defineProperty(exports, "CardRow", {
+Object.defineProperty(exports, "Dropdown", {
   enumerable: true,
   get: function get() {
-    return _CardRow.default;
+    return _Dropdown.default;
   }
 });
 Object.defineProperty(exports, "Flex", {
@@ -120,6 +128,12 @@ Object.defineProperty(exports, "Menu", {
   enumerable: true,
   get: function get() {
     return _Menu.default;
+  }
+});
+Object.defineProperty(exports, "Pagination", {
+  enumerable: true,
+  get: function get() {
+    return _Pagination.default;
   }
 });
 Object.defineProperty(exports, "Paragraph", {
@@ -176,9 +190,11 @@ var _CardActions = _interopRequireDefault(require("./CardActions"));
 
 var _CardPreview = _interopRequireDefault(require("./CardPreview"));
 
+var _CardRow = _interopRequireDefault(require("./CardRow"));
+
 var _Checkbox = _interopRequireDefault(require("./Checkbox"));
 
-var _CardRow = _interopRequireDefault(require("./CardRow"));
+var _Dropdown = _interopRequireDefault(require("./Dropdown"));
 
 var _Flex = _interopRequireDefault(require("./Flex"));
 
@@ -195,6 +211,8 @@ var _Label = _interopRequireDefault(require("./Label"));
 var _Link = _interopRequireDefault(require("./Link"));
 
 var _Menu = _interopRequireDefault(require("./Menu"));
+
+var _Pagination = _interopRequireDefault(require("./Pagination"));
 
 var _Paragraph = _interopRequireDefault(require("./Paragraph"));
 
