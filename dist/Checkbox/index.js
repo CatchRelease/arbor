@@ -43,7 +43,6 @@ var Checkbox = function Checkbox(_ref) {
       props = _objectWithoutProperties(_ref, ["id", "name", "label", "disabled", "isInvalid", "checked", "onChange", "value", "indeterminate", "icon"]);
 
   return _react.default.createElement(_CheckboxLabel.default, _extends({
-    alignItems: "center",
     my: "regular"
   }, props), _react.default.createElement(_CheckboxInput.default, {
     id: id,
