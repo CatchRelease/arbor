@@ -20,6 +20,10 @@ stories.add('default', () => (
       disabled
       label="Checkbox checked indeterminate disabled"
     />
+
+    <Box maxWidth="250px">
+      <Checkbox label="This is a checkbox with a long label that wraps onto another line" />
+    </Box>
   </Box>
 ));
 
