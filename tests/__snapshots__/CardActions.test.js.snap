@@ -12,10 +12,10 @@ exports[`<CardActions renders the CardActions component properly 1`] = `
   className="emotion-4 emotion-5"
 >
   <i
-    className="fa fa-download emotion-0 emotion-1"
+    className="ar ar-download emotion-0 emotion-1"
   />
   <i
-    className="fa fa-chat-bubble-outline emotion-0 emotion-1"
+    className="ar ar-chat-bubble-outline emotion-0 emotion-1"
   />
 </div>
 `;

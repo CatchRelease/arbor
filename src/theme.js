@@ -129,7 +129,7 @@ export default {
   colors,
   fontWeights,
   fontSizes,
-  iconFontPrefix: 'fa',
+  iconFontPrefix: 'ar',
   lineHeights,
   space: spacings,
   typography

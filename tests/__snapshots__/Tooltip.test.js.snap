@@ -69,7 +69,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "medium": 600,
           "regular": 400,
         },
-        "iconFontPrefix": "fa",
+        "iconFontPrefix": "ar",
         "lineHeights": Object {
           "large": 1.5,
           "small": 1.25,
@@ -231,7 +231,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "medium": 600,
                 "regular": 400,
               },
-              "iconFontPrefix": "fa",
+              "iconFontPrefix": "ar",
               "lineHeights": Object {
                 "large": 1.5,
                 "small": 1.25,

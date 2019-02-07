@@ -14,7 +14,7 @@ exports[`<Icon /> applies a class of just the icon font prefix 1`] = `
 
 exports[`<Icon /> renders an icon properly 1`] = `
 <i
-  className="fa fa-my-icon css-ui3h2r-StyledIcon emotion-0"
+  className="ar ar-my-icon css-ui3h2r-StyledIcon emotion-0"
 />
 `;
 
@@ -26,7 +26,7 @@ exports[`<Icon /> supports 90 degree rotation 1`] = `
 }
 
 <i
-  className="fa fa-my-icon emotion-0 emotion-1"
+  className="ar ar-my-icon emotion-0 emotion-1"
 />
 `;
 
@@ -38,7 +38,7 @@ exports[`<Icon /> supports 180 degree rotation 1`] = `
 }
 
 <i
-  className="fa fa-my-icon emotion-0 emotion-1"
+  className="ar ar-my-icon emotion-0 emotion-1"
 />
 `;
 
@@ -50,6 +50,6 @@ exports[`<Icon /> supports 270 degree rotation 1`] = `
 }
 
 <i
-  className="fa fa-my-icon emotion-0 emotion-1"
+  className="ar ar-my-icon emotion-0 emotion-1"
 />
 `;

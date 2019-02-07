@@ -171,7 +171,7 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
     disabled={false}
   />
   <i
-    className="fa fa-cr-logo emotion-4 emotion-5"
+    className="ar ar-cr-logo emotion-4 emotion-5"
     color="grey50"
     fontSize="24px"
   />
@@ -270,7 +270,7 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
     disabled={false}
   >
     <i
-      className="fa fa-checkbox-indeterminate emotion-2 emotion-3"
+      className="ar ar-checkbox-indeterminate emotion-2 emotion-3"
       fontSize="16px"
     />
   </div>
@@ -369,7 +369,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
     disabled={false}
   >
     <i
-      className="fa fa-checkbox-checked emotion-2 emotion-3"
+      className="ar ar-checkbox-checked emotion-2 emotion-3"
       fontSize="16px"
     />
   </div>
@@ -558,7 +558,7 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
     disabled={true}
   >
     <i
-      className="fa fa-checkbox-indeterminate emotion-2 emotion-3"
+      className="ar ar-checkbox-indeterminate emotion-2 emotion-3"
       fontSize="16px"
     />
   </div>
@@ -654,7 +654,7 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
     disabled={false}
   >
     <i
-      className="fa fa-checkbox-indeterminate emotion-2 emotion-3"
+      className="ar ar-checkbox-indeterminate emotion-2 emotion-3"
       fontSize="16px"
     />
   </div>
