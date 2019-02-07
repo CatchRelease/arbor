@@ -136,7 +136,7 @@ var _default = {
   colors: colors,
   fontWeights: fontWeights,
   fontSizes: fontSizes,
-  iconFontPrefix: 'fa',
+  iconFontPrefix: 'ar',
   lineHeights: lineHeights,
   space: spacings,
   typography: typography
