@@ -5,7 +5,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -83,7 +83,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -155,7 +155,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -227,7 +227,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -293,7 +293,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -374,7 +374,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -449,7 +449,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -524,7 +524,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -593,7 +593,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -671,7 +671,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -743,7 +743,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -815,7 +815,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -887,7 +887,7 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -950,7 +950,7 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -1025,7 +1025,7 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -1094,7 +1094,7 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -1163,7 +1163,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -1234,7 +1234,7 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -1309,7 +1309,7 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -1388,7 +1388,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -1459,7 +1459,7 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -1534,7 +1534,7 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
@@ -1613,7 +1613,7 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   outline: none;
   text-align: center;
