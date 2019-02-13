@@ -28,7 +28,7 @@ section:last-child .emotion-6 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-right: 1rem;
   line-height: 1.25;
   margin-bottom: calc(0.875rem * 0.5);
@@ -124,7 +124,7 @@ section:last-child .emotion-8 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-right: 1rem;
   line-height: 1.25;
   margin-bottom: calc(0.875rem * 0.5);
@@ -234,7 +234,7 @@ section:last-child .emotion-6 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-right: 1rem;
   line-height: 1.25;
   margin-bottom: calc(0.875rem * 0.5);
@@ -330,7 +330,7 @@ section:last-child .emotion-6 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-right: 1rem;
   line-height: 1.25;
   margin-bottom: calc(0.875rem * 0.5);

@@ -84,7 +84,7 @@ exports[`renders a h5 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.25;
   margin-bottom: calc(0.875rem * 0.5);
   line-height: 1.5;
