@@ -6,7 +6,7 @@ exports[`<Input /> renders a large Input correctly 1`] = `
 }
 
 .emotion-0 {
-  color: #666666;
+  color: #5B5D61;
   display: block;
   font-family: Motiva Sans;
   font-size: 0.875rem;
@@ -15,9 +15,9 @@ exports[`<Input /> renders a large Input correctly 1`] = `
 
 .emotion-2 {
   border-radius: 3px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #F2F2F2;
   box-sizing: border-box;
-  color: #222222;
+  color: #0F0F10;
   font-size: 0.875rem;
   line-height: 1.25;
   margin: 0.25rem 0;
@@ -27,19 +27,19 @@ exports[`<Input /> renders a large Input correctly 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2:-moz-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2:focus {
@@ -76,7 +76,7 @@ exports[`<Input /> renders an Input correctly 1`] = `
 }
 
 .emotion-0 {
-  color: #666666;
+  color: #5B5D61;
   display: block;
   font-family: Motiva Sans;
   font-size: 0.875rem;
@@ -85,9 +85,9 @@ exports[`<Input /> renders an Input correctly 1`] = `
 
 .emotion-2 {
   border-radius: 3px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #F2F2F2;
   box-sizing: border-box;
-  color: #222222;
+  color: #0F0F10;
   font-size: 0.875rem;
   line-height: 1.25;
   margin: 0.25rem 0;
@@ -96,19 +96,19 @@ exports[`<Input /> renders an Input correctly 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2:-moz-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2:focus {
@@ -141,7 +141,7 @@ exports[`<Input /> renders an Input correctly 1`] = `
 
 exports[`<Input /> renders an Input with a caption correctly 1`] = `
 .emotion-0 {
-  color: #666666;
+  color: #5B5D61;
   display: block;
   font-family: Motiva Sans;
   font-size: 0.875rem;
@@ -150,9 +150,9 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
 
 .emotion-2 {
   border-radius: 3px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #F2F2F2;
   box-sizing: border-box;
-  color: #222222;
+  color: #0F0F10;
   font-size: 0.875rem;
   line-height: 1.25;
   margin: 0.25rem 0;
@@ -161,19 +161,19 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2:-moz-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #AAAAAA;
+  color: #BEBEC0;
 }
 
 .emotion-2:focus {

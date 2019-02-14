@@ -12,7 +12,7 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #666666;
+  color: #5B5D61;
   padding: 0 1rem;
 }
 
@@ -21,7 +21,7 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
 }
 
 .emotion-4:active {
-  background: #EEEEEE;
+  background: #F8F9F9;
 }
 
 .emotion-4:focus {
@@ -105,9 +105,9 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #666666;
+  color: #5B5D61;
   padding: 0 1rem;
-  color: #222222;
+  color: #0F0F10;
   font-weight: 700;
   padding-right: 0.5rem;
 }
@@ -117,7 +117,7 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
 }
 
 .emotion-4:active {
-  background: #EEEEEE;
+  background: #F8F9F9;
 }
 
 .emotion-4:focus {
