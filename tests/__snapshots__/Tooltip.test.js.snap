@@ -8,6 +8,14 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
     text="Hello World"
     theme={
       Object {
+        "backgroundColors": Object {
+          "default": "#F2F2F2",
+          "muted": "#F8F9F9",
+        },
+        "borderColors": Object {
+          "default": "#E0E1E2",
+          "muted": "#EBECEC",
+        },
         "borderRadius": Object {
           "large": "6px",
           "small": "3px",
@@ -25,12 +33,20 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "1600px",
         ],
         "colors": Object {
+          "background": Object {
+            "default": "#F2F2F2",
+            "muted": "#F8F9F9",
+          },
           "black": "#000000",
           "blue": "#4466EE",
           "blueDark": "#4455CC",
           "blueDarkest": "#2E374E",
           "blueLight": "#5577FF",
           "blueLighter": "#6688FF",
+          "border": Object {
+            "default": "#E0E1E2",
+            "muted": "#EBECEC",
+          },
           "bronze": "#CC7700",
           "bronzeDark": "#AA5500",
           "bronzeLight": "#CC9900",
@@ -48,10 +64,20 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "grey70": "#78797D",
           "grey80": "#5B5D61",
           "grey90": "#25272D",
+          "icon": Object {
+            "default": "#989A9C",
+            "disabled": "rgba(190,190,192,0.7)",
+          },
           "red": "#EE2200",
           "redDark": "#DD1100",
           "redLight": "#FF4444",
           "redLighter": "#FF6655",
+          "text": Object {
+            "dark": "#0F0F10",
+            "default": "#25272D",
+            "disabled": "rgba(120,121,125,0.7)",
+            "muted": "#5B5D61",
+          },
           "white": "#FFFFFF",
           "white10": "#F5F5F5",
         },
@@ -69,6 +95,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "medium": 600,
           "regular": 400,
         },
+        "iconColors": Object {
+          "default": "#989A9C",
+          "disabled": "rgba(190,190,192,0.7)",
+        },
         "iconFontPrefix": "ar",
         "lineHeights": Object {
           "large": 1.5,
@@ -82,6 +112,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "small": "0.75rem",
           "smaller": "0.5rem",
           "smallest": "0.25rem",
+        },
+        "textColors": Object {
+          "dark": "#0F0F10",
+          "default": "#25272D",
+          "disabled": "rgba(120,121,125,0.7)",
+          "muted": "#5B5D61",
         },
         "typography": Object {
           "text": Object {
@@ -170,6 +206,14 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           py="smallest"
           theme={
             Object {
+              "backgroundColors": Object {
+                "default": "#F2F2F2",
+                "muted": "#F8F9F9",
+              },
+              "borderColors": Object {
+                "default": "#E0E1E2",
+                "muted": "#EBECEC",
+              },
               "borderRadius": Object {
                 "large": "6px",
                 "small": "3px",
@@ -187,12 +231,20 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "1600px",
               ],
               "colors": Object {
+                "background": Object {
+                  "default": "#F2F2F2",
+                  "muted": "#F8F9F9",
+                },
                 "black": "#000000",
                 "blue": "#4466EE",
                 "blueDark": "#4455CC",
                 "blueDarkest": "#2E374E",
                 "blueLight": "#5577FF",
                 "blueLighter": "#6688FF",
+                "border": Object {
+                  "default": "#E0E1E2",
+                  "muted": "#EBECEC",
+                },
                 "bronze": "#CC7700",
                 "bronzeDark": "#AA5500",
                 "bronzeLight": "#CC9900",
@@ -210,10 +262,20 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "grey70": "#78797D",
                 "grey80": "#5B5D61",
                 "grey90": "#25272D",
+                "icon": Object {
+                  "default": "#989A9C",
+                  "disabled": "rgba(190,190,192,0.7)",
+                },
                 "red": "#EE2200",
                 "redDark": "#DD1100",
                 "redLight": "#FF4444",
                 "redLighter": "#FF6655",
+                "text": Object {
+                  "dark": "#0F0F10",
+                  "default": "#25272D",
+                  "disabled": "rgba(120,121,125,0.7)",
+                  "muted": "#5B5D61",
+                },
                 "white": "#FFFFFF",
                 "white10": "#F5F5F5",
               },
@@ -231,6 +293,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "medium": 600,
                 "regular": 400,
               },
+              "iconColors": Object {
+                "default": "#989A9C",
+                "disabled": "rgba(190,190,192,0.7)",
+              },
               "iconFontPrefix": "ar",
               "lineHeights": Object {
                 "large": 1.5,
@@ -244,6 +310,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "small": "0.75rem",
                 "smaller": "0.5rem",
                 "smallest": "0.25rem",
+              },
+              "textColors": Object {
+                "dark": "#0F0F10",
+                "default": "#25272D",
+                "disabled": "rgba(120,121,125,0.7)",
+                "muted": "#5B5D61",
               },
               "typography": Object {
                 "text": Object {
