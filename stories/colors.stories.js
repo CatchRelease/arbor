@@ -1,67 +1,58 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
-import styled from '@emotion/styled';
+import { readableColor } from 'polished';
 
 import {
   Heading,
-  colors,
-  fontSizes,
-  borderRadius,
-  spacings,
+  backgroundColors,
+  black,
   blues,
+  borderColors,
+  Box,
   bronzes,
-  greys,
-  whites,
-  reds,
+  Flex,
   greens,
-  black
+  greys,
+  iconColors,
+  reds,
+  textColors,
+  whites
 } from '../src';
 
 const blackAndWhites = { ...whites, black };
 
-const SwatchRow = styled.div`
-  padding: ${spacings.small};
-`;
-
-const Swatches = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const Swatch = styled.div`
-  align-items: center;
-  display: flex;
-  height: 144px;
-  justify-content: center;
-  margin: ${spacings.larger} ${spacings.larger} 0 0;
-  width: 176px;
-  color: ${whites.white};
-  border-radius: ${borderRadius.large};
-  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.1);
-`;
-
-const SwatchTitle = styled(Heading.h4)`
-  font-size: ${fontSizes.size2};
-  color: ${colors.grey70};
-  margin-top: ${spacings.regular};
-`;
+const getBrandedReadableColor = hex =>
+  readableColor(hex) === '#000' ? 'black' : 'white';
 
 const SwatchCollection = ({ title, pallete }) => (
-  <SwatchRow>
+  <Box p="small">
     <Heading.h1>{title}</Heading.h1>
-    <Swatches>
+    <Flex flexWrap="wrap">
       {Object.entries(pallete).map(([name, hex]) => (
         <div key={name}>
-          <Swatch key={name} style={{ backgroundColor: hex }}>
-            <Heading.h3>{hex}</Heading.h3>
-          </Swatch>
+          <Flex
+            height="144px"
+            width="300px"
+            mt="larger"
+            mr="larger"
+            key={name}
+            bg={hex}
+            borderRadius="large"
+            alignItems="center"
+            justifyContent="center"
+            boxShadow="0 16px 16px rgba(0, 0, 0, 0.1)"
+          >
+            <Heading.h3 color={getBrandedReadableColor(hex)}>{hex}</Heading.h3>
+          </Flex>
 
-          <SwatchTitle>{name}</SwatchTitle>
+          <Heading.h4 fontSize="size2" color="grey70" mt="regular">
+            {name}
+          </Heading.h4>
         </div>
       ))}
-    </Swatches>
-  </SwatchRow>
+    </Flex>
+  </Box>
 );
 
 SwatchCollection.propTypes = {
@@ -77,5 +68,9 @@ storiesOf('Colors', module).add('default', () => (
     <SwatchCollection title="Reds" pallete={reds} />
     <SwatchCollection title="Greens" pallete={greens} />
     <SwatchCollection title="Bronzes" pallete={bronzes} />
+    <SwatchCollection title="Background Colors" pallete={backgroundColors} />
+    <SwatchCollection title="Border Colors" pallete={borderColors} />
+    <SwatchCollection title="Text Colors" pallete={textColors} />
+    <SwatchCollection title="Icon Colors" pallete={iconColors} />
   </Fragment>
 ));

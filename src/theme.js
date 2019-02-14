@@ -1,4 +1,4 @@
-import { rem } from 'polished';
+import { rem, transparentize } from 'polished';
 
 export const breakpoints = ['512px', '768px', '1024px', '1600px'];
 
@@ -50,6 +50,28 @@ export const bronzes = {
   bronzeDark: '#AA5500'
 };
 
+export const backgroundColors = {
+  muted: greys.grey10,
+  default: greys.grey20
+};
+
+export const borderColors = {
+  muted: greys.grey30,
+  default: greys.grey40
+};
+
+export const iconColors = {
+  disabled: transparentize(0.3, greys.grey50),
+  default: greys.grey60
+};
+
+export const textColors = {
+  disabled: transparentize(0.3, greys.grey70),
+  muted: greys.grey80,
+  default: greys.grey90,
+  dark: greys.grey100
+};
+
 export const colors = {
   black,
   ...blues,
@@ -57,7 +79,11 @@ export const colors = {
   ...whites,
   ...greens,
   ...reds,
-  ...bronzes
+  ...bronzes,
+  background: { ...backgroundColors },
+  border: { ...borderColors },
+  icon: { ...iconColors },
+  text: { ...textColors }
 };
 
 export const fontSizes = {
@@ -122,15 +148,19 @@ export const borderWidth = {
 };
 
 export default {
+  backgroundColors,
+  borderColors,
   borderRadius,
   borderWidth,
   brandFont,
   breakpoints,
   colors,
-  fontWeights,
   fontSizes,
+  fontWeights,
+  iconColors,
   iconFontPrefix: 'ar',
   lineHeights,
   space: spacings,
+  textColors,
   typography
 };
