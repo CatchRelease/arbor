@@ -4,7 +4,7 @@ exports[`<Card /> renders a Card properly 1`] = `
 .emotion-0 {
   box-sizing: border-box;
   border-radius: 6px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #F2F2F2;
   width: 100%;
 }
 

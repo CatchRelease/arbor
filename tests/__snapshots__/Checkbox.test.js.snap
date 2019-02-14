@@ -42,7 +42,7 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
-  border: 1px solid #999999;
+  border: 1px solid #989A9C;
   color: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -53,7 +53,7 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
 
 .emotion-4 {
   font-family: Motiva Sans;
-  color: #222222;
+  color: #0F0F10;
   font-size: 0.875rem;
   margin-left: 0.5rem;
 }
@@ -129,7 +129,7 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
-  border: 1px solid #999999;
+  border: 1px solid #989A9C;
   color: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -139,14 +139,14 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
 }
 
 .emotion-4 {
-  color: #AAAAAA;
+  color: #BEBEC0;
   font-size: 24px;
   margin-left: 0.5rem;
 }
 
 .emotion-6 {
   font-family: Motiva Sans;
-  color: #222222;
+  color: #0F0F10;
   font-size: 0.875rem;
   margin-left: 0.25rem;
 }
@@ -213,7 +213,7 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
 
 .emotion-6 {
   font-family: Motiva Sans;
-  color: #222222;
+  color: #0F0F10;
   font-size: 0.875rem;
   margin-left: 0.5rem;
 }
@@ -238,7 +238,7 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
-  border: 1px solid #999999;
+  border: 1px solid #989A9C;
   color: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -312,7 +312,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
 
 .emotion-6 {
   font-family: Motiva Sans;
-  color: #222222;
+  color: #0F0F10;
   font-size: 0.875rem;
   margin-left: 0.5rem;
 }
@@ -333,7 +333,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
-  border: 1px solid #999999;
+  border: 1px solid #989A9C;
   color: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -425,7 +425,7 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
-  border: 1px solid #999999;
+  border: 1px solid #989A9C;
   color: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -433,13 +433,13 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
   height: 1rem;
   width: 1rem;
   background: #FFFFFF;
-  border-color: #DDDDDD;
+  border-color: #F2F2F2;
   color: #FFFFFF;
 }
 
 .emotion-4 {
   font-family: Motiva Sans;
-  color: #BBBBBB;
+  color: #E0E1E2;
   font-size: 0.875rem;
   margin-left: 0.5rem;
 }
@@ -519,7 +519,7 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
-  border: 1px solid #999999;
+  border: 1px solid #989A9C;
   color: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -527,13 +527,13 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   height: 1rem;
   width: 1rem;
   background: #FFFFFF;
-  border-color: #DDDDDD;
+  border-color: #F2F2F2;
   color: #FFFFFF;
 }
 
 .emotion-6 {
   font-family: Motiva Sans;
-  color: #BBBBBB;
+  color: #E0E1E2;
   font-size: 0.875rem;
   margin-left: 0.5rem;
 }
@@ -614,7 +614,7 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
-  border: 1px solid #999999;
+  border: 1px solid #989A9C;
   color: #FFFFFF;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -625,7 +625,7 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
 
 .emotion-6 {
   font-family: Motiva Sans;
-  color: #222222;
+  color: #0F0F10;
   font-size: 0.875rem;
   margin-left: 0.5rem;
 }

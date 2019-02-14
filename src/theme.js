@@ -11,16 +11,16 @@ export const blues = {
 };
 
 export const greys = {
-  grey10: '#EEEEEE',
-  grey20: '#DDDDDD',
-  grey30: '#CCCCCC',
-  grey40: '#BBBBBB',
-  grey50: '#AAAAAA',
-  grey60: '#999999',
-  grey70: '#888888',
-  grey80: '#666666',
-  grey90: '#444444',
-  grey100: '#222222'
+  grey10: '#F8F9F9',
+  grey20: '#F2F2F2',
+  grey30: '#EBECEC',
+  grey40: '#E0E1E2',
+  grey50: '#BEBEC0',
+  grey60: '#989A9C',
+  grey70: '#78797D',
+  grey80: '#5B5D61',
+  grey90: '#25272D',
+  grey100: '#0F0F10'
 };
 
 export const whites = {

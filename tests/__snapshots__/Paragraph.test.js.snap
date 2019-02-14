@@ -4,7 +4,7 @@ exports[`<Paragraph /> props variant renders a longForm variant 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   line-height: 1.25;
-  color: #222222;
+  color: #0F0F10;
   font-size: 1rem;
 }
 
@@ -19,7 +19,7 @@ exports[`<Paragraph /> props variant renders a tiny variant 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   line-height: 1.25;
-  color: #666666;
+  color: #5B5D61;
   font-size: 0.75rem;
 }
 
@@ -34,7 +34,7 @@ exports[`<Paragraph /> props variant renders a ui variant 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   line-height: 1.25;
-  color: #222222;
+  color: #0F0F10;
   font-size: 0.875rem;
 }
 
