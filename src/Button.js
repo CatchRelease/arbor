@@ -124,19 +124,19 @@ const variantStyles = ({ theme, variant }) => {
     },
     secondary: {
       backgroundColor: theme.colors.white,
-      color: theme.colors.grey100,
+      color: theme.colors.text.default,
       fontWeight: theme.fontWeights.regular,
       '&:enabled': {
-        border: `1px solid ${theme.colors.grey20}`
+        border: `1px solid ${theme.colors.border.default}`
       },
       '&:hover:enabled': {
-        backgroundColor: theme.colors.white10,
+        backgroundColor: theme.colors.background.muted,
         color: theme.colors.blue,
         border: `1px solid ${theme.colors.blue}`
       },
       '&:active:enabled': {
         color: theme.colors.blueDark,
-        backgroundColor: theme.colors.grey10,
+        backgroundColor: theme.colors.background.default,
         border: '1px solid transparent'
       },
       '&:focus:enabled': {
@@ -149,14 +149,14 @@ const variantStyles = ({ theme, variant }) => {
     minimal: {
       background: 'none',
       border: '1px solid transparent',
-      color: theme.colors.grey80,
+      color: theme.colors.text.muted,
       '&:hover:enabled': {
-        backgroundColor: theme.colors.white10,
-        color: theme.colors.grey100
+        backgroundColor: theme.colors.background.muted,
+        color: theme.colors.text.dark
       },
       '&:active:enabled': {
-        color: theme.colors.grey100,
-        backgroundColor: theme.colors.grey10
+        backgroundColor: theme.colors.background.default,
+        color: theme.colors.text.dark
       },
       '&:focus:enabled': {
         boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 2px ${
@@ -165,7 +165,7 @@ const variantStyles = ({ theme, variant }) => {
       },
       '&:disabled': {
         background: 'none',
-        color: theme.colors.grey40
+        color: theme.colors.text.disabled
       }
     }
   };
@@ -190,8 +190,8 @@ const StyledButton = styled.button`
   transition: box-shadow 0.3s ease, background 0.2s ease;
 
   &:disabled {
-    background: ${props => props.theme.colors.grey20};
-    color: ${props => props.theme.colors.grey50};
+    background: ${props => props.theme.colors.background.default};
+    color: ${props => props.theme.colors.text.disabled};
     cursor: not-allowed;
   }
 

@@ -3,7 +3,7 @@ import Box from './Box';
 
 const Card = styled(Box.withComponent('div'))`
   border-radius: ${props => props.theme.borderRadius.large};
-  border: 1px solid ${props => props.theme.colors.grey20};
+  border: 1px solid ${props => props.theme.colors.border.default};
   width: 100%;
 `;
 

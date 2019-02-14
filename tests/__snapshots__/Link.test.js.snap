@@ -52,7 +52,7 @@ exports[`<Link /> Variants properly renders a muted Link 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  color: #78797D;
+  color: #5B5D61;
 }
 
 .emotion-0:hover {
@@ -69,15 +69,15 @@ exports[`<Link /> Variants properly renders a muted Link 1`] = `
 }
 
 .emotion-0:visited {
-  color: #78797D;
-}
-
-.emotion-0:hover {
   color: #5B5D61;
 }
 
-.emotion-0:active {
+.emotion-0:hover {
   color: #25272D;
+}
+
+.emotion-0:active {
+  color: #0F0F10;
 }
 
 .emotion-0:focus {

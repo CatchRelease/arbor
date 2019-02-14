@@ -6,9 +6,9 @@ import { transparentize } from 'polished';
 import ReactPopover from 'react-popover';
 import PropTypes from 'prop-types';
 
-import Box from './Box';
+import Card from './Card';
 
-const PopoverContent = styled(Box)`
+const PopoverContent = styled(Card)`
   background: ${props => props.theme.colors.white};
   border-radius: ${props => props.theme.borderRadius.large};
   box-shadow: 0 4px 8px

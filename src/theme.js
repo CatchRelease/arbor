@@ -24,8 +24,7 @@ export const greys = {
 };
 
 export const whites = {
-  white: '#FFFFFF',
-  white10: '#F5F5F5'
+  white: '#FFFFFF'
 };
 
 export const reds = {
@@ -110,16 +109,13 @@ export const lineHeights = {
 export const typography = {
   text: {
     ui: {
-      fontSize: fontSizes.size2,
-      color: colors.grey100
+      fontSize: fontSizes.size2
     },
     longForm: {
-      fontSize: fontSizes.size3,
-      color: colors.grey100
+      fontSize: fontSizes.size3
     },
     tiny: {
-      fontSize: fontSizes.size1,
-      color: colors.grey80
+      fontSize: fontSizes.size1
     }
   }
 };

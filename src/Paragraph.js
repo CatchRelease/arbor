@@ -4,19 +4,12 @@ import PropTypes from 'prop-types';
 
 import Text from './Text';
 
-const variantColor = ({ color, theme, variant }) =>
-  color === undefined &&
-  css`
-    color: ${theme.typography.text[variant].color};
-  `;
-
 const variantStyles = ({ theme, variant }) => css`
   font-size: ${theme.typography.text[variant].fontSize};
 `;
 
 const Paragraph = styled(Text)`
   line-height: ${props => props.theme.lineHeights.small};
-  ${variantColor};
   ${variantStyles};
 `;
 

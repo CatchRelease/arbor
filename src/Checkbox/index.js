@@ -42,14 +42,14 @@ const Checkbox = ({
       <Icon
         fontSize="24px"
         name={icon}
-        color={disabled ? 'grey20' : 'grey50'}
+        color={disabled ? 'icon.disabled' : 'icon.default'}
         ml="smaller"
       />
     )}
 
     <Text.span
       fontSize="size2"
-      color={disabled ? 'grey40' : 'grey100'}
+      color={disabled ? 'text.disabled' : 'text.default'}
       ml={icon ? 'smallest' : 'smaller'}
     >
       {label}

@@ -21,13 +21,13 @@ const Heading = styled(Text.withComponent('h1'))`
 `;
 
 Heading.defaultProps = {
+  color: 'text.dark',
   fontWeight: 'bold'
 };
 
 Heading.h1 = Heading.withComponent('h1');
 
 Heading.h1.defaultProps = {
-  color: 'grey100',
   fontSize: 'size7',
   ...Heading.defaultProps
 };
@@ -35,7 +35,6 @@ Heading.h1.defaultProps = {
 Heading.h2 = Heading.withComponent('h2');
 
 Heading.h2.defaultProps = {
-  color: 'grey80',
   fontSize: 'size6',
   ...Heading.defaultProps
 };
@@ -43,7 +42,6 @@ Heading.h2.defaultProps = {
 Heading.h3 = Heading.withComponent('h3');
 
 Heading.h3.defaultProps = {
-  color: 'grey80',
   fontSize: 'size5',
   ...Heading.defaultProps
 };
@@ -51,7 +49,6 @@ Heading.h3.defaultProps = {
 Heading.h4 = Heading.withComponent('h4');
 
 Heading.h4.defaultProps = {
-  color: 'grey80',
   fontSize: 'size4',
   ...Heading.defaultProps
 };
@@ -61,7 +58,6 @@ Heading.h5 = styled(Heading.withComponent('h5'))`
 `;
 
 Heading.h5.defaultProps = {
-  color: 'grey100',
   fontSize: 'size2',
   fontWeight: 'medium'
 };
@@ -71,7 +67,6 @@ Heading.h6 = styled(Heading.withComponent('h6'))`
 `;
 
 Heading.h6.defaultProps = {
-  color: 'grey80',
   fontSize: 'size2',
   fontWeight: 'regular'
 };

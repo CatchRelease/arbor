@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
 const Label = styled.label`
-  color: ${props => props.theme.colors.grey80};
+  color: ${props => props.theme.colors.text.muted};
   display: block;
   font-family: ${props => props.theme.brandFont};
   font-size: ${props => props.theme.fontSizes.size2};

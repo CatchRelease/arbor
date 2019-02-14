@@ -4,16 +4,16 @@ import { placeholder, transparentize } from 'polished';
 
 const baseStyles = ({ theme }) => css`
   border-radius: ${theme.borderRadius.small};
-  border: ${theme.borderWidth.small} solid ${theme.colors.grey20};
+  border: ${theme.borderWidth.small} solid ${theme.colors.border.default};
   box-sizing: border-box;
-  color: ${theme.colors.grey100};
+  color: ${theme.colors.text.default};
   font-size: ${theme.fontSizes.size2};
   line-height: ${theme.lineHeights.small};
   margin: ${theme.space.smallest} 0;
   padding: ${theme.space.smaller};
   width: 100%;
 
-  ${placeholder({ color: theme.colors.grey50 })};
+  ${placeholder({ color: theme.colors.grey60 })};
 
   &:focus {
     border: ${theme.borderWidth.small} solid ${theme.colors.blueLight};
@@ -22,7 +22,7 @@ const baseStyles = ({ theme }) => css`
   }
 
   &:disabled {
-    background: ${theme.colors.white10};
+    background: ${theme.colors.background.default};
   }
 `;
 

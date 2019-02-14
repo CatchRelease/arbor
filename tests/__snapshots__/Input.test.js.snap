@@ -15,9 +15,9 @@ exports[`<Input /> renders a large Input correctly 1`] = `
 
 .emotion-2 {
   border-radius: 3px;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #E0E1E2;
   box-sizing: border-box;
-  color: #0F0F10;
+  color: #25272D;
   font-size: 0.875rem;
   line-height: 1.25;
   margin: 0.25rem 0;
@@ -27,19 +27,19 @@ exports[`<Input /> renders a large Input correctly 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2:-moz-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2:focus {
@@ -49,7 +49,7 @@ exports[`<Input /> renders a large Input correctly 1`] = `
 }
 
 .emotion-2:disabled {
-  background: #F5F5F5;
+  background: #F2F2F2;
 }
 
 <div
@@ -85,9 +85,9 @@ exports[`<Input /> renders an Input correctly 1`] = `
 
 .emotion-2 {
   border-radius: 3px;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #E0E1E2;
   box-sizing: border-box;
-  color: #0F0F10;
+  color: #25272D;
   font-size: 0.875rem;
   line-height: 1.25;
   margin: 0.25rem 0;
@@ -96,19 +96,19 @@ exports[`<Input /> renders an Input correctly 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2:-moz-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2:focus {
@@ -118,7 +118,7 @@ exports[`<Input /> renders an Input correctly 1`] = `
 }
 
 .emotion-2:disabled {
-  background: #F5F5F5;
+  background: #F2F2F2;
 }
 
 <div
@@ -150,9 +150,9 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
 
 .emotion-2 {
   border-radius: 3px;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #E0E1E2;
   box-sizing: border-box;
-  color: #0F0F10;
+  color: #25272D;
   font-size: 0.875rem;
   line-height: 1.25;
   margin: 0.25rem 0;
@@ -161,19 +161,19 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
 }
 
 .emotion-2::-webkit-input-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2:-moz-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2::-moz-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
-  color: #BEBEC0;
+  color: #989A9C;
 }
 
 .emotion-2:focus {
@@ -183,7 +183,7 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
 }
 
 .emotion-2:disabled {
-  background: #F5F5F5;
+  background: #F2F2F2;
 }
 
 .emotion-6 {
