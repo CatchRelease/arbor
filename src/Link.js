@@ -40,15 +40,15 @@ const variantStyles = ({ variant, theme: { colors } }) => {
       }
     },
     muted: {
-      color: colors.grey70,
+      color: colors.text.muted,
       '&:visited': {
-        color: colors.grey70
+        color: colors.text.muted
       },
       '&:hover': {
-        color: colors.grey80
+        color: colors.text.default
       },
       '&:active': {
-        color: colors.grey90
+        color: colors.text.dark
       },
       '&:focus': {
         outline: `1px solid ${colors.grey100}`

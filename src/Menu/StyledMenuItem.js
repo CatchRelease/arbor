@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 import Flex from '../Flex';
 
-const FOCUSED_BACKGROUND = 'white10';
+const FOCUSED_BACKGROUND = 'muted';
 
 const darker = (theme, base) => {
   const darkerColor = `${base}Dark`;
@@ -11,28 +11,28 @@ const darker = (theme, base) => {
 };
 
 const baseStyles = ({ theme, baseColor }) => css`
-  color: ${theme.colors.grey80};
+  color: ${theme.colors.text.default};
   padding: 0 ${theme.space.regular};
 
   :hover {
     color: ${theme.colors[baseColor]};
-    background: ${theme.colors.white10};
+    background: ${theme.colors.background.muted};
   }
 
   :active {
-    background: ${theme.colors.grey10};
+    background: ${theme.colors.background.default};
     color: ${darker(theme, baseColor)};
   }
 
   :focus {
-    background: ${theme.colors[FOCUSED_BACKGROUND]};
+    background: ${theme.colors.background[FOCUSED_BACKGROUND]};
   }
 `;
 
 const selectedStyles = ({ selected, theme }) =>
   selected &&
   css`
-    color: ${theme.colors.grey100};
+    color: ${theme.colors.text.dark};
     font-weight: ${theme.fontWeights.bold};
     padding-right: ${theme.space.smaller};
   `;
@@ -40,7 +40,7 @@ const selectedStyles = ({ selected, theme }) =>
 const focusedStyles = ({ theme, focused }) =>
   focused &&
   css`
-    background: ${theme.colors[FOCUSED_BACKGROUND]};
+    background: ${theme.colors.background[FOCUSED_BACKGROUND]};
   `;
 
 const StyledMenuItem = styled(Flex)`

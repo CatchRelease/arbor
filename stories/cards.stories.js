@@ -42,14 +42,18 @@ const exampleCards = [
 ];
 
 const comments = (
-  <Icon color="grey50" fontSize="24" name="chat-bubble-outline" />
+  <Icon color="icons.default" fontSize="24" name="chat-bubble-outline" />
 );
 
-const download = <Icon color="grey50" fontSize="24" name="download" />;
+const download = <Icon color="icons.default" fontSize="24" name="download" />;
 
-const dislike = <Icon color="grey50" fontSize="24" name="thumb-down-outline" />;
+const dislike = (
+  <Icon color="icons.default" fontSize="24" name="thumb-down-outline" />
+);
 
-const like = <Icon color="grey50" fontSize="24" name="thumb-up-outline" />;
+const like = (
+  <Icon color="icons.default" fontSize="24" name="thumb-up-outline" />
+);
 
 stories.add('Card', () => (
   <Box m="regular">
@@ -91,7 +95,7 @@ stories.add('Card', () => (
                   iconStart={comments}
                   variant="minimal"
                   size="medium"
-                  color="grey50"
+                  color="icons.default"
                 />
               </Tooltip>
               <Tooltip text="Download Asset">
@@ -99,7 +103,7 @@ stories.add('Card', () => (
                   iconStart={download}
                   variant="minimal"
                   size="medium"
-                  color="grey50"
+                  color="icons.default"
                 />
               </Tooltip>
               <Tooltip text="Dislike Shot">
@@ -107,7 +111,7 @@ stories.add('Card', () => (
                   iconStart={dislike}
                   variant="minimal"
                   size="medium"
-                  color="grey50"
+                  color="icons.default"
                 />
               </Tooltip>
               <Tooltip text="Like Shot">
@@ -115,7 +119,7 @@ stories.add('Card', () => (
                   iconStart={like}
                   variant="minimal"
                   size="medium"
-                  color="grey50"
+                  color="icons.default"
                 />
               </Tooltip>
             </CardActions>

@@ -33,6 +33,10 @@ Text.propTypes = {
   ...textAlign.propTypes
 };
 
+Text.defaultProps = {
+  color: 'text.default'
+};
+
 Text.p = Text.withComponent('p');
 Text.span = Text.withComponent('span');
 

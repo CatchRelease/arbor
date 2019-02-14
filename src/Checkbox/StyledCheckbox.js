@@ -25,9 +25,9 @@ const checkedStyles = ({ theme, checked, indeterminate }) =>
 const disabledStyles = ({ theme, checked, disabled }) =>
   disabled &&
   css`
-    background: ${checked ? theme.colors.grey20 : theme.colors.white};
-    border-color: ${theme.colors.grey20};
-    color: ${checked ? theme.colors.grey50 : theme.colors.white};
+    background: ${checked ? theme.colors.grey40 : theme.colors.white};
+    border-color: ${theme.colors.border.default};
+    color: ${checked ? theme.colors.grey60 : theme.colors.white};
   `;
 
 const StyledCheckbox = styled(Flex)`

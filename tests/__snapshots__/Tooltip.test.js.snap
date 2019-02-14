@@ -79,7 +79,6 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             "muted": "#5B5D61",
           },
           "white": "#FFFFFF",
-          "white10": "#F5F5F5",
         },
         "fontSizes": Object {
           "size1": "0.75rem",
@@ -122,15 +121,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
         "typography": Object {
           "text": Object {
             "longForm": Object {
-              "color": "#0F0F10",
               "fontSize": "1rem",
             },
             "tiny": Object {
-              "color": "#5B5D61",
               "fontSize": "0.75rem",
             },
             "ui": Object {
-              "color": "#0F0F10",
               "fontSize": "0.875rem",
             },
           },
@@ -277,7 +273,6 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                   "muted": "#5B5D61",
                 },
                 "white": "#FFFFFF",
-                "white10": "#F5F5F5",
               },
               "fontSizes": Object {
                 "size1": "0.75rem",
@@ -320,15 +315,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
               "typography": Object {
                 "text": Object {
                   "longForm": Object {
-                    "color": "#0F0F10",
                     "fontSize": "1rem",
                   },
                   "tiny": Object {
-                    "color": "#5B5D61",
                     "fontSize": "0.75rem",
                   },
                   "ui": Object {
-                    "color": "#0F0F10",
                     "fontSize": "0.875rem",
                   },
                 },

@@ -3,13 +3,14 @@
 exports[`<Paragraph /> props variant renders a longForm variant 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
+  color: #25272D;
   line-height: 1.25;
-  color: #0F0F10;
   font-size: 1rem;
 }
 
 <p
   className="emotion-0 emotion-1"
+  color="text.default"
 >
   Hello World
 </p>
@@ -18,13 +19,14 @@ exports[`<Paragraph /> props variant renders a longForm variant 1`] = `
 exports[`<Paragraph /> props variant renders a tiny variant 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
+  color: #25272D;
   line-height: 1.25;
-  color: #5B5D61;
   font-size: 0.75rem;
 }
 
 <p
   className="emotion-0 emotion-1"
+  color="text.default"
 >
   Hello World
 </p>
@@ -33,13 +35,14 @@ exports[`<Paragraph /> props variant renders a tiny variant 1`] = `
 exports[`<Paragraph /> props variant renders a ui variant 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
+  color: #25272D;
   line-height: 1.25;
-  color: #0F0F10;
   font-size: 0.875rem;
 }
 
 <p
   className="emotion-0 emotion-1"
+  color="text.default"
 >
   Hello World
 </p>
