@@ -8,6 +8,7 @@ import {
   backgroundColors,
   black,
   blues,
+  brandColors,
   borderColors,
   Box,
   bronzes,
@@ -72,5 +73,6 @@ storiesOf('Colors', module).add('default', () => (
     <SwatchCollection title="Border Colors" pallete={borderColors} />
     <SwatchCollection title="Text Colors" pallete={textColors} />
     <SwatchCollection title="Icon Colors" pallete={iconColors} />
+    <SwatchCollection title="Brand Colors" pallete={brandColors} />
   </Fragment>
 ));
