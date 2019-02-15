@@ -25,6 +25,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "medium": "2px",
           "small": "1px",
         },
+        "brandColors": Object {
+          "dark": "#00533E",
+          "darkest": "#001C15",
+          "default": "#007558",
+          "light": "rgba(0,83,62,0.09)",
+        },
         "brandFont": "Motiva Sans",
         "breakpoints": Array [
           "512px",
@@ -46,6 +52,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "border": Object {
             "default": "#E0E1E2",
             "muted": "#EBECEC",
+          },
+          "brand": Object {
+            "dark": "#00533E",
+            "darkest": "#001C15",
+            "default": "#007558",
+            "light": "rgba(0,83,62,0.09)",
           },
           "bronze": "#CC7700",
           "bronzeDark": "#AA5500",
@@ -219,6 +231,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "medium": "2px",
                 "small": "1px",
               },
+              "brandColors": Object {
+                "dark": "#00533E",
+                "darkest": "#001C15",
+                "default": "#007558",
+                "light": "rgba(0,83,62,0.09)",
+              },
               "brandFont": "Motiva Sans",
               "breakpoints": Array [
                 "512px",
@@ -240,6 +258,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "border": Object {
                   "default": "#E0E1E2",
                   "muted": "#EBECEC",
+                },
+                "brand": Object {
+                  "dark": "#00533E",
+                  "darkest": "#001C15",
+                  "default": "#007558",
+                  "light": "rgba(0,83,62,0.09)",
                 },
                 "bronze": "#CC7700",
                 "bronzeDark": "#AA5500",

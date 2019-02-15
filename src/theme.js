@@ -59,6 +59,15 @@ export const borderColors = {
   default: greys.grey40
 };
 
+export const brandColors = {
+  get light() {
+    return transparentize(0.91, this.dark);
+  },
+  default: '#007558',
+  dark: '#00533E',
+  darkest: '#001C15'
+};
+
 export const iconColors = {
   disabled: transparentize(0.3, greys.grey50),
   default: greys.grey60
@@ -80,6 +89,7 @@ export const colors = {
   ...reds,
   ...bronzes,
   background: { ...backgroundColors },
+  brand: { ...brandColors },
   border: { ...borderColors },
   icon: { ...iconColors },
   text: { ...textColors }
@@ -148,6 +158,7 @@ export default {
   borderColors,
   borderRadius,
   borderWidth,
+  brandColors,
   brandFont,
   breakpoints,
   colors,
