@@ -41,7 +41,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
 }
 
 .emotion-4:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-4:focus:enabled {
@@ -119,7 +119,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
 }
 
 .emotion-4:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-4:focus:enabled {
@@ -191,7 +191,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
 }
 
 .emotion-4:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-4:focus:enabled {
@@ -263,7 +263,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
 }
 
 .emotion-4:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-4:focus:enabled {
@@ -329,7 +329,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 .emotion-6:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-6:focus:enabled {
@@ -410,7 +410,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 .emotion-6:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-6:focus:enabled {
@@ -485,7 +485,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 .emotion-6:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-6:focus:enabled {
@@ -560,7 +560,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 .emotion-6:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-6:focus:enabled {
@@ -629,7 +629,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 .emotion-4:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-4:focus:enabled {
@@ -707,7 +707,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 .emotion-4:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-4:focus:enabled {
@@ -779,7 +779,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 .emotion-4:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-4:focus:enabled {
@@ -851,7 +851,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 .emotion-4:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-4:focus:enabled {
@@ -923,7 +923,7 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 }
 
 .emotion-2:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-2:focus:enabled {
@@ -986,7 +986,7 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
 }
 
 .emotion-2:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-2:focus:enabled {
@@ -1061,7 +1061,7 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
 }
 
 .emotion-2:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-2:focus:enabled {
@@ -1130,7 +1130,7 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
 }
 
 .emotion-2:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-2:focus:enabled {
@@ -1172,7 +1172,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   padding: 0 1rem;
   height: 2.5rem;
   font-size: 0.875rem;
-  background: none;
+  background-color: transparent;
   border: 1px solid transparent;
   color: #5B5D61;
 }
@@ -1210,7 +1210,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 }
 
 .emotion-2:disabled {
-  background: none;
+  background-color: transparent;
   color: rgba(120,121,125,0.7);
 }
 
@@ -1270,7 +1270,7 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
 }
 
 .emotion-2:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-2:focus:enabled {
@@ -1397,7 +1397,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
   padding: 0 1rem;
   height: 2.5rem;
   font-size: 0.875rem;
-  background: none;
+  background-color: transparent;
   border: 1px solid transparent;
   color: #5B5D61;
 }
@@ -1435,7 +1435,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 }
 
 .emotion-2:disabled {
-  background: none;
+  background-color: transparent;
   color: rgba(120,121,125,0.7);
 }
 
@@ -1495,7 +1495,7 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
 }
 
 .emotion-2:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-2:focus:enabled {
@@ -1650,7 +1650,7 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
 }
 
 .emotion-2:active:enabled {
-  background: #4455CC;
+  background-color: #4455CC;
 }
 
 .emotion-2:focus:enabled {
