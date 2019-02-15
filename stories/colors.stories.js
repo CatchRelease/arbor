@@ -8,8 +8,8 @@ import {
   backgroundColors,
   black,
   blues,
-  brandColors,
   borderColors,
+  brandColors,
   Box,
   bronzes,
   Flex,
@@ -42,7 +42,7 @@ const SwatchCollection = ({ title, pallete }) => (
             borderRadius="large"
             alignItems="center"
             justifyContent="center"
-            boxShadow="0 16px 16px rgba(0, 0, 0, 0.1)"
+            boxShadow="elevation3"
           >
             <Heading.h3 color={getBrandedReadableColor(hex)}>{hex}</Heading.h3>
           </Flex>

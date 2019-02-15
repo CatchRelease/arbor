@@ -115,6 +115,13 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "large": 1.5,
           "small": 1.25,
         },
+        "shadows": Object {
+          "elevation0": "0 0 1px rgba(37,39,45,0.47)",
+          "elevation1": "0 0 1px rgba(37,39,45,0.47), 0 2px 4px -2px rgba(37,39,45,0.3)",
+          "elevation2": "0 0 1px rgba(37,39,45,0.47), 0 5px 8px -4px rgba(37,39,45,0.3)",
+          "elevation3": "0 0 1px rgba(37,39,45,0.47), 0 8px 10px -4px rgba(37,39,45,0.3)",
+          "elevation4": "0 0 1px rgba(37,39,45,0.47), 0 16px 24px -8px rgba(37,39,45,0.3)",
+        },
         "space": Object {
           "large": "1.5rem",
           "larger": "2rem",
@@ -320,6 +327,13 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
               "lineHeights": Object {
                 "large": 1.5,
                 "small": 1.25,
+              },
+              "shadows": Object {
+                "elevation0": "0 0 1px rgba(37,39,45,0.47)",
+                "elevation1": "0 0 1px rgba(37,39,45,0.47), 0 2px 4px -2px rgba(37,39,45,0.3)",
+                "elevation2": "0 0 1px rgba(37,39,45,0.47), 0 5px 8px -4px rgba(37,39,45,0.3)",
+                "elevation3": "0 0 1px rgba(37,39,45,0.47), 0 8px 10px -4px rgba(37,39,45,0.3)",
+                "elevation4": "0 0 1px rgba(37,39,45,0.47), 0 16px 24px -8px rgba(37,39,45,0.3)",
               },
               "space": Object {
                 "large": "1.5rem",

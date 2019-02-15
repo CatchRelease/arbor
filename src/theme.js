@@ -153,6 +153,16 @@ export const borderWidth = {
   large: '4px'
 };
 
+const blurryShadowColor = transparentize(0.7, greys.grey90);
+const borderShadowColor = transparentize(0.53, greys.grey90);
+export const boxShadows = {
+  elevation0: `0 0 1px ${borderShadowColor}`,
+  elevation1: `0 0 1px ${borderShadowColor}, 0 2px 4px -2px ${blurryShadowColor}`,
+  elevation2: `0 0 1px ${borderShadowColor}, 0 5px 8px -4px ${blurryShadowColor}`,
+  elevation3: `0 0 1px ${borderShadowColor}, 0 8px 10px -4px ${blurryShadowColor}`,
+  elevation4: `0 0 1px ${borderShadowColor}, 0 16px 24px -8px ${blurryShadowColor}`
+};
+
 export default {
   backgroundColors,
   borderColors,
@@ -167,6 +177,7 @@ export default {
   iconColors,
   iconFontPrefix: 'ar',
   lineHeights,
+  shadows: boxShadows,
   space: spacings,
   textColors,
   typography
