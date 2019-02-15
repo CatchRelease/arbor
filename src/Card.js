@@ -7,4 +7,8 @@ const Card = styled(Box.withComponent('div'))`
   width: 100%;
 `;
 
+Card.defaultProps = {
+  boxShadow: 'elevation0'
+};
+
 export default Card;
