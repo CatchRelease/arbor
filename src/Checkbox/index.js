@@ -22,7 +22,7 @@ const Checkbox = ({
   icon,
   ...props
 }) => (
-  <CheckboxLabel my="regular" {...props}>
+  <CheckboxLabel alignItems="center" my="regular" {...props}>
     <CheckboxInput
       id={id}
       type="checkbox"
