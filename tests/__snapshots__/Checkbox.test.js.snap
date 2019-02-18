@@ -9,6 +9,10 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   line-height: 1.25;
 }
@@ -96,6 +100,10 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   line-height: 1.25;
 }
@@ -194,6 +202,10 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   line-height: 1.25;
 }
@@ -293,6 +305,10 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   line-height: 1.25;
 }
@@ -392,6 +408,10 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   line-height: 1.25;
 }
@@ -482,6 +502,10 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   line-height: 1.25;
 }
@@ -581,6 +605,10 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   cursor: pointer;
   line-height: 1.25;
 }
