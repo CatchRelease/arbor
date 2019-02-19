@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import {
   boxShadow,
   color,
+  display,
   space,
   width,
   height,
@@ -13,6 +14,7 @@ const Box = styled.div`
   box-sizing: border-box;
   ${boxShadow};
   ${color};
+  ${display};
   ${height};
   ${maxWidth};
   ${space};
@@ -23,6 +25,7 @@ const Box = styled.div`
 Box.propTypes = {
   ...boxShadow.propTypes,
   ...color.propTypes,
+  ...display.propTypes,
   ...height.propTypes,
   ...maxWidth.propTypes,
   ...space.propTypes,
