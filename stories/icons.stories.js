@@ -5,13 +5,17 @@ import { withKnobs, select } from '@storybook/addon-knobs';
 import { Box, Grid, Icon, Text } from '../src';
 
 const AVAILABLE_ICONS = [
+  'calendar',
+  'caret',
+  'chat-bubble-outline',
   'checkbox-marked-circle-outline',
   'cr-logo',
   'download',
-  'chat-bubble-outline',
-  'thumb-up-outline',
+  'status',
+  'swap',
   'thumb-down-outline',
-  'status'
+  'thumb-up-outline',
+  'trash'
 ];
 
 const rotationOptions = {
