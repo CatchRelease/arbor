@@ -1,6 +1,6 @@
 export * from './theme';
 export { default as Accordion } from './Accordion';
-export { default as AccordionSection } from './Accordion/AccordionSection';
+export { AccordionSection } from './Accordion';
 export { default as Avatar } from './Avatar';
 export { default as Box } from './Box';
 export { default as Button } from './Button';
