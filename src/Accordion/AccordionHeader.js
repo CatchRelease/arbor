@@ -5,6 +5,15 @@ import StyledAccordionHeader from './StyledAccordionHeader';
 import StyledAccordionHeading from './StyledAccordionHeading';
 import StyledAccordionHeadingButton from './StyledAccordionHeadingButton';
 import Text from '../Text';
+import Icon from '../Icon';
+
+const AccordionHeaderIcon = ({ isOpen }) => (
+  <Icon mr="small" name="caret" rotation={isOpen ? null : '270'} />
+);
+
+AccordionHeaderIcon.propTypes = {
+  isOpen: PropTypes.bool.isRequired
+};
 
 const AccordionHeaderNote = ({ note }) =>
   note && (
@@ -21,11 +30,13 @@ const AccordionHeader = ({ isOpen, note, onClick, panelId, text }) => (
   >
     <StyledAccordionHeading fontWeight="medium" mr="regular">
       <StyledAccordionHeadingButton
-        type="button"
+        alignItems="center"
         aria-controls={panelId}
         aria-expanded={isOpen}
         onClick={onClick}
+        type="button"
       >
+        <AccordionHeaderIcon isOpen={isOpen} />
         {text}
       </StyledAccordionHeadingButton>
     </StyledAccordionHeading>
