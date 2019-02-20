@@ -27,11 +27,11 @@ section:last-child .emotion-6 {
 .emotion-4 {
   font-family: Motiva Sans;
   color: #0F0F10;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 600;
   margin-right: 1rem;
   line-height: 1.25;
-  margin-bottom: calc(1.125rem * 0.5);
+  margin-bottom: calc(0.875rem * 0.5);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -123,11 +123,11 @@ section:last-child .emotion-8 {
 .emotion-4 {
   font-family: Motiva Sans;
   color: #0F0F10;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 600;
   margin-right: 1rem;
   line-height: 1.25;
-  margin-bottom: calc(1.125rem * 0.5);
+  margin-bottom: calc(0.875rem * 0.5);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -170,7 +170,7 @@ section:last-child .emotion-8 {
 .emotion-6 {
   font-family: Motiva Sans;
   color: #5B5D61;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   text-align: right;
 }
 
@@ -233,11 +233,11 @@ section:last-child .emotion-6 {
 .emotion-4 {
   font-family: Motiva Sans;
   color: #0F0F10;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 600;
   margin-right: 1rem;
   line-height: 1.25;
-  margin-bottom: calc(1.125rem * 0.5);
+  margin-bottom: calc(0.875rem * 0.5);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -329,11 +329,11 @@ section:last-child .emotion-6 {
 .emotion-4 {
   font-family: Motiva Sans;
   color: #0F0F10;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
   font-weight: 600;
   margin-right: 1rem;
   line-height: 1.25;
-  margin-bottom: calc(1.125rem * 0.5);
+  margin-bottom: calc(0.875rem * 0.5);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

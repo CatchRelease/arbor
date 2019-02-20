@@ -75,7 +75,7 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   />
   <span
     className="emotion-2 emotion-3"
-    fontSize="size2"
+    fontSize="size4"
   >
     Ready to Clear
   </span>
@@ -160,7 +160,7 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   />
   <span
     className="emotion-2 emotion-3"
-    fontSize="size2"
+    fontSize="size4"
   >
     Ready to Clear
   </span>

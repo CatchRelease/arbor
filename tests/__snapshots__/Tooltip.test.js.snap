@@ -93,13 +93,15 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "white": "#FFFFFF",
         },
         "fontSizes": Object {
-          "size1": "0.75rem",
-          "size2": "0.875rem",
-          "size3": "1rem",
-          "size4": "1.125rem",
-          "size5": "1.375rem",
-          "size6": "1.75rem",
-          "size7": "2.125rem",
+          "size1": "0.6875rem",
+          "size2": "0.75rem",
+          "size3": "0.8125rem",
+          "size4": "0.875rem",
+          "size5": "1rem",
+          "size6": "1.25rem",
+          "size7": "1.5rem",
+          "size8": "1.75rem",
+          "size9": "2.125rem",
         },
         "fontWeights": Object {
           "bold": 700,
@@ -216,7 +218,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
       html={
         <ForwardRef(render)
           color="white"
-          fontSize="size2"
+          fontSize="size4"
           px="smaller"
           py="smallest"
           theme={
@@ -306,13 +308,15 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "white": "#FFFFFF",
               },
               "fontSizes": Object {
-                "size1": "0.75rem",
-                "size2": "0.875rem",
-                "size3": "1rem",
-                "size4": "1.125rem",
-                "size5": "1.375rem",
-                "size6": "1.75rem",
-                "size7": "2.125rem",
+                "size1": "0.6875rem",
+                "size2": "0.75rem",
+                "size3": "0.8125rem",
+                "size4": "0.875rem",
+                "size5": "1rem",
+                "size6": "1.25rem",
+                "size7": "1.5rem",
+                "size8": "1.75rem",
+                "size9": "2.125rem",
               },
               "fontWeights": Object {
                 "bold": 700,

@@ -7,7 +7,7 @@ const baseStyles = ({ theme }) => css`
   border: ${theme.borderWidth.small} solid ${theme.colors.border.default};
   box-sizing: border-box;
   color: ${theme.colors.text.default};
-  font-size: ${theme.fontSizes.size2};
+  font-size: ${theme.fontSizes.size4};
   line-height: ${theme.lineHeights.small};
   margin: ${theme.space.smallest} 0;
   padding: ${theme.space.smaller};

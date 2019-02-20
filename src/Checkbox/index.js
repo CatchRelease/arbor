@@ -48,7 +48,7 @@ const Checkbox = ({
     )}
 
     <Text.span
-      fontSize="size2"
+      fontSize="size4"
       color={disabled ? 'text.disabled' : 'text.default'}
       ml={icon ? 'smallest' : 'smaller'}
     >
