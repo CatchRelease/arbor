@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import {
+  borderRadius,
   boxShadow,
   color,
   display,
@@ -12,6 +13,7 @@ import {
 
 const Box = styled.div`
   box-sizing: border-box;
+  ${borderRadius};
   ${boxShadow};
   ${color};
   ${display};
@@ -24,6 +26,7 @@ const Box = styled.div`
 
 Box.propTypes = {
   ...boxShadow.propTypes,
+  ...borderRadius.propTypes,
   ...color.propTypes,
   ...display.propTypes,
   ...height.propTypes,
