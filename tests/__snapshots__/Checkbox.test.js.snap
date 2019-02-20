@@ -84,7 +84,7 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
   <span
     className="emotion-4 emotion-5"
     color="text.default"
-    fontSize="size2"
+    fontSize="size4"
   >
     My Checkbox
   </span>
@@ -186,7 +186,7 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
   <span
     className="emotion-6 emotion-7"
     color="text.default"
-    fontSize="size2"
+    fontSize="size4"
   >
     My Checkbox
   </span>
@@ -289,7 +289,7 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
   <span
     className="emotion-6 emotion-7"
     color="text.default"
-    fontSize="size2"
+    fontSize="size4"
   >
     My Checkbox
   </span>
@@ -392,7 +392,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   <span
     className="emotion-6 emotion-7"
     color="text.default"
-    fontSize="size2"
+    fontSize="size4"
   >
     My Checkbox
   </span>
@@ -486,7 +486,7 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
   <span
     className="emotion-4 emotion-5"
     color="text.disabled"
-    fontSize="size2"
+    fontSize="size4"
   >
     My Checkbox
   </span>
@@ -589,7 +589,7 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   <span
     className="emotion-6 emotion-7"
     color="text.disabled"
-    fontSize="size2"
+    fontSize="size4"
   >
     My Checkbox
   </span>
@@ -689,7 +689,7 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
   <span
     className="emotion-6 emotion-7"
     color="text.default"
-    fontSize="size2"
+    fontSize="size4"
   >
     My Checkbox
   </span>

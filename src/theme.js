@@ -96,13 +96,15 @@ export const colors = {
 };
 
 export const fontSizes = {
-  size1: rem('12px'),
-  size2: rem('14px'),
-  size3: rem('16px'),
-  size4: rem('18px'),
-  size5: rem('22px'),
-  size6: rem('28px'),
-  size7: rem('34px')
+  size1: rem('11px'),
+  size2: rem('12px'),
+  size3: rem('13px'),
+  size4: rem('14px'),
+  size5: rem('16px'),
+  size6: rem('20px'),
+  size7: rem('24px'),
+  size8: rem('28px'),
+  size9: rem('34px')
 };
 
 export const fontWeights = {
@@ -119,13 +121,13 @@ export const lineHeights = {
 export const typography = {
   text: {
     ui: {
-      fontSize: fontSizes.size2
+      fontSize: fontSizes.size4
     },
     longForm: {
-      fontSize: fontSizes.size3
+      fontSize: fontSizes.size5
     },
     tiny: {
-      fontSize: fontSizes.size1
+      fontSize: fontSizes.size2
     }
   }
 };

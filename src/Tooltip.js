@@ -22,7 +22,7 @@ const Tooltip = ({ text, children, theme, ...props }) => {
       {...{
         px: 'smaller',
         py: 'smallest',
-        fontSize: 'size2',
+        fontSize: 'size4',
         color: 'white',
         theme
       }}

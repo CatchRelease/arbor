@@ -58,7 +58,7 @@ Heading.h5 = styled(Heading.withComponent('h5'))`
 `;
 
 Heading.h5.defaultProps = {
-  fontSize: 'size2',
+  fontSize: 'size4',
   fontWeight: 'medium'
 };
 
@@ -67,7 +67,7 @@ Heading.h6 = styled(Heading.withComponent('h6'))`
 `;
 
 Heading.h6.defaultProps = {
-  fontSize: 'size2',
+  fontSize: 'size4',
   fontWeight: 'regular'
 };
 

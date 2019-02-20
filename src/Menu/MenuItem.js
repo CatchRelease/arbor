@@ -54,7 +54,7 @@ class MenuItem extends React.PureComponent {
       >
         <input {...{ id, name, value, css: hideVisually(), type: 'hidden' }} />
         <Icon name="status" mr="small" color={baseColor} fontSize="16px" />
-        <Text.span fontSize="size2">{label}</Text.span>
+        <Text.span fontSize="size4">{label}</Text.span>
       </StyledMenuItem>
     );
   }
