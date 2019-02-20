@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AccordionSection /> render accordion is closed renders with the panel hidden 1`] = `
-.emotion-4 {
+.emotion-6 {
   box-sizing: border-box;
   padding: 1rem;
   display: -webkit-box;
@@ -20,11 +20,11 @@ exports[`<AccordionSection /> render accordion is closed renders with the panel 
   border-bottom: 1px solid #E0E1E2;
 }
 
-section:last-child .emotion-4 {
+section:last-child .emotion-6 {
   border-bottom: none;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 1.125rem;
@@ -47,12 +47,16 @@ section:last-child .emotion-4 {
   margin-bottom: 0;
 }
 
-.emotion-0 {
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: none;
   border: none;
   cursor: pointer;
@@ -60,24 +64,31 @@ section:last-child .emotion-4 {
   padding: 0;
 }
 
-.emotion-6 {
+.emotion-0 {
+  margin-right: 0.75rem;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.emotion-8 {
   box-sizing: border-box;
   display: none;
   border-bottom: 1px solid #E0E1E2;
   padding: 1rem;
 }
 
-section:last-child .emotion-6 {
+section:last-child .emotion-8 {
   border-bottom: none;
   border-top: 1px solid #E0E1E2;
 }
 
 <section>
   <header
-    className="emotion-4 emotion-5"
+    className="emotion-6 emotion-7"
   >
     <h1
-      className="emotion-2 emotion-3"
+      className="emotion-4 emotion-5"
       color="text.dark"
       fontSize="size4"
       fontWeight="medium"
@@ -85,16 +96,19 @@ section:last-child .emotion-6 {
       <button
         aria-controls="my-accordion-1"
         aria-expanded={false}
-        className="emotion-0 emotion-1"
+        className="emotion-2 emotion-3"
         onClick={[Function]}
         type="button"
       >
+        <i
+          className="ar ar-caret emotion-0 emotion-1"
+        />
         My Accordion
       </button>
     </h1>
   </header>
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-8 emotion-9"
     display="none"
     id="my-accordion-1"
   >
@@ -106,7 +120,7 @@ section:last-child .emotion-6 {
 `;
 
 exports[`<AccordionSection /> render accordion is open renders with the panel visible 1`] = `
-.emotion-4 {
+.emotion-6 {
   box-sizing: border-box;
   padding: 1rem;
   display: -webkit-box;
@@ -125,11 +139,11 @@ exports[`<AccordionSection /> render accordion is open renders with the panel vi
   border-bottom: 1px solid #E0E1E2;
 }
 
-section:last-child .emotion-4 {
+section:last-child .emotion-6 {
   border-bottom: none;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 1.125rem;
@@ -152,12 +166,16 @@ section:last-child .emotion-4 {
   margin-bottom: 0;
 }
 
-.emotion-0 {
+.emotion-2 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: none;
   border: none;
   cursor: pointer;
@@ -165,24 +183,28 @@ section:last-child .emotion-4 {
   padding: 0;
 }
 
-.emotion-6 {
+.emotion-0 {
+  margin-right: 0.75rem;
+}
+
+.emotion-8 {
   box-sizing: border-box;
   display: block;
   border-bottom: 1px solid #E0E1E2;
   padding: 1rem;
 }
 
-section:last-child .emotion-6 {
+section:last-child .emotion-8 {
   border-bottom: none;
   border-top: 1px solid #E0E1E2;
 }
 
 <section>
   <header
-    className="emotion-4 emotion-5"
+    className="emotion-6 emotion-7"
   >
     <h1
-      className="emotion-2 emotion-3"
+      className="emotion-4 emotion-5"
       color="text.dark"
       fontSize="size4"
       fontWeight="medium"
@@ -190,16 +212,19 @@ section:last-child .emotion-6 {
       <button
         aria-controls="my-accordion-1"
         aria-expanded={true}
-        className="emotion-0 emotion-1"
+        className="emotion-2 emotion-3"
         onClick={[Function]}
         type="button"
       >
+        <i
+          className="ar ar-caret emotion-0 emotion-1"
+        />
         My Accordion
       </button>
     </h1>
   </header>
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-8 emotion-9"
     display="block"
     id="my-accordion-1"
   >
