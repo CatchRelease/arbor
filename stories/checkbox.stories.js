@@ -28,23 +28,38 @@ stories.add('default', () => (
 ));
 
 stories.addDecorator(withKnobs);
-const icon = text('Icon name', 'download');
-
 stories.add('with icon', () => (
   <Box p="larger">
-    <Checkbox icon={icon} label="Checkbox default" />
-    <Checkbox icon={icon} checked label="Checkbox checked" />
-    <Checkbox icon={icon} disabled label="Checkbox disabled" />
-    <Checkbox icon={icon} disabled checked label="Checkbox checked disabled" />
-    <Checkbox icon={icon} indeterminate label="Checkbox indeterminate" />
+    <Checkbox icon={text('Icon name', 'download')} label="Checkbox default" />
     <Checkbox
-      icon={icon}
+      icon={text('Icon name', 'download')}
+      checked
+      label="Checkbox checked"
+    />
+    <Checkbox
+      icon={text('Icon name', 'download')}
+      disabled
+      label="Checkbox disabled"
+    />
+    <Checkbox
+      icon={text('Icon name', 'download')}
+      disabled
+      checked
+      label="Checkbox checked disabled"
+    />
+    <Checkbox
+      icon={text('Icon name', 'download')}
+      indeterminate
+      label="Checkbox indeterminate"
+    />
+    <Checkbox
+      icon={text('Icon name', 'download')}
       checked
       indeterminate
       label="Checkbox checked indeterminate"
     />
     <Checkbox
-      icon={icon}
+      icon={text('Icon name', 'download')}
       checked
       indeterminate
       disabled
