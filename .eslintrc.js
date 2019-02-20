@@ -12,9 +12,10 @@ module.exports = {
       {
         devDependencies: [
           '.storybook/**',
+          'jest.setup.js',
+          'src/**/__tests__/**',
           'stories/**',
-          'tests/**',
-          'jest.setup.js'
+          'tests/**'
         ]
       }
     ]
@@ -27,7 +28,7 @@ module.exports = {
       }
     },
     {
-      files: ['tests/**/*.test.js'],
+      files: ['tests/**/*.test.js', 'src/**/__tests__/**/*.test.js'],
       globals: {
         context: true,
         describe: true,
