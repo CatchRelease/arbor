@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 var _exportNames = {
   theme: true,
+  Accordion: true,
+  AccordionSection: true,
   Box: true,
   Button: true,
   Card: true,
@@ -32,6 +34,18 @@ Object.defineProperty(exports, "theme", {
   enumerable: true,
   get: function get() {
     return _theme.default;
+  }
+});
+Object.defineProperty(exports, "Accordion", {
+  enumerable: true,
+  get: function get() {
+    return _Accordion.default;
+  }
+});
+Object.defineProperty(exports, "AccordionSection", {
+  enumerable: true,
+  get: function get() {
+    return _AccordionSection.default;
   }
 });
 Object.defineProperty(exports, "Box", {
@@ -179,6 +193,10 @@ Object.keys(_theme).forEach(function (key) {
     }
   });
 });
+
+var _Accordion = _interopRequireDefault(require("./Accordion"));
+
+var _AccordionSection = _interopRequireDefault(require("./Accordion/AccordionSection"));
 
 var _Box = _interopRequireDefault(require("./Box"));
 

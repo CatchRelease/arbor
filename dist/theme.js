@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.borderWidth = exports.borderRadius = exports.spacings = exports.brandFont = exports.typography = exports.lineHeights = exports.fontWeights = exports.fontSizes = exports.colors = exports.bronzes = exports.black = exports.greens = exports.reds = exports.whites = exports.greys = exports.blues = exports.breakpoints = void 0;
+exports.default = exports.boxShadows = exports.borderWidth = exports.borderRadius = exports.spacings = exports.brandFont = exports.typography = exports.lineHeights = exports.fontWeights = exports.fontSizes = exports.colors = exports.textColors = exports.iconColors = exports.brandColors = exports.borderColors = exports.backgroundColors = exports.bronzes = exports.black = exports.greens = exports.reds = exports.whites = exports.greys = exports.blues = exports.breakpoints = void 0;
 
 var _polished = require("polished");
 
@@ -22,21 +22,20 @@ var blues = {
 };
 exports.blues = blues;
 var greys = {
-  grey10: '#EEEEEE',
-  grey20: '#DDDDDD',
-  grey30: '#CCCCCC',
-  grey40: '#BBBBBB',
-  grey50: '#AAAAAA',
-  grey60: '#999999',
-  grey70: '#888888',
-  grey80: '#666666',
-  grey90: '#444444',
-  grey100: '#222222'
+  grey10: '#F8F9F9',
+  grey20: '#F2F2F2',
+  grey30: '#EBECEC',
+  grey40: '#E0E1E2',
+  grey50: '#BEBEC0',
+  grey60: '#989A9C',
+  grey70: '#78797D',
+  grey80: '#5B5D61',
+  grey90: '#25272D',
+  grey100: '#0F0F10'
 };
 exports.greys = greys;
 var whites = {
-  white: '#FFFFFF',
-  white10: '#F5F5F5'
+  white: '#FFFFFF'
 };
 exports.whites = whites;
 var reds = {
@@ -61,20 +60,60 @@ var bronzes = {
   bronzeDark: '#AA5500'
 };
 exports.bronzes = bronzes;
+var backgroundColors = {
+  muted: greys.grey10,
+  default: greys.grey20
+};
+exports.backgroundColors = backgroundColors;
+var borderColors = {
+  muted: greys.grey30,
+  default: greys.grey40
+};
+exports.borderColors = borderColors;
+var brandColors = {
+  get light() {
+    return (0, _polished.transparentize)(0.91, this.dark);
+  },
+
+  default: '#007558',
+  dark: '#00533E',
+  darkest: '#001C15'
+};
+exports.brandColors = brandColors;
+var iconColors = {
+  disabled: (0, _polished.transparentize)(0.3, greys.grey50),
+  default: greys.grey60
+};
+exports.iconColors = iconColors;
+var textColors = {
+  disabled: (0, _polished.transparentize)(0.3, greys.grey70),
+  muted: greys.grey80,
+  default: greys.grey90,
+  dark: greys.grey100
+};
+exports.textColors = textColors;
 
 var colors = _objectSpread({
   black: black
-}, blues, greys, whites, greens, reds, bronzes);
+}, blues, greys, whites, greens, reds, bronzes, {
+  background: _objectSpread({}, backgroundColors),
+  brand: _objectSpread({}, brandColors),
+  border: _objectSpread({}, borderColors),
+  icon: _objectSpread({}, iconColors),
+  text: _objectSpread({}, textColors)
+});
 
 exports.colors = colors;
 var fontSizes = {
-  size1: (0, _polished.rem)('12px'),
-  size2: (0, _polished.rem)('14px'),
-  size3: (0, _polished.rem)('16px'),
-  size4: (0, _polished.rem)('18px'),
-  size5: (0, _polished.rem)('22px'),
-  size6: (0, _polished.rem)('28px'),
-  size7: (0, _polished.rem)('34px')
+  size1: (0, _polished.rem)('11px'),
+  size2: (0, _polished.rem)('12px'),
+  size3: (0, _polished.rem)('13px'),
+  size4: (0, _polished.rem)('14px'),
+  size5: (0, _polished.rem)('16px'),
+  size6: (0, _polished.rem)('20px'),
+  size7: (0, _polished.rem)('24px'),
+  size8: (0, _polished.rem)('28px'),
+  size9: (0, _polished.rem)('34px')
 };
 exports.fontSizes = fontSizes;
 var fontWeights = {
@@ -91,16 +130,13 @@ exports.lineHeights = lineHeights;
 var typography = {
   text: {
     ui: {
-      fontSize: fontSizes.size2,
-      color: colors.grey100
+      fontSize: fontSizes.size4
     },
     longForm: {
-      fontSize: fontSizes.size3,
-      color: colors.grey100
+      fontSize: fontSizes.size5
     },
     tiny: {
-      fontSize: fontSizes.size1,
-      color: colors.grey80
+      fontSize: fontSizes.size2
     }
   }
 };
@@ -128,17 +164,33 @@ var borderWidth = {
   large: '4px'
 };
 exports.borderWidth = borderWidth;
+var blurryShadowColor = (0, _polished.transparentize)(0.7, greys.grey90);
+var borderShadowColor = (0, _polished.transparentize)(0.53, greys.grey90);
+var boxShadows = {
+  elevation0: "0 0 1px ".concat(borderShadowColor),
+  elevation1: "0 0 1px ".concat(borderShadowColor, ", 0 2px 4px -2px ").concat(blurryShadowColor),
+  elevation2: "0 0 1px ".concat(borderShadowColor, ", 0 5px 8px -4px ").concat(blurryShadowColor),
+  elevation3: "0 0 1px ".concat(borderShadowColor, ", 0 8px 10px -4px ").concat(blurryShadowColor),
+  elevation4: "0 0 1px ".concat(borderShadowColor, ", 0 16px 24px -8px ").concat(blurryShadowColor)
+};
+exports.boxShadows = boxShadows;
 var _default = {
+  backgroundColors: backgroundColors,
+  borderColors: borderColors,
   borderRadius: borderRadius,
   borderWidth: borderWidth,
+  brandColors: brandColors,
   brandFont: brandFont,
   breakpoints: breakpoints,
   colors: colors,
-  fontWeights: fontWeights,
   fontSizes: fontSizes,
+  fontWeights: fontWeights,
+  iconColors: iconColors,
   iconFontPrefix: 'ar',
   lineHeights: lineHeights,
+  shadows: boxShadows,
   space: spacings,
+  textColors: textColors,
   typography: typography
 };
 exports.default = _default;

@@ -125,7 +125,7 @@ function (_React$PureComponent) {
         color: baseColor,
         fontSize: "16px"
       }), _react.default.createElement(_Text.default.span, {
-        fontSize: "size2"
+        fontSize: "size4"
       }, label));
     }
   }]);

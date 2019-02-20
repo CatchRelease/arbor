@@ -43,6 +43,7 @@ var Checkbox = function Checkbox(_ref) {
       props = _objectWithoutProperties(_ref, ["id", "name", "label", "disabled", "isInvalid", "checked", "onChange", "value", "indeterminate", "icon"]);
 
   return _react.default.createElement(_CheckboxLabel.default, _extends({
+    alignItems: "center",
     my: "regular"
   }, props), _react.default.createElement(_CheckboxInput.default, {
     id: id,
@@ -63,11 +64,11 @@ var Checkbox = function Checkbox(_ref) {
   })), icon && _react.default.createElement(_Icon.default, {
     fontSize: "24px",
     name: icon,
-    color: disabled ? 'grey20' : 'grey50',
+    color: disabled ? 'icon.disabled' : 'icon.default',
     ml: "smaller"
   }), _react.default.createElement(_Text.default.span, {
-    fontSize: "size2",
-    color: disabled ? 'grey40' : 'grey100',
+    fontSize: "size4",
+    color: disabled ? 'text.disabled' : 'text.default',
     ml: icon ? 'smallest' : 'smaller'
   }, label));
 };
