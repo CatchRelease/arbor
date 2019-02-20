@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar /> renders properly 1`] = `
+.emotion-2 {
+  box-sizing: border-box;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+}
+
+<div
+  className="emotion-2 emotion-3"
+  height="24px"
+  width="24px"
+>
+  <p
+    className="emotion-0 emotion-1"
+    color="white"
+    fontSize="size2"
+  >
+    BW
+  </p>
+</div>
+`;
