@@ -1,6 +1,6 @@
 export * from './theme';
-export { default as Accordion } from './Accordion';
 export { AccordionSection } from './Accordion';
+export { default as Accordion } from './Accordion';
 export { default as Avatar } from './Avatar';
 export { default as Box } from './Box';
 export { default as Button } from './Button';
@@ -21,6 +21,7 @@ export { default as Menu } from './Menu';
 export { default as Pagination } from './Pagination';
 export { default as Paragraph } from './Paragraph';
 export { default as Popover } from './Popover';
+export { default as Header } from './Header';
 export { default as Text } from './Text';
 export { default as Tooltip } from './Tooltip';
 

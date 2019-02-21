@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders with heading and a button 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: calc(1.5rem * 0.5);
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  grid-gap: 0.75rem;
+  grid-template-columns: minmax(auto,100%) repeat(1,auto);
+}
+
+.emotion-4 {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-family: Motiva Sans;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  text-align: center;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+}
+
+.emotion-4:disabled {
+  background: #F2F2F2;
+  color: rgba(120,121,125,0.7);
+  cursor: not-allowed;
+}
+
+.emotion-4:enabled {
+  cursor: pointer;
+}
+
+.emotion-4 i {
+  vertical-align: middle;
+}
+
+.emotion-4 i {
+  font-size: 2rem;
+}
+
+.emotion-4:hover:enabled {
+  background-color: #5577FF;
+}
+
+.emotion-4:active:enabled {
+  background-color: #4455CC;
+}
+
+.emotion-4:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+.emotion-2 {
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+<header
+  className="emotion-6 emotion-7"
+>
+  <h1
+    className="emotion-0 emotion-1"
+    color="text.dark"
+    fontSize="size7"
+    fontWeight="bold"
+  >
+    My Heading
+  </h1>
+  <button
+    className="emotion-4 emotion-5"
+    disabled={false}
+    size="large"
+  >
+    <span
+      className="emotion-2 emotion-3"
+      disabled={false}
+      size="large"
+    >
+      Primary
+    </span>
+  </button>
+</header>
+`;
+
+exports[`<Header /> renders with heading and no buttons 1`] = `
+.emotion-2 {
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  grid-gap: 0.75rem;
+  grid-template-columns: minmax(auto,100%);
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: calc(1.5rem * 0.5);
+}
+
+<header
+  className="emotion-2 emotion-3"
+>
+  <h1
+    className="emotion-0 emotion-1"
+    color="text.dark"
+    fontSize="size7"
+    fontWeight="bold"
+  >
+    My Heading
+  </h1>
+</header>
+`;
+
+exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: calc(1.5rem * 0.5);
+}
+
+.emotion-8 {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-family: Motiva Sans;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  text-align: center;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #4466EE;
+  color: #FFFFFF;
+}
+
+.emotion-8:disabled {
+  background: #F2F2F2;
+  color: rgba(120,121,125,0.7);
+  cursor: not-allowed;
+}
+
+.emotion-8:enabled {
+  cursor: pointer;
+}
+
+.emotion-8 i {
+  vertical-align: middle;
+}
+
+.emotion-8 i {
+  font-size: 2rem;
+}
+
+.emotion-8:hover:enabled {
+  background-color: #5577FF;
+}
+
+.emotion-8:active:enabled {
+  background-color: #4455CC;
+}
+
+.emotion-8:focus:enabled {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+.emotion-2 {
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  grid-gap: 0.75rem;
+  grid-template-columns: minmax(auto,100%) repeat(2,auto);
+}
+
+.emotion-4 {
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-family: Motiva Sans;
+  font-weight: 600;
+  line-height: 1.5;
+  outline: none;
+  text-align: center;
+  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
+  transition: box-shadow 0.3s ease,background 0.2s ease;
+  padding: 0 1rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  background-color: #FFFFFF;
+  color: #25272D;
+  font-weight: 400;
+}
+
+.emotion-4:disabled {
+  background: #F2F2F2;
+  color: rgba(120,121,125,0.7);
+  cursor: not-allowed;
+}
+
+.emotion-4:enabled {
+  cursor: pointer;
+}
+
+.emotion-4 i {
+  vertical-align: middle;
+}
+
+.emotion-4 i {
+  font-size: 2rem;
+}
+
+.emotion-4:enabled {
+  border: 1px solid #E0E1E2;
+}
+
+.emotion-4:hover:enabled {
+  background-color: #F8F9F9;
+  color: #4466EE;
+  border: 1px solid #4466EE;
+}
+
+.emotion-4:active:enabled {
+  color: #4455CC;
+  background-color: #F2F2F2;
+  border: 1px solid transparent;
+}
+
+.emotion-4:focus:enabled {
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+}
+
+<header
+  className="emotion-10 emotion-11"
+>
+  <h1
+    className="emotion-0 emotion-1"
+    color="text.dark"
+    fontSize="size7"
+    fontWeight="bold"
+  >
+    My Heading
+  </h1>
+  <button
+    className="emotion-4 emotion-5"
+    disabled={false}
+    size="large"
+  >
+    <span
+      className="emotion-2 emotion-3"
+      disabled={false}
+      size="large"
+    >
+      Secondary
+    </span>
+  </button>
+  <button
+    className="emotion-8 emotion-5"
+    disabled={false}
+    size="large"
+  >
+    <span
+      className="emotion-2 emotion-3"
+      disabled={false}
+      size="large"
+    >
+      Primary
+    </span>
+  </button>
+</header>
+`;
