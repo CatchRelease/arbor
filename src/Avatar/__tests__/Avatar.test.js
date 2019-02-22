@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import Avatar from '../Avatar';
 import colorForString from '../../utils/colorForString';
-import createWithTheme from '../../../tests/utils/createWithTheme';
+import createWithTheme from '../../../utils/createWithTheme';
 
 jest.mock('../../utils/colorForString.js');
 

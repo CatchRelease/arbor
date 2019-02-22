@@ -1,7 +1,7 @@
 import React from 'react';
 import { matchers } from 'jest-emotion';
 
-import createWithTheme from '../../../tests/utils/createWithTheme';
+import createWithTheme from '../../../utils/createWithTheme';
 import Paragraph from '../Paragraph';
 
 expect.extend(matchers);

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import mountWithTheme from '../../../tests/utils/mountWithTheme';
+import mountWithTheme from '../../../utils/mountWithTheme';
 import Tooltip from '../Tooltip';
 
 describe('<Tooltip />', () => {

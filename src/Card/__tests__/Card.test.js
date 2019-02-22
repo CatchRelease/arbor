@@ -1,5 +1,5 @@
 import React from 'react';
-import createWithTheme from '../../../tests/utils/createWithTheme';
+import createWithTheme from '../../../utils/createWithTheme';
 
 import Card from '../Card';
 

@@ -15,20 +15,20 @@ module.exports = {
           'jest.setup.js',
           'src/**/__tests__/**',
           'stories/**',
-          'tests/**'
+          'utils/**'
         ]
       }
     ]
   },
   overrides: [
     {
-      files: ['tests/**/*.test.js', 'src/**/*.js'],
+      files: ['src/**/*.js'],
       globals: {
         document: true
       }
     },
     {
-      files: ['tests/**/*.test.js', 'src/**/__tests__/**/*.test.js'],
+      files: ['src/**/__tests__/**/*.test.js'],
       globals: {
         context: true,
         describe: true,

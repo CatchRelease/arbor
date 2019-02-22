@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import mountWithTheme from '../../../tests/utils/mountWithTheme';
+import mountWithTheme from '../../../utils/mountWithTheme';
 import Popover from '../Popover';
 
 const mountNode = document.createElement('div');
