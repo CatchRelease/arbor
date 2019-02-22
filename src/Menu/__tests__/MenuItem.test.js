@@ -1,7 +1,7 @@
 import React from 'react';
 
-import mountWithTheme from '../../../tests/utils/mountWithTheme';
-import createWithTheme from '../../../tests/utils/createWithTheme';
+import mountWithTheme from '../../../utils/mountWithTheme';
+import createWithTheme from '../../../utils/createWithTheme';
 import { ENTER_KEY, SPACEBAR } from '../../constants';
 import MenuItem from '../MenuItem';
 

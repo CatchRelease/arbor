@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import createWithTheme from '../../../tests/utils/createWithTheme';
+import createWithTheme from '../../../utils/createWithTheme';
 import AccordionSection from '../AccordionSection';
 
 describe('<AccordionSection />', () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
 
-import createWithTheme from '../../../tests/utils/createWithTheme';
+import createWithTheme from '../../../utils/createWithTheme';
 import Icon from '../Icon';
 
 describe('<Icon />', () => {

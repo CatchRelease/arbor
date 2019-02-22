@@ -8,7 +8,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "yarn eslint && stylelint src",
-    "eslint": "eslint src tests stories .storybook",
+    "eslint": "eslint src stories .storybook",
     "test:ci": "yarn test && yarn lint",
     "deploy-storybook": "storybook-to-ghpages",
     "build": "babel src -d dist"

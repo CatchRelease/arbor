@@ -1,6 +1,6 @@
 import React from 'react';
 
-import createWithTheme from '../../../tests/utils/createWithTheme';
+import createWithTheme from '../../../utils/createWithTheme';
 import Text from '../Text';
 
 describe('<Text />', () => {
