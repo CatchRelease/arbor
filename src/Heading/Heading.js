@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 
+import createWithComponent from '../utils/createWithComponent';
 import Text from '../Text';
 
 const lineHeightMultiplier = 0.5;
@@ -15,60 +16,48 @@ const calculatedMargin = ({ mb, fontSize, theme }) =>
     margin-bottom: calc(${theme.fontSizes[fontSize]} * ${lineHeightMultiplier});
   `;
 
-const Heading = styled(Text.withComponent('h1'))`
+const Heading = styled(
+  createWithComponent(Text, 'h1', {
+    color: 'text.dark',
+    fontWeight: 'bold'
+  })
+)`
   ${baseStyles};
   ${calculatedMargin};
 `;
 
-Heading.defaultProps = {
-  color: 'text.dark',
-  fontWeight: 'bold'
-};
+Heading.h1 = createWithComponent(Heading, 'h1', {
+  fontSize: 'size7'
+});
 
-Heading.h1 = Heading.withComponent('h1');
+Heading.h2 = createWithComponent(Heading, 'h2', {
+  fontSize: 'size6'
+});
 
-Heading.h1.defaultProps = {
-  fontSize: 'size7',
-  ...Heading.defaultProps
-};
+Heading.h3 = createWithComponent(Heading, 'h3', {
+  fontSize: 'size5'
+});
 
-Heading.h2 = Heading.withComponent('h2');
+Heading.h4 = createWithComponent(Heading, 'h4', {
+  fontSize: 'size4'
+});
 
-Heading.h2.defaultProps = {
-  fontSize: 'size6',
-  ...Heading.defaultProps
-};
-
-Heading.h3 = Heading.withComponent('h3');
-
-Heading.h3.defaultProps = {
-  fontSize: 'size5',
-  ...Heading.defaultProps
-};
-
-Heading.h4 = Heading.withComponent('h4');
-
-Heading.h4.defaultProps = {
-  fontSize: 'size4',
-  ...Heading.defaultProps
-};
-
-Heading.h5 = styled(Heading.withComponent('h5'))`
+Heading.h5 = styled(
+  createWithComponent(Heading, 'h5', {
+    fontSize: 'size4',
+    fontWeight: 'medium'
+  })
+)`
   line-height: ${props => props.theme.lineHeights.large};
 `;
 
-Heading.h5.defaultProps = {
-  fontSize: 'size4',
-  fontWeight: 'medium'
-};
-
-Heading.h6 = styled(Heading.withComponent('h6'))`
+Heading.h6 = styled(
+  createWithComponent(Heading, 'h6', {
+    fontSize: 'size4',
+    fontWeight: 'regular'
+  })
+)`
   line-height: ${props => props.theme.lineHeights.large};
 `;
-
-Heading.h6.defaultProps = {
-  fontSize: 'size4',
-  fontWeight: 'regular'
-};
 
 export default Heading;

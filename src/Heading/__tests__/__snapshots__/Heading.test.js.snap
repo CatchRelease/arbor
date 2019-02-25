@@ -83,6 +83,7 @@ exports[`renders a h4 1`] = `
 exports[`renders a h5 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
+  color: #0F0F10;
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.25;
@@ -92,6 +93,7 @@ exports[`renders a h5 1`] = `
 
 <h5
   className="emotion-0 emotion-1"
+  color="text.dark"
   fontSize="size4"
   fontWeight="medium"
 >
@@ -102,6 +104,7 @@ exports[`renders a h5 1`] = `
 exports[`renders a h6 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
+  color: #0F0F10;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25;
@@ -111,6 +114,7 @@ exports[`renders a h6 1`] = `
 
 <h6
   className="emotion-0 emotion-1"
+  color="text.dark"
   fontSize="size4"
   fontWeight="regular"
 >
