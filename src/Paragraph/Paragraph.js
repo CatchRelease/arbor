@@ -2,6 +2,7 @@ import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
+import createWithComponent from '../utils/createWithComponent';
 import Text from '../Text';
 
 const variantStyles = ({ theme, variant }) => css`
@@ -17,7 +18,7 @@ Paragraph.propTypes = {
   variant: PropTypes.oneOf(['ui', 'longForm', 'tiny']).isRequired
 };
 
-Paragraph.p = Paragraph.withComponent('p');
-Paragraph.span = Paragraph.withComponent('span');
+Paragraph.p = createWithComponent(Paragraph, 'p');
+Paragraph.span = createWithComponent(Paragraph, 'span');
 
 export default Paragraph;

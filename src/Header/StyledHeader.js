@@ -1,5 +1,6 @@
+import createWithComponent from '../utils/createWithComponent';
 import Grid from '../Grid';
 
-const StyledHeader = Grid.withComponent('header');
+const StyledHeader = createWithComponent(Grid, 'header');
 
 export default StyledHeader;

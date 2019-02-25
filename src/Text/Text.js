@@ -9,6 +9,8 @@ import {
   textAlign
 } from 'styled-system';
 
+import createWithComponent from '../utils/createWithComponent';
+
 const baseStyles = ({ theme }) => css`
   font-family: ${theme.brandFont};
 `;
@@ -37,7 +39,7 @@ Text.defaultProps = {
   color: 'text.default'
 };
 
-Text.p = Text.withComponent('p');
-Text.span = Text.withComponent('span');
+Text.p = createWithComponent(Text, 'p');
+Text.span = createWithComponent(Text, 'span');
 
 export default Text;
