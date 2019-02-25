@@ -1,5 +1,5 @@
 const withComponent = (srcComponent, destComponent, defaultProps) => {
-  const component = srcComponent.withComponent(destComponent);
+  const component = srcComponent.withComponent(destComponent); // eslint-disable-line arbor/use-create-with-component
 
   component.defaultProps = {
     ...srcComponent.defaultProps,

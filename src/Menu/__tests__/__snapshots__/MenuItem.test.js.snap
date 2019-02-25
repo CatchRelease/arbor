@@ -36,6 +36,7 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
 
 .emotion-2 {
   font-family: Motiva Sans;
+  color: #25272D;
   font-size: 0.875rem;
 }
 
@@ -75,6 +76,7 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   />
   <span
     className="emotion-2 emotion-3"
+    color="text.default"
     fontSize="size4"
   >
     Ready to Clear
@@ -91,6 +93,7 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
 
 .emotion-2 {
   font-family: Motiva Sans;
+  color: #25272D;
   font-size: 0.875rem;
 }
 
@@ -160,6 +163,7 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   />
   <span
     className="emotion-2 emotion-3"
+    color="text.default"
     fontSize="size4"
   >
     Ready to Clear

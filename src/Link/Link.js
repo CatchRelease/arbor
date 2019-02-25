@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { color } from 'styled-system';
 
+import createWithComponent from '../utils/createWithComponent';
 import Text from '../Text';
 
 const baseStyles = css`
@@ -59,7 +60,11 @@ const variantStyles = ({ variant, theme: { colors } }) => {
   return variantMapping[variant];
 };
 
-const Link = styled(Text.withComponent('a'))`
+const Link = styled(
+  createWithComponent(Text, 'a', {
+    variant: 'default'
+  })
+)`
   ${baseStyles};
   ${variantStyles};
   ${color};
@@ -67,10 +72,6 @@ const Link = styled(Text.withComponent('a'))`
 
 Link.propTypes = {
   variant: PropTypes.oneOf(['default', 'muted'])
-};
-
-Link.defaultProps = {
-  variant: 'default'
 };
 
 export default Link;

@@ -7,8 +7,9 @@ import {
 } from 'styled-system';
 
 import Box from '../Box';
+import createWithComponent from '../utils/createWithComponent';
 
-const Grid = styled(Box.withComponent('div'))`
+const Grid = styled(createWithComponent(Box, 'div'))`
   display: grid;
   ${alignItems};
   ${gridGap};
