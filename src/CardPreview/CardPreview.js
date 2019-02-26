@@ -9,6 +9,10 @@ const CardPreview = styled(
   createWithComponent(Box, 'div', {
     defaultProps: {
       ratio: 9 / 16
+    },
+    propTypes: {
+      image: PropTypes.string.isRequired,
+      ...ratio.propTypes
     }
   })
 )`
@@ -17,10 +21,5 @@ const CardPreview = styled(
   background-size: contain;
   ${ratio};
 `;
-
-CardPreview.propTypes = {
-  image: PropTypes.string.isRequired,
-  ...ratio.propType
-};
 
 export default CardPreview;

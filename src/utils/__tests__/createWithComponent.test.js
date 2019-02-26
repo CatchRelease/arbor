@@ -17,7 +17,7 @@ describe('createWithComponent', () => {
 
     const component = createWithComponent(srcComponent, 'header');
 
-    expect(component.propTypes.foo).toEqual('bar'); // eslint-disable-line react/forbid-foreign-prop-types
+    expect(component.propTypes.foo).toEqual('bar');
   });
 
   context('with options argument', () => {
@@ -54,7 +54,7 @@ describe('createWithComponent', () => {
           propTypes
         });
 
-        expect(component.propTypes.baz).toEqual('qux'); // eslint-disable-line react/forbid-foreign-prop-types
+        expect(component.propTypes.baz).toEqual('qux');
       });
 
       it('overwrites source component prop types with passed default props', () => {
@@ -65,7 +65,7 @@ describe('createWithComponent', () => {
           propTypes
         });
 
-        expect(component.propTypes.foo).toEqual('baz'); // eslint-disable-line react/forbid-foreign-prop-types
+        expect(component.propTypes.foo).toEqual('baz');
       });
     });
   });

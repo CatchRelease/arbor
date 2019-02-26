@@ -9,18 +9,20 @@ import {
 import Box from '../Box';
 import createWithComponent from '../utils/createWithComponent';
 
-const Grid = styled(createWithComponent(Box, 'div'))`
+const Grid = styled(
+  createWithComponent(Box, 'div', {
+    propTypes: {
+      ...gridGap.propTypes,
+      ...gridTemplateColumns.propTypes,
+      ...justifyItems.propTypes
+    }
+  })
+)`
   display: grid;
   ${alignItems};
   ${gridGap};
   ${gridTemplateColumns};
   ${justifyItems};
 `;
-
-Grid.propTypes = {
-  ...gridGap.propTypes,
-  ...gridTemplateColumns.propTypes,
-  ...justifyItems.propTypes
-};
 
 export default Grid;
