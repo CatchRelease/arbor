@@ -2,42 +2,71 @@ import Box from '../../Box';
 import createWithComponent from '../createWithComponent';
 
 describe('createWithComponent', () => {
+  const createComponent = options => Object.assign(Box, options);
+
   it('returns a component with default props from the source component', () => {
-    const srcComponent = Box;
-    srcComponent.defaultProps = { foo: 'bar' };
+    const srcComponent = createComponent({ defaultProps: { foo: 'bar' } });
 
     const component = createWithComponent(srcComponent, 'header');
 
     expect(component.defaultProps.foo).toEqual('bar');
   });
 
-  context('with defaultProps argument', () => {
-    it('assigns the default props to the new component', () => {
-      const defaultProps = { baz: 'qux' };
-      const srcComponent = Box;
-      srcComponent.defaultProps = { foo: 'bar' };
+  it('returns a component with prop types from the source component', () => {
+    const srcComponent = createComponent({ propTypes: { foo: 'bar' } });
 
-      const component = createWithComponent(
-        srcComponent,
-        'header',
-        defaultProps
-      );
+    const component = createWithComponent(srcComponent, 'header');
 
-      expect(component.defaultProps.baz).toEqual('qux');
+    expect(component.propTypes.foo).toEqual('bar'); // eslint-disable-line react/forbid-foreign-prop-types
+  });
+
+  context('with options argument', () => {
+    context('defaultProps', () => {
+      it('assigns the default props to the new component', () => {
+        const srcComponent = createComponent({ defaultProps: { foo: 'bar' } });
+        const defaultProps = { baz: 'qux' };
+
+        const component = createWithComponent(srcComponent, 'header', {
+          defaultProps
+        });
+
+        expect(component.defaultProps.baz).toEqual('qux');
+      });
+
+      it('overwrites source component default props with passed default props', () => {
+        const srcComponent = createComponent({ defaultProps: { foo: 'bar' } });
+        const defaultProps = { foo: 'baz' };
+
+        const component = createWithComponent(srcComponent, 'header', {
+          defaultProps
+        });
+
+        expect(component.defaultProps.foo).toEqual('baz');
+      });
     });
 
-    it('overwrites source component default props with passed default props', () => {
-      const defaultProps = { foo: 'baz' };
-      const srcComponent = Box;
-      srcComponent.defaultProps = { foo: 'bar' };
+    context('propTypes', () => {
+      it('assigns the propTypes to the new component', () => {
+        const srcComponent = createComponent({ propTypes: { foo: 'bar' } });
+        const propTypes = { baz: 'qux' };
 
-      const component = createWithComponent(
-        srcComponent,
-        'header',
-        defaultProps
-      );
+        const component = createWithComponent(srcComponent, 'header', {
+          propTypes
+        });
 
-      expect(component.defaultProps.foo).toEqual('baz');
+        expect(component.propTypes.baz).toEqual('qux'); // eslint-disable-line react/forbid-foreign-prop-types
+      });
+
+      it('overwrites source component prop types with passed default props', () => {
+        const srcComponent = createComponent({ propTypes: { foo: 'bar' } });
+        const propTypes = { foo: 'baz' };
+
+        const component = createWithComponent(srcComponent, 'header', {
+          propTypes
+        });
+
+        expect(component.propTypes.foo).toEqual('baz'); // eslint-disable-line react/forbid-foreign-prop-types
+      });
     });
   });
 });

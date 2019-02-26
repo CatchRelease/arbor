@@ -18,8 +18,10 @@ const calculatedMargin = ({ mb, fontSize, theme }) =>
 
 const Heading = styled(
   createWithComponent(Text, 'h1', {
-    color: 'text.dark',
-    fontWeight: 'bold'
+    defaultProps: {
+      color: 'text.dark',
+      fontWeight: 'bold'
+    }
   })
 )`
   ${baseStyles};
@@ -27,25 +29,35 @@ const Heading = styled(
 `;
 
 Heading.h1 = createWithComponent(Heading, 'h1', {
-  fontSize: 'size7'
+  defaultProps: {
+    fontSize: 'size7'
+  }
 });
 
 Heading.h2 = createWithComponent(Heading, 'h2', {
-  fontSize: 'size6'
+  defaultProps: {
+    fontSize: 'size6'
+  }
 });
 
 Heading.h3 = createWithComponent(Heading, 'h3', {
-  fontSize: 'size5'
+  defaultProps: {
+    fontSize: 'size5'
+  }
 });
 
 Heading.h4 = createWithComponent(Heading, 'h4', {
-  fontSize: 'size4'
+  defaultProps: {
+    fontSize: 'size4'
+  }
 });
 
 Heading.h5 = styled(
   createWithComponent(Heading, 'h5', {
-    fontSize: 'size4',
-    fontWeight: 'medium'
+    defaultProps: {
+      fontSize: 'size4',
+      fontWeight: 'medium'
+    }
   })
 )`
   line-height: ${props => props.theme.lineHeights.large};
@@ -53,8 +65,10 @@ Heading.h5 = styled(
 
 Heading.h6 = styled(
   createWithComponent(Heading, 'h6', {
-    fontSize: 'size4',
-    fontWeight: 'regular'
+    defaultProps: {
+      fontSize: 'size4',
+      fontWeight: 'regular'
+    }
   })
 )`
   line-height: ${props => props.theme.lineHeights.large};

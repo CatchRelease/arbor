@@ -5,7 +5,9 @@ import createWithComponent from '../utils/createWithComponent';
 
 const Card = styled(
   createWithComponent(Box, 'div', {
-    boxShadow: 'elevation0'
+    defaultProps: {
+      boxShadow: 'elevation0'
+    }
   })
 )`
   border-radius: ${props => props.theme.borderRadius.large};
