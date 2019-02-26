@@ -7,7 +7,7 @@ module.exports.rules = {
     },
 
     'ExpressionStatement AssignmentExpression Identifier': node => {
-      if (node.name === 'defaultProps') {
+      if (node.name === 'defaultProps' || node.name === 'propTypes') {
         const source = context.getSourceCode();
         const name = node.parent.object && node.parent.object.name;
 
@@ -34,7 +34,9 @@ module.exports.rules = {
         if (usedCreateWithComponent) {
           context.report(
             node,
-            'Pass defaultProps as argument of createWithComponent utility method'
+            `Pass ${
+              node.name
+            } via the options argument of createWithComponent utility method`
           );
         }
       }
