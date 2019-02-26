@@ -6,14 +6,32 @@ module.exports.rules = {
       }
     },
 
-    'VariableDeclarator CallExpression Identifier': node => {
-      if (node.name === 'createWithComponent') {
-        const source = context.getSourceCode().getText();
-        const declarator = context
-          .getAncestors()
-          .find(({ type }) => type === 'VariableDeclarator');
+    'ExpressionStatement AssignmentExpression Identifier': node => {
+      if (node.name === 'defaultProps') {
+        const source = context.getSourceCode();
+        const name = node.parent.object && node.parent.object.name;
 
-        if (source.match(`${declarator.id.name}.defaultProps = {`)) {
+        if (!name) return;
+
+        const program = context.getAncestors().find(n => n.type === 'Program');
+
+        const declarations = program.body
+          .filter(n => n.type === 'VariableDeclaration')
+          .map(n => n.declarations);
+
+        const flattenedDeclarations = [].concat(...declarations);
+        const declaration = flattenedDeclarations.find(d => d.id.name === name);
+
+        if (!declaration) return;
+
+        const usedCreateWithComponent = source
+          .getTokensBetween(
+            source.getTokenByRangeStart(declaration.start),
+            source.getTokenByRangeStart(declaration.end)
+          )
+          .find(t => t.value === 'createWithComponent');
+
+        if (usedCreateWithComponent) {
           context.report(
             node,
             'Pass defaultProps as argument of createWithComponent utility method'
