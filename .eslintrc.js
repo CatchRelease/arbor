@@ -19,6 +19,7 @@ module.exports = {
         ]
       }
     ],
+    'react/forbid-foreign-prop-types': false,
     'arbor/use-create-with-component': 'error'
   },
   overrides: [

@@ -64,6 +64,9 @@ const Link = styled(
   createWithComponent(Text, 'a', {
     defaultProps: {
       variant: 'default'
+    },
+    propTypes: {
+      variant: PropTypes.oneOf(['default', 'muted'])
     }
   })
 )`
@@ -71,9 +74,5 @@ const Link = styled(
   ${variantStyles};
   ${color};
 `;
-
-Link.propTypes = {
-  variant: PropTypes.oneOf(['default', 'muted'])
-};
 
 export default Link;
