@@ -10,7 +10,9 @@ const gridStyles = ({ children }) => css`
 
 const CardActions = styled(
   createWithComponent(Grid, 'div', {
-    gridGap: 'smaller'
+    defaultProps: {
+      gridGap: 'smaller'
+    }
   })
 )`
   ${gridStyles};

@@ -62,7 +62,9 @@ const variantStyles = ({ variant, theme: { colors } }) => {
 
 const Link = styled(
   createWithComponent(Text, 'a', {
-    variant: 'default'
+    defaultProps: {
+      variant: 'default'
+    }
   })
 )`
   ${baseStyles};

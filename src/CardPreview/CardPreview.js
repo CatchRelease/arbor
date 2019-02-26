@@ -7,7 +7,9 @@ import createWithComponent from '../utils/createWithComponent';
 
 const CardPreview = styled(
   createWithComponent(Box, 'div', {
-    ratio: 9 / 16
+    defaultProps: {
+      ratio: 9 / 16
+    }
   })
 )`
   background: url(${props => props.image}) center center no-repeat
