@@ -2,7 +2,7 @@ import React from 'react';
 import { forceReRender, storiesOf } from '@storybook/react';
 import { boolean, withKnobs } from '@storybook/addon-knobs';
 
-import { Accordion, AccordionSection, Flex, Text } from '../src';
+import { Accordion, AccordionSection, Button, Flex, Icon, Text } from '../src';
 
 const stories = storiesOf('Accordion', module);
 stories.addDecorator(withKnobs);
@@ -12,6 +12,13 @@ const onHeaderClick = () => {
   isOpen = !isOpen;
   forceReRender();
 };
+
+const annotationIcon = <Icon name="annotation" />;
+const noteWithButtons = (
+  <Button variant="minimal" size="small" iconStart={annotationIcon}>
+    Message
+  </Button>
+);
 
 stories.add('default', () => (
   <Flex mt="100px" justifyContent="center">
@@ -37,7 +44,7 @@ stories.add('default', () => (
       </AccordionSection>
       <AccordionSection
         header="Header 2: Uncontrolled"
-        headerNote="With Note"
+        headerNote={noteWithButtons}
         panelId="header-2-uncontrolled"
       >
         <Text mb="regular">
