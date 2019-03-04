@@ -5,8 +5,18 @@ import StyledButton from './StyledButton';
 import ButtonText from './ButtonText';
 
 const Button = React.forwardRef(
-  ({ iconStart, iconEnd, children, ...props }, ref) => (
-    <StyledButton {...{ ...props, iconStart, iconEnd, ref }} text={children}>
+  ({ iconStart, iconEnd, children, variant, ...props }, ref) => (
+    <StyledButton
+      {...{
+        ...props,
+        iconStart,
+        iconEnd,
+        ref,
+        variant,
+        className: `button--${variant}`
+      }}
+      text={children}
+    >
       {iconStart}
       {children && (
         <ButtonText {...{ iconStart, iconEnd, ...props }}>

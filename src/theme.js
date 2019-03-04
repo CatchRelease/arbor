@@ -115,6 +115,7 @@ export const fontWeights = {
 
 export const lineHeights = {
   small: 1.25,
+  regular: 1,
   large: 1.5
 };
 

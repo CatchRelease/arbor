@@ -115,6 +115,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
         "iconFontPrefix": "ar",
         "lineHeights": Object {
           "large": 1.5,
+          "regular": 1,
           "small": 1.25,
         },
         "shadows": Object {
@@ -330,6 +331,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
               "iconFontPrefix": "ar",
               "lineHeights": Object {
                 "large": 1.5,
+                "regular": 1,
                 "small": 1.25,
               },
               "shadows": Object {
