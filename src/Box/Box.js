@@ -10,6 +10,8 @@ import {
   width,
   height,
   maxWidth,
+  minWidth,
+  overflow,
   textAlign
 } from 'styled-system';
 
@@ -25,6 +27,8 @@ const Box = styled.div`
   ${display};
   ${height};
   ${maxWidth};
+  ${minWidth};
+  ${overflow};
   ${space};
   ${textAlign};
   ${width};
@@ -39,6 +43,7 @@ Box.propTypes = {
   ...display.propTypes,
   ...height.propTypes,
   ...maxWidth.propTypes,
+  ...minWidth.propTypes,
   ...space.propTypes,
   ...textAlign.propTypes,
   ...width.propTypes

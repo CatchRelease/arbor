@@ -6,6 +6,7 @@ import { ENTER_KEY, SPACEBAR } from '../constants';
 import StyledMenuItem from './StyledMenuItem';
 import Text from '../Text';
 import Icon from '../Icon';
+import Flex from '../Flex';
 
 class MenuItem extends React.PureComponent {
   componentDidMount() {
@@ -36,7 +37,7 @@ class MenuItem extends React.PureComponent {
   };
 
   render() {
-    const { selected, baseColor, id, label, name, value, focused } = this.props;
+    const { selected, baseColor, id, label, secondaryLabel, name, value, focused } = this.props;
 
     return (
       <StyledMenuItem
@@ -53,13 +54,25 @@ class MenuItem extends React.PureComponent {
         }}
       >
         <input {...{ id, name, value, css: hideVisually(), type: 'hidden' }} />
-        <Icon
-          name="symbol-circle"
-          mr="small"
-          color={baseColor}
-          fontSize="16px"
-        />
-        <Text.span fontSize="size4">{label}</Text.span>
+        <Flex width="100%">
+          <Flex flex="1 0 auto" minWidth="120px" maxWidth="100%" overflow="hidden">
+            <Icon
+              name="symbol-circle"
+              mr="small"
+              color={baseColor}
+              fontSize="16px"
+            />
+            <Text.p fontSize="size4">{label}</Text.p>
+          </Flex>
+          {
+            secondaryLabel &&
+              <Flex pl="8px" overflow="hidden">
+                <Text.p fontSize="size3" color="text.muted">
+                  {secondaryLabel}
+                </Text.p>
+              </Flex>
+          }
+        </Flex>
       </StyledMenuItem>
     );
   }
@@ -78,9 +91,14 @@ MenuItem.propTypes = {
   onSelect: PropTypes.func,
 
   /**
-   * Label text for the menu item
+   * Main label text for the menu item
    */
   label: PropTypes.string.isRequired,
+
+  /**
+   * Secondary label text for the menu item
+   */
+  secondaryLabel: PropTypes.string,
 
   /**
    * HTML input name property for the input field
@@ -110,6 +128,7 @@ MenuItem.propTypes = {
 };
 
 MenuItem.defaultProps = {
+  secondaryLabel: null,
   selected: false,
   onSelect: () => null,
   focused: false

@@ -13,7 +13,8 @@ const darker = (theme, base) => {
 const baseStyles = ({ theme, baseColor }) => css`
   color: ${theme.colors.text.default};
   padding: 0 ${theme.space.regular};
-
+  white-space: nowrap;
+  
   :hover {
     color: ${theme.colors[baseColor]};
     background: ${theme.colors.background.muted};
@@ -34,7 +35,6 @@ const selectedStyles = ({ selected, theme }) =>
   css`
     color: ${theme.colors.text.dark};
     font-weight: ${theme.fontWeights.bold};
-    padding-right: ${theme.space.smaller};
   `;
 
 const focusedStyles = ({ theme, focused }) =>

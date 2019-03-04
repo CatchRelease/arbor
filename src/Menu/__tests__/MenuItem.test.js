@@ -9,6 +9,7 @@ describe('<MenuItem />', () => {
   const noop = () => null;
   const baseProps = {
     label: 'Ready to Clear',
+    secondaryLabel: 'mpd@catchandrelease.com',
     baseColor: 'grey',
     name: 'clearance_state',
     value: 'ready_to_clear',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Menu, Flex } from '../src';
+import { Menu, Box, Flex } from '../src';
 
 const stories = storiesOf('Menu', module);
 
@@ -71,11 +71,54 @@ const menuItems = [
     label: 'Cannot License',
     name: 'clearance_state',
     value: 'cannot_license'
+  },
+  {
+    baseColor: 'grey',
+    label: 'Primary Label',
+    secondaryLabel: 'Secondary Label',
+    name: 'menu_item',
+    value: 'with_secondary_label'
+  },
+  {
+    baseColor: 'grey',
+    label: 'Looooooooooooooooooooooooooooooooooooooooooong Primary Label Without Secondary Label',
+    name: 'menu_item',
+    value: 'with_long_label_without_secondary_label'
+  },
+  {
+    baseColor: 'grey',
+    label: 'Looooooooooooooooooooooooooooooooooooooooooong Primary Label',
+    secondaryLabel: 'Secondary Label',
+    name: 'menu_item',
+    value: 'with_long_label_with_secondary_label'
+  },
+  {
+    baseColor: 'grey',
+    label: 'Primary Label',
+    secondaryLabel: 'Loooooooooooooooooooooooooooooooooooooooooooooooong Secondary Label',
+    name: 'menu_item',
+    value: 'with_long_secondary_label'
+  },
+  {
+    baseColor: 'grey',
+    label: 'Loooooooooooooooooooooooooooooooooooooooooooooooong Primary Label',
+    secondaryLabel: 'Loooooooooooooooooooooooooooooooooooooooooooooooong Secondary Label',
+    name: 'menu_item',
+    value: 'with_long_label_with_long_secondary_label'
   }
+
 ];
 
 stories.add('default', () => (
   <Flex mt="100px" justifyContent="center">
     <Menu menuItems={menuItems} />
+  </Flex>
+));
+
+stories.add('width-constrained', () => (
+  <Flex mt="100px" justifyContent="center">
+    <Box maxWidth="600px">
+      <Menu menuItems={menuItems} />
+    </Box>
   </Flex>
 ));
