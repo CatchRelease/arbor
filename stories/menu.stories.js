@@ -81,7 +81,8 @@ const menuItems = [
   },
   {
     baseColor: 'grey',
-    label: 'Looooooooooooooooooooooooooooooooooooooooooong Primary Label Without Secondary Label',
+    label:
+      'Looooooooooooooooooooooooooooooooooooooooooong Primary Label Without Secondary Label',
     name: 'menu_item',
     value: 'with_long_label_without_secondary_label'
   },
@@ -95,18 +96,19 @@ const menuItems = [
   {
     baseColor: 'grey',
     label: 'Primary Label',
-    secondaryLabel: 'Loooooooooooooooooooooooooooooooooooooooooooooooong Secondary Label',
+    secondaryLabel:
+      'Loooooooooooooooooooooooooooooooooooooooooooooooong Secondary Label',
     name: 'menu_item',
     value: 'with_long_secondary_label'
   },
   {
     baseColor: 'grey',
     label: 'Loooooooooooooooooooooooooooooooooooooooooooooooong Primary Label',
-    secondaryLabel: 'Loooooooooooooooooooooooooooooooooooooooooooooooong Secondary Label',
+    secondaryLabel:
+      'Loooooooooooooooooooooooooooooooooooooooooooooooong Secondary Label',
     name: 'menu_item',
     value: 'with_long_label_with_long_secondary_label'
   }
-
 ];
 
 stories.add('default', () => (

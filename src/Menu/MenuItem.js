@@ -37,7 +37,16 @@ class MenuItem extends React.PureComponent {
   };
 
   render() {
-    const { selected, baseColor, id, label, secondaryLabel, name, value, focused } = this.props;
+    const {
+      selected,
+      baseColor,
+      id,
+      label,
+      secondaryLabel,
+      name,
+      value,
+      focused
+    } = this.props;
 
     return (
       <StyledMenuItem
@@ -55,7 +64,12 @@ class MenuItem extends React.PureComponent {
       >
         <input {...{ id, name, value, css: hideVisually(), type: 'hidden' }} />
         <Flex width="100%">
-          <Flex flex="1 0 auto" minWidth="120px" maxWidth="100%" overflow="hidden">
+          <Flex
+            flex="1 0 auto"
+            minWidth="120px"
+            maxWidth="100%"
+            overflow="hidden"
+          >
             <Icon
               name="symbol-circle"
               mr="small"
@@ -64,14 +78,13 @@ class MenuItem extends React.PureComponent {
             />
             <Text.p fontSize="size4">{label}</Text.p>
           </Flex>
-          {
-            secondaryLabel &&
-              <Flex pl="8px" overflow="hidden">
-                <Text.p fontSize="size3" color="text.muted">
-                  {secondaryLabel}
-                </Text.p>
-              </Flex>
-          }
+          {secondaryLabel && (
+            <Flex pl="8px" overflow="hidden">
+              <Text.p fontSize="size3" color="text.muted">
+                {secondaryLabel}
+              </Text.p>
+            </Flex>
+          )}
         </Flex>
       </StyledMenuItem>
     );

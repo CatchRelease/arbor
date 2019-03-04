@@ -14,7 +14,7 @@ const baseStyles = ({ theme, baseColor }) => css`
   color: ${theme.colors.text.default};
   padding: 0 ${theme.space.regular};
   white-space: nowrap;
-  
+
   :hover {
     color: ${theme.colors[baseColor]};
     background: ${theme.colors.background.muted};
