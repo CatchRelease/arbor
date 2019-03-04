@@ -1,4 +1,5 @@
 import React from 'react';
+import { shallow } from 'enzyme';
 
 import createWithTheme from '../../../utils/createWithTheme';
 
@@ -24,6 +25,12 @@ describe('<Button />', () => {
         );
 
         expect(button).toMatchSnapshot();
+      });
+
+      it(`applies a class for the ${variant} button`, () => {
+        const button = shallow(<Button variant={variant}>Button Label</Button>);
+
+        expect(button).toHaveClassName(`button--${variant}`);
       });
     });
   });

@@ -10,6 +10,10 @@ const StyledHeader = styled(createWithComponent(Flex, 'header'))`
   section:last-child & {
     border-bottom: none;
   }
+
+  .button--minimal:last-child {
+    margin-right: -${props => props.theme.space.small};
+  }
 `;
 
 export default StyledHeader;

@@ -24,6 +24,10 @@ section:last-child .emotion-6 {
   border-bottom: none;
 }
 
+.emotion-6 .button--minimal:last-child {
+  margin-right: -0.75rem;
+}
+
 .emotion-4 {
   font-family: Motiva Sans;
   color: #0F0F10;
@@ -118,6 +122,10 @@ exports[`<AccordionHeader /> renders with a note 1`] = `
 
 section:last-child .emotion-8 {
   border-bottom: none;
+}
+
+.emotion-8 .button--minimal:last-child {
+  margin-right: -0.75rem;
 }
 
 .emotion-4 {
@@ -230,6 +238,10 @@ section:last-child .emotion-6 {
   border-bottom: none;
 }
 
+.emotion-6 .button--minimal:last-child {
+  margin-right: -0.75rem;
+}
+
 .emotion-4 {
   font-family: Motiva Sans;
   color: #0F0F10;
@@ -324,6 +336,10 @@ exports[`<AccordionHeader /> renders with the panel visible 1`] = `
 
 section:last-child .emotion-6 {
   border-bottom: none;
+}
+
+.emotion-6 .button--minimal:last-child {
+  margin-right: -0.75rem;
 }
 
 .emotion-4 {
