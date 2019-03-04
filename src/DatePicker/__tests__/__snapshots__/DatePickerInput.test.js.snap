@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
+.emotion-4 {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
+  color: #5B5D61;
+  display: block;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.emotion-2 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-2:disabled {
+  background: #F2F2F2;
+}
+
+<div
+  className="DayPickerInput"
+>
+  <div
+    className="emotion-4 emotion-5"
+  >
+    <label
+      className="emotion-0 emotion-1"
+      htmlFor="date-picker-input"
+    />
+    <input
+      className="emotion-2 emotion-3"
+      id="date-picker-input"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      placeholder="YYYY-M-D"
+      value=""
+    />
+    
+  </div>
+</div>
+`;
