@@ -9,6 +9,8 @@ export { default as CardActions } from './CardActions';
 export { default as CardPreview } from './CardPreview';
 export { default as CardRow } from './CardRow';
 export { default as Checkbox } from './Checkbox';
+export { default as DatePicker } from './DatePicker';
+export { DatePickerInput } from './DatePicker';
 export { default as Dropdown } from './Dropdown';
 export { default as Flex } from './Flex';
 export { default as Grid } from './Grid';
