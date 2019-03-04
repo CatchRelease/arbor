@@ -14,7 +14,7 @@ const ButtonTable = styled.table`
   }
 `;
 
-const icon = <Icon name="cr-logo" />;
+const icon = <Icon name="annotation" />;
 const icon2 = <Icon name="download" />;
 
 const stories = storiesOf('Buttons', module);

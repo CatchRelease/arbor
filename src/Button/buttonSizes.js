@@ -35,10 +35,7 @@ const buttonSizes = ({ theme, iconStart, iconEnd, size, text }) => {
         return `0 ${theme.space.smaller}`;
       })(),
       height: rem('24px'),
-      fontSize: theme.fontSizes.size2,
-      i: {
-        fontSize: rem('22px')
-      }
+      fontSize: theme.fontSizes.size2
     },
     medium: {
       padding: calculatePadding({
@@ -49,10 +46,7 @@ const buttonSizes = ({ theme, iconStart, iconEnd, size, text }) => {
         xDefault: theme.space.smaller
       }),
       height: rem('32px'),
-      fontSize: theme.fontSizes.size4,
-      i: {
-        fontSize: rem('24px')
-      }
+      fontSize: theme.fontSizes.size4
     },
     large: {
       padding: calculatePadding({
@@ -63,10 +57,7 @@ const buttonSizes = ({ theme, iconStart, iconEnd, size, text }) => {
         xDefault: theme.space.regular
       }),
       height: rem('40px'),
-      fontSize: theme.fontSizes.size4,
-      i: {
-        fontSize: rem('32px')
-      }
+      fontSize: theme.fontSizes.size4
     },
     jumbo: {
       padding: (() => {
@@ -89,10 +80,7 @@ const buttonSizes = ({ theme, iconStart, iconEnd, size, text }) => {
         return `${theme.space.smaller} ${theme.space.regular}`;
       })(),
       height: rem('48px'),
-      fontSize: theme.fontSizes.size4,
-      i: {
-        fontSize: rem('32px')
-      }
+      fontSize: theme.fontSizes.size4
     }
   };
 
