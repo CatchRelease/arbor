@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { space } from 'styled-system';
-
 import buttonSizes from './buttonSizes';
 import variants from './variants';
 
@@ -16,7 +15,7 @@ const StyledButton = styled.button`
   border: 1px solid transparent;
   font-family: ${props => props.theme.brandFont};
   font-weight: ${props => props.theme.fontWeights.medium};
-  line-height: ${props => props.theme.lineHeights.large};
+  line-height: ${props => props.theme.lineHeights.regular};
   outline: none;
   text-align: center;
   transition: box-shadow 0.3s ease, background 0.2s ease;
