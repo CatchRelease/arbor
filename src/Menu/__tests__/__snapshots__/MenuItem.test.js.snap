@@ -70,7 +70,7 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
     value="ready_to_clear"
   />
   <i
-    className="ar ar-status emotion-0 emotion-1"
+    className="ar ar-symbol-circle emotion-0 emotion-1"
     color="grey"
     fontSize="16px"
   />
@@ -157,7 +157,7 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
     value="ready_to_clear"
   />
   <i
-    className="ar ar-status emotion-0 emotion-1"
+    className="ar ar-symbol-circle emotion-0 emotion-1"
     color="grey"
     fontSize="16px"
   />
