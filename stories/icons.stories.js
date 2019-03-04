@@ -5,6 +5,7 @@ import { withKnobs, select } from '@storybook/addon-knobs';
 import { Box, Grid, Icon, Text } from '../src';
 
 const AVAILABLE_ICONS = [
+  'annotation',
   'calendar',
   'caret',
   'chat-bubble-outline',
