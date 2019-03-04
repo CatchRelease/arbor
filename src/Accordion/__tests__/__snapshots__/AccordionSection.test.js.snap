@@ -24,6 +24,10 @@ section:last-child .emotion-6 {
   border-bottom: none;
 }
 
+.emotion-6 .button--minimal:last-child {
+  margin-right: -0.75rem;
+}
+
 .emotion-4 {
   font-family: Motiva Sans;
   color: #0F0F10;
@@ -141,6 +145,10 @@ exports[`<AccordionSection /> render accordion is open renders with the panel vi
 
 section:last-child .emotion-6 {
   border-bottom: none;
+}
+
+.emotion-6 .button--minimal:last-child {
+  margin-right: -0.75rem;
 }
 
 .emotion-4 {
