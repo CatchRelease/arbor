@@ -112,15 +112,15 @@ const menuItems = [
 ];
 
 stories.add('default', () => (
-  <Flex mt="100px" justifyContent="center">
+  <div>
     <Menu menuItems={menuItems} />
-  </Flex>
+  </div>
 ));
 
 stories.add('width-constrained', () => (
-  <Flex mt="100px" justifyContent="center">
+  <div>
     <Box maxWidth="600px">
       <Menu menuItems={menuItems} />
     </Box>
-  </Flex>
+  </div>
 ));
