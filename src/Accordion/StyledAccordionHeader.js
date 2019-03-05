@@ -11,8 +11,12 @@ const StyledHeader = styled(createWithComponent(Flex, 'header'))`
     border-bottom: none;
   }
 
-  .button--minimal:last-child {
+  .button--minimal:last-of-type {
     margin-right: -${props => props.theme.space.small};
+
+    + :not(object) {
+      margin-left: ${props => props.theme.space.small};
+    }
   }
 
   button + .button--secondary,
