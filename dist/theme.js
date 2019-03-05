@@ -118,12 +118,13 @@ var fontSizes = {
 exports.fontSizes = fontSizes;
 var fontWeights = {
   regular: 400,
-  medium: 600,
+  medium: 500,
   bold: 700
 };
 exports.fontWeights = fontWeights;
 var lineHeights = {
   small: 1.25,
+  regular: 1,
   large: 1.5
 };
 exports.lineHeights = lineHeights;

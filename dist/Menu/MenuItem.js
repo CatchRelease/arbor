@@ -120,7 +120,7 @@ function (_React$PureComponent) {
         css: (0, _polished.hideVisually)(),
         type: 'hidden'
       }), _react.default.createElement(_Icon.default, {
-        name: "status",
+        name: "symbol-circle",
         mr: "small",
         color: baseColor,
         fontSize: "16px"

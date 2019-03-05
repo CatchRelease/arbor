@@ -5,8 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 var _exportNames = {
   theme: true,
-  Accordion: true,
   AccordionSection: true,
+  Accordion: true,
+  Avatar: true,
   Box: true,
   Button: true,
   Card: true,
@@ -26,6 +27,7 @@ var _exportNames = {
   Pagination: true,
   Paragraph: true,
   Popover: true,
+  Header: true,
   Text: true,
   Tooltip: true,
   reset: true
@@ -36,16 +38,22 @@ Object.defineProperty(exports, "theme", {
     return _theme.default;
   }
 });
+Object.defineProperty(exports, "AccordionSection", {
+  enumerable: true,
+  get: function get() {
+    return _Accordion.AccordionSection;
+  }
+});
 Object.defineProperty(exports, "Accordion", {
   enumerable: true,
   get: function get() {
     return _Accordion.default;
   }
 });
-Object.defineProperty(exports, "AccordionSection", {
+Object.defineProperty(exports, "Avatar", {
   enumerable: true,
   get: function get() {
-    return _AccordionSection.default;
+    return _Avatar.default;
   }
 });
 Object.defineProperty(exports, "Box", {
@@ -162,6 +170,12 @@ Object.defineProperty(exports, "Popover", {
     return _Popover.default;
   }
 });
+Object.defineProperty(exports, "Header", {
+  enumerable: true,
+  get: function get() {
+    return _Header.default;
+  }
+});
 Object.defineProperty(exports, "Text", {
   enumerable: true,
   get: function get() {
@@ -194,9 +208,9 @@ Object.keys(_theme).forEach(function (key) {
   });
 });
 
-var _Accordion = _interopRequireDefault(require("./Accordion"));
+var _Accordion = _interopRequireWildcard(require("./Accordion"));
 
-var _AccordionSection = _interopRequireDefault(require("./Accordion/AccordionSection"));
+var _Avatar = _interopRequireDefault(require("./Avatar"));
 
 var _Box = _interopRequireDefault(require("./Box"));
 
@@ -235,6 +249,8 @@ var _Pagination = _interopRequireDefault(require("./Pagination"));
 var _Paragraph = _interopRequireDefault(require("./Paragraph"));
 
 var _Popover = _interopRequireDefault(require("./Popover"));
+
+var _Header = _interopRequireDefault(require("./Header"));
 
 var _Text = _interopRequireDefault(require("./Text"));
 

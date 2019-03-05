@@ -7,110 +7,82 @@ exports.default = void 0;
 
 var _polished = require("polished");
 
-var calculatePadding = function calculatePadding(_ref) {
-  var xDefault = _ref.xDefault,
+var buttonSizes = function buttonSizes(_ref) {
+  var theme = _ref.theme,
       iconStart = _ref.iconStart,
       iconEnd = _ref.iconEnd,
-      theme = _ref.theme,
+      size = _ref.size,
       text = _ref.text;
-
-  if (text === undefined || iconStart && iconEnd) {
-    return "0 ".concat(theme.space.smallest);
-  }
-
-  if (iconStart) {
-    return "0 ".concat(xDefault, " 0 ").concat(theme.space.smallest);
-  }
-
-  if (iconEnd) {
-    return "0 ".concat(theme.space.smallest, " 0 ").concat(xDefault);
-  }
-
-  return "0 ".concat(xDefault);
-};
-
-var buttonSizes = function buttonSizes(_ref2) {
-  var theme = _ref2.theme,
-      iconStart = _ref2.iconStart,
-      iconEnd = _ref2.iconEnd,
-      size = _ref2.size,
-      text = _ref2.text;
   var sizeMap = {
     small: {
       padding: function () {
         if (text === undefined || iconEnd && iconStart) {
-          return 0;
+          return "0 ".concat(theme.space.smallest);
         }
 
         if (iconStart) {
-          return "0 ".concat(theme.space.smaller, " 0 0");
+          return "0 ".concat(theme.space.smaller, " 0 ").concat(theme.space.smallest);
         }
 
         if (iconEnd) {
-          return "0 0 0 ".concat(theme.space.smaller);
+          return "0 ".concat(theme.space.smallest, " 0 ").concat(theme.space.smaller);
         }
 
         return "0 ".concat(theme.space.smaller);
       }(),
       height: (0, _polished.rem)('24px'),
-      fontSize: theme.fontSizes.size2,
-      i: {
-        fontSize: (0, _polished.rem)('22px')
-      }
+      fontSize: theme.fontSizes.size2
     },
     medium: {
-      padding: calculatePadding({
-        iconStart: iconStart,
-        iconEnd: iconEnd,
-        text: text,
-        theme: theme,
-        xDefault: theme.space.smaller
-      }),
+      padding: "0 ".concat(theme.space.smaller),
       height: (0, _polished.rem)('32px'),
-      fontSize: theme.fontSizes.size4,
-      i: {
-        fontSize: (0, _polished.rem)('24px')
-      }
+      fontSize: theme.fontSizes.size4
     },
     large: {
-      padding: calculatePadding({
-        iconStart: iconStart,
-        iconEnd: iconEnd,
-        text: text,
-        theme: theme,
-        xDefault: theme.space.regular
-      }),
+      padding: function () {
+        if (text === undefined) {
+          return "0 ".concat(theme.space.small);
+        }
+
+        if (iconStart && iconEnd) {
+          return "0 ".concat(theme.space.small, " 0 ").concat(theme.space.smaller);
+        }
+
+        if (iconStart) {
+          return "0 ".concat(theme.space.regular, " 0 ").concat(theme.space.smaller);
+        }
+
+        if (iconEnd) {
+          return "0 ".concat(theme.space.small, " 0 ").concat(theme.space.regular);
+        }
+
+        return "0 ".concat(theme.space.smaller);
+      }(),
       height: (0, _polished.rem)('40px'),
-      fontSize: theme.fontSizes.size4,
-      i: {
-        fontSize: (0, _polished.rem)('32px')
-      }
+      fontSize: theme.fontSizes.size4
     },
     jumbo: {
       padding: function () {
         if (text === undefined) {
-          return theme.space.smaller;
+          return "0 ".concat(theme.space.regular);
         }
 
         if (iconStart && iconEnd) {
-          return "0 ".concat(theme.space.smallest);
+          return "0 ".concat(theme.space.small, " 0 ").concat(theme.space.smaller);
         }
 
         if (iconStart) {
-          return "0 ".concat(theme.space.regular, " 0 ").concat(theme.space.smallest);
+          return "0 ".concat(theme.space.regular, " 0 ").concat(theme.space.smaller);
         }
 
         if (iconEnd) {
-          return "0 ".concat(theme.space.smallest, " 0 ").concat(theme.space.regular);
+          return "0 ".concat(theme.space.small, " 0 ").concat(theme.space.regular);
         }
 
         return "".concat(theme.space.smaller, " ").concat(theme.space.regular);
       }(),
       height: (0, _polished.rem)('48px'),
-      fontSize: theme.fontSizes.size4,
-      i: {
-        fontSize: (0, _polished.rem)('32px')
-      }
+      fontSize: theme.fontSizes.size4
     }
   };
   return sizeMap[size];
