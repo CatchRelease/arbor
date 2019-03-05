@@ -19,6 +19,8 @@ var _Text = _interopRequireDefault(require("../Text"));
 
 var _Icon = _interopRequireDefault(require("../Icon"));
 
+var _Flex = _interopRequireDefault(require("../Flex"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -38,6 +40,9 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var MIN_WIDTH = '120px';
+var PADDING = '8px';
 
 var MenuItem =
 /*#__PURE__*/
@@ -100,6 +105,7 @@ function (_React$PureComponent) {
           baseColor = _this$props2.baseColor,
           id = _this$props2.id,
           label = _this$props2.label,
+          secondaryLabel = _this$props2.secondaryLabel,
           name = _this$props2.name,
           value = _this$props2.value,
           focused = _this$props2.focused;
@@ -119,14 +125,30 @@ function (_React$PureComponent) {
         value: value,
         css: (0, _polished.hideVisually)(),
         type: 'hidden'
-      }), _react.default.createElement(_Icon.default, {
+      }), _react.default.createElement(_Flex.default, {
+        width: "100%",
+        justifyContent: "space-between"
+      }, _react.default.createElement(_Flex.default, {
+        flex: "1 0 auto",
+        maxWidth: secondaryLabel ? "calc(100% - ".concat(MIN_WIDTH, " - ").concat(PADDING, ")") : '100%'
+      }, _react.default.createElement(_Icon.default, {
         name: "symbol-circle",
         mr: "small",
         color: baseColor,
         fontSize: "16px"
       }), _react.default.createElement(_Text.default.span, {
-        fontSize: "size4"
-      }, label));
+        minWidth: MIN_WIDTH,
+        fontSize: "size4",
+        overflow: "hidden"
+      }, label)), secondaryLabel && _react.default.createElement(_Flex.default, {
+        pl: PADDING,
+        overflow: "hidden",
+        flex: "0 1 auto"
+      }, _react.default.createElement(_Text.default.span, {
+        fontSize: "size3",
+        color: "text.muted",
+        maxWidth: "100%"
+      }, secondaryLabel))));
     }
   }]);
 
@@ -146,9 +168,14 @@ MenuItem.propTypes = {
   onSelect: _propTypes.default.func,
 
   /**
-   * Label text for the menu item
+   * Main label text for the menu item
    */
   label: _propTypes.default.string.isRequired,
+
+  /**
+   * Secondary label text for the menu item
+   */
+  secondaryLabel: _propTypes.default.string,
 
   /**
    * HTML input name property for the input field
@@ -176,6 +203,7 @@ MenuItem.propTypes = {
   focused: _propTypes.default.bool
 };
 MenuItem.defaultProps = {
+  secondaryLabel: null,
   selected: false,
   onSelect: function onSelect() {
     return null;
