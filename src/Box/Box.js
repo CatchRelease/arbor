@@ -44,6 +44,7 @@ Box.propTypes = {
   ...height.propTypes,
   ...maxWidth.propTypes,
   ...minWidth.propTypes,
+  ...overflow.propTypes,
   ...space.propTypes,
   ...textAlign.propTypes,
   ...width.propTypes
