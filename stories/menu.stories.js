@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Menu, Box, Flex } from '../src';
+import { Menu, Box } from '../src';
 
 const stories = storiesOf('Menu', module);
 
