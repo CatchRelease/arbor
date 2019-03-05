@@ -14,6 +14,11 @@ const StyledHeader = styled(createWithComponent(Flex, 'header'))`
   .button--minimal:last-child {
     margin-right: -${props => props.theme.space.small};
   }
+
+  button + .button--secondary,
+  button + .button--primary {
+    margin-left: ${props => props.theme.space.smaller};
+  }
 `;
 
 export default StyledHeader;

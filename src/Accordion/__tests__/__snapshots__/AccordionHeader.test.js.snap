@@ -28,6 +28,11 @@ section:last-child .emotion-6 {
   margin-right: -0.75rem;
 }
 
+.emotion-6 button + .button--secondary,
+.emotion-6 button + .button--primary {
+  margin-left: 0.5rem;
+}
+
 .emotion-4 {
   font-family: Motiva Sans;
   color: #0F0F10;
@@ -126,6 +131,11 @@ section:last-child .emotion-8 {
 
 .emotion-8 .button--minimal:last-child {
   margin-right: -0.75rem;
+}
+
+.emotion-8 button + .button--secondary,
+.emotion-8 button + .button--primary {
+  margin-left: 0.5rem;
 }
 
 .emotion-4 {
@@ -242,6 +252,11 @@ section:last-child .emotion-6 {
   margin-right: -0.75rem;
 }
 
+.emotion-6 button + .button--secondary,
+.emotion-6 button + .button--primary {
+  margin-left: 0.5rem;
+}
+
 .emotion-4 {
   font-family: Motiva Sans;
   color: #0F0F10;
@@ -340,6 +355,11 @@ section:last-child .emotion-6 {
 
 .emotion-6 .button--minimal:last-child {
   margin-right: -0.75rem;
+}
+
+.emotion-6 button + .button--secondary,
+.emotion-6 button + .button--primary {
+  margin-left: 0.5rem;
 }
 
 .emotion-4 {
