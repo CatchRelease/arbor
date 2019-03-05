@@ -24,8 +24,12 @@ section:last-child .emotion-6 {
   border-bottom: none;
 }
 
-.emotion-6 .button--minimal:last-child {
+.emotion-6 .button--minimal:last-of-type {
   margin-right: -0.75rem;
+}
+
+.emotion-6 .button--minimal:last-of-type +:not(object) {
+  margin-left: 0.75rem;
 }
 
 .emotion-6 button + .button--secondary,
@@ -129,8 +133,12 @@ section:last-child .emotion-8 {
   border-bottom: none;
 }
 
-.emotion-8 .button--minimal:last-child {
+.emotion-8 .button--minimal:last-of-type {
   margin-right: -0.75rem;
+}
+
+.emotion-8 .button--minimal:last-of-type +:not(object) {
+  margin-left: 0.75rem;
 }
 
 .emotion-8 button + .button--secondary,
@@ -248,8 +256,12 @@ section:last-child .emotion-6 {
   border-bottom: none;
 }
 
-.emotion-6 .button--minimal:last-child {
+.emotion-6 .button--minimal:last-of-type {
   margin-right: -0.75rem;
+}
+
+.emotion-6 .button--minimal:last-of-type +:not(object) {
+  margin-left: 0.75rem;
 }
 
 .emotion-6 button + .button--secondary,
@@ -353,8 +365,12 @@ section:last-child .emotion-6 {
   border-bottom: none;
 }
 
-.emotion-6 .button--minimal:last-child {
+.emotion-6 .button--minimal:last-of-type {
   margin-right: -0.75rem;
+}
+
+.emotion-6 .button--minimal:last-of-type +:not(object) {
+  margin-left: 0.75rem;
 }
 
 .emotion-6 button + .button--secondary,
