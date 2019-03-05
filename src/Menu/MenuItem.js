@@ -8,6 +8,9 @@ import Text from '../Text';
 import Icon from '../Icon';
 import Flex from '../Flex';
 
+const MIN_WIDTH = '120px';
+const PADDING = '8px';
+
 class MenuItem extends React.PureComponent {
   componentDidMount() {
     document.addEventListener('keydown', this.onKeyDown, true);
@@ -63,12 +66,12 @@ class MenuItem extends React.PureComponent {
         }}
       >
         <input {...{ id, name, value, css: hideVisually(), type: 'hidden' }} />
-        <Flex width="100%">
+        <Flex width="100%" justifyContent="space-between">
           <Flex
             flex="1 0 auto"
-            minWidth="120px"
-            maxWidth="100%"
-            overflow="hidden"
+            maxWidth={
+              secondaryLabel ? `calc(100% - ${MIN_WIDTH} - ${PADDING})` : '100%'
+            }
           >
             <Icon
               name="symbol-circle"
@@ -76,13 +79,15 @@ class MenuItem extends React.PureComponent {
               color={baseColor}
               fontSize="16px"
             />
-            <Text.p fontSize="size4">{label}</Text.p>
+            <Text.span minWidth={MIN_WIDTH} fontSize="size4" overflow="hidden">
+              {label}
+            </Text.span>
           </Flex>
           {secondaryLabel && (
-            <Flex pl="8px" overflow="hidden">
-              <Text.p fontSize="size3" color="text.muted">
+            <Flex pl={PADDING} overflow="hidden" flex="0 1 auto">
+              <Text.span fontSize="size3" color="text.muted" maxWidth="100%">
                 {secondaryLabel}
-              </Text.p>
+              </Text.span>
             </Flex>
           )}
         </Flex>

@@ -97,7 +97,7 @@ const menuItems = [
     baseColor: 'grey',
     label: 'Primary Label',
     secondaryLabel:
-      'Loooooooooooooooooooooooooooooooooooooooooooooooong Secondary Label',
+      'Looooooooooooooooooooooooooooooooooooooooooooooooooong Secondary Label',
     name: 'menu_item',
     value: 'with_long_secondary_label'
   },
