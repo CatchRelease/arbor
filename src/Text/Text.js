@@ -5,6 +5,9 @@ import {
   fontSize,
   fontWeight,
   lineHeight,
+  maxWidth,
+  minWidth,
+  overflow,
   space,
   textAlign
 } from 'styled-system';
@@ -22,6 +25,9 @@ const Text = styled.p`
   ${fontSize};
   ${fontWeight};
   ${lineHeight};
+  ${maxWidth};
+  ${minWidth};
+  ${overflow};
   ${space};
   ${textAlign};
 `;
@@ -31,6 +37,9 @@ Text.propTypes = {
   ...fontSize.propTypes,
   ...fontWeight.propTypes,
   ...lineHeight.propTypes,
+  ...maxWidth.propTypes,
+  ...minWidth.propTypes,
+  ...overflow.propTypes,
   ...space.propTypes,
   ...textAlign.propTypes
 };

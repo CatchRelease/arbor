@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MenuItem /> renders a MenuItem properly 1`] = `
-.emotion-4 {
+.emotion-12 {
   box-sizing: border-box;
   height: 40px;
   display: -webkit-box;
@@ -14,18 +14,44 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   align-items: center;
   color: #25272D;
   padding: 0 1rem;
+  white-space: nowrap;
 }
 
-.emotion-4:hover {
+.emotion-12:hover {
   background: #F8F9F9;
 }
 
-.emotion-4:active {
+.emotion-12:active {
   background: #F2F2F2;
 }
 
-.emotion-4:focus {
+.emotion-12:focus {
   background: #F8F9F9;
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  max-width: calc(100% - 120px - 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .emotion-0 {
@@ -38,11 +64,33 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
+  min-width: 120px;
+  overflow: hidden;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  color: #5B5D61;
+  font-size: 0.8125rem;
+  max-width: 100%;
 }
 
 <div
   aria-selected={false}
-  className="emotion-4 emotion-5"
+  className="emotion-12 emotion-13"
   height="40px"
   onClick={[Function]}
   onKeyPress={[Function]}
@@ -69,22 +117,69 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
     type="hidden"
     value="ready_to_clear"
   />
-  <i
-    className="ar ar-symbol-circle emotion-0 emotion-1"
-    color="grey"
-    fontSize="16px"
-  />
-  <span
-    className="emotion-2 emotion-3"
-    color="text.default"
-    fontSize="size4"
+  <div
+    className="emotion-10 emotion-5"
+    width="100%"
   >
-    Ready to Clear
-  </span>
+    <div
+      className="emotion-4 emotion-5"
+    >
+      <i
+        className="ar ar-symbol-circle emotion-0 emotion-1"
+        color="grey"
+        fontSize="16px"
+      />
+      <span
+        className="emotion-2 emotion-3"
+        color="text.default"
+        fontSize="size4"
+        overflow="hidden"
+      >
+        Ready to Clear
+      </span>
+    </div>
+    <div
+      className="emotion-8 emotion-5"
+      overflow="hidden"
+    >
+      <span
+        className="emotion-6 emotion-3"
+        color="text.muted"
+        fontSize="size3"
+      >
+        mpd@catchandrelease.com
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
+.emotion-10 {
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  max-width: calc(100% - 120px - 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
 .emotion-0 {
   color: grey;
   font-size: 16px;
@@ -95,9 +190,31 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
+  min-width: 120px;
+  overflow: hidden;
 }
 
-.emotion-4 {
+.emotion-8 {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  color: #5B5D61;
+  font-size: 0.8125rem;
+  max-width: 100%;
+}
+
+.emotion-12 {
   box-sizing: border-box;
   height: 40px;
   display: -webkit-box;
@@ -110,26 +227,26 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   align-items: center;
   color: #25272D;
   padding: 0 1rem;
+  white-space: nowrap;
   color: #0F0F10;
   font-weight: 700;
-  padding-right: 0.5rem;
 }
 
-.emotion-4:hover {
+.emotion-12:hover {
   background: #F8F9F9;
 }
 
-.emotion-4:active {
+.emotion-12:active {
   background: #F2F2F2;
 }
 
-.emotion-4:focus {
+.emotion-12:focus {
   background: #F8F9F9;
 }
 
 <div
   aria-selected={true}
-  className="emotion-4 emotion-5"
+  className="emotion-12 emotion-13"
   height="40px"
   onClick={[Function]}
   onKeyPress={[Function]}
@@ -156,17 +273,39 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
     type="hidden"
     value="ready_to_clear"
   />
-  <i
-    className="ar ar-symbol-circle emotion-0 emotion-1"
-    color="grey"
-    fontSize="16px"
-  />
-  <span
-    className="emotion-2 emotion-3"
-    color="text.default"
-    fontSize="size4"
+  <div
+    className="emotion-10 emotion-5"
+    width="100%"
   >
-    Ready to Clear
-  </span>
+    <div
+      className="emotion-4 emotion-5"
+    >
+      <i
+        className="ar ar-symbol-circle emotion-0 emotion-1"
+        color="grey"
+        fontSize="16px"
+      />
+      <span
+        className="emotion-2 emotion-3"
+        color="text.default"
+        fontSize="size4"
+        overflow="hidden"
+      >
+        Ready to Clear
+      </span>
+    </div>
+    <div
+      className="emotion-8 emotion-5"
+      overflow="hidden"
+    >
+      <span
+        className="emotion-6 emotion-3"
+        color="text.muted"
+        fontSize="size3"
+      >
+        mpd@catchandrelease.com
+      </span>
+    </div>
+  </div>
 </div>
 `;
