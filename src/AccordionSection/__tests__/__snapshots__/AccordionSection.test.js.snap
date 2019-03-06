@@ -88,7 +88,6 @@ section:last-child .emotion-6 {
   box-sizing: border-box;
   display: none;
   border-bottom: 1px solid #E0E1E2;
-  padding: 1rem;
 }
 
 section:last-child .emotion-8 {
@@ -217,7 +216,6 @@ section:last-child .emotion-6 {
   box-sizing: border-box;
   display: block;
   border-bottom: 1px solid #E0E1E2;
-  padding: 1rem;
 }
 
 section:last-child .emotion-8 {
