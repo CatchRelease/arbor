@@ -51,7 +51,8 @@ export const bronzes = {
 
 export const backgroundColors = {
   muted: greys.grey10,
-  default: greys.grey20
+  default: greys.grey20,
+  white: whites.white
 };
 
 export const borderColors = {
