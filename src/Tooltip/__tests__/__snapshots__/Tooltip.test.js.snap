@@ -11,6 +11,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
         "backgroundColors": Object {
           "default": "#F2F2F2",
           "muted": "#F8F9F9",
+          "white": "#FFFFFF",
         },
         "borderColors": Object {
           "default": "#E0E1E2",
@@ -38,6 +39,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "background": Object {
             "default": "#F2F2F2",
             "muted": "#F8F9F9",
+            "white": "#FFFFFF",
           },
           "black": "#000000",
           "blue": "#4466EE",
@@ -220,6 +222,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
               "backgroundColors": Object {
                 "default": "#F2F2F2",
                 "muted": "#F8F9F9",
+                "white": "#FFFFFF",
               },
               "borderColors": Object {
                 "default": "#E0E1E2",
@@ -247,6 +250,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "background": Object {
                   "default": "#F2F2F2",
                   "muted": "#F8F9F9",
+                  "white": "#FFFFFF",
                 },
                 "black": "#000000",
                 "blue": "#4466EE",
