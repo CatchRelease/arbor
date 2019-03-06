@@ -5,7 +5,8 @@ exports[`<Card /> renders a Card properly 1`] = `
   box-sizing: border-box;
   border-radius: 6px;
   box-shadow: 0 0 1px rgba(37,39,45,0.47);
-  border: 1px solid #E0E1E2;
+  background-color: #FFFFFF;
+  display: grid;
   width: 100%;
 }
 
