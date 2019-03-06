@@ -90,7 +90,7 @@ class MenuItem extends React.PureComponent {
               <Text.span
                 fontSize="size3"
                 css={theme => ({
-                  //
+                  // Put primary and secondary labels on the same baseline
                   lineHeight: theme.fontSizes.size4
                 })}
                 color="text.muted"
