@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
+import stories from './card-and-pane.stories';
 
 import {
   Box,
@@ -15,8 +15,6 @@ import {
   Link,
   Tooltip
 } from '../src';
-
-const stories = storiesOf('Cards', module);
 
 const exampleCards = [
   {
@@ -55,7 +53,7 @@ const like = (
   <Icon color="icons.default" fontSize="24" name="thumb-up-outline" />
 );
 
-stories.add('Card', () => (
+stories.add('Shot Card Example', () => (
   <Box m="regular">
     <Heading.h2>Cards</Heading.h2>
 
