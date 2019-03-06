@@ -1,23 +1,10 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 import React from 'react';
-import styled from '@emotion/styled';
-import { transparentize } from 'polished';
 import ReactPopover from 'react-popover';
 import PropTypes from 'prop-types';
 
-import Card from '../Card';
-
-const PopoverContent = styled(Card)`
-  background: ${props => props.theme.colors.white};
-  border-radius: ${props => props.theme.radii.large};
-  box-shadow: 0 4px 8px
-      ${props => transparentize(0.9, props.theme.colors.black)},
-    0 0 1px ${props => props.theme.colors.grey20};
-  min-height: 40px;
-  min-width: 200px;
-  overflow: hidden;
-`;
+import PopoverContent from './PopoverContent';
 
 class Popover extends React.Component {
   state = {
