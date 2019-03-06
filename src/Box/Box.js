@@ -6,6 +6,7 @@ import {
   boxShadow,
   color,
   display,
+  position,
   space,
   width,
   height,
@@ -29,6 +30,7 @@ const Box = styled.div`
   ${maxWidth};
   ${minWidth};
   ${overflow};
+  ${position};
   ${space};
   ${textAlign};
   ${width};
@@ -45,6 +47,7 @@ Box.propTypes = {
   ...maxWidth.propTypes,
   ...minWidth.propTypes,
   ...overflow.propTypes,
+  ...position.propTypes,
   ...space.propTypes,
   ...textAlign.propTypes,
   ...width.propTypes
