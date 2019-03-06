@@ -1,9 +1,10 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { hideVisually } from 'polished';
 
 import { ENTER_KEY, SPACEBAR } from '../constants';
-import { fontSizes } from '../theme';
 import StyledMenuItem from './StyledMenuItem';
 import Text from '../Text';
 import Icon from '../Icon';
@@ -88,7 +89,10 @@ class MenuItem extends React.PureComponent {
             <Flex pl={PADDING} overflow="hidden" flex="0 1 auto">
               <Text.span
                 fontSize="size3"
-                lineHeight={fontSizes.size4}
+                css={theme => ({
+                  //
+                  lineHeight: theme.fontSizes.size4
+                })}
                 color="text.muted"
                 maxWidth="100%"
               >
