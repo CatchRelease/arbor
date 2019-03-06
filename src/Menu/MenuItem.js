@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { hideVisually } from 'polished';
 
 import { ENTER_KEY, SPACEBAR } from '../constants';
+import { fontSizes } from '../theme';
 import StyledMenuItem from './StyledMenuItem';
 import Text from '../Text';
 import Icon from '../Icon';
@@ -85,7 +86,12 @@ class MenuItem extends React.PureComponent {
           </Flex>
           {secondaryLabel && (
             <Flex pl={PADDING} overflow="hidden" flex="0 1 auto">
-              <Text.span fontSize="size3" color="text.muted" maxWidth="100%">
+              <Text.span
+                fontSize="size3"
+                lineHeight={fontSizes.size4}
+                color="text.muted"
+                maxWidth="100%"
+              >
                 {secondaryLabel}
               </Text.span>
             </Flex>

@@ -85,6 +85,7 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   font-family: Motiva Sans;
   color: #5B5D61;
   font-size: 0.8125rem;
+  line-height: 0.875rem;
   max-width: 100%;
 }
 
@@ -211,6 +212,7 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   font-family: Motiva Sans;
   color: #5B5D61;
   font-size: 0.8125rem;
+  line-height: 0.875rem;
   max-width: 100%;
 }
 
