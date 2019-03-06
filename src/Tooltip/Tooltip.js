@@ -6,12 +6,11 @@ import PropTypes from 'prop-types';
 import 'react-tippy/dist/tippy.css';
 import { Tooltip as TippyTooltip } from 'react-tippy';
 
-import { borderRadius } from '../theme';
 import Text from '../Text';
 
-const globalTippyStyles = css`
+const globalTippyStyles = theme => css`
   .tippy-tooltip.arbor-theme {
-    border-radius: ${borderRadius.small};
+    border-radius: ${theme.borderRadius.small};
     padding: 0;
   }
 `;

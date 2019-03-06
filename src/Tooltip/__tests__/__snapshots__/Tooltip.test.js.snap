@@ -157,14 +157,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
     }
   >
     <ForwardRef(render)
-      styles={
-        Object {
-          "map": undefined,
-          "name": "957k5c-globalTippyStyles",
-          "next": undefined,
-          "styles": ".tippy-tooltip.arbor-theme{border-radius:3px;padding:0;}label:globalTippyStyles;",
-        }
-      }
+      styles={[Function]}
     >
       <InnerGlobal
         cache={
