@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { placeholder, transparentize } from 'polished';
 
 const baseStyles = ({ theme }) => css`
-  border-radius: ${theme.borderRadius.small};
+  border-radius: ${theme.radii.small};
   border: ${theme.borderWidth.small} solid ${theme.colors.border.default};
   box-sizing: border-box;
   color: ${theme.colors.text.default};

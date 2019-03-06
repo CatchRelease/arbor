@@ -6,7 +6,7 @@ import Flex from '../Flex';
 
 const baseStyles = ({ theme }) => css`
   background-color: ${theme.colors.white};
-  border-radius: ${theme.borderRadius.small};
+  border-radius: ${theme.radii.small};
   border: 1px solid ${theme.colors.grey60};
   color: ${theme.colors.white};
   flex-shrink: 0;

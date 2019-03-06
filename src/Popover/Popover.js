@@ -10,7 +10,7 @@ import Card from '../Card';
 
 const PopoverContent = styled(Card)`
   background: ${props => props.theme.colors.white};
-  border-radius: ${props => props.theme.borderRadius.large};
+  border-radius: ${props => props.theme.radii.large};
   box-shadow: 0 4px 8px
       ${props => transparentize(0.9, props.theme.colors.black)},
     0 0 1px ${props => props.theme.colors.grey20};

@@ -11,7 +11,7 @@ const fullWidthStyles = ({ fullWidth }) =>
   `;
 
 const StyledButton = styled.button`
-  border-radius: ${props => props.theme.borderRadius.small};
+  border-radius: ${props => props.theme.radii.small};
   border: 1px solid transparent;
   font-family: ${props => props.theme.brandFont};
   font-weight: ${props => props.theme.fontWeights.medium};

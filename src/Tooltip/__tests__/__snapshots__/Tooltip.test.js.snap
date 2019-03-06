@@ -16,10 +16,6 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "default": "#E0E1E2",
           "muted": "#EBECEC",
         },
-        "borderRadius": Object {
-          "large": "6px",
-          "small": "3px",
-        },
         "borderWidth": Object {
           "large": "4px",
           "medium": "2px",
@@ -117,6 +113,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "large": 1.5,
           "regular": 1,
           "small": 1.25,
+        },
+        "radii": Object {
+          "large": "6px",
+          "small": "3px",
         },
         "shadows": Object {
           "elevation0": "0 0 1px rgba(37,39,45,0.47)",
@@ -225,10 +225,6 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "default": "#E0E1E2",
                 "muted": "#EBECEC",
               },
-              "borderRadius": Object {
-                "large": "6px",
-                "small": "3px",
-              },
               "borderWidth": Object {
                 "large": "4px",
                 "medium": "2px",
@@ -326,6 +322,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "large": 1.5,
                 "regular": 1,
                 "small": 1.25,
+              },
+              "radii": Object {
+                "large": "6px",
+                "small": "3px",
               },
               "shadows": Object {
                 "elevation0": "0 0 1px rgba(37,39,45,0.47)",
