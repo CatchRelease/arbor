@@ -10,7 +10,7 @@ import Text from '../Text';
 
 const globalTippyStyles = theme => css`
   .tippy-tooltip.arbor-theme {
-    border-radius: ${theme.borderRadius.small};
+    border-radius: ${theme.radii.small};
     padding: 0;
   }
 `;

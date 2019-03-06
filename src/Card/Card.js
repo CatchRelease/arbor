@@ -6,11 +6,11 @@ import createWithComponent from '../utils/createWithComponent';
 const Card = styled(
   createWithComponent(Box, 'div', {
     defaultProps: {
+      borderRadius: 'large',
       boxShadow: 'elevation0'
     }
   })
 )`
-  border-radius: ${props => props.theme.borderRadius.large};
   border: 1px solid ${props => props.theme.colors.border.default};
   width: 100%;
 `;

@@ -169,7 +169,6 @@ export const boxShadows = {
 export default {
   backgroundColors,
   borderColors,
-  borderRadius,
   borderWidth,
   brandColors,
   brandFont,
@@ -180,6 +179,7 @@ export default {
   iconColors,
   iconFontPrefix: 'ar',
   lineHeights,
+  radii: borderRadius,
   shadows: boxShadows,
   space: spacings,
   textColors,
