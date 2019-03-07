@@ -62,7 +62,8 @@ var bronzes = {
 exports.bronzes = bronzes;
 var backgroundColors = {
   muted: greys.grey10,
-  default: greys.grey20
+  default: greys.grey20,
+  white: whites.white
 };
 exports.backgroundColors = backgroundColors;
 var borderColors = {
@@ -178,7 +179,6 @@ exports.boxShadows = boxShadows;
 var _default = {
   backgroundColors: backgroundColors,
   borderColors: borderColors,
-  borderRadius: borderRadius,
   borderWidth: borderWidth,
   brandColors: brandColors,
   brandFont: brandFont,
@@ -189,6 +189,7 @@ var _default = {
   iconColors: iconColors,
   iconFontPrefix: 'ar',
   lineHeights: lineHeights,
+  radii: borderRadius,
   shadows: boxShadows,
   space: spacings,
   textColors: textColors,

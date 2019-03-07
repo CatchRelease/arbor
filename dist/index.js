@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 var _exportNames = {
   theme: true,
   AccordionSection: true,
-  Accordion: true,
   Avatar: true,
   Box: true,
   Button: true,
@@ -15,6 +14,8 @@ var _exportNames = {
   CardPreview: true,
   CardRow: true,
   Checkbox: true,
+  DatePicker: true,
+  DatePickerInput: true,
   Dropdown: true,
   Flex: true,
   Grid: true,
@@ -25,6 +26,7 @@ var _exportNames = {
   Link: true,
   Menu: true,
   Pagination: true,
+  Pane: true,
   Paragraph: true,
   Popover: true,
   Header: true,
@@ -41,13 +43,7 @@ Object.defineProperty(exports, "theme", {
 Object.defineProperty(exports, "AccordionSection", {
   enumerable: true,
   get: function get() {
-    return _Accordion.AccordionSection;
-  }
-});
-Object.defineProperty(exports, "Accordion", {
-  enumerable: true,
-  get: function get() {
-    return _Accordion.default;
+    return _AccordionSection.default;
   }
 });
 Object.defineProperty(exports, "Avatar", {
@@ -96,6 +92,18 @@ Object.defineProperty(exports, "Checkbox", {
   enumerable: true,
   get: function get() {
     return _Checkbox.default;
+  }
+});
+Object.defineProperty(exports, "DatePicker", {
+  enumerable: true,
+  get: function get() {
+    return _DatePicker.default;
+  }
+});
+Object.defineProperty(exports, "DatePickerInput", {
+  enumerable: true,
+  get: function get() {
+    return _DatePicker.DatePickerInput;
   }
 });
 Object.defineProperty(exports, "Dropdown", {
@@ -158,6 +166,12 @@ Object.defineProperty(exports, "Pagination", {
     return _Pagination.default;
   }
 });
+Object.defineProperty(exports, "Pane", {
+  enumerable: true,
+  get: function get() {
+    return _Pane.default;
+  }
+});
 Object.defineProperty(exports, "Paragraph", {
   enumerable: true,
   get: function get() {
@@ -208,7 +222,7 @@ Object.keys(_theme).forEach(function (key) {
   });
 });
 
-var _Accordion = _interopRequireWildcard(require("./Accordion"));
+var _AccordionSection = _interopRequireDefault(require("./AccordionSection"));
 
 var _Avatar = _interopRequireDefault(require("./Avatar"));
 
@@ -225,6 +239,8 @@ var _CardPreview = _interopRequireDefault(require("./CardPreview"));
 var _CardRow = _interopRequireDefault(require("./CardRow"));
 
 var _Checkbox = _interopRequireDefault(require("./Checkbox"));
+
+var _DatePicker = _interopRequireWildcard(require("./DatePicker"));
 
 var _Dropdown = _interopRequireDefault(require("./Dropdown"));
 
@@ -245,6 +261,8 @@ var _Link = _interopRequireDefault(require("./Link"));
 var _Menu = _interopRequireDefault(require("./Menu"));
 
 var _Pagination = _interopRequireDefault(require("./Pagination"));
+
+var _Pane = _interopRequireDefault(require("./Pane"));
 
 var _Paragraph = _interopRequireDefault(require("./Paragraph"));
 
