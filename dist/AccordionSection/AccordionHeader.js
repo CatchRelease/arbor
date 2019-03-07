@@ -15,8 +15,6 @@ var _StyledAccordionHeading = _interopRequireDefault(require("./StyledAccordionH
 
 var _StyledAccordionHeadingButton = _interopRequireDefault(require("./StyledAccordionHeadingButton"));
 
-var _Text = _interopRequireDefault(require("../Text"));
-
 var _Icon = _interopRequireDefault(require("../Icon"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -34,25 +32,16 @@ AccordionHeaderIcon.propTypes = {
   isOpen: _propTypes.default.bool.isRequired
 };
 
-var AccordionHeaderNote = function AccordionHeaderNote(_ref2) {
-  var note = _ref2.note;
-  return note && _react.default.createElement(_Text.default, {
-    fontSize: "size4",
-    textAlign: "right",
-    color: "text.muted"
-  }, note);
-};
-
-var AccordionHeader = function AccordionHeader(_ref3) {
-  var isOpen = _ref3.isOpen,
-      note = _ref3.note,
-      onClick = _ref3.onClick,
-      panelId = _ref3.panelId,
-      text = _ref3.text;
+var AccordionHeader = function AccordionHeader(_ref2) {
+  var isOpen = _ref2.isOpen,
+      note = _ref2.note,
+      onClick = _ref2.onClick,
+      panelId = _ref2.panelId,
+      text = _ref2.text;
   return _react.default.createElement(_StyledAccordionHeader.default, {
     alignItems: "center",
     justifyContent: "space-between",
-    p: "regular"
+    px: "regular"
   }, _react.default.createElement(_StyledAccordionHeading.default, {
     fontWeight: "medium",
     mr: "regular"
@@ -64,9 +53,7 @@ var AccordionHeader = function AccordionHeader(_ref3) {
     type: "button"
   }, _react.default.createElement(AccordionHeaderIcon, {
     isOpen: isOpen
-  }), text)), _react.default.createElement(AccordionHeaderNote, {
-    note: note
-  }));
+  }), text)), note);
 };
 
 AccordionHeader.propTypes = {

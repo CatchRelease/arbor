@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var _core = require("@emotion/core");
+
 var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
@@ -109,7 +111,7 @@ function (_React$PureComponent) {
           name = _this$props2.name,
           value = _this$props2.value,
           focused = _this$props2.focused;
-      return _react.default.createElement(_StyledMenuItem.default, {
+      return (0, _core.jsx)(_StyledMenuItem.default, {
         baseColor: baseColor,
         selected: selected,
         focused: focused,
@@ -119,33 +121,39 @@ function (_React$PureComponent) {
         height: '40px',
         onClick: this.onSelect,
         onKeyPress: this.onKeyDown
-      }, _react.default.createElement("input", {
+      }, (0, _core.jsx)("input", {
         id: id,
         name: name,
         value: value,
         css: (0, _polished.hideVisually)(),
         type: 'hidden'
-      }), _react.default.createElement(_Flex.default, {
+      }), (0, _core.jsx)(_Flex.default, {
         width: "100%",
         justifyContent: "space-between"
-      }, _react.default.createElement(_Flex.default, {
+      }, (0, _core.jsx)(_Flex.default, {
         flex: "1 0 auto",
         maxWidth: secondaryLabel ? "calc(100% - ".concat(MIN_WIDTH, " - ").concat(PADDING, ")") : '100%'
-      }, _react.default.createElement(_Icon.default, {
+      }, (0, _core.jsx)(_Icon.default, {
         name: "symbol-circle",
         mr: "small",
         color: baseColor,
         fontSize: "16px"
-      }), _react.default.createElement(_Text.default.span, {
+      }), (0, _core.jsx)(_Text.default.span, {
         minWidth: MIN_WIDTH,
         fontSize: "size4",
         overflow: "hidden"
-      }, label)), secondaryLabel && _react.default.createElement(_Flex.default, {
+      }, label)), secondaryLabel && (0, _core.jsx)(_Flex.default, {
         pl: PADDING,
         overflow: "hidden",
         flex: "0 1 auto"
-      }, _react.default.createElement(_Text.default.span, {
+      }, (0, _core.jsx)(_Text.default.span, {
         fontSize: "size3",
+        css: function css(theme) {
+          return {
+            // Put primary and secondary labels on the same baseline
+            lineHeight: theme.fontSizes.size4
+          };
+        },
         color: "text.muted",
         maxWidth: "100%"
       }, secondaryLabel))));
