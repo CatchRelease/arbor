@@ -12,10 +12,10 @@ const StyledHeader = styled(createWithComponent(Flex, 'header'))`
   }
 
   .button--minimal:last-of-type {
-    margin-right: -${props => props.theme.space.small};
+    margin-right: -${props => props.theme.space.smaller};
 
     + :not(object) {
-      margin-left: ${props => props.theme.space.small};
+      margin-left: ${props => props.theme.space.smaller};
     }
   }
 
