@@ -4,7 +4,7 @@ import Card from '../Card';
 
 const PopoverContent = styled(Card)`
   background: ${props => props.theme.colors.white};
-  box-shadow: ${props => props.theme.boxShadows.elevation2};
+  box-shadow: ${props => props.theme.shadows.elevation2};
   min-height: 40px;
   min-width: 200px;
   overflow: hidden;

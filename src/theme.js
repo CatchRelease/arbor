@@ -171,7 +171,6 @@ export default {
   backgroundColors,
   borderColors,
   borderWidth,
-  boxShadows,
   brandColors,
   brandFont,
   breakpoints,

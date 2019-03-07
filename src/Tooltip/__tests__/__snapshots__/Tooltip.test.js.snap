@@ -22,13 +22,6 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "medium": "2px",
           "small": "1px",
         },
-        "boxShadows": Object {
-          "elevation0": "0 0 1px rgba(37,39,45,0.47)",
-          "elevation1": "0 0 1px rgba(37,39,45,0.47), 0 2px 4px -2px rgba(37,39,45,0.3)",
-          "elevation2": "0 0 1px rgba(37,39,45,0.47), 0 5px 8px -4px rgba(37,39,45,0.3)",
-          "elevation3": "0 0 1px rgba(37,39,45,0.47), 0 8px 10px -4px rgba(37,39,45,0.3)",
-          "elevation4": "0 0 1px rgba(37,39,45,0.47), 0 16px 24px -8px rgba(37,39,45,0.3)",
-        },
         "brandColors": Object {
           "dark": "#00533E",
           "darkest": "#001C15",
@@ -239,13 +232,6 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "large": "4px",
                 "medium": "2px",
                 "small": "1px",
-              },
-              "boxShadows": Object {
-                "elevation0": "0 0 1px rgba(37,39,45,0.47)",
-                "elevation1": "0 0 1px rgba(37,39,45,0.47), 0 2px 4px -2px rgba(37,39,45,0.3)",
-                "elevation2": "0 0 1px rgba(37,39,45,0.47), 0 5px 8px -4px rgba(37,39,45,0.3)",
-                "elevation3": "0 0 1px rgba(37,39,45,0.47), 0 8px 10px -4px rgba(37,39,45,0.3)",
-                "elevation4": "0 0 1px rgba(37,39,45,0.47), 0 16px 24px -8px rgba(37,39,45,0.3)",
               },
               "brandColors": Object {
                 "dark": "#00533E",
