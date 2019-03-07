@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { hideVisually } from 'polished';
@@ -85,7 +87,15 @@ class MenuItem extends React.PureComponent {
           </Flex>
           {secondaryLabel && (
             <Flex pl={PADDING} overflow="hidden" flex="0 1 auto">
-              <Text.span fontSize="size3" color="text.muted" maxWidth="100%">
+              <Text.span
+                fontSize="size3"
+                css={theme => ({
+                  // Put primary and secondary labels on the same baseline
+                  lineHeight: theme.fontSizes.size4
+                })}
+                color="text.muted"
+                maxWidth="100%"
+              >
                 {secondaryLabel}
               </Text.span>
             </Flex>

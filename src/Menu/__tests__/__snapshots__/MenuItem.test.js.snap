@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MenuItem /> renders a MenuItem properly 1`] = `
-.emotion-12 {
+.emotion-13 {
   box-sizing: border-box;
   height: 40px;
   display: -webkit-box;
@@ -17,19 +17,34 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   white-space: nowrap;
 }
 
-.emotion-12:hover {
+.emotion-13:hover {
   background: #F8F9F9;
 }
 
-.emotion-12:active {
+.emotion-13:active {
   background: #F2F2F2;
 }
 
-.emotion-12:focus {
+.emotion-13:focus {
   background: #F8F9F9;
 }
 
-.emotion-10 {
+.emotion-0 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-11 {
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
@@ -42,7 +57,7 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   justify-content: space-between;
 }
 
-.emotion-4 {
+.emotion-5 {
   box-sizing: border-box;
   max-width: calc(100% - 120px - 8px);
   display: -webkit-box;
@@ -54,13 +69,13 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   flex: 1 0 auto;
 }
 
-.emotion-0 {
+.emotion-1 {
   color: grey;
   font-size: 16px;
   margin-right: 0.75rem;
 }
 
-.emotion-2 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
@@ -68,7 +83,7 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   overflow: hidden;
 }
 
-.emotion-8 {
+.emotion-9 {
   box-sizing: border-box;
   overflow: hidden;
   padding-left: 8px;
@@ -81,16 +96,17 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   flex: 0 1 auto;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   color: #5B5D61;
   font-size: 0.8125rem;
   max-width: 100%;
+  line-height: 0.875rem;
 }
 
 <div
   aria-selected={false}
-  className="emotion-12 emotion-13"
+  className="emotion-13 emotion-14"
   height="40px"
   onClick={[Function]}
   onKeyPress={[Function]}
@@ -98,39 +114,26 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   selected={false}
 >
   <input
-    css={
-      Object {
-        "border": "0",
-        "clip": "rect(0 0 0 0)",
-        "clipPath": "inset(50%)",
-        "height": "1px",
-        "margin": "-1px",
-        "overflow": "hidden",
-        "padding": "0",
-        "position": "absolute",
-        "whiteSpace": "nowrap",
-        "width": "1px",
-      }
-    }
+    className="emotion-0"
     id="menu-item_clearance_state_ready_to_clear"
     name="clearance_state"
     type="hidden"
     value="ready_to_clear"
   />
   <div
-    className="emotion-10 emotion-5"
+    className="emotion-11 emotion-6"
     width="100%"
   >
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-5 emotion-6"
     >
       <i
-        className="ar ar-symbol-circle emotion-0 emotion-1"
+        className="ar ar-symbol-circle emotion-1 emotion-2"
         color="grey"
         fontSize="16px"
       />
       <span
-        className="emotion-2 emotion-3"
+        className="emotion-3 emotion-4"
         color="text.default"
         fontSize="size4"
         overflow="hidden"
@@ -139,11 +142,11 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
       </span>
     </div>
     <div
-      className="emotion-8 emotion-5"
+      className="emotion-9 emotion-6"
       overflow="hidden"
     >
       <span
-        className="emotion-6 emotion-3"
+        className="emotion-7 emotion-4"
         color="text.muted"
         fontSize="size3"
       >
@@ -155,7 +158,22 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
 `;
 
 exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
-.emotion-10 {
+.emotion-0 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-11 {
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
@@ -168,7 +186,7 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   justify-content: space-between;
 }
 
-.emotion-4 {
+.emotion-5 {
   box-sizing: border-box;
   max-width: calc(100% - 120px - 8px);
   display: -webkit-box;
@@ -180,13 +198,13 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   flex: 1 0 auto;
 }
 
-.emotion-0 {
+.emotion-1 {
   color: grey;
   font-size: 16px;
   margin-right: 0.75rem;
 }
 
-.emotion-2 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
@@ -194,7 +212,7 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   overflow: hidden;
 }
 
-.emotion-8 {
+.emotion-9 {
   box-sizing: border-box;
   overflow: hidden;
   padding-left: 8px;
@@ -207,14 +225,15 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   flex: 0 1 auto;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   color: #5B5D61;
   font-size: 0.8125rem;
   max-width: 100%;
+  line-height: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-13 {
   box-sizing: border-box;
   height: 40px;
   display: -webkit-box;
@@ -232,21 +251,21 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   font-weight: 700;
 }
 
-.emotion-12:hover {
+.emotion-13:hover {
   background: #F8F9F9;
 }
 
-.emotion-12:active {
+.emotion-13:active {
   background: #F2F2F2;
 }
 
-.emotion-12:focus {
+.emotion-13:focus {
   background: #F8F9F9;
 }
 
 <div
   aria-selected={true}
-  className="emotion-12 emotion-13"
+  className="emotion-13 emotion-14"
   height="40px"
   onClick={[Function]}
   onKeyPress={[Function]}
@@ -254,39 +273,26 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   selected={true}
 >
   <input
-    css={
-      Object {
-        "border": "0",
-        "clip": "rect(0 0 0 0)",
-        "clipPath": "inset(50%)",
-        "height": "1px",
-        "margin": "-1px",
-        "overflow": "hidden",
-        "padding": "0",
-        "position": "absolute",
-        "whiteSpace": "nowrap",
-        "width": "1px",
-      }
-    }
+    className="emotion-0"
     id="menu-item_clearance_state_ready_to_clear"
     name="clearance_state"
     type="hidden"
     value="ready_to_clear"
   />
   <div
-    className="emotion-10 emotion-5"
+    className="emotion-11 emotion-6"
     width="100%"
   >
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-5 emotion-6"
     >
       <i
-        className="ar ar-symbol-circle emotion-0 emotion-1"
+        className="ar ar-symbol-circle emotion-1 emotion-2"
         color="grey"
         fontSize="16px"
       />
       <span
-        className="emotion-2 emotion-3"
+        className="emotion-3 emotion-4"
         color="text.default"
         fontSize="size4"
         overflow="hidden"
@@ -295,11 +301,11 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
       </span>
     </div>
     <div
-      className="emotion-8 emotion-5"
+      className="emotion-9 emotion-6"
       overflow="hidden"
     >
       <span
-        className="emotion-6 emotion-3"
+        className="emotion-7 emotion-4"
         color="text.muted"
         fontSize="size3"
       >
