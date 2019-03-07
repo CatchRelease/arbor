@@ -1,9 +1,10 @@
 import React from 'react';
 import { forceReRender, storiesOf } from '@storybook/react';
-import { boolean, withKnobs } from '@storybook/addon-knobs';
+import { boolean, select, withKnobs } from '@storybook/addon-knobs';
 
 import {
   AccordionSection,
+  Box,
   Button,
   Card,
   Flex,
@@ -22,39 +23,16 @@ const onHeaderClick = () => {
   forceReRender();
 };
 
+const buttonOptions = {
+  Small: 'small',
+  Medium: 'medium',
+  Large: 'large',
+  Jumbo: 'jumbo'
+};
+const defaultButtonSize = 'small';
+
 const trashIcon = <Icon name="trash" />;
 const annotationIcon = <Icon name="annotation" />;
-const noteWithButtons = (
-  <>
-    <Button variant="minimal" size="small" iconStart={annotationIcon}>
-      Message
-    </Button>
-    <Button variant="minimal" size="small" iconStart={trashIcon} />
-  </>
-);
-
-const noteWithPrimaryButtons = (
-  <>
-    <Button variant="secondary" size="small">
-      Secondary
-    </Button>
-    <Button variant="primary" size="small">
-      Primary
-    </Button>
-  </>
-);
-
-const noteWithSecondaryButtons = (
-  <>
-    <Button variant="minimal" size="small">
-      Minimal
-    </Button>
-    <Button variant="secondary" size="small">
-      Secondary
-    </Button>
-  </>
-);
-
 const AccordionContainer = Flex.withComponent('div'); // eslint-disable-line arbor/use-create-with-component
 AccordionContainer.defaultProps = {
   mt: '100px',
@@ -62,166 +40,201 @@ AccordionContainer.defaultProps = {
   alignItems: 'center'
 };
 
-stories.add('default', () => (
-  <>
-    <AccordionContainer>
-      <Heading.h2>Accordion</Heading.h2>
+stories.add('default', () => {
+  const sizeSelect = select('Size', buttonOptions, defaultButtonSize);
 
-      <Flex justifyContent="center" width="500px">
-        <Card>
-          <AccordionSection
-            header="Header 1: Controlled"
-            headerNote="With Note"
-            isOpen={boolean('isOpen', isOpen)}
-            onHeaderClick={onHeaderClick}
-            panelId="header-1-controlled"
-          >
-            <Pane p="regular">
-              <Text mb="regular">
-                You can manually control an accordion by using isOpen and
-                onHeaderClick together.
-              </Text>
-              <Text>
-                Lorem ipsum dolor sit amet, an hinc honestatis his, an his tota
-                aperiam intellegebat. Mel delenit delectus et, veniam soleat
-                pericula vix et. Aeque accumsan quo ex, albucius pericula
-                expetendis quo ei. Debitis oporteat at eos, mei justo eruditi
-                periculis te. Sed no mazim liber dicunt, aeque viris animal te
-                quo, ius lorem feugiat veritus id.
-              </Text>
-            </Pane>
-          </AccordionSection>
-          <AccordionSection
-            header="Header 2: Uncontrolled"
-            headerNote="Note"
-            panelId="header-2-uncontrolled"
-          >
-            <Pane p="regular">
-              <Text mb="regular">
-                If you exclude the isOpen property, the accordion state will be
-                automattically managed internally
-              </Text>
-              <Text>
-                Lorem ipsum dolor sit amet, an hinc honestatis his, an his tota
-                aperiam intellegebat. Mel delenit delectus et, veniam soleat
-                pericula vix et. Aeque accumsan quo ex, albucius pericula
-                expetendis quo ei. Debitis oporteat at eos, mei justo eruditi
-                periculis te. Sed no mazim liber dicunt, aeque viris animal te
-                quo, ius lorem feugiat veritus id.
-              </Text>
-            </Pane>
-          </AccordionSection>
-          <AccordionSection
-            header="Header 3: Uncontrolled"
-            panelId="header-3-uncontrolled"
-          >
-            <Pane p="regular">
-              <Text mb="regular">You can exclude the note property</Text>
-              <Text>
-                Lorem ipsum dolor sit amet, an hinc honestatis his, an his tota
-                aperiam intellegebat. Mel delenit delectus et, veniam soleat
-                pericula vix et. Aeque accumsan quo ex, albucius pericula
-                expetendis quo ei. Debitis oporteat at eos, mei justo eruditi
-                periculis te. Sed no mazim liber dicunt, aeque viris animal te
-                quo, ius lorem feugiat veritus id.
-              </Text>
-            </Pane>
-          </AccordionSection>
-        </Card>
-      </Flex>
-    </AccordionContainer>
+  const noteWithButtons = (
+    <Box my="smallest">
+      <Button variant="minimal" size={sizeSelect} iconStart={annotationIcon}>
+        Message
+      </Button>
+      <Button variant="minimal" size={sizeSelect} iconStart={trashIcon} />
+    </Box>
+  );
 
-    <AccordionContainer>
-      <Heading.h2>Accordion with minimal buttons in notes</Heading.h2>
+  const noteWithPrimaryButtons = (
+    <Box my="smallest">
+      <Button variant="secondary" size={sizeSelect}>
+        Secondary
+      </Button>
+      <Button variant="primary" size={sizeSelect}>
+        Primary
+      </Button>
+    </Box>
+  );
 
-      <Flex justifyContent="center" width="500px">
-        <Card>
-          <AccordionSection
-            header="Header 1: Controlled"
-            headerNote={noteWithButtons}
-            isOpen={boolean('isOpen', isOpen)}
-            onHeaderClick={onHeaderClick}
-            panelId="header-1-controlled"
-          >
-            <Pane p="regular">
-              <Text mb="regular">
-                You can manually control an accordion by using isOpen and
-                onHeaderClick together.
-              </Text>
-              <Text>
-                Lorem ipsum dolor sit amet, an hinc honestatis his, an his tota
-                aperiam intellegebat. Mel delenit delectus et, veniam soleat
-                pericula vix et. Aeque accumsan quo ex, albucius pericula
-                expetendis quo ei. Debitis oporteat at eos, mei justo eruditi
-                periculis te. Sed no mazim liber dicunt, aeque viris animal te
-                quo, ius lorem feugiat veritus id.
-              </Text>
-            </Pane>
-          </AccordionSection>
-        </Card>
-      </Flex>
-    </AccordionContainer>
+  const noteWithSecondaryButtons = (
+    <Box my="smallest">
+      <Button variant="minimal" size={sizeSelect}>
+        Minimal
+      </Button>
+      <Button variant="secondary" size={sizeSelect}>
+        Secondary
+      </Button>
+    </Box>
+  );
 
-    <AccordionContainer>
-      <Heading.h2>Accordion with primary buttons</Heading.h2>
+  return (
+    <>
+      <AccordionContainer>
+        <Heading.h2>Accordion</Heading.h2>
 
-      <Flex justifyContent="center" width="500px">
-        <Card>
-          <AccordionSection
-            header="Header 1: Controlled"
-            headerNote={noteWithPrimaryButtons}
-            isOpen={boolean('isOpen', isOpen)}
-            onHeaderClick={onHeaderClick}
-            panelId="header-1-controlled"
-          >
-            <Pane p="regular">
-              <Text mb="regular">
-                You can manually control an accordion by using isOpen and
-                onHeaderClick together.
-              </Text>
-              <Text>
-                Lorem ipsum dolor sit amet, an hinc honestatis his, an his tota
-                aperiam intellegebat. Mel delenit delectus et, veniam soleat
-                pericula vix et. Aeque accumsan quo ex, albucius pericula
-                expetendis quo ei. Debitis oporteat at eos, mei justo eruditi
-                periculis te. Sed no mazim liber dicunt, aeque viris animal te
-                quo, ius lorem feugiat veritus id.
-              </Text>
-            </Pane>
-          </AccordionSection>
-        </Card>
-      </Flex>
-    </AccordionContainer>
+        <Flex justifyContent="center" width="500px">
+          <Card>
+            <AccordionSection
+              header={<Box my="small">Header 1: Controlled</Box>}
+              headerNote="With Note"
+              isOpen={boolean('isOpen', isOpen)}
+              onHeaderClick={onHeaderClick}
+              panelId="header-1-controlled"
+            >
+              <Pane p="regular">
+                <Text mb="regular">
+                  You can manually control an accordion by using isOpen and
+                  onHeaderClick together.
+                </Text>
+                <Text>
+                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                  tota aperiam intellegebat. Mel delenit delectus et, veniam
+                  soleat pericula vix et. Aeque accumsan quo ex, albucius
+                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
+                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
+                  animal te quo, ius lorem feugiat veritus id.
+                </Text>
+              </Pane>
+            </AccordionSection>
+            <AccordionSection
+              header={<Box my="small">Header 2: Uncontrolled </Box>}
+              headerNote="Note"
+              panelId="header-2-uncontrolled"
+            >
+              <Pane p="regular">
+                <Text mb="regular">
+                  If you exclude the isOpen property, the accordion state will
+                  be automattically managed internally
+                </Text>
+                <Text>
+                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                  tota aperiam intellegebat. Mel delenit delectus et, veniam
+                  soleat pericula vix et. Aeque accumsan quo ex, albucius
+                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
+                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
+                  animal te quo, ius lorem feugiat veritus id.
+                </Text>
+              </Pane>
+            </AccordionSection>
+            <AccordionSection
+              header={<Box my="small">Header 3: Uncontrolled</Box>}
+              panelId="header-3-uncontrolled"
+            >
+              <Pane p="regular">
+                <Text mb="regular">You can exclude the note property</Text>
+                <Text>
+                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                  tota aperiam intellegebat. Mel delenit delectus et, veniam
+                  soleat pericula vix et. Aeque accumsan quo ex, albucius
+                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
+                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
+                  animal te quo, ius lorem feugiat veritus id.
+                </Text>
+              </Pane>
+            </AccordionSection>
+          </Card>
+        </Flex>
+      </AccordionContainer>
 
-    <AccordionContainer>
-      <Heading.h2>Accordion with secondary buttons</Heading.h2>
+      <AccordionContainer>
+        <Heading.h2>Accordion with minimal buttons in notes</Heading.h2>
 
-      <Flex justifyContent="center" width="500px">
-        <Card>
-          <AccordionSection
-            header="Header 1: Controlled"
-            headerNote={noteWithSecondaryButtons}
-            isOpen={boolean('isOpen', isOpen)}
-            onHeaderClick={onHeaderClick}
-            panelId="header-1-controlled"
-          >
-            <Pane p="regular">
-              <Text mb="regular">
-                You can manually control an accordion by using isOpen and
-                onHeaderClick together.
-              </Text>
-              <Text>
-                Lorem ipsum dolor sit amet, an hinc honestatis his, an his tota
-                aperiam intellegebat. Mel delenit delectus et, veniam soleat
-                pericula vix et. Aeque accumsan quo ex, albucius pericula
-                expetendis quo ei. Debitis oporteat at eos, mei justo eruditi
-                periculis te. Sed no mazim liber dicunt, aeque viris animal te
-                quo, ius lorem feugiat veritus id.
-              </Text>
-            </Pane>
-          </AccordionSection>
-        </Card>
-      </Flex>
-    </AccordionContainer>
-  </>
-));
+        <Flex justifyContent="center" width="500px">
+          <Card>
+            <AccordionSection
+              header={<Box my="small">Header 1: Controlled</Box>}
+              headerNote={noteWithButtons}
+              isOpen={boolean('isOpen', isOpen)}
+              onHeaderClick={onHeaderClick}
+              panelId="header-1-controlled"
+            >
+              <Pane p="regular">
+                <Text mb="regular">
+                  You can manually control an accordion by using isOpen and
+                  onHeaderClick together.
+                </Text>
+                <Text>
+                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                  tota aperiam intellegebat. Mel delenit delectus et, veniam
+                  soleat pericula vix et. Aeque accumsan quo ex, albucius
+                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
+                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
+                  animal te quo, ius lorem feugiat veritus id.
+                </Text>
+              </Pane>
+            </AccordionSection>
+          </Card>
+        </Flex>
+      </AccordionContainer>
+
+      <AccordionContainer>
+        <Heading.h2>Accordion with primary buttons</Heading.h2>
+
+        <Flex justifyContent="center" width="500px">
+          <Card>
+            <AccordionSection
+              header={<Box my="small">Header 1: Controlled</Box>}
+              headerNote={noteWithPrimaryButtons}
+              isOpen={boolean('isOpen', isOpen)}
+              onHeaderClick={onHeaderClick}
+              panelId="header-1-controlled"
+            >
+              <Pane p="regular">
+                <Text mb="regular">
+                  You can manually control an accordion by using isOpen and
+                  onHeaderClick together.
+                </Text>
+                <Text>
+                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                  tota aperiam intellegebat. Mel delenit delectus et, veniam
+                  soleat pericula vix et. Aeque accumsan quo ex, albucius
+                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
+                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
+                  animal te quo, ius lorem feugiat veritus id.
+                </Text>
+              </Pane>
+            </AccordionSection>
+          </Card>
+        </Flex>
+      </AccordionContainer>
+
+      <AccordionContainer>
+        <Heading.h2>Accordion with secondary buttons</Heading.h2>
+
+        <Flex justifyContent="center" width="500px">
+          <Card>
+            <AccordionSection
+              header={<Box my="small">Header 1: Controlled</Box>}
+              headerNote={noteWithSecondaryButtons}
+              isOpen={boolean('isOpen', isOpen)}
+              onHeaderClick={onHeaderClick}
+              panelId="header-1-controlled"
+            >
+              <Pane p="regular">
+                <Text mb="regular">
+                  You can manually control an accordion by using isOpen and
+                  onHeaderClick together.
+                </Text>
+                <Text>
+                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                  tota aperiam intellegebat. Mel delenit delectus et, veniam
+                  soleat pericula vix et. Aeque accumsan quo ex, albucius
+                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
+                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
+                  animal te quo, ius lorem feugiat veritus id.
+                </Text>
+              </Pane>
+            </AccordionSection>
+          </Card>
+        </Flex>
+      </AccordionContainer>
+    </>
+  );
+});
