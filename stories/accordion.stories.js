@@ -74,6 +74,12 @@ stories.add('default', () => {
     </Box>
   );
 
+  const note = (
+    <Text fontSize="size4" textAlign="right" color="text.muted">
+      With Note
+    </Text>
+  );
+
   return (
     <>
       <AccordionContainer>
@@ -83,7 +89,7 @@ stories.add('default', () => {
           <Card>
             <AccordionSection
               header={<Box my="small">Header 1: Controlled</Box>}
-              headerNote="With Note"
+              headerNote={note}
               isOpen={boolean('isOpen', isOpen)}
               onHeaderClick={onHeaderClick}
               panelId="header-1-controlled"
@@ -105,7 +111,7 @@ stories.add('default', () => {
             </AccordionSection>
             <AccordionSection
               header={<Box my="small">Header 2: Uncontrolled </Box>}
-              headerNote="Note"
+              headerNote={note}
               panelId="header-2-uncontrolled"
             >
               <Pane p="regular">

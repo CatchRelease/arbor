@@ -3,6 +3,8 @@
 exports[`<AccordionHeader /> properly renders an accordion header 1`] = `
 .emotion-6 {
   box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -77,7 +79,6 @@ section:last-child .emotion-6 {
 }
 
 .emotion-0 {
-  margin-left: 1rem;
   margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
@@ -110,132 +111,10 @@ section:last-child .emotion-6 {
 `;
 
 exports[`<AccordionHeader /> renders with a note 1`] = `
-.emotion-8 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  background: #F2F2F2;
-  border-bottom: 1px solid #E0E1E2;
-}
-
-section:last-child .emotion-8 {
-  border-bottom: none;
-}
-
-.emotion-8 .button--minimal:last-of-type {
-  margin-right: -0.25rem;
-}
-
-.emotion-8 .button--minimal:last-of-type +:not(object) {
-  margin-left: 0.25rem;
-}
-
-.emotion-8 button + .button--secondary,
-.emotion-8 button + .button--primary {
-  margin-left: 0.5rem;
-}
-
-.emotion-4 {
-  font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 0.875rem;
-  font-weight: 500;
-  margin-right: 1rem;
-  line-height: 1.25;
-  margin-bottom: calc(0.875rem * 0.5);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-bottom: 0;
-}
-
-.emotion-2 {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: inherit;
-  padding: 0;
-}
-
-.emotion-0 {
-  margin-left: 1rem;
-  margin-right: 0.75rem;
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-}
-
-.emotion-6 {
-  font-family: Motiva Sans;
-  color: #5B5D61;
-  font-size: 0.875rem;
-  margin-right: 1rem;
-  text-align: right;
-}
-
-<header
-  className="emotion-8 emotion-9"
->
-  <h1
-    className="emotion-4 emotion-5"
-    color="text.dark"
-    fontSize="size4"
-    fontWeight="medium"
-  >
-    <button
-      aria-controls="my-accordion-1"
-      aria-expanded={false}
-      className="emotion-2 emotion-3"
-      onClick={[Function]}
-      type="button"
-    >
-      <i
-        className="ar ar-caret emotion-0 emotion-1"
-      />
-      My Heading
-    </button>
-  </h1>
-  <p
-    className="emotion-6 emotion-7"
-    color="text.muted"
-    fontSize="size4"
-  >
-    My Accordion Section Note
-  </p>
-</header>
-`;
-
-exports[`<AccordionHeader /> renders with an on click 1`] = `
 .emotion-6 {
   box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -310,7 +189,117 @@ section:last-child .emotion-6 {
 }
 
 .emotion-0 {
-  margin-left: 1rem;
+  margin-right: 0.75rem;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+<header
+  className="emotion-6 emotion-7"
+>
+  <h1
+    className="emotion-4 emotion-5"
+    color="text.dark"
+    fontSize="size4"
+    fontWeight="medium"
+  >
+    <button
+      aria-controls="my-accordion-1"
+      aria-expanded={false}
+      className="emotion-2 emotion-3"
+      onClick={[Function]}
+      type="button"
+    >
+      <i
+        className="ar ar-caret emotion-0 emotion-1"
+      />
+      My Heading
+    </button>
+  </h1>
+  My Accordion Section Note
+</header>
+`;
+
+exports[`<AccordionHeader /> renders with an on click 1`] = `
+.emotion-6 {
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #F2F2F2;
+  border-bottom: 1px solid #E0E1E2;
+}
+
+section:last-child .emotion-6 {
+  border-bottom: none;
+}
+
+.emotion-6 .button--minimal:last-of-type {
+  margin-right: -0.25rem;
+}
+
+.emotion-6 .button--minimal:last-of-type +:not(object) {
+  margin-left: 0.25rem;
+}
+
+.emotion-6 button + .button--secondary,
+.emotion-6 button + .button--primary {
+  margin-left: 0.5rem;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-right: 1rem;
+  line-height: 1.25;
+  margin-bottom: calc(0.875rem * 0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+}
+
+.emotion-0 {
   margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
@@ -345,6 +334,8 @@ section:last-child .emotion-6 {
 exports[`<AccordionHeader /> renders with the panel visible 1`] = `
 .emotion-6 {
   box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -419,7 +410,6 @@ section:last-child .emotion-6 {
 }
 
 .emotion-0 {
-  margin-left: 1rem;
   margin-right: 0.75rem;
 }
 
