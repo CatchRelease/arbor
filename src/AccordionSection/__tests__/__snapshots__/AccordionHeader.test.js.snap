@@ -25,11 +25,11 @@ section:last-child .emotion-6 {
 }
 
 .emotion-6 .button--minimal:last-of-type {
-  margin-right: -0.75rem;
+  margin-right: -0.5rem;
 }
 
 .emotion-6 .button--minimal:last-of-type +:not(object) {
-  margin-left: 0.75rem;
+  margin-left: 0.5rem;
 }
 
 .emotion-6 button + .button--secondary,
@@ -134,11 +134,11 @@ section:last-child .emotion-8 {
 }
 
 .emotion-8 .button--minimal:last-of-type {
-  margin-right: -0.75rem;
+  margin-right: -0.5rem;
 }
 
 .emotion-8 .button--minimal:last-of-type +:not(object) {
-  margin-left: 0.75rem;
+  margin-left: 0.5rem;
 }
 
 .emotion-8 button + .button--secondary,
@@ -257,11 +257,11 @@ section:last-child .emotion-6 {
 }
 
 .emotion-6 .button--minimal:last-of-type {
-  margin-right: -0.75rem;
+  margin-right: -0.5rem;
 }
 
 .emotion-6 .button--minimal:last-of-type +:not(object) {
-  margin-left: 0.75rem;
+  margin-left: 0.5rem;
 }
 
 .emotion-6 button + .button--secondary,
@@ -366,11 +366,11 @@ section:last-child .emotion-6 {
 }
 
 .emotion-6 .button--minimal:last-of-type {
-  margin-right: -0.75rem;
+  margin-right: -0.5rem;
 }
 
 .emotion-6 .button--minimal:last-of-type +:not(object) {
-  margin-left: 0.75rem;
+  margin-left: 0.5rem;
 }
 
 .emotion-6 button + .button--secondary,
