@@ -8,7 +8,7 @@ import Text from '../Text';
 import Icon from '../Icon';
 
 const AccordionHeaderIcon = ({ isOpen }) => (
-  <Icon mr="small" name="caret" rotation={isOpen ? null : '270'} />
+  <Icon ml="regular" mr="small" name="caret" rotation={isOpen ? null : '270'} />
 );
 
 AccordionHeaderIcon.propTypes = {
@@ -17,17 +17,13 @@ AccordionHeaderIcon.propTypes = {
 
 const AccordionHeaderNote = ({ note }) =>
   note && (
-    <Text fontSize="size4" textAlign="right" color="text.muted">
+    <Text mr="regular" fontSize="size4" textAlign="right" color="text.muted">
       {note}
     </Text>
   );
 
 const AccordionHeader = ({ isOpen, note, onClick, panelId, text }) => (
-  <StyledAccordionHeader
-    alignItems="center"
-    justifyContent="space-between"
-    p="regular"
-  >
+  <StyledAccordionHeader alignItems="center" justifyContent="space-between">
     <StyledAccordionHeading fontWeight="medium" mr="regular">
       <StyledAccordionHeadingButton
         alignItems="center"
