@@ -25,6 +25,7 @@ export { default as Paragraph } from './Paragraph';
 export { default as Popover } from './Popover';
 export { default as Header } from './Header';
 export { default as Text } from './Text';
+export { default as Textarea } from './Textarea';
 export { default as Tooltip } from './Tooltip';
 
 export { default as reset } from './reset';
