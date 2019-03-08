@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Textarea /> renders a large Textarea correctly 1`] = `
+.emotion-2 {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-0:disabled {
+  background: #F2F2F2;
+}
+
+<div
+  className="emotion-2 emotion-3"
+>
+  
+  <textarea
+    className="emotion-0 emotion-1"
+    id="example"
+  />
+  
+</div>
+`;
+
+exports[`<Textarea /> renders an Textarea correctly 1`] = `
+.emotion-2 {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-0:disabled {
+  background: #F2F2F2;
+}
+
+<div
+  className="emotion-2 emotion-3"
+>
+  
+  <textarea
+    className="emotion-0 emotion-1"
+    id="example"
+  />
+  
+</div>
+`;
+
+exports[`<Textarea /> renders an Textarea with a caption correctly 1`] = `
+.emotion-0 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-0:disabled {
+  background: #F2F2F2;
+}
+
+.emotion-4 {
+  margin-bottom: 0.5rem;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: #EE2200;
+  line-height: 1.25;
+  font-size: 0.75rem;
+}
+
+<div
+  className="emotion-4 emotion-5"
+>
+  
+  <textarea
+    className="emotion-0 emotion-1"
+    id="example"
+  />
+  <span
+    className="emotion-2 emotion-1"
+    color="red"
+  >
+    I am a caption
+  </span>
+</div>
+`;
+
+exports[`<Textarea /> renders an Textarea with a label correctly 1`] = `
+.emotion-4 {
+  margin-bottom: 1rem;
+}
+
+.emotion-2 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-2:disabled {
+  background: #F2F2F2;
+}
+
+.emotion-0 {
+  color: #5B5D61;
+  display: block;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+<div
+  className="emotion-4 emotion-5"
+>
+  <label
+    className="emotion-0 emotion-1"
+    htmlFor="example"
+  >
+    My Textarea
+  </label>
+  <textarea
+    className="emotion-2 emotion-3"
+    id="example"
+  />
+  
+</div>
+`;
