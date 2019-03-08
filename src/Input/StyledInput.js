@@ -1,5 +1,6 @@
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
 import { placeholder, transparentize } from 'polished';
 
 const baseStyles = ({ theme }) => css`
@@ -7,6 +8,7 @@ const baseStyles = ({ theme }) => css`
   border: ${theme.borderWidth.small} solid ${theme.colors.border.default};
   box-sizing: border-box;
   color: ${theme.colors.text.default};
+  font-family: ${theme.brandFont};
   font-size: ${theme.fontSizes.size4};
   line-height: ${theme.lineHeights.small};
   margin: ${theme.space.smallest} 0;
@@ -36,5 +38,13 @@ const StyledInput = styled.input`
   ${baseStyles};
   ${largeStyles};
 `;
+
+StyledInput.propTypes = {
+  large: PropTypes.bool
+};
+
+StyledInput.defaultProps = {
+  large: false
+};
 
 export default StyledInput;

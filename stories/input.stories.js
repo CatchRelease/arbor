@@ -1,11 +1,10 @@
 import React from 'react';
-import { css } from '@emotion/core';
 import { storiesOf } from '@storybook/react';
 
 import { Input } from '../src';
 
-storiesOf('Forms', module).add('default', () => (
-  <form className={css({ width: '352px' })}>
+storiesOf('Input', module).add('default', () => (
+  <form>
     <Input
       label="Example Label"
       caption="My Caption"
