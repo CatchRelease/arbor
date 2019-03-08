@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormField /> renders a FormField correctly 1`] = `
+.emotion-0 {
+  margin-bottom: 1rem;
+}
+
+<div
+  className="emotion-0 emotion-1"
+>
+  
+  Field Child
+  
+</div>
+`;
+
+exports[`<FormField /> renders a FormField with a caption correctly 1`] = `
+.emotion-2 {
+  margin-bottom: 0.5rem;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #EE2200;
+  line-height: 1.25;
+  font-size: 0.75rem;
+}
+
+<div
+  className="emotion-2 emotion-3"
+>
+  
+  Field Child
+  <span
+    className="emotion-0 emotion-1"
+    color="red"
+  >
+    I am a caption
+  </span>
+</div>
+`;
+
+exports[`<FormField /> with label renders a FormField with a label correctly 1`] = `
+.emotion-2 {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
+  color: #5B5D61;
+  display: block;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+<div
+  className="emotion-2 emotion-3"
+>
+  <label
+    className="emotion-0 emotion-1"
+    htmlFor="example"
+  >
+    My label
+  </label>
+  Field Child
+  
+</div>
+`;

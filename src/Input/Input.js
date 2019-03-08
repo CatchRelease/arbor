@@ -1,32 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import InputContainer from './InputContainer';
+import FormField from '../FormField';
 import StyledInput from './StyledInput';
-import Label from '../Label';
-import Paragraph from '../Paragraph';
 
 const Input = React.forwardRef(({ caption, label, id, ...props }, ref) => (
-  <InputContainer caption={caption}>
-    <Label htmlFor={id}>{label}</Label>
+  <FormField caption={caption} id={id} label={label}>
     <StyledInput {...{ ...props, id, ref }} />
-    {caption && (
-      <Paragraph.span variant="tiny" color="red">
-        {caption}
-      </Paragraph.span>
-    )}
-  </InputContainer>
+  </FormField>
 ));
 
 Input.propTypes = {
   caption: PropTypes.string,
   id: PropTypes.string.isRequired,
-  large: PropTypes.bool
+  label: PropTypes.string,
+  type: PropTypes.string
 };
 
 Input.defaultProps = {
   caption: '',
-  large: false
+  label: '',
+  type: 'text'
 };
 
 export default Input;
