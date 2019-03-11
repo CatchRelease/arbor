@@ -96,6 +96,13 @@ export const colors = {
   text: { ...textColors }
 };
 
+export const brandFont = 'Motiva Sans';
+
+export const fonts = {
+  default: brandFont,
+  icon: 'Arbor'
+};
+
 export const fontSizes = {
   size1: rem('11px'),
   size2: rem('12px'),
@@ -112,6 +119,24 @@ export const fontWeights = {
   regular: 400,
   medium: 500,
   bold: 700
+};
+
+export const icons = {
+  annotation: '\f039',
+  calendar: '\f035',
+  caret: '\f037',
+  chatBubbleOutline: '\f003',
+  checkboxChecked: '\f030',
+  checkboxIndeterminate: '\f02f',
+  checkboxMarkedCircleOutline: '\f000',
+  chevron: '\f03a',
+  crLogo: '\f02e',
+  download: '\f004',
+  swap: '\f038',
+  symbolCircle: '\f034',
+  thumbDownOutline: '\f001',
+  thumbUpOutline: '\f002',
+  trash: '\f036'
 };
 
 export const lineHeights = {
@@ -133,8 +158,6 @@ export const typography = {
     }
   }
 };
-
-export const brandFont = 'Motiva Sans';
 
 export const spacings = {
   smallest: rem('4px'),
@@ -175,8 +198,10 @@ export default {
   brandFont,
   breakpoints,
   colors,
+  fonts,
   fontSizes,
   fontWeights,
+  icons,
   iconColors,
   iconFontPrefix: 'ar',
   lineHeights,
