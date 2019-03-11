@@ -1,0 +1,371 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select /> renders a large Select correctly 1`] = `
+.emotion-4 {
+  margin-bottom: 1rem;
+}
+
+.emotion-2 {
+  position: relative;
+}
+
+.emotion-2:after {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  color: #989A9C;
+  content: '\\f037';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Arbor;
+  font-size: 1rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+}
+
+.emotion-0 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-0:disabled {
+  background: #F2F2F2;
+}
+
+<div
+  className="emotion-4 emotion-5"
+>
+  
+  <div
+    className="emotion-2 emotion-3"
+  >
+    <select
+      className="emotion-0 emotion-1"
+      id="example"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`<Select /> renders an Select correctly 1`] = `
+.emotion-4 {
+  margin-bottom: 1rem;
+}
+
+.emotion-2 {
+  position: relative;
+}
+
+.emotion-2:after {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  color: #989A9C;
+  content: '\\f037';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Arbor;
+  font-size: 1rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+}
+
+.emotion-0 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-0:disabled {
+  background: #F2F2F2;
+}
+
+<div
+  className="emotion-4 emotion-5"
+>
+  
+  <div
+    className="emotion-2 emotion-3"
+  >
+    <select
+      className="emotion-0 emotion-1"
+      id="example"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`<Select /> renders an Select with a caption correctly 1`] = `
+.emotion-2 {
+  position: relative;
+}
+
+.emotion-2:after {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  color: #989A9C;
+  content: '\\f037';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Arbor;
+  font-size: 1rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+}
+
+.emotion-0 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-0:disabled {
+  background: #F2F2F2;
+}
+
+.emotion-6 {
+  margin-bottom: 0.5rem;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: #EE2200;
+  line-height: 1.25;
+  font-size: 0.75rem;
+}
+
+<div
+  className="emotion-6 emotion-7"
+>
+  
+  <div
+    className="emotion-2 emotion-3"
+  >
+    <select
+      className="emotion-0 emotion-1"
+      id="example"
+    />
+  </div>
+  <span
+    className="emotion-4 emotion-5"
+    color="red"
+  >
+    I am a caption
+  </span>
+</div>
+`;
+
+exports[`<Select /> renders an Select with a label correctly 1`] = `
+.emotion-6 {
+  margin-bottom: 1rem;
+}
+
+.emotion-4 {
+  position: relative;
+}
+
+.emotion-4:after {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  color: #989A9C;
+  content: '\\f037';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Arbor;
+  font-size: 1rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+}
+
+.emotion-2 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-2:disabled {
+  background: #F2F2F2;
+}
+
+.emotion-0 {
+  color: #5B5D61;
+  display: block;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+<div
+  className="emotion-6 emotion-7"
+>
+  <label
+    className="emotion-0 emotion-1"
+    htmlFor="example"
+  >
+    My Select
+  </label>
+  <div
+    className="emotion-4 emotion-5"
+  >
+    <select
+      className="emotion-2 emotion-3"
+      id="example"
+    />
+  </div>
+  
+</div>
+`;
