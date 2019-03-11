@@ -106,11 +106,32 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "medium": 500,
           "regular": 400,
         },
+        "fonts": Object {
+          "default": "Motiva Sans",
+          "icon": "Arbor",
+        },
         "iconColors": Object {
           "default": "#989A9C",
           "disabled": "rgba(190,190,192,0.7)",
         },
         "iconFontPrefix": "ar",
+        "icons": Object {
+          "annotation": "039",
+          "calendar": "035",
+          "caret": "037",
+          "chatBubbleOutline": "003",
+          "checkboxChecked": "030",
+          "checkboxIndeterminate": "02f",
+          "checkboxMarkedCircleOutline": "000",
+          "chevron": "03a",
+          "crLogo": "02e",
+          "download": "004",
+          "swap": "038",
+          "symbolCircle": "034",
+          "thumbDownOutline": "001",
+          "thumbUpOutline": "002",
+          "trash": "036",
+        },
         "lineHeights": Object {
           "large": 1.5,
           "regular": 1,
@@ -317,11 +338,32 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "medium": 500,
                 "regular": 400,
               },
+              "fonts": Object {
+                "default": "Motiva Sans",
+                "icon": "Arbor",
+              },
               "iconColors": Object {
                 "default": "#989A9C",
                 "disabled": "rgba(190,190,192,0.7)",
               },
               "iconFontPrefix": "ar",
+              "icons": Object {
+                "annotation": "039",
+                "calendar": "035",
+                "caret": "037",
+                "chatBubbleOutline": "003",
+                "checkboxChecked": "030",
+                "checkboxIndeterminate": "02f",
+                "checkboxMarkedCircleOutline": "000",
+                "chevron": "03a",
+                "crLogo": "02e",
+                "download": "004",
+                "swap": "038",
+                "symbolCircle": "034",
+                "thumbDownOutline": "001",
+                "thumbUpOutline": "002",
+                "trash": "036",
+              },
               "lineHeights": Object {
                 "large": 1.5,
                 "regular": 1,
