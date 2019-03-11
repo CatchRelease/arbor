@@ -12,6 +12,7 @@ const AVAILABLE_ICONS = [
   'checkbox-marked-circle-outline',
   'chevron',
   'cr-logo',
+  'cross',
   'download',
   'symbol-circle',
   'swap',

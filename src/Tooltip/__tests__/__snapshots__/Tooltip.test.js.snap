@@ -125,6 +125,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "checkboxMarkedCircleOutline": "000",
           "chevron": "03a",
           "crLogo": "02e",
+          "cross": "03b",
           "download": "004",
           "swap": "038",
           "symbolCircle": "034",
@@ -357,6 +358,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "checkboxMarkedCircleOutline": "000",
                 "chevron": "03a",
                 "crLogo": "02e",
+                "cross": "03b",
                 "download": "004",
                 "swap": "038",
                 "symbolCircle": "034",
