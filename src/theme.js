@@ -131,6 +131,7 @@ export const icons = {
   checkboxMarkedCircleOutline: '\f000',
   chevron: '\f03a',
   crLogo: '\f02e',
+  cross: '\f03b',
   download: '\f004',
   swap: '\f038',
   symbolCircle: '\f034',
