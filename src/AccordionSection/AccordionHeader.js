@@ -19,6 +19,7 @@ const AccordionHeader = ({ isOpen, note, onClick, panelId, text }) => (
     alignItems="center"
     justifyContent="space-between"
     px="regular"
+    borderBottom="default"
   >
     <StyledAccordionHeading fontWeight="medium" mr="regular">
       <StyledAccordionHeadingButton
