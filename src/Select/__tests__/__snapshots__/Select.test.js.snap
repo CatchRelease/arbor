@@ -43,6 +43,7 @@ exports[`<Select /> renders a large Select correctly 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: #FFFFFF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -69,6 +70,11 @@ exports[`<Select /> renders a large Select correctly 1`] = `
 
 .emotion-0:disabled {
   background: #F2F2F2;
+}
+
+.emotion-0:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
 
 <div
@@ -129,6 +135,7 @@ exports[`<Select /> renders an Select correctly 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: #FFFFFF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -155,6 +162,11 @@ exports[`<Select /> renders an Select correctly 1`] = `
 
 .emotion-0:disabled {
   background: #F2F2F2;
+}
+
+.emotion-0:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
 
 <div
@@ -211,6 +223,7 @@ exports[`<Select /> renders an Select with a caption correctly 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: #FFFFFF;
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -237,6 +250,11 @@ exports[`<Select /> renders an Select with a caption correctly 1`] = `
 
 .emotion-0:disabled {
   background: #F2F2F2;
+}
+
+.emotion-0:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
 
 .emotion-6 {
@@ -313,6 +331,7 @@ exports[`<Select /> renders an Select with a label correctly 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background: #FFFFFF;
 }
 
 .emotion-2::-webkit-input-placeholder {
@@ -339,6 +358,11 @@ exports[`<Select /> renders an Select with a label correctly 1`] = `
 
 .emotion-2:disabled {
   background: #F2F2F2;
+}
+
+.emotion-2:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
 
 .emotion-0 {
