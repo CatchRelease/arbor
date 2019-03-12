@@ -181,6 +181,10 @@ export const borderWidth = {
   large: '4px'
 };
 
+const borders = {
+  default: `${borderWidth.small} solid ${borderColors.default}`
+};
+
 const blurryShadowColor = transparentize(0.7, greys.grey90);
 const borderShadowColor = transparentize(0.53, greys.grey90);
 export const boxShadows = {
@@ -195,6 +199,7 @@ export default {
   backgroundColors,
   borderColors,
   borderWidth,
+  borders,
   brandColors,
   brandFont,
   breakpoints,

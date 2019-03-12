@@ -22,6 +22,9 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "medium": "2px",
           "small": "1px",
         },
+        "borders": Object {
+          "default": "1px solid #E0E1E2",
+        },
         "brandColors": Object {
           "dark": "#00533E",
           "darkest": "#001C15",
@@ -254,6 +257,9 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "large": "4px",
                 "medium": "2px",
                 "small": "1px",
+              },
+              "borders": Object {
+                "default": "1px solid #E0E1E2",
               },
               "brandColors": Object {
                 "dark": "#00533E",

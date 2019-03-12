@@ -3,6 +3,7 @@
 exports[`<AccordionSection /> render accordion is closed renders with the panel hidden 1`] = `
 .emotion-6 {
   box-sizing: border-box;
+  border-bottom: 1px solid #E0E1E2;
   padding-left: 1rem;
   padding-right: 1rem;
   display: -webkit-box;
@@ -18,7 +19,6 @@ exports[`<AccordionSection /> render accordion is closed renders with the panel 
   -ms-flex-pack: justify;
   justify-content: space-between;
   background: #F2F2F2;
-  border-bottom: 1px solid #E0E1E2;
 }
 
 section:last-child .emotion-6 {
@@ -87,8 +87,8 @@ section:last-child .emotion-6 {
 
 .emotion-8 {
   box-sizing: border-box;
-  display: none;
   border-bottom: 1px solid #E0E1E2;
+  display: none;
 }
 
 section:last-child .emotion-8 {
@@ -135,6 +135,7 @@ section:last-child .emotion-8 {
 exports[`<AccordionSection /> render accordion is open renders with the panel visible 1`] = `
 .emotion-6 {
   box-sizing: border-box;
+  border-bottom: 1px solid #E0E1E2;
   padding-left: 1rem;
   padding-right: 1rem;
   display: -webkit-box;
@@ -150,7 +151,6 @@ exports[`<AccordionSection /> render accordion is open renders with the panel vi
   -ms-flex-pack: justify;
   justify-content: space-between;
   background: #F2F2F2;
-  border-bottom: 1px solid #E0E1E2;
 }
 
 section:last-child .emotion-6 {
@@ -216,8 +216,8 @@ section:last-child .emotion-6 {
 
 .emotion-8 {
   box-sizing: border-box;
-  display: block;
   border-bottom: 1px solid #E0E1E2;
+  display: block;
 }
 
 section:last-child .emotion-8 {
