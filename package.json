@@ -21,7 +21,7 @@
   "license": "MIT",
   "repository": "git@github.com:CatchRelease/arbor.git",
   "engines": {
-    "node": "~10"
+    "node": ">=8.0.0 <11.11.0"
   },
   "dependencies": {
     "@emotion/core": "^10.0.0",
