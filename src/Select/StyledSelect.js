@@ -7,6 +7,12 @@ import StyledInput from '../Input/StyledInput';
 
 const StyledSelectInput = styled(createWithComponent(StyledInput, 'select'))`
   appearance: none;
+  background: ${props => props.theme.colors.background.white};
+
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
 `;
 
 const StyledSelectWrapper = styled.div`

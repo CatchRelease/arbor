@@ -6,9 +6,7 @@ import { Select } from '../src';
 const options = (
   <>
     <option value="hellYes">Hell Yes</option>
-    <option selected value="yes">
-      Yes
-    </option>
+    <option value="yes">Yes</option>
     <option value="maybe">maybe</option>
     <option value="no">No</option>
     <option value="hellNo">Hell No</option>
@@ -18,27 +16,30 @@ const options = (
 storiesOf('Select', module).add('default', () => (
   <form>
     <Select
-      label="Example Select"
       caption="My select caption"
+      defaultValue="yes"
       id="example-select"
-      placeholder="More text than a standard input"
+      label="Example Select"
       name="exmaple-select"
+      placeholder="More text than a standard input"
     >
       {options}
     </Select>
     <Select
-      label="Disabled Select"
-      id="disabled-select"
+      defaultValue="yes"
       disabled
+      id="disabled-select"
+      label="Disabled Select"
       name="disabled-select"
     >
       {options}
     </Select>
     <Select
-      large
-      label="Large Select"
-      id="large-select"
       caption="This is a large select"
+      defaultValue="yes"
+      id="large-select"
+      label="Large Select"
+      large
       name="large-select"
       placeholder="Placeholder"
     >
