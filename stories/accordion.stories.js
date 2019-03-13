@@ -10,7 +10,6 @@ import {
   Flex,
   Heading,
   Icon,
-  Pane,
   Text
 } from '../src';
 
@@ -94,7 +93,7 @@ stories.add('default', () => {
               onHeaderClick={onHeaderClick}
               panelId="header-1-controlled"
             >
-              <Pane p="regular">
+              <Box p="regular">
                 <Text mb="regular">
                   You can manually control an accordion by using isOpen and
                   onHeaderClick together.
@@ -107,14 +106,14 @@ stories.add('default', () => {
                   eruditi periculis te. Sed no mazim liber dicunt, aeque viris
                   animal te quo, ius lorem feugiat veritus id.
                 </Text>
-              </Pane>
+              </Box>
             </AccordionSection>
             <AccordionSection
               header={<Box my="small">Header 2: Uncontrolled </Box>}
               headerNote={note}
               panelId="header-2-uncontrolled"
             >
-              <Pane p="regular">
+              <Box p="regular">
                 <Text mb="regular">
                   If you exclude the isOpen property, the accordion state will
                   be automattically managed internally
@@ -127,13 +126,16 @@ stories.add('default', () => {
                   eruditi periculis te. Sed no mazim liber dicunt, aeque viris
                   animal te quo, ius lorem feugiat veritus id.
                 </Text>
-              </Pane>
+              </Box>
             </AccordionSection>
             <AccordionSection
-              header={<Box my="small">Header 3: Uncontrolled</Box>}
+              header={
+                <Box my="small">Header 3: Multiple Sections of Content</Box>
+              }
               panelId="header-3-uncontrolled"
             >
-              <Pane p="regular">
+              <Box p="regular">
+                <Heading.h2>Section 1</Heading.h2>
                 <Text mb="regular">You can exclude the note property</Text>
                 <Text>
                   Lorem ipsum dolor sit amet, an hinc honestatis his, an his
@@ -143,7 +145,20 @@ stories.add('default', () => {
                   eruditi periculis te. Sed no mazim liber dicunt, aeque viris
                   animal te quo, ius lorem feugiat veritus id.
                 </Text>
-              </Pane>
+              </Box>
+
+              <Box p="regular">
+                <Heading.h2>Section 2</Heading.h2>
+
+                <Text>
+                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                  tota aperiam intellegebat. Mel delenit delectus et, veniam
+                  soleat pericula vix et. Aeque accumsan quo ex, albucius
+                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
+                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
+                  animal te quo, ius lorem feugiat veritus id.
+                </Text>
+              </Box>
             </AccordionSection>
           </Card>
         </Flex>
@@ -161,7 +176,7 @@ stories.add('default', () => {
               onHeaderClick={onHeaderClick}
               panelId="header-1-controlled"
             >
-              <Pane p="regular">
+              <Box p="regular">
                 <Text mb="regular">
                   You can manually control an accordion by using isOpen and
                   onHeaderClick together.
@@ -174,7 +189,7 @@ stories.add('default', () => {
                   eruditi periculis te. Sed no mazim liber dicunt, aeque viris
                   animal te quo, ius lorem feugiat veritus id.
                 </Text>
-              </Pane>
+              </Box>
             </AccordionSection>
           </Card>
         </Flex>
@@ -192,7 +207,7 @@ stories.add('default', () => {
               onHeaderClick={onHeaderClick}
               panelId="header-1-controlled"
             >
-              <Pane p="regular">
+              <Box p="regular">
                 <Text mb="regular">
                   You can manually control an accordion by using isOpen and
                   onHeaderClick together.
@@ -205,7 +220,7 @@ stories.add('default', () => {
                   eruditi periculis te. Sed no mazim liber dicunt, aeque viris
                   animal te quo, ius lorem feugiat veritus id.
                 </Text>
-              </Pane>
+              </Box>
             </AccordionSection>
           </Card>
         </Flex>
@@ -223,7 +238,7 @@ stories.add('default', () => {
               onHeaderClick={onHeaderClick}
               panelId="header-1-controlled"
             >
-              <Pane p="regular">
+              <Box p="regular">
                 <Text mb="regular">
                   You can manually control an accordion by using isOpen and
                   onHeaderClick together.
@@ -236,7 +251,7 @@ stories.add('default', () => {
                   eruditi periculis te. Sed no mazim liber dicunt, aeque viris
                   animal te quo, ius lorem feugiat veritus id.
                 </Text>
-              </Pane>
+              </Box>
             </AccordionSection>
           </Card>
         </Flex>
