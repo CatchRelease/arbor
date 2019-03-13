@@ -1,6 +1,11 @@
-import createWithComponent from '../utils/createWithComponent';
+import React from 'react';
+
 import Grid from '../Grid';
 
-const StyledHeader = createWithComponent(Grid, 'header');
+const StyledHeader = props => <Grid {...props} />;
+
+StyledHeader.defaultProps = {
+  as: 'header'
+};
 
 export default StyledHeader;

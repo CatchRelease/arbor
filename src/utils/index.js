@@ -1,2 +1,1 @@
-export { default as colorForString } from './colorForString';
-export { default as createWithComponent } from './createWithComponent';
+export { default as colorForString } from './colorForString'; // eslint-disable-line import/prefer-default-export

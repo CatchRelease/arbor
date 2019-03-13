@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AccordionSection /> render accordion is closed renders with the panel hidden 1`] = `
-.emotion-6 {
+.emotion-7 {
   box-sizing: border-box;
   border-bottom: 1px solid #E0E1E2;
   padding-left: 1rem;
@@ -21,24 +21,24 @@ exports[`<AccordionSection /> render accordion is closed renders with the panel 
   background: #F2F2F2;
 }
 
-section:last-child .emotion-6 {
+section:last-child .emotion-7 {
   border-bottom: none;
 }
 
-.emotion-6 .button--minimal:last-of-type {
+.emotion-7 .button--minimal:last-of-type {
   margin-right: -0.25rem;
 }
 
-.emotion-6 .button--minimal:last-of-type +:not(object) {
+.emotion-7 .button--minimal:last-of-type +:not(object) {
   margin-left: 0.25rem;
 }
 
-.emotion-6 button + .button--secondary,
-.emotion-6 button + .button--primary {
+.emotion-7 button + .button--secondary,
+.emotion-7 button + .button--primary {
   margin-left: 0.5rem;
 }
 
-.emotion-4 {
+.emotion-5 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -85,23 +85,23 @@ section:last-child .emotion-6 {
   transform: rotate(270deg);
 }
 
-.emotion-8 {
+.emotion-9 {
   box-sizing: border-box;
   border-bottom: 1px solid #E0E1E2;
   display: none;
 }
 
-section:last-child .emotion-8 {
+section:last-child .emotion-9 {
   border-bottom: none;
   border-top: 1px solid #E0E1E2;
 }
 
 <section>
   <header
-    className="emotion-6 emotion-7"
+    className="emotion-7 emotion-8"
   >
     <h1
-      className="emotion-4 emotion-5"
+      className="emotion-4 emotion-5 emotion-6"
       color="text.dark"
       fontSize="size4"
       fontWeight="medium"
@@ -121,7 +121,7 @@ section:last-child .emotion-8 {
     </h1>
   </header>
   <div
-    className="emotion-8 emotion-9"
+    className="emotion-9 emotion-10"
     display="none"
     id="my-accordion-1"
   >
@@ -133,7 +133,7 @@ section:last-child .emotion-8 {
 `;
 
 exports[`<AccordionSection /> render accordion is open renders with the panel visible 1`] = `
-.emotion-6 {
+.emotion-7 {
   box-sizing: border-box;
   border-bottom: 1px solid #E0E1E2;
   padding-left: 1rem;
@@ -153,24 +153,24 @@ exports[`<AccordionSection /> render accordion is open renders with the panel vi
   background: #F2F2F2;
 }
 
-section:last-child .emotion-6 {
+section:last-child .emotion-7 {
   border-bottom: none;
 }
 
-.emotion-6 .button--minimal:last-of-type {
+.emotion-7 .button--minimal:last-of-type {
   margin-right: -0.25rem;
 }
 
-.emotion-6 .button--minimal:last-of-type +:not(object) {
+.emotion-7 .button--minimal:last-of-type +:not(object) {
   margin-left: 0.25rem;
 }
 
-.emotion-6 button + .button--secondary,
-.emotion-6 button + .button--primary {
+.emotion-7 button + .button--secondary,
+.emotion-7 button + .button--primary {
   margin-left: 0.5rem;
 }
 
-.emotion-4 {
+.emotion-5 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -214,23 +214,23 @@ section:last-child .emotion-6 {
   margin-right: 0.75rem;
 }
 
-.emotion-8 {
+.emotion-9 {
   box-sizing: border-box;
   border-bottom: 1px solid #E0E1E2;
   display: block;
 }
 
-section:last-child .emotion-8 {
+section:last-child .emotion-9 {
   border-bottom: none;
   border-top: 1px solid #E0E1E2;
 }
 
 <section>
   <header
-    className="emotion-6 emotion-7"
+    className="emotion-7 emotion-8"
   >
     <h1
-      className="emotion-4 emotion-5"
+      className="emotion-4 emotion-5 emotion-6"
       color="text.dark"
       fontSize="size4"
       fontWeight="medium"
@@ -250,7 +250,7 @@ section:last-child .emotion-8 {
     </h1>
   </header>
   <div
-    className="emotion-8 emotion-9"
+    className="emotion-9 emotion-10"
     display="block"
     id="my-accordion-1"
   >

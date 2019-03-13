@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
-import { createWithComponent } from '../utils';
 import StyledInput from '../Input/StyledInput';
 
-const StyledSelectInput = styled(createWithComponent(StyledInput, 'select'))`
+const StyledSelectInput = styled(StyledInput)`
   appearance: none;
   background: ${props => props.theme.colors.background.white};
 
@@ -14,6 +13,10 @@ const StyledSelectInput = styled(createWithComponent(StyledInput, 'select'))`
     text-shadow: 0 0 0 #000;
   }
 `;
+
+StyledSelectInput.defaultProps = {
+  as: 'select'
+};
 
 const StyledSelectWrapper = styled.div`
   position: relative;

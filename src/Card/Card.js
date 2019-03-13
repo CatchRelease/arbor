@@ -1,10 +1,11 @@
-import Pane from '../Pane';
-import createWithComponent from '../utils/createWithComponent';
+import React from 'react';
 
-const Card = createWithComponent(Pane, 'div', {
-  defaultProps: {
-    borderRadius: 'large'
-  }
-});
+import Pane from '../Pane';
+
+const Card = props => <Pane {...props} />;
+
+Card.defaultProps = {
+  borderRadius: 'large'
+};
 
 export default Card;

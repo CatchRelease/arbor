@@ -44,6 +44,7 @@ StyledInput.propTypes = {
 };
 
 StyledInput.defaultProps = {
+  as: 'input',
   large: false
 };
 

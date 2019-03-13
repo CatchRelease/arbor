@@ -11,21 +11,8 @@ import {
 } from 'styled-system';
 
 import Box from '../Box';
-import createWithComponent from '../utils/createWithComponent';
 
-const Grid = styled(
-  createWithComponent(Box, 'div', {
-    propTypes: {
-      ...alignContent.propTypes,
-      ...gridColumnGap.propTypes,
-      ...gridGap.propTypes,
-      ...gridTemplateColumns.propTypes,
-      ...gridRowGap.propTypes,
-      ...justifyContent.propTypes,
-      ...justifyItems.propTypes
-    }
-  })
-)`
+const Grid = styled(Box)`
   display: grid;
   ${alignContent};
   ${alignItems};
@@ -36,5 +23,15 @@ const Grid = styled(
   ${justifyContent};
   ${justifyItems};
 `;
+
+Grid.propTypes = {
+  ...alignContent.propTypes,
+  ...gridColumnGap.propTypes,
+  ...gridGap.propTypes,
+  ...gridTemplateColumns.propTypes,
+  ...gridRowGap.propTypes,
+  ...justifyContent.propTypes,
+  ...justifyItems.propTypes
+};
 
 export default Grid;

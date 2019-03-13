@@ -16,8 +16,6 @@ import {
   textAlign
 } from 'styled-system';
 
-import createWithComponent from '../utils/createWithComponent';
-
 const Box = styled.div`
   box-sizing: border-box;
   ${borders};
@@ -52,7 +50,5 @@ Box.propTypes = {
   ...textAlign.propTypes,
   ...width.propTypes
 };
-
-Box.section = createWithComponent(Box, 'section');
 
 export default Box;

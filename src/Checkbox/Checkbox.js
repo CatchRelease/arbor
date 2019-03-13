@@ -47,13 +47,14 @@ const Checkbox = ({
       />
     )}
 
-    <Text.span
+    <Text
+      as="span"
       fontSize="size4"
       color={disabled ? 'text.disabled' : 'text.default'}
       ml={icon ? 'smallest' : 'smaller'}
     >
       {label}
-    </Text.span>
+    </Text>
   </CheckboxLabel>
 );
 

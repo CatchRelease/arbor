@@ -4,7 +4,7 @@ module.exports = {
   },
   extends: ['airbnb', 'plugin:prettier/recommended'],
   parser: 'babel-eslint',
-  plugins: ['arbor', 'jest'],
+  plugins: ['jest'],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'import/no-extraneous-dependencies': [
@@ -19,8 +19,7 @@ module.exports = {
         ]
       }
     ],
-    'react/forbid-foreign-prop-types': false,
-    'arbor/use-create-with-component': 'error'
+    'react/forbid-foreign-prop-types': false
   },
   overrides: [
     {
