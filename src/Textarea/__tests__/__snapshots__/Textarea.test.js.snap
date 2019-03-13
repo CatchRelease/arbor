@@ -173,7 +173,7 @@ exports[`<Textarea /> renders an Textarea with a caption correctly 1`] = `
     id="example"
   />
   <span
-    className="emotion-2 emotion-1"
+    className="emotion-2 emotion-3"
     color="red"
   >
     I am a caption

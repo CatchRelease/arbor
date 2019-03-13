@@ -1,26 +1,22 @@
 /** @jsx jsx */
+import styled from '@emotion/styled';
 import { css, jsx } from '@emotion/core';
 import { storiesOf } from '@storybook/react';
 
-import { createWithComponent } from '../src/utils';
 import { Box, Card, Grid, Heading, Paragraph, Text } from '../src';
 
 const stories = storiesOf('Cards', module);
 
-const ExampleCard = createWithComponent(Card, 'div', {
-  defaultProps: {
-    height: '160px',
-    alignContent: 'center',
-    justifyContent: 'center'
-  }
-});
+const ExampleCard = styled(Card)`
+  height: 160px;
+  align-content: center;
+  justify-content: center;
+`;
 
-const Description = createWithComponent(Text, 'p', {
-  defaultProps: {
-    fontSize: 'size1',
-    textAlign: 'center'
-  }
-});
+const Description = styled(Text)`
+  font-size: ${props => props.theme.fontSizes.size1};
+  text-align: center;
+`;
 
 stories.add('default', () => (
   <Grid

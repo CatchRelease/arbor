@@ -1,3 +1,4 @@
+import React from 'react';
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import {
@@ -11,8 +12,6 @@ import {
   space,
   textAlign
 } from 'styled-system';
-
-import createWithComponent from '../utils/createWithComponent';
 
 const baseStyles = ({ theme }) => css`
   font-family: ${theme.brandFont};
@@ -48,7 +47,7 @@ Text.defaultProps = {
   color: 'text.default'
 };
 
-Text.p = createWithComponent(Text, 'p');
-Text.span = createWithComponent(Text, 'span');
+// Deprecated -- use <Text as="span"></Text>
+Text.span = props => <Text as="span" {...props} />;
 
 export default Text;

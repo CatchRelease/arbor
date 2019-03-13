@@ -10,9 +10,9 @@ const FormField = ({ caption, children, label, id }) => (
     {label && <Label htmlFor={id}>{label}</Label>}
     {children}
     {caption && (
-      <Paragraph.span variant="tiny" color="red">
+      <Paragraph as="span" variant="tiny" color="red">
         {caption}
-      </Paragraph.span>
+      </Paragraph>
     )}
   </StyledFormField>
 );

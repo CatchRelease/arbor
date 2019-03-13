@@ -1,9 +1,8 @@
 import styled from '@emotion/styled';
 
-import createWithComponent from '../utils/createWithComponent';
 import Flex from '../Flex';
 
-const StyledHeader = styled(createWithComponent(Flex, 'header'))`
+const StyledHeader = styled(Flex)`
   background: ${props => props.theme.colors.background.default};
 
   section:last-child & {
@@ -23,5 +22,9 @@ const StyledHeader = styled(createWithComponent(Flex, 'header'))`
     margin-left: ${props => props.theme.space.smaller};
   }
 `;
+
+StyledHeader.defaultProps = {
+  as: 'header'
+};
 
 export default StyledHeader;

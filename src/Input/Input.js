@@ -18,6 +18,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
+  as: 'input',
   caption: '',
   label: '',
   type: 'text'

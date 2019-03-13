@@ -1,24 +1,20 @@
 /** @jsx jsx */
+import styled from '@emotion/styled';
 import { css, jsx } from '@emotion/core';
 import { storiesOf } from '@storybook/react';
 
-import { createWithComponent } from '../src/utils';
 import { Grid, Heading, Pane, Text } from '../src';
 
-const ExamplePane = createWithComponent(Pane, 'div', {
-  defaultProps: {
-    height: '160px',
-    alignContent: 'center',
-    justifyContent: 'center'
-  }
-});
+const ExamplePane = styled(Pane)`
+  height: 160px;
+  align-content: center;
+  justify-content: center;
+`;
 
-const Description = createWithComponent(Text, 'p', {
-  defaultProps: {
-    fontSize: 'size1',
-    textAlign: 'center'
-  }
-});
+const Description = styled(Text)`
+  font-size: ${props => props.theme.fontSizes.size1};
+  text-align: center;
+`;
 
 const stories = storiesOf('Panes', module);
 

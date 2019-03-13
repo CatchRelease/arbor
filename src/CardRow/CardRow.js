@@ -1,14 +1,15 @@
-import createWithComponent from '../utils/createWithComponent';
+import React from 'react';
+
 import Flex from '../Flex';
 
-const CardRow = createWithComponent(Flex, 'div', {
-  defaultProps: {
-    px: 'regular',
-    py: 'smallest',
-    my: 'smaller',
-    alignItems: 'center',
-    justifyContent: 'space-between'
-  }
-});
+const CardRow = props => <Flex {...props} />;
+
+CardRow.defaultProps = {
+  px: 'regular',
+  py: 'smallest',
+  my: 'smaller',
+  alignItems: 'center',
+  justifyContent: 'space-between'
+};
 
 export default CardRow;

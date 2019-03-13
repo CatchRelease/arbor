@@ -1,5 +1,5 @@
 import React from 'react';
-import stories from './card-and-pane.stories';
+import stories from './card.stories';
 
 import {
   Box,

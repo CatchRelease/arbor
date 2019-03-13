@@ -1,9 +1,8 @@
 import styled from '@emotion/styled';
 
 import Box from '../Box';
-import createWithComponent from '../utils/createWithComponent';
 
-const CheckboxInput = styled(createWithComponent(Box, 'input'))`
+const CheckboxInput = styled(Box)`
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   opacity: 0;
@@ -13,5 +12,9 @@ const CheckboxInput = styled(createWithComponent(Box, 'input'))`
   white-space: nowrap;
   width: 1px;
 `;
+
+CheckboxInput.defaultProps = {
+  as: 'input'
+};
 
 export default CheckboxInput;

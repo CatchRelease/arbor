@@ -81,13 +81,19 @@ class MenuItem extends React.PureComponent {
               color={baseColor}
               fontSize="16px"
             />
-            <Text.span minWidth={MIN_WIDTH} fontSize="size4" overflow="hidden">
+            <Text
+              as="span"
+              minWidth={MIN_WIDTH}
+              fontSize="size4"
+              overflow="hidden"
+            >
               {label}
-            </Text.span>
+            </Text>
           </Flex>
           {secondaryLabel && (
             <Flex pl={PADDING} overflow="hidden" flex="0 1 auto">
-              <Text.span
+              <Text
+                as="span"
                 fontSize="size3"
                 css={theme => ({
                   // Put primary and secondary labels on the same baseline
@@ -97,7 +103,7 @@ class MenuItem extends React.PureComponent {
                 maxWidth="100%"
               >
                 {secondaryLabel}
-              </Text.span>
+              </Text>
             </Flex>
           )}
         </Flex>
