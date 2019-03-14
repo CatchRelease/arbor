@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactModal from 'react-modal';
 import { storiesOf } from '@storybook/react';
 import { number, text, withKnobs } from '@storybook/addon-knobs';
@@ -13,6 +14,16 @@ class ModalStory extends React.Component {
     modalIsOpen: true
   };
 
+  get content() {
+    const { numberOfLines } = this.props;
+
+    const content = [];
+    for (let i = 0; i < numberOfLines; i += 1) {
+      content.push(<div key={`line-${i}`}>Modal content line of text</div>);
+    }
+    return content;
+  }
+
   closeModal = () => {
     this.setState({ modalIsOpen: false });
   };
@@ -21,16 +32,9 @@ class ModalStory extends React.Component {
     this.setState({ modalIsOpen: true });
   };
 
-  getContent = lines => {
-    const content = [];
-    for (let i = 0; i < lines; i += 1) {
-      content.push(<div>Modal content line of text</div>);
-    }
-    return content;
-  };
-
   render() {
     const { modalIsOpen } = this.state;
+    const { maxHeight, width } = this.props;
 
     return (
       <Box {...this.props}>
@@ -42,9 +46,9 @@ class ModalStory extends React.Component {
             as="section"
             boxShadow="elevation2"
             gridTemplateRows="auto 1fr auto"
-            maxHeight={text('Max Height', '100%')}
+            maxHeight={maxHeight}
             overflow="hidden"
-            width={text('Modal Width', '500px')}
+            width={width}
           >
             <Grid
               alignItems="center"
@@ -63,7 +67,7 @@ class ModalStory extends React.Component {
               />
             </Grid>
             <Box overflow="auto" p="regular">
-              {this.getContent(number('Lines of Content', 100))}
+              {this.content}
             </Box>
             <Grid
               alignItems="center"
@@ -86,6 +90,21 @@ class ModalStory extends React.Component {
   }
 }
 
+ModalStory.propTypes = {
+  maxHeight: PropTypes.string.isRequired,
+  numberOfLines: PropTypes.number.isRequired,
+  width: PropTypes.string.isRequired
+};
+
 const stories = storiesOf('Modal', module);
 stories.addDecorator(withKnobs);
-stories.add('default', () => <ModalStory p="large">Foo</ModalStory>);
+stories.add('default', () => (
+  <ModalStory
+    p="large"
+    numberOfLines={number('Lines of Content', 100)}
+    maxHeight={text('Max Height', '100%')}
+    width={text('Modal Width', '500px')}
+  >
+    Foo
+  </ModalStory>
+));
