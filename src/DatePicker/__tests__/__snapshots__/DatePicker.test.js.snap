@@ -160,6 +160,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
       className="DayPicker-NavBar emotion-12 emotion-13"
     >
       <button
+        aria-label="Previous Month"
         className="button--minimal emotion-2 emotion-3"
         disabled={false}
         onClick={[Function]}
@@ -180,6 +181,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
         />
       </div>
       <button
+        aria-label="Next Month"
         className="button--minimal emotion-2 emotion-3"
         disabled={false}
         onClick={[Function]}
