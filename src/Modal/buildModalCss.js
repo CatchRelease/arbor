@@ -23,4 +23,16 @@ const baseOverlayCss = theme => css`
   top: 0;
 `;
 
-export { baseModalCss, baseOverlayCss };
+const buildModalCss = ({ theme, overlayCss, modalCss }) => css`
+  .ArborModalOverlay {
+    ${baseOverlayCss(theme)};
+    ${typeof overlayCss === 'function' ? overlayCss(theme) : overlayCss};
+  }
+
+  .ArborModal {
+    ${baseModalCss(theme)};
+    ${typeof modalCss === 'function' ? modalCss(theme) : modalCss};
+  }
+`;
+
+export default buildModalCss;
