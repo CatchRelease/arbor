@@ -34,27 +34,27 @@ stories.add('defaul', () => (
       Panes
     </Heading.h2>
     <ExamplePane>
-      <Heading.h6>Pane / Elevation 0</Heading.h6>
+      <Heading.h6 as="h3">Pane / Elevation 0</Heading.h6>
       <Description>Flat Panes</Description>
     </ExamplePane>
 
     <ExamplePane boxShadow="elevation1">
-      <Heading.h6>Pane / Elevation 1</Heading.h6>
+      <Heading.h6 as="h3">Pane / Elevation 1</Heading.h6>
       <Description>Floating Panes</Description>
     </ExamplePane>
 
     <ExamplePane boxShadow="elevation2">
-      <Heading.h6>Pane / Elevation 2</Heading.h6>
+      <Heading.h6 as="h3">Pane / Elevation 2</Heading.h6>
       <Description>Top Bar</Description>
     </ExamplePane>
 
     <ExamplePane boxShadow="elevation3">
-      <Heading.h6>Pane / Elevation 3</Heading.h6>
+      <Heading.h6 as="h3">Pane / Elevation 3</Heading.h6>
       <Description>Side Sheet</Description>
     </ExamplePane>
 
     <ExamplePane boxShadow="elevation4">
-      <Heading.h6>Pane / Elevation 4</Heading.h6>
+      <Heading.h6 as="h3">Pane / Elevation 4</Heading.h6>
       <Description>Unused</Description>
     </ExamplePane>
   </Grid>
