@@ -59,7 +59,7 @@ class MenuItem extends React.PureComponent {
           baseColor,
           selected,
           focused,
-          role: 'Menuitem',
+          role: 'option',
           'aria-selected': selected,
           alignItems: 'center',
           height: '40px',
