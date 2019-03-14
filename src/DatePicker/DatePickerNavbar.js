@@ -13,6 +13,7 @@ const DatePickerNavbar = ({ onPreviousClick, onNextClick, className }) => (
       onClick={() => onPreviousClick()}
       size="small"
       variant="minimal"
+      aria-label="Previous Month"
     />
     <Box mr="small" ml="small">
       <Icon color="icon.default" fontSize="size5" name="symbol-circle" />
@@ -22,6 +23,7 @@ const DatePickerNavbar = ({ onPreviousClick, onNextClick, className }) => (
       onClick={() => onNextClick()}
       size="small"
       variant="minimal"
+      aria-label="Next Month"
     />
   </Flex>
 );
