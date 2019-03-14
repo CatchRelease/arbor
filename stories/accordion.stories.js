@@ -47,7 +47,12 @@ stories.add('default', () => {
       <Button variant="minimal" size={sizeSelect} iconStart={annotationIcon}>
         Message
       </Button>
-      <Button variant="minimal" size={sizeSelect} iconStart={trashIcon} />
+      <Button
+        variant="minimal"
+        size={sizeSelect}
+        iconStart={trashIcon}
+        aria-label="Delete"
+      />
     </Box>
   );
 
@@ -174,7 +179,7 @@ stories.add('default', () => {
               headerNote={noteWithButtons}
               isOpen={boolean('isOpen', isOpen)}
               onHeaderClick={onHeaderClick}
-              panelId="header-1-controlled"
+              panelId="minimal-button-notes-panel-1"
             >
               <Box p="regular">
                 <Text mb="regular">
@@ -205,7 +210,7 @@ stories.add('default', () => {
               headerNote={noteWithPrimaryButtons}
               isOpen={boolean('isOpen', isOpen)}
               onHeaderClick={onHeaderClick}
-              panelId="header-1-controlled"
+              panelId="primary-buttons-panel-1"
             >
               <Box p="regular">
                 <Text mb="regular">
@@ -236,7 +241,7 @@ stories.add('default', () => {
               headerNote={noteWithSecondaryButtons}
               isOpen={boolean('isOpen', isOpen)}
               onHeaderClick={onHeaderClick}
-              panelId="header-1-controlled"
+              panelId="secondary-buttons-panel-1"
             >
               <Box p="regular">
                 <Text mb="regular">

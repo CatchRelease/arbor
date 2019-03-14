@@ -6,11 +6,11 @@ import { Box, Link } from '../src';
 const stories = storiesOf('Links', module);
 
 stories.add('default', () => (
-  <Box m="regular">
+  <Box m="regular" id="skip">
     <Link
       fontSize="size2"
       m="regular"
-      href="#test"
+      href="#default"
       onClick={e => e.preventDefault()}
     >
       Default Link
@@ -19,7 +19,7 @@ stories.add('default', () => (
       fontSize="size2"
       m="regular"
       variant="muted"
-      href="#test"
+      href="#muted"
       onClick={e => e.preventDefault()}
     >
       Muted Link

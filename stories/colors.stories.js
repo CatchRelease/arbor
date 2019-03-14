@@ -44,10 +44,12 @@ const SwatchCollection = ({ title, pallete }) => (
             justifyContent="center"
             boxShadow="elevation3"
           >
-            <Heading.h3 color={getBrandedReadableColor(hex)}>{hex}</Heading.h3>
+            <Heading.h3 as="h2" color={getBrandedReadableColor(hex)}>
+              {hex}
+            </Heading.h3>
           </Flex>
 
-          <Heading.h4 fontSize="size2" color="grey70" mt="regular">
+          <Heading.h4 as="h3" fontSize="size2" color="grey70" mt="regular">
             {name}
           </Heading.h4>
         </div>

@@ -39,27 +39,27 @@ stories.add('default', () => (
     </Box>
 
     <ExampleCard>
-      <Heading.h6>Card / Elevation 0</Heading.h6>
+      <Heading.h6 as="h3">Card / Elevation 0</Heading.h6>
       <Description>Flat Cards</Description>
     </ExampleCard>
 
     <ExampleCard boxShadow="elevation1">
-      <Heading.h6>Card / Elevation 1</Heading.h6>
+      <Heading.h6 as="h3">Card / Elevation 1</Heading.h6>
       <Description>Floating Cards</Description>
     </ExampleCard>
 
     <ExampleCard boxShadow="elevation2">
-      <Heading.h6>Card / Elevation 2</Heading.h6>
+      <Heading.h6 as="h3">Card / Elevation 2</Heading.h6>
       <Description>Top Bar</Description>
     </ExampleCard>
 
     <ExampleCard boxShadow="elevation3">
-      <Heading.h6>Card / Elevation 3</Heading.h6>
+      <Heading.h6 as="h3">Card / Elevation 3</Heading.h6>
       <Description>Side Sheet</Description>
     </ExampleCard>
 
     <ExampleCard boxShadow="elevation4">
-      <Heading.h6>Card / Elevation 4</Heading.h6>
+      <Heading.h6 as="h3">Card / Elevation 4</Heading.h6>
       <Description>Unused</Description>
     </ExampleCard>
   </Grid>

@@ -25,10 +25,10 @@ stories.add('default', () => (
     <Heading.h1>Sizes</Heading.h1>
 
     <Grid gridGap="10px 138px" gridTemplateColumns="repeat(4, max-content)">
-      <Heading.h5>Small</Heading.h5>
-      <Heading.h5>Medium</Heading.h5>
-      <Heading.h5>Large</Heading.h5>
-      <Heading.h5>Jumbo</Heading.h5>
+      <Heading.h5 as="h2">Small</Heading.h5>
+      <Heading.h5 as="h2">Medium</Heading.h5>
+      <Heading.h5 as="h2">Large</Heading.h5>
+      <Heading.h5 as="h2">Jumbo</Heading.h5>
 
       <Button size="small">Button Label</Button>
       <Button size="medium">Button Label</Button>
@@ -120,6 +120,7 @@ stories.add('Icon button', () => (
             <Button
               iconStart={icon}
               size="small"
+              aria-label="Edit"
               variant={select('Variant', variantOptions)}
             />
           </td>
@@ -130,6 +131,7 @@ stories.add('Icon button', () => (
             <Button
               iconStart={icon}
               size="medium"
+              aria-label="Edit"
               variant={select('Variant', variantOptions)}
             >
               Button Label
@@ -161,6 +163,7 @@ stories.add('Icon button', () => (
             <Button
               iconStart={icon}
               size="medium"
+              aria-label="Edit"
               variant={select('Variant', variantOptions)}
             />
           </td>
@@ -202,6 +205,7 @@ stories.add('Icon button', () => (
             <Button
               iconStart={icon}
               size="large"
+              aria-label="Edit"
               variant={select('Variant', variantOptions)}
             />
           </td>
@@ -243,6 +247,7 @@ stories.add('Icon button', () => (
             <Button
               iconStart={icon}
               size="jumbo"
+              aria-label="Edit"
               variant={select('Variant', variantOptions)}
             />
           </td>
