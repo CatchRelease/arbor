@@ -10,6 +10,7 @@ import {
   space,
   width,
   height,
+  maxHeight,
   maxWidth,
   minWidth,
   overflow,
@@ -25,6 +26,7 @@ const Box = styled.div`
   ${color};
   ${display};
   ${height};
+  ${maxHeight};
   ${maxWidth};
   ${minWidth};
   ${overflow};
@@ -42,6 +44,7 @@ Box.propTypes = {
   ...color.propTypes,
   ...display.propTypes,
   ...height.propTypes,
+  ...maxHeight.propTypes,
   ...maxWidth.propTypes,
   ...minWidth.propTypes,
   ...overflow.propTypes,
