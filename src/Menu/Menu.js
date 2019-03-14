@@ -124,7 +124,7 @@ class Menu extends React.Component {
 
     return (
       <StyledMenu
-        role="menu"
+        role="listbox"
         aria-activedescendant={currentlyFocused}
         flexDirection="column"
       >

@@ -110,7 +110,7 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
   height="40px"
   onClick={[Function]}
   onKeyPress={[Function]}
-  role="Menuitem"
+  role="option"
   selected={false}
 >
   <input
@@ -269,7 +269,7 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   height="40px"
   onClick={[Function]}
   onKeyPress={[Function]}
-  role="Menuitem"
+  role="option"
   selected={true}
 >
   <input
