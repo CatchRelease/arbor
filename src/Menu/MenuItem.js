@@ -151,7 +151,7 @@ MenuItem.propTypes = {
   /**
    * Base color to use for the menu item
    */
-  baseColor: PropTypes.oneOf(['blue', 'grey', 'green', 'red', 'bronze']),
+  baseColor: PropTypes.string,
 
   /**
    * Name of icon to use for the menu item
