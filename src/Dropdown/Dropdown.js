@@ -50,7 +50,13 @@ class Dropdown extends React.Component {
   };
 
   render() {
-    const { children, menuItems, selected, ...props } = this.props;
+    const {
+      children,
+      menuItems,
+      selected,
+      popoverProps,
+      ...props
+    } = this.props;
     const isOpen = this.popover.current && this.popover.current.state.isOpen;
 
     const menu = (
@@ -62,7 +68,7 @@ class Dropdown extends React.Component {
     );
 
     return (
-      <Popover ref={this.popover} content={menu}>
+      <Popover ref={this.popover} content={menu} {...popoverProps}>
         <Button
           {...props}
           ref={this.button}
