@@ -27,11 +27,21 @@ describe('<Dropdown />', () => {
   }
 
   describe('children', () => {
-    it('renders a Popover', () => {
-      const dropdown = mountWithProps();
-      const popover = dropdown.find(Popover);
+    describe('Popover', () => {
+      it('renders properly', () => {
+        const dropdown = mountWithProps();
+        const popover = dropdown.find(Popover);
 
-      expect(popover).toExist();
+        expect(popover).toExist();
+      });
+
+      it('receives popoverProps as props', () => {
+        const dropdown = mountWithProps({ popoverProps: { foo: 'bar' } });
+
+        expect(dropdown.find(Popover)).toHaveProp({
+          foo: 'bar'
+        });
+      });
     });
 
     describe('Menu', () => {
