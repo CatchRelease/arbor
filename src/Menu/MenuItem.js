@@ -45,6 +45,7 @@ class MenuItem extends React.PureComponent {
     const {
       selected,
       baseColor,
+      iconName,
       id,
       label,
       secondaryLabel,
@@ -75,14 +76,17 @@ class MenuItem extends React.PureComponent {
               secondaryLabel ? `calc(100% - ${MIN_WIDTH} - ${PADDING})` : '100%'
             }
           >
-            <Icon
-              name="symbol-circle"
-              mr="small"
-              color={baseColor}
-              fontSize="16px"
-            />
+            {iconName && (
+              <Icon
+                name={iconName}
+                mr="small"
+                color={baseColor}
+                fontSize="16px"
+              />
+            )}
             <Text
               as="span"
+              color="inherit"
               minWidth={MIN_WIDTH}
               fontSize="size4"
               overflow="hidden"
@@ -147,8 +151,12 @@ MenuItem.propTypes = {
   /**
    * Base color to use for the menu item
    */
-  baseColor: PropTypes.oneOf(['blue', 'grey', 'green', 'red', 'bronze'])
-    .isRequired,
+  baseColor: PropTypes.oneOf(['blue', 'grey', 'green', 'red', 'bronze']),
+
+  /**
+   * Name of icon to use for the menu item
+   */
+  iconName: PropTypes.string,
 
   /**
    * HTML ID for the menu item
@@ -162,6 +170,8 @@ MenuItem.propTypes = {
 };
 
 MenuItem.defaultProps = {
+  baseColor: 'text.default',
+  iconName: null,
   secondaryLabel: null,
   selected: false,
   onSelect: () => null,
