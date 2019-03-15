@@ -113,7 +113,7 @@ class Popover extends React.Component {
         place={place}
         tipSize={0.01}
         enterExitTransitionDurationMs={0}
-        {...{ popoverProps }}
+        {...popoverProps}
       >
         {trigger}
       </ReactPopover>

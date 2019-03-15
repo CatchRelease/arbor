@@ -19,9 +19,13 @@ const simulateClick = node => {
 };
 
 describe('<Popover />', () => {
-  const renderPopover = (content = 'Hello World') =>
+  const baseProps = {
+    content: 'Hello World'
+  };
+
+  const renderPopover = props =>
     shallow(
-      <Popover content={content}>
+      <Popover {...{ ...baseProps, ...props }}>
         <button type="button">Trigger</button>
       </Popover>
     );
@@ -30,6 +34,14 @@ describe('<Popover />', () => {
     const popover = renderPopover();
 
     expect(popover.state().isOpen).toBe(false);
+  });
+
+  it('passes props to ReactPopover', () => {
+    const popover = renderPopover({ foo: 'bar' });
+
+    expect(popover).toHaveProp({
+      foo: 'bar'
+    });
   });
 
   describe('outside clicks', () => {
@@ -54,9 +66,9 @@ describe('<Popover />', () => {
 
     describe('clicking inside the popover', () => {
       it('does not cloes the popover', () => {
-        const popover = renderPopover(
-          <button type="submit">Inside the popover</button>
-        );
+        const popover = renderPopover({
+          content: <button type="submit">Inside the popover</button>
+        });
         popover.setState({ isOpen: true });
 
         const wrapper = mount(
@@ -81,9 +93,9 @@ describe('<Popover />', () => {
 
   describe('pressing escape', () => {
     it('closes the popover', () => {
-      const popover = renderPopover(
-        <button type="submit">Inside the popover</button>
-      );
+      const popover = renderPopover({
+        content: <button type="submit">Inside the popover</button>
+      });
       popover.setState({ isOpen: true });
 
       const wrapper = mount(
