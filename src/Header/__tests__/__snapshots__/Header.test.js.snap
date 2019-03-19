@@ -22,6 +22,9 @@ exports[`<Header /> renders with heading and a button 1`] = `
 }
 
 .emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -143,6 +146,9 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 }
 
 .emotion-8 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -203,6 +209,9 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 }
 
 .emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;

@@ -2,6 +2,9 @@
 
 exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] = `
 .emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -76,6 +79,9 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
 }
 
 .emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -144,6 +150,9 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
 }
 
 .emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -212,6 +221,9 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
 }
 
 .emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -274,6 +286,9 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
 
 exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with an iconStart and an iconEdn 1`] = `
 .emotion-6 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -351,6 +366,9 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 .emotion-6 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -422,6 +440,9 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 .emotion-6 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -493,6 +514,9 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 .emotion-6 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -558,6 +582,9 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 
 exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 1`] = `
 .emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -632,6 +659,9 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 .emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -700,6 +730,9 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 .emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -768,6 +801,9 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 .emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -836,6 +872,9 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 }
 
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -895,6 +934,9 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 
 exports[`<Button /> Sizes properly renders a large sized button 1`] = `
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -966,6 +1008,9 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
 }
 
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -1031,6 +1076,9 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
 }
 
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -1096,6 +1144,9 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 }
 
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -1163,6 +1214,9 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 
 exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -1234,6 +1288,9 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
 }
 
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -1309,6 +1366,9 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 }
 
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -1376,6 +1436,9 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 
 exports[`<Button /> Variants properly renders a primary button 1`] = `
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -1447,6 +1510,9 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
 }
 
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
@@ -1522,6 +1588,9 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
 }
 
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
