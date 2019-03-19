@@ -72,6 +72,9 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 .emotion-2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 3px;
   border: 1px solid transparent;
   font-family: Motiva Sans;
