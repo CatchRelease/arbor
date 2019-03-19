@@ -5,13 +5,14 @@ import StyledButton from './StyledButton';
 import ButtonText from './ButtonText';
 
 const Button = React.forwardRef(
-  ({ iconStart, iconEnd, children, variant, ...props }, ref) => (
+  ({ iconStart, iconEnd, children, variant, type, ...props }, ref) => (
     <StyledButton
       {...{
         ...props,
         iconStart,
         iconEnd,
         ref,
+        type,
         variant,
         className: `button--${variant}`
       }}
