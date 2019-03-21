@@ -8,6 +8,9 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
     text="Hello World"
     theme={
       Object {
+        "avatarSizes": Object {
+          "default": "24px",
+        },
         "backgroundColors": Object {
           "default": "#F2F2F2",
           "muted": "#F8F9F9",
@@ -244,6 +247,9 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           py="smallest"
           theme={
             Object {
+              "avatarSizes": Object {
+                "default": "24px",
+              },
               "backgroundColors": Object {
                 "default": "#F2F2F2",
                 "muted": "#F8F9F9",

@@ -4,8 +4,6 @@ exports[`<Avatar /> renders properly 1`] = `
 .emotion-2 {
   box-sizing: border-box;
   border-radius: 50%;
-  height: 24px;
-  width: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,6 +16,8 @@ exports[`<Avatar /> renders properly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 24px;
+  height: 24px;
 }
 
 .emotion-0 {
@@ -28,8 +28,7 @@ exports[`<Avatar /> renders properly 1`] = `
 
 <div
   className="emotion-2 emotion-3"
-  height="24px"
-  width="24px"
+  size="default"
 >
   <p
     className="emotion-0 emotion-1"

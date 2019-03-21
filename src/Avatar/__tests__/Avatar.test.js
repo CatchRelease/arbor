@@ -45,7 +45,7 @@ describe('<Avatar />', () => {
       colorForString.mockReturnValue('blue');
       const avatar = shallow(<Avatar name="Batman" />);
 
-      expect(avatar.find('Flex')).toHaveProp({
+      expect(avatar.find('StyledAvatar')).toHaveProp({
         bg: 'blue'
       });
     });

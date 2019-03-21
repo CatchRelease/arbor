@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { colorForString } from '../utils';
-import Flex from '../Flex';
+import StyledAvatar from './StyledAvatar';
 import Text from '../Text';
 
 const AVATAR_COLORS = ['blue', 'red', 'bronze', 'green'];
@@ -20,19 +20,20 @@ const getInitials = name => {
   return firstInitial;
 };
 
-const Avatar = ({ name }) => (
-  <Flex
-    alignItems="center"
-    bg={colorForString(name, AVATAR_COLORS)}
-    borderRadius="50%"
-    height="24px"
-    justifyContent="center"
-    width="24px"
+const Avatar = ({ name, ...props }) => (
+  <StyledAvatar
+    {...{
+      alignItems: 'center',
+      bg: colorForString(name, AVATAR_COLORS),
+      borderRadius: '50%',
+      justifyContent: 'center',
+      ...props
+    }}
   >
     <Text color="white" fontSize="size2">
       {getInitials(name).toUpperCase()}
     </Text>
-  </Flex>
+  </StyledAvatar>
 );
 
 Avatar.propTypes = {
