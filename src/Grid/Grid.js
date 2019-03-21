@@ -5,6 +5,7 @@ import {
   gridColumnGap,
   gridGap,
   gridRowGap,
+  gridTemplateAreas,
   gridTemplateColumns,
   gridTemplateRows,
   justifyContent,
@@ -20,6 +21,7 @@ const Grid = styled(Box)`
   ${gridColumnGap};
   ${gridGap};
   ${gridRowGap};
+  ${gridTemplateAreas};
   ${gridTemplateColumns};
   ${gridTemplateRows};
   ${justifyContent};
@@ -30,6 +32,7 @@ Grid.propTypes = {
   ...alignContent.propTypes,
   ...gridColumnGap.propTypes,
   ...gridGap.propTypes,
+  ...gridTemplateAreas.propTypes,
   ...gridTemplateColumns.propTypes,
   ...gridTemplateRows.propTypes,
   ...gridRowGap.propTypes,
