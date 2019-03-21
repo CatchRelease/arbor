@@ -39,7 +39,9 @@ stories.add('default', () => (
     <Heading.h1>Style</Heading.h1>
 
     <Grid gridGap="10px 138px" gridTemplateColumns="repeat(3, 1fr)">
-      <Button variant="primary">Primary</Button>
+      <Button variant="primary" whiteSpace="nowrap">
+        Primary
+      </Button>
       <Button variant="secondary">Secondary</Button>
       <Button variant="minimal">Minimal</Button>
 

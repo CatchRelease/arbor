@@ -1,8 +1,10 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { space } from 'styled-system';
+
 import buttonSizes from './buttonSizes';
 import variants from './variants';
+import whiteSpace from '../utils/whiteSpace';
 
 const fullWidthStyles = ({ fullWidth }) =>
   fullWidth &&
@@ -39,10 +41,12 @@ const StyledButton = styled.button`
   ${variants};
   ${fullWidthStyles};
   ${space};
+  ${whiteSpace};
 `;
 
 StyledButton.propTypes = {
-  ...space.propTypes
+  ...space.propTypes,
+  ...whiteSpace.propTypes
 };
 
 export default StyledButton;

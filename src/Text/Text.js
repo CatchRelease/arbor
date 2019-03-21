@@ -13,6 +13,8 @@ import {
   textAlign
 } from 'styled-system';
 
+import whiteSpace from '../utils/whiteSpace';
+
 const baseStyles = ({ theme }) => css`
   font-family: ${theme.brandFont};
 `;
@@ -29,6 +31,7 @@ const Text = styled.p`
   ${overflow};
   ${space};
   ${textAlign};
+  ${whiteSpace};
 `;
 
 Text.propTypes = {
@@ -40,7 +43,8 @@ Text.propTypes = {
   ...minWidth.propTypes,
   ...overflow.propTypes,
   ...space.propTypes,
-  ...textAlign.propTypes
+  ...textAlign.propTypes,
+  ...whiteSpace.propTypes
 };
 
 Text.defaultProps = {
