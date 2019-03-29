@@ -41,6 +41,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "1024px",
           "1600px",
         ],
+        "breakpointsMap": Object {
+          "lg": "1024px",
+          "md": "768px",
+          "sm": "512px",
+          "xl": "1600px",
+        },
         "colors": Object {
           "background": Object {
             "default": "#F2F2F2",
@@ -97,6 +103,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "white": "#FFFFFF",
         },
         "fontSizes": Object {
+          "input": Object {
+            "default": "0.875rem",
+            "mobile": "1rem",
+          },
           "size1": "0.6875rem",
           "size2": "0.75rem",
           "size3": "0.8125rem",
@@ -280,6 +290,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "1024px",
                 "1600px",
               ],
+              "breakpointsMap": Object {
+                "lg": "1024px",
+                "md": "768px",
+                "sm": "512px",
+                "xl": "1600px",
+              },
               "colors": Object {
                 "background": Object {
                   "default": "#F2F2F2",
@@ -336,6 +352,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "white": "#FFFFFF",
               },
               "fontSizes": Object {
+                "input": Object {
+                  "default": "0.875rem",
+                  "mobile": "1rem",
+                },
                 "size1": "0.6875rem",
                 "size2": "0.75rem",
                 "size3": "0.8125rem",

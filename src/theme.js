@@ -1,6 +1,13 @@
 import { rem, transparentize } from 'polished';
 
-export const breakpoints = ['512px', '768px', '1024px', '1600px'];
+export const breakpointsMap = {
+  sm: '512px',
+  md: '768px',
+  lg: '1024px',
+  xl: '1600px'
+};
+
+export const breakpoints = Object.values(breakpointsMap);
 
 export const blues = {
   blueLighter: '#6688FF',
@@ -103,7 +110,7 @@ export const fonts = {
   icon: 'Arbor'
 };
 
-export const fontSizes = {
+const sizes = {
   size1: rem('11px'),
   size2: rem('12px'),
   size3: rem('13px'),
@@ -113,6 +120,16 @@ export const fontSizes = {
   size7: rem('24px'),
   size8: rem('28px'),
   size9: rem('34px')
+};
+
+const inputSizes = {
+  default: sizes.size4,
+  mobile: sizes.size5
+};
+
+export const fontSizes = {
+  ...sizes,
+  input: { ...inputSizes }
 };
 
 export const fontWeights = {
@@ -208,6 +225,7 @@ export default {
   brandColors,
   brandFont,
   breakpoints,
+  breakpointsMap,
   colors,
   fonts,
   fontSizes,

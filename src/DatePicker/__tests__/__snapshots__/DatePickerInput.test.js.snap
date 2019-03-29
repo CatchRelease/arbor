@@ -18,6 +18,12 @@ exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
   width: 100%;
 }
 
+@media (max-width:768px) {
+  .emotion-0 {
+    font-size: 1rem;
+  }
+}
+
 .emotion-0::-webkit-input-placeholder {
   color: #989A9C;
 }

@@ -9,11 +9,15 @@ const baseStyles = ({ theme }) => css`
   box-sizing: border-box;
   color: ${theme.colors.text.default};
   font-family: ${theme.brandFont};
-  font-size: ${theme.fontSizes.size4};
+  font-size: ${theme.fontSizes.input.default};
   line-height: ${theme.lineHeights.small};
   margin: ${theme.space.smallest} 0;
   padding: ${theme.space.smaller};
   width: 100%;
+
+  @media (max-width: ${theme.breakpointsMap.md}) {
+    font-size: ${theme.fontSizes.input.mobile};
+  }
 
   ${placeholder({ color: theme.colors.grey60 })};
 
