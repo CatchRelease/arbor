@@ -19,6 +19,12 @@ exports[`<Input /> renders a large Input correctly 1`] = `
   padding: 0.75rem 0.5rem;
 }
 
+@media (max-width:768px) {
+  .emotion-0 {
+    font-size: 1rem;
+  }
+}
+
 .emotion-0::-webkit-input-placeholder {
   color: #989A9C;
 }
@@ -76,6 +82,12 @@ exports[`<Input /> renders an Input correctly 1`] = `
   width: 100%;
 }
 
+@media (max-width:768px) {
+  .emotion-0 {
+    font-size: 1rem;
+  }
+}
+
 .emotion-0::-webkit-input-placeholder {
   color: #989A9C;
 }
@@ -127,6 +139,12 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
   margin: 0.25rem 0;
   padding: 0.5rem;
   width: 100%;
+}
+
+@media (max-width:768px) {
+  .emotion-0 {
+    font-size: 1rem;
+  }
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -202,6 +220,12 @@ exports[`<Input /> renders an Input with a label correctly 1`] = `
   width: 100%;
 }
 
+@media (max-width:768px) {
+  .emotion-2 {
+    font-size: 1rem;
+  }
+}
+
 .emotion-2::-webkit-input-placeholder {
   color: #989A9C;
 }
@@ -270,6 +294,12 @@ exports[`<Input /> renders an Input with a type correctly 1`] = `
   margin: 0.25rem 0;
   padding: 0.5rem;
   width: 100%;
+}
+
+@media (max-width:768px) {
+  .emotion-0 {
+    font-size: 1rem;
+  }
 }
 
 .emotion-0::-webkit-input-placeholder {

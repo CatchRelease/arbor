@@ -19,6 +19,12 @@ exports[`<Textarea /> renders a large Textarea correctly 1`] = `
   padding: 0.75rem 0.5rem;
 }
 
+@media (max-width:768px) {
+  .emotion-0 {
+    font-size: 1rem;
+  }
+}
+
 .emotion-0::-webkit-input-placeholder {
   color: #989A9C;
 }
@@ -75,6 +81,12 @@ exports[`<Textarea /> renders an Textarea correctly 1`] = `
   width: 100%;
 }
 
+@media (max-width:768px) {
+  .emotion-0 {
+    font-size: 1rem;
+  }
+}
+
 .emotion-0::-webkit-input-placeholder {
   color: #989A9C;
 }
@@ -125,6 +137,12 @@ exports[`<Textarea /> renders an Textarea with a caption correctly 1`] = `
   margin: 0.25rem 0;
   padding: 0.5rem;
   width: 100%;
+}
+
+@media (max-width:768px) {
+  .emotion-0 {
+    font-size: 1rem;
+  }
 }
 
 .emotion-0::-webkit-input-placeholder {
@@ -197,6 +215,12 @@ exports[`<Textarea /> renders an Textarea with a label correctly 1`] = `
   margin: 0.25rem 0;
   padding: 0.5rem;
   width: 100%;
+}
+
+@media (max-width:768px) {
+  .emotion-2 {
+    font-size: 1rem;
+  }
 }
 
 .emotion-2::-webkit-input-placeholder {
