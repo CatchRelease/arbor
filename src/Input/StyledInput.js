@@ -2,6 +2,7 @@ import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { placeholder, transparentize } from 'polished';
+import { maxWidth } from 'styled-system';
 
 const baseStyles = ({ theme }) => css`
   border-radius: ${theme.radii.small};
@@ -41,10 +42,12 @@ const largeStyles = ({ theme, large }) =>
 const StyledInput = styled.input`
   ${baseStyles};
   ${largeStyles};
+  ${maxWidth};
 `;
 
 StyledInput.propTypes = {
-  large: PropTypes.bool
+  large: PropTypes.bool,
+  ...maxWidth.propTypes
 };
 
 StyledInput.defaultProps = {
