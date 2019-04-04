@@ -91,8 +91,6 @@ exports[`<Header /> renders with heading and a button 1`] = `
   >
     <span
       className="emotion-2 emotion-3"
-      disabled={false}
-      size="large"
     >
       Primary
     </span>
@@ -282,8 +280,6 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   >
     <span
       className="emotion-2 emotion-3"
-      disabled={false}
-      size="large"
     >
       Secondary
     </span>
@@ -295,8 +291,6 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   >
     <span
       className="emotion-2 emotion-3"
-      disabled={false}
-      size="large"
     >
       Primary
     </span>

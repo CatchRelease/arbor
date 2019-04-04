@@ -20,9 +20,7 @@ const Button = React.forwardRef(
     >
       {iconStart}
       {children && (
-        <ButtonText {...{ iconStart, iconEnd, ...props }}>
-          {children}
-        </ButtonText>
+        <ButtonText {...{ iconStart, iconEnd }}>{children}</ButtonText>
       )}
       {iconEnd}
     </StyledButton>
