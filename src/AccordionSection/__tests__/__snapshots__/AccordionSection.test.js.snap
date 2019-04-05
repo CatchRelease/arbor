@@ -89,6 +89,7 @@ section:last-child .emotion-7 {
   box-sizing: border-box;
   border-bottom: 1px solid #E0E1E2;
   display: none;
+  overflow: hidden;
 }
 
 section:last-child .emotion-9 {
@@ -124,6 +125,7 @@ section:last-child .emotion-9 {
     className="emotion-9 emotion-10"
     display="none"
     id="my-accordion-1"
+    overflow="hidden"
   >
     <p>
       Hello World
@@ -218,6 +220,7 @@ section:last-child .emotion-7 {
   box-sizing: border-box;
   border-bottom: 1px solid #E0E1E2;
   display: block;
+  overflow: hidden;
 }
 
 section:last-child .emotion-9 {
@@ -253,6 +256,7 @@ section:last-child .emotion-9 {
     className="emotion-9 emotion-10"
     display="block"
     id="my-accordion-1"
+    overflow="hidden"
   >
     <p>
       Hello World
