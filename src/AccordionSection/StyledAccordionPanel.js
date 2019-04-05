@@ -9,4 +9,8 @@ const StyledAccordionPanel = styled(Box)`
   }
 `;
 
+StyledAccordionPanel.defaultProps = {
+  overflow: 'hidden'
+};
+
 export default StyledAccordionPanel;
