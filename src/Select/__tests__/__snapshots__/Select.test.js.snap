@@ -78,6 +78,10 @@ exports[`<Select /> renders a large Select correctly 1`] = `
   background: #F2F2F2;
 }
 
+.emotion-0:required {
+  box-shadow: none;
+}
+
 .emotion-0:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
@@ -176,6 +180,10 @@ exports[`<Select /> renders an Select correctly 1`] = `
   background: #F2F2F2;
 }
 
+.emotion-0:required {
+  box-shadow: none;
+}
+
 .emotion-0:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
@@ -268,6 +276,10 @@ exports[`<Select /> renders an Select with a caption correctly 1`] = `
 
 .emotion-0:disabled {
   background: #F2F2F2;
+}
+
+.emotion-0:required {
+  box-shadow: none;
 }
 
 .emotion-0:-moz-focusring {
@@ -382,6 +394,10 @@ exports[`<Select /> renders an Select with a label correctly 1`] = `
 
 .emotion-2:disabled {
   background: #F2F2F2;
+}
+
+.emotion-2:required {
+  box-shadow: none;
 }
 
 .emotion-2:-moz-focusring {

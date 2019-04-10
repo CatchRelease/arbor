@@ -51,6 +51,10 @@ exports[`<Input /> renders a large Input correctly 1`] = `
   background: #F2F2F2;
 }
 
+.emotion-0:required {
+  box-shadow: none;
+}
+
 <div
   className="emotion-2 emotion-3"
 >
@@ -114,6 +118,10 @@ exports[`<Input /> renders an Input correctly 1`] = `
   background: #F2F2F2;
 }
 
+.emotion-0:required {
+  box-shadow: none;
+}
+
 <div
   className="emotion-2 emotion-3"
 >
@@ -171,6 +179,10 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
 
 .emotion-0:disabled {
   background: #F2F2F2;
+}
+
+.emotion-0:required {
+  box-shadow: none;
 }
 
 .emotion-4 {
@@ -252,6 +264,10 @@ exports[`<Input /> renders an Input with a label correctly 1`] = `
   background: #F2F2F2;
 }
 
+.emotion-2:required {
+  box-shadow: none;
+}
+
 .emotion-0 {
   color: #5B5D61;
   display: block;
@@ -326,6 +342,10 @@ exports[`<Input /> renders an Input with a type correctly 1`] = `
 
 .emotion-0:disabled {
   background: #F2F2F2;
+}
+
+.emotion-0:required {
+  box-shadow: none;
 }
 
 <div
