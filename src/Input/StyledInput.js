@@ -31,6 +31,10 @@ const baseStyles = ({ theme }) => css`
   &:disabled {
     background: ${theme.colors.background.default};
   }
+
+  &:required {
+    box-shadow: none;
+  }
 `;
 
 const largeStyles = ({ theme, large }) =>

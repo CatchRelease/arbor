@@ -50,6 +50,10 @@ exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
   background: #F2F2F2;
 }
 
+.emotion-0:required {
+  box-shadow: none;
+}
+
 <div
   className="DayPickerInput"
 >

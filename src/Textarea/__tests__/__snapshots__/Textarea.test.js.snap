@@ -51,6 +51,10 @@ exports[`<Textarea /> renders a large Textarea correctly 1`] = `
   background: #F2F2F2;
 }
 
+.emotion-0:required {
+  box-shadow: none;
+}
+
 <div
   className="emotion-2 emotion-3"
 >
@@ -113,6 +117,10 @@ exports[`<Textarea /> renders an Textarea correctly 1`] = `
   background: #F2F2F2;
 }
 
+.emotion-0:required {
+  box-shadow: none;
+}
+
 <div
   className="emotion-2 emotion-3"
 >
@@ -169,6 +177,10 @@ exports[`<Textarea /> renders an Textarea with a caption correctly 1`] = `
 
 .emotion-0:disabled {
   background: #F2F2F2;
+}
+
+.emotion-0:required {
+  box-shadow: none;
 }
 
 .emotion-4 {
@@ -247,6 +259,10 @@ exports[`<Textarea /> renders an Textarea with a label correctly 1`] = `
 
 .emotion-2:disabled {
   background: #F2F2F2;
+}
+
+.emotion-2:required {
+  box-shadow: none;
 }
 
 .emotion-0 {
