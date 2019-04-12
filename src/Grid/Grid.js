@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import {
   alignContent,
   alignItems,
+  gridAutoFlow,
   gridColumnGap,
   gridGap,
   gridRowGap,
@@ -18,6 +19,7 @@ const Grid = styled(Box)`
   display: grid;
   ${alignContent};
   ${alignItems};
+  ${gridAutoFlow};
   ${gridColumnGap};
   ${gridGap};
   ${gridRowGap};
@@ -30,6 +32,7 @@ const Grid = styled(Box)`
 
 Grid.propTypes = {
   ...alignContent.propTypes,
+  ...gridAutoFlow.propTypes,
   ...gridColumnGap.propTypes,
   ...gridGap.propTypes,
   ...gridTemplateAreas.propTypes,
