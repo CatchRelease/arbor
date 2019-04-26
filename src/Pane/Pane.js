@@ -7,6 +7,7 @@ const Pane = props => <Grid {...props} />;
 Pane.defaultProps = {
   bg: 'background.white',
   boxShadow: 'elevation0',
+  overflow: 'hidden',
   width: '100%'
 };
 
