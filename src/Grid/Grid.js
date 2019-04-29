@@ -16,7 +16,6 @@ import {
 import Box from '../Box';
 
 const Grid = styled(Box)`
-  display: grid;
   ${alignContent};
   ${alignItems};
   ${gridAutoFlow};
@@ -41,6 +40,10 @@ Grid.propTypes = {
   ...gridRowGap.propTypes,
   ...justifyContent.propTypes,
   ...justifyItems.propTypes
+};
+
+Grid.defaultProps = {
+  display: 'grid'
 };
 
 export default Grid;
