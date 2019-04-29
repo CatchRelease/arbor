@@ -75,6 +75,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
 
 <header
   className="emotion-6 emotion-7"
+  display="grid"
 >
   <h1
     className="emotion-0 emotion-1"
@@ -121,6 +122,7 @@ exports[`<Header /> renders with heading and no buttons 1`] = `
 
 <header
   className="emotion-2 emotion-3"
+  display="grid"
 >
   <h1
     className="emotion-0 emotion-1"
@@ -264,6 +266,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 
 <header
   className="emotion-10 emotion-11"
+  display="grid"
 >
   <h1
     className="emotion-0 emotion-1"
