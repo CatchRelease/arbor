@@ -53,6 +53,7 @@ class Dropdown extends React.Component {
     const {
       children,
       menuItems,
+      name,
       selected,
       popoverProps,
       ...props
@@ -61,7 +62,7 @@ class Dropdown extends React.Component {
 
     const menu = (
       <Menu
-        {...{ menuItems, selected }}
+        {...{ menuItems, name, selected }}
         ref={this.menu}
         onChange={this.onChange}
       />
@@ -98,10 +99,14 @@ Dropdown.propTypes = {
     PropTypes.shape({
       baseColor: PropTypes.string,
       label: PropTypes.string,
-      name: PropTypes.string,
       value: PropTypes.string
     })
   ).isRequired,
+
+  /**
+   * Name of the dropdown's menu for grouping the menu item DOM IDs
+   */
+  name: PropTypes.string.isRequired,
 
   /**
    * Initial selected menu item value

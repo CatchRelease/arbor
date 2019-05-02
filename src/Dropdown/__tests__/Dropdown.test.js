@@ -14,10 +14,10 @@ describe('<Dropdown />', () => {
       {
         baseColor: 'grey',
         label: 'Ready to Clear',
-        name: 'clearance_state',
         value: 'ready_to_clear'
       }
-    ]
+    ],
+    name: 'clearance_state'
   };
 
   function mountWithProps(additionalProps = {}) {

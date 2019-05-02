@@ -8,15 +8,6 @@ import MenuItem from './MenuItem';
 
 const NAVIGATION_KEYS = [ARROW_UP, ARROW_DOWN];
 
-function domIdForMenuItem(menuItem) {
-  if (menuItem === undefined) {
-    return undefined;
-  }
-
-  const { name, label } = menuItem;
-  return `menu-item_${name}_${snakeCase(label)}`;
-}
-
 class Menu extends React.Component {
   constructor(props) {
     super(props);
@@ -64,7 +55,16 @@ class Menu extends React.Component {
     const { menuItems } = this.props;
     const focusedMenuItem = menuItems[currentlyFocused];
 
-    return domIdForMenuItem(focusedMenuItem);
+    return this.domIdForMenuItem(focusedMenuItem);
+  }
+
+  domIdForMenuItem(menuItem) {
+    if (menuItem === undefined) return undefined;
+
+    const { name } = this.props;
+    const { label } = menuItem;
+
+    return `menu-item_${name}_${snakeCase(label)}`;
   }
 
   focusNextMenuItem() {
@@ -99,10 +99,10 @@ class Menu extends React.Component {
   }
 
   renderMenuItem(menuItem, index) {
-    const { currentlyFocused } = this.state;
-    const { selected } = this.state;
+    const { currentlyFocused, selected } = this.state;
+    const { name } = this.props;
     const isSelected = menuItem.value === selected;
-    const id = domIdForMenuItem(menuItem);
+    const id = this.domIdForMenuItem(menuItem);
     const focused = index === currentlyFocused;
 
     return (
@@ -111,6 +111,7 @@ class Menu extends React.Component {
           ...menuItem,
           id,
           focused,
+          name,
           selected: isSelected,
           key: menuItem.label,
           onSelect: this.onMenuItemSelect
@@ -151,6 +152,11 @@ Menu.propTypes = {
       value: PropTypes.string
     })
   ).isRequired,
+
+  /**
+   * Name of the menu for grouping the menu item DOM IDs
+   */
+  name: PropTypes.string.isRequired,
 
   /**
    * Initial selected menu item value
