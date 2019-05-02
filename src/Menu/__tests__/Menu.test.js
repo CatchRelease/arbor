@@ -10,10 +10,10 @@ describe('<Menu />', () => {
       {
         baseColor: 'grey',
         label: 'Ready to Clear',
-        name: 'clearance_state',
         value: 'ready_to_clear'
       }
-    ]
+    ],
+    name: 'clearance_state'
   };
 
   function shallowWithProps(additionalProps = {}) {
@@ -28,13 +28,11 @@ describe('<Menu />', () => {
         {
           baseColor: 'grey',
           label: 'Ready to Clear',
-          name: 'clearance_state',
           value: 'ready_to_clear'
         },
         {
           baseColor: 'green',
           label: 'License Acquired',
-          name: 'clearance_state',
           value: 'license_acquired'
         }
       ];
@@ -50,7 +48,6 @@ describe('<Menu />', () => {
         {
           baseColor: 'grey',
           label: 'Ready to Clear',
-          name: 'clearance_state',
           value: 'ready_to_clear'
         }
       ];
@@ -69,7 +66,6 @@ describe('<Menu />', () => {
         {
           baseColor: 'grey',
           label: 'Ready to Clear',
-          name: 'clearance_state',
           value: 'ready_to_clear'
         }
       ];
@@ -83,7 +79,6 @@ describe('<Menu />', () => {
         {
           baseColor: 'green',
           label: 'License Acquired',
-          name: 'clearance_state',
           value: 'license_acquired'
         }
       ];
@@ -97,13 +92,11 @@ describe('<Menu />', () => {
         {
           baseColor: 'grey',
           label: 'Ready to Clear',
-          name: 'clearance_state',
           value: 'ready_to_clear'
         },
         {
           baseColor: 'green',
           label: 'License Acquired',
-          name: 'clearance_state',
           value: 'license_acquired'
         }
       ];
@@ -120,7 +113,6 @@ describe('<Menu />', () => {
         {
           baseColor: 'grey',
           label: 'Ready to Clear',
-          name: 'clearance_state',
           value: 'ready_to_clear'
         }
       ];
@@ -135,7 +127,6 @@ describe('<Menu />', () => {
         {
           baseColor: 'grey',
           label: 'Ready to Clear',
-          name: 'clearance_state',
           value: 'ready_to_clear'
         }
       ];
@@ -215,7 +206,6 @@ describe('<Menu />', () => {
             {
               baseColor: 'grey',
               label: 'Ready to Clear',
-              name: 'clearance_state',
               value: 'ready_to_clear'
             }
           ];
@@ -234,13 +224,11 @@ describe('<Menu />', () => {
               {
                 baseColor: 'grey',
                 label: 'Ready to Clear',
-                name: 'clearance_state',
                 value: 'ready_to_clear'
               },
               {
                 baseColor: 'green',
                 label: 'License Acquired',
-                name: 'clearance_state',
                 value: 'license_acquired'
               }
             ];
@@ -259,7 +247,6 @@ describe('<Menu />', () => {
               {
                 baseColor: 'grey',
                 label: 'Ready to Clear',
-                name: 'clearance_state',
                 value: 'ready_to_clear'
               }
             ];
@@ -281,7 +268,6 @@ describe('<Menu />', () => {
             {
               baseColor: 'grey',
               label: 'Ready to Clear',
-              name: 'clearance_state',
               value: 'ready_to_clear'
             }
           ];
@@ -299,7 +285,6 @@ describe('<Menu />', () => {
             {
               baseColor: 'grey',
               label: 'Ready to Clear',
-              name: 'clearance_state',
               value: 'ready_to_clear'
             }
           ];
@@ -318,13 +303,11 @@ describe('<Menu />', () => {
             {
               baseColor: 'grey',
               label: 'Ready to Clear',
-              name: 'clearance_state',
               value: 'ready_to_clear'
             },
             {
               baseColor: 'green',
               label: 'License Acquired',
-              name: 'clearance_state',
               value: 'license_acquired'
             }
           ];
@@ -344,19 +327,16 @@ describe('<Menu />', () => {
           {
             baseColor: 'grey',
             label: 'Ready to Clear',
-            name: 'clearance_state',
             value: 'ready_to_clear'
           },
           {
             baseColor: 'blue',
             label: 'Clearance Requested',
-            name: 'clearance_state',
             value: 'clearance_requested'
           },
           {
             baseColor: 'green',
             label: 'License Acquired',
-            name: 'clearance_state',
             value: 'license_acquired'
           }
         ];
@@ -375,19 +355,16 @@ describe('<Menu />', () => {
           {
             baseColor: 'grey',
             label: 'Ready to Clear',
-            name: 'clearance_state',
             value: 'ready_to_clear'
           },
           {
             baseColor: 'blue',
             label: 'Clearance Requested',
-            name: 'clearance_state',
             value: 'clearance_requested'
           },
           {
             baseColor: 'green',
             label: 'License Acquired',
-            name: 'clearance_state',
             value: 'license_acquired'
           }
         ];
