@@ -37,6 +37,13 @@ const Avatar = ({ name, ...props }) => (
 );
 
 Avatar.propTypes = {
+  /**
+   * The name for the user's avatar. The name is used to determine the color for
+   * the avatar component. See utils/colorForString.
+   *
+   * The initials for display will also be determined based of the name
+   * provided.
+   */
   name: PropTypes.string.isRequired
 };
 

@@ -28,6 +28,11 @@ const Header = ({ children, ...props }) => {
 };
 
 Header.propTypes = {
+  /**
+   * Content to be displayed within the StyledHeader. gridTemplateColumns will
+   * be determined by the number of children passed in to properly distribute
+   * content.
+   */
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)

@@ -10,6 +10,9 @@ const Label = styled.label`
 `;
 
 Label.propTypes = {
+  /**
+   * ID of the input that the label is related to
+   */
   htmlFor: PropTypes.string.isRequired
 };
 

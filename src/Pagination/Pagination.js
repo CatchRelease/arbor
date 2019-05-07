@@ -8,11 +8,34 @@ const ELLIPSIS = '...';
 
 class Pagination extends React.Component {
   static propTypes = {
+    /**
+     * The current page that the user is on.
+     */
     currentPage: PropTypes.number,
+
+    /**
+     * Text to display in the 'Next' button
+     */
     nextText: PropTypes.string,
+
+    /**
+     * Callback to perform pagination
+     */
     paginate: PropTypes.func.isRequired,
+
+    /**
+     * Text to display in the 'Previous' button
+     */
     previousText: PropTypes.string,
+
+    /**
+     * Size variants for styling. See storybook for examples.
+     */
     size: PropTypes.oneOf(['small', 'medium']),
+
+    /**
+     * Total number of pages of content that exist.
+     */
     totalPages: PropTypes.number
   };
 

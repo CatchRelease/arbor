@@ -14,6 +14,9 @@ const Paragraph = styled(Text)`
 `;
 
 Paragraph.propTypes = {
+  /**
+   * Style variant. See storybook for examples.
+   */
   variant: PropTypes.oneOf(['ui', 'longForm', 'tiny']).isRequired
 };
 

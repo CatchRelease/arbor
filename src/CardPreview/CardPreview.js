@@ -12,6 +12,9 @@ const CardPreview = styled(Box)`
 `;
 
 CardPreview.propTypes = {
+  /**
+   * Image to be rendered as the background of the CardPreview
+   */
   image: PropTypes.string.isRequired,
   ...ratio.propTypes
 };

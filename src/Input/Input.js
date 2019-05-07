@@ -11,9 +11,25 @@ const Input = React.forwardRef(({ caption, label, id, ...props }, ref) => (
 ));
 
 Input.propTypes = {
+  /**
+   * Optional text to be displayed underneath the input.
+   */
   caption: PropTypes.string,
+
+  /**
+   * HTML ID for the input to be used in conjunction with the label for
+   * accessiblity.
+   */
   id: PropTypes.string.isRequired,
+
+  /**
+   * Label text for the form field
+   */
   label: PropTypes.string,
+
+  /**
+   * HTML Input type
+   */
   type: PropTypes.string
 };
 

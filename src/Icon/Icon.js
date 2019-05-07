@@ -43,7 +43,17 @@ const Icon = ({ name, theme, ...props }) => {
 };
 
 Icon.propTypes = {
+  /**
+   * Name of the icon to render. Must be a supported icon loaded via an icon
+   * font on the page. The font prefix will be prepended and can be customized
+   * via the theme iconFontPrefix variable.
+   */
   name: PropTypes.string.isRequired,
+
+  /**
+   * Icon font rotation. Rotation will be passed in to the CSS transform
+   * property using rotate.
+   */
   rotation: PropTypes.oneOf(['90', '180', '270', null])
 };
 

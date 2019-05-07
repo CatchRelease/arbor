@@ -11,8 +11,19 @@ const Textarea = React.forwardRef(({ caption, label, id, ...props }, ref) => (
 ));
 
 Textarea.propTypes = {
+  /**
+   * Optional help text to be rendered within the FormField component
+   */
   caption: PropTypes.string,
+
+  /**
+   * HTML ID attribute for the inpt
+   */
   id: PropTypes.string.isRequired,
+
+  /**
+   * Label text for the input
+   */
   label: PropTypes.string
 };
 
