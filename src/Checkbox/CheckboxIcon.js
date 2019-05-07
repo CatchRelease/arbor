@@ -18,7 +18,14 @@ const CheckboxIcon = ({ checked, indeterminate }) => {
 };
 
 CheckboxIcon.propTypes = {
+  /**
+   * Whether or not the checkbox is checked.
+   */
   checked: PropTypes.bool,
+
+  /**
+   * Checkbox's indeterminate state.
+   */
   indeterminate: PropTypes.bool
 };
 

@@ -14,6 +14,10 @@ const AccordionPanel = ({ isOpen, ...panelProps }) => {
 };
 
 AccordionPanel.propTypes = {
+  /**
+   * Whether or not the panel is open or not. When the panel is closed, the
+   * content will be rendered with display none.
+   */
   isOpen: PropTypes.bool.isRequired
 };
 

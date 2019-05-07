@@ -66,6 +66,9 @@ const Link = styled(Text)`
 `;
 
 Link.propTypes = {
+  /**
+   * Link variant for styling of link. See storybook for examples.
+   */
   variant: PropTypes.oneOf(['default', 'muted'])
 };
 

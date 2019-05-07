@@ -13,12 +13,27 @@ const Select = React.forwardRef(
 );
 
 Select.propTypes = {
+  /**
+   * Help text to be displayed in the FormField for the Select.
+   */
   caption: PropTypes.string,
+
+  /**
+   * Select options to be displayed within the menu
+   */
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
   ]).isRequired,
+
+  /**
+   * HTML ID for the select
+   */
   id: PropTypes.string.isRequired,
+
+  /**
+   * Label text for the select
+   */
   label: PropTypes.string
 };
 

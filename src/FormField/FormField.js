@@ -18,9 +18,24 @@ const FormField = ({ caption, children, label, id }) => (
 );
 
 FormField.propTypes = {
+  /**
+   * Optional text to be displayed underneath the input.
+   */
   caption: PropTypes.string,
+
+  /** Field to be rendered within the FormField component
+   */
   children: PropTypes.node.isRequired,
+
+  /**
+   * HTML ID for the input to be used in conjunction with the label for
+   * accessiblity.
+   */
   id: PropTypes.string.isRequired,
+
+  /**
+   * Label text for the form field
+   */
   label: PropTypes.string
 };
 

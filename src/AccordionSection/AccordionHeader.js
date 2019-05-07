@@ -38,10 +38,30 @@ const AccordionHeader = ({ isOpen, note, onClick, panelId, text }) => (
 );
 
 AccordionHeader.propTypes = {
+  /**
+   * Whether or not the AccordionSection this header resides in is open or not.
+   */
   isOpen: PropTypes.bool.isRequired,
+
+  /**
+   * Optional note to render within the AccordionHeader
+   */
   note: PropTypes.node,
+
+  /**
+   * Callback to call whenever the StyledAccordionHeadingButton is clicked
+   */
   onClick: PropTypes.func,
+
+  /**
+   * ID of the AccordionPanel that holds the content of the AccordionSection.
+   * Used to specify aria-controls for accessbility.
+   */
   panelId: PropTypes.string.isRequired,
+
+  /**
+   * Header text for the section
+   */
   text: PropTypes.node.isRequired
 };
 

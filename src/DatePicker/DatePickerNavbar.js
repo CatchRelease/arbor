@@ -29,8 +29,19 @@ const DatePickerNavbar = ({ onPreviousClick, onNextClick, className }) => (
 );
 
 DatePickerNavbar.propTypes = {
+  /**
+   * Classname to aply to the wrapping container of the DatePickerNavbar content
+   */
   className: PropTypes.string.isRequired,
+
+  /**
+   * Callback called when the user clicks on the 'Next Month' button
+   */
   onNextClick: PropTypes.func.isRequired,
+
+  /**
+   * Callback called when the user clicks on the 'Previous Month' button
+   */
   onPreviousClick: PropTypes.func.isRequired
 };
 

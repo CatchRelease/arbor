@@ -24,11 +24,24 @@ export const Modal = ({ children, modalCss, overlayCss, theme, ...props }) => {
 };
 
 Modal.propTypes = {
+  /**
+   * Content to be displayed with the modal
+   */
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
   ]).isRequired,
+
+  /**
+   * Optional overrides of the modal css. This will be injected via emotion's
+   * Global style component.
+   */
   modalCss: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
+
+  /**
+   * Optional overrides to the overlay CSS. This will be injected via emotion's
+   * Global style component.
+   */
   overlayCss: PropTypes.oneOfType([PropTypes.object, PropTypes.func])
 };
 
