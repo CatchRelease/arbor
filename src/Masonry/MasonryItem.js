@@ -1,7 +1,9 @@
 import styled from '@emotion/styled';
 import { display, width } from 'styled-system';
 
-const MasonryItem = styled.div`
+import Box from '../Box';
+
+const MasonryItem = styled(Box)`
   ${display};
   ${width};
 `;

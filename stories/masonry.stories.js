@@ -13,8 +13,7 @@ import {
   bronzes,
   Box,
   Flex,
-  MasonryContainer,
-  MasonryItem,
+  Masonry,
   Text
 } from '../src';
 
@@ -34,7 +33,7 @@ stories.addDecorator(withKnobs);
 
 stories.add('default', () => (
   <Box height="100%" p="regular" width="100%">
-    <MasonryContainer
+    <Masonry
       columnCount={text('Column Count', '5')}
       columnGap={text('Column Gap', 'regular')}
       columnRuleColor={text('Column Rule Color', '')}
@@ -43,22 +42,18 @@ stories.add('default', () => (
       columnWidth={text('Column Width', '300px')}
     >
       {colors.map((color, key) => (
-        <MasonryItem
+        <Flex
+          alignItems="center"
+          bg={color}
+          height={random(100, 500)}
+          justifyContent="center"
           key={key} // eslint-disable-line react/no-array-index-key
         >
-          <Flex
-            alignItems="center"
-            bg={color}
-            height={random(100, 500)}
-            justifyContent="center"
-            mb="regular"
-          >
-            <Text color={readableColor(color)} fontSize="size8">
-              Masonry Item
-            </Text>
-          </Flex>
-        </MasonryItem>
+          <Text color={readableColor(color)} fontSize="size8">
+            Masonry Item
+          </Text>
+        </Flex>
       ))}
-    </MasonryContainer>
+    </Masonry>
   </Box>
 ));
