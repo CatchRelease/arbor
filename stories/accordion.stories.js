@@ -39,12 +39,22 @@ AccordionContainer.defaultProps = {
   alignItems: 'center'
 };
 
+const doAlert = msg => window.alert(msg); // eslint-disable-line no-alert, no-undef
+
 stories.add('default', () => {
   const sizeSelect = select('Size', buttonOptions, defaultButtonSize);
 
   const noteWithButtons = (
     <Box my="smallest">
-      <Button variant="minimal" size={sizeSelect} iconStart={annotationIcon}>
+      <Button
+        variant="minimal"
+        size={sizeSelect}
+        iconStart={annotationIcon}
+        onClick={e => {
+          doAlert('message');
+          e.stopPropagation();
+        }}
+      >
         Message
       </Button>
       <Button
@@ -52,16 +62,34 @@ stories.add('default', () => {
         size={sizeSelect}
         iconStart={trashIcon}
         aria-label="Delete"
+        onClick={e => {
+          doAlert('Delete');
+          e.stopPropagation();
+        }}
       />
     </Box>
   );
 
   const noteWithPrimaryButtons = (
     <Box my="smallest">
-      <Button variant="secondary" size={sizeSelect}>
+      <Button
+        variant="secondary"
+        size={sizeSelect}
+        onClick={e => {
+          doAlert('secondary');
+          e.stopPropagation();
+        }}
+      >
         Secondary
       </Button>
-      <Button variant="primary" size={sizeSelect}>
+      <Button
+        variant="primary"
+        size={sizeSelect}
+        onClick={e => {
+          doAlert('primary');
+          e.stopPropagation();
+        }}
+      >
         Primary
       </Button>
     </Box>
@@ -69,10 +97,24 @@ stories.add('default', () => {
 
   const noteWithSecondaryButtons = (
     <Box my="smallest">
-      <Button variant="minimal" size={sizeSelect}>
+      <Button
+        variant="minimal"
+        size={sizeSelect}
+        onClick={e => {
+          doAlert('minimal');
+          e.stopPropagation();
+        }}
+      >
         Minimal
       </Button>
-      <Button variant="secondary" size={sizeSelect}>
+      <Button
+        variant="secondary"
+        size={sizeSelect}
+        onClick={e => {
+          doAlert('secondary');
+          e.stopPropagation();
+        }}
+      >
         Secondary
       </Button>
     </Box>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import StyledAccordionHeader from './StyledAccordionHeader';
 import StyledAccordionHeading from './StyledAccordionHeading';
-import StyledAccordionHeadingButton from './StyledAccordionHeadingButton';
+import StyledAccordionHeadingText from './StyledAccordionHeadingText';
 import Icon from '../Icon';
 
 const AccordionHeaderIcon = ({ isOpen }) => (
@@ -20,18 +20,19 @@ const AccordionHeader = ({ isOpen, note, onClick, panelId, text }) => (
     justifyContent="space-between"
     px="regular"
     borderBottom="default"
+    onClick={onClick}
+    aria-controls={panelId}
+    aria-expanded={isOpen}
   >
     <StyledAccordionHeading fontWeight="medium" mr="regular">
-      <StyledAccordionHeadingButton
+      <StyledAccordionHeadingText
         alignItems="center"
         aria-controls={panelId}
         aria-expanded={isOpen}
-        onClick={onClick}
-        type="button"
       >
         <AccordionHeaderIcon isOpen={isOpen} />
         {text}
-      </StyledAccordionHeadingButton>
+      </StyledAccordionHeadingText>
     </StyledAccordionHeading>
     {note}
   </StyledAccordionHeader>
