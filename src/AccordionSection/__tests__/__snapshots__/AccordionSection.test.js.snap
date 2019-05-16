@@ -76,6 +76,7 @@ section:last-child .emotion-7 {
   border: none;
   font-size: inherit;
   padding: 0;
+  font-weight: normal;
 }
 
 .emotion-0 {
@@ -211,6 +212,7 @@ section:last-child .emotion-7 {
   border: none;
   font-size: inherit;
   padding: 0;
+  font-weight: normal;
 }
 
 .emotion-0 {
