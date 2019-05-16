@@ -21,6 +21,8 @@ const StyledHeader = styled(Flex)`
   button + .button--primary {
     margin-left: ${props => props.theme.space.smaller};
   }
+
+  cursor: pointer;
 `;
 
 StyledHeader.defaultProps = {

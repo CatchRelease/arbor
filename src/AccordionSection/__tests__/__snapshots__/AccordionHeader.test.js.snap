@@ -19,6 +19,7 @@ exports[`<AccordionHeader /> properly renders an accordion header 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   background: #F2F2F2;
+  cursor: pointer;
 }
 
 section:last-child .emotion-7 {
@@ -73,7 +74,6 @@ section:last-child .emotion-7 {
   align-items: center;
   background: none;
   border: none;
-  cursor: pointer;
   font-size: inherit;
   padding: 0;
 }
@@ -86,7 +86,10 @@ section:last-child .emotion-7 {
 }
 
 <header
+  aria-controls="my-accordion-1"
+  aria-expanded={false}
   className="emotion-7 emotion-8"
+  onClick={[Function]}
 >
   <h1
     className="emotion-4 emotion-5 emotion-6"
@@ -94,18 +97,16 @@ section:last-child .emotion-7 {
     fontSize="size4"
     fontWeight="medium"
   >
-    <button
+    <span
       aria-controls="my-accordion-1"
       aria-expanded={false}
       className="emotion-2 emotion-3"
-      onClick={[Function]}
-      type="button"
     >
       <i
         className="ar ar-caret emotion-0 emotion-1"
       />
       My Heading
-    </button>
+    </span>
   </h1>
 </header>
 `;
@@ -129,6 +130,7 @@ exports[`<AccordionHeader /> renders with a note 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   background: #F2F2F2;
+  cursor: pointer;
 }
 
 section:last-child .emotion-7 {
@@ -183,7 +185,6 @@ section:last-child .emotion-7 {
   align-items: center;
   background: none;
   border: none;
-  cursor: pointer;
   font-size: inherit;
   padding: 0;
 }
@@ -196,7 +197,10 @@ section:last-child .emotion-7 {
 }
 
 <header
+  aria-controls="my-accordion-1"
+  aria-expanded={false}
   className="emotion-7 emotion-8"
+  onClick={[Function]}
 >
   <h1
     className="emotion-4 emotion-5 emotion-6"
@@ -204,18 +208,16 @@ section:last-child .emotion-7 {
     fontSize="size4"
     fontWeight="medium"
   >
-    <button
+    <span
       aria-controls="my-accordion-1"
       aria-expanded={false}
       className="emotion-2 emotion-3"
-      onClick={[Function]}
-      type="button"
     >
       <i
         className="ar ar-caret emotion-0 emotion-1"
       />
       My Heading
-    </button>
+    </span>
   </h1>
   My Accordion Section Note
 </header>
@@ -240,6 +242,7 @@ exports[`<AccordionHeader /> renders with an on click 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   background: #F2F2F2;
+  cursor: pointer;
 }
 
 section:last-child .emotion-7 {
@@ -294,7 +297,6 @@ section:last-child .emotion-7 {
   align-items: center;
   background: none;
   border: none;
-  cursor: pointer;
   font-size: inherit;
   padding: 0;
 }
@@ -307,7 +309,10 @@ section:last-child .emotion-7 {
 }
 
 <header
+  aria-controls="my-accordion-1"
+  aria-expanded={false}
   className="emotion-7 emotion-8"
+  onClick={[MockFunction]}
 >
   <h1
     className="emotion-4 emotion-5 emotion-6"
@@ -315,18 +320,16 @@ section:last-child .emotion-7 {
     fontSize="size4"
     fontWeight="medium"
   >
-    <button
+    <span
       aria-controls="my-accordion-1"
       aria-expanded={false}
       className="emotion-2 emotion-3"
-      onClick={[MockFunction]}
-      type="button"
     >
       <i
         className="ar ar-caret emotion-0 emotion-1"
       />
       My Heading
-    </button>
+    </span>
   </h1>
 </header>
 `;
@@ -350,6 +353,7 @@ exports[`<AccordionHeader /> renders with the panel visible 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   background: #F2F2F2;
+  cursor: pointer;
 }
 
 section:last-child .emotion-7 {
@@ -404,7 +408,6 @@ section:last-child .emotion-7 {
   align-items: center;
   background: none;
   border: none;
-  cursor: pointer;
   font-size: inherit;
   padding: 0;
 }
@@ -414,7 +417,10 @@ section:last-child .emotion-7 {
 }
 
 <header
+  aria-controls="my-accordion-1"
+  aria-expanded={true}
   className="emotion-7 emotion-8"
+  onClick={[Function]}
 >
   <h1
     className="emotion-4 emotion-5 emotion-6"
@@ -422,18 +428,16 @@ section:last-child .emotion-7 {
     fontSize="size4"
     fontWeight="medium"
   >
-    <button
+    <span
       aria-controls="my-accordion-1"
       aria-expanded={true}
       className="emotion-2 emotion-3"
-      onClick={[Function]}
-      type="button"
     >
       <i
         className="ar ar-caret emotion-0 emotion-1"
       />
       My Heading
-    </button>
+    </span>
   </h1>
 </header>
 `;
