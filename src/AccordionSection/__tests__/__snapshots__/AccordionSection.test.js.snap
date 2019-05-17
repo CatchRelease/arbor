@@ -75,7 +75,7 @@ section:last-child .emotion-7 {
   background: none;
   border: none;
   font-size: inherit;
-  font-weight: normal;
+  font-weight: 400;
   padding: 0;
 }
 
@@ -211,7 +211,7 @@ section:last-child .emotion-7 {
   background: none;
   border: none;
   font-size: inherit;
-  font-weight: normal;
+  font-weight: 400;
   padding: 0;
 }
 
