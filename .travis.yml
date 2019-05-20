@@ -5,3 +5,11 @@ node_js:
   - '12.2'
 cache: yarn
 script: yarn test:ci
+deploy:
+  provider: script
+  script: bash scripts/deploy-storybook
+  on:
+    branch: master
+env:
+  global:
+    secure: rKOS40yheS3ZIN5TWKsIOMj3G8Ysxt/1v9Qr/mn0Gp6CS5RbEObRecdWqJc7/JqWnokQ8rMV5qfjuee39ehEzESw1EPJ/eE+Rb50HeKReHctXJieaVnEzWgmfYLOJOARw5kMVNJwj4/iTBqbi5E/5kv+ksnCdhBn9FlqVuP3RnOS9Ko8ucjl0EykTLXB5BTdPr/pTkOBxl/zu17nw+SrQKcd7BeLY8NoTYf4rVrBokVtzs8omK9FgeX1Yi+0HLGLMoecm+fXx8U90VY0XRUiJIRSKbpOqO9GMyvj7wHnKmCUHjcmB6GvN949wVDTKmqT3qdWvK8Tkiw5AsjNedwDEp5HxzPXWzn8Y4nxQiVz3mBsfinvNbt1u2sPUo8m8cC1aLv3Fyz1npF10cn8lWxpmBlEnUMaCx10ArP5r4ckinEl3p4HUrvZyUqZvuqbhVOg4MVAImPt8Wt6aFZ+cuSfv84Yt/axA07Tk4lJz48TOsjNk6AMLCOytXHrO858jB6gtYUhvhhaQ+LcbbFg1AwNeZ3IF0RSvS+IyP8C5JUR+DDc6A1MssJsUf8NRuQeS2t+pnDNR+SFEdyaZZGGIG63jMwZ5mu9bY3zVsC6QD/LDy4id2qhCFqg0yL0JFX99g2J2+orqJyq2HuBnmEjLNhezGo9ZygfRNnVcS5fmcN1muk=
