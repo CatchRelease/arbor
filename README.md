@@ -1,5 +1,6 @@
-[ ![Codeship Status for
-CatchRelease/arbor](https://app.codeship.com/projects/0fd77eb0-aede-0136-de71-6acd4e02bc2c/status?branch=master)](https://app.codeship.com/projects/310054)
+[![Build
+Status](https://travis-ci.com/CatchRelease/arbor.svg?branch=master)](https://travis-ci.com/CatchRelease/arbor)
+
 [![code style:
 prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
