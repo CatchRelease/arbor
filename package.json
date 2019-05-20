@@ -10,7 +10,7 @@
     "lint": "yarn eslint && stylelint src",
     "eslint": "eslint src stories .storybook",
     "test:ci": "yarn test && yarn lint",
-    "deploy-storybook": "storybook-to-ghpages",
+    "deploy-storybook": "yarn storybook-to-ghpages",
     "build": "rm -rf dist/* && babel src -d dist --ignore '**/*.test.js'"
   },
   "author": "Damian Galarza",
