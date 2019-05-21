@@ -48,24 +48,6 @@ The application must be wrapped in an emotion `ThemeProvider` in order to work.
 You can import the base theme from arbor, or customize it and pass in your own.
 See [emotion-theming](https://github.com/emotion-js/emotion/blob/master/docs/theming.md).
 
-## ESLint
-
-The project is setup to use ESLint. ESLint rules need to be managed in an
-eslint-plugin. Our custom rules are defined in the `index.js` file of the
-`./rules` folder. If you are testing a new or updated rule, you will need to run
-the following to update the plugin in the node_modules folder:
-
-```
-yarn add --dev ./rules
-```
-
-Once you are happy with your rules, be sure to update the version in the
-`package.json` file of the `./rules` folder so that the next person will get the
-updated rule when he/she runs `yarn`. Resources: [Creating rules with ESLint
-Docs](https://eslint.org/docs/developer-guide/working-with-rules), [AST
-Explorer](https://astexplorer.net/), [Writing custom ESLint
-rules](https://www.kenneth-truyers.net/2016/05/27/writing-custom-eslint-rules/)
-
 ## License
 
 The package is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
