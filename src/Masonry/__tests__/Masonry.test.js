@@ -13,6 +13,7 @@ describe('<Masonry />', () => {
         columnRuleStyle="solid"
         columnRuleWidth="1px"
         columnWidth="300px"
+        rowGap="regular"
       >
         <div key="1">Masonry Item 1</div>
         <div key="2">Masonry Item 2</div>
