@@ -40,6 +40,7 @@ stories.add('default', () => (
       columnRuleStyle={text('Column Rule Style', '')}
       columnRuleWidth={text('Column Rule Width', '')}
       columnWidth={text('Column Width', '300px')}
+      rowGap={text('Row Gap', 'regular')}
     >
       {colors.map((color, key) => (
         <Flex
