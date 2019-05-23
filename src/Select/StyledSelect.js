@@ -29,6 +29,7 @@ const StyledSelectWrapper = styled.div`
     display: flex;
     font-family: ${props => props.theme.fonts.icon};
     font-size: ${props => props.theme.fontSizes.size5};
+    pointer-events: none;
     position: absolute;
     right: ${props => props.theme.space.smaller};
     top: 0;
