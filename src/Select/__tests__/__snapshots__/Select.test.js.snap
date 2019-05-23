@@ -23,6 +23,7 @@ exports[`<Select /> renders a large Select correctly 1`] = `
   display: flex;
   font-family: Arbor;
   font-size: 1rem;
+  pointer-events: none;
   position: absolute;
   right: 0.5rem;
   top: 0;
@@ -126,6 +127,7 @@ exports[`<Select /> renders an Select correctly 1`] = `
   display: flex;
   font-family: Arbor;
   font-size: 1rem;
+  pointer-events: none;
   position: absolute;
   right: 0.5rem;
   top: 0;
@@ -224,6 +226,7 @@ exports[`<Select /> renders an Select with a caption correctly 1`] = `
   display: flex;
   font-family: Arbor;
   font-size: 1rem;
+  pointer-events: none;
   position: absolute;
   right: 0.5rem;
   top: 0;
@@ -342,6 +345,7 @@ exports[`<Select /> renders an Select with a label correctly 1`] = `
   display: flex;
   font-family: Arbor;
   font-size: 1rem;
+  pointer-events: none;
   position: absolute;
   right: 0.5rem;
   top: 0;
