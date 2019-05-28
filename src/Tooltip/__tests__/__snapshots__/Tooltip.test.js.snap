@@ -156,6 +156,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
         },
         "radii": Object {
           "large": "6px",
+          "larger": "12px",
           "small": "3px",
         },
         "shadows": Object {
@@ -405,6 +406,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
               },
               "radii": Object {
                 "large": "6px",
+                "larger": "12px",
                 "small": "3px",
               },
               "shadows": Object {
