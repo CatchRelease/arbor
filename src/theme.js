@@ -189,7 +189,8 @@ export const spacings = {
 
 export const borderRadius = {
   small: '3px',
-  large: '6px'
+  large: '6px',
+  larger: '12px'
 };
 
 export const borderWidth = {
