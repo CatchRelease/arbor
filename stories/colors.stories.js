@@ -1,80 +1,127 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { storiesOf } from '@storybook/react';
+import { capitalize } from 'lodash';
 import { readableColor } from 'polished';
+import { storiesOf } from '@storybook/react';
 
-import {
-  Heading,
-  backgroundColors,
-  black,
-  blues,
-  borderColors,
-  brandColors,
-  Box,
-  bronzes,
-  Flex,
-  greens,
-  greys,
-  iconColors,
-  reds,
-  textColors,
-  whites
-} from '../src';
+import { colors, Flex, Heading, Grid, Text } from '../src';
 
-const blackAndWhites = { ...whites, black };
+const getReadableColor = (color, hex, modifier = '', colorGroup) => {
+  switch (modifier) {
+    case 'lighter':
+      return `${colorGroup}.${color}.dark`;
+    case 'light':
+      return `${colorGroup}.${color}.darker`;
+    case 'dark':
+      return `${colorGroup}.${color}.lighter`;
+    case 'darker':
+      return `${colorGroup}.${color}.light`;
+    default:
+      return readableColor(hex, 'monochrome.black', 'monochrome.white');
+  }
+};
 
-const getBrandedReadableColor = hex =>
-  readableColor(hex) === '#000' ? 'black' : 'white';
+const getFrUnits = obj =>
+  Object.entries(obj)
+    .map(() => '1fr')
+    .join(' ');
 
-const SwatchCollection = ({ title, pallete }) => (
-  <Box p="small">
-    <Heading.h1>{title}</Heading.h1>
-    <Flex flexWrap="wrap">
-      {Object.entries(pallete).map(([name, hex]) => (
-        <div key={name}>
-          <Flex
-            height="144px"
-            width="300px"
-            mt="larger"
-            mr="larger"
-            key={name}
-            bg={hex}
-            borderRadius="large"
-            alignItems="center"
-            justifyContent="center"
-            boxShadow="elevation3"
-          >
-            <Heading.h3 as="h2" color={getBrandedReadableColor(hex)}>
-              {hex}
-            </Heading.h3>
-          </Flex>
+const Swatch = ({ color, hex, modifier, colorGroup }) => (
+  <Flex
+    bg={hex}
+    flexDirection="column"
+    height="100px"
+    justifyContent="space-around"
+    key={modifier}
+    px="small"
+  >
+    <Text color={getReadableColor(color, hex, modifier, colorGroup)}>
+      {capitalize(modifier)}
+    </Text>
+    <Heading.h3
+      as="h2"
+      color={getReadableColor(color, hex, modifier, colorGroup)}
+    >
+      {hex.toUpperCase()}
+    </Heading.h3>
+  </Flex>
+);
 
-          <Heading.h4 as="h3" fontSize="size2" color="grey70" mt="regular">
-            {name}
-          </Heading.h4>
-        </div>
+Swatch.propTypes = {
+  color: PropTypes.string.isRequired,
+  hex: PropTypes.string.isRequired,
+  modifier: PropTypes.string,
+  colorGroup: PropTypes.string
+};
+
+Swatch.defaultProps = {
+  modifier: '',
+  colorGroup: ''
+};
+
+const SwatchCollection = ({ color, collection, colorGroup }) => (
+  <section>
+    <Heading.h1>{capitalize(color)}</Heading.h1>
+    <Grid gridTemplateRows={getFrUnits(collection)} key={color}>
+      {Object.entries(collection).map(([modifier, hex]) => (
+        <Swatch key={modifier} {...{ color, hex, modifier, colorGroup }} />
       ))}
-    </Flex>
-  </Box>
+    </Grid>
+  </section>
 );
 
 SwatchCollection.propTypes = {
-  title: PropTypes.string.isRequired,
-  pallete: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
+  color: PropTypes.string.isRequired,
+  collection: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  colorGroup: PropTypes.string
 };
 
-storiesOf('Colors', module).add('default', () => (
-  <Fragment>
-    <SwatchCollection title="Black and Whites" pallete={blackAndWhites} />
-    <SwatchCollection title="Greys" pallete={greys} />
-    <SwatchCollection title="Blues" pallete={blues} />
-    <SwatchCollection title="Reds" pallete={reds} />
-    <SwatchCollection title="Greens" pallete={greens} />
-    <SwatchCollection title="Bronzes" pallete={bronzes} />
-    <SwatchCollection title="Background Colors" pallete={backgroundColors} />
-    <SwatchCollection title="Border Colors" pallete={borderColors} />
-    <SwatchCollection title="Text Colors" pallete={textColors} />
-    <SwatchCollection title="Icon Colors" pallete={iconColors} />
-    <SwatchCollection title="Brand Colors" pallete={brandColors} />
-  </Fragment>
+SwatchCollection.defaultProps = {
+  colorGroup: ''
+};
+
+const Swatches = ({ colorGroup, palette }) => (
+  <Grid gridGap="small" gridTemplateColumns={getFrUnits(palette)}>
+    {Object.entries(palette).map(([color, collection]) => (
+      <SwatchCollection
+        key={color}
+        color={color}
+        collection={
+          typeof collection === 'string' ? { [color]: collection } : collection
+        }
+        colorGroup={colorGroup}
+      />
+    ))}
+  </Grid>
+);
+
+Swatches.propTypes = {
+  colorGroup: PropTypes.string,
+  palette: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
+};
+
+Swatches.defaultProps = {
+  colorGroup: ''
+};
+
+storiesOf('Colors', module).add('Intent', () => (
+  <Swatches colorGroup="intent" palette={colors.intent} />
+));
+
+storiesOf('Colors', module).add('Monochrome', () => {
+  const { black, white, ...greys } = colors.monochrome;
+
+  return <Swatches palette={{ black, grey: greys, white }} />;
+});
+
+storiesOf('Colors', module).add('Palette', () => (
+  <Swatches colorGroup="palette" palette={colors.palette} />
+));
+
+storiesOf('Colors', module).add('Primary', () => (
+  <Swatches palette={colors.primary} />
+));
+
+storiesOf('Colors', module).add('Secondary', () => (
+  <Swatches palette={colors.secondary} />
 ));

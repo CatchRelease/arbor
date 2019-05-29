@@ -1,4 +1,5 @@
 import { rem, transparentize } from 'polished';
+import { intent, monochrome, palette, primary, secondary } from './colors';
 
 export const breakpointsMap = {
   sm: '512px',
@@ -89,6 +90,7 @@ export const textColors = {
 };
 
 export const colors = {
+  /* START: deprecated -- Color definition and variables are being revamped */
   black,
   ...blues,
   ...greys,
@@ -100,7 +102,13 @@ export const colors = {
   brand: { ...brandColors },
   border: { ...borderColors },
   icon: { ...iconColors },
-  text: { ...textColors }
+  text: { ...textColors },
+  /* END: deprecated */
+  intent,
+  monochrome,
+  palette,
+  primary,
+  secondary
 };
 
 export const brandFont = 'Motiva Sans';
