@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactSelect from 'react-select';
 import ReactSelectAsync from 'react-select/async';
+import ReactSelectAsyncCreatable from 'react-select/async-creatable';
 import ReactSelectCreatable from 'react-select/creatable';
 import PropTypes from 'prop-types';
 import { withTheme } from 'emotion-theming';
@@ -18,10 +19,12 @@ const components = {
 
 const getReactSelectComponent = variant => {
   switch (variant) {
-    case 'creatable':
-      return ReactSelectCreatable;
     case 'async':
       return ReactSelectAsync;
+    case 'asyncCreatable':
+      return ReactSelectAsyncCreatable;
+    case 'creatable':
+      return ReactSelectCreatable;
     default:
       return ReactSelect;
   }
@@ -60,7 +63,7 @@ const StyledAutoComplete = ({ theme, variant, ...props }) => {
 
 StyledAutoComplete.propTypes = {
   theme: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
-  variant: PropTypes.oneOf(['async', 'creatable', 'default'])
+  variant: PropTypes.oneOf(['async', 'asyncCreatable', 'creatable', 'default'])
 };
 
 StyledAutoComplete.defaultProps = {

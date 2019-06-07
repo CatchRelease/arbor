@@ -40,7 +40,7 @@ const neutralOptions = [
   }
 ];
 
-const variantOptions = ['default', 'async', 'creatable'];
+const variantOptions = ['async', 'asyncCreatable', 'creatable', 'default'];
 
 const filterOptions = (options, inputValue: '') =>
   options.filter(option =>
@@ -57,6 +57,7 @@ class AutoCompleteExample extends React.Component {
 
     switch (variant) {
       case 'async':
+      case 'asyncCreatable':
         return {
           loadOptions: inputValue =>
             new Promise(resolve => {
@@ -115,28 +116,28 @@ stories.add('default', () => (
       id="auto-complete-1"
       label="AutoComplete with unstyled badges"
       options={neutralOptions}
-      variant={select('Variant', variantOptions)}
+      variant={select('Variant', variantOptions, 'default')}
     />
 
     <AutoCompleteExample
       id="auto-complete-2"
       label="AutoComplete with unstyled pill badges"
       options={neutralOptions.map(option => ({ ...option, variant: 'pill' }))}
-      variant={select('Variant', variantOptions)}
+      variant={select('Variant', variantOptions, 'default')}
     />
 
     <AutoCompleteExample
       id="auto-complete-3"
       label="AutoComplete with color badges"
       options={colorOptions}
-      variant={select('Variant', variantOptions)}
+      variant={select('Variant', variantOptions, 'default')}
     />
 
     <AutoCompleteExample
       id="auto-complete-4"
       label="AutoComplete with subtle color badges"
       options={colorOptions.map(option => ({ ...option, subtle: true }))}
-      variant={select('Variant', variantOptions)}
+      variant={select('Variant', variantOptions, 'default')}
     />
 
     <AutoCompleteExample
@@ -147,7 +148,7 @@ stories.add('default', () => (
         subtle: true,
         variant: 'pill'
       }))}
-      variant={select('Variant', variantOptions)}
+      variant={select('Variant', variantOptions, 'default')}
     />
   </Box>
 ));
