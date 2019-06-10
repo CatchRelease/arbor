@@ -5,12 +5,21 @@ import Badge from '../Badge';
 import Icon from '../Icon';
 
 const StyledMultiValue = ({ data, data: { label }, removeProps }) => {
-  const iconEnd = <Icon name="cross" {...removeProps} />;
+  const iconEnd = (
+    <Icon
+      aria-label="remove"
+      css={{ cursor: 'pointer' }}
+      fontSize="size3"
+      name="cross"
+      {...removeProps}
+    />
+  );
 
   return (
     <Badge
       {...{
         iconEnd,
+        mb: 'smallest',
         mr: 'smallest',
         subtle: true,
         ...data

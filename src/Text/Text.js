@@ -13,6 +13,7 @@ import {
   textAlign
 } from 'styled-system';
 
+import textOverflow from '../utils/textOverflow';
 import whiteSpace from '../utils/whiteSpace';
 
 const baseStyles = ({ theme }) => css`
@@ -31,6 +32,7 @@ const Text = styled.p`
   ${overflow};
   ${space};
   ${textAlign};
+  ${textOverflow};
   ${whiteSpace};
 `;
 
@@ -44,6 +46,7 @@ Text.propTypes = {
   ...overflow.propTypes,
   ...space.propTypes,
   ...textAlign.propTypes,
+  ...textOverflow.propTypes,
   ...whiteSpace.propTypes
 };
 

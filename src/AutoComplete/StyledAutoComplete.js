@@ -39,11 +39,12 @@ const getStyles = ({ radii, shadows, brandFont, space }) => ({
   dropdownIndicator: addStyles({ display: 'none' }),
   control: addStyles({ boxShadow: 'none' }),
   indicatorSeparator: addStyles({ display: 'none' }),
+  input: addStyles({ marginTop: `-${space.smallest}` }),
   menu: addStyles({
     borderRadius: radii.large,
     boxShadow: shadows.elevation2
   }),
-  valueContainer: addStyles({ padding: `0 ${space.smaller}` })
+  valueContainer: addStyles({ padding: `${space.smallest} ${space.smaller} 0` })
 });
 
 const StyledAutoComplete = ({ theme, variant, ...props }) => {
