@@ -3,9 +3,33 @@
 exports[`<Badge /> Colors properly renders a blue badge 1`] = `
 .emotion-2 {
   box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
   border: 1px solid;
   color: #4466EE;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -21,44 +45,59 @@ exports[`<Badge /> Colors properly renders a blue badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: #4466EE;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
-  text-overflow: ellipsis;
-}
-
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
-}
-
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="blue"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="blue"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Colors properly renders a cyan badge 1`] = `
 .emotion-2 {
   box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
   border: 1px solid;
   color: cyan;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -74,44 +113,59 @@ exports[`<Badge /> Colors properly renders a cyan badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: cyan;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
-  text-overflow: ellipsis;
-}
-
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
-}
-
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="cyan"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="cyan"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Colors properly renders a green badge 1`] = `
 .emotion-2 {
   box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
   border: 1px solid;
   color: #00AA44;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -127,43 +181,35 @@ exports[`<Badge /> Colors properly renders a green badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: #00AA44;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
-  text-overflow: ellipsis;
-}
-
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
-}
-
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="green"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="green"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Colors properly renders a neutral badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -179,43 +225,82 @@ exports[`<Badge /> Colors properly renders a neutral badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #FFFFFF;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color=""
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color=""
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Colors properly renders a orange badge 1`] = `
 .emotion-2 {
   box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
   border: 1px solid;
   color: orange;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -231,44 +316,59 @@ exports[`<Badge /> Colors properly renders a orange badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: orange;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
-  text-overflow: ellipsis;
-}
-
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
-}
-
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="orange"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="orange"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Colors properly renders a pink badge 1`] = `
 .emotion-2 {
   box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
   border: 1px solid;
   color: pink;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -284,44 +384,59 @@ exports[`<Badge /> Colors properly renders a pink badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: pink;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
-  text-overflow: ellipsis;
-}
-
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
-}
-
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="pink"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="pink"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Colors properly renders a purple badge 1`] = `
 .emotion-2 {
   box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
   border: 1px solid;
   color: purple;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -337,44 +452,59 @@ exports[`<Badge /> Colors properly renders a purple badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: purple;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
-  text-overflow: ellipsis;
-}
-
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
-}
-
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="purple"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="purple"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Colors properly renders a red badge 1`] = `
 .emotion-2 {
   box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
   border: 1px solid;
   color: #EE2200;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -390,44 +520,59 @@ exports[`<Badge /> Colors properly renders a red badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: #EE2200;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
-  text-overflow: ellipsis;
-}
-
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
-}
-
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="red"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="red"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Colors properly renders a teal badge 1`] = `
 .emotion-2 {
   box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
   border: 1px solid;
   color: teal;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -443,44 +588,59 @@ exports[`<Badge /> Colors properly renders a teal badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: teal;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
-  text-overflow: ellipsis;
-}
-
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
-}
-
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="teal"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="teal"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Colors properly renders a yellow badge 1`] = `
 .emotion-2 {
   box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
   border: 1px solid;
   color: yellow;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -496,44 +656,36 @@ exports[`<Badge /> Colors properly renders a yellow badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: yellow;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
-  text-overflow: ellipsis;
-}
-
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
-}
-
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="yellow"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="yellow"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Subtle properly renders a subtle blue badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   color: #4466EE;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -549,44 +701,59 @@ exports[`<Badge /> Subtle properly renders a subtle blue badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: #4466EE;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #213175;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #213175;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="blue"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="blue"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="palette.blue.dark"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="palette.blue.dark"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Subtle properly renders a subtle cyan badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   color: cyan;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -602,44 +769,59 @@ exports[`<Badge /> Subtle properly renders a subtle cyan badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: cyan;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #063f48;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #063f48;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="cyan"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="cyan"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="palette.cyan.dark"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="palette.cyan.dark"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Subtle properly renders a subtle green badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   color: #00AA44;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -655,43 +837,58 @@ exports[`<Badge /> Subtle properly renders a subtle green badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: #00AA44;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #14431d;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #14431d;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="green"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="green"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="palette.green.dark"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="palette.green.dark"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -707,43 +904,59 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #5B5D61;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #5B5D61;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color=""
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color=""
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.grey80"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.grey80"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Subtle properly renders a subtle orange badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   color: orange;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -759,44 +972,59 @@ exports[`<Badge /> Subtle properly renders a subtle orange badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: orange;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #622902;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #622902;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="orange"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="orange"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="palette.orange.dark"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="palette.orange.dark"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Subtle properly renders a subtle pink badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   color: pink;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -812,44 +1040,59 @@ exports[`<Badge /> Subtle properly renders a subtle pink badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: pink;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #6b1936;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #6b1936;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="pink"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="pink"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="palette.pink.dark"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="palette.pink.dark"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Subtle properly renders a subtle purple badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   color: purple;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -865,44 +1108,59 @@ exports[`<Badge /> Subtle properly renders a subtle purple badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: purple;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #382474;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #382474;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="purple"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="purple"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="palette.purple.dark"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="palette.purple.dark"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Subtle properly renders a subtle red badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   color: #EE2200;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -918,44 +1176,59 @@ exports[`<Badge /> Subtle properly renders a subtle red badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: #EE2200;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #6c1c1c;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #6c1c1c;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="red"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="red"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="palette.red.dark"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="palette.red.dark"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Subtle properly renders a subtle teal badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   color: teal;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -971,44 +1244,59 @@ exports[`<Badge /> Subtle properly renders a subtle teal badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: teal;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #044231;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #044231;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="teal"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="teal"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="palette.teal.dark"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="palette.teal.dark"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Subtle properly renders a subtle yellow badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   color: yellow;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1024,43 +1312,58 @@ exports[`<Badge /> Subtle properly renders a subtle yellow badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: yellow;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #513400;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #513400;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color="yellow"
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color="yellow"
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="palette.yellow.dark"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="palette.yellow.dark"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Variants properly renders a default badge 1`] = `
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1076,56 +1379,81 @@ exports[`<Badge /> Variants properly renders a default badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
+.emotion-2 {
+  box-sizing: border-box;
   color: #FFFFFF;
-  text-overflow: ellipsis;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
   color=""
   height="24px"
 >
-  <p
-    className="emotion-0 emotion-1"
-    color=""
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
 exports[`<Badge /> Variants properly renders a pill badge 1`] = `
+.emotion-2 {
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
 .emotion-0 {
   font-family: Motiva Sans;
+  color: #FFFFFF;
   font-size: 0.8125rem;
   font-weight: 500;
+  line-height: 1.5;
   overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.emotion-0 i:last-of-type {
-  margin-left: 0.25rem;
-}
-
-.emotion-2 {
+.emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1142,81 +1470,34 @@ exports[`<Badge /> Variants properly renders a pill badge 1`] = `
 }
 
 <div
-  className="emotion-2 emotion-3"
-  color=""
-  height="24px"
->
-  <p
-    className="emotion-0 emotion-1"
-    color=""
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
-  >
-    Badge Text
-  </p>
-</div>
-`;
-
-exports[`<Badge /> iconEnd properly renders a badge with an ending icon 1`] = `
-.emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #0F0F10;
-  border-color: #0F0F10;
-  border-radius: 2px;
-}
-
-.emotion-2 {
-  font-family: Motiva Sans;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
-  text-overflow: ellipsis;
-}
-
-.emotion-2 i:last-of-type {
-  margin-left: 0.25rem;
-}
-
-<div
   className="emotion-4 emotion-5"
   color=""
   height="24px"
 >
-  <p
+  <div
     className="emotion-2 emotion-3"
-    color=""
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+    color="monochrome.white"
+    display="grid"
   >
-    Badge Text
-    <i
-      className="ar ar-cr-logo emotion-0 emotion-1"
-    />
-  </p>
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;
 
-exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a starting and ending icon 1`] = `
+exports[`<Badge /> iconEnd properly renders a badge with an ending icon 1`] = `
 .emotion-6 {
   box-sizing: border-box;
   border: 1px solid;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1232,22 +1513,27 @@ exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a st
   border-radius: 2px;
 }
 
-.emotion-4 {
+.emotion-0 {
   font-family: Motiva Sans;
+  color: #FFFFFF;
   font-size: 0.8125rem;
   font-weight: 500;
+  line-height: 1.5;
   overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.emotion-4 i:first-of-type {
-  margin-right: 0.25rem;
-}
-
-.emotion-4 i:last-of-type {
-  margin-left: 0.25rem;
+.emotion-4 {
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr 0fr;
 }
 
 <div
@@ -1255,29 +1541,33 @@ exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a st
   color=""
   height="24px"
 >
-  <p
+  <div
     className="emotion-4 emotion-5"
-    color=""
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+    color="monochrome.white"
+    display="grid"
   >
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
     <i
-      className="ar ar-cr-logo emotion-0 emotion-1"
+      className="ar ar-cr-logo emotion-2 emotion-3"
     />
-    Badge Text
-    <i
-      className="ar ar-cr-logo emotion-0 emotion-1"
-    />
-  </p>
+  </div>
 </div>
 `;
 
-exports[`<Badge /> iconStart properly renders a badge with a starting icon 1`] = `
-.emotion-4 {
+exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a starting and ending icon 1`] = `
+.emotion-8 {
   box-sizing: border-box;
   border: 1px solid;
   height: 24px;
+  max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1295,34 +1585,122 @@ exports[`<Badge /> iconStart properly renders a badge with a starting icon 1`] =
 
 .emotion-2 {
   font-family: Motiva Sans;
+  color: #FFFFFF;
   font-size: 0.8125rem;
   font-weight: 500;
+  line-height: 1.5;
   overflow: hidden;
-  white-space: nowrap;
-  color: #FFFFFF;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.emotion-2 i:first-of-type {
-  margin-right: 0.25rem;
+.emotion-6 {
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 0fr 1fr 0fr;
 }
 
 <div
-  className="emotion-4 emotion-5"
+  className="emotion-8 emotion-9"
   color=""
   height="24px"
 >
-  <p
-    className="emotion-2 emotion-3"
-    color=""
-    fontSize="size3"
-    fontWeight="medium"
-    overflow="hidden"
+  <div
+    className="emotion-6 emotion-7"
+    color="monochrome.white"
+    display="grid"
   >
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    Badge Text
-  </p>
+    <span
+      className="emotion-2 emotion-3"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+    <i
+      className="ar ar-cr-logo emotion-0 emotion-1"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Badge /> iconStart properly renders a badge with a starting icon 1`] = `
+.emotion-6 {
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
+  max-width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #0F0F10;
+  border-color: #0F0F10;
+  border-radius: 2px;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 0fr 1fr;
+}
+
+<div
+  className="emotion-6 emotion-7"
+  color=""
+  height="24px"
+>
+  <div
+    className="emotion-4 emotion-5"
+    color="monochrome.white"
+    display="grid"
+  >
+    <i
+      className="ar ar-cr-logo emotion-0 emotion-1"
+    />
+    <span
+      className="emotion-2 emotion-3"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
 </div>
 `;

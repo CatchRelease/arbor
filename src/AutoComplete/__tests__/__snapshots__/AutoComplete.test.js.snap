@@ -78,7 +78,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 0 0.5rem;
+  padding: 0.25rem 0.5rem 0;
   -webkit-overflow-scrolling: touch;
   position: relative;
   overflow: hidden;
@@ -104,6 +104,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   visibility: visible;
   color: #5B5D61;
   box-sizing: border-box;
+  margin-top: -0.25rem;
 }
 
 .emotion-8 {
@@ -359,7 +360,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 0 0.5rem;
+  padding: 0.25rem 0.5rem 0;
   -webkit-overflow-scrolling: touch;
   position: relative;
   overflow: hidden;
@@ -385,6 +386,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   visibility: visible;
   color: #5B5D61;
   box-sizing: border-box;
+  margin-top: -0.25rem;
 }
 
 .emotion-8 {
@@ -640,7 +642,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 0 0.5rem;
+  padding: 0.25rem 0.5rem 0;
   -webkit-overflow-scrolling: touch;
   position: relative;
   overflow: hidden;
@@ -666,6 +668,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   visibility: visible;
   color: #5B5D61;
   box-sizing: border-box;
+  margin-top: -0.25rem;
 }
 
 .emotion-8 {
@@ -921,7 +924,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 0 0.5rem;
+  padding: 0.25rem 0.5rem 0;
   -webkit-overflow-scrolling: touch;
   position: relative;
   overflow: hidden;
@@ -947,6 +950,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   visibility: visible;
   color: #5B5D61;
   box-sizing: border-box;
+  margin-top: -0.25rem;
 }
 
 .emotion-8 {

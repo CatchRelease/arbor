@@ -37,6 +37,7 @@ StyledBadge.defaultProps = {
   border: '1px solid',
   color: '',
   height: '24px',
+  maxWidth: '100%',
   px: 'smaller'
 };
 
