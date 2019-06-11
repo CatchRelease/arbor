@@ -16,7 +16,7 @@ describe('<Textarea />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders an Textarea with a caption correctly', () => {
+  it('renders a Textarea with a caption correctly', () => {
     const tree = createWithTheme(
       <Textarea id="example" caption="I am a caption" />
     ).toJSON();
@@ -24,9 +24,17 @@ describe('<Textarea />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders an Textarea with a label correctly', () => {
+  it('renders a Textarea with a label correctly', () => {
     const tree = createWithTheme(
       <Textarea label="My Textarea" id="example" />
+    ).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('renders a Textarea with a labelAside correctly', () => {
+    const tree = createWithTheme(
+      <Textarea labelAside={<div>sup?</div>} id="example" />
     ).toJSON();
 
     expect(tree).toMatchSnapshot();

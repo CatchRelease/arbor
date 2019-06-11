@@ -1,25 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<FormField /> renders a FormField correctly 1`] = `
-.emotion-0 {
+.emotion-2 {
   margin-bottom: 1rem;
 }
 
+.emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-2 emotion-3"
 >
-  
+  <div
+    className="emotion-0 emotion-1"
+  >
+    
+  </div>
   Field Child
   
 </div>
 `;
 
 exports[`<FormField /> renders a FormField with a caption correctly 1`] = `
-.emotion-2 {
+.emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 {
   margin-bottom: 0.5rem;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #EE2200;
   line-height: 1.25;
@@ -27,12 +55,16 @@ exports[`<FormField /> renders a FormField with a caption correctly 1`] = `
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-4 emotion-5"
 >
-  
+  <div
+    className="emotion-0 emotion-1"
+  >
+    
+  </div>
   Field Child
   <span
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     color="red"
   >
     I am a caption
@@ -41,8 +73,35 @@ exports[`<FormField /> renders a FormField with a caption correctly 1`] = `
 `;
 
 exports[`<FormField /> with label renders a FormField with a label correctly 1`] = `
-.emotion-2 {
+.emotion-6 {
   margin-bottom: 1rem;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .emotion-0 {
@@ -54,14 +113,101 @@ exports[`<FormField /> with label renders a FormField with a label correctly 1`]
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-6 emotion-7"
 >
-  <label
-    className="emotion-0 emotion-1"
-    htmlFor="example"
+  <div
+    className="emotion-4 emotion-3"
   >
-    My label
-  </label>
+    <div
+      className="emotion-2 emotion-3"
+    >
+      <label
+        className="emotion-0 emotion-1"
+        htmlFor="example"
+      >
+        My label
+      </label>
+    </div>
+  </div>
+  Field Child
+  
+</div>
+`;
+
+exports[`<FormField /> with labelAside renders a FormField with a label correctly 1`] = `
+.emotion-8 {
+  margin-bottom: 1rem;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-0 {
+  color: #5B5D61;
+  display: block;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="emotion-8 emotion-9"
+>
+  <div
+    className="emotion-6 emotion-3"
+  >
+    <div
+      className="emotion-2 emotion-3"
+    >
+      <label
+        className="emotion-0 emotion-1"
+        htmlFor="example"
+      >
+        My label
+      </label>
+    </div>
+    <div
+      className="emotion-4 emotion-3"
+    >
+      <div
+        id="my-label-aside"
+      >
+        muffins
+      </div>
+    </div>
+  </div>
   Field Child
   
 </div>

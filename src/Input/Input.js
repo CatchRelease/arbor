@@ -32,7 +32,7 @@ Input.propTypes = {
   /**
    * Component that goes to the right of the label. Does not have to only be text.
    */
-  secondaryLabel: PropTypes.node,
+  labelAside: PropTypes.node,
 
   /**
    * HTML Input type
@@ -44,7 +44,7 @@ Input.defaultProps = {
   as: 'input',
   caption: '',
   label: '',
-  secondaryLabel: null,
+  labelAside: null,
   type: 'text'
 };
 

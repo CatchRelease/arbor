@@ -1,219 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Textarea /> renders a large Textarea correctly 1`] = `
-.emotion-2 {
-  margin-bottom: 1rem;
-}
-
+exports[`<Textarea /> renders a Textarea with a caption correctly 1`] = `
 .emotion-0 {
-  border-radius: 3px;
-  border: 1px solid #E0E1E2;
   box-sizing: border-box;
-  color: #25272D;
-  font-family: Motiva Sans;
-  font-size: 0.875rem;
-  line-height: 1.25;
-  margin: 0.25rem 0;
-  padding: 0.5rem;
-  width: 100%;
-  padding: 0.75rem 0.5rem;
-}
-
-@media (max-width:768px) {
-  .emotion-0 {
-    font-size: 1rem;
-  }
-}
-
-.emotion-0::-webkit-input-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0:-moz-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0::-moz-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0:-ms-input-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0:focus {
-  border: 1px solid #5577FF;
-  box-shadow: 0 0 8px rgba(85,119,255,0.1);
-  outline: none;
-}
-
-.emotion-0:disabled {
-  background: #F2F2F2;
-}
-
-.emotion-0:required {
-  box-shadow: none;
-}
-
-<div
-  className="emotion-2 emotion-3"
->
-  
-  <textarea
-    className="emotion-0 emotion-1"
-    id="example"
-  />
-  
-</div>
-`;
-
-exports[`<Textarea /> renders an Textarea correctly 1`] = `
-.emotion-2 {
-  margin-bottom: 1rem;
-}
-
-.emotion-0 {
-  border-radius: 3px;
-  border: 1px solid #E0E1E2;
-  box-sizing: border-box;
-  color: #25272D;
-  font-family: Motiva Sans;
-  font-size: 0.875rem;
-  line-height: 1.25;
-  margin: 0.25rem 0;
-  padding: 0.5rem;
-  width: 100%;
-}
-
-@media (max-width:768px) {
-  .emotion-0 {
-    font-size: 1rem;
-  }
-}
-
-.emotion-0::-webkit-input-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0:-moz-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0::-moz-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0:-ms-input-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0:focus {
-  border: 1px solid #5577FF;
-  box-shadow: 0 0 8px rgba(85,119,255,0.1);
-  outline: none;
-}
-
-.emotion-0:disabled {
-  background: #F2F2F2;
-}
-
-.emotion-0:required {
-  box-shadow: none;
-}
-
-<div
-  className="emotion-2 emotion-3"
->
-  
-  <textarea
-    className="emotion-0 emotion-1"
-    id="example"
-  />
-  
-</div>
-`;
-
-exports[`<Textarea /> renders an Textarea with a caption correctly 1`] = `
-.emotion-0 {
-  border-radius: 3px;
-  border: 1px solid #E0E1E2;
-  box-sizing: border-box;
-  color: #25272D;
-  font-family: Motiva Sans;
-  font-size: 0.875rem;
-  line-height: 1.25;
-  margin: 0.25rem 0;
-  padding: 0.5rem;
-  width: 100%;
-}
-
-@media (max-width:768px) {
-  .emotion-0 {
-    font-size: 1rem;
-  }
-}
-
-.emotion-0::-webkit-input-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0:-moz-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0::-moz-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0:-ms-input-placeholder {
-  color: #989A9C;
-}
-
-.emotion-0:focus {
-  border: 1px solid #5577FF;
-  box-shadow: 0 0 8px rgba(85,119,255,0.1);
-  outline: none;
-}
-
-.emotion-0:disabled {
-  background: #F2F2F2;
-}
-
-.emotion-0:required {
-  box-shadow: none;
-}
-
-.emotion-4 {
-  margin-bottom: 0.5rem;
-}
-
-.emotion-2 {
-  font-family: Motiva Sans;
-  color: #EE2200;
-  line-height: 1.25;
-  font-size: 0.75rem;
-}
-
-<div
-  className="emotion-4 emotion-5"
->
-  
-  <textarea
-    className="emotion-0 emotion-1"
-    id="example"
-  />
-  <span
-    className="emotion-2 emotion-3"
-    color="red"
-  >
-    I am a caption
-  </span>
-</div>
-`;
-
-exports[`<Textarea /> renders an Textarea with a label correctly 1`] = `
-.emotion-4 {
-  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .emotion-2 {
@@ -265,6 +62,119 @@ exports[`<Textarea /> renders an Textarea with a label correctly 1`] = `
   box-shadow: none;
 }
 
+.emotion-6 {
+  margin-bottom: 0.5rem;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: #EE2200;
+  line-height: 1.25;
+  font-size: 0.75rem;
+}
+
+<div
+  className="emotion-6 emotion-7"
+>
+  <div
+    className="emotion-0 emotion-1"
+  >
+    
+  </div>
+  <textarea
+    className="emotion-2 emotion-3"
+    id="example"
+  />
+  <span
+    className="emotion-4 emotion-5"
+    color="red"
+  >
+    I am a caption
+  </span>
+</div>
+`;
+
+exports[`<Textarea /> renders a Textarea with a label correctly 1`] = `
+.emotion-8 {
+  margin-bottom: 1rem;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+@media (max-width:768px) {
+  .emotion-6 {
+    font-size: 1rem;
+  }
+}
+
+.emotion-6::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-6:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-6::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-6:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-6:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-6:disabled {
+  background: #F2F2F2;
+}
+
+.emotion-6:required {
+  box-shadow: none;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .emotion-0 {
   color: #5B5D61;
   display: block;
@@ -274,14 +184,284 @@ exports[`<Textarea /> renders an Textarea with a label correctly 1`] = `
 }
 
 <div
+  className="emotion-8 emotion-9"
+>
+  <div
+    className="emotion-4 emotion-3"
+  >
+    <div
+      className="emotion-2 emotion-3"
+    >
+      <label
+        className="emotion-0 emotion-1"
+        htmlFor="example"
+      >
+        My Textarea
+      </label>
+    </div>
+  </div>
+  <textarea
+    className="emotion-6 emotion-7"
+    id="example"
+  />
+  
+</div>
+`;
+
+exports[`<Textarea /> renders a Textarea with a labelAside correctly 1`] = `
+.emotion-6 {
+  margin-bottom: 1rem;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+@media (max-width:768px) {
+  .emotion-4 {
+    font-size: 1rem;
+  }
+}
+
+.emotion-4::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-4:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-4::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-4:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-4:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-4:disabled {
+  background: #F2F2F2;
+}
+
+.emotion-4:required {
+  box-shadow: none;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="emotion-6 emotion-7"
+>
+  <div
+    className="emotion-2 emotion-1"
+  >
+    
+    <div
+      className="emotion-0 emotion-1"
+    >
+      <div>
+        sup?
+      </div>
+    </div>
+  </div>
+  <textarea
+    className="emotion-4 emotion-5"
+    id="example"
+  />
+  
+</div>
+`;
+
+exports[`<Textarea /> renders a large Textarea correctly 1`] = `
+.emotion-4 {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+}
+
+@media (max-width:768px) {
+  .emotion-2 {
+    font-size: 1rem;
+  }
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-2:disabled {
+  background: #F2F2F2;
+}
+
+.emotion-2:required {
+  box-shadow: none;
+}
+
+<div
   className="emotion-4 emotion-5"
 >
-  <label
+  <div
     className="emotion-0 emotion-1"
-    htmlFor="example"
   >
-    My Textarea
-  </label>
+    
+  </div>
+  <textarea
+    className="emotion-2 emotion-3"
+    id="example"
+  />
+  
+</div>
+`;
+
+exports[`<Textarea /> renders an Textarea correctly 1`] = `
+.emotion-4 {
+  margin-bottom: 1rem;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+@media (max-width:768px) {
+  .emotion-2 {
+    font-size: 1rem;
+  }
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2:focus {
+  border: 1px solid #5577FF;
+  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  outline: none;
+}
+
+.emotion-2:disabled {
+  background: #F2F2F2;
+}
+
+.emotion-2:required {
+  box-shadow: none;
+}
+
+<div
+  className="emotion-4 emotion-5"
+>
+  <div
+    className="emotion-0 emotion-1"
+  >
+    
+  </div>
   <textarea
     className="emotion-2 emotion-3"
     id="example"

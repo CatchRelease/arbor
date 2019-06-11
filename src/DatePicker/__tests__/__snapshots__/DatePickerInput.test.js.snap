@@ -1,11 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
-.emotion-2 {
+.emotion-4 {
   margin-bottom: 1rem;
 }
 
 .emotion-0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
   border-radius: 3px;
   border: 1px solid #E0E1E2;
   box-sizing: border-box;
@@ -19,38 +31,38 @@ exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
 }
 
 @media (max-width:768px) {
-  .emotion-0 {
+  .emotion-2 {
     font-size: 1rem;
   }
 }
 
-.emotion-0::-webkit-input-placeholder {
+.emotion-2::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-0:-moz-placeholder {
+.emotion-2:-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-0::-moz-placeholder {
+.emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-0:-ms-input-placeholder {
+.emotion-2:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-0:focus {
+.emotion-2:focus {
   border: 1px solid #5577FF;
   box-shadow: 0 0 8px rgba(85,119,255,0.1);
   outline: none;
 }
 
-.emotion-0:disabled {
+.emotion-2:disabled {
   background: #F2F2F2;
 }
 
-.emotion-0:required {
+.emotion-2:required {
   box-shadow: none;
 }
 
@@ -58,11 +70,15 @@ exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
   className="DayPickerInput"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-4 emotion-5"
   >
-    
-    <input
+    <div
       className="emotion-0 emotion-1"
+    >
+      
+    </div>
+    <input
+      className="emotion-2 emotion-3"
       id="date-picker-input"
       onBlur={[Function]}
       onChange={[Function]}

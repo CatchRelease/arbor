@@ -63,7 +63,7 @@ storiesOf('Input', module).add('default', () => (
       placeholder="Placeholder"
     />
     <Input
-      label="Input with Secondary Label"
+      label="Input with Label Aside"
       labelAside={labelAside}
       id="secondary-text-input"
       placeholder="Yey"

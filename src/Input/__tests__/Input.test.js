@@ -32,6 +32,14 @@ describe('<Input />', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it('renders as Input with a labelAside correctly', () => {
+    const tree = createWithTheme(
+      <Input labelAside={<div>sup?</div>} id="example" />
+    ).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
   it('renders an Input with a type correctly', () => {
     const tree = createWithTheme(<Input type="number" id="example" />).toJSON();
 
