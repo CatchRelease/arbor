@@ -4,11 +4,18 @@ import PropTypes from 'prop-types';
 import FormField from '../FormField';
 import StyledTextarea from './StyledTextarea';
 
-const Textarea = React.forwardRef(({ caption, label, id, ...props }, ref) => (
-  <FormField caption={caption} id={id} label={label}>
-    <StyledTextarea {...{ ...props, id, ref }} />
-  </FormField>
-));
+const Textarea = React.forwardRef(
+  ({ caption, label, secondaryLabel, id, ...props }, ref) => (
+    <FormField
+      caption={caption}
+      id={id}
+      label={label}
+      secondaryLabel={secondaryLabel}
+    >
+      <StyledTextarea {...{ ...props, id, ref }} />
+    </FormField>
+  )
+);
 
 Textarea.propTypes = {
   /**
@@ -24,12 +31,18 @@ Textarea.propTypes = {
   /**
    * Label text for the input
    */
-  label: PropTypes.string
+  label: PropTypes.string,
+
+  /**
+   * Component that goes to the right of the label. Does not have to only be text.
+   */
+  secondaryLabel: PropTypes.node
 };
 
 Textarea.defaultProps = {
   caption: '',
-  label: ''
+  label: '',
+  secondaryLabel: null
 };
 
 export default Textarea;
