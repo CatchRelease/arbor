@@ -1,7 +1,6 @@
 /** @jsx jsx */
 
-import React from 'react';
-import { css, jsx } from '@emotion/core';
+import { jsx } from '@emotion/core';
 import { storiesOf } from '@storybook/react';
 
 import { Dropdown, Icon, Input } from '../src';
