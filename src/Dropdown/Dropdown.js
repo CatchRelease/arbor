@@ -56,9 +56,11 @@ class Dropdown extends React.Component {
       name,
       selected,
       popoverProps,
+      trigger,
       ...props
     } = this.props;
     const isOpen = this.popover.current && this.popover.current.state.isOpen;
+    let popoverTrigger;
 
     const menu = (
       <Menu
@@ -68,8 +70,14 @@ class Dropdown extends React.Component {
       />
     );
 
-    return (
-      <Popover ref={this.popover} content={menu} {...popoverProps}>
+    if (trigger) {
+      popoverTrigger = React.cloneElement(trigger, {
+        'aria-haspopup': true,
+        'aria-expanded': isOpen
+      });
+    } else {
+      console.log('button props', props);
+      popoverTrigger = (
         <Button
           {...props}
           ref={this.button}
@@ -78,6 +86,12 @@ class Dropdown extends React.Component {
         >
           {children}
         </Button>
+      );
+    }
+
+    return (
+      <Popover ref={this.popover} content={menu} {...popoverProps}>
+        {popoverTrigger}
       </Popover>
     );
   }
@@ -111,12 +125,18 @@ Dropdown.propTypes = {
   /**
    * Initial selected menu item value
    */
-  selected: PropTypes.string
+  selected: PropTypes.string,
+
+  /**
+   * replacement trigger, to be used instead of a Button. User is expected to configure it entirely.
+   */
+  trigger: PropTypes.element
 };
 
 Dropdown.defaultProps = {
   onChange: () => null,
-  selected: undefined
+  selected: undefined,
+  trigger: null
 };
 
 export default Dropdown;

@@ -1,13 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Flex from '../Flex';
 import Label from '../Label';
 import Paragraph from '../Paragraph';
 import StyledFormField from './StyledFormField';
 
-const FormField = ({ caption, children, label, id }) => (
+const FormField = ({ caption, children, label, secondaryLabel, id }) => (
   <StyledFormField caption={caption}>
-    {label && <Label htmlFor={id}>{label}</Label>}
+    <Flex>
+      {label && (
+        <Flex flex="1" alignItems="center">
+          <Label htmlFor={id}>{label}</Label>
+        </Flex>
+      )}
+      {secondaryLabel && <Flex flex="0">{secondaryLabel}</Flex>}
+    </Flex>
     {children}
     {caption && (
       <Paragraph as="span" variant="tiny" color="red">
@@ -36,12 +44,18 @@ FormField.propTypes = {
   /**
    * Label text for the form field
    */
-  label: PropTypes.string
+  label: PropTypes.string,
+
+  /**
+   * Component that goes to the right of the label. Does not have to only be text.
+   */
+  secondaryLabel: PropTypes.node
 };
 
 FormField.defaultProps = {
   caption: '',
-  label: ''
+  label: '',
+  secondaryLabel: null
 };
 
 export default FormField;

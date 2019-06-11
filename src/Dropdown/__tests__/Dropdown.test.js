@@ -4,6 +4,7 @@ import mountWithTheme from '../../../utils/mountWithTheme';
 
 import Button from '../../Button';
 import Dropdown from '..';
+import Icon from '../../Icon';
 import Menu from '../../Menu';
 import Popover from '../../Popover';
 import { ARROW_DOWN } from '../../constants';
@@ -70,12 +71,24 @@ describe('<Dropdown />', () => {
       });
     });
 
-    it('renders a trigger', () => {
-      const dropdown = mountWithProps();
+    context('trigger', () => {
+      it('renders a Button trigger', () => {
+        const dropdown = mountWithProps();
+        const button = dropdown.find(Button);
 
-      expect(dropdown.find(Button)).toExist();
-      expect(dropdown).toHaveProp({
-        children: dropdown.props().children
+        expect(button).toExist();
+        expect(button).toHaveProp({
+          children: dropdown.props().children
+        });
+      });
+
+      it('allows the default Button trigger to be set to another component', () => {
+        const dropdown = mountWithProps({
+          triggerType: Icon,
+          name: 'calendar'
+        });
+        expect(dropdown.find(Button)).not.toExist();
+        expect(dropdown.find(Icon)).toExist();
       });
     });
   });

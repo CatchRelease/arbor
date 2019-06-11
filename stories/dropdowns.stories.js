@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Dropdown, Flex } from '../src';
+import { Dropdown, Flex, Text } from '../src';
 
 const stories = storiesOf('Dropdown', module);
 
@@ -89,8 +89,34 @@ class DropdownContainer extends React.Component {
   }
 }
 
+class DropdownCustomTriggerContainer extends DropdownContainer {
+  render() {
+    const { selected } = this.state;
+
+    const trigger = (
+      <Flex alignItems="center">
+        <Text id="tacos">Tacos</Text>
+      </Flex>
+    );
+
+    return (
+      <Dropdown
+        menuItems={menuItems}
+        name="clearance_state"
+        selected={selected}
+        variant="minimal"
+        onChange={this.onChange}
+        trigger={trigger}
+      >
+        Clearance Status
+      </Dropdown>
+    );
+  }
+}
+
 stories.add('default', () => (
   <Flex mt="100px" justifyContent="center">
     <DropdownContainer />
+    <DropdownCustomTriggerContainer />
   </Flex>
 ));
