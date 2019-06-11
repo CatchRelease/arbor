@@ -6,15 +6,15 @@ import Label from '../Label';
 import Paragraph from '../Paragraph';
 import StyledFormField from './StyledFormField';
 
-const FormField = ({ caption, children, label, secondaryLabel, id }) => (
+const FormField = ({ caption, children, label, labelAside, id }) => (
   <StyledFormField caption={caption}>
-    <Flex>
+    <Flex alignItems="center">
       {label && (
         <Flex flex="1" alignItems="center">
           <Label htmlFor={id}>{label}</Label>
         </Flex>
       )}
-      {secondaryLabel && <Flex flex="0">{secondaryLabel}</Flex>}
+      {labelAside && <Flex>{labelAside}</Flex>}
     </Flex>
     {children}
     {caption && (
@@ -49,13 +49,13 @@ FormField.propTypes = {
   /**
    * Component that goes to the right of the label. Does not have to only be text.
    */
-  secondaryLabel: PropTypes.node
+  labelAside: PropTypes.node
 };
 
 FormField.defaultProps = {
   caption: '',
   label: '',
-  secondaryLabel: null
+  labelAside: null
 };
 
 export default FormField;

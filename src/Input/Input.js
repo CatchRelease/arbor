@@ -5,13 +5,8 @@ import FormField from '../FormField';
 import StyledInput from './StyledInput';
 
 const Input = React.forwardRef(
-  ({ caption, label, secondaryLabel, id, ...props }, ref) => (
-    <FormField
-      caption={caption}
-      id={id}
-      label={label}
-      secondaryLabel={secondaryLabel}
-    >
+  ({ caption, label, labelAside, id, ...props }, ref) => (
+    <FormField caption={caption} id={id} label={label} labelAside={labelAside}>
       <StyledInput {...{ ...props, id, ref }} />
     </FormField>
   )

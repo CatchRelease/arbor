@@ -4,17 +4,36 @@ import React from 'react';
 import { css, jsx } from '@emotion/core';
 import { storiesOf } from '@storybook/react';
 
-import { Input, Label, Textarea } from '../src';
+import { Dropdown, Icon, Input } from '../src';
 
-const secondaryLabel = id => (
-  <Label
-    htmlFor={id}
-    css={css`
-      white-space: nowrap;
-    `}
+const menuItems = [
+  {
+    label: 'Foo',
+    value: 'foo'
+  },
+  {
+    label: 'Bar',
+    value: 'bar'
+  },
+  {
+    label: 'Baz',
+    value: 'baz'
+  }
+];
+
+const icon = <Icon name="chevron" />;
+
+const labelAside = (
+  <Dropdown
+    iconEnd={icon}
+    type="button"
+    menuItems={menuItems}
+    name="clearance_state"
+    variant="minimal"
+    size="small"
   >
-    A secondary plain old label
-  </Label>
+    Select one
+  </Dropdown>
 );
 
 storiesOf('Input', module).add('default', () => (
@@ -45,7 +64,7 @@ storiesOf('Input', module).add('default', () => (
     />
     <Input
       label="Input with Secondary Label"
-      secondaryLabel={secondaryLabel('secondary-text-input')}
+      labelAside={labelAside}
       id="secondary-text-input"
       placeholder="Yey"
       name="secondary-text-input"
