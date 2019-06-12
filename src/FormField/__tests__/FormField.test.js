@@ -44,4 +44,18 @@ describe('<FormField />', () => {
       expect(formField.find('Label').props().htmlFor).toEqual('example');
     });
   });
+
+  context('with labelAside', () => {
+    it('renders a FormField with a label correctly', () => {
+      const labelAside = <div id="my-label-aside">muffins</div>;
+
+      const tree = createWithTheme(
+        <FormField id="example" label="My label" labelAside={labelAside}>
+          Field Child
+        </FormField>
+      ).toJSON();
+
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

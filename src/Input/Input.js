@@ -4,11 +4,13 @@ import PropTypes from 'prop-types';
 import FormField from '../FormField';
 import StyledInput from './StyledInput';
 
-const Input = React.forwardRef(({ caption, label, id, ...props }, ref) => (
-  <FormField caption={caption} id={id} label={label}>
-    <StyledInput {...{ ...props, id, ref }} />
-  </FormField>
-));
+const Input = React.forwardRef(
+  ({ caption, label, labelAside, id, ...props }, ref) => (
+    <FormField caption={caption} id={id} label={label} labelAside={labelAside}>
+      <StyledInput {...{ ...props, id, ref }} />
+    </FormField>
+  )
+);
 
 Input.propTypes = {
   /**
@@ -28,6 +30,11 @@ Input.propTypes = {
   label: PropTypes.string,
 
   /**
+   * Component that goes to the right of the label. Does not have to only be text.
+   */
+  labelAside: PropTypes.node,
+
+  /**
    * HTML Input type
    */
   type: PropTypes.string
@@ -37,6 +44,7 @@ Input.defaultProps = {
   as: 'input',
   caption: '',
   label: '',
+  labelAside: null,
   type: 'text'
 };
 

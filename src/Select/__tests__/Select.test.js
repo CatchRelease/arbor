@@ -16,7 +16,7 @@ describe('<Select />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders an Select with a caption correctly', () => {
+  it('renders a Select with a caption correctly', () => {
     const tree = createWithTheme(
       <Select id="example" caption="I am a caption" />
     ).toJSON();
@@ -24,9 +24,19 @@ describe('<Select />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders an Select with a label correctly', () => {
+  it('renders a Select with a label correctly', () => {
     const tree = createWithTheme(
       <Select label="My Select" id="example" />
+    ).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('renders a Select with a labelAside correctly', () => {
+    const labelAside = <div>hello</div>;
+
+    const tree = createWithTheme(
+      <Select labelAside={labelAside} id="example" />
     ).toJSON();
 
     expect(tree).toMatchSnapshot();

@@ -5,8 +5,8 @@ import FormField from '../FormField';
 import StyledSelect from './StyledSelect';
 
 const Select = React.forwardRef(
-  ({ caption, children, label, id, ...props }, ref) => (
-    <FormField caption={caption} id={id} label={label}>
+  ({ caption, children, label, labelAside, id, ...props }, ref) => (
+    <FormField caption={caption} id={id} label={label} labelAside={labelAside}>
       <StyledSelect {...{ ...props, id, ref }}>{children}</StyledSelect>
     </FormField>
   )
@@ -34,12 +34,18 @@ Select.propTypes = {
   /**
    * Label text for the select
    */
-  label: PropTypes.string
+  label: PropTypes.string,
+
+  /**
+   * Component that goes to the right of the label. Does not have to only be text.
+   */
+  labelAside: PropTypes.node
 };
 
 Select.defaultProps = {
   caption: '',
-  label: ''
+  label: '',
+  labelAside: null
 };
 
 export default Select;
