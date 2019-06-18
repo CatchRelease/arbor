@@ -24,7 +24,8 @@ const StyledButton = styled.button`
   transition: box-shadow 0.3s ease, background 0.2s ease;
 
   &:disabled {
-    background: ${props => props.theme.colors.background.default};
+    background: ${props => props.theme.colors.background.disabled};
+    border: 1px solid transparent;
     color: ${props => props.theme.colors.text.disabled};
     cursor: not-allowed;
   }

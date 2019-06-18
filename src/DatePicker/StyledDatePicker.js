@@ -34,8 +34,8 @@ const StyledDatePicker = styled(DayPicker)`
   }
 
   .DayPicker-Day--today {
-    background-color: ${props => props.theme.colors.brand.light};
-    color: ${props => props.theme.colors.brand.dark};
+    background-color: ${props => props.theme.colors.background.default};
+    color: ${props => props.theme.colors.text.dark};
     font-weight: ${props => props.theme.fontWeights.regular};
   }
 
@@ -45,14 +45,15 @@ const StyledDatePicker = styled(DayPicker)`
   }
 
   .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
-    background-color: ${props => props.theme.colors.brand.default};
-    color: ${props => props.theme.colors.white};
+    background-color: ${props => props.theme.colors.brand.dark};
+    color: ${props => props.theme.colors.brand.light};
     font-weight: ${props => props.theme.fontWeights.regular};
   }
 
   &:not(.DayPicker--interactionDisabled)
     .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
-    background-color: ${props => props.theme.colors.background.default};
+    background-color: ${props => props.theme.colors.brand.light};
+    color: ${props => props.theme.colors.brand.dark};
   }
 
   .DayPicker-NavBar {

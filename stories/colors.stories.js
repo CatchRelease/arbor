@@ -16,6 +16,7 @@ const getReadableColor = (color, hex, modifier = '', colorGroup) => {
       return `${colorGroup}.${color}.lighter`;
     case 'darker':
       return `${colorGroup}.${color}.light`;
+    case 'monochrome':
     default:
       return readableColor(hex, 'monochrome.black', 'monochrome.white');
   }
@@ -59,12 +60,26 @@ Swatch.defaultProps = {
   colorGroup: ''
 };
 
-const SwatchCollection = ({ color, collection, colorGroup }) => (
+const SwatchCollection = ({
+  color,
+  collection,
+  colorGroup,
+  modifierOverride
+}) => (
   <section>
     <Heading.h1>{capitalize(color)}</Heading.h1>
     <Grid gridTemplateRows={getFrUnits(collection)} key={color}>
       {Object.entries(collection).map(([modifier, hex]) => (
-        <Swatch key={modifier} {...{ color, hex, modifier, colorGroup }} />
+        <Swatch
+          key={modifier}
+          {...{
+            color,
+            hex,
+            modifier:
+              modifierOverride === undefined ? modifier : modifierOverride,
+            colorGroup
+          }}
+        />
       ))}
     </Grid>
   </section>
@@ -73,14 +88,16 @@ const SwatchCollection = ({ color, collection, colorGroup }) => (
 SwatchCollection.propTypes = {
   color: PropTypes.string.isRequired,
   collection: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
-  colorGroup: PropTypes.string
+  colorGroup: PropTypes.string,
+  modifierOverride: PropTypes.string
 };
 
 SwatchCollection.defaultProps = {
-  colorGroup: ''
+  colorGroup: '',
+  modifierOverride: undefined
 };
 
-const Swatches = ({ colorGroup, palette }) => (
+const Swatches = ({ colorGroup, modifierOverride, palette }) => (
   <Grid gridGap="small" gridTemplateColumns={getFrUnits(palette)}>
     {Object.entries(palette).map(([color, collection]) => (
       <SwatchCollection
@@ -90,6 +107,7 @@ const Swatches = ({ colorGroup, palette }) => (
           typeof collection === 'string' ? { [color]: collection } : collection
         }
         colorGroup={colorGroup}
+        modifierOverride={modifierOverride}
       />
     ))}
   </Grid>
@@ -97,12 +115,26 @@ const Swatches = ({ colorGroup, palette }) => (
 
 Swatches.propTypes = {
   colorGroup: PropTypes.string,
-  palette: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
+  palette: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  modifierOverride: PropTypes.string
 };
 
 Swatches.defaultProps = {
-  colorGroup: ''
+  colorGroup: '',
+  modifierOverride: undefined
 };
+
+storiesOf('Colors', module).add('Background', () => (
+  <Swatches colorGroup="background" palette={colors.background} />
+));
+
+storiesOf('Colors', module).add('Brand', () => (
+  <Swatches
+    colorGroup="brand"
+    modifierOverride="monochrome"
+    palette={colors.brand}
+  />
+));
 
 storiesOf('Colors', module).add('Intent', () => (
   <Swatches colorGroup="intent" palette={colors.intent} />
