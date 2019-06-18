@@ -60,6 +60,7 @@ export const bronzes = {
 export const backgroundColors = {
   muted: greys.grey10,
   default: greys.grey20,
+  disabled: greys.grey30,
   white: whites.white
 };
 
@@ -69,12 +70,8 @@ export const borderColors = {
 };
 
 export const brandColors = {
-  get light() {
-    return transparentize(0.91, this.dark);
-  },
-  default: '#007558',
-  dark: '#00533E',
-  darkest: '#001C15'
+  light: '#C0F9DA',
+  dark: '#081D17'
 };
 
 export const iconColors = {

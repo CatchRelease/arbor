@@ -1,41 +1,46 @@
+import { lighten, darken } from 'polished';
+
 const variants = ({ theme, variant }) => {
   const variantMap = {
     primary: {
-      backgroundColor: theme.colors.blue,
-      color: theme.colors.white,
+      backgroundColor: theme.colors.brand.dark,
+      color: theme.colors.brand.light,
       '&:hover:enabled': {
-        backgroundColor: theme.colors.blueLight
+        backgroundColor: darken(0.1, theme.colors.brand.dark)
       },
       '&:active:enabled': {
-        backgroundColor: theme.colors.blueDark
+        backgroundColor: lighten(0.1, theme.colors.brand.dark)
       },
       '&:focus:enabled': {
+        border: '1px solid transparent',
         boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 2px ${
-          theme.colors.blueDark
+          theme.colors.brand.dark
         }`
       }
     },
     secondary: {
       backgroundColor: theme.colors.white,
       color: theme.colors.text.default,
-      fontWeight: theme.fontWeights.regular,
+      i: {
+        color: theme.colors.icon.default
+      },
       '&:enabled': {
         border: `1px solid ${theme.colors.border.default}`
       },
       '&:hover:enabled': {
-        backgroundColor: theme.colors.background.muted,
-        color: theme.colors.blue,
-        border: `1px solid ${theme.colors.blue}`
+        border: `1px solid ${theme.colors.text.muted}`,
+        i: {
+          color: theme.colors.brand.dark
+        }
       },
       '&:active:enabled': {
-        color: theme.colors.blueDark,
-        backgroundColor: theme.colors.background.default,
-        border: '1px solid transparent'
+        color: theme.colors.brand.dark,
+        backgroundColor: theme.colors.background.default
       },
       '&:focus:enabled': {
         border: '1px solid transparent',
         boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 2px ${
-          theme.colors.blueDark
+          theme.colors.brand.dark
         }`
       }
     },
@@ -43,9 +48,14 @@ const variants = ({ theme, variant }) => {
       backgroundColor: 'transparent',
       border: '1px solid transparent',
       color: theme.colors.text.muted,
+      i: {
+        color: theme.colors.icon.default
+      },
       '&:hover:enabled': {
-        backgroundColor: theme.colors.background.muted,
-        color: theme.colors.text.dark
+        color: theme.colors.text.dark,
+        i: {
+          color: theme.colors.text.dark
+        }
       },
       '&:active:enabled': {
         backgroundColor: theme.colors.background.default,
@@ -53,7 +63,7 @@ const variants = ({ theme, variant }) => {
       },
       '&:focus:enabled': {
         boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 2px ${
-          theme.colors.blueDark
+          theme.colors.brand.dark
         }`
       },
       '&:disabled': {
