@@ -258,8 +258,8 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
   height: 1rem;
   width: 1rem;
   background-color: #FFFFFF;
-  border-color: #4466EE;
-  color: #4466EE;
+  border-color: #4263EB;
+  color: #4263EB;
 }
 
 <label
@@ -356,8 +356,8 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   flex-shrink: 0;
   height: 1rem;
   width: 1rem;
-  background-color: #4466EE;
-  border-color: #4466EE;
+  background-color: #4263EB;
+  border-color: #4263EB;
   color: #FFFFFF;
 }
 

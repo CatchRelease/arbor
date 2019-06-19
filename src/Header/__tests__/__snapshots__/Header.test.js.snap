@@ -37,12 +37,13 @@ exports[`<Header /> renders with heading and a button 1`] = `
   padding: 0 0.5rem;
   height: 2.5rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-4:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -56,15 +57,16 @@ exports[`<Header /> renders with heading and a button 1`] = `
 }
 
 .emotion-4:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-4:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 .emotion-2 {
@@ -161,12 +163,13 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   padding: 0 0.5rem;
   height: 2.5rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-8:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -180,15 +183,16 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 }
 
 .emotion-8:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-8:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-8:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 .emotion-2 {
@@ -226,11 +230,11 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   font-size: 0.875rem;
   background-color: #FFFFFF;
   color: #25272D;
-  font-weight: 400;
 }
 
 .emotion-4:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -243,25 +247,30 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   vertical-align: middle;
 }
 
+.emotion-4 i {
+  color: #989A9C;
+}
+
 .emotion-4:enabled {
   border: 1px solid #E0E1E2;
 }
 
 .emotion-4:hover:enabled {
-  background-color: #F8F9F9;
-  color: #4466EE;
-  border: 1px solid #4466EE;
+  border: 1px solid #5B5D61;
+}
+
+.emotion-4:hover:enabled i {
+  color: #081D17;
 }
 
 .emotion-4:active:enabled {
-  color: #4455CC;
+  color: #081D17;
   background-color: #F2F2F2;
-  border: 1px solid transparent;
 }
 
 .emotion-4:focus:enabled {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <header

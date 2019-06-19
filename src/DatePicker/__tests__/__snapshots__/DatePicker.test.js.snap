@@ -33,8 +33,8 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 .emotion-14 .DayPicker-Day--today {
-  background-color: rgba(0,83,62,0.09);
-  color: #00533E;
+  background-color: #F2F2F2;
+  color: #0F0F10;
   font-weight: 400;
 }
 
@@ -44,13 +44,14 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 .emotion-14 .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
-  background-color: #007558;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
   font-weight: 400;
 }
 
 .emotion-14:not(.DayPicker--interactionDisabled) .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
-  background-color: #F2F2F2;
+  background-color: #C0F9DA;
+  color: #081D17;
 }
 
 .emotion-14 .DayPicker-NavBar {
@@ -93,7 +94,8 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -106,8 +108,15 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   vertical-align: middle;
 }
 
+.emotion-2 i {
+  color: #989A9C;
+}
+
 .emotion-2:hover:enabled {
-  background-color: #F8F9F9;
+  color: #0F0F10;
+}
+
+.emotion-2:hover:enabled i {
   color: #0F0F10;
 }
 
@@ -117,7 +126,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 .emotion-2:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 .emotion-2:disabled {

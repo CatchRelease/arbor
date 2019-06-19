@@ -13,13 +13,13 @@ const variants = ({ theme, variant }) => {
       },
       '&:focus:enabled': {
         border: '1px solid transparent',
-        boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 2px ${
+        boxShadow: `0 0 0 1px ${theme.colors.monochrome.white}, 0 0 0 2px ${
           theme.colors.brand.dark
         }`
       }
     },
     secondary: {
-      backgroundColor: theme.colors.white,
+      backgroundColor: theme.colors.monochrome.white,
       color: theme.colors.text.default,
       i: {
         color: theme.colors.icon.default
@@ -28,7 +28,7 @@ const variants = ({ theme, variant }) => {
         border: `1px solid ${theme.colors.border.default}`
       },
       '&:hover:enabled': {
-        border: `1px solid ${theme.colors.text.muted}`,
+        border: `1px solid ${theme.colors.border.dark}`,
         i: {
           color: theme.colors.brand.dark
         }
@@ -39,7 +39,7 @@ const variants = ({ theme, variant }) => {
       },
       '&:focus:enabled': {
         border: '1px solid transparent',
-        boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 2px ${
+        boxShadow: `0 0 0 1px ${theme.colors.monochrome.white}, 0 0 0 2px ${
           theme.colors.brand.dark
         }`
       }
@@ -62,7 +62,7 @@ const variants = ({ theme, variant }) => {
         color: theme.colors.text.dark
       },
       '&:focus:enabled': {
-        boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 2px ${
+        boxShadow: `0 0 0 1px ${theme.colors.monochrome.white}, 0 0 0 2px ${
           theme.colors.brand.dark
         }`
       },

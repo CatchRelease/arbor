@@ -5,27 +5,13 @@ import { readableColor } from 'polished';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
-import {
-  blues,
-  greys,
-  reds,
-  greens,
-  bronzes,
-  Box,
-  Flex,
-  Masonry,
-  Text
-} from '../src';
+import { colors, Box, Flex, Masonry, Text } from '../src';
 
-const colors = shuffle(
-  Object.values({
-    ...blues,
-    ...greys,
-    ...reds,
-    ...greens,
-    ...bronzes
-  })
-);
+const boxColors = shuffle([
+  ...Object.values(colors.monochrome),
+  ...Object.values(colors.primary),
+  ...Object.values(colors.secondary)
+]);
 
 const stories = storiesOf('Masonry', module);
 
@@ -42,7 +28,7 @@ stories.add('default', () => (
       columnWidth={text('Column Width', '300px')}
       rowGap={text('Row Gap', 'regular')}
     >
-      {colors.map((color, key) => (
+      {boxColors.map((color, key) => (
         <Flex
           alignItems="center"
           bg={color}

@@ -5,10 +5,10 @@ import { rem } from 'polished';
 import Flex from '../Flex';
 
 const baseStyles = ({ theme }) => css`
-  background-color: ${theme.colors.white};
+  background-color: ${theme.colors.monochrome.white};
   border-radius: ${theme.radii.small};
   border: 1px solid ${theme.colors.grey60};
-  color: ${theme.colors.white};
+  color: ${theme.colors.monochrome.white};
   flex-shrink: 0;
   height: ${rem('16px')};
   width: ${rem('16px')};
@@ -17,17 +17,23 @@ const baseStyles = ({ theme }) => css`
 const checkedStyles = ({ theme, checked, indeterminate }) =>
   checked &&
   css`
-    background-color: ${indeterminate ? theme.colors.white : theme.colors.blue};
-    border-color: ${theme.colors.blue};
-    color: ${indeterminate ? theme.colors.blue : theme.colors.white};
+    background-color: ${indeterminate
+      ? theme.colors.monochrome.white
+      : theme.colors.palette.blue.default};
+    border-color: ${theme.colors.palette.blue.default};
+    color: ${indeterminate
+      ? theme.colors.palette.blue.default
+      : theme.colors.monochrome.white};
   `;
 
 const disabledStyles = ({ theme, checked, disabled }) =>
   disabled &&
   css`
-    background: ${checked ? theme.colors.grey40 : theme.colors.white};
+    background: ${checked
+      ? theme.colors.grey40
+      : theme.colors.monochrome.white};
     border-color: ${theme.colors.border.default};
-    color: ${checked ? theme.colors.grey60 : theme.colors.white};
+    color: ${checked ? theme.colors.grey60 : theme.colors.monochrome.white};
   `;
 
 const StyledCheckbox = styled(Flex)`
