@@ -17,12 +17,13 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
   padding: 0 0.25rem 0 0.5rem;
   height: 1.5rem;
   font-size: 0.75rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-4:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -36,15 +37,16 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
 }
 
 .emotion-4:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-4:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 .emotion-0 {
@@ -92,12 +94,13 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
   padding: 0 0.5rem;
   height: 2rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-4:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -111,15 +114,16 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
 }
 
 .emotion-4:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-4:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -161,12 +165,13 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
   padding: 0 0.75rem 0 1rem;
   height: 2.5rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-4:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -180,15 +185,16 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
 }
 
 .emotion-4:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-4:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -230,12 +236,13 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
   padding: 0 0.75rem 0 1rem;
   height: 3rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-4:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -249,15 +256,16 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
 }
 
 .emotion-4:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-4:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -293,12 +301,13 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   padding: 0 0.25rem;
   height: 1.5rem;
   font-size: 0.75rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-6:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -312,15 +321,16 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 .emotion-6:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-6:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-6:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 .emotion-2 {
@@ -371,12 +381,13 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   padding: 0 0.5rem;
   height: 2rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-6:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -390,15 +401,16 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 .emotion-6:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-6:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-6:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -443,12 +455,13 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   padding: 0 0.75rem 0 0.5rem;
   height: 2.5rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-6:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -462,15 +475,16 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 .emotion-6:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-6:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-6:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -515,12 +529,13 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   padding: 0 0.75rem 0 0.5rem;
   height: 3rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-6:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -534,15 +549,16 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 .emotion-6:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-6:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-6:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -581,12 +597,13 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   padding: 0 0.5rem 0 0.25rem;
   height: 1.5rem;
   font-size: 0.75rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-4:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -600,15 +617,16 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 .emotion-4:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-4:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 .emotion-2 {
@@ -656,12 +674,13 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   padding: 0 0.5rem;
   height: 2rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-4:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -675,15 +694,16 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 .emotion-4:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-4:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -725,12 +745,13 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   padding: 0 1rem 0 0.5rem;
   height: 2.5rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-4:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -744,15 +765,16 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 .emotion-4:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-4:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -794,12 +816,13 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   padding: 0 1rem 0 0.5rem;
   height: 3rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-4:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -813,15 +836,16 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 .emotion-4:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-4:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -863,12 +887,13 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   padding: 0.5rem 1rem;
   height: 3rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -882,15 +907,16 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 }
 
 .emotion-2:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-2:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-2:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -923,12 +949,13 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   padding: 0 0.5rem;
   height: 2.5rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -942,15 +969,16 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
 }
 
 .emotion-2:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-2:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-2:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 .emotion-0 {
@@ -995,12 +1023,13 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   padding: 0 0.5rem;
   height: 2rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -1014,15 +1043,16 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
 }
 
 .emotion-2:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-2:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-2:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -1061,12 +1091,13 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   padding: 0 0.5rem;
   height: 1.5rem;
   font-size: 0.75rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -1080,15 +1111,16 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
 }
 
 .emotion-2:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-2:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-2:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -1133,7 +1165,8 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -1146,8 +1179,15 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   vertical-align: middle;
 }
 
+.emotion-2 i {
+  color: #989A9C;
+}
+
 .emotion-2:hover:enabled {
-  background-color: #F8F9F9;
+  color: #0F0F10;
+}
+
+.emotion-2:hover:enabled i {
   color: #0F0F10;
 }
 
@@ -1157,7 +1197,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 }
 
 .emotion-2:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 .emotion-2:disabled {
@@ -1195,12 +1235,13 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   padding: 0 0.5rem;
   height: 2.5rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -1214,15 +1255,16 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
 }
 
 .emotion-2:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-2:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-2:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 .emotion-0 {
@@ -1269,11 +1311,11 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
   font-size: 0.875rem;
   background-color: #FFFFFF;
   color: #25272D;
-  font-weight: 400;
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -1286,25 +1328,30 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
   vertical-align: middle;
 }
 
+.emotion-2 i {
+  color: #989A9C;
+}
+
 .emotion-2:enabled {
   border: 1px solid #E0E1E2;
 }
 
 .emotion-2:hover:enabled {
-  background-color: #F8F9F9;
-  color: #4466EE;
-  border: 1px solid #4466EE;
+  border: 1px solid #5B5D61;
+}
+
+.emotion-2:hover:enabled i {
+  color: #081D17;
 }
 
 .emotion-2:active:enabled {
-  color: #4455CC;
+  color: #081D17;
   background-color: #F2F2F2;
-  border: 1px solid transparent;
 }
 
 .emotion-2:focus:enabled {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -1349,7 +1396,8 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -1362,8 +1410,15 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
   vertical-align: middle;
 }
 
+.emotion-2 i {
+  color: #989A9C;
+}
+
 .emotion-2:hover:enabled {
-  background-color: #F8F9F9;
+  color: #0F0F10;
+}
+
+.emotion-2:hover:enabled i {
   color: #0F0F10;
 }
 
@@ -1373,7 +1428,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 }
 
 .emotion-2:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 .emotion-2:disabled {
@@ -1411,12 +1466,13 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   padding: 0 0.5rem;
   height: 2.5rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -1430,15 +1486,16 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
 }
 
 .emotion-2:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-2:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-2:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 .emotion-0 {
@@ -1485,11 +1542,11 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
   font-size: 0.875rem;
   background-color: #FFFFFF;
   color: #25272D;
-  font-weight: 400;
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -1502,25 +1559,30 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
   vertical-align: middle;
 }
 
+.emotion-2 i {
+  color: #989A9C;
+}
+
 .emotion-2:enabled {
   border: 1px solid #E0E1E2;
 }
 
 .emotion-2:hover:enabled {
-  background-color: #F8F9F9;
-  color: #4466EE;
-  border: 1px solid #4466EE;
+  border: 1px solid #5B5D61;
+}
+
+.emotion-2:hover:enabled i {
+  color: #081D17;
 }
 
 .emotion-2:active:enabled {
-  color: #4455CC;
+  color: #081D17;
   background-color: #F2F2F2;
-  border: 1px solid transparent;
 }
 
 .emotion-2:focus:enabled {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button
@@ -1559,13 +1621,14 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
   padding: 0 0.5rem;
   height: 2.5rem;
   font-size: 0.875rem;
-  background-color: #4466EE;
-  color: #FFFFFF;
+  background-color: #081D17;
+  color: #C0F9DA;
   width: 100%;
 }
 
 .emotion-2:disabled {
-  background: #F2F2F2;
+  background: #EBECEC;
+  border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
@@ -1579,15 +1642,16 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
 }
 
 .emotion-2:hover:enabled {
-  background-color: #5577FF;
+  background-color: #000;
 }
 
 .emotion-2:active:enabled {
-  background-color: #4455CC;
+  background-color: #134537;
 }
 
 .emotion-2:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #4455CC;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <button

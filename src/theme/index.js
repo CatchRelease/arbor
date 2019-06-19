@@ -1,5 +1,16 @@
 import { rem, transparentize } from 'polished';
-import { intent, monochrome, palette, primary, secondary } from './colors';
+import {
+  background,
+  border,
+  brand,
+  icon,
+  intent,
+  monochrome,
+  palette,
+  primary,
+  secondary,
+  text
+} from './colors';
 
 export const breakpointsMap = {
   sm: '512px',
@@ -57,35 +68,6 @@ export const bronzes = {
   bronzeDark: '#AA5500'
 };
 
-export const backgroundColors = {
-  muted: greys.grey10,
-  default: greys.grey20,
-  disabled: greys.grey30,
-  white: whites.white
-};
-
-export const borderColors = {
-  muted: greys.grey30,
-  default: greys.grey40
-};
-
-export const brandColors = {
-  light: '#C0F9DA',
-  dark: '#081D17'
-};
-
-export const iconColors = {
-  disabled: transparentize(0.3, greys.grey50),
-  default: greys.grey60
-};
-
-export const textColors = {
-  disabled: transparentize(0.3, greys.grey70),
-  muted: greys.grey80,
-  default: greys.grey90,
-  dark: greys.grey100
-};
-
 export const colors = {
   /* START: deprecated -- Color definition and variables are being revamped */
   black,
@@ -95,17 +77,17 @@ export const colors = {
   ...greens,
   ...reds,
   ...bronzes,
-  background: { ...backgroundColors },
-  brand: { ...brandColors },
-  border: { ...borderColors },
-  icon: { ...iconColors },
-  text: { ...textColors },
   /* END: deprecated */
+  background,
+  border,
+  brand,
+  icon,
   intent,
   monochrome,
   palette,
   primary,
-  secondary
+  secondary,
+  text
 };
 
 export const brandFont = 'Motiva Sans';
@@ -205,11 +187,11 @@ export const borderWidth = {
 };
 
 const borders = {
-  default: `${borderWidth.small} solid ${borderColors.default}`
+  default: `${borderWidth.small} solid ${colors.border.default}`
 };
 
-const blurryShadowColor = transparentize(0.7, greys.grey90);
-const borderShadowColor = transparentize(0.53, greys.grey90);
+const blurryShadowColor = transparentize(0.7, colors.monochrome.grey90);
+const borderShadowColor = transparentize(0.53, colors.monochrome.grey90);
 export const boxShadows = {
   elevation0: `0 0 1px ${borderShadowColor}`,
   elevation1: `0 0 1px ${borderShadowColor}, 0 2px 4px -2px ${blurryShadowColor}`,
@@ -224,11 +206,8 @@ export const avatarSizes = {
 
 export default {
   avatarSizes,
-  backgroundColors,
-  borderColors,
   borderWidth,
   borders,
-  brandColors,
   brandFont,
   breakpoints,
   breakpointsMap,
@@ -237,12 +216,10 @@ export default {
   fontSizes,
   fontWeights,
   icons,
-  iconColors,
   iconFontPrefix: 'ar',
   lineHeights,
   radii: borderRadius,
   shadows: boxShadows,
   space: spacings,
-  textColors,
   typography
 };

@@ -77,8 +77,8 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
 }
 
 .emotion-2:focus {
-  border: 1px solid #5577FF;
-  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  border: 1px solid #081D17;
+  box-shadow: 0 0 8px rgba(192,249,218,0.1);
   outline: none;
 }
 
@@ -212,8 +212,8 @@ exports[`<Select /> renders a Select with a label correctly 1`] = `
 }
 
 .emotion-6:focus {
-  border: 1px solid #5577FF;
-  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  border: 1px solid #081D17;
+  box-shadow: 0 0 8px rgba(192,249,218,0.1);
   outline: none;
 }
 
@@ -363,8 +363,8 @@ exports[`<Select /> renders a Select with a labelAside correctly 1`] = `
 }
 
 .emotion-4:focus {
-  border: 1px solid #5577FF;
-  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  border: 1px solid #081D17;
+  box-shadow: 0 0 8px rgba(192,249,218,0.1);
   outline: none;
 }
 
@@ -498,8 +498,8 @@ exports[`<Select /> renders a large Select correctly 1`] = `
 }
 
 .emotion-2:focus {
-  border: 1px solid #5577FF;
-  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  border: 1px solid #081D17;
+  box-shadow: 0 0 8px rgba(192,249,218,0.1);
   outline: none;
 }
 
@@ -617,8 +617,8 @@ exports[`<Select /> renders an Select correctly 1`] = `
 }
 
 .emotion-2:focus {
-  border: 1px solid #5577FF;
-  box-shadow: 0 0 8px rgba(85,119,255,0.1);
+  border: 1px solid #081D17;
+  box-shadow: 0 0 8px rgba(192,249,218,0.1);
   outline: none;
 }
 

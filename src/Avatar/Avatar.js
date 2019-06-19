@@ -5,7 +5,12 @@ import { colorForString } from '../utils';
 import StyledAvatar from './StyledAvatar';
 import Text from '../Text';
 
-const AVATAR_COLORS = ['blue', 'red', 'bronze', 'green'];
+const AVATAR_COLORS = [
+  'palette.blue.default',
+  'palette.red.default',
+  'palette.yellow.default',
+  'palette.green.default'
+];
 
 const getInitials = name => {
   const [firstName, ...additionalNames] = name.split(' ');
