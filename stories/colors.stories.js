@@ -125,7 +125,19 @@ Swatches.defaultProps = {
 };
 
 storiesOf('Colors', module).add('Background', () => (
-  <Swatches colorGroup="background" palette={colors.background} />
+  <Swatches
+    colorGroup="background"
+    palette={colors.background}
+    modifierOverride="monochrome"
+  />
+));
+
+storiesOf('Colors', module).add('Border', () => (
+  <Swatches
+    colorGroup="border"
+    palette={colors.border}
+    modifierOverride="monochrome"
+  />
 ));
 
 storiesOf('Colors', module).add('Brand', () => (
@@ -133,6 +145,14 @@ storiesOf('Colors', module).add('Brand', () => (
     colorGroup="brand"
     modifierOverride="monochrome"
     palette={colors.brand}
+  />
+));
+
+storiesOf('Colors', module).add('Icon', () => (
+  <Swatches
+    colorGroup="icon"
+    palette={colors.icon}
+    modifierOverride="monochrome"
   />
 ));
 
@@ -156,4 +176,12 @@ storiesOf('Colors', module).add('Primary', () => (
 
 storiesOf('Colors', module).add('Secondary', () => (
   <Swatches palette={colors.secondary} />
+));
+
+storiesOf('Colors', module).add('Text', () => (
+  <Swatches
+    colorGroup="text"
+    palette={colors.text}
+    modifierOverride="monochrome"
+  />
 ));
