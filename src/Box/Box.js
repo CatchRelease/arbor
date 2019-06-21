@@ -12,6 +12,7 @@ import {
   height,
   maxHeight,
   maxWidth,
+  minHeight,
   minWidth,
   overflow,
   textAlign
@@ -28,6 +29,7 @@ const Box = styled.div`
   ${height};
   ${maxHeight};
   ${maxWidth};
+  ${minHeight};
   ${minWidth};
   ${overflow};
   ${position};
@@ -46,6 +48,7 @@ Box.propTypes = {
   ...height.propTypes,
   ...maxHeight.propTypes,
   ...maxWidth.propTypes,
+  ...minHeight.propTypes,
   ...minWidth.propTypes,
   ...overflow.propTypes,
   ...position.propTypes,
