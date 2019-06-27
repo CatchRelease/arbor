@@ -1,9 +1,9 @@
-export default ({ colors: { intent, monochrome, palette }, radii }) => ({
+export default ({ colors: { intent, monochrome }, radii }) => ({
   borderRadius: radii.small,
   colors: {
-    primary: palette.blue.default,
-    primary75: palette.blue.darker,
-    primary50: palette.blue.dark,
+    primary: intent.brand.default,
+    primary75: intent.brand.darker,
+    primary50: intent.brand.dark,
     primary25: monochrome.grey10,
     danger: intent.danger.default,
     dangerLight: intent.danger.light,

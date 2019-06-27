@@ -140,14 +140,6 @@ storiesOf('Colors', module).add('Border', () => (
   />
 ));
 
-storiesOf('Colors', module).add('Brand', () => (
-  <Swatches
-    colorGroup="brand"
-    modifierOverride="monochrome"
-    palette={colors.brand}
-  />
-));
-
 storiesOf('Colors', module).add('Icon', () => (
   <Swatches
     colorGroup="icon"

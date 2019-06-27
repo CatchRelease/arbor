@@ -45,15 +45,15 @@ const StyledDatePicker = styled(DayPicker)`
   }
 
   .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
-    background-color: ${props => props.theme.colors.brand.dark};
-    color: ${props => props.theme.colors.brand.light};
+    background-color: ${props => props.theme.colors.intent.brand.dark};
+    color: ${props => props.theme.colors.intent.brand.light};
     font-weight: ${props => props.theme.fontWeights.regular};
   }
 
   &:not(.DayPicker--interactionDisabled)
     .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
-    background-color: ${props => props.theme.colors.brand.light};
-    color: ${props => props.theme.colors.brand.dark};
+    background-color: ${props => props.theme.colors.intent.brand.light};
+    color: ${props => props.theme.colors.intent.brand.dark};
   }
 
   .DayPicker-NavBar {
