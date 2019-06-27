@@ -36,7 +36,6 @@ const getStyles = ({ radii, shadows, brandFont, space }) => ({
     marginBottom: space.smallest,
     marginTop: space.smallest
   }),
-  dropdownIndicator: addStyles({ display: 'none' }),
   control: addStyles({ boxShadow: 'none' }),
   indicatorSeparator: addStyles({ display: 'none' }),
   input: addStyles({ marginTop: `-${space.smallest}` }),
