@@ -23,8 +23,8 @@ const baseStyles = ({ theme }) => css`
   ${placeholder({ color: theme.colors.grey60 })};
 
   &:focus {
-    border: ${theme.borderWidth.small} solid ${theme.colors.brand.dark};
-    box-shadow: 0 0 8px ${transparentize(0.9, theme.colors.brand.light)};
+    border: ${theme.borderWidth.small} solid ${theme.colors.intent.brand.dark};
+    box-shadow: 0 0 8px ${transparentize(0.9, theme.colors.intent.brand.light)};
     outline: none;
   }
 

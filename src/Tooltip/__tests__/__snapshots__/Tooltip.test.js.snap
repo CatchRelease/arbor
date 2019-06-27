@@ -52,7 +52,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           },
           "brand": Object {
             "dark": "#081D17",
+            "darker": "#081D17",
+            "default": "#081D17",
             "light": "#C0F9DA",
+            "lighter": "#C0F9DA",
           },
           "bronze": "#CC7700",
           "bronzeDark": "#AA5500",
@@ -76,6 +79,13 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             "disabled": "rgba(190,190,192,0.7)",
           },
           "intent": Object {
+            "brand": Object {
+              "dark": "#081D17",
+              "darker": "#081D17",
+              "default": "#081D17",
+              "light": "#C0F9DA",
+              "lighter": "#C0F9DA",
+            },
             "danger": Object {
               "dark": "#6c1c1c",
               "darker": "#2b0b0b",
@@ -408,7 +418,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 },
                 "brand": Object {
                   "dark": "#081D17",
+                  "darker": "#081D17",
+                  "default": "#081D17",
                   "light": "#C0F9DA",
+                  "lighter": "#C0F9DA",
                 },
                 "bronze": "#CC7700",
                 "bronzeDark": "#AA5500",
@@ -432,6 +445,13 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                   "disabled": "rgba(190,190,192,0.7)",
                 },
                 "intent": Object {
+                  "brand": Object {
+                    "dark": "#081D17",
+                    "darker": "#081D17",
+                    "default": "#081D17",
+                    "light": "#C0F9DA",
+                    "lighter": "#C0F9DA",
+                  },
                   "danger": Object {
                     "dark": "#6c1c1c",
                     "darker": "#2b0b0b",
