@@ -6,10 +6,10 @@ import StyledAvatar from './StyledAvatar';
 import Text from '../Text';
 
 const AVATAR_COLORS = [
-  'palette.blue.default',
-  'palette.red.default',
-  'palette.yellow.default',
-  'palette.green.default'
+  'palette.blue',
+  'palette.red',
+  'palette.yellow',
+  'palette.green'
 ];
 
 const getInitials = name => {
@@ -25,21 +25,30 @@ const getInitials = name => {
   return firstInitial;
 };
 
-const Avatar = ({ name, ...props }) => (
-  <StyledAvatar
-    {...{
-      alignItems: 'center',
-      bg: colorForString(name, AVATAR_COLORS),
-      borderRadius: '50%',
-      justifyContent: 'center',
-      ...props
-    }}
-  >
-    <Text color="white" fontSize="size2">
-      {getInitials(name).toUpperCase()}
-    </Text>
-  </StyledAvatar>
-);
+const Avatar = ({ name, subtle, ...props }) => {
+  const baseColor = colorForString(name, AVATAR_COLORS);
+  const bg = subtle ? `${baseColor}.lighter` : `${baseColor}.default`;
+  const borderColor = subtle ? `${baseColor}.darker` : `${baseColor}.default`;
+  const textColor = subtle ? `${baseColor}.darker` : 'monochrome.white';
+
+  return (
+    <StyledAvatar
+      {...{
+        alignItems: 'center',
+        bg,
+        border: '1px solid',
+        borderColor,
+        borderRadius: '50%',
+        justifyContent: 'center',
+        ...props
+      }}
+    >
+      <Text color={textColor} fontSize="size2">
+        {getInitials(name).toUpperCase()}
+      </Text>
+    </StyledAvatar>
+  );
+};
 
 Avatar.propTypes = {
   /**
@@ -49,7 +58,16 @@ Avatar.propTypes = {
    * The initials for display will also be determined based of the name
    * provided.
    */
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+
+  /**
+   * Use a subtle version of the avatar's color styling.
+   * */
+  subtle: PropTypes.bool
+};
+
+Avatar.defaultProps = {
+  subtle: false
 };
 
 export default Avatar;
