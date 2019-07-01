@@ -3,7 +3,10 @@
 exports[`<Avatar /> renders properly 1`] = `
 .emotion-2 {
   box-sizing: border-box;
+  border: 1px solid;
+  border-color: #29863A;
   border-radius: 50%;
+  background-color: #29863A;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -32,7 +35,7 @@ exports[`<Avatar /> renders properly 1`] = `
 >
   <p
     className="emotion-0 emotion-1"
-    color="white"
+    color="monochrome.white"
     fontSize="size2"
   >
     BW
