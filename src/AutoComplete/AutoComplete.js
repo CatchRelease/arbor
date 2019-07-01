@@ -17,6 +17,11 @@ AutoComplete.propTypes = {
   caption: PropTypes.string,
 
   /**
+   * Boolean to hide the dropdown indicator in the input field.
+   */
+  hideDropdownIndicator: PropTypes.bool,
+
+  /**
    * HTML ID for the input to be used in conjunction with the label for
    * accessiblity.
    */
@@ -39,6 +44,7 @@ AutoComplete.propTypes = {
 
 AutoComplete.defaultProps = {
   caption: '',
+  hideDropdownIndicator: false,
   labelAside: null
 };
 

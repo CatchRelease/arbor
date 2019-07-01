@@ -85,6 +85,7 @@ class AutoCompleteExample extends React.Component {
             caption: `Select one ${
               boolean('isMulti', true) ? 'or more values' : 'value'
             }`,
+            hideDropdownIndicator: boolean('hideDropdownIndicator', false),
             isMulti: boolean('isMulti', true),
             onChange: this.handleChange,
             value: selectedOption,

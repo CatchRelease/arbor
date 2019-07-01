@@ -48,4 +48,38 @@ describe('<AutoComplete />', () => {
       });
     });
   });
+
+  describe('hideDropdownIndicator', () => {
+    context('false', () => {
+      it('renders the auto complete with a dropdown indicator', () => {
+        const autoComplete = createWithTheme(
+          <AutoComplete
+            caption="Test the auto complete input"
+            hideDropdownIndicator={false}
+            id="auto-complete"
+            label="AutoComplete Input"
+            options={options}
+          />
+        );
+
+        expect(autoComplete).toMatchSnapshot();
+      });
+    });
+
+    context('true', () => {
+      it('renders the auto complete without a dropdown indicator', () => {
+        const autoComplete = createWithTheme(
+          <AutoComplete
+            caption="Test the auto complete input"
+            hideDropdownIndicator
+            id="auto-complete"
+            label="AutoComplete Input"
+            options={options}
+          />
+        );
+
+        expect(autoComplete).toMatchSnapshot();
+      });
+    });
+  });
 });

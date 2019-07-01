@@ -30,13 +30,19 @@ const getReactSelectComponent = variant => {
   }
 };
 
-const getStyles = ({ radii, shadows, brandFont, space }) => ({
+const getStyles = (
+  { radii, shadows, brandFont, space },
+  { hideDropdownIndicator }
+) => ({
   container: addStyles({
     fontFamily: brandFont,
     marginBottom: space.smallest,
     marginTop: space.smallest
   }),
   control: addStyles({ boxShadow: 'none' }),
+  dropdownIndicator: addStyles(
+    hideDropdownIndicator ? { display: 'none' } : {}
+  ),
   indicatorSeparator: addStyles({ display: 'none' }),
   input: addStyles({ marginTop: `-${space.smallest}` }),
   menu: addStyles({
@@ -50,7 +56,7 @@ const StyledAutoComplete = ({ theme, variant, ...props }) => {
   const SelectComponent = getReactSelectComponent(variant);
   const reactSelectProps = {
     components,
-    styles: getStyles(theme),
+    styles: getStyles(theme, props),
     theme: reactSelectTheme => ({
       ...reactSelectTheme,
       ...buildReactSelectThemeOverrides(theme)
