@@ -4,8 +4,14 @@ import PropTypes from 'prop-types';
 
 import Text from '../Text';
 
+const VARIANT_MAPPING = {
+  ui: 'size4',
+  longForm: 'size5',
+  tiny: 'size2'
+};
+
 const variantStyles = ({ theme, variant }) => css`
-  font-size: ${theme.typography.text[variant].fontSize};
+  font-size: ${theme.fontSizes[VARIANT_MAPPING[variant]]};
 `;
 
 const Paragraph = styled(Text)`

@@ -297,19 +297,6 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "smaller": "0.5rem",
           "smallest": "0.25rem",
         },
-        "typography": Object {
-          "text": Object {
-            "longForm": Object {
-              "fontSize": "1rem",
-            },
-            "tiny": Object {
-              "fontSize": "0.75rem",
-            },
-            "ui": Object {
-              "fontSize": "0.875rem",
-            },
-          },
-        },
       }
     }
   >
@@ -662,19 +649,6 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "small": "0.75rem",
                 "smaller": "0.5rem",
                 "smallest": "0.25rem",
-              },
-              "typography": Object {
-                "text": Object {
-                  "longForm": Object {
-                    "fontSize": "1rem",
-                  },
-                  "tiny": Object {
-                    "fontSize": "0.75rem",
-                  },
-                  "ui": Object {
-                    "fontSize": "0.875rem",
-                  },
-                },
               },
             }
           }

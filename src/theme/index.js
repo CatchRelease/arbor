@@ -12,6 +12,13 @@ import {
   text
 } from './colors';
 
+import {
+  brandFont,
+  fontWeights,
+  fonts,
+  sizes as fontSizes
+} from './typography';
+
 export const breakpointsMap = {
   sm: '512px',
   md: '768px',
@@ -90,41 +97,6 @@ export const colors = {
   text
 };
 
-export const brandFont = 'Motiva Sans';
-
-export const fonts = {
-  default: brandFont,
-  icon: 'Arbor'
-};
-
-const sizes = {
-  size1: rem('11px'),
-  size2: rem('12px'),
-  size3: rem('13px'),
-  size4: rem('14px'),
-  size5: rem('16px'),
-  size6: rem('20px'),
-  size7: rem('24px'),
-  size8: rem('28px'),
-  size9: rem('34px')
-};
-
-const inputSizes = {
-  default: sizes.size4,
-  mobile: sizes.size5
-};
-
-export const fontSizes = {
-  ...sizes,
-  input: { ...inputSizes }
-};
-
-export const fontWeights = {
-  regular: 400,
-  medium: 500,
-  bold: 700
-};
-
 export const icons = {
   annotation: '\f039',
   calendar: '\f035',
@@ -148,20 +120,6 @@ export const lineHeights = {
   small: 1.25,
   regular: 1,
   large: 1.5
-};
-
-export const typography = {
-  text: {
-    ui: {
-      fontSize: fontSizes.size4
-    },
-    longForm: {
-      fontSize: fontSizes.size5
-    },
-    tiny: {
-      fontSize: fontSizes.size2
-    }
-  }
 };
 
 export const spacings = {
@@ -220,6 +178,5 @@ export default {
   lineHeights,
   radii: borderRadius,
   shadows: boxShadows,
-  space: spacings,
-  typography
+  space: spacings
 };
