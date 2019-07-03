@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { colorForString } from '../utils';
 import StyledAvatar from './StyledAvatar';
-import Text from '../Text';
+import StyledAvatarText from './StyledAvatarText';
 
 const AVATAR_COLORS = [
   'palette.blue',
@@ -27,25 +27,22 @@ const getInitials = name => {
 
 const Avatar = ({ name, subtle, ...props }) => {
   const baseColor = colorForString(name, AVATAR_COLORS);
-  const bg = subtle ? `${baseColor}.lighter` : `${baseColor}.default`;
-  const borderColor = subtle ? `${baseColor}.darker` : `${baseColor}.default`;
-  const textColor = subtle ? `${baseColor}.darker` : 'monochrome.white';
 
   return (
     <StyledAvatar
       {...{
         alignItems: 'center',
-        bg,
+        baseColor,
         border: '1px solid',
-        borderColor,
         borderRadius: '50%',
         justifyContent: 'center',
+        subtle,
         ...props
       }}
     >
-      <Text color={textColor} fontSize="size2">
+      <StyledAvatarText {...{ ...props, baseColor, subtle }}>
         {getInitials(name).toUpperCase()}
-      </Text>
+      </StyledAvatarText>
     </StyledAvatar>
   );
 };

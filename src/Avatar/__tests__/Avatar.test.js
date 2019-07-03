@@ -43,38 +43,4 @@ describe('<Avatar />', () => {
       });
     });
   });
-
-  describe('colors', () => {
-    context('subtle is false', () => {
-      it('renders with default colors calculated by the name string', () => {
-        colorForString.mockReturnValue('palette.blue');
-        const avatar = shallow(<Avatar name="Batman" subtle={false} />);
-
-        expect(avatar.find('StyledAvatar')).toHaveProp({
-          bg: 'palette.blue.default',
-          borderColor: 'palette.blue.default'
-        });
-
-        expect(avatar.find('Text')).toHaveProp({
-          color: 'monochrome.white'
-        });
-      });
-    });
-
-    context('subtle is true', () => {
-      it('renders with subtle colors calculated by the name string', () => {
-        colorForString.mockReturnValue('palette.blue');
-        const avatar = shallow(<Avatar name="Batman" subtle />);
-
-        expect(avatar.find('StyledAvatar')).toHaveProp({
-          bg: 'palette.blue.lighter',
-          borderColor: 'palette.blue.darker'
-        });
-
-        expect(avatar.find('Text')).toHaveProp({
-          color: 'palette.blue.darker'
-        });
-      });
-    });
-  });
 });
