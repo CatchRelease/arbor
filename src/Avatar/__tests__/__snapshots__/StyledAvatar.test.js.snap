@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StyledAvatar /> sizes renders default properly 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  border-color: #29863A;
+  background-color: #29863A;
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="emotion-0 emotion-1"
+  height="24px"
+  name="Bruce Wayne"
+  width="24px"
+/>
+`;
+
+exports[`<StyledAvatar /> sizes renders medium properly 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  border-color: #29863A;
+  background-color: #29863A;
+  height: 32px;
+  width: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="emotion-0 emotion-1"
+  height="32px"
+  name="Bruce Wayne"
+  width="32px"
+/>
+`;

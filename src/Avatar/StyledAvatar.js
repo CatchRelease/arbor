@@ -1,20 +1,40 @@
+import React from 'react';
+import { withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled';
 import Flex from '../Flex';
 
-import { avatarSizes } from '../theme';
+import { sizes } from '../theme/avatars';
 
-const StyledAvatar = styled(Flex)`
-  width: ${props => props.theme.avatarSizes[props.size]};
-  height: ${props => props.theme.avatarSizes[props.size]};
-`;
+export const StyledAvatar = ({
+  size,
+  subtle,
+  theme: { avatarSizes },
+  baseColor,
+  ...props
+}) => {
+  const bg = subtle ? `${baseColor}.lighter` : `${baseColor}.default`;
+  const borderColor = subtle ? `${baseColor}.darker` : `${baseColor}.default`;
+
+  return (
+    <Flex
+      {...{
+        width: avatarSizes[size],
+        height: avatarSizes[size],
+        bg,
+        borderColor,
+        ...props
+      }}
+    />
+  );
+};
 
 StyledAvatar.propTypes = {
-  size: PropTypes.oneOf(Object.keys(avatarSizes))
+  baseColor: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(Object.keys(sizes))
 };
 
 StyledAvatar.defaultProps = {
   size: 'default'
 };
 
-export default StyledAvatar;
+export default withTheme(StyledAvatar);

@@ -19,6 +19,7 @@ module.exports = {
         ]
       }
     ],
+    'import/no-named-as-default': false,
     'react/forbid-foreign-prop-types': false
   },
   overrides: [
