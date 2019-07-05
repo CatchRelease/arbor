@@ -19,11 +19,7 @@ export const StyledAvatarText = ({
 };
 
 StyledAvatarText.propTypes = {
-  size: PropTypes.oneOf(Object.keys(sizes))
-};
-
-StyledAvatarText.defaultProps = {
-  size: 'default'
+  size: PropTypes.oneOf(Object.keys(sizes)).isRequired
 };
 
 export default withTheme(StyledAvatarText);
