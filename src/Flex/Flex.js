@@ -1,29 +1,38 @@
 import styled from '@emotion/styled';
 import {
-  alignSelf,
+  alignContent,
   alignItems,
-  justifyContent,
+  alignSelf,
+  flex,
   flexDirection,
-  flex
+  justifyContent,
+  justifyItems,
+  justifySelf
 } from 'styled-system';
 
 import Box from '../Box';
 
 const Flex = styled(Box)`
   display: flex;
-  ${alignSelf};
+  ${alignContent};
   ${alignItems};
-  ${justifyContent};
+  ${alignSelf};
   ${flexDirection};
   ${flex};
+  ${justifyContent};
+  ${justifyItems};
+  ${justifySelf};
 `;
 
 Flex.propTypes = {
-  ...alignSelf.propTypes,
+  ...alignContent.propTypes,
   ...alignItems.propTypes,
-  ...justifyContent.propTypes,
+  ...alignSelf.propTypes,
+  ...flex.propTypes,
   ...flexDirection.propTypes,
-  ...flex.propTypes
+  ...justifyContent.propTypes,
+  ...justifyItems.propTypes,
+  ...justifySelf.propTypes
 };
 
 export default Flex;
