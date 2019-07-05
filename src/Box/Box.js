@@ -1,32 +1,34 @@
 import styled from '@emotion/styled';
 import {
-  borders,
   borderColor,
   borderRadius,
+  borders,
   boxShadow,
   color,
   display,
-  position,
-  space,
-  width,
+  gridArea,
   height,
   maxHeight,
   maxWidth,
   minHeight,
   minWidth,
   overflow,
-  textAlign
+  position,
+  space,
+  textAlign,
+  width
 } from 'styled-system';
 
 const Box = styled.div`
   box-sizing: border-box;
-  ${borders};
   ${borderColor};
   ${borderRadius};
+  ${borders};
   ${boxShadow};
   ${color};
   ${display};
   ${height};
+  ${gridArea};
   ${maxHeight};
   ${maxWidth};
   ${minHeight};
@@ -39,12 +41,13 @@ const Box = styled.div`
 `;
 
 Box.propTypes = {
-  ...borders.propTypes,
   ...borderColor.propTypes,
-  ...boxShadow.propTypes,
   ...borderRadius.propTypes,
+  ...borders.propTypes,
+  ...boxShadow.propTypes,
   ...color.propTypes,
   ...display.propTypes,
+  ...gridArea.propTypes,
   ...height.propTypes,
   ...maxHeight.propTypes,
   ...maxWidth.propTypes,

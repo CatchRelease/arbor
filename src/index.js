@@ -1,5 +1,6 @@
 export * from './theme';
 export { default as AccordionSection } from './AccordionSection';
+export { default as Alert } from './Alert';
 export { default as AutoComplete } from './AutoComplete';
 export { default as Avatar } from './Avatar';
 export { default as Badge } from './Badge';
