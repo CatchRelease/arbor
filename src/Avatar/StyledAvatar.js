@@ -30,11 +30,7 @@ export const StyledAvatar = ({
 
 StyledAvatar.propTypes = {
   baseColor: PropTypes.string.isRequired,
-  size: PropTypes.oneOf(Object.keys(sizes))
-};
-
-StyledAvatar.defaultProps = {
-  size: 'default'
+  size: PropTypes.oneOf(Object.keys(sizes)).isRequired
 };
 
 export default withTheme(StyledAvatar);

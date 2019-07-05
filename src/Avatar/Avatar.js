@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { sizes } from '../theme/avatars';
 import { colorForString } from '../utils';
 import StyledAvatar from './StyledAvatar';
 import StyledAvatarText from './StyledAvatarText';
@@ -25,7 +26,7 @@ const getInitials = name => {
   return firstInitial;
 };
 
-const Avatar = ({ name, subtle, ...props }) => {
+const Avatar = ({ name, subtle, size, ...props }) => {
   const baseColor = colorForString(name, AVATAR_COLORS);
 
   return (
@@ -36,11 +37,12 @@ const Avatar = ({ name, subtle, ...props }) => {
         border: '1px solid',
         borderRadius: '50%',
         justifyContent: 'center',
+        size,
         subtle,
         ...props
       }}
     >
-      <StyledAvatarText {...{ ...props, baseColor, subtle }}>
+      <StyledAvatarText {...{ baseColor, size, subtle }}>
         {getInitials(name).toUpperCase()}
       </StyledAvatarText>
     </StyledAvatar>
@@ -58,12 +60,18 @@ Avatar.propTypes = {
   name: PropTypes.string.isRequired,
 
   /**
+   * Visual size of the Avatar component
+   */
+  size: PropTypes.oneOf(Object.keys(sizes)),
+
+  /**
    * Use a subtle version of the avatar's color styling.
    * */
   subtle: PropTypes.bool
 };
 
 Avatar.defaultProps = {
+  size: 'default',
   subtle: false
 };
 
