@@ -3,9 +3,9 @@
 exports[`<Avatar /> renders properly 1`] = `
 .emotion-2 {
   box-sizing: border-box;
-  border: 1px solid;
   border-color: #29863A;
   border-radius: 50%;
+  border: 1px solid;
   background-color: #29863A;
   height: 24px;
   width: 24px;
