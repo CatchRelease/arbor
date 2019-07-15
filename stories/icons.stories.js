@@ -14,11 +14,15 @@ const AVAILABLE_ICONS = [
   'cr-logo',
   'cross',
   'download',
+  'error',
+  'info-sign',
   'swap',
   'symbol-circle',
+  'tick-circle',
   'thumb-down-outline',
   'thumb-up-outline',
-  'trash'
+  'trash',
+  'warning-sign'
 ];
 
 const rotationOptions = {
