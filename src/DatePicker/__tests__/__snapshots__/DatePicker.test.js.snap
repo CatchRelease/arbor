@@ -77,7 +77,6 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   -moz-appearance: none;
   appearance: none;
   border-radius: 3px;
-  border: 1px solid transparent;
   font-family: Motiva Sans;
   font-weight: 500;
   line-height: 1;
@@ -91,6 +90,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   background-color: transparent;
   border: 1px solid transparent;
   color: #5B5D61;
+  border: 1px solid transparent;
 }
 
 .emotion-2:disabled {
