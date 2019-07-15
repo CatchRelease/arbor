@@ -26,7 +26,6 @@ exports[`<Header /> renders with heading and a button 1`] = `
   -moz-appearance: none;
   appearance: none;
   border-radius: 3px;
-  border: 1px solid transparent;
   font-family: Motiva Sans;
   font-weight: 500;
   line-height: 1;
@@ -39,6 +38,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
   font-size: 0.875rem;
   background-color: #081D17;
   color: #C0F9DA;
+  border: 1px solid transparent;
 }
 
 .emotion-4:disabled {
@@ -152,7 +152,6 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   -moz-appearance: none;
   appearance: none;
   border-radius: 3px;
-  border: 1px solid transparent;
   font-family: Motiva Sans;
   font-weight: 500;
   line-height: 1;
@@ -165,6 +164,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   font-size: 0.875rem;
   background-color: #081D17;
   color: #C0F9DA;
+  border: 1px solid transparent;
 }
 
 .emotion-8:disabled {
@@ -217,7 +217,6 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   -moz-appearance: none;
   appearance: none;
   border-radius: 3px;
-  border: 1px solid transparent;
   font-family: Motiva Sans;
   font-weight: 500;
   line-height: 1;
@@ -230,6 +229,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   font-size: 0.875rem;
   background-color: #FFFFFF;
   color: #25272D;
+  border: 1px solid transparent;
 }
 
 .emotion-4:disabled {

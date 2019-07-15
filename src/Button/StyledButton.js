@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-import { space } from 'styled-system';
+import { borders, borderColor, space } from 'styled-system';
 
 import buttonSizes from './buttonSizes';
 import variants from './variants';
@@ -11,11 +11,9 @@ const fullWidthStyles = ({ fullWidth }) =>
   css`
     width: 100%;
   `;
-
 const StyledButton = styled.button`
   appearance: none;
   border-radius: ${props => props.theme.radii.small};
-  border: 1px solid transparent;
   font-family: ${props => props.theme.brandFont};
   font-weight: ${props => props.theme.fontWeights.medium};
   line-height: ${props => props.theme.lineHeights.regular};
@@ -43,11 +41,19 @@ const StyledButton = styled.button`
   ${fullWidthStyles};
   ${space};
   ${whiteSpace};
+  ${borders};
+  ${borderColor};
 `;
 
 StyledButton.propTypes = {
+  ...borders.propTypes,
+  ...borderColor.propTypes,
   ...space.propTypes,
   ...whiteSpace.propTypes
+};
+
+StyledButton.defaultProps = {
+  border: '1px solid transparent'
 };
 
 export default StyledButton;
