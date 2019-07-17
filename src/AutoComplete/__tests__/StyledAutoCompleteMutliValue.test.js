@@ -3,13 +3,13 @@ import { shallow } from 'enzyme';
 
 import colorForString from '../../utils/colorForString';
 
-import StyledMultiValue from '../StyledMultiValue';
+import StyledAutoCompleteMultiValue from '../StyledAutoCompleteMultiValue';
 
 jest.mock('../../utils/colorForString.js');
 
 const noop = () => null;
 
-describe('<StyledMultiValue />', () => {
+describe('<StyledAutoCompleteMultiValue />', () => {
   it('uses colorForString to determine badge color', () => {
     colorForString.mockReturnValue('green');
     const props = {
@@ -23,7 +23,7 @@ describe('<StyledMultiValue />', () => {
       }
     };
 
-    const wrapper = shallow(<StyledMultiValue {...props} />);
+    const wrapper = shallow(<StyledAutoCompleteMultiValue {...props} />);
 
     expect(wrapper.find('Badge')).toHaveProp({ paletteColor: 'green' });
   });

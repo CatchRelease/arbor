@@ -20,8 +20,8 @@ export default ({ colors: { intent, monochrome }, radii }) => ({
     neutral90: monochrome.grey90
   },
   spacing: {
-    baseUnit: 4,
-    controlHeight: 35,
-    menuGutter: 8
+    baseUnit: 0,
+    controlHeight: 0,
+    menuGutter: 0
   }
 });
