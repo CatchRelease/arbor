@@ -1,1 +1,5 @@
-export { default as colorForString } from './colorForString'; // eslint-disable-line import/prefer-default-export
+export * from './columns';
+export { default as colorForString } from './colorForString';
+export { default as ratio } from './ratio';
+export { default as textOverflow } from './textOverflow';
+export { default as whiteSpace } from './whiteSpace';
