@@ -143,8 +143,8 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 
 .emotion-6 {
   box-sizing: border-box;
-  margin-left: 0.75rem;
   margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 
 .emotion-4 {

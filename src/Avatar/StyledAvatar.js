@@ -9,6 +9,7 @@ export const StyledAvatar = ({
   size,
   subtle,
   theme: { avatarSizes },
+  border,
   baseColor,
   ...props
 }) => {
@@ -21,6 +22,7 @@ export const StyledAvatar = ({
         width: avatarSizes[size],
         height: avatarSizes[size],
         bg,
+        border,
         borderColor,
         ...props
       }}

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
-import { ratio } from 'styled-system';
+import { ratio } from '../utils';
 
 import Box from '../Box';
 
