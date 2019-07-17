@@ -6,15 +6,36 @@ import ReactSelectCreatable from 'react-select/creatable';
 import PropTypes from 'prop-types';
 import { withTheme } from 'emotion-theming';
 
-import StyledClearIndicator from './StyledClearIndicator';
-import StyledMultiValue from './StyledMultiValue';
 import buildReactSelectThemeOverrides from './buildReactSelectThemeOverrides';
 
-const addStyles = styles => provided => ({ ...provided, ...styles });
+import StyledAutoCompleteClearIndicator from './StyledAutoCompleteClearIndicator';
+import StyledAutoCompleteContainer from './StyledAutoCompleteContainer';
+import StyledAutoCompleteControl from './StyledAutoCompleteControl';
+import StyledAutoCompleteDropdownIndicator from './StyledAutoCompleteDropdownIndicator';
+import StyledAutoCompleteIndicatorsContainer from './StyledAutoCompleteIndicatorsContainer';
+import StyledAutoCompleteInput from './StyledAutoCompleteInput';
+import StyledAutoCompleteMenu from './StyledAutoCompleteMenu';
+import StyledAutoCompleteMenuList from './StyledAutoCompleteMenuList';
+import StyledAutoCompleteMultiValue from './StyledAutoCompleteMultiValue';
+import StyledAutoCompleteNoOptionsMessage from './StyledAutoCompleteNoOptionsMessage';
+import StyledAutoCompleteOption from './StyledAutoCompleteOption';
+import StyledAutoCompletePlaceholder from './StyledAutoCompletePlaceholder';
+import StyledAutoCompleteValueContainer from './StyledAutoCompleteValueContainer';
 
-const components = {
-  MultiValue: StyledMultiValue,
-  ClearIndicator: StyledClearIndicator
+const styledComponents = {
+  ClearIndicator: StyledAutoCompleteClearIndicator,
+  Container: StyledAutoCompleteContainer,
+  Control: StyledAutoCompleteControl,
+  DropdownIndicator: StyledAutoCompleteDropdownIndicator,
+  IndicatorsContainer: StyledAutoCompleteIndicatorsContainer,
+  Input: StyledAutoCompleteInput,
+  Menu: StyledAutoCompleteMenu,
+  MenuList: StyledAutoCompleteMenuList,
+  MultiValue: StyledAutoCompleteMultiValue,
+  NoOptionsMessage: StyledAutoCompleteNoOptionsMessage,
+  Placeholder: StyledAutoCompletePlaceholder,
+  Option: StyledAutoCompleteOption,
+  ValueContainer: StyledAutoCompleteValueContainer
 };
 
 const getReactSelectComponent = variant => {
@@ -30,36 +51,14 @@ const getReactSelectComponent = variant => {
   }
 };
 
-const getStyles = (
-  { radii, shadows, brandFont, space },
-  { hideDropdownIndicator }
-) => ({
-  container: addStyles({
-    fontFamily: brandFont,
-    marginBottom: space.smallest,
-    marginTop: space.smallest
-  }),
-  control: addStyles({ boxShadow: 'none' }),
-  dropdownIndicator: addStyles(
-    hideDropdownIndicator ? { display: 'none' } : {}
-  ),
-  indicatorSeparator: addStyles({ display: 'none' }),
-  input: addStyles({ marginTop: `-${space.smallest}` }),
-  menu: addStyles({
-    borderRadius: radii.large,
-    boxShadow: shadows.elevation2
-  }),
-  valueContainer: addStyles({ padding: `${space.smallest} ${space.smaller} 0` })
-});
-
-const StyledAutoComplete = ({ theme, variant, ...props }) => {
+const StyledAutoComplete = ({ components, theme, variant, ...props }) => {
   const SelectComponent = getReactSelectComponent(variant);
   const reactSelectProps = {
-    components,
-    styles: getStyles(theme, props),
+    components: { ...styledComponents, ...components },
     theme: reactSelectTheme => ({
       ...reactSelectTheme,
-      ...buildReactSelectThemeOverrides(theme)
+      ...buildReactSelectThemeOverrides(theme),
+      ...theme
     }),
     ...props
   };
@@ -68,11 +67,13 @@ const StyledAutoComplete = ({ theme, variant, ...props }) => {
 };
 
 StyledAutoComplete.propTypes = {
+  components: PropTypes.objectOf(PropTypes.elementType),
   theme: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
   variant: PropTypes.oneOf(['async', 'asyncCreatable', 'creatable', 'default'])
 };
 
 StyledAutoComplete.defaultProps = {
+  components: {},
   variant: 'default'
 };
 

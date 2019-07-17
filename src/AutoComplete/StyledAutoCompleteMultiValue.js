@@ -7,7 +7,11 @@ import { palette } from '../theme/colors';
 import Badge from '../Badge';
 import Icon from '../Icon';
 
-const StyledMultiValue = ({ data, data: { label }, removeProps }) => {
+const StyledAutoCompleteMultiValue = ({
+  data,
+  data: { label },
+  removeProps
+}) => {
   const paletteColor = colorForString(label, Object.keys(palette));
 
   const iconEnd = (
@@ -24,8 +28,6 @@ const StyledMultiValue = ({ data, data: { label }, removeProps }) => {
     <Badge
       {...{
         iconEnd,
-        mb: 'smallest',
-        mr: 'smallest',
         paletteColor,
         subtle: true,
         variant: 'pill',
@@ -37,7 +39,7 @@ const StyledMultiValue = ({ data, data: { label }, removeProps }) => {
   );
 };
 
-StyledMultiValue.propTypes = {
+StyledAutoCompleteMultiValue.propTypes = {
   data: PropTypes.shape({
     label: PropTypes.string.isRequired
   }).isRequired,
@@ -48,4 +50,4 @@ StyledMultiValue.propTypes = {
   }).isRequired
 };
 
-export default StyledMultiValue;
+export default StyledAutoCompleteMultiValue;
