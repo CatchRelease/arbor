@@ -2,16 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { sizes } from '../theme/avatars';
+import { palette } from '../theme/colors';
 import { colorForString } from '../utils';
 import StyledAvatar from './StyledAvatar';
 import StyledAvatarText from './StyledAvatarText';
 
-const AVATAR_COLORS = [
-  'palette.blue',
-  'palette.red',
-  'palette.yellow',
-  'palette.green'
-];
+const AVATAR_COLORS = Object.keys(palette).map(color => `palette.${color}`);
 
 const getInitials = name => {
   const [firstName, ...additionalNames] = name.split(' ');
