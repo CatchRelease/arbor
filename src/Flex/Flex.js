@@ -5,6 +5,8 @@ import {
   alignSelf,
   flex,
   flexDirection,
+  flexWrap,
+  gridGap,
   justifyContent,
   justifyItems,
   justifySelf
@@ -17,8 +19,10 @@ const Flex = styled(Box)`
   ${alignContent};
   ${alignItems};
   ${alignSelf};
-  ${flexDirection};
   ${flex};
+  ${flexDirection};
+  ${flexWrap};
+  ${gridGap};
   ${justifyContent};
   ${justifyItems};
   ${justifySelf};
@@ -30,6 +34,8 @@ Flex.propTypes = {
   ...alignSelf.propTypes,
   ...flex.propTypes,
   ...flexDirection.propTypes,
+  ...flexWrap.propTypes,
+  ...gridGap.propTypes,
   ...justifyContent.propTypes,
   ...justifyItems.propTypes,
   ...justifySelf.propTypes
