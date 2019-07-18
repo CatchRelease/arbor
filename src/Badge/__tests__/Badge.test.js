@@ -24,7 +24,9 @@ describe('<Badge />', () => {
   describe('Colors', () => {
     colors.forEach(color => {
       it(`properly renders a ${color} badge`, () => {
-        const badge = createWithTheme(<Badge color={color}>Badge Text</Badge>);
+        const badge = createWithTheme(
+          <Badge paletteColor={color}>Badge Text</Badge>
+        );
 
         expect(badge).toMatchSnapshot();
       });
@@ -41,7 +43,7 @@ describe('<Badge />', () => {
     colors.forEach(color => {
       it(`properly renders a subtle ${color} badge`, () => {
         const badge = createWithTheme(
-          <Badge color={color} subtle>
+          <Badge paletteColor={color} subtle>
             Badge Text
           </Badge>
         );

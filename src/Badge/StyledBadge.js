@@ -4,11 +4,11 @@ import styled from '@emotion/styled';
 import Flex from '../Flex';
 import palette from '../theme/colors/palette';
 
-const getBackground = ({ color, subtle, theme }) => {
-  if (color) {
+const getBackground = ({ paletteColor, subtle, theme }) => {
+  if (paletteColor) {
     return subtle
-      ? theme.colors.palette[color].lighter
-      : theme.colors.palette[color].default;
+      ? theme.colors.palette[paletteColor].lighter
+      : theme.colors.palette[paletteColor].default;
   }
 
   return subtle
@@ -16,8 +16,10 @@ const getBackground = ({ color, subtle, theme }) => {
     : theme.colors.monochrome.grey100;
 };
 
-const getBorderColor = ({ color, theme }) =>
-  color ? theme.colors.palette[color].default : theme.colors.monochrome.grey100;
+const getBorderColor = ({ paletteColor, theme }) =>
+  paletteColor
+    ? theme.colors.palette[paletteColor].default
+    : theme.colors.monochrome.grey100;
 
 const StyledBadge = styled(Flex)`
   background: ${getBackground};
@@ -27,7 +29,7 @@ const StyledBadge = styled(Flex)`
 
 StyledBadge.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.oneOf(['', ...Object.keys(palette)]),
+  paletteColor: PropTypes.oneOf(['', ...Object.keys(palette)]),
   subtle: PropTypes.bool,
   variant: PropTypes.oneOf(['default', 'pill'])
 };
@@ -35,7 +37,7 @@ StyledBadge.propTypes = {
 StyledBadge.defaultProps = {
   alignItems: 'center',
   border: '1px solid',
-  color: '',
+  paletteColor: '',
   height: '24px',
   maxWidth: '100%',
   px: 'smaller'

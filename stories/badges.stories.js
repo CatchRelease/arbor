@@ -25,7 +25,7 @@ stories.add('Default', () => (
       </Badge>
       {badgeColors.map(color => (
         <Badge
-          color={color}
+          paletteColor={color}
           key={color}
           mr="regular"
           subtle={boolean('Subtle', false)}
@@ -52,7 +52,7 @@ stories.add('Icon End', () => (
       </Badge>
       {badgeColors.map(color => (
         <Badge
-          color={color}
+          paletteColor={color}
           key={color}
           mr="regular"
           iconEnd={iconEnd}
@@ -80,7 +80,7 @@ stories.add('Icon Start', () => (
       </Badge>
       {badgeColors.map(color => (
         <Badge
-          color={color}
+          paletteColor={color}
           key={color}
           mr="regular"
           iconStart={iconStart}
@@ -109,7 +109,7 @@ stories.add('Icon Start & Icon End', () => (
       </Badge>
       {badgeColors.map(color => (
         <Badge
-          color={color}
+          paletteColor={color}
           key={color}
           mr="regular"
           iconEnd={iconEnd}
