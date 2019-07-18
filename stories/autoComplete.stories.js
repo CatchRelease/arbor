@@ -7,8 +7,8 @@ import { AutoComplete, Box, Heading } from '../src';
 import palette from '../src/theme/colors/palette';
 
 const colorOptions = ['', ...Object.keys(palette)].map((color, value) => ({
-  color,
   label: color || 'neutral',
+  paletteColor: color,
   subtle: false,
   value
 }));

@@ -27,7 +27,6 @@ exports[`<Badge /> Colors properly renders a blue badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: #4466EE;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -47,7 +46,6 @@ exports[`<Badge /> Colors properly renders a blue badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="blue"
   height="24px"
 >
   <div
@@ -95,7 +93,6 @@ exports[`<Badge /> Colors properly renders a cyan badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: cyan;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -115,7 +112,6 @@ exports[`<Badge /> Colors properly renders a cyan badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="cyan"
   height="24px"
 >
   <div
@@ -163,7 +159,6 @@ exports[`<Badge /> Colors properly renders a green badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: #00AA44;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -183,7 +178,6 @@ exports[`<Badge /> Colors properly renders a green badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="green"
   height="24px"
 >
   <div
@@ -250,7 +244,6 @@ exports[`<Badge /> Colors properly renders a neutral badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color=""
   height="24px"
 >
   <div
@@ -298,7 +291,6 @@ exports[`<Badge /> Colors properly renders a orange badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: orange;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -318,7 +310,6 @@ exports[`<Badge /> Colors properly renders a orange badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="orange"
   height="24px"
 >
   <div
@@ -366,7 +357,6 @@ exports[`<Badge /> Colors properly renders a pink badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: pink;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -386,7 +376,6 @@ exports[`<Badge /> Colors properly renders a pink badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="pink"
   height="24px"
 >
   <div
@@ -434,7 +423,6 @@ exports[`<Badge /> Colors properly renders a purple badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: purple;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -454,7 +442,6 @@ exports[`<Badge /> Colors properly renders a purple badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="purple"
   height="24px"
 >
   <div
@@ -502,7 +489,6 @@ exports[`<Badge /> Colors properly renders a red badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: #EE2200;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -522,7 +508,6 @@ exports[`<Badge /> Colors properly renders a red badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="red"
   height="24px"
 >
   <div
@@ -570,7 +555,6 @@ exports[`<Badge /> Colors properly renders a teal badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: teal;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -590,7 +574,6 @@ exports[`<Badge /> Colors properly renders a teal badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="teal"
   height="24px"
 >
   <div
@@ -638,7 +621,6 @@ exports[`<Badge /> Colors properly renders a yellow badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: yellow;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -658,7 +640,6 @@ exports[`<Badge /> Colors properly renders a yellow badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="yellow"
   height="24px"
 >
   <div
@@ -683,7 +664,6 @@ exports[`<Badge /> Subtle properly renders a subtle blue badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: #4466EE;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -726,7 +706,6 @@ exports[`<Badge /> Subtle properly renders a subtle blue badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="blue"
   height="24px"
 >
   <div
@@ -751,7 +730,6 @@ exports[`<Badge /> Subtle properly renders a subtle cyan badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: cyan;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -794,7 +772,6 @@ exports[`<Badge /> Subtle properly renders a subtle cyan badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="cyan"
   height="24px"
 >
   <div
@@ -819,7 +796,6 @@ exports[`<Badge /> Subtle properly renders a subtle green badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: #00AA44;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -862,7 +838,6 @@ exports[`<Badge /> Subtle properly renders a subtle green badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="green"
   height="24px"
 >
   <div
@@ -929,7 +904,6 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color=""
   height="24px"
 >
   <div
@@ -954,7 +928,6 @@ exports[`<Badge /> Subtle properly renders a subtle orange badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: orange;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -997,7 +970,6 @@ exports[`<Badge /> Subtle properly renders a subtle orange badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="orange"
   height="24px"
 >
   <div
@@ -1022,7 +994,6 @@ exports[`<Badge /> Subtle properly renders a subtle pink badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: pink;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -1065,7 +1036,6 @@ exports[`<Badge /> Subtle properly renders a subtle pink badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="pink"
   height="24px"
 >
   <div
@@ -1090,7 +1060,6 @@ exports[`<Badge /> Subtle properly renders a subtle purple badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: purple;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -1133,7 +1102,6 @@ exports[`<Badge /> Subtle properly renders a subtle purple badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="purple"
   height="24px"
 >
   <div
@@ -1158,7 +1126,6 @@ exports[`<Badge /> Subtle properly renders a subtle red badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: #EE2200;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -1201,7 +1168,6 @@ exports[`<Badge /> Subtle properly renders a subtle red badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="red"
   height="24px"
 >
   <div
@@ -1226,7 +1192,6 @@ exports[`<Badge /> Subtle properly renders a subtle teal badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: teal;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -1269,7 +1234,6 @@ exports[`<Badge /> Subtle properly renders a subtle teal badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="teal"
   height="24px"
 >
   <div
@@ -1294,7 +1258,6 @@ exports[`<Badge /> Subtle properly renders a subtle yellow badge 1`] = `
 .emotion-4 {
   box-sizing: border-box;
   border: 1px solid;
-  color: yellow;
   height: 24px;
   max-width: 100%;
   padding-left: 0.5rem;
@@ -1337,7 +1300,6 @@ exports[`<Badge /> Subtle properly renders a subtle yellow badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color="yellow"
   height="24px"
 >
   <div
@@ -1404,7 +1366,6 @@ exports[`<Badge /> Variants properly renders a default badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color=""
   height="24px"
 >
   <div
@@ -1471,7 +1432,6 @@ exports[`<Badge /> Variants properly renders a pill badge 1`] = `
 
 <div
   className="emotion-4 emotion-5"
-  color=""
   height="24px"
 >
   <div
@@ -1538,7 +1498,6 @@ exports[`<Badge /> iconEnd properly renders a badge with an ending icon 1`] = `
 
 <div
   className="emotion-6 emotion-7"
-  color=""
   height="24px"
 >
   <div
@@ -1608,7 +1567,6 @@ exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a st
 
 <div
   className="emotion-8 emotion-9"
-  color=""
   height="24px"
 >
   <div
@@ -1681,7 +1639,6 @@ exports[`<Badge /> iconStart properly renders a badge with a starting icon 1`] =
 
 <div
   className="emotion-6 emotion-7"
-  color=""
   height="24px"
 >
   <div
