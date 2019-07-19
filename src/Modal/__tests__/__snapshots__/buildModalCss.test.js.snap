@@ -32,7 +32,6 @@ exports[`buildModalCss modalCss is provided renders properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: calc(100% - 4rem);
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -78,7 +77,6 @@ exports[`buildModalCss no additional css provided renders properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: calc(100% - 4rem);
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -124,7 +122,6 @@ exports[`buildModalCss overlayCss is provided renders properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: calc(100% - 4rem);
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;

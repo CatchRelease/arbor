@@ -34,7 +34,7 @@ class ModalStory extends React.Component {
 
   render() {
     const { modalIsOpen } = this.state;
-    const { maxHeight, width } = this.props;
+    const { height, width } = this.props;
 
     return (
       <Box {...this.props}>
@@ -44,14 +44,14 @@ class ModalStory extends React.Component {
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={this.closeModal}
-          modalCss={{ width }}
+          modalCss={{ width, height }}
         >
           <Card
             as="section"
             boxShadow="elevation2"
             gridTemplateRows="auto 1fr auto"
-            maxHeight={maxHeight}
             overflow="hidden"
+            height="100%"
           >
             <Grid
               alignItems="center"
@@ -94,7 +94,7 @@ class ModalStory extends React.Component {
 }
 
 ModalStory.propTypes = {
-  maxHeight: PropTypes.string.isRequired,
+  height: PropTypes.string.isRequired,
   numberOfLines: PropTypes.number.isRequired,
   width: PropTypes.string.isRequired
 };
@@ -105,7 +105,7 @@ stories.add('default', () => (
   <ModalStory
     p="large"
     numberOfLines={number('Lines of Content', 100)}
-    maxHeight={text('Max Height', '100%')}
+    height={text('Height', 'calc(100% - 40px)')}
     width={text('Modal Width', '500px')}
   >
     Foo
