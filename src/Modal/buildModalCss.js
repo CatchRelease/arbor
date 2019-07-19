@@ -1,11 +1,10 @@
 import { css } from '@emotion/core';
 import { transparentize } from 'polished';
 
-const baseModalCss = theme => css`
+const baseModalCss = css`
   align-items: center;
   box-sizing: border-box;
   display: flex;
-  height: calc(100% - ${theme.space.largest});
   justify-content: center;
   outline: none;
 `;
@@ -29,7 +28,7 @@ const buildModalCss = ({ theme, overlayCss, modalCss }) => css`
   }
 
   .ArborModal {
-    ${baseModalCss(theme)};
+    ${baseModalCss};
     ${typeof modalCss === 'function' ? modalCss(theme) : modalCss};
   }
 `;
