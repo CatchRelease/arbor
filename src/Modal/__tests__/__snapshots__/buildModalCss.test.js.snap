@@ -38,7 +38,6 @@ exports[`buildModalCss modalCss is provided renders properly 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   outline: none;
-  width: calc(100% - 4rem);
   background: red;
 }
 
@@ -85,7 +84,6 @@ exports[`buildModalCss no additional css provided renders properly 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   outline: none;
-  width: calc(100% - 4rem);
 }
 
 <div
@@ -132,7 +130,6 @@ exports[`buildModalCss overlayCss is provided renders properly 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   outline: none;
-  width: calc(100% - 4rem);
 }
 
 <div

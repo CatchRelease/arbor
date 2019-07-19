@@ -41,14 +41,17 @@ class ModalStory extends React.Component {
         <Button varient="primary" onClick={this.openModal}>
           Launch Modal
         </Button>
-        <Modal isOpen={modalIsOpen} onRequestClose={this.closeModal}>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={this.closeModal}
+          modalCss={{ width }}
+        >
           <Card
             as="section"
             boxShadow="elevation2"
             gridTemplateRows="auto 1fr auto"
             maxHeight={maxHeight}
             overflow="hidden"
-            width={width}
           >
             <Grid
               alignItems="center"

@@ -8,7 +8,6 @@ const baseModalCss = theme => css`
   height: calc(100% - ${theme.space.largest});
   justify-content: center;
   outline: none;
-  width: calc(100% - ${theme.space.largest});
 `;
 
 const baseOverlayCss = theme => css`
