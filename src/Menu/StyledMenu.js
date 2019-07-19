@@ -6,4 +6,9 @@ const StyledMenu = styled(Flex)`
   outline: none;
 `;
 
+StyledMenu.defaultProps = {
+  pb: 'smallest',
+  pt: 'smallest'
+};
+
 export default StyledMenu;

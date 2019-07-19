@@ -10,9 +10,10 @@ describe('<StyledAvatar />', () => {
       it('renders with default colors calculated by the name string', () => {
         const avatar = shallow(
           <StyledAvatarText
-            theme={theme}
             baseColor="palette.blue"
+            size="default"
             subtle={false}
+            theme={theme}
           />
         );
 
@@ -25,11 +26,16 @@ describe('<StyledAvatar />', () => {
     context('subtle is true', () => {
       it('renders with subtle colors calculated by the name string', () => {
         const avatar = shallow(
-          <StyledAvatarText theme={theme} baseColor="palette.blue" subtle />
+          <StyledAvatarText
+            baseColor="palette.blue"
+            size="default"
+            subtle
+            theme={theme}
+          />
         );
 
         expect(avatar.find('Text')).toHaveProp({
-          color: 'palette.blue.darker'
+          color: 'palette.blue.default'
         });
       });
     });

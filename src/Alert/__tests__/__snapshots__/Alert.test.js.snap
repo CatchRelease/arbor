@@ -196,7 +196,7 @@ exports[`<Alert /> Variants with intent property renders a banner alert with dan
 
 .emotion-0 {
   color: #D93838;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 <div
@@ -210,7 +210,7 @@ exports[`<Alert /> Variants with intent property renders a banner alert with dan
     <i
       className="ar ar-error emotion-0 emotion-1"
       color="intent.danger.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -259,7 +259,7 @@ exports[`<Alert /> Variants with intent property renders a banner alert with inf
 
 .emotion-0 {
   color: #4263EB;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 <div
@@ -273,7 +273,7 @@ exports[`<Alert /> Variants with intent property renders a banner alert with inf
     <i
       className="ar ar-info-sign emotion-0 emotion-1"
       color="intent.info.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -322,7 +322,7 @@ exports[`<Alert /> Variants with intent property renders a banner alert with suc
 
 .emotion-0 {
   color: #29863A;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 <div
@@ -336,7 +336,7 @@ exports[`<Alert /> Variants with intent property renders a banner alert with suc
     <i
       className="ar ar-tick-circle emotion-0 emotion-1"
       color="intent.success.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -385,7 +385,7 @@ exports[`<Alert /> Variants with intent property renders a banner alert with war
 
 .emotion-0 {
   color: #C55205;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 <div
@@ -399,7 +399,7 @@ exports[`<Alert /> Variants with intent property renders a banner alert with war
     <i
       className="ar ar-warning-sign emotion-0 emotion-1"
       color="intent.warning.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -428,7 +428,7 @@ exports[`<Alert /> Variants with intent property renders a card alert with dange
 
 .emotion-0 {
   color: #D93838;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-6 {
@@ -459,7 +459,7 @@ exports[`<Alert /> Variants with intent property renders a card alert with dange
     <i
       className="ar ar-error emotion-0 emotion-1"
       color="intent.danger.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -488,7 +488,7 @@ exports[`<Alert /> Variants with intent property renders a card alert with info 
 
 .emotion-0 {
   color: #4263EB;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-6 {
@@ -519,7 +519,7 @@ exports[`<Alert /> Variants with intent property renders a card alert with info 
     <i
       className="ar ar-info-sign emotion-0 emotion-1"
       color="intent.info.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -548,7 +548,7 @@ exports[`<Alert /> Variants with intent property renders a card alert with succe
 
 .emotion-0 {
   color: #29863A;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-6 {
@@ -579,7 +579,7 @@ exports[`<Alert /> Variants with intent property renders a card alert with succe
     <i
       className="ar ar-tick-circle emotion-0 emotion-1"
       color="intent.success.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -608,7 +608,7 @@ exports[`<Alert /> Variants with intent property renders a card alert with warni
 
 .emotion-0 {
   color: #C55205;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-6 {
@@ -639,7 +639,7 @@ exports[`<Alert /> Variants with intent property renders a card alert with warni
     <i
       className="ar ar-warning-sign emotion-0 emotion-1"
       color="intent.warning.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -668,7 +668,7 @@ exports[`<Alert /> Variants with intent property renders a inline alert with dan
 
 .emotion-0 {
   color: #D93838;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-6 {
@@ -698,7 +698,7 @@ exports[`<Alert /> Variants with intent property renders a inline alert with dan
     <i
       className="ar ar-error emotion-0 emotion-1"
       color="intent.danger.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -727,7 +727,7 @@ exports[`<Alert /> Variants with intent property renders a inline alert with inf
 
 .emotion-0 {
   color: #4263EB;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-6 {
@@ -757,7 +757,7 @@ exports[`<Alert /> Variants with intent property renders a inline alert with inf
     <i
       className="ar ar-info-sign emotion-0 emotion-1"
       color="intent.info.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -786,7 +786,7 @@ exports[`<Alert /> Variants with intent property renders a inline alert with suc
 
 .emotion-0 {
   color: #29863A;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-6 {
@@ -816,7 +816,7 @@ exports[`<Alert /> Variants with intent property renders a inline alert with suc
     <i
       className="ar ar-tick-circle emotion-0 emotion-1"
       color="intent.success.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -845,7 +845,7 @@ exports[`<Alert /> Variants with intent property renders a inline alert with war
 
 .emotion-0 {
   color: #C55205;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-6 {
@@ -875,7 +875,7 @@ exports[`<Alert /> Variants with intent property renders a inline alert with war
     <i
       className="ar ar-warning-sign emotion-0 emotion-1"
       color="intent.warning.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -916,7 +916,7 @@ exports[`<Alert /> Variants with intent with details property renders a banner a
 
 .emotion-0 {
   color: #D93838;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-10 {
@@ -950,7 +950,7 @@ exports[`<Alert /> Variants with intent with details property renders a banner a
     <i
       className="ar ar-error emotion-0 emotion-1"
       color="intent.danger.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -997,7 +997,7 @@ exports[`<Alert /> Variants with intent with details property renders a banner a
 
 .emotion-0 {
   color: #4263EB;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-10 {
@@ -1036,7 +1036,7 @@ exports[`<Alert /> Variants with intent with details property renders a banner a
     <i
       className="ar ar-info-sign emotion-0 emotion-1"
       color="intent.info.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -1088,7 +1088,7 @@ exports[`<Alert /> Variants with intent with details property renders a banner a
 
 .emotion-0 {
   color: #29863A;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-10 {
@@ -1122,7 +1122,7 @@ exports[`<Alert /> Variants with intent with details property renders a banner a
     <i
       className="ar ar-tick-circle emotion-0 emotion-1"
       color="intent.success.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -1174,7 +1174,7 @@ exports[`<Alert /> Variants with intent with details property renders a banner a
 
 .emotion-0 {
   color: #C55205;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-10 {
@@ -1208,7 +1208,7 @@ exports[`<Alert /> Variants with intent with details property renders a banner a
     <i
       className="ar ar-warning-sign emotion-0 emotion-1"
       color="intent.warning.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -1260,7 +1260,7 @@ exports[`<Alert /> Variants with intent with details property renders a card ale
 
 .emotion-0 {
   color: #D93838;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-10 {
@@ -1291,7 +1291,7 @@ exports[`<Alert /> Variants with intent with details property renders a card ale
     <i
       className="ar ar-error emotion-0 emotion-1"
       color="intent.danger.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -1338,7 +1338,7 @@ exports[`<Alert /> Variants with intent with details property renders a card ale
 
 .emotion-0 {
   color: #4263EB;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-6 {
@@ -1374,7 +1374,7 @@ exports[`<Alert /> Variants with intent with details property renders a card ale
     <i
       className="ar ar-info-sign emotion-0 emotion-1"
       color="intent.info.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -1426,7 +1426,7 @@ exports[`<Alert /> Variants with intent with details property renders a card ale
 
 .emotion-0 {
   color: #29863A;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-10 {
@@ -1457,7 +1457,7 @@ exports[`<Alert /> Variants with intent with details property renders a card ale
     <i
       className="ar ar-tick-circle emotion-0 emotion-1"
       color="intent.success.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -1509,7 +1509,7 @@ exports[`<Alert /> Variants with intent with details property renders a card ale
 
 .emotion-0 {
   color: #C55205;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-10 {
@@ -1540,7 +1540,7 @@ exports[`<Alert /> Variants with intent with details property renders a card ale
     <i
       className="ar ar-warning-sign emotion-0 emotion-1"
       color="intent.warning.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -1592,7 +1592,7 @@ exports[`<Alert /> Variants with intent with details property renders a inline a
 
 .emotion-0 {
   color: #D93838;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-10 {
@@ -1622,7 +1622,7 @@ exports[`<Alert /> Variants with intent with details property renders a inline a
     <i
       className="ar ar-error emotion-0 emotion-1"
       color="intent.danger.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -1669,7 +1669,7 @@ exports[`<Alert /> Variants with intent with details property renders a inline a
 
 .emotion-0 {
   color: #4263EB;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-6 {
@@ -1704,7 +1704,7 @@ exports[`<Alert /> Variants with intent with details property renders a inline a
     <i
       className="ar ar-info-sign emotion-0 emotion-1"
       color="intent.info.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -1756,7 +1756,7 @@ exports[`<Alert /> Variants with intent with details property renders a inline a
 
 .emotion-0 {
   color: #29863A;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-10 {
@@ -1786,7 +1786,7 @@ exports[`<Alert /> Variants with intent with details property renders a inline a
     <i
       className="ar ar-tick-circle emotion-0 emotion-1"
       color="intent.success.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -1838,7 +1838,7 @@ exports[`<Alert /> Variants with intent with details property renders a inline a
 
 .emotion-0 {
   color: #C55205;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-10 {
@@ -1868,7 +1868,7 @@ exports[`<Alert /> Variants with intent with details property renders a inline a
     <i
       className="ar ar-warning-sign emotion-0 emotion-1"
       color="intent.warning.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -1979,7 +1979,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
 
 .emotion-0 {
   color: #D93838;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -2014,7 +2014,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
     <i
       className="ar ar-error emotion-0 emotion-1"
       color="intent.danger.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -2130,7 +2130,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
 
 .emotion-0 {
   color: #4263EB;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -2165,7 +2165,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
     <i
       className="ar ar-info-sign emotion-0 emotion-1"
       color="intent.info.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -2281,7 +2281,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
 
 .emotion-0 {
   color: #29863A;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -2316,7 +2316,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
     <i
       className="ar ar-tick-circle emotion-0 emotion-1"
       color="intent.success.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -2432,7 +2432,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
 
 .emotion-0 {
   color: #C55205;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -2467,7 +2467,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
     <i
       className="ar ar-warning-sign emotion-0 emotion-1"
       color="intent.warning.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -2583,7 +2583,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
 
 .emotion-0 {
   color: #D93838;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -2615,7 +2615,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
     <i
       className="ar ar-error emotion-0 emotion-1"
       color="intent.danger.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -2731,7 +2731,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
 
 .emotion-0 {
   color: #4263EB;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -2763,7 +2763,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
     <i
       className="ar ar-info-sign emotion-0 emotion-1"
       color="intent.info.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -2879,7 +2879,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
 
 .emotion-0 {
   color: #29863A;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -2911,7 +2911,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
     <i
       className="ar ar-tick-circle emotion-0 emotion-1"
       color="intent.success.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -3027,7 +3027,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
 
 .emotion-0 {
   color: #C55205;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -3059,7 +3059,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
     <i
       className="ar ar-warning-sign emotion-0 emotion-1"
       color="intent.warning.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -3175,7 +3175,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
 
 .emotion-0 {
   color: #D93838;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -3206,7 +3206,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
     <i
       className="ar ar-error emotion-0 emotion-1"
       color="intent.danger.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -3322,7 +3322,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
 
 .emotion-0 {
   color: #4263EB;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -3353,7 +3353,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
     <i
       className="ar ar-info-sign emotion-0 emotion-1"
       color="intent.info.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -3469,7 +3469,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
 
 .emotion-0 {
   color: #29863A;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -3500,7 +3500,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
     <i
       className="ar ar-tick-circle emotion-0 emotion-1"
       color="intent.success.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div
@@ -3616,7 +3616,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
 
 .emotion-0 {
   color: #C55205;
-  font-size: larger;
+  font-size: 0.875rem;
 }
 
 .emotion-12 {
@@ -3647,7 +3647,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
     <i
       className="ar ar-warning-sign emotion-0 emotion-1"
       color="intent.warning.default"
-      fontSize="larger"
+      fontSize="size4"
     />
   </div>
   <div

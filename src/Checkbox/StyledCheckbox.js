@@ -19,18 +19,18 @@ const checkedStyles = ({ theme, checked, indeterminate }) =>
   css`
     background-color: ${indeterminate
       ? theme.colors.monochrome.white
-      : theme.colors.palette.blue.default};
-    border-color: ${theme.colors.palette.blue.default};
+      : theme.colors.intent.brand.dark};
+    border-color: ${theme.colors.intent.brand.dark};
     color: ${indeterminate
-      ? theme.colors.palette.blue.default
-      : theme.colors.monochrome.white};
+      ? theme.colors.intent.brand.dark
+      : theme.colors.intent.brand.light};
   `;
 
 const disabledStyles = ({ theme, checked, disabled }) =>
   disabled &&
   css`
     background: ${checked
-      ? theme.colors.grey40
+      ? theme.colors.monochrome.grey40
       : theme.colors.monochrome.white};
     border-color: ${theme.colors.border.default};
     color: ${checked ? theme.colors.grey60 : theme.colors.monochrome.white};

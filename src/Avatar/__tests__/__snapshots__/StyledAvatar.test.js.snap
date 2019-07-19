@@ -3,6 +3,7 @@
 exports[`<StyledAvatar /> sizes renders default properly 1`] = `
 .emotion-0 {
   box-sizing: border-box;
+  border: 1px solid;
   border-color: #29863A;
   background-color: #29863A;
   height: 24px;
@@ -24,6 +25,7 @@ exports[`<StyledAvatar /> sizes renders default properly 1`] = `
 exports[`<StyledAvatar /> sizes renders medium properly 1`] = `
 .emotion-0 {
   box-sizing: border-box;
+  border: 1px solid;
   border-color: #29863A;
   background-color: #29863A;
   height: 32px;

@@ -12,7 +12,7 @@ export const StyledAvatarText = ({
   theme: { avatarFontSizes },
   ...props
 }) => {
-  const color = subtle ? `${baseColor}.darker` : 'monochrome.white';
+  const color = subtle ? `${baseColor}.default` : 'monochrome.white';
   const fontSize = avatarFontSizes[size];
 
   return <Text {...{ color, fontSize, ...props }} />;

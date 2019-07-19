@@ -11,7 +11,7 @@ const baseModalCss = css`
 
 const baseOverlayCss = theme => css`
   align-items: center;
-  background: ${transparentize(0.28, theme.colors.grey100)};
+  background: ${transparentize(0.5, theme.colors.grey90)};
   bottom: 0;
   display: flex;
   justify-content: center;

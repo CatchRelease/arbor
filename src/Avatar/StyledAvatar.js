@@ -13,8 +13,8 @@ export const StyledAvatar = ({
   theme: { avatarSizes },
   ...props
 }) => {
-  const bg = subtle ? `${baseColor}.lighter` : `${baseColor}.default`;
-  const borderColor = subtle ? `${baseColor}.darker` : `${baseColor}.default`;
+  const bg = subtle ? `monochrome.white` : `${baseColor}.default`;
+  const borderColor = `${baseColor}.default`;
 
   return (
     <Flex

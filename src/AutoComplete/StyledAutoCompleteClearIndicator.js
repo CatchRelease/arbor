@@ -10,6 +10,7 @@ const StyledAutoCompleteClearIndicator = ({
 }) => (
   <Icon
     aria-label="clear selection"
+    fontSize="size4"
     name="cross"
     ref={innerRef}
     {...{ ...innerProps, ...props }}
