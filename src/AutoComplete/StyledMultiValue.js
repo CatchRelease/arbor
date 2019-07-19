@@ -22,6 +22,7 @@ const StyledMultiValue = ({ data, data: { label }, removeProps }) => {
         mb: 'smallest',
         mr: 'smallest',
         subtle: true,
+        variant: 'pill',
         ...data
       }}
     >
