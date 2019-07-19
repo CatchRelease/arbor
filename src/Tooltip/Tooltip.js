@@ -20,7 +20,7 @@ const Tooltip = ({ text, children, theme, ...props }) => {
     <Text
       {...{
         px: 'smaller',
-        py: 'smallest',
+        py: 'smaller',
         fontSize: 'size4',
         color: 'white',
         theme
@@ -43,7 +43,7 @@ const Tooltip = ({ text, children, theme, ...props }) => {
           distance: 8,
           duration: 300,
           updateDuration: 0,
-          arrowSize: 'small',
+          arrowSize: 'medium',
           animation: 'fade',
           inertia: true,
           animateFill: false

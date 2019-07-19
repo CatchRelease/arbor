@@ -11,7 +11,13 @@ describe('<StyledAvatar />', () => {
     context('subtle is false', () => {
       it('renders with default colors calculated by the name string', () => {
         const avatar = shallow(
-          <StyledAvatar theme={theme} baseColor="palette.blue" subtle={false} />
+          <StyledAvatar
+            baseColor="palette.blue"
+            border="1px solid"
+            size="default"
+            subtle={false}
+            theme={theme}
+          />
         );
 
         expect(avatar.find('Flex')).toHaveProp({
@@ -25,16 +31,18 @@ describe('<StyledAvatar />', () => {
       it('renders with subtle colors calculated by the name string', () => {
         const avatar = shallow(
           <StyledAvatar
-            theme={theme}
             baseColor="palette.blue"
+            border="1px solid"
             name="Batman"
+            size="default"
             subtle
+            theme={theme}
           />
         );
 
         expect(avatar.find('Flex')).toHaveProp({
-          bg: 'palette.blue.lighter',
-          borderColor: 'palette.blue.darker'
+          bg: 'monochrome.white',
+          borderColor: 'palette.blue.default'
         });
       });
     });
@@ -46,8 +54,11 @@ describe('<StyledAvatar />', () => {
         const tree = createWithTheme(
           <StyledAvatarWithTheme
             baseColor="palette.green"
-            size={size}
+            border="1px solid"
             name="Bruce Wayne"
+            size={size}
+            subtle={false}
+            theme={theme}
           />
         );
 
