@@ -122,8 +122,11 @@ stories.add('default', () => (
 
     <AutoCompleteExample
       id="auto-complete-2"
-      label="AutoComplete with unstyled pill badges"
-      options={neutralOptions.map(option => ({ ...option, variant: 'pill' }))}
+      label="AutoComplete with unstyled default badges"
+      options={neutralOptions.map(option => ({
+        ...option,
+        variant: 'default'
+      }))}
       variant={select('Variant', variantOptions, 'default')}
     />
 
@@ -143,11 +146,11 @@ stories.add('default', () => (
 
     <AutoCompleteExample
       id="auto-complete-5"
-      label="AutoComplete with subtle color pill badges"
+      label="AutoComplete with subtle color default badges"
       options={colorOptions.map(option => ({
         ...option,
         subtle: true,
-        variant: 'pill'
+        variant: 'default'
       }))}
       variant={select('Variant', variantOptions, 'default')}
     />
