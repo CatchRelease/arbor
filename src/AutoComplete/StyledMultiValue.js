@@ -1,10 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { colorForString } from '../utils';
+import { palette } from '../theme/colors';
+
 import Badge from '../Badge';
 import Icon from '../Icon';
 
 const StyledMultiValue = ({ data, data: { label }, removeProps }) => {
+  const paletteColor = colorForString(label, Object.keys(palette));
+
   const iconEnd = (
     <Icon
       aria-label="remove"
@@ -21,6 +26,7 @@ const StyledMultiValue = ({ data, data: { label }, removeProps }) => {
         iconEnd,
         mb: 'smallest',
         mr: 'smallest',
+        paletteColor,
         subtle: true,
         variant: 'pill',
         ...data
