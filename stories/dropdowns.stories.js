@@ -1,7 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 
-import { Dropdown, Flex } from '../src';
+import {
+  Avatar,
+  Box,
+  Dropdown,
+  Grid,
+  Heading,
+  Icon,
+  MenuItem,
+  Text
+} from '../src';
 
 const stories = storiesOf('Dropdown', module);
 
@@ -74,23 +84,64 @@ class DropdownContainer extends React.Component {
 
   render() {
     const { selected } = this.state;
+    const { children, ...props } = this.props;
 
     return (
       <Dropdown
         menuItems={menuItems}
         name="clearance_state"
         selected={selected}
-        variant="minimal"
         onChange={this.onChange}
+        {...props}
       >
-        Clearance Status
+        {children}
       </Dropdown>
     );
   }
 }
 
+DropdownContainer.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node)
+  ]).isRequired
+};
+
+const CustomMenuItem = ({ label, secondaryLabel, ...props }) => (
+  <MenuItem as="a" href={`#${label}`} {...{ label, secondaryLabel, ...props }}>
+    <Grid alignItems="center" gridGap="smaller" gridTemplateColumns="0fr 1fr">
+      <Icon name="cr-logo" />
+      <Box>
+        <Text color="inherit">{label}</Text>
+        <Text color="text.muted">{secondaryLabel}</Text>
+      </Box>
+    </Grid>
+  </MenuItem>
+);
+
+CustomMenuItem.propTypes = {
+  label: PropTypes.string.isRequired,
+  secondaryLabel: PropTypes.string
+};
+
+CustomMenuItem.defaultProps = {
+  secondaryLabel: undefined
+};
+
 stories.add('default', () => (
-  <Flex mt="100px" justifyContent="center">
-    <DropdownContainer />
-  </Flex>
+  <Box as="section" p="regular">
+    <Heading.h1 mb="regular">Dropdown</Heading.h1>
+    <DropdownContainer>select an item</DropdownContainer>
+  </Box>
+));
+
+stories.add('custom trigger', () => (
+  <Box as="section" p="regular">
+    <Heading.h1 mb="regular">Dropdown</Heading.h1>
+    <DropdownContainer
+      MenuItemComponent={CustomMenuItem}
+      TriggerComponent={Avatar}
+      name="Bruce Wayne"
+    />
+  </Box>
 ));

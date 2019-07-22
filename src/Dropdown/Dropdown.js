@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import Button from '../Button';
 import Menu from '../Menu';
+import MenuItem from '../MenuItem';
 import Popover from '../Popover';
 import { ARROW_DOWN } from '../constants';
 
@@ -51,33 +52,35 @@ class Dropdown extends React.Component {
 
   render() {
     const {
+      MenuItemComponent,
+      TriggerComponent,
       children,
       menuItems,
-      name,
-      selected,
       popoverProps,
+      selected,
       ...props
     } = this.props;
     const isOpen = this.popover.current && this.popover.current.state.isOpen;
 
     const menu = (
       <Menu
-        {...{ menuItems, name, selected }}
-        ref={this.menu}
+        MenuItemComponent={MenuItemComponent}
         onChange={this.onChange}
+        ref={this.menu}
+        {...{ menuItems, name: props.name, selected }}
       />
     );
 
     return (
       <Popover ref={this.popover} content={menu} {...popoverProps}>
-        <Button
-          {...props}
+        <TriggerComponent
           ref={this.button}
           aria-haspopup
           aria-expanded={isOpen}
+          {...props}
         >
           {children}
-        </Button>
+        </TriggerComponent>
       </Popover>
     );
   }
@@ -88,6 +91,11 @@ Dropdown.propTypes = {
    * The content inside the menu button trigger
    */
   children: PropTypes.node.isRequired,
+
+  /**
+   * Component used to render each menu item
+   */
+  MenuItemComponent: PropTypes.elementType,
 
   /**
    * Array of menu item objects to render as MenuItems in the Menu
@@ -118,10 +126,17 @@ Dropdown.propTypes = {
   /**
    * Initial selected menu item value
    */
-  selected: PropTypes.string
+  selected: PropTypes.string,
+
+  /**
+   * Component used to render dropdown trigger
+   */
+  TriggerComponent: PropTypes.elementType
 };
 
 Dropdown.defaultProps = {
+  MenuItemComponent: MenuItem,
+  TriggerComponent: Button,
   onChange: () => null,
   popoverProps: {},
   selected: undefined
