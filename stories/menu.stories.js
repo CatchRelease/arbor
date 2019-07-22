@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 
-import { Menu, Box } from '../src';
+import { Box, Grid, Heading, Icon, Menu, MenuItem, Text } from '../src';
 
 const stories = storiesOf('Menu', module);
 
@@ -125,16 +126,37 @@ const menuItems = [
   }
 ];
 
+const CustomMenuItemComponent = ({ label, secondaryLabel, ...props }) => (
+  <MenuItem {...{ label, secondaryLabel, ...props }}>
+    <Grid alignItems="center" gridGap="smaller" gridTemplateColumns="0fr 1fr">
+      <Icon name="cr-logo" />
+      <Box>
+        <Text color="inherit">{label}</Text>
+        <Text color="text.muted">{secondaryLabel}</Text>
+      </Box>
+    </Grid>
+  </MenuItem>
+);
+
+CustomMenuItemComponent.propTypes = {
+  label: PropTypes.string.isRequired,
+  secondaryLabel: PropTypes.string
+};
+
+CustomMenuItemComponent.defaultProps = {
+  secondaryLabel: undefined
+};
+
 stories.add('default', () => (
-  <div>
+  <Box as="section" p="regular">
+    <Heading.h1 mb="regular">Standard Menu</Heading.h1>
     <Menu menuItems={menuItems} />
-  </div>
+  </Box>
 ));
 
-stories.add('width-constrained', () => (
-  <div>
-    <Box maxWidth="600px">
-      <Menu menuItems={menuItems} />
-    </Box>
-  </div>
+stories.add('custom menu items', () => (
+  <Box as="section" p="regular">
+    <Heading.h1 mb="regular">Menu with Custom Menu Item</Heading.h1>
+    <Menu menuItems={menuItems} MenuItemComponent={CustomMenuItemComponent} />
+  </Box>
 ));
