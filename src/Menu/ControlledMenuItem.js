@@ -5,15 +5,15 @@ import PropTypes from 'prop-types';
 import { hideVisually } from 'polished';
 
 import { ENTER_KEY, SPACEBAR } from '../constants';
-import StyledMenuItem from './StyledMenuItem';
-import Text from '../Text';
-import Icon from '../Icon';
 import Flex from '../Flex';
+import Icon from '../Icon';
+import MenuItem from '../MenuItem';
+import Text from '../Text';
 
 const MIN_WIDTH = '120px';
 const PADDING = '8px';
 
-class MenuItem extends React.PureComponent {
+class ControlledMenuItem extends React.PureComponent {
   componentDidMount() {
     document.addEventListener('keydown', this.onKeyDown, true);
   }
@@ -24,9 +24,9 @@ class MenuItem extends React.PureComponent {
 
   onKeyDown = e => {
     const { key } = e;
-    const { focused } = this.props;
+    const { isFocused } = this.props;
 
-    if (!focused) {
+    if (!isFocused) {
       return;
     }
 
@@ -43,29 +43,29 @@ class MenuItem extends React.PureComponent {
 
   render() {
     const {
-      selected,
+      MenuItemComponent,
       baseColor,
       iconName,
       id,
+      isFocused,
+      isSelected,
       label,
-      secondaryLabel,
       name,
-      value,
-      focused
+      secondaryLabel,
+      value
     } = this.props;
 
     return (
-      <StyledMenuItem
+      <MenuItemComponent
         {...{
-          baseColor,
-          selected,
-          focused,
-          role: 'option',
-          'aria-selected': selected,
+          'aria-selected': isSelected,
           alignItems: 'center',
-          height: '40px',
+          isFocused,
+          isSelected,
           onClick: this.onSelect,
-          onKeyPress: this.onKeyDown
+          onKeyPress: this.onKeyDown,
+          role: 'option',
+          ...this.props
         }}
       >
         <input {...{ id, name, value, css: hideVisually(), type: 'hidden' }} />
@@ -111,43 +111,12 @@ class MenuItem extends React.PureComponent {
             </Flex>
           )}
         </Flex>
-      </StyledMenuItem>
+      </MenuItemComponent>
     );
   }
 }
 
-MenuItem.propTypes = {
-  /**
-   * Indicates whether or not the menu item is selected
-   */
-  selected: PropTypes.bool,
-
-  /**
-   * Callback to run when a selection is made. This is generally intended for
-   * internal use with the Menu component.
-   */
-  onSelect: PropTypes.func,
-
-  /**
-   * Main label text for the menu item
-   */
-  label: PropTypes.string.isRequired,
-
-  /**
-   * Secondary label text for the menu item
-   */
-  secondaryLabel: PropTypes.string,
-
-  /**
-   * HTML input name property for the input field
-   */
-  name: PropTypes.string.isRequired,
-
-  /**
-   * HTML input value property for the input field
-   */
-  value: PropTypes.string.isRequired,
-
+ControlledMenuItem.propTypes = {
   /**
    * Base color to use for the menu item
    */
@@ -166,16 +135,53 @@ MenuItem.propTypes = {
   /**
    * Whether or not the current menu item is focused
    */
-  focused: PropTypes.bool
+  isFocused: PropTypes.bool,
+
+  /**
+   * Indicates whether or not the menu item is selected
+   */
+  isSelected: PropTypes.bool,
+
+  /**
+   * Main label text for the menu item
+   */
+  label: PropTypes.string.isRequired,
+
+  /**
+   * Component used to render each menu item
+   */
+  MenuItemComponent: PropTypes.elementType,
+
+  /**
+   * HTML input name property for the input field
+   */
+  name: PropTypes.string.isRequired,
+
+  /**
+   * Callback to run when a selection is made. This is generally intended for
+   * internal use with the Menu component.
+   */
+  onSelect: PropTypes.func,
+
+  /**
+   * Secondary label text for the menu item
+   */
+  secondaryLabel: PropTypes.string,
+
+  /**
+   * HTML input value property for the input field
+   */
+  value: PropTypes.string.isRequired
 };
 
-MenuItem.defaultProps = {
+ControlledMenuItem.defaultProps = {
+  MenuItemComponent: MenuItem,
   baseColor: 'text.default',
   iconName: null,
-  secondaryLabel: null,
-  selected: false,
+  isFocused: false,
+  isSelected: false,
   onSelect: () => null,
-  focused: false
+  secondaryLabel: null
 };
 
-export default MenuItem;
+export default ControlledMenuItem;

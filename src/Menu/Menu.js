@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import snakeCase from 'lodash/snakeCase';
 
 import { ARROW_DOWN, ARROW_UP, HOME_KEY, END_KEY } from '../constants';
+import ControlledMenuItem from './ControlledMenuItem';
+import MenuItem from '../MenuItem';
 import StyledMenu from './StyledMenu';
-import MenuItem from './MenuItem';
 
 const NAVIGATION_KEYS = [ARROW_UP, ARROW_DOWN];
 
@@ -100,21 +101,22 @@ class Menu extends React.Component {
 
   renderMenuItem(menuItem, index) {
     const { currentlyFocused, selected } = this.state;
-    const { name } = this.props;
+    const { name, MenuItemComponent } = this.props;
     const isSelected = menuItem.value === selected;
     const id = this.domIdForMenuItem(menuItem);
-    const focused = index === currentlyFocused;
+    const isFocused = index === currentlyFocused;
 
     return (
-      <MenuItem
+      <ControlledMenuItem
         {...{
-          ...menuItem,
           id,
-          focused,
+          isFocused,
+          isSelected,
+          key: id,
+          MenuItemComponent,
           name,
-          selected: isSelected,
-          key: menuItem.label,
-          onSelect: this.onMenuItemSelect
+          onSelect: this.onMenuItemSelect,
+          ...menuItem
         }}
       />
     );
@@ -137,11 +139,6 @@ class Menu extends React.Component {
 
 Menu.propTypes = {
   /**
-   * Callback to run when a menu item is selected
-   */
-  onChange: PropTypes.func,
-
-  /**
    * Array of menu item objects to render as MenuItems in the Menu
    */
   menuItems: PropTypes.arrayOf(
@@ -154,9 +151,19 @@ Menu.propTypes = {
   ).isRequired,
 
   /**
+   * Component used to render each menu item
+   */
+  MenuItemComponent: PropTypes.elementType,
+
+  /**
    * Name of the menu for grouping the menu item DOM IDs
    */
   name: PropTypes.string.isRequired,
+
+  /**
+   * Callback to run when a menu item is selected
+   */
+  onChange: PropTypes.func,
 
   /**
    * Initial selected menu item value
@@ -165,6 +172,7 @@ Menu.propTypes = {
 };
 
 Menu.defaultProps = {
+  MenuItemComponent: MenuItem,
   onChange: () => null,
   selected: undefined
 };

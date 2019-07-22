@@ -4,50 +4,62 @@ import { css } from '@emotion/core';
 
 import Box from '../Box';
 
-const backgroundStyles = ({ isDisabled, isFocused, theme }) => {
-  if (isDisabled) {
-    return css`
-      background: ${theme.colors.monochrome.default};
-    `;
-  }
+const disabledStyles = ({ isDisabled, theme }) => {
+  if (!isDisabled) return '';
 
   return css`
-    background: ${isFocused
-      ? theme.colors.background.muted
-      : theme.colors.monochrome.default};
+    background: ${theme.colors.monochrome.white};
+    color: ${theme.colors.text.disabled};
+
+    &:hover {
+      background: ${theme.colors.monochrome.white};
+      cursor: not-allowed;
+    }
   `;
 };
 
-const cursorStyles = ({ isDisabled }) => css`
-  &:hover {
-    cursor: ${isDisabled ? 'not-allowed' : 'pointer'};
-  }
-`;
+const focusedStyles = ({ isFocused, theme }) => {
+  if (!isFocused) return '';
 
-const textStyles = ({ isDisabled, theme }) => css`
-  color: ${isDisabled ? theme.colors.text.disabled : theme.colors.text.default};
-`;
+  return css`
+    background: ${theme.colors.background.muted};
+  `;
+};
+
+const selectedStyles = ({ isSelected, theme }) => {
+  if (!isSelected) return '';
+
+  return css`
+    font-weight: ${theme.fontWeights.medium};
+  `;
+};
 
 const StyledMenuItem = styled(Box)`
-  ${backgroundStyles};
-  ${cursorStyles};
-  ${textStyles};
+  background: ${({ theme }) => theme.colors.monochrome.white};
+  color: ${({ theme }) => theme.colors.text.default};
+  cursor: pointer;
 
   &:hover,
   &:focus {
     background: ${({ theme }) => theme.colors.background.muted};
   }
+
+  ${focusedStyles};
+  ${selectedStyles};
+  ${disabledStyles};
 `;
 
 StyledMenuItem.propTypes = {
   isDisabled: PropTypes.bool,
-  isFocused: PropTypes.bool
+  isFocused: PropTypes.bool,
+  isSelected: PropTypes.bool
 };
 
 StyledMenuItem.defaultProps = {
-  p: 'small',
   isDisabled: false,
-  isFocused: false
+  isFocused: false,
+  isSelected: false,
+  p: 'small'
 };
 
 export default StyledMenuItem;

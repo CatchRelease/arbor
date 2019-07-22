@@ -3,9 +3,9 @@ import React from 'react';
 import mountWithTheme from '../../../utils/mountWithTheme';
 import createWithTheme from '../../../utils/createWithTheme';
 import { ENTER_KEY, SPACEBAR } from '../../constants';
-import MenuItem from '../MenuItem';
+import ControlledMenuItem from '../ControlledMenuItem';
 
-describe('<MenuItem />', () => {
+describe('<ControlledMenuItem />', () => {
   const noop = () => null;
   const baseProps = {
     label: 'Ready to Clear',
@@ -18,12 +18,12 @@ describe('<MenuItem />', () => {
 
   function createWithProps(additionalProps) {
     const props = Object.assign({}, baseProps, additionalProps);
-    return createWithTheme(<MenuItem {...{ ...props }} />);
+    return createWithTheme(<ControlledMenuItem {...{ ...props }} />);
   }
 
   function mountWithProps(additionalProps) {
     const props = Object.assign({}, baseProps, additionalProps);
-    return mountWithTheme(<MenuItem {...{ ...props }} />);
+    return mountWithTheme(<ControlledMenuItem {...{ ...props }} />);
   }
 
   it('renders a MenuItem properly', () => {
@@ -57,7 +57,7 @@ describe('<MenuItem />', () => {
       context('menu item is focused', () => {
         it('calls the onSelect callback', () => {
           const onSelect = jest.fn();
-          const menu = mountWithProps({ onSelect, value, focused: true });
+          const menu = mountWithProps({ onSelect, value, isFocused: true });
 
           menu.instance().onKeyDown({ key, preventDefault: noop });
 
@@ -65,7 +65,7 @@ describe('<MenuItem />', () => {
         });
 
         it('prevents the default keydown event', () => {
-          const menu = mountWithProps({ focused: true });
+          const menu = mountWithProps({ isFocused: true });
           const preventDefault = jest.fn();
 
           menu.instance().onKeyDown({ key, preventDefault });
@@ -77,7 +77,7 @@ describe('<MenuItem />', () => {
       context('menu item is not focused', () => {
         it('does not call the onSelect callback', () => {
           const onSelect = jest.fn();
-          const menu = mountWithProps({ onSelect, value, focused: false });
+          const menu = mountWithProps({ onSelect, value, isFocused: false });
 
           menu.instance().onKeyDown({ key });
 
@@ -98,7 +98,7 @@ describe('<MenuItem />', () => {
       context('menu item is focused', () => {
         it('does not call the onSelect callback', () => {
           const onSelect = jest.fn();
-          const menu = mountWithProps({ onSelect, value, focused: true });
+          const menu = mountWithProps({ onSelect, value, isFocused: true });
 
           menu.instance().onKeyDown({ key: 'ArrowDown' });
 

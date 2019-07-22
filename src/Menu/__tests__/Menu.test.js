@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 
 import { ARROW_DOWN, ARROW_UP, HOME_KEY, END_KEY } from '../../constants';
 import Menu from '../Menu';
+import MenuItem from '../ControlledMenuItem';
 
 describe('<Menu />', () => {
   const baseProps = {
@@ -23,7 +24,7 @@ describe('<Menu />', () => {
   }
 
   describe('children', () => {
-    it('renders each menuItem as a MenuItem', () => {
+    it('renders each menuItem as a ControlledMenuItem', () => {
       const menuItems = [
         {
           baseColor: 'grey',
@@ -39,7 +40,7 @@ describe('<Menu />', () => {
       const menu = shallowWithProps({ menuItems });
 
       expect(
-        menu.find('MenuItem').map(menuItem => menuItem.props().label)
+        menu.find(MenuItem).map(menuItem => menuItem.props().label)
       ).toEqual(['Ready to Clear', 'License Acquired']);
     });
 
@@ -55,7 +56,7 @@ describe('<Menu />', () => {
 
       expect(
         menu
-          .find('MenuItem')
+          .find(MenuItem)
           .first()
           .props().id
       ).toEqual('menu-item_clearance_state_ready_to_clear');
@@ -71,7 +72,7 @@ describe('<Menu />', () => {
       ];
       const menu = shallowWithProps({ menuItems, selected: 'ready_to_clear' });
 
-      expect(menu.find('MenuItem').props().selected).toBe(true);
+      expect(menu.find(MenuItem).props().isSelected).toBe(true);
     });
 
     it('properly sets other MenuItems as not selected', () => {
@@ -84,7 +85,7 @@ describe('<Menu />', () => {
       ];
       const menu = shallowWithProps({ menuItems, selected: 'ready_to_clear' });
 
-      expect(menu.find('MenuItem').props().selected).toBe(false);
+      expect(menu.find(MenuItem).props().isSelected).toBe(false);
     });
 
     it('sets aria-activedescendant to focused menu item id', () => {
@@ -119,7 +120,7 @@ describe('<Menu />', () => {
       const menu = shallowWithProps({ menuItems });
       menu.setState({ currentlyFocused: 0 });
 
-      expect(menu.find('MenuItem').props().focused).toBe(true);
+      expect(menu.find(MenuItem).props().isFocused).toBe(true);
     });
 
     it('does not flag unfocused menu items as focused', () => {
@@ -133,7 +134,7 @@ describe('<Menu />', () => {
       const menu = shallowWithProps({ menuItems });
       menu.setState({ currentlyFocused: 1 });
 
-      expect(menu.find('MenuItem').props().focused).toBe(false);
+      expect(menu.find(MenuItem).props().isFocused).toBe(false);
     });
   });
 

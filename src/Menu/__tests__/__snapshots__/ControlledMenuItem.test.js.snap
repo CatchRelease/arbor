@@ -1,30 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<MenuItem /> renders a MenuItem properly 1`] = `
+exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
 .emotion-11 {
   box-sizing: border-box;
-  height: 40px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0.75rem;
+  background: #FFFFFF;
   color: #25272D;
-  padding: 0 1rem;
-  white-space: nowrap;
+  cursor: pointer;
 }
 
-.emotion-11:hover {
-  background: #F8F9F9;
-}
-
-.emotion-11:active {
-  background: #F2F2F2;
-}
-
+.emotion-11:hover,
 .emotion-11:focus {
   background: #F8F9F9;
 }
@@ -101,11 +86,14 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
 <div
   aria-selected={false}
   className="emotion-11 emotion-12"
-  height="40px"
+  id="menu-item_clearance_state_ready_to_clear"
+  label="Ready to Clear"
+  name="clearance_state"
   onClick={[Function]}
   onKeyPress={[Function]}
+  onSelect={[Function]}
   role="option"
-  selected={false}
+  value="ready_to_clear"
 >
   <input
     className="emotion-0"
@@ -146,7 +134,20 @@ exports[`<MenuItem /> renders a MenuItem properly 1`] = `
 </div>
 `;
 
-exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
+exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
+.emotion-11 {
+  box-sizing: border-box;
+  padding: 0.75rem;
+  background: #FFFFFF;
+  color: #25272D;
+  cursor: pointer;
+}
+
+.emotion-11:hover,
+.emotion-11:focus {
+  background: #F8F9F9;
+}
+
 .emotion-0 {
   border: 0;
   -webkit-clip: rect(0 0 0 0);
@@ -216,44 +217,18 @@ exports[`<MenuItem /> renders a selected MenuItem properly 1`] = `
   line-height: 0.875rem;
 }
 
-.emotion-11 {
-  box-sizing: border-box;
-  height: 40px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #25272D;
-  padding: 0 1rem;
-  white-space: nowrap;
-  color: #0F0F10;
-  font-weight: 700;
-}
-
-.emotion-11:hover {
-  background: #F8F9F9;
-}
-
-.emotion-11:active {
-  background: #F2F2F2;
-}
-
-.emotion-11:focus {
-  background: #F8F9F9;
-}
-
 <div
-  aria-selected={true}
+  aria-selected={false}
   className="emotion-11 emotion-12"
-  height="40px"
+  id="menu-item_clearance_state_ready_to_clear"
+  label="Ready to Clear"
+  name="clearance_state"
   onClick={[Function]}
   onKeyPress={[Function]}
+  onSelect={[Function]}
   role="option"
   selected={true}
+  value="ready_to_clear"
 >
   <input
     className="emotion-0"
