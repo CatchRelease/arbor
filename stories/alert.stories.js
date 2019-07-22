@@ -6,7 +6,7 @@ import { Alert, Box, Heading } from '../src';
 import VARIANTS from '../src/Alert/variants';
 import INTENTS from '../src/Alert/intents';
 
-const ON_CLOSE_OPTIONS = ['', () => alert('Close Me!')]; // eslint-disable-line no-undef
+const ON_CLOSE_OPTIONS = ['', () => alert('Close Me!')]; // eslint-disable-line no-alert, no-undef
 const stories = storiesOf('Alerts', module);
 stories.addDecorator(withKnobs);
 
