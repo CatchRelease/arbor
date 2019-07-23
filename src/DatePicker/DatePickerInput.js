@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 
 import datePickerDefaults from './datePickerDefaults';
@@ -16,5 +17,13 @@ const DatePickerInput = ({ dayPickerProps, ...props }) => (
     {...props}
   />
 );
+
+DatePickerInput.propTypes = {
+  dayPickerProps: PropTypes.object // eslint-disable-line react/forbid-prop-types
+};
+
+DatePickerInput.defaultProps = {
+  dayPickerProps: {}
+};
 
 export default DatePickerInput;

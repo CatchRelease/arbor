@@ -88,10 +88,7 @@ Dropdown.propTypes = {
    * The content inside the menu button trigger
    */
   children: PropTypes.node.isRequired,
-  /**
-   * Callback to run when a dropdown menu item is selected
-   */
-  onChange: PropTypes.func,
+
   /**
    * Array of menu item objects to render as MenuItems in the Menu
    */
@@ -109,6 +106,16 @@ Dropdown.propTypes = {
   name: PropTypes.string.isRequired,
 
   /**
+   * Callback to run when a dropdown menu item is selected
+   */
+  onChange: PropTypes.func,
+
+  /**
+   * Props to be passed to the popover component/
+   */
+  popoverProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+
+  /**
    * Initial selected menu item value
    */
   selected: PropTypes.string
@@ -116,6 +123,7 @@ Dropdown.propTypes = {
 
 Dropdown.defaultProps = {
   onChange: () => null,
+  popoverProps: {},
   selected: undefined
 };
 

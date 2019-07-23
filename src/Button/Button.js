@@ -29,19 +29,24 @@ const Button = React.forwardRef(
 
 Button.propTypes = {
   /**
+   * Text to render inside the button.
+   */
+  children: PropTypes.string,
+
+  /**
    * Disabled state of button
    * */
   disabled: PropTypes.bool,
 
   /**
-   * Button size
-   * */
-  size: PropTypes.oneOf(['small', 'medium', 'large', 'jumbo']),
+   * Icon to render after the button text.
+   */
+  iconEnd: PropTypes.element,
 
   /**
-   * Button variant.
-   * */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'minimal']),
+   * Icon to render before the button text.
+   */
+  iconStart: PropTypes.element,
 
   /**
    * Property to set for a button to take the full width of it's parent
@@ -49,18 +54,31 @@ Button.propTypes = {
    * */
   fullWidth: PropTypes.bool,
 
-  iconStart: PropTypes.element,
+  /**
+   * Button size
+   * */
+  size: PropTypes.oneOf(['small', 'medium', 'large', 'jumbo']),
 
-  iconEnd: PropTypes.element
+  /**
+   * Button type.
+   */
+  type: PropTypes.string,
+
+  /**
+   * Button variant.
+   * */
+  variant: PropTypes.oneOf(['primary', 'secondary', 'minimal'])
 };
 
 Button.defaultProps = {
+  children: undefined,
   disabled: false,
-  size: 'large',
-  variant: 'primary',
   fullWidth: false,
+  iconEnd: undefined,
   iconStart: undefined,
-  iconEnd: undefined
+  size: 'large',
+  type: undefined,
+  variant: 'primary'
 };
 
 export default Button;

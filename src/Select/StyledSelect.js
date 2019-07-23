@@ -50,7 +50,12 @@ StyledSelect.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
-  ]).isRequired
+  ]).isRequired,
+  large: PropTypes.bool
+};
+
+StyledSelect.defaultProps = {
+  large: false
 };
 
 export default StyledSelect;

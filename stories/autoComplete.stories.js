@@ -99,6 +99,7 @@ class AutoCompleteExample extends React.Component {
 }
 
 AutoCompleteExample.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.object).isRequired,
   variant: PropTypes.string
 };
 

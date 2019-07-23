@@ -6,11 +6,11 @@ import Flex from '../Flex';
 import { sizes } from '../theme/avatars';
 
 export const StyledAvatar = ({
+  baseColor,
+  border,
   size,
   subtle,
   theme: { avatarSizes },
-  border,
-  baseColor,
   ...props
 }) => {
   const bg = subtle ? `${baseColor}.lighter` : `${baseColor}.default`;
@@ -32,7 +32,10 @@ export const StyledAvatar = ({
 
 StyledAvatar.propTypes = {
   baseColor: PropTypes.string.isRequired,
-  size: PropTypes.oneOf(Object.keys(sizes)).isRequired
+  border: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(Object.keys(sizes)).isRequired,
+  subtle: PropTypes.bool.isRequired,
+  theme: PropTypes.shape(PropTypes.objectOf(PropTypes.string)).isRequired
 };
 
 export default withTheme(StyledAvatar);

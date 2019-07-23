@@ -57,15 +57,20 @@ const Tooltip = ({ text, children, theme, ...props }) => {
 
 Tooltip.propTypes = {
   /**
+   * Node which will trigger the tooltip. This should be either an Icon, Button,
+   * or Link.
+   * */
+  children: PropTypes.element.isRequired,
+
+  /**
    * Text to display within the tooltip when it is displayed
    * */
   text: PropTypes.string.isRequired,
 
   /**
-   * Node which will trigger the tooltip. This should be either an Icon, Button,
-   * or Link.
-   * */
-  children: PropTypes.element.isRequired
+   * Theme used for styling the Tooltip.
+   */
+  theme: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
 };
 
 export default withTheme(Tooltip);

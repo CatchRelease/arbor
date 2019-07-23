@@ -14,6 +14,11 @@ const Input = React.forwardRef(
 
 Input.propTypes = {
   /**
+   * The actualy HTML element tag to use when rendering.
+   */
+  as: PropTypes.stirng,
+
+  /**
    * Optional text to be displayed underneath the input.
    */
   caption: PropTypes.string,

@@ -128,7 +128,9 @@ const menuItems = [
 stories.add('default', () => (
   <Box>
     {menuItems.map(item => (
-      <MenuItem onClick={() => alert(item.value)}>
+      <MenuItem
+        onClick={() => alert(item.value)} // eslint-disable-line no-alert, no-undef
+      >
         <Grid gridTemplateColumns="0fr 1fr" gridGap="small">
           <Icon name={item.iconName} color={item.color} />
           <Text>{item.label}</Text>
