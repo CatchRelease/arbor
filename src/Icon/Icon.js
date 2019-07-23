@@ -54,7 +54,12 @@ Icon.propTypes = {
    * Icon font rotation. Rotation will be passed in to the CSS transform
    * property using rotate.
    */
-  rotation: PropTypes.oneOf(['90', '180', '270', null])
+  rotation: PropTypes.oneOf(['90', '180', '270', null]),
+
+  /**
+   * Theme used for styling the Icon.
+   */
+  theme: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
 };
 
 Icon.defaultProps = {

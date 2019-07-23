@@ -70,6 +70,11 @@ Checkbox.propTypes = {
   disabled: PropTypes.bool,
 
   /**
+   * The icon to display alongside the label.
+   */
+  icon: PropTypes.elementType,
+
+  /**
    * The id attribute of the checkbox.
    */
   id: PropTypes.string.isRequired,
@@ -110,6 +115,7 @@ Checkbox.propTypes = {
 Checkbox.defaultProps = {
   checked: false,
   disabled: false,
+  icon: undefined,
   indeterminate: false,
   isInvalid: false,
   onChange: () => {},

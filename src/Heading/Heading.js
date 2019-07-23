@@ -27,7 +27,9 @@ Heading.defaultProps = {
   fontWeight: 'bold'
 };
 
-const createHeading = h => ({ children, ...props }) => (
+const createHeading = h => (
+  { children, ...props } // eslint-disable-line react/prop-types
+) => (
   <Heading as={h} {...props}>
     {children}
   </Heading>

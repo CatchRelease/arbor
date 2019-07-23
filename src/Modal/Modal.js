@@ -42,7 +42,12 @@ Modal.propTypes = {
    * Optional overrides to the overlay CSS. This will be injected via emotion's
    * Global style component.
    */
-  overlayCss: PropTypes.oneOfType([PropTypes.object, PropTypes.func])
+  overlayCss: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
+
+  /**
+   * Theme used for styling the Modal.
+   */
+  theme: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
 };
 
 Modal.defaultProps = {

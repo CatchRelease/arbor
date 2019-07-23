@@ -6,10 +6,10 @@ import Text from '../Text';
 import { sizes } from '../theme/avatars';
 
 export const StyledAvatarText = ({
+  baseColor,
   size,
   subtle,
   theme: { avatarFontSizes },
-  baseColor,
   ...props
 }) => {
   const color = subtle ? `${baseColor}.darker` : 'monochrome.white';
@@ -19,7 +19,10 @@ export const StyledAvatarText = ({
 };
 
 StyledAvatarText.propTypes = {
-  size: PropTypes.oneOf(Object.keys(sizes)).isRequired
+  baseColor: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(Object.keys(sizes)).isRequired,
+  subtle: PropTypes.bool.isRequired,
+  theme: PropTypes.shape(PropTypes.objectOf(PropTypes.string)).isRequired
 };
 
 export default withTheme(StyledAvatarText);
