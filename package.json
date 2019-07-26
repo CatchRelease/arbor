@@ -4,7 +4,7 @@
   "description": "React component library for Catch&Release",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest",
+    "test": "TZ=UTC jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "yarn eslint && stylelint src",

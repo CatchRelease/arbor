@@ -153,7 +153,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
               onKeyDown={[Function]}
               readOnly={true}
               type="text"
-              value="03/10/2019 9:00 PM"
+              value="03/11/2019 4:00 AM"
             />
             <div
               className="rdtPicker"
@@ -181,7 +181,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
                     "updateOn": "days",
                     "updateSelectedDate": [Function],
                     "value": 2019-03-11T04:00:00.000Z,
-                    "viewDate": "2019-03-01T08:00:00.000Z",
+                    "viewDate": "2019-03-01T00:00:00.000Z",
                   }
                 }
               >
@@ -200,7 +200,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
                   updateOn="days"
                   updateSelectedDate={[Function]}
                   value={2019-03-11T04:00:00.000Z}
-                  viewDate={"2019-03-01T08:00:00.000Z"}
+                  viewDate={"2019-03-01T00:00:00.000Z"}
                 >
                   <div
                     className="rdtDays"
@@ -414,7 +414,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
                           key="3_16"
                         >
                           <td
-                            className="rdtDay rdtActive"
+                            className="rdtDay"
                             data-value={10}
                             key="3_10"
                             onClick={[Function]}
@@ -422,7 +422,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
                             10
                           </td>
                           <td
-                            className="rdtDay"
+                            className="rdtDay rdtActive"
                             data-value={11}
                             key="3_11"
                             onClick={[Function]}
@@ -660,7 +660,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
                             colSpan={7}
                             onClick={[Function]}
                           >
-                            9:00 PM
+                            4:00 AM
                           </td>
                         </tr>
                       </tfoot>
