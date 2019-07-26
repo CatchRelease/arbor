@@ -51,8 +51,8 @@ class ControlledDatePickers extends React.Component {
     const SimpleDatePicker = () => (
       <DatePicker
         disabledDays={{
-          before: new Date(date('Diable Days Before', defaultBefore)),
-          after: new Date(date('Diable Days After', defaultAfter))
+          before: new Date(date('Disable Days Before', defaultBefore)),
+          after: new Date(date('Disable Days After', defaultAfter))
         }}
         onDayClick={this.onDayClick}
         selectedDays={selectedDay}
@@ -71,8 +71,8 @@ class ControlledDatePickers extends React.Component {
           <DatePickerInput
             dayPickerProps={{
               disabledDays: {
-                before: new Date(date('Diable Days Before', defaultBefore)),
-                after: new Date(date('Diable Days After', defaultAfter))
+                before: new Date(date('Disable Days Before', defaultBefore)),
+                after: new Date(date('Disable Days After', defaultAfter))
               }
             }}
             inputProps={inputProps}
