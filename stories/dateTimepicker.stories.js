@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, DateTimePicker, Heading } from '../src';
-
-const stories = storiesOf('DateTimePicker', module);
+import { Box, DateTimePicker, Heading, Text } from '../src';
 
 import 'react-datetime/css/react-datetime.css';
+
+const stories = storiesOf('DateTimePicker', module);
 
 class DateTimePickerStories extends React.Component {
   state = {
@@ -22,10 +22,12 @@ class DateTimePickerStories extends React.Component {
     return (
       <>
         <Box mb="large">
-          Selected:{' '}
-          {selectedTime && selectedTime.format
-            ? selectedTime.format()
-            : 'Nothing'}
+          <Text.span>Selected:</Text.span>
+          <Text.span>
+            {selectedTime && selectedTime.format
+              ? selectedTime.format()
+              : 'Nothing'}
+          </Text.span>
         </Box>
         <Box width="200px">
           <Heading.h1 mb="large">TimePicker</Heading.h1>
