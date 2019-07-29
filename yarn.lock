@@ -1964,6 +1964,13 @@
   dependencies:
     object-assign "^4.1.1"
 
+"@styled-system/core@^5.0.16":
+  version "5.0.16"
+  resolved "https://registry.yarnpkg.com/@styled-system/core/-/core-5.0.16.tgz#e7404c2c691b23fda0bbdba2e3fe024022e12ce4"
+  integrity sha512-xvgO6C7zjtMwQ5K7Aihs3tzCxbauvtrKuopw+J5p0fJ9nb3maLvCRLSFjcMrIyQDHBt66O4PbN7pSSz54vPldw==
+  dependencies:
+    object-assign "^4.1.1"
+
 "@styled-system/flexbox@^5.0.15":
   version "5.0.15"
   resolved "https://registry.yarnpkg.com/@styled-system/flexbox/-/flexbox-5.0.15.tgz#fb44ec4873a5af1128ed5210204566c1ddd899e7"
@@ -2005,6 +2012,13 @@
   integrity sha512-1zCn2YgLEYgJd5uvdzSNBSq/GbOi0spxSnZQ+lhz9yIfFzgsjh+H9CQY78RMjl6S4bzhiFa9B07nMZb+x0qDdw==
   dependencies:
     "@styled-system/core" "^5.0.15"
+
+"@styled-system/theme-get@^5.0.16":
+  version "5.0.16"
+  resolved "https://registry.yarnpkg.com/@styled-system/theme-get/-/theme-get-5.0.16.tgz#b49236b566124a6170342a6785597225ea7e6d3b"
+  integrity sha512-LxIuubZZ65HzTWsl9GpfDXWaYdkcOsEKSBwNdeg4S3TgszPheN5f++eLxyDun3is2dNhFjTbDL/7yBZwJo1h3g==
+  dependencies:
+    "@styled-system/core" "^5.0.16"
 
 "@styled-system/typography@^5.0.15":
   version "5.0.15"
@@ -10228,6 +10242,15 @@ react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.2, react-lifecycles
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-loader@^2.4.5:
+  version "2.4.5"
+  resolved "https://registry.yarnpkg.com/react-loader/-/react-loader-2.4.5.tgz#cd3e551c6cd0738c1c0f13f073654f93828be5a9"
+  integrity sha1-zT5VHGzQc4wcDxPwc2VPk4KL5ak=
+  dependencies:
+    create-react-class "^15.5.2"
+    prop-types "^15.5.8"
+    spin.js "2.x"
+
 react-modal@^3.8.1:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.8.1.tgz#7300f94a6f92a2e17994de0be6ccb61734464c9e"
@@ -11402,6 +11425,11 @@ specificity@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/specificity/-/specificity-0.4.1.tgz#aab5e645012db08ba182e151165738d00887b019"
   integrity sha512-1klA3Gi5PD1Wv9Q0wUoOQN1IWAuPu0D1U03ThXTr0cJ20+/iq2tHSDnK7Kk/0LXJ1ztUB2/1Os0wKmfyNgUQfg==
+
+spin.js@2.x:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/spin.js/-/spin.js-2.3.2.tgz#6caa56d520673450fd5cfbc6971e6d0772c37a1a"
+  integrity sha1-bKpW1SBnNFD9XPvGlx5tB3LDeho=
 
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"

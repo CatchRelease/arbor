@@ -26,6 +26,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.0",
     "@emotion/styled": "^10.0.0",
+    "@styled-system/theme-get": "^5.0.16",
     "babel-plugin-emotion": "^10.0.0",
     "emotion-theming": "^10.0.0",
     "moment": "^2.24.0",
@@ -36,6 +37,7 @@
     "react-datetime": "^2.16.3",
     "react-day-picker": "^7.3.0",
     "react-dom": "^16.5.2",
+    "react-loader": "^2.4.5",
     "react-modal": "^3.8.1",
     "react-popover": "^0.5.10",
     "react-select": "^3.0.4",
