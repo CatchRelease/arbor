@@ -32,6 +32,7 @@ export { default as Pane } from './Pane';
 export { default as Paragraph } from './Paragraph';
 export { default as Popover } from './Popover';
 export { default as Select } from './Select';
+export { default as Spinner } from './Spinner';
 export { default as Text } from './Text';
 export { default as Textarea } from './Textarea';
 export { default as Tooltip } from './Tooltip';
