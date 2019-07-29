@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import StyledButton from './StyledButton';
+import ButtonContent from './ButtonContent';
+import ButtonSpinner from './ButtonSpinner';
 import ButtonText from './ButtonText';
+import StyledButton from './StyledButton';
 
 const Button = React.forwardRef(
-  ({ iconStart, iconEnd, children, variant, type, ...props }, ref) => (
+  ({ children, iconStart, iconEnd, spin, variant, type, ...props }, ref) => (
     <StyledButton
       {...{
         ...props,
@@ -18,11 +20,14 @@ const Button = React.forwardRef(
       }}
       text={children}
     >
-      {iconStart}
-      {children && (
-        <ButtonText {...{ iconStart, iconEnd }}>{children}</ButtonText>
-      )}
-      {iconEnd}
+      <ButtonSpinner {...{ spin, variant, ...props }} />
+      <ButtonContent spin={spin}>
+        {iconStart}
+        {children && (
+          <ButtonText {...{ iconStart, iconEnd }}>{children}</ButtonText>
+        )}
+        {iconEnd}
+      </ButtonContent>
     </StyledButton>
   )
 );
@@ -39,6 +44,12 @@ Button.propTypes = {
   disabled: PropTypes.bool,
 
   /**
+   * Property to set for a button to take the full width of it's parent
+   * container.
+   * */
+  fullWidth: PropTypes.bool,
+
+  /**
    * Icon to render after the button text.
    */
   iconEnd: PropTypes.element,
@@ -49,10 +60,9 @@ Button.propTypes = {
   iconStart: PropTypes.element,
 
   /**
-   * Property to set for a button to take the full width of it's parent
-   * container.
-   * */
-  fullWidth: PropTypes.bool,
+   * Indicate if the spinner should display.
+   */
+  spin: PropTypes.bool,
 
   /**
    * Button size
@@ -76,6 +86,7 @@ Button.defaultProps = {
   fullWidth: false,
   iconEnd: undefined,
   iconStart: undefined,
+  spin: false,
   size: 'large',
   type: undefined,
   variant: 'primary'

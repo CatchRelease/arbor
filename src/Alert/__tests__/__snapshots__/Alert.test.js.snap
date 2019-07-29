@@ -1901,12 +1901,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1915,6 +1915,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -1927,45 +1928,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -1982,7 +1988,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -2003,7 +2009,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -2026,19 +2032,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -2052,12 +2065,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2066,6 +2079,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -2078,45 +2092,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -2133,7 +2152,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -2154,7 +2173,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -2177,19 +2196,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -2203,12 +2229,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2217,6 +2243,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -2229,45 +2256,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -2284,7 +2316,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -2305,7 +2337,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -2328,19 +2360,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -2354,12 +2393,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2368,6 +2407,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -2380,45 +2420,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -2435,7 +2480,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -2456,7 +2501,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -2479,19 +2524,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -2505,12 +2557,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2519,6 +2571,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -2531,45 +2584,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -2586,7 +2644,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -2604,7 +2662,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -2627,19 +2685,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -2653,12 +2718,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2667,6 +2732,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -2679,45 +2745,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -2734,7 +2805,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -2752,7 +2823,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -2775,19 +2846,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -2801,12 +2879,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2815,6 +2893,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -2827,45 +2906,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -2882,7 +2966,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -2900,7 +2984,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -2923,19 +3007,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -2949,12 +3040,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2963,6 +3054,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -2975,45 +3067,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -3030,7 +3127,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -3048,7 +3145,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -3071,19 +3168,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -3097,12 +3201,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3111,6 +3215,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -3123,45 +3228,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -3178,7 +3288,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -3195,7 +3305,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -3218,19 +3328,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -3244,12 +3361,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3258,6 +3375,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -3270,45 +3388,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -3325,7 +3448,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -3342,7 +3465,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -3365,19 +3488,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -3391,12 +3521,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3405,6 +3535,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -3417,45 +3548,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -3472,7 +3608,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -3489,7 +3625,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -3512,19 +3648,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -3538,12 +3681,12 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-weight: 500;
 }
 
-.emotion-10 {
+.emotion-12 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-8 {
+.emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3552,6 +3695,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -3564,45 +3708,50 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-10:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   vertical-align: middle;
 }
 
-.emotion-8 i {
+.emotion-10 i {
   color: #989A9C;
 }
 
-.emotion-8:hover:enabled {
+.emotion-10:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-8:hover:enabled i {
+.emotion-10:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-8:active:enabled {
+.emotion-10:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-8:focus:enabled {
+.emotion-10:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-8:disabled {
+.emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-6 {
@@ -3619,7 +3768,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
   font-size: 0.875rem;
 }
 
-.emotion-12 {
+.emotion-14 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -3636,7 +3785,7 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
 }
 
 <div
-  className="emotion-12 emotion-13"
+  className="emotion-14 emotion-15"
   display="grid"
   onClose={[Function]}
 >
@@ -3659,19 +3808,26 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
     Hey look, an alert!
   </div>
   <div
-    className="emotion-10 emotion-3"
+    className="emotion-12 emotion-3"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-8 emotion-9"
+      className="button--minimal emotion-10 emotion-11"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-6 emotion-1"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-8 emotion-9"
+      >
+        <i
+          className="ar ar-cross emotion-6 emotion-1"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -3685,7 +3841,7 @@ exports[`<Alert /> Variants with onClose property renders a banner alert with an
   font-weight: 500;
 }
 
-.emotion-8 {
+.emotion-10 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -3705,12 +3861,12 @@ exports[`<Alert /> Variants with onClose property renders a banner alert with an
   border-top: none;
 }
 
-.emotion-6 {
+.emotion-8 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-4 {
+.emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3719,6 +3875,7 @@ exports[`<Alert /> Variants with onClose property renders a banner alert with an
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -3731,45 +3888,50 @@ exports[`<Alert /> Variants with onClose property renders a banner alert with an
   border: 1px solid transparent;
 }
 
-.emotion-4:disabled {
+.emotion-6:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-4:enabled {
+.emotion-6:enabled {
   cursor: pointer;
 }
 
-.emotion-4 i {
+.emotion-6 i {
   vertical-align: middle;
 }
 
-.emotion-4 i {
+.emotion-6 i {
   color: #989A9C;
 }
 
-.emotion-4:hover:enabled {
+.emotion-6:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-4:hover:enabled i {
+.emotion-6:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-4:active:enabled {
+.emotion-6:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-4:focus:enabled {
+.emotion-6:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-4:disabled {
+.emotion-6:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-2 {
@@ -3777,7 +3939,7 @@ exports[`<Alert /> Variants with onClose property renders a banner alert with an
 }
 
 <div
-  className="emotion-8 emotion-9"
+  className="emotion-10 emotion-11"
   display="grid"
   onClose={[Function]}
 >
@@ -3790,19 +3952,26 @@ exports[`<Alert /> Variants with onClose property renders a banner alert with an
     Hey look, an alert!
   </div>
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-8 emotion-9"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-4 emotion-5"
+      className="button--minimal emotion-6 emotion-7"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-2 emotion-3"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-4 emotion-5"
+      >
+        <i
+          className="ar ar-cross emotion-2 emotion-3"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -3816,12 +3985,12 @@ exports[`<Alert /> Variants with onClose property renders a card alert with an o
   font-weight: 500;
 }
 
-.emotion-6 {
+.emotion-8 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-4 {
+.emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3830,6 +3999,7 @@ exports[`<Alert /> Variants with onClose property renders a card alert with an o
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -3842,52 +4012,57 @@ exports[`<Alert /> Variants with onClose property renders a card alert with an o
   border: 1px solid transparent;
 }
 
-.emotion-4:disabled {
+.emotion-6:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-4:enabled {
+.emotion-6:enabled {
   cursor: pointer;
 }
 
-.emotion-4 i {
+.emotion-6 i {
   vertical-align: middle;
 }
 
-.emotion-4 i {
+.emotion-6 i {
   color: #989A9C;
 }
 
-.emotion-4:hover:enabled {
+.emotion-6:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-4:hover:enabled i {
+.emotion-6:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-4:active:enabled {
+.emotion-6:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-4:focus:enabled {
+.emotion-6:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-4:disabled {
+.emotion-6:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-2 {
   font-size: larger;
 }
 
-.emotion-8 {
+.emotion-10 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -3905,7 +4080,7 @@ exports[`<Alert /> Variants with onClose property renders a card alert with an o
 }
 
 <div
-  className="emotion-8 emotion-9"
+  className="emotion-10 emotion-11"
   display="grid"
   onClose={[Function]}
 >
@@ -3918,19 +4093,26 @@ exports[`<Alert /> Variants with onClose property renders a card alert with an o
     Hey look, an alert!
   </div>
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-8 emotion-9"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-4 emotion-5"
+      className="button--minimal emotion-6 emotion-7"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-2 emotion-3"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-4 emotion-5"
+      >
+        <i
+          className="ar ar-cross emotion-2 emotion-3"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
@@ -3944,12 +4126,12 @@ exports[`<Alert /> Variants with onClose property renders a inline alert with an
   font-weight: 500;
 }
 
-.emotion-6 {
+.emotion-8 {
   box-sizing: border-box;
   grid-area: action;
 }
 
-.emotion-4 {
+.emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3958,6 +4140,7 @@ exports[`<Alert /> Variants with onClose property renders a inline alert with an
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -3970,52 +4153,57 @@ exports[`<Alert /> Variants with onClose property renders a inline alert with an
   border: 1px solid transparent;
 }
 
-.emotion-4:disabled {
+.emotion-6:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-4:enabled {
+.emotion-6:enabled {
   cursor: pointer;
 }
 
-.emotion-4 i {
+.emotion-6 i {
   vertical-align: middle;
 }
 
-.emotion-4 i {
+.emotion-6 i {
   color: #989A9C;
 }
 
-.emotion-4:hover:enabled {
+.emotion-6:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-4:hover:enabled i {
+.emotion-6:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-4:active:enabled {
+.emotion-6:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-4:focus:enabled {
+.emotion-6:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-4:disabled {
+.emotion-6:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-2 {
   font-size: larger;
 }
 
-.emotion-8 {
+.emotion-10 {
   box-sizing: border-box;
   border: 1px solid #E0E1E2;
   display: grid;
@@ -4032,7 +4220,7 @@ exports[`<Alert /> Variants with onClose property renders a inline alert with an
 }
 
 <div
-  className="emotion-8 emotion-9"
+  className="emotion-10 emotion-11"
   display="grid"
   onClose={[Function]}
 >
@@ -4045,19 +4233,26 @@ exports[`<Alert /> Variants with onClose property renders a inline alert with an
     Hey look, an alert!
   </div>
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-8 emotion-9"
   >
     <button
       aria-label="close"
-      className="button--minimal emotion-4 emotion-5"
+      className="button--minimal emotion-6 emotion-7"
       disabled={false}
       onClick={[Function]}
       size="small"
     >
-      <i
-        className="ar ar-cross emotion-2 emotion-3"
-        fontSize="larger"
+      <div
+        className="loadedContent"
       />
+      <div
+        className="emotion-4 emotion-5"
+      >
+        <i
+          className="ar ar-cross emotion-2 emotion-3"
+          fontSize="larger"
+        />
+      </div>
     </button>
   </div>
 </div>
