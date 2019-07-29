@@ -10,7 +10,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
   margin-bottom: calc(1.5rem * 0.5);
 }
 
-.emotion-6 {
+.emotion-8 {
   box-sizing: border-box;
   display: grid;
   -webkit-align-items: end;
@@ -21,7 +21,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
   grid-template-columns: minmax(auto,100%) repeat(1,auto);
 }
 
-.emotion-4 {
+.emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -30,6 +30,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -41,32 +42,37 @@ exports[`<Header /> renders with heading and a button 1`] = `
   border: 1px solid transparent;
 }
 
-.emotion-4:disabled {
+.emotion-6:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-4:enabled {
+.emotion-6:enabled {
   cursor: pointer;
 }
 
-.emotion-4 i {
+.emotion-6 i {
   vertical-align: middle;
 }
 
-.emotion-4:hover:enabled {
+.emotion-6:hover:enabled {
   background-color: #000;
 }
 
-.emotion-4:active:enabled {
+.emotion-6:active:enabled {
   background-color: #134537;
 }
 
-.emotion-4:focus:enabled {
+.emotion-6:focus:enabled {
   border: 1px solid transparent;
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-2 {
@@ -76,7 +82,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
 }
 
 <header
-  className="emotion-6 emotion-7"
+  className="emotion-8 emotion-9"
   display="grid"
 >
   <h1
@@ -88,15 +94,22 @@ exports[`<Header /> renders with heading and a button 1`] = `
     My Heading
   </h1>
   <button
-    className="button--primary emotion-4 emotion-5"
+    className="button--primary emotion-6 emotion-7"
     disabled={false}
     size="large"
   >
-    <span
-      className="emotion-2 emotion-3"
+    <div
+      className="loadedContent"
+    />
+    <div
+      className="emotion-4 emotion-5"
     >
-      Primary
-    </span>
+      <span
+        className="emotion-2 emotion-3"
+      >
+        Primary
+      </span>
+    </div>
   </button>
 </header>
 `;
@@ -147,7 +160,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   margin-bottom: calc(1.5rem * 0.5);
 }
 
-.emotion-8 {
+.emotion-12 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -156,6 +169,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -167,32 +181,37 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   border: 1px solid transparent;
 }
 
-.emotion-8:disabled {
+.emotion-12:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-8:enabled {
+.emotion-12:enabled {
   cursor: pointer;
 }
 
-.emotion-8 i {
+.emotion-12 i {
   vertical-align: middle;
 }
 
-.emotion-8:hover:enabled {
+.emotion-12:hover:enabled {
   background-color: #000;
 }
 
-.emotion-8:active:enabled {
+.emotion-12:active:enabled {
   background-color: #134537;
 }
 
-.emotion-8:focus:enabled {
+.emotion-12:focus:enabled {
   border: 1px solid transparent;
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-2 {
@@ -201,7 +220,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   vertical-align: middle;
 }
 
-.emotion-10 {
+.emotion-14 {
   box-sizing: border-box;
   display: grid;
   -webkit-align-items: end;
@@ -212,7 +231,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   grid-template-columns: minmax(auto,100%) repeat(2,auto);
 }
 
-.emotion-4 {
+.emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -221,6 +240,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -232,49 +252,49 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   border: 1px solid transparent;
 }
 
-.emotion-4:disabled {
+.emotion-6:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-4:enabled {
+.emotion-6:enabled {
   cursor: pointer;
 }
 
-.emotion-4 i {
+.emotion-6 i {
   vertical-align: middle;
 }
 
-.emotion-4 i {
+.emotion-6 i {
   color: #989A9C;
 }
 
-.emotion-4:enabled {
+.emotion-6:enabled {
   border: 1px solid #E0E1E2;
 }
 
-.emotion-4:hover:enabled {
+.emotion-6:hover:enabled {
   border: 1px solid #5B5D61;
 }
 
-.emotion-4:hover:enabled i {
+.emotion-6:hover:enabled i {
   color: #081D17;
 }
 
-.emotion-4:active:enabled {
+.emotion-6:active:enabled {
   color: #081D17;
   background-color: #F2F2F2;
 }
 
-.emotion-4:focus:enabled {
+.emotion-6:focus:enabled {
   border: 1px solid transparent;
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
 <header
-  className="emotion-10 emotion-11"
+  className="emotion-14 emotion-15"
   display="grid"
 >
   <h1
@@ -286,26 +306,40 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
     My Heading
   </h1>
   <button
-    className="button--secondary emotion-4 emotion-5"
+    className="button--secondary emotion-6 emotion-7"
     disabled={false}
     size="large"
   >
-    <span
-      className="emotion-2 emotion-3"
+    <div
+      className="loadedContent"
+    />
+    <div
+      className="emotion-4 emotion-5"
     >
-      Secondary
-    </span>
+      <span
+        className="emotion-2 emotion-3"
+      >
+        Secondary
+      </span>
+    </div>
   </button>
   <button
-    className="button--primary emotion-8 emotion-5"
+    className="button--primary emotion-12 emotion-7"
     disabled={false}
     size="large"
   >
-    <span
-      className="emotion-2 emotion-3"
+    <div
+      className="loadedContent"
+    />
+    <div
+      className="emotion-4 emotion-5"
     >
-      Primary
-    </span>
+      <span
+        className="emotion-2 emotion-3"
+      >
+        Primary
+      </span>
+    </div>
   </button>
 </header>
 `;

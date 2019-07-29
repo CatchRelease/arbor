@@ -1,66 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DatePicker /> properly renders a DatePicker 1`] = `
-.emotion-14 {
+.emotion-18 {
   color: #25272D;
   font-family: Motiva Sans;
   font-size: 0.8125rem;
 }
 
-.emotion-14 .DayPicker-Caption {
+.emotion-18 .DayPicker-Caption {
   font-size: 0.875rem;
   font-weight: 400;
   margin-bottom: 1rem;
   padding-top: 0.25rem;
 }
 
-.emotion-14 .DayPicker-Month {
+.emotion-18 .DayPicker-Month {
   border-collapse: separate;
   border-spacing: 5px;
   margin: 0;
 }
 
-.emotion-14 .DayPicker-Weekday {
+.emotion-18 .DayPicker-Weekday {
   color: #25272D;
   font-size: 0.8125rem;
 }
 
-.emotion-14 .DayPicker-Day {
+.emotion-18 .DayPicker-Day {
   border-radius: 3px;
   height: 28px;
   padding: 0;
   width: 28px;
 }
 
-.emotion-14 .DayPicker-Day--today {
+.emotion-18 .DayPicker-Day--today {
   background-color: #F2F2F2;
   color: #0F0F10;
   font-weight: 400;
 }
 
-.emotion-14 .DayPicker-Day--outside,
-.emotion-14 .DayPicker-Day--disabled {
+.emotion-18 .DayPicker-Day--outside,
+.emotion-18 .DayPicker-Day--disabled {
   color: rgba(152,154,156,0.3);
 }
 
-.emotion-14 .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+.emotion-18 .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 400;
 }
 
-.emotion-14:not(.DayPicker--interactionDisabled) .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
+.emotion-18:not(.DayPicker--interactionDisabled) .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
   background-color: #C0F9DA;
   color: #081D17;
 }
 
-.emotion-14 .DayPicker-NavBar {
+.emotion-18 .DayPicker-NavBar {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.emotion-12 {
+.emotion-16 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -72,7 +72,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   align-items: center;
 }
 
-.emotion-2 {
+.emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -81,6 +81,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   font-weight: 500;
   line-height: 1;
   outline: none;
+  position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
@@ -93,45 +94,50 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   border: 1px solid transparent;
 }
 
-.emotion-2:disabled {
+.emotion-4:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-2:enabled {
+.emotion-4:enabled {
   cursor: pointer;
 }
 
-.emotion-2 i {
+.emotion-4 i {
   vertical-align: middle;
 }
 
-.emotion-2 i {
+.emotion-4 i {
   color: #989A9C;
 }
 
-.emotion-2:hover:enabled {
+.emotion-4:hover:enabled {
   color: #0F0F10;
 }
 
-.emotion-2:hover:enabled i {
+.emotion-4:hover:enabled i {
   color: #0F0F10;
 }
 
-.emotion-2:active:enabled {
+.emotion-4:active:enabled {
   background-color: #F2F2F2;
   color: #0F0F10;
 }
 
-.emotion-2:focus:enabled {
+.emotion-4:focus:enabled {
   box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
 }
 
-.emotion-2:disabled {
+.emotion-4:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  visibility: visible;
 }
 
 .emotion-0 {
@@ -141,18 +147,18 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   transform: rotate(90deg);
 }
 
-.emotion-6 {
+.emotion-8 {
   box-sizing: border-box;
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
 
-.emotion-4 {
+.emotion-6 {
   color: #989A9C;
   font-size: 1rem;
 }
 
-.emotion-8 {
+.emotion-10 {
   color: #989A9C;
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
@@ -160,7 +166,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 <div
-  className="DayPicker DayPicker--interactionDisabled emotion-14 emotion-15"
+  className="DayPicker DayPicker--interactionDisabled emotion-18 emotion-19"
   lang="en"
 >
   <div
@@ -169,40 +175,54 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
     tabIndex={0}
   >
     <div
-      className="DayPicker-NavBar emotion-12 emotion-13"
+      className="DayPicker-NavBar emotion-16 emotion-17"
     >
       <button
         aria-label="Previous Month"
-        className="button--minimal emotion-2 emotion-3"
+        className="button--minimal emotion-4 emotion-5"
         disabled={false}
         onClick={[Function]}
         size="small"
       >
-        <i
-          className="ar ar-chevron emotion-0 emotion-1"
-          color="icon.default"
+        <div
+          className="loadedContent"
         />
+        <div
+          className="emotion-2 emotion-3"
+        >
+          <i
+            className="ar ar-chevron emotion-0 emotion-1"
+            color="icon.default"
+          />
+        </div>
       </button>
       <div
-        className="emotion-6 emotion-7"
+        className="emotion-8 emotion-9"
       >
         <i
-          className="ar ar-symbol-circle emotion-4 emotion-1"
+          className="ar ar-symbol-circle emotion-6 emotion-1"
           color="icon.default"
           fontSize="size5"
         />
       </div>
       <button
         aria-label="Next Month"
-        className="button--minimal emotion-2 emotion-3"
+        className="button--minimal emotion-4 emotion-5"
         disabled={false}
         onClick={[Function]}
         size="small"
       >
-        <i
-          className="ar ar-chevron emotion-8 emotion-1"
-          color="icon.default"
+        <div
+          className="loadedContent"
         />
+        <div
+          className="emotion-2 emotion-3"
+        >
+          <i
+            className="ar ar-chevron emotion-10 emotion-1"
+            color="icon.default"
+          />
+        </div>
       </button>
     </div>
     <div

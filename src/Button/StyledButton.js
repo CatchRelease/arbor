@@ -18,6 +18,7 @@ const StyledButton = styled.button`
   font-weight: ${props => props.theme.fontWeights.medium};
   line-height: ${props => props.theme.lineHeights.regular};
   outline: none;
+  position: relative;
   text-align: center;
   transition: box-shadow 0.3s ease, background 0.2s ease;
 
