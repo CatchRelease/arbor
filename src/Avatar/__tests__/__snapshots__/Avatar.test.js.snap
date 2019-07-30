@@ -2,11 +2,12 @@
 
 exports[`<Avatar /> renders properly 1`] = `
 .emotion-2 {
+  font-family: Motiva Sans;
+  background-color: #29863A;
   box-sizing: border-box;
   border: 1px solid;
   border-color: #29863A;
   border-radius: 50%;
-  background-color: #29863A;
   height: 24px;
   width: 24px;
   display: -webkit-box;

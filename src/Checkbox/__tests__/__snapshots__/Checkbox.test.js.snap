@@ -2,9 +2,10 @@
 
 exports[`<Checkbox /> properly renders a checkbox 1`] = `
 .emotion-6 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,6 +19,7 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
@@ -31,6 +33,7 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -93,9 +96,10 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
 
 exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
 .emotion-8 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -109,6 +113,7 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
@@ -122,6 +127,7 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -195,9 +201,10 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
 
 exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] = `
 .emotion-8 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -211,6 +218,7 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
@@ -235,6 +243,7 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -298,9 +307,10 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
 
 exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
 .emotion-8 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -314,6 +324,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
@@ -334,6 +345,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -401,9 +413,10 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
 
 exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
 .emotion-6 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -417,6 +430,7 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
@@ -430,6 +444,7 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -495,9 +510,10 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
 
 exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
 .emotion-8 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -511,6 +527,7 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
@@ -528,6 +545,7 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -598,9 +616,10 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
 
 exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
 .emotion-8 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -614,6 +633,7 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
@@ -627,6 +647,7 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;

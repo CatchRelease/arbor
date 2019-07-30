@@ -6,6 +6,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,6 +19,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -41,6 +43,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 }
 
 .emotion-17 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -95,6 +98,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 }
 
 .emotion-10 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -110,8 +114,9 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 }
 
 .emotion-6 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #989A9C;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -122,6 +127,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 }
 
 .emotion-8 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
   display: -webkit-box;
@@ -136,6 +142,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 }
 
 .emotion-15 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
@@ -263,6 +270,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -275,6 +283,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -298,6 +307,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 }
 
 .emotion-17 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -352,6 +362,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 }
 
 .emotion-10 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -367,8 +378,9 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 }
 
 .emotion-6 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #989A9C;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -379,6 +391,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 }
 
 .emotion-8 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
   display: -webkit-box;
@@ -393,6 +406,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 }
 
 .emotion-15 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
@@ -520,6 +534,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -532,6 +547,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -555,6 +571,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 }
 
 .emotion-17 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -609,6 +626,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 }
 
 .emotion-10 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -624,8 +642,9 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 }
 
 .emotion-6 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #989A9C;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -636,6 +655,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 }
 
 .emotion-8 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
   display: -webkit-box;
@@ -650,6 +670,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 }
 
 .emotion-15 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
@@ -777,6 +798,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -789,6 +811,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -812,6 +835,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 }
 
 .emotion-17 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -866,6 +890,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 }
 
 .emotion-10 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -881,8 +906,9 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 }
 
 .emotion-6 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #989A9C;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -893,6 +919,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 }
 
 .emotion-8 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
   display: -webkit-box;
@@ -907,6 +934,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 }
 
 .emotion-15 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
@@ -1034,6 +1062,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1046,6 +1075,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1069,6 +1099,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 }
 
 .emotion-17 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1123,6 +1154,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 }
 
 .emotion-10 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1138,8 +1170,9 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 }
 
 .emotion-6 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #989A9C;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1150,6 +1183,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 }
 
 .emotion-8 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
   display: -webkit-box;
@@ -1164,6 +1198,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 }
 
 .emotion-15 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
@@ -1291,6 +1326,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1303,6 +1339,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1326,6 +1363,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 }
 
 .emotion-17 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1380,6 +1418,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 }
 
 .emotion-10 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1395,8 +1434,9 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 }
 
 .emotion-6 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #989A9C;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1407,6 +1447,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 }
 
 .emotion-8 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
   display: -webkit-box;
@@ -1421,6 +1462,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 }
 
 .emotion-15 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;

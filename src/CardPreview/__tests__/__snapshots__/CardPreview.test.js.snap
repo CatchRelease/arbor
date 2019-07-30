@@ -2,6 +2,7 @@
 
 exports[`<CardPreview /> renders a CardPreview properly 1`] = `
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   background: url(example.gif) center center no-repeat #000000;
   background-size: contain;

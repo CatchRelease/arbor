@@ -6,6 +6,7 @@ exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;

@@ -2,6 +2,7 @@
 
 exports[`<CardActions renders the CardActions component properly 1`] = `
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   grid-gap: 0.5rem;
   grid-template-columns: repeat(2,1fr);

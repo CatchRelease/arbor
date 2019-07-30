@@ -2,10 +2,11 @@
 
 exports[`<AccordionSection /> render accordion is closed renders with the panel hidden 1`] = `
 .emotion-7 {
-  box-sizing: border-box;
-  border-bottom: 1px solid #E0E1E2;
+  font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E0E1E2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -63,6 +64,7 @@ section:last-child .emotion-7 {
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -87,10 +89,11 @@ section:last-child .emotion-7 {
 }
 
 .emotion-9 {
+  font-family: Motiva Sans;
+  overflow: hidden;
   box-sizing: border-box;
   border-bottom: 1px solid #E0E1E2;
   display: none;
-  overflow: hidden;
 }
 
 section:last-child .emotion-9 {
@@ -138,10 +141,11 @@ section:last-child .emotion-9 {
 
 exports[`<AccordionSection /> render accordion is open renders with the panel visible 1`] = `
 .emotion-7 {
-  box-sizing: border-box;
-  border-bottom: 1px solid #E0E1E2;
+  font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E0E1E2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -199,6 +203,7 @@ section:last-child .emotion-7 {
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -220,10 +225,11 @@ section:last-child .emotion-7 {
 }
 
 .emotion-9 {
+  font-family: Motiva Sans;
+  overflow: hidden;
   box-sizing: border-box;
   border-bottom: 1px solid #E0E1E2;
   display: block;
-  overflow: hidden;
 }
 
 section:last-child .emotion-9 {

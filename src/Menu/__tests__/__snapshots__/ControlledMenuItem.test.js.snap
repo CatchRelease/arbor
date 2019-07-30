@@ -2,8 +2,9 @@
 
 exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
 .emotion-11 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   padding: 0.75rem;
+  box-sizing: border-box;
   background: #FFFFFF;
   color: #25272D;
   cursor: pointer;
@@ -30,6 +31,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
 }
 
 .emotion-9 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
@@ -43,8 +45,9 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
 }
 
 .emotion-3 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   max-width: calc(100% - 120px - 8px);
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -63,9 +66,10 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
 }
 
 .emotion-7 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   overflow: hidden;
   padding-left: 8px;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -136,8 +140,9 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
 
 exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
 .emotion-11 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   padding: 0.75rem;
+  box-sizing: border-box;
   background: #FFFFFF;
   color: #25272D;
   cursor: pointer;
@@ -164,6 +169,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
 }
 
 .emotion-9 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
@@ -177,8 +183,9 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
 }
 
 .emotion-3 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   max-width: calc(100% - 120px - 8px);
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -197,9 +204,10 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
 }
 
 .emotion-7 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   overflow: hidden;
   padding-left: 8px;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

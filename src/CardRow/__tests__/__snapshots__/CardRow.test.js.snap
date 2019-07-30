@@ -2,13 +2,14 @@
 
 exports[`<CardRow /> renders a CardRow properly 1`] = `
 .emotion-0 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

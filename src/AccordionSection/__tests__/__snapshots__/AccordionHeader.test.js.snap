@@ -2,10 +2,11 @@
 
 exports[`<AccordionHeader /> properly renders an accordion header 1`] = `
 .emotion-7 {
-  box-sizing: border-box;
-  border-bottom: 1px solid #E0E1E2;
+  font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E0E1E2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -63,6 +64,7 @@ section:last-child .emotion-7 {
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -114,10 +116,11 @@ section:last-child .emotion-7 {
 
 exports[`<AccordionHeader /> renders with a note 1`] = `
 .emotion-7 {
-  box-sizing: border-box;
-  border-bottom: 1px solid #E0E1E2;
+  font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E0E1E2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -175,6 +178,7 @@ section:last-child .emotion-7 {
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -227,10 +231,11 @@ section:last-child .emotion-7 {
 
 exports[`<AccordionHeader /> renders with an on click 1`] = `
 .emotion-7 {
-  box-sizing: border-box;
-  border-bottom: 1px solid #E0E1E2;
+  font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E0E1E2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -288,6 +293,7 @@ section:last-child .emotion-7 {
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -339,10 +345,11 @@ section:last-child .emotion-7 {
 
 exports[`<AccordionHeader /> renders with the panel visible 1`] = `
 .emotion-7 {
-  box-sizing: border-box;
-  border-bottom: 1px solid #E0E1E2;
+  font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E0E1E2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -400,6 +407,7 @@ section:last-child .emotion-7 {
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
