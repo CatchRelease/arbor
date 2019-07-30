@@ -50,7 +50,6 @@ const Tooltip = ({ content, children, theme, ...props }) => {
 
       <TippyTooltip
         {...{
-          ...props,
           theme: 'arbor',
           arrow: true,
           html: tooltipContent,
@@ -60,7 +59,8 @@ const Tooltip = ({ content, children, theme, ...props }) => {
           arrowSize: 'medium',
           animation: 'fade',
           inertia: true,
-          animateFill: false
+          animateFill: false,
+          ...props
         }}
       >
         {children}
