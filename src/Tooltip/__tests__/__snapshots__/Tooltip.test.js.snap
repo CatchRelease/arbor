@@ -2,10 +2,10 @@
 
 exports[`<Tooltip /> properly renders a tooltip 1`] = `
 <WithTheme(Tooltip)
-  text="Hello World"
+  content="Hello World"
 >
   <Tooltip
-    text="Hello World"
+    content="Hello World"
     theme={
       Object {
         "avatarFontSizes": Object {
@@ -324,7 +324,31 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                   data-emotion="css-global"
                 >
                   
-                  .tippy-tooltip.arbor-theme{border-radius:3px;padding:0;}
+                  .tippy-popper .tippy-tooltip.arbor-theme{background:none;padding:0;}
+                </style>
+                <style
+                  data-emotion="css-global"
+                >
+                  
+                  .tippy-popper[x-placement='bottom'] .tippy-tooltip.arbor-theme [x-arrow]{border-bottom-color:#25272D;}
+                </style>
+                <style
+                  data-emotion="css-global"
+                >
+                  
+                  .tippy-popper[x-placement='top'] .tippy-tooltip.arbor-theme [x-arrow]{border-top-color:#25272D;}
+                </style>
+                <style
+                  data-emotion="css-global"
+                >
+                  
+                  .tippy-popper[x-placement='left'] .tippy-tooltip.arbor-theme [x-arrow]{border-left-color:#25272D;}
+                </style>
+                <style
+                  data-emotion="css-global"
+                >
+                  
+                  .tippy-popper[x-placement='right'] .tippy-tooltip.arbor-theme [x-arrow]{border-right-color:#25272D;}
                 </style>
               </head>,
               "ctr": 0,
@@ -338,9 +362,9 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
         serialized={
           Object {
             "map": undefined,
-            "name": "957k5c-globalTippyStyles",
+            "name": "r4n83o-globalTippyStyles",
             "next": undefined,
-            "styles": ".tippy-tooltip.arbor-theme{border-radius:3px;padding:0;}label:globalTippyStyles;",
+            "styles": ".tippy-popper{.tippy-tooltip.arbor-theme{background:none;padding:0;}}.tippy-popper[x-placement='bottom'] .tippy-tooltip.arbor-theme [x-arrow]{border-bottom-color:#25272D;}.tippy-popper[x-placement='top'] .tippy-tooltip.arbor-theme [x-arrow]{border-top-color:#25272D;}.tippy-popper[x-placement='left'] .tippy-tooltip.arbor-theme [x-arrow]{border-left-color:#25272D;}.tippy-popper[x-placement='right'] .tippy-tooltip.arbor-theme [x-arrow]{border-right-color:#25272D;}label:globalTippyStyles;",
           }
         }
       />
@@ -360,11 +384,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
       hideDuration={375}
       hideOnClick={true}
       html={
-        <ForwardRef(render)
-          color="white"
-          fontSize="size4"
-          px="smaller"
-          py="smaller"
+        <ThemeProvider
           theme={
             Object {
               "avatarFontSizes": Object {
@@ -665,8 +685,16 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             }
           }
         >
-          Hello World
-        </ForwardRef(render)>
+          <ForwardRef(render)
+            bg="monochrome.grey90"
+            borderRadius="small"
+            color="white"
+            fontSize="size4"
+            p="smaller"
+          >
+            Hello World
+          </ForwardRef(render)>
+        </ThemeProvider>
       }
       inertia={true}
       interactive={false}

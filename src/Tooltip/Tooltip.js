@@ -1,33 +1,47 @@
 /** @jsx jsx */
 import { Global, css, jsx } from '@emotion/core';
 import { Fragment } from 'react';
-import { withTheme } from 'emotion-theming';
+import { ThemeProvider, withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import 'react-tippy/dist/tippy.css';
 import { Tooltip as TippyTooltip } from 'react-tippy';
 
-import Text from '../Text';
+import StyledTooltipContent from './StyledTooltipContent';
 
-const globalTippyStyles = theme => css`
-  .tippy-tooltip.arbor-theme {
-    border-radius: ${theme.radii.small};
-    padding: 0;
-  }
-`;
+const globalTippyStyles = theme => {
+  const arrowColor = theme.colors.monochrome.grey90;
 
-const Tooltip = ({ text, children, theme, ...props }) => {
-  const tooltipText = (
-    <Text
-      {...{
-        px: 'smaller',
-        py: 'smaller',
-        fontSize: 'size4',
-        color: 'white',
-        theme
-      }}
-    >
-      {text}
-    </Text>
+  return css`
+    .tippy-popper {
+      .tippy-tooltip.arbor-theme {
+        background: none;
+        padding: 0;
+      }
+    }
+
+    .tippy-popper[x-placement='bottom'] .tippy-tooltip.arbor-theme [x-arrow] {
+      border-bottom-color: ${arrowColor};
+    }
+
+    .tippy-popper[x-placement='top'] .tippy-tooltip.arbor-theme [x-arrow] {
+      border-top-color: ${arrowColor};
+    }
+
+    .tippy-popper[x-placement='left'] .tippy-tooltip.arbor-theme [x-arrow] {
+      border-left-color: ${arrowColor};
+    }
+
+    .tippy-popper[x-placement='right'] .tippy-tooltip.arbor-theme [x-arrow] {
+      border-right-color: ${arrowColor};
+    }
+  `;
+};
+
+const Tooltip = ({ content, children, theme, ...props }) => {
+  const tooltipContent = (
+    <ThemeProvider theme={theme}>
+      <StyledTooltipContent>{content}</StyledTooltipContent>
+    </ThemeProvider>
   );
 
   return (
@@ -39,7 +53,7 @@ const Tooltip = ({ text, children, theme, ...props }) => {
           ...props,
           theme: 'arbor',
           arrow: true,
-          html: tooltipText,
+          html: tooltipContent,
           distance: 8,
           duration: 300,
           updateDuration: 0,
@@ -63,9 +77,9 @@ Tooltip.propTypes = {
   children: PropTypes.element.isRequired,
 
   /**
-   * Text to display within the tooltip when it is displayed
+   * Content to display within the tooltip when it is displayed
    * */
-  text: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
 
   /**
    * Theme used for styling the Tooltip.
