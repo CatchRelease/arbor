@@ -6,7 +6,13 @@ import { withTheme } from 'emotion-theming';
 
 import buildModalCss from './buildModalCss';
 
-export const Modal = ({ children, modalCss, overlayCss, theme, ...props }) => {
+export const Modal = ({
+  children,
+  modalCss,
+  overlayCss,
+  theme, // eslint-disable-line react/prop-types
+  ...props
+}) => {
   const combinedModalCss = buildModalCss({ theme, modalCss, overlayCss });
 
   return (
@@ -42,12 +48,7 @@ Modal.propTypes = {
    * Optional overrides to the overlay CSS. This will be injected via emotion's
    * Global style component.
    */
-  overlayCss: PropTypes.oneOfType([PropTypes.object, PropTypes.func]),
-
-  /**
-   * Theme used for styling the Modal.
-   */
-  theme: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
+  overlayCss: PropTypes.oneOfType([PropTypes.object, PropTypes.func])
 };
 
 Modal.defaultProps = {

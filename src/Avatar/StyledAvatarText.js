@@ -9,7 +9,7 @@ export const StyledAvatarText = ({
   baseColor,
   size,
   subtle,
-  theme: { avatarFontSizes },
+  theme: { avatarFontSizes }, // eslint-disable-line react/prop-types
   ...props
 }) => {
   const color = subtle ? `${baseColor}.default` : 'monochrome.white';
@@ -21,8 +21,7 @@ export const StyledAvatarText = ({
 StyledAvatarText.propTypes = {
   baseColor: PropTypes.string.isRequired,
   size: PropTypes.oneOf(Object.keys(sizes)).isRequired,
-  subtle: PropTypes.bool.isRequired,
-  theme: PropTypes.shape(PropTypes.objectOf(PropTypes.string)).isRequired
+  subtle: PropTypes.bool.isRequired
 };
 
 export default withTheme(StyledAvatarText);
