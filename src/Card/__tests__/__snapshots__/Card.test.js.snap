@@ -2,12 +2,13 @@
 
 exports[`<Card /> renders a Card properly 1`] = `
 .emotion-0 {
+  font-family: Motiva Sans;
+  background-color: #FFFFFF;
+  overflow: hidden;
   box-sizing: border-box;
   border-radius: 6px;
   box-shadow: 0 0 1px rgba(37,39,45,0.47);
-  background-color: #FFFFFF;
   display: grid;
-  overflow: hidden;
   width: 100%;
 }
 

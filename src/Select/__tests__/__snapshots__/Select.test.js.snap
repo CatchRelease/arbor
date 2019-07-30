@@ -2,6 +2,7 @@
 
 exports[`<Select /> renders a Select with a caption correctly 1`] = `
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -137,6 +138,7 @@ exports[`<Select /> renders a Select with a label correctly 1`] = `
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -231,6 +233,7 @@ exports[`<Select /> renders a Select with a label correctly 1`] = `
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -288,6 +291,7 @@ exports[`<Select /> renders a Select with a labelAside correctly 1`] = `
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -382,6 +386,7 @@ exports[`<Select /> renders a Select with a labelAside correctly 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -422,6 +427,7 @@ exports[`<Select /> renders a large Select correctly 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -542,6 +548,7 @@ exports[`<Select /> renders an Select correctly 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;

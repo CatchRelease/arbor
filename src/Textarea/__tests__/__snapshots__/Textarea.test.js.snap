@@ -2,6 +2,7 @@
 
 exports[`<Textarea /> renders a Textarea with a caption correctly 1`] = `
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -100,6 +101,7 @@ exports[`<Textarea /> renders a Textarea with a label correctly 1`] = `
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -161,6 +163,7 @@ exports[`<Textarea /> renders a Textarea with a label correctly 1`] = `
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -214,6 +217,7 @@ exports[`<Textarea /> renders a Textarea with a labelAside correctly 1`] = `
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -275,6 +279,7 @@ exports[`<Textarea /> renders a Textarea with a labelAside correctly 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -311,6 +316,7 @@ exports[`<Textarea /> renders a large Textarea correctly 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -394,6 +400,7 @@ exports[`<Textarea /> renders an Textarea correctly 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;

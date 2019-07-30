@@ -2,8 +2,9 @@
 
 exports[`<Badge /> Colors properly renders a blue badge 1`] = `
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -25,12 +26,13 @@ exports[`<Badge /> Colors properly renders a blue badge 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -68,8 +70,9 @@ exports[`<Badge /> Colors properly renders a blue badge 1`] = `
 
 exports[`<Badge /> Colors properly renders a cyan badge 1`] = `
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -91,12 +94,13 @@ exports[`<Badge /> Colors properly renders a cyan badge 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -134,8 +138,9 @@ exports[`<Badge /> Colors properly renders a cyan badge 1`] = `
 
 exports[`<Badge /> Colors properly renders a green badge 1`] = `
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -157,12 +162,13 @@ exports[`<Badge /> Colors properly renders a green badge 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -200,12 +206,13 @@ exports[`<Badge /> Colors properly renders a green badge 1`] = `
 
 exports[`<Badge /> Colors properly renders a neutral badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -220,8 +227,9 @@ exports[`<Badge /> Colors properly renders a neutral badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -266,8 +274,9 @@ exports[`<Badge /> Colors properly renders a neutral badge 1`] = `
 
 exports[`<Badge /> Colors properly renders a orange badge 1`] = `
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -289,12 +298,13 @@ exports[`<Badge /> Colors properly renders a orange badge 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -332,8 +342,9 @@ exports[`<Badge /> Colors properly renders a orange badge 1`] = `
 
 exports[`<Badge /> Colors properly renders a pink badge 1`] = `
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -355,12 +366,13 @@ exports[`<Badge /> Colors properly renders a pink badge 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -398,8 +410,9 @@ exports[`<Badge /> Colors properly renders a pink badge 1`] = `
 
 exports[`<Badge /> Colors properly renders a purple badge 1`] = `
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -421,12 +434,13 @@ exports[`<Badge /> Colors properly renders a purple badge 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -464,8 +478,9 @@ exports[`<Badge /> Colors properly renders a purple badge 1`] = `
 
 exports[`<Badge /> Colors properly renders a red badge 1`] = `
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -487,12 +502,13 @@ exports[`<Badge /> Colors properly renders a red badge 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -530,8 +546,9 @@ exports[`<Badge /> Colors properly renders a red badge 1`] = `
 
 exports[`<Badge /> Colors properly renders a teal badge 1`] = `
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -553,12 +570,13 @@ exports[`<Badge /> Colors properly renders a teal badge 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -596,8 +614,9 @@ exports[`<Badge /> Colors properly renders a teal badge 1`] = `
 
 exports[`<Badge /> Colors properly renders a yellow badge 1`] = `
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -619,12 +638,13 @@ exports[`<Badge /> Colors properly renders a yellow badge 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -662,12 +682,13 @@ exports[`<Badge /> Colors properly renders a yellow badge 1`] = `
 
 exports[`<Badge /> Subtle properly renders a subtle blue badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -682,8 +703,9 @@ exports[`<Badge /> Subtle properly renders a subtle blue badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #213175;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -728,12 +750,13 @@ exports[`<Badge /> Subtle properly renders a subtle blue badge 1`] = `
 
 exports[`<Badge /> Subtle properly renders a subtle cyan badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -748,8 +771,9 @@ exports[`<Badge /> Subtle properly renders a subtle cyan badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #063f48;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -794,12 +818,13 @@ exports[`<Badge /> Subtle properly renders a subtle cyan badge 1`] = `
 
 exports[`<Badge /> Subtle properly renders a subtle green badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -814,8 +839,9 @@ exports[`<Badge /> Subtle properly renders a subtle green badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #14431d;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -860,12 +886,13 @@ exports[`<Badge /> Subtle properly renders a subtle green badge 1`] = `
 
 exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -880,8 +907,9 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #5B5D61;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -926,12 +954,13 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
 
 exports[`<Badge /> Subtle properly renders a subtle orange badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -946,8 +975,9 @@ exports[`<Badge /> Subtle properly renders a subtle orange badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #622902;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -992,12 +1022,13 @@ exports[`<Badge /> Subtle properly renders a subtle orange badge 1`] = `
 
 exports[`<Badge /> Subtle properly renders a subtle pink badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1012,8 +1043,9 @@ exports[`<Badge /> Subtle properly renders a subtle pink badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #6b1936;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1058,12 +1090,13 @@ exports[`<Badge /> Subtle properly renders a subtle pink badge 1`] = `
 
 exports[`<Badge /> Subtle properly renders a subtle purple badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1078,8 +1111,9 @@ exports[`<Badge /> Subtle properly renders a subtle purple badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #382474;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1124,12 +1158,13 @@ exports[`<Badge /> Subtle properly renders a subtle purple badge 1`] = `
 
 exports[`<Badge /> Subtle properly renders a subtle red badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1144,8 +1179,9 @@ exports[`<Badge /> Subtle properly renders a subtle red badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #6c1c1c;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1190,12 +1226,13 @@ exports[`<Badge /> Subtle properly renders a subtle red badge 1`] = `
 
 exports[`<Badge /> Subtle properly renders a subtle teal badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1210,8 +1247,9 @@ exports[`<Badge /> Subtle properly renders a subtle teal badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #044231;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1256,12 +1294,13 @@ exports[`<Badge /> Subtle properly renders a subtle teal badge 1`] = `
 
 exports[`<Badge /> Subtle properly renders a subtle yellow badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1276,8 +1315,9 @@ exports[`<Badge /> Subtle properly renders a subtle yellow badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #513400;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1322,12 +1362,13 @@ exports[`<Badge /> Subtle properly renders a subtle yellow badge 1`] = `
 
 exports[`<Badge /> Variants properly renders a default badge 1`] = `
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1342,8 +1383,9 @@ exports[`<Badge /> Variants properly renders a default badge 1`] = `
 }
 
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1388,8 +1430,9 @@ exports[`<Badge /> Variants properly renders a default badge 1`] = `
 
 exports[`<Badge /> Variants properly renders a pill badge 1`] = `
 .emotion-2 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1411,12 +1454,13 @@ exports[`<Badge /> Variants properly renders a pill badge 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1454,12 +1498,13 @@ exports[`<Badge /> Variants properly renders a pill badge 1`] = `
 
 exports[`<Badge /> iconEnd properly renders a badge with an ending icon 1`] = `
 .emotion-6 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1485,8 +1530,9 @@ exports[`<Badge /> iconEnd properly renders a badge with an ending icon 1`] = `
 }
 
 .emotion-4 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1523,12 +1569,13 @@ exports[`<Badge /> iconEnd properly renders a badge with an ending icon 1`] = `
 
 exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a starting and ending icon 1`] = `
 .emotion-8 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1554,8 +1601,9 @@ exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a st
 }
 
 .emotion-6 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1595,12 +1643,13 @@ exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a st
 
 exports[`<Badge /> iconStart properly renders a badge with a starting icon 1`] = `
 .emotion-6 {
-  box-sizing: border-box;
-  border: 1px solid;
-  height: 24px;
+  font-family: Motiva Sans;
   max-width: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1626,8 +1675,9 @@ exports[`<Badge /> iconStart properly renders a badge with a starting icon 1`] =
 }
 
 .emotion-4 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   color: #FFFFFF;
+  box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;

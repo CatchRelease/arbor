@@ -6,6 +6,7 @@ exports[`<Input /> renders a large Input correctly 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -90,6 +91,7 @@ exports[`<Input /> renders an Input correctly 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -169,6 +171,7 @@ exports[`<Input /> renders an Input correctly 1`] = `
 
 exports[`<Input /> renders an Input with a caption correctly 1`] = `
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -268,6 +271,7 @@ exports[`<Input /> renders an Input with a label correctly 1`] = `
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -329,6 +333,7 @@ exports[`<Input /> renders an Input with a label correctly 1`] = `
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -383,6 +388,7 @@ exports[`<Input /> renders an Input with a type correctly 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -466,6 +472,7 @@ exports[`<Input /> renders as Input with a labelAside correctly 1`] = `
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -527,6 +534,7 @@ exports[`<Input /> renders as Input with a labelAside correctly 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;

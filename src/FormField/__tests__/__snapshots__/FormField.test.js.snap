@@ -6,6 +6,7 @@ exports[`<FormField /> renders a FormField correctly 1`] = `
 }
 
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -32,6 +33,7 @@ exports[`<FormField /> renders a FormField correctly 1`] = `
 
 exports[`<FormField /> renders a FormField with a caption correctly 1`] = `
 .emotion-0 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -78,6 +80,7 @@ exports[`<FormField /> with label renders a FormField with a label correctly 1`]
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -90,6 +93,7 @@ exports[`<FormField /> with label renders a FormField with a label correctly 1`]
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -140,6 +144,7 @@ exports[`<FormField /> with labelAside renders a FormField with a label correctl
 }
 
 .emotion-6 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -152,6 +157,7 @@ exports[`<FormField /> with labelAside renders a FormField with a label correctl
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -175,6 +181,7 @@ exports[`<FormField /> with labelAside renders a FormField with a label correctl
 }
 
 .emotion-4 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;

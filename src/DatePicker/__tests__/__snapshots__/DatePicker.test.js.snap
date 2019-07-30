@@ -61,6 +61,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 .emotion-16 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -136,6 +137,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
   box-sizing: border-box;
   visibility: visible;
 }
@@ -148,9 +150,10 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 .emotion-8 {
-  box-sizing: border-box;
+  font-family: Motiva Sans;
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+  box-sizing: border-box;
 }
 
 .emotion-6 {
