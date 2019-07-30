@@ -3,6 +3,7 @@
 exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
 .emotion-11 {
   font-family: Motiva Sans;
+  font-size: 0.875rem;
   padding: 0.75rem;
   box-sizing: border-box;
   background: #FFFFFF;
@@ -90,6 +91,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
 <div
   aria-selected={false}
   className="emotion-11 emotion-12"
+  fontSize="size4"
   id="menu-item_clearance_state_ready_to_clear"
   label="Ready to Clear"
   name="clearance_state"
@@ -141,6 +143,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
 exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
 .emotion-11 {
   font-family: Motiva Sans;
+  font-size: 0.875rem;
   padding: 0.75rem;
   box-sizing: border-box;
   background: #FFFFFF;
@@ -228,6 +231,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
 <div
   aria-selected={false}
   className="emotion-11 emotion-12"
+  fontSize="size4"
   id="menu-item_clearance_state_ready_to_clear"
   label="Ready to Clear"
   name="clearance_state"

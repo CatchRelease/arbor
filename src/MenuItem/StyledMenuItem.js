@@ -56,6 +56,7 @@ StyledMenuItem.propTypes = {
 };
 
 StyledMenuItem.defaultProps = {
+  fontSize: 'size4',
   isDisabled: false,
   isFocused: false,
   isSelected: false,
