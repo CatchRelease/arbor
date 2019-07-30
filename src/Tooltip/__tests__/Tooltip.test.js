@@ -6,7 +6,7 @@ import Tooltip from '../Tooltip';
 describe('<Tooltip />', () => {
   it('properly renders a tooltip', () => {
     const tree = mountWithTheme(
-      <Tooltip text="Hello World">
+      <Tooltip content="Hello World">
         <p>I have a tooltip</p>
       </Tooltip>
     );

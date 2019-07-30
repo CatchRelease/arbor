@@ -65,7 +65,7 @@ stories.add('Shot Card Example', () => (
         <Card>
           <CardRow>
             <Checkbox icon="cr-logo" my="0" label={card.id} />
-            <Tooltip text="The Shot is 100% Licensed. All agreements and releases have been fully executed.">
+            <Tooltip content="The Shot is 100% Licensed. All agreements and releases have been fully executed.">
               <Button variant="minimal" size="medium" color="green">
                 License Acquired
               </Button>
@@ -75,7 +75,7 @@ stories.add('Shot Card Example', () => (
           <CardPreview image={card.preview} />
 
           <CardRow>
-            <Tooltip text="20 Action Items have been accepted.">
+            <Tooltip content="20 Action Items have been accepted.">
               <Link
                 variant="muted"
                 color="grey80"
@@ -88,7 +88,7 @@ stories.add('Shot Card Example', () => (
             </Tooltip>
 
             <CardActions>
-              <Tooltip text="Comments">
+              <Tooltip content="Comments">
                 <Button
                   iconStart={comments}
                   variant="minimal"
@@ -96,7 +96,7 @@ stories.add('Shot Card Example', () => (
                   color="icons.default"
                 />
               </Tooltip>
-              <Tooltip text="Download Asset">
+              <Tooltip content="Download Asset">
                 <Button
                   iconStart={download}
                   variant="minimal"
@@ -104,7 +104,7 @@ stories.add('Shot Card Example', () => (
                   color="icons.default"
                 />
               </Tooltip>
-              <Tooltip text="Dislike Shot">
+              <Tooltip content="Dislike Shot">
                 <Button
                   iconStart={dislike}
                   variant="minimal"
@@ -112,7 +112,7 @@ stories.add('Shot Card Example', () => (
                   color="icons.default"
                 />
               </Tooltip>
-              <Tooltip text="Like Shot">
+              <Tooltip content="Like Shot">
                 <Button
                   iconStart={like}
                   variant="minimal"
