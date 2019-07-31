@@ -48,19 +48,18 @@ const spinnerWidth = size => {
   }
 };
 
-const ButtonSpinner = ({ disabled, spin, size, variant }) => (
+const ButtonSpinner = ({ disabled, size, variant }) => (
   <Spinner
     color={spinnerColor(disabled, variant)}
     length={0}
     radius={spinnerRadius(size)}
-    spin={spin}
+    spin
     width={spinnerWidth(size)}
   />
 );
 
 ButtonSpinner.propTypes = {
   disabled: PropTypes.bool.isRequired,
-  spin: PropTypes.bool.isRequired,
   size: PropTypes.string.isRequired,
   variant: PropTypes.string.isRequired
 };

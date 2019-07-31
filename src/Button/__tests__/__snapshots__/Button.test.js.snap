@@ -68,9 +68,6 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
   size="small"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-4 emotion-5"
   >
     <span
@@ -152,9 +149,6 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
   disabled={false}
   size="medium"
 >
-  <div
-    className="loadedContent"
-  />
   <div
     className="emotion-4 emotion-5"
   >
@@ -238,9 +232,6 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
   size="large"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-4 emotion-5"
   >
     <span
@@ -323,9 +314,6 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
   size="jumbo"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-4 emotion-5"
   >
     <span
@@ -407,9 +395,6 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   disabled={false}
   size="small"
 >
-  <div
-    className="loadedContent"
-  />
   <div
     className="emotion-6 emotion-7"
   >
@@ -496,9 +481,6 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   size="medium"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-6 emotion-7"
   >
     <i
@@ -583,9 +565,6 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   disabled={false}
   size="large"
 >
-  <div
-    className="loadedContent"
-  />
   <div
     className="emotion-6 emotion-7"
   >
@@ -672,9 +651,6 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   size="jumbo"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-6 emotion-7"
   >
     <i
@@ -760,9 +736,6 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   size="small"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-4 emotion-5"
   >
     <i
@@ -844,9 +817,6 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   disabled={false}
   size="medium"
 >
-  <div
-    className="loadedContent"
-  />
   <div
     className="emotion-4 emotion-5"
   >
@@ -930,9 +900,6 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   size="large"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-4 emotion-5"
   >
     <i
@@ -1014,9 +981,6 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   disabled={false}
   size="jumbo"
 >
-  <div
-    className="loadedContent"
-  />
   <div
     className="emotion-4 emotion-5"
   >
@@ -1100,9 +1064,6 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   size="jumbo"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-2 emotion-3"
   >
     <span
@@ -1181,9 +1142,6 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   disabled={false}
   size="large"
 >
-  <div
-    className="loadedContent"
-  />
   <div
     className="emotion-2 emotion-3"
   >
@@ -1264,9 +1222,6 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   size="medium"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-2 emotion-3"
   >
     <span
@@ -1345,9 +1300,6 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   disabled={false}
   size="small"
 >
-  <div
-    className="loadedContent"
-  />
   <div
     className="emotion-2 emotion-3"
   >
@@ -1442,9 +1394,6 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   size="large"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-2 emotion-3"
   >
     <span
@@ -1523,9 +1472,6 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   disabled={true}
   size="large"
 >
-  <div
-    className="loadedContent"
-  />
   <div
     className="emotion-2 emotion-3"
   >
@@ -1618,9 +1564,6 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
   disabled={true}
   size="large"
 >
-  <div
-    className="loadedContent"
-  />
   <div
     className="emotion-2 emotion-3"
   >
@@ -1715,9 +1658,6 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
   size="large"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-2 emotion-3"
   >
     <span
@@ -1796,9 +1736,6 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   disabled={false}
   size="large"
 >
-  <div
-    className="loadedContent"
-  />
   <div
     className="emotion-2 emotion-3"
   >
@@ -1892,9 +1829,6 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
   size="large"
 >
   <div
-    className="loadedContent"
-  />
-  <div
     className="emotion-2 emotion-3"
   >
     <span
@@ -1974,9 +1908,6 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
   disabled={false}
   size="large"
 >
-  <div
-    className="loadedContent"
-  />
   <div
     className="emotion-2 emotion-3"
   >
