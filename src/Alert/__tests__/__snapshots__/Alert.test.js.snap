@@ -2109,9 +2109,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
       size="small"
     >
       <div
-        className="loadedContent"
-      />
-      <div
         className="emotion-8 emotion-9"
       >
         <i
@@ -2276,9 +2273,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
       onClick={[Function]}
       size="small"
     >
-      <div
-        className="loadedContent"
-      />
       <div
         className="emotion-8 emotion-9"
       >
@@ -2445,9 +2439,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
       size="small"
     >
       <div
-        className="loadedContent"
-      />
-      <div
         className="emotion-8 emotion-9"
       >
         <i
@@ -2613,9 +2604,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a banner a
       size="small"
     >
       <div
-        className="loadedContent"
-      />
-      <div
         className="emotion-8 emotion-9"
       >
         <i
@@ -2777,9 +2765,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
       onClick={[Function]}
       size="small"
     >
-      <div
-        className="loadedContent"
-      />
       <div
         className="emotion-8 emotion-9"
       >
@@ -2943,9 +2928,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
       size="small"
     >
       <div
-        className="loadedContent"
-      />
-      <div
         className="emotion-8 emotion-9"
       >
         <i
@@ -3107,9 +3089,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
       onClick={[Function]}
       size="small"
     >
-      <div
-        className="loadedContent"
-      />
       <div
         className="emotion-8 emotion-9"
       >
@@ -3273,9 +3252,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a card ale
       size="small"
     >
       <div
-        className="loadedContent"
-      />
-      <div
         className="emotion-8 emotion-9"
       >
         <i
@@ -3436,9 +3412,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
       onClick={[Function]}
       size="small"
     >
-      <div
-        className="loadedContent"
-      />
       <div
         className="emotion-8 emotion-9"
       >
@@ -3601,9 +3574,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
       size="small"
     >
       <div
-        className="loadedContent"
-      />
-      <div
         className="emotion-8 emotion-9"
       >
         <i
@@ -3764,9 +3734,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
       onClick={[Function]}
       size="small"
     >
-      <div
-        className="loadedContent"
-      />
       <div
         className="emotion-8 emotion-9"
       >
@@ -3929,9 +3896,6 @@ exports[`<Alert /> Variants with intent with onClose property renders a inline a
       size="small"
     >
       <div
-        className="loadedContent"
-      />
-      <div
         className="emotion-8 emotion-9"
       >
         <i
@@ -4076,9 +4040,6 @@ exports[`<Alert /> Variants with onClose property renders a banner alert with an
       size="small"
     >
       <div
-        className="loadedContent"
-      />
-      <div
         className="emotion-4 emotion-5"
       >
         <i
@@ -4220,9 +4181,6 @@ exports[`<Alert /> Variants with onClose property renders a card alert with an o
       size="small"
     >
       <div
-        className="loadedContent"
-      />
-      <div
         className="emotion-4 emotion-5"
       >
         <i
@@ -4362,9 +4320,6 @@ exports[`<Alert /> Variants with onClose property renders a inline alert with an
       onClick={[Function]}
       size="small"
     >
-      <div
-        className="loadedContent"
-      />
       <div
         className="emotion-4 emotion-5"
       >

@@ -20,7 +20,7 @@ const Button = React.forwardRef(
       }}
       text={children}
     >
-      <ButtonSpinner {...{ spin, variant, ...props }} />
+      {spin && <ButtonSpinner {...{ variant, ...props }} />}
       <ButtonContent spin={spin}>
         {iconStart}
         {children && (

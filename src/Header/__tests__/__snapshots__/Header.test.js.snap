@@ -101,9 +101,6 @@ exports[`<Header /> renders with heading and a button 1`] = `
     size="large"
   >
     <div
-      className="loadedContent"
-    />
-    <div
       className="emotion-4 emotion-5"
     >
       <span
@@ -316,9 +313,6 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
     size="large"
   >
     <div
-      className="loadedContent"
-    />
-    <div
       className="emotion-4 emotion-5"
     >
       <span
@@ -333,9 +327,6 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
     disabled={false}
     size="large"
   >
-    <div
-      className="loadedContent"
-    />
     <div
       className="emotion-4 emotion-5"
     >
