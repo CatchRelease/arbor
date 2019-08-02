@@ -14,8 +14,7 @@ StyledAlertDetails.propTypes = {
 StyledAlertDetails.defaultProps = {
   color: 'monochrome.grey80',
   fontSize: 'size4',
-  lineHeight: 'large',
-  gridArea: 'details'
+  lineHeight: 'large'
 };
 
 export default StyledAlertDetails;

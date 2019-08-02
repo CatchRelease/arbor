@@ -14,8 +14,7 @@ StyledAlertMessage.propTypes = {
 StyledAlertMessage.defaultProps = {
   color: 'monochrome.grey100',
   fontSize: 'size4',
-  fontWeight: 'medium',
-  gridArea: 'message'
+  fontWeight: 'medium'
 };
 
 export default StyledAlertMessage;
