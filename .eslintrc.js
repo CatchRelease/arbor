@@ -30,7 +30,7 @@ module.exports = {
       }
     },
     {
-      files: ['src/**/__tests__/**/*.test.js'],
+      files: ['src/**/__tests__/**/*'],
       globals: {
         context: true,
         describe: true,

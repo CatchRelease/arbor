@@ -6,7 +6,7 @@ import Button from '../Button';
 import Icon from '../Icon';
 
 const StyledAlertAction = ({ onClose }) => (
-  <Box gridArea="action">
+  <Box>
     <Button
       aria-label="close"
       iconStart={<Icon fontSize="larger" name="cross" />}

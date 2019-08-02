@@ -21,7 +21,7 @@ const getIconName = intent => {
 };
 
 const StyledAlertIntent = ({ intent }) => (
-  <Box gridArea="intent" aria-label={intent}>
+  <Box aria-label={intent}>
     <Icon
       color={`intent.${intent}.default`}
       fontSize="size4"
