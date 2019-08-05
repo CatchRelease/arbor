@@ -1,31 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] = `
-.emotion-4 {
+.emotion-0 {
   font-family: Motiva Sans;
-  box-sizing: border-box;
-  visibility: visible;
+  color: inherit;
 }
 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.25rem 0 0.5rem;
-  height: 1.5rem;
   font-size: 0.75rem;
+  height: 1.5rem;
+  padding: 0 0.75rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-6:disabled {
@@ -43,38 +41,75 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
   vertical-align: middle;
 }
 
-.emotion-6:hover:enabled {
-  background-color: #000;
+.emotion-6 i {
+  width: 1.5rem;
+  font-size: 0.6875rem;
 }
 
-.emotion-6:active:enabled {
+.emotion-6 i:first-child {
+  margin-left: -0.75rem;
+}
+
+.emotion-6 i:last-child {
+  margin-right: -0.75rem;
+}
+
+.emotion-6:enabled:active {
   background-color: #134537;
 }
 
-.emotion-6:focus:enabled {
-  border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+.emotion-6:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
 }
 
-.emotion-0 {
-  margin-left: 0;
-  margin-right: 0.5rem;
-  vertical-align: middle;
+.emotion-6:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-6:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-6 i {
+  color: 'inherit';
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr 0fr;
+  visibility: visible;
 }
 
 <button
   className="button--primary emotion-6 emotion-7"
   disabled={false}
+  fontWeight="medium"
   size="small"
 >
   <div
     className="emotion-4 emotion-5"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
     <i
       className="ar ar-cr-logo emotion-2 emotion-3"
     />
@@ -83,37 +118,41 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
 `;
 
 exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: inherit;
+}
+
 .emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr 0fr;
   visibility: visible;
-}
-
-.emotion-0 {
-  margin-left: 0;
-  margin-right: 0.5rem;
-  vertical-align: middle;
 }
 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
+  font-size: 0.8125rem;
   height: 2rem;
-  font-size: 0.875rem;
+  padding: 0 1rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-6:disabled {
@@ -131,32 +170,63 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
   vertical-align: middle;
 }
 
-.emotion-6:hover:enabled {
-  background-color: #000;
+.emotion-6 i {
+  width: 2rem;
+  font-size: 0.75rem;
 }
 
-.emotion-6:active:enabled {
+.emotion-6 i:first-child {
+  margin-left: -1rem;
+}
+
+.emotion-6 i:last-child {
+  margin-right: -1rem;
+}
+
+.emotion-6:enabled:active {
   background-color: #134537;
 }
 
-.emotion-6:focus:enabled {
+.emotion-6:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-6:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-6:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-6 i {
+  color: 'inherit';
 }
 
 <button
   className="button--primary emotion-6 emotion-7"
   disabled={false}
+  fontWeight="medium"
   size="medium"
 >
   <div
     className="emotion-4 emotion-5"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
     <i
       className="ar ar-cr-logo emotion-2 emotion-3"
     />
@@ -165,37 +235,24 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
 `;
 
 exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] = `
-.emotion-4 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-  visibility: visible;
-}
-
-.emotion-0 {
-  margin-left: 0;
-  margin-right: 0.5rem;
-  vertical-align: middle;
-}
-
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.75rem 0 1rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-6:disabled {
@@ -213,32 +270,80 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
   vertical-align: middle;
 }
 
-.emotion-6:hover:enabled {
-  background-color: #000;
+.emotion-6 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
 }
 
-.emotion-6:active:enabled {
+.emotion-6 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-6 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-6:enabled:active {
   background-color: #134537;
 }
 
-.emotion-6:focus:enabled {
+.emotion-6:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-6:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-6:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-6 i {
+  color: 'inherit';
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: inherit;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr 0fr;
+  visibility: visible;
 }
 
 <button
   className="button--primary emotion-6 emotion-7"
   disabled={false}
+  fontWeight="medium"
   size="large"
 >
   <div
     className="emotion-4 emotion-5"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
     <i
       className="ar ar-cr-logo emotion-2 emotion-3"
     />
@@ -247,37 +352,41 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
 `;
 
 exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: inherit;
+}
+
 .emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr 0fr;
   visibility: visible;
-}
-
-.emotion-0 {
-  margin-left: 0;
-  margin-right: 0.5rem;
-  vertical-align: middle;
 }
 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.75rem 0 1rem;
-  height: 3rem;
   font-size: 0.875rem;
+  height: 3rem;
+  padding: 0 1.5rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-6:disabled {
@@ -295,32 +404,63 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
   vertical-align: middle;
 }
 
-.emotion-6:hover:enabled {
-  background-color: #000;
+.emotion-6 i {
+  width: 3rem;
+  font-size: 1rem;
 }
 
-.emotion-6:active:enabled {
+.emotion-6 i:first-child {
+  margin-left: -1.5rem;
+}
+
+.emotion-6 i:last-child {
+  margin-right: -1.5rem;
+}
+
+.emotion-6:enabled:active {
   background-color: #134537;
 }
 
-.emotion-6:focus:enabled {
+.emotion-6:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-6:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-6:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-6 i {
+  color: 'inherit';
 }
 
 <button
   className="button--primary emotion-6 emotion-7"
   disabled={false}
+  fontWeight="medium"
   size="jumbo"
 >
   <div
     className="emotion-4 emotion-5"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
     <i
       className="ar ar-cr-logo emotion-2 emotion-3"
     />
@@ -329,31 +469,29 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
 `;
 
 exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with an iconStart and an iconEdn 1`] = `
-.emotion-6 {
+.emotion-2 {
   font-family: Motiva Sans;
-  box-sizing: border-box;
-  visibility: visible;
+  color: inherit;
 }
 
 .emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.25rem;
-  height: 1.5rem;
   font-size: 0.75rem;
+  height: 1.5rem;
+  padding: 0 0.75rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-8:disabled {
@@ -371,41 +509,78 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   vertical-align: middle;
 }
 
-.emotion-8:hover:enabled {
-  background-color: #000;
+.emotion-8 i {
+  width: 1.5rem;
+  font-size: 0.6875rem;
 }
 
-.emotion-8:active:enabled {
+.emotion-8 i:first-child {
+  margin-left: -0.75rem;
+}
+
+.emotion-8 i:last-child {
+  margin-right: -0.75rem;
+}
+
+.emotion-8:enabled:active {
   background-color: #134537;
 }
 
-.emotion-8:focus:enabled {
-  border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+.emotion-8:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
 }
 
-.emotion-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  vertical-align: middle;
+.emotion-8:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-8::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-8:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-8:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-8 i {
+  color: 'inherit';
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr 1fr 0fr;
+  visibility: visible;
 }
 
 <button
   className="button--primary emotion-8 emotion-9"
   disabled={false}
+  fontWeight="medium"
   size="small"
 >
   <div
     className="emotion-6 emotion-7"
+    display="grid"
   >
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <span
+    <p
       className="emotion-2 emotion-3"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
     <i
       className="ar ar-download emotion-0 emotion-1"
     />
@@ -414,37 +589,41 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 `;
 
 exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with an iconStart and an iconEdn 2`] = `
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: inherit;
+}
+
 .emotion-6 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr 1fr 0fr;
   visibility: visible;
-}
-
-.emotion-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  vertical-align: middle;
 }
 
 .emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
+  font-size: 0.8125rem;
   height: 2rem;
-  font-size: 0.875rem;
+  padding: 0 1rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-8:disabled {
@@ -462,35 +641,66 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   vertical-align: middle;
 }
 
-.emotion-8:hover:enabled {
-  background-color: #000;
+.emotion-8 i {
+  width: 2rem;
+  font-size: 0.75rem;
 }
 
-.emotion-8:active:enabled {
+.emotion-8 i:first-child {
+  margin-left: -1rem;
+}
+
+.emotion-8 i:last-child {
+  margin-right: -1rem;
+}
+
+.emotion-8:enabled:active {
   background-color: #134537;
 }
 
-.emotion-8:focus:enabled {
+.emotion-8:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-8:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-8::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-8:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-8:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-8 i {
+  color: 'inherit';
 }
 
 <button
   className="button--primary emotion-8 emotion-9"
   disabled={false}
+  fontWeight="medium"
   size="medium"
 >
   <div
     className="emotion-6 emotion-7"
+    display="grid"
   >
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <span
+    <p
       className="emotion-2 emotion-3"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
     <i
       className="ar ar-download emotion-0 emotion-1"
     />
@@ -499,37 +709,24 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 `;
 
 exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with an iconStart and an iconEdn 3`] = `
-.emotion-6 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-  visibility: visible;
-}
-
-.emotion-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  vertical-align: middle;
-}
-
 .emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.75rem 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-8:disabled {
@@ -547,35 +744,83 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   vertical-align: middle;
 }
 
-.emotion-8:hover:enabled {
-  background-color: #000;
+.emotion-8 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
 }
 
-.emotion-8:active:enabled {
+.emotion-8 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-8 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-8:enabled:active {
   background-color: #134537;
 }
 
-.emotion-8:focus:enabled {
+.emotion-8:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-8:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-8::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-8:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-8:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-8 i {
+  color: 'inherit';
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: inherit;
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr 1fr 0fr;
+  visibility: visible;
 }
 
 <button
   className="button--primary emotion-8 emotion-9"
   disabled={false}
+  fontWeight="medium"
   size="large"
 >
   <div
     className="emotion-6 emotion-7"
+    display="grid"
   >
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <span
+    <p
       className="emotion-2 emotion-3"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
     <i
       className="ar ar-download emotion-0 emotion-1"
     />
@@ -584,37 +829,41 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 `;
 
 exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with an iconStart and an iconEdn 4`] = `
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: inherit;
+}
+
 .emotion-6 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr 1fr 0fr;
   visibility: visible;
-}
-
-.emotion-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  vertical-align: middle;
 }
 
 .emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.75rem 0 0.5rem;
-  height: 3rem;
   font-size: 0.875rem;
+  height: 3rem;
+  padding: 0 1.5rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-8:disabled {
@@ -632,35 +881,66 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   vertical-align: middle;
 }
 
-.emotion-8:hover:enabled {
-  background-color: #000;
+.emotion-8 i {
+  width: 3rem;
+  font-size: 1rem;
 }
 
-.emotion-8:active:enabled {
+.emotion-8 i:first-child {
+  margin-left: -1.5rem;
+}
+
+.emotion-8 i:last-child {
+  margin-right: -1.5rem;
+}
+
+.emotion-8:enabled:active {
   background-color: #134537;
 }
 
-.emotion-8:focus:enabled {
+.emotion-8:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-8:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-8::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-8:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-8:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-8 i {
+  color: 'inherit';
 }
 
 <button
   className="button--primary emotion-8 emotion-9"
   disabled={false}
+  fontWeight="medium"
   size="jumbo"
 >
   <div
     className="emotion-6 emotion-7"
+    display="grid"
   >
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <span
+    <p
       className="emotion-2 emotion-3"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
     <i
       className="ar ar-download emotion-0 emotion-1"
     />
@@ -669,31 +949,29 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 `;
 
 exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 1`] = `
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
-  box-sizing: border-box;
-  visibility: visible;
+  color: inherit;
 }
 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem 0 0.25rem;
-  height: 1.5rem;
   font-size: 0.75rem;
+  height: 1.5rem;
+  padding: 0 0.75rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-6:disabled {
@@ -711,77 +989,118 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   vertical-align: middle;
 }
 
-.emotion-6:hover:enabled {
-  background-color: #000;
+.emotion-6 i {
+  width: 1.5rem;
+  font-size: 0.6875rem;
 }
 
-.emotion-6:active:enabled {
+.emotion-6 i:first-child {
+  margin-left: -0.75rem;
+}
+
+.emotion-6 i:last-child {
+  margin-right: -0.75rem;
+}
+
+.emotion-6:enabled:active {
   background-color: #134537;
 }
 
-.emotion-6:focus:enabled {
-  border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+.emotion-6:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
 }
 
-.emotion-2 {
-  margin-left: 0.5rem;
-  margin-right: 0;
-  vertical-align: middle;
+.emotion-6:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-6:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-6 i {
+  color: 'inherit';
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr 1fr;
+  visibility: visible;
 }
 
 <button
   className="button--primary emotion-6 emotion-7"
   disabled={false}
+  fontWeight="medium"
   size="small"
 >
   <div
     className="emotion-4 emotion-5"
+    display="grid"
   >
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <span
+    <p
       className="emotion-2 emotion-3"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
   </div>
 </button>
 `;
 
 exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 2`] = `
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: inherit;
+}
+
 .emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr 1fr;
   visibility: visible;
-}
-
-.emotion-2 {
-  margin-left: 0.5rem;
-  margin-right: 0;
-  vertical-align: middle;
 }
 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
+  font-size: 0.8125rem;
   height: 2rem;
-  font-size: 0.875rem;
+  padding: 0 1rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-6:disabled {
@@ -799,71 +1118,89 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   vertical-align: middle;
 }
 
-.emotion-6:hover:enabled {
-  background-color: #000;
+.emotion-6 i {
+  width: 2rem;
+  font-size: 0.75rem;
 }
 
-.emotion-6:active:enabled {
+.emotion-6 i:first-child {
+  margin-left: -1rem;
+}
+
+.emotion-6 i:last-child {
+  margin-right: -1rem;
+}
+
+.emotion-6:enabled:active {
   background-color: #134537;
 }
 
-.emotion-6:focus:enabled {
+.emotion-6:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-6:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-6:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-6 i {
+  color: 'inherit';
 }
 
 <button
   className="button--primary emotion-6 emotion-7"
   disabled={false}
+  fontWeight="medium"
   size="medium"
 >
   <div
     className="emotion-4 emotion-5"
+    display="grid"
   >
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <span
+    <p
       className="emotion-2 emotion-3"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
   </div>
 </button>
 `;
 
 exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 3`] = `
-.emotion-4 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-  visibility: visible;
-}
-
-.emotion-2 {
-  margin-left: 0.5rem;
-  margin-right: 0;
-  vertical-align: middle;
-}
-
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 1rem 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-6:disabled {
@@ -881,71 +1218,123 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   vertical-align: middle;
 }
 
-.emotion-6:hover:enabled {
-  background-color: #000;
+.emotion-6 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
 }
 
-.emotion-6:active:enabled {
+.emotion-6 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-6 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-6:enabled:active {
   background-color: #134537;
 }
 
-.emotion-6:focus:enabled {
+.emotion-6:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-6:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-6:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-6 i {
+  color: 'inherit';
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: inherit;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr 1fr;
+  visibility: visible;
 }
 
 <button
   className="button--primary emotion-6 emotion-7"
   disabled={false}
+  fontWeight="medium"
   size="large"
 >
   <div
     className="emotion-4 emotion-5"
+    display="grid"
   >
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <span
+    <p
       className="emotion-2 emotion-3"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
   </div>
 </button>
 `;
 
 exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 4`] = `
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: inherit;
+}
+
 .emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr 1fr;
   visibility: visible;
-}
-
-.emotion-2 {
-  margin-left: 0.5rem;
-  margin-right: 0;
-  vertical-align: middle;
 }
 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 1rem 0 0.5rem;
-  height: 3rem;
   font-size: 0.875rem;
+  height: 3rem;
+  padding: 0 1.5rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-6:disabled {
@@ -963,35 +1352,66 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   vertical-align: middle;
 }
 
-.emotion-6:hover:enabled {
-  background-color: #000;
+.emotion-6 i {
+  width: 3rem;
+  font-size: 1rem;
 }
 
-.emotion-6:active:enabled {
+.emotion-6 i:first-child {
+  margin-left: -1.5rem;
+}
+
+.emotion-6 i:last-child {
+  margin-right: -1.5rem;
+}
+
+.emotion-6:enabled:active {
   background-color: #134537;
 }
 
-.emotion-6:focus:enabled {
+.emotion-6:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-6:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-6:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-6 i {
+  color: 'inherit';
 }
 
 <button
   className="button--primary emotion-6 emotion-7"
   disabled={false}
+  fontWeight="medium"
   size="jumbo"
 >
   <div
     className="emotion-4 emotion-5"
+    display="grid"
   >
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <span
+    <p
       className="emotion-2 emotion-3"
+      color="inherit"
     >
       Button with Icon
-    </span>
+    </p>
   </div>
 </button>
 `;
@@ -1000,34 +1420,38 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-0 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0.5rem 1rem;
-  height: 3rem;
   font-size: 0.875rem;
+  height: 3rem;
+  padding: 0 1.5rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -1045,32 +1469,63 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4:hover:enabled {
-  background-color: #000;
+.emotion-4 i {
+  width: 3rem;
+  font-size: 1rem;
 }
 
-.emotion-4:active:enabled {
+.emotion-4 i:first-child {
+  margin-left: -1.5rem;
+}
+
+.emotion-4 i:last-child {
+  margin-right: -1.5rem;
+}
+
+.emotion-4:enabled:active {
   background-color: #134537;
 }
 
-.emotion-4:focus:enabled {
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-4:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
 }
 
 <button
   className="button--primary emotion-4 emotion-5"
   disabled={false}
+  fontWeight="medium"
   size="jumbo"
 >
   <div
     className="emotion-2 emotion-3"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button Label
-    </span>
+    </p>
   </div>
 </button>
 `;
@@ -1080,21 +1535,20 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -1112,44 +1566,80 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4:hover:enabled {
-  background-color: #000;
+.emotion-4 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
 }
 
-.emotion-4:active:enabled {
+.emotion-4 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-4 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-4:enabled:active {
   background-color: #134537;
 }
 
-.emotion-4:focus:enabled {
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-4:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
 }
 
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-0 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 <button
   className="button--primary emotion-4 emotion-5"
   disabled={false}
+  fontWeight="medium"
   size="large"
 >
   <div
     className="emotion-2 emotion-3"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button Label
-    </span>
+    </p>
   </div>
 </button>
 `;
@@ -1158,34 +1648,38 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-0 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
+  font-size: 0.8125rem;
   height: 2rem;
-  font-size: 0.875rem;
+  padding: 0 1rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -1203,32 +1697,63 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4:hover:enabled {
-  background-color: #000;
+.emotion-4 i {
+  width: 2rem;
+  font-size: 0.75rem;
 }
 
-.emotion-4:active:enabled {
+.emotion-4 i:first-child {
+  margin-left: -1rem;
+}
+
+.emotion-4 i:last-child {
+  margin-right: -1rem;
+}
+
+.emotion-4:enabled:active {
   background-color: #134537;
 }
 
-.emotion-4:focus:enabled {
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-4:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
 }
 
 <button
   className="button--primary emotion-4 emotion-5"
   disabled={false}
+  fontWeight="medium"
   size="medium"
 >
   <div
     className="emotion-2 emotion-3"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button Label
-    </span>
+    </p>
   </div>
 </button>
 `;
@@ -1237,34 +1762,38 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-0 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 1.5rem;
   font-size: 0.75rem;
+  height: 1.5rem;
+  padding: 0 0.75rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -1282,32 +1811,63 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4:hover:enabled {
-  background-color: #000;
+.emotion-4 i {
+  width: 1.5rem;
+  font-size: 0.6875rem;
 }
 
-.emotion-4:active:enabled {
+.emotion-4 i:first-child {
+  margin-left: -0.75rem;
+}
+
+.emotion-4 i:last-child {
+  margin-right: -0.75rem;
+}
+
+.emotion-4:enabled:active {
   background-color: #134537;
 }
 
-.emotion-4:focus:enabled {
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-4:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
 }
 
 <button
   className="button--primary emotion-4 emotion-5"
   disabled={false}
+  fontWeight="medium"
   size="small"
 >
   <div
     className="emotion-2 emotion-3"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button Label
-    </span>
+    </p>
   </div>
 </button>
 `;
@@ -1316,35 +1876,39 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-0 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #5B5D61;
+  color: #081D17;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -1363,24 +1927,16 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 }
 
 .emotion-4 i {
-  color: #989A9C;
+  width: 2.5rem;
+  font-size: 0.875rem;
 }
 
-.emotion-4:hover:enabled {
-  color: #0F0F10;
+.emotion-4 i:first-child {
+  margin-left: -1.25rem;
 }
 
-.emotion-4:hover:enabled i {
-  color: #0F0F10;
-}
-
-.emotion-4:active:enabled {
-  background-color: #F2F2F2;
-  color: #0F0F10;
-}
-
-.emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+.emotion-4 i:last-child {
+  margin-right: -1.25rem;
 }
 
 .emotion-4:disabled {
@@ -1388,19 +1944,52 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-4:enabled:active {
+  background-color: #F8F9F9;
+  color: #134537;
+}
+
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  color: #000;
+}
+
+.emotion-4:enabled:hover {
+  color: #134537;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
+}
+
 <button
   className="button--minimal emotion-4 emotion-5"
   disabled={true}
+  fontWeight="medium"
   size="large"
 >
   <div
     className="emotion-2 emotion-3"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button Label
-    </span>
+    </p>
   </div>
 </button>
 `;
@@ -1410,21 +1999,20 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -1442,44 +2030,80 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4:hover:enabled {
-  background-color: #000;
+.emotion-4 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
 }
 
-.emotion-4:active:enabled {
+.emotion-4 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-4 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-4:enabled:active {
   background-color: #134537;
 }
 
-.emotion-4:focus:enabled {
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-4:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
 }
 
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-0 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 <button
   className="button--primary emotion-4 emotion-5"
   disabled={true}
+  fontWeight="medium"
   size="large"
 >
   <div
     className="emotion-2 emotion-3"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button Label
-    </span>
+    </p>
   </div>
 </button>
 `;
@@ -1488,34 +2112,38 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-0 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #FFFFFF;
-  color: #25272D;
+  color: #081D17;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -1534,44 +2162,69 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
 }
 
 .emotion-4 i {
-  color: #989A9C;
+  width: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.emotion-4 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-4 i:last-child {
+  margin-right: -1.25rem;
 }
 
 .emotion-4:enabled {
   border: 1px solid #E0E1E2;
 }
 
-.emotion-4:hover:enabled {
-  border: 1px solid #5B5D61;
+.emotion-4:enabled:active {
+  color: #134537;
+  background-color: #F8F9F9;
 }
 
-.emotion-4:hover:enabled i {
-  color: #081D17;
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  color: #000;
 }
 
-.emotion-4:active:enabled {
-  color: #081D17;
-  background-color: #F2F2F2;
+.emotion-4:enabled:hover {
+  border: 1px solid #134537;
+  color: #134537;
 }
 
-.emotion-4:focus:enabled {
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
 }
 
 <button
   className="button--secondary emotion-4 emotion-5"
   disabled={true}
+  fontWeight="medium"
   size="large"
 >
   <div
     className="emotion-2 emotion-3"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button Label
-    </span>
+    </p>
   </div>
 </button>
 `;
@@ -1580,35 +2233,39 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-0 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #5B5D61;
+  color: #081D17;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -1627,24 +2284,16 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 }
 
 .emotion-4 i {
-  color: #989A9C;
+  width: 2.5rem;
+  font-size: 0.875rem;
 }
 
-.emotion-4:hover:enabled {
-  color: #0F0F10;
+.emotion-4 i:first-child {
+  margin-left: -1.25rem;
 }
 
-.emotion-4:hover:enabled i {
-  color: #0F0F10;
-}
-
-.emotion-4:active:enabled {
-  background-color: #F2F2F2;
-  color: #0F0F10;
-}
-
-.emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+.emotion-4 i:last-child {
+  margin-right: -1.25rem;
 }
 
 .emotion-4:disabled {
@@ -1652,19 +2301,52 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-4:enabled:active {
+  background-color: #F8F9F9;
+  color: #134537;
+}
+
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  color: #000;
+}
+
+.emotion-4:enabled:hover {
+  color: #134537;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
+}
+
 <button
   className="button--minimal emotion-4 emotion-5"
   disabled={false}
+  fontWeight="medium"
   size="large"
 >
   <div
     className="emotion-2 emotion-3"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button Label
-    </span>
+    </p>
   </div>
 </button>
 `;
@@ -1674,21 +2356,20 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -1706,44 +2387,80 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4:hover:enabled {
-  background-color: #000;
+.emotion-4 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
 }
 
-.emotion-4:active:enabled {
+.emotion-4 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-4 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-4:enabled:active {
   background-color: #134537;
 }
 
-.emotion-4:focus:enabled {
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-4:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
 }
 
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-0 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 <button
   className="button--primary emotion-4 emotion-5"
   disabled={false}
+  fontWeight="medium"
   size="large"
 >
   <div
     className="emotion-2 emotion-3"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button Label
-    </span>
+    </p>
   </div>
 </button>
 `;
@@ -1752,34 +2469,38 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-0 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #FFFFFF;
-  color: #25272D;
+  color: #081D17;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -1798,44 +2519,69 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
 }
 
 .emotion-4 i {
-  color: #989A9C;
+  width: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.emotion-4 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-4 i:last-child {
+  margin-right: -1.25rem;
 }
 
 .emotion-4:enabled {
   border: 1px solid #E0E1E2;
 }
 
-.emotion-4:hover:enabled {
-  border: 1px solid #5B5D61;
+.emotion-4:enabled:active {
+  color: #134537;
+  background-color: #F8F9F9;
 }
 
-.emotion-4:hover:enabled i {
-  color: #081D17;
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  color: #000;
 }
 
-.emotion-4:active:enabled {
-  color: #081D17;
-  background-color: #F2F2F2;
+.emotion-4:enabled:hover {
+  border: 1px solid #134537;
+  color: #134537;
 }
 
-.emotion-4:focus:enabled {
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
 }
 
 <button
   className="button--secondary emotion-4 emotion-5"
   disabled={false}
+  fontWeight="medium"
   size="large"
 >
   <div
     className="emotion-2 emotion-3"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Button Label
-    </span>
+    </p>
   </div>
 </button>
 `;
@@ -1844,35 +2590,39 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-0 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
   width: 100%;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -1890,32 +2640,63 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4:hover:enabled {
-  background-color: #000;
+.emotion-4 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
 }
 
-.emotion-4:active:enabled {
+.emotion-4 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-4 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-4:enabled:active {
   background-color: #134537;
 }
 
-.emotion-4:focus:enabled {
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-4:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
 }
 
 <button
   className="button--primary emotion-4 emotion-5"
   disabled={false}
+  fontWeight="medium"
   size="large"
 >
   <div
     className="emotion-2 emotion-3"
+    display="grid"
   >
-    <span
+    <p
       className="emotion-0 emotion-1"
+      color="inherit"
     >
       Full Width
-    </span>
+    </p>
   </div>
 </button>
 `;

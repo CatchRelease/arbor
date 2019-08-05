@@ -77,22 +77,21 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.25rem;
-  height: 1.5rem;
   font-size: 0.75rem;
+  height: 1.5rem;
+  padding: 0 0.75rem;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #5B5D61;
+  color: #081D17;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-4:disabled {
@@ -111,24 +110,16 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 .emotion-4 i {
-  color: #989A9C;
+  width: 1.5rem;
+  font-size: 0.6875rem;
 }
 
-.emotion-4:hover:enabled {
-  color: #0F0F10;
+.emotion-4 i:first-child {
+  margin-left: -0.75rem;
 }
 
-.emotion-4:hover:enabled i {
-  color: #0F0F10;
-}
-
-.emotion-4:active:enabled {
-  background-color: #F2F2F2;
-  color: #0F0F10;
-}
-
-.emotion-4:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+.emotion-4 i:last-child {
+  margin-right: -0.75rem;
 }
 
 .emotion-4:disabled {
@@ -136,9 +127,45 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-4:enabled:active {
+  background-color: #F8F9F9;
+  color: #134537;
+}
+
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  color: #000;
+}
+
+.emotion-4:enabled:hover {
+  color: #134537;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: 'inherit';
+}
+
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr;
   visibility: visible;
 }
 
@@ -184,11 +211,13 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
         aria-label="Previous Month"
         className="button--minimal emotion-4 emotion-5"
         disabled={false}
+        fontWeight="medium"
         onClick={[Function]}
         size="small"
       >
         <div
           className="emotion-2 emotion-3"
+          display="grid"
         >
           <i
             className="ar ar-chevron emotion-0 emotion-1"
@@ -209,11 +238,13 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
         aria-label="Next Month"
         className="button--minimal emotion-4 emotion-5"
         disabled={false}
+        fontWeight="medium"
         onClick={[Function]}
         size="small"
       >
         <div
           className="emotion-2 emotion-3"
+          display="grid"
         >
           <i
             className="ar ar-chevron emotion-10 emotion-1"

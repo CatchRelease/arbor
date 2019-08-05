@@ -830,22 +830,21 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with dange
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.25rem;
-  height: 1.5rem;
   font-size: 0.75rem;
+  height: 1.5rem;
+  padding: 0 0.75rem;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #5B5D61;
+  color: #081D17;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-10:disabled {
@@ -864,24 +863,16 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with dange
 }
 
 .emotion-10 i {
-  color: #989A9C;
+  width: 1.5rem;
+  font-size: 0.6875rem;
 }
 
-.emotion-10:hover:enabled {
-  color: #0F0F10;
+.emotion-10 i:first-child {
+  margin-left: -0.75rem;
 }
 
-.emotion-10:hover:enabled i {
-  color: #0F0F10;
-}
-
-.emotion-10:active:enabled {
-  background-color: #F2F2F2;
-  color: #0F0F10;
-}
-
-.emotion-10:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+.emotion-10 i:last-child {
+  margin-right: -0.75rem;
 }
 
 .emotion-10:disabled {
@@ -889,9 +880,45 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with dange
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-10:enabled:active {
+  background-color: #F8F9F9;
+  color: #134537;
+}
+
+.emotion-10:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  color: #000;
+}
+
+.emotion-10:enabled:hover {
+  color: #134537;
+}
+
+.emotion-10::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-10:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-10:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-10 i {
+  color: 'inherit';
+}
+
 .emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr;
   visibility: visible;
 }
 
@@ -968,11 +995,13 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with dange
         aria-label="close"
         className="button--minimal emotion-10 emotion-11"
         disabled={false}
+        fontWeight="medium"
         onClick={[Function]}
         size="small"
       >
         <div
           className="emotion-8 emotion-9"
+          display="grid"
         >
           <i
             className="ar ar-cross emotion-6 emotion-1"
@@ -1002,22 +1031,21 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with info 
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.25rem;
-  height: 1.5rem;
   font-size: 0.75rem;
+  height: 1.5rem;
+  padding: 0 0.75rem;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #5B5D61;
+  color: #081D17;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-10:disabled {
@@ -1036,24 +1064,16 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with info 
 }
 
 .emotion-10 i {
-  color: #989A9C;
+  width: 1.5rem;
+  font-size: 0.6875rem;
 }
 
-.emotion-10:hover:enabled {
-  color: #0F0F10;
+.emotion-10 i:first-child {
+  margin-left: -0.75rem;
 }
 
-.emotion-10:hover:enabled i {
-  color: #0F0F10;
-}
-
-.emotion-10:active:enabled {
-  background-color: #F2F2F2;
-  color: #0F0F10;
-}
-
-.emotion-10:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+.emotion-10 i:last-child {
+  margin-right: -0.75rem;
 }
 
 .emotion-10:disabled {
@@ -1061,9 +1081,45 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with info 
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-10:enabled:active {
+  background-color: #F8F9F9;
+  color: #134537;
+}
+
+.emotion-10:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  color: #000;
+}
+
+.emotion-10:enabled:hover {
+  color: #134537;
+}
+
+.emotion-10::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-10:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-10:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-10 i {
+  color: 'inherit';
+}
+
 .emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr;
   visibility: visible;
 }
 
@@ -1140,11 +1196,13 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with info 
         aria-label="close"
         className="button--minimal emotion-10 emotion-11"
         disabled={false}
+        fontWeight="medium"
         onClick={[Function]}
         size="small"
       >
         <div
           className="emotion-8 emotion-9"
+          display="grid"
         >
           <i
             className="ar ar-cross emotion-6 emotion-1"
@@ -1201,22 +1259,21 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with no in
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.25rem;
-  height: 1.5rem;
   font-size: 0.75rem;
+  height: 1.5rem;
+  padding: 0 0.75rem;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #5B5D61;
+  color: #081D17;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-6:disabled {
@@ -1235,24 +1292,16 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with no in
 }
 
 .emotion-6 i {
-  color: #989A9C;
+  width: 1.5rem;
+  font-size: 0.6875rem;
 }
 
-.emotion-6:hover:enabled {
-  color: #0F0F10;
+.emotion-6 i:first-child {
+  margin-left: -0.75rem;
 }
 
-.emotion-6:hover:enabled i {
-  color: #0F0F10;
-}
-
-.emotion-6:active:enabled {
-  background-color: #F2F2F2;
-  color: #0F0F10;
-}
-
-.emotion-6:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+.emotion-6 i:last-child {
+  margin-right: -0.75rem;
 }
 
 .emotion-6:disabled {
@@ -1260,9 +1309,45 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with no in
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-6:enabled:active {
+  background-color: #F8F9F9;
+  color: #134537;
+}
+
+.emotion-6:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  color: #000;
+}
+
+.emotion-6:enabled:hover {
+  color: #134537;
+}
+
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-6:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-6 i {
+  color: 'inherit';
+}
+
 .emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr;
   visibility: visible;
 }
 
@@ -1296,11 +1381,13 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with no in
         aria-label="close"
         className="button--minimal emotion-6 emotion-7"
         disabled={false}
+        fontWeight="medium"
         onClick={[Function]}
         size="small"
       >
         <div
           className="emotion-4 emotion-5"
+          display="grid"
         >
           <i
             className="ar ar-cross emotion-2 emotion-3"
@@ -1330,22 +1417,21 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with succe
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.25rem;
-  height: 1.5rem;
   font-size: 0.75rem;
+  height: 1.5rem;
+  padding: 0 0.75rem;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #5B5D61;
+  color: #081D17;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-10:disabled {
@@ -1364,24 +1450,16 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with succe
 }
 
 .emotion-10 i {
-  color: #989A9C;
+  width: 1.5rem;
+  font-size: 0.6875rem;
 }
 
-.emotion-10:hover:enabled {
-  color: #0F0F10;
+.emotion-10 i:first-child {
+  margin-left: -0.75rem;
 }
 
-.emotion-10:hover:enabled i {
-  color: #0F0F10;
-}
-
-.emotion-10:active:enabled {
-  background-color: #F2F2F2;
-  color: #0F0F10;
-}
-
-.emotion-10:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+.emotion-10 i:last-child {
+  margin-right: -0.75rem;
 }
 
 .emotion-10:disabled {
@@ -1389,9 +1467,45 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with succe
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-10:enabled:active {
+  background-color: #F8F9F9;
+  color: #134537;
+}
+
+.emotion-10:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  color: #000;
+}
+
+.emotion-10:enabled:hover {
+  color: #134537;
+}
+
+.emotion-10::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-10:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-10:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-10 i {
+  color: 'inherit';
+}
+
 .emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr;
   visibility: visible;
 }
 
@@ -1468,11 +1582,13 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with succe
         aria-label="close"
         className="button--minimal emotion-10 emotion-11"
         disabled={false}
+        fontWeight="medium"
         onClick={[Function]}
         size="small"
       >
         <div
           className="emotion-8 emotion-9"
+          display="grid"
         >
           <i
             className="ar ar-cross emotion-6 emotion-1"
@@ -1502,22 +1618,21 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with warni
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.25rem;
-  height: 1.5rem;
   font-size: 0.75rem;
+  height: 1.5rem;
+  padding: 0 0.75rem;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #5B5D61;
+  color: #081D17;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-10:disabled {
@@ -1536,24 +1651,16 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with warni
 }
 
 .emotion-10 i {
-  color: #989A9C;
+  width: 1.5rem;
+  font-size: 0.6875rem;
 }
 
-.emotion-10:hover:enabled {
-  color: #0F0F10;
+.emotion-10 i:first-child {
+  margin-left: -0.75rem;
 }
 
-.emotion-10:hover:enabled i {
-  color: #0F0F10;
-}
-
-.emotion-10:active:enabled {
-  background-color: #F2F2F2;
-  color: #0F0F10;
-}
-
-.emotion-10:focus:enabled {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+.emotion-10 i:last-child {
+  margin-right: -0.75rem;
 }
 
 .emotion-10:disabled {
@@ -1561,9 +1668,45 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with warni
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-10:enabled:active {
+  background-color: #F8F9F9;
+  color: #134537;
+}
+
+.emotion-10:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  color: #000;
+}
+
+.emotion-10:enabled:hover {
+  color: #134537;
+}
+
+.emotion-10::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-10:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-10:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-10 i {
+  color: 'inherit';
+}
+
 .emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 0fr;
   visibility: visible;
 }
 
@@ -1640,11 +1783,13 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with warni
         aria-label="close"
         className="button--minimal emotion-10 emotion-11"
         disabled={false}
+        fontWeight="medium"
         onClick={[Function]}
         size="small"
       >
         <div
           className="emotion-8 emotion-9"
+          display="grid"
         >
           <i
             className="ar ar-cross emotion-6 emotion-1"

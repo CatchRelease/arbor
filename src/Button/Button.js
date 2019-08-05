@@ -3,8 +3,13 @@ import PropTypes from 'prop-types';
 
 import ButtonContent from './ButtonContent';
 import ButtonSpinner from './ButtonSpinner';
-import ButtonText from './ButtonText';
+import SIZES from './sizes';
 import StyledButton from './StyledButton';
+import Text from '../Text';
+import VARIANTS from './variants';
+import intent from '../theme/colors/intent';
+
+const INTENTS = Object.keys(intent);
 
 const Button = React.forwardRef(
   ({ children, iconStart, iconEnd, spin, variant, type, ...props }, ref) => (
@@ -18,14 +23,11 @@ const Button = React.forwardRef(
         variant,
         ...props
       }}
-      text={children}
     >
       {spin && <ButtonSpinner {...{ variant, ...props }} />}
-      <ButtonContent spin={spin}>
+      <ButtonContent {...{ hasText: !!children, iconStart, iconEnd, spin }}>
         {iconStart}
-        {children && (
-          <ButtonText {...{ iconStart, iconEnd }}>{children}</ButtonText>
-        )}
+        {children && <Text color="inherit">{children}</Text>}
         {iconEnd}
       </ButtonContent>
     </StyledButton>
@@ -63,6 +65,11 @@ Button.propTypes = {
   iconStart: PropTypes.element,
 
   /**
+   * Intent color to use in conjunction with variant
+   * */
+  intent: PropTypes.oneOf(INTENTS),
+
+  /**
    * Indicate if the spinner should display.
    */
   spin: PropTypes.bool,
@@ -70,7 +77,7 @@ Button.propTypes = {
   /**
    * Button size
    * */
-  size: PropTypes.oneOf(['small', 'medium', 'large', 'jumbo']),
+  size: PropTypes.oneOf(SIZES),
 
   /**
    * Button type.
@@ -80,13 +87,14 @@ Button.propTypes = {
   /**
    * Button variant.
    * */
-  variant: PropTypes.oneOf(['primary', 'secondary', 'minimal'])
+  variant: PropTypes.oneOf(VARIANTS)
 };
 
 Button.defaultProps = {
   children: undefined,
   disabled: false,
   fullWidth: false,
+  intent: 'brand',
   iconEnd: undefined,
   iconStart: undefined,
   spin: false,

@@ -26,21 +26,20 @@ exports[`<Header /> renders with heading and a button 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-6:disabled {
@@ -58,29 +57,62 @@ exports[`<Header /> renders with heading and a button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-6:hover:enabled {
-  background-color: #000;
+.emotion-6 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
 }
 
-.emotion-6:active:enabled {
+.emotion-6 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-6 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-6:enabled:active {
   background-color: #134537;
 }
 
-.emotion-6:focus:enabled {
+.emotion-6:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-6:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-6:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-6 i {
+  color: 'inherit';
 }
 
 .emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-2 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 <header
@@ -98,16 +130,19 @@ exports[`<Header /> renders with heading and a button 1`] = `
   <button
     className="button--primary emotion-6 emotion-7"
     disabled={false}
+    fontWeight="medium"
     size="large"
   >
     <div
       className="emotion-4 emotion-5"
+      display="grid"
     >
-      <span
+      <p
         className="emotion-2 emotion-3"
+        color="inherit"
       >
         Primary
-      </span>
+      </p>
     </div>
   </button>
 </header>
@@ -164,21 +199,20 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #081D17;
   color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-12:disabled {
@@ -196,29 +230,62 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   vertical-align: middle;
 }
 
-.emotion-12:hover:enabled {
-  background-color: #000;
+.emotion-12 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
 }
 
-.emotion-12:active:enabled {
+.emotion-12 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-12 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-12:enabled:active {
   background-color: #134537;
 }
 
-.emotion-12:focus:enabled {
+.emotion-12:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+}
+
+.emotion-12:enabled:hover {
+  background-color: #134537;
+}
+
+.emotion-12::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-12:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-12:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-12 i {
+  color: 'inherit';
 }
 
 .emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
   visibility: visible;
 }
 
 .emotion-2 {
-  margin-left: 0;
-  margin-right: 0;
-  vertical-align: middle;
+  font-family: Motiva Sans;
+  color: inherit;
 }
 
 .emotion-14 {
@@ -237,21 +304,20 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 3px;
-  font-family: Motiva Sans;
-  font-weight: 500;
-  line-height: 1;
   outline: none;
   position: relative;
   text-align: center;
   -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
   transition: box-shadow 0.3s ease,background 0.2s ease;
-  padding: 0 0.5rem;
-  height: 2.5rem;
   font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
   background-color: #FFFFFF;
-  color: #25272D;
+  color: #081D17;
+  font-weight: 500;
+  line-height: 1;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 .emotion-6:disabled {
@@ -270,29 +336,51 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 }
 
 .emotion-6 i {
-  color: #989A9C;
+  width: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.emotion-6 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-6 i:last-child {
+  margin-right: -1.25rem;
 }
 
 .emotion-6:enabled {
   border: 1px solid #E0E1E2;
 }
 
-.emotion-6:hover:enabled {
-  border: 1px solid #5B5D61;
+.emotion-6:enabled:active {
+  color: #134537;
+  background-color: #F8F9F9;
 }
 
-.emotion-6:hover:enabled i {
-  color: #081D17;
+.emotion-6:enabled:focus {
+  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  color: #000;
 }
 
-.emotion-6:active:enabled {
-  color: #081D17;
-  background-color: #F2F2F2;
+.emotion-6:enabled:hover {
+  border: 1px solid #134537;
+  color: #134537;
 }
 
-.emotion-6:focus:enabled {
+.emotion-6::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-6:focus {
   border: 1px solid transparent;
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #081D17;
+}
+
+.emotion-6:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-6 i {
+  color: 'inherit';
 }
 
 <header
@@ -310,31 +398,37 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   <button
     className="button--secondary emotion-6 emotion-7"
     disabled={false}
+    fontWeight="medium"
     size="large"
   >
     <div
       className="emotion-4 emotion-5"
+      display="grid"
     >
-      <span
+      <p
         className="emotion-2 emotion-3"
+        color="inherit"
       >
         Secondary
-      </span>
+      </p>
     </div>
   </button>
   <button
     className="button--primary emotion-12 emotion-7"
     disabled={false}
+    fontWeight="medium"
     size="large"
   >
     <div
       className="emotion-4 emotion-5"
+      display="grid"
     >
-      <span
+      <p
         className="emotion-2 emotion-3"
+        color="inherit"
       >
         Primary
-      </span>
+      </p>
     </div>
   </button>
 </header>
