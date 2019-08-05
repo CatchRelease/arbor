@@ -4,7 +4,12 @@ import PropTypes from 'prop-types';
 import Flex from '../Flex';
 
 const StyledAutoCompletePlaceholder = ({ children, ...props }) => (
-  <Flex alignSelf="center" color="text.placeholder" {...props}>
+  <Flex
+    alignSelf="center"
+    color="text.placeholder"
+    position="absolute"
+    {...props}
+  >
     {children}
   </Flex>
 );
