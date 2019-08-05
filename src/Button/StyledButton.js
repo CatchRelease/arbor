@@ -1,11 +1,17 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
-import { borders, borderColor, space } from 'styled-system';
+import {
+  borders,
+  borderColor,
+  fontWeight,
+  lineHeight,
+  space
+} from 'styled-system';
 
-import buttonSizes from './buttonSizes';
-import variants from './variants';
-import whiteSpace from '../utils/whiteSpace';
+import sizeStyles from './sizeStyles';
 import textTransform from '../utils/textTransform';
+import variantStyles from './variantStyles';
+import whiteSpace from '../utils/whiteSpace';
 
 const fullWidthStyles = ({ fullWidth }) =>
   fullWidth &&
@@ -14,10 +20,6 @@ const fullWidthStyles = ({ fullWidth }) =>
   `;
 const StyledButton = styled.button`
   appearance: none;
-  border-radius: ${props => props.theme.radii.small};
-  font-family: ${props => props.theme.brandFont};
-  font-weight: ${props => props.theme.fontWeights.medium};
-  line-height: ${props => props.theme.lineHeights.regular};
   outline: none;
   position: relative;
   text-align: center;
@@ -38,9 +40,11 @@ const StyledButton = styled.button`
     vertical-align: middle;
   }
 
-  ${buttonSizes};
-  ${variants};
+  ${sizeStyles};
+  ${variantStyles};
+  ${fontWeight};
   ${fullWidthStyles};
+  ${lineHeight};
   ${space};
   ${textTransform};
   ${whiteSpace};
@@ -51,13 +55,18 @@ const StyledButton = styled.button`
 StyledButton.propTypes = {
   ...borders.propTypes,
   ...borderColor.propTypes,
+  ...fontWeight.propTypes,
+  ...lineHeight.propTypes,
   ...space.propTypes,
   ...textTransform.propTypes,
   ...whiteSpace.propTypes
 };
 
 StyledButton.defaultProps = {
-  border: '1px solid transparent'
+  border: '1px solid transparent',
+  borderRadius: 'small',
+  fontWeight: 'medium',
+  lineHeight: 'regular'
 };
 
 export default StyledButton;
