@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tabs /> activeTabLabel is not passed renders the first tab as active 1`] = `
+<Fragment>
+  <Flex>
+    <Tab
+      active={true}
+      alignItems="center"
+      aria-controls="tab-content-1"
+      aria-selected="true"
+      borderBottom="2px solid transparent"
+      color="text.muted"
+      flex="1"
+      fontSize="size4"
+      justifyContent="center"
+      key="tab1"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      overflow="hidden"
+      py="regular"
+      tabIndex="0"
+      textOverflow="ellipsis"
+      whiteSpace="nowrap"
+    >
+      tab1
+    </Tab>
+    <Tab
+      active={false}
+      alignItems="center"
+      aria-controls="tab-content-2"
+      aria-selected="false"
+      borderBottom="2px solid transparent"
+      color="text.muted"
+      flex="1"
+      fontSize="size4"
+      justifyContent="center"
+      key="tab2"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      overflow="hidden"
+      py="regular"
+      tabIndex="0"
+      textOverflow="ellipsis"
+      whiteSpace="nowrap"
+    >
+      tab2
+    </Tab>
+  </Flex>
+  <TabContent
+    Component={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "__emotion_base": "div",
+        "__emotion_forwardProp": undefined,
+        "__emotion_real": [Circular],
+        "__emotion_styles": Array [
+          "label:Box;",
+          "label:Text;",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          "label:Box;",
+          "box-sizing:border-box;",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+        ],
+        "defaultProps": undefined,
+        "displayName": "Box",
+        "propTypes": Object {},
+        "render": [Function],
+        "withComponent": [Function],
+      }
+    }
+    id="tab-content-1"
+  >
+    Tab 1 Content
+  </TabContent>
+</Fragment>
+`;
+
+exports[`<Tabs /> activeTabLabel is passed renders the first tab as active 1`] = `
+<Fragment>
+  <Flex
+    activeTabLabel="tab2"
+  >
+    <Tab
+      active={false}
+      alignItems="center"
+      aria-controls="tab-content-1"
+      aria-selected="false"
+      borderBottom="2px solid transparent"
+      color="text.muted"
+      flex="1"
+      fontSize="size4"
+      justifyContent="center"
+      key="tab1"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      overflow="hidden"
+      py="regular"
+      tabIndex="0"
+      textOverflow="ellipsis"
+      whiteSpace="nowrap"
+    >
+      tab1
+    </Tab>
+    <Tab
+      active={true}
+      alignItems="center"
+      aria-controls="tab-content-2"
+      aria-selected="true"
+      borderBottom="2px solid transparent"
+      color="text.muted"
+      flex="1"
+      fontSize="size4"
+      justifyContent="center"
+      key="tab2"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      overflow="hidden"
+      py="regular"
+      tabIndex="0"
+      textOverflow="ellipsis"
+      whiteSpace="nowrap"
+    >
+      tab2
+    </Tab>
+  </Flex>
+  <TabContent
+    Component={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "__emotion_base": "div",
+        "__emotion_forwardProp": undefined,
+        "__emotion_real": [Circular],
+        "__emotion_styles": Array [
+          "label:Box;",
+          "label:Text;",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          "label:Box;",
+          "box-sizing:border-box;",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+          [Function],
+          ";",
+        ],
+        "defaultProps": undefined,
+        "displayName": "Box",
+        "propTypes": Object {},
+        "render": [Function],
+        "withComponent": [Function],
+      }
+    }
+    id="tab-content-2"
+  >
+    Tab 2 Content
+  </TabContent>
+</Fragment>
+`;
