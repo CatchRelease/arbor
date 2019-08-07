@@ -5,6 +5,9 @@ import Flex from '../Flex';
 import Tab from './Tab';
 import { ENTER_KEY, SPACEBAR } from '../constants';
 
+const getTabContentId = ({ props: { children, id } }) =>
+  children.props.id || `${id}-tab-content`;
+
 class Tabs extends React.Component {
   constructor(props) {
     super(props);
@@ -16,12 +19,18 @@ class Tabs extends React.Component {
     };
   }
 
-  get activeTabContent() {
+  get activeTab() {
     const { activeTabId } = this.state;
     const { children } = this.props;
-    const activeTab = children.find(({ props: { id } }) => id === activeTabId);
+    return children.find(({ props: { id } }) => id === activeTabId);
+  }
 
-    return activeTab.props.content;
+  get activeTabContent() {
+    const { activeTab } = this;
+
+    return React.cloneElement(activeTab.props.children, {
+      id: getTabContentId(activeTab)
+    });
   }
 
   activateTab = tab => {
@@ -44,19 +53,22 @@ class Tabs extends React.Component {
       <>
         <Component {...props}>
           {children.map(tab => {
-            const { content, id } = tab.props;
+            const { id, title } = tab.props;
             const active = activeTabId === id;
-            const contentId = content.props.id || `${id}-tab-content`;
+            const tabContentId = getTabContentId(tab);
 
-            return React.cloneElement(tab, {
-              'aria-controls': contentId,
-              'aria-selected': active ? 'true' : 'false',
-              active,
-              content: React.cloneElement(content, { id: contentId }),
-              key: id,
-              onClick: () => this.activateTab(tab),
-              onKeyPress: ({ key }) => this.handleKeyPress(key, tab)
-            });
+            return React.cloneElement(
+              tab,
+              {
+                'aria-controls': tabContentId,
+                'aria-selected': active ? 'true' : 'false',
+                active,
+                key: id,
+                onClick: () => this.activateTab(tab),
+                onKeyPress: ({ key }) => this.handleKeyPress(key, tab)
+              },
+              title
+            );
           })}
         </Component>
         {this.activeTabContent}

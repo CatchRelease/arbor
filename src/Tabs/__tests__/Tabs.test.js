@@ -9,11 +9,11 @@ import { ENTER_KEY, SPACEBAR } from '../../constants';
 const render = (props = {}) =>
   shallow(
     <Tabs {...props}>
-      <Tab content={<Box>Tab 1 Content</Box>} id="tab-1">
-        Tab 1
+      <Tab id="tab-1" title="Tab 1">
+        <Box>Tab 1 Content</Box>
       </Tab>
-      <Tab content={<Box>Tab 2 Content</Box>} id="tab-2">
-        Tab 2
+      <Tab id="tab-2" title="Tab 2">
+        <Box>Tab 2 Content</Box>
       </Tab>
     </Tabs>
   );

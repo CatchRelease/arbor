@@ -7,18 +7,12 @@ exports[`<Tabs /> activeTabId is not passed renders the first tab as active 1`] 
       active={true}
       aria-controls="tab-1-tab-content"
       aria-selected="true"
-      content={
-        <ForwardRef(render)
-          id="tab-1-tab-content"
-        >
-          Tab 1 Content
-        </ForwardRef(render)>
-      }
       id="tab-1"
       key="tab-1"
       onClick={[Function]}
       onKeyPress={[Function]}
       tabIndex="0"
+      title="Tab 1"
     >
       Tab 1
     </Tab>
@@ -26,23 +20,19 @@ exports[`<Tabs /> activeTabId is not passed renders the first tab as active 1`] 
       active={false}
       aria-controls="tab-2-tab-content"
       aria-selected="false"
-      content={
-        <ForwardRef(render)
-          id="tab-2-tab-content"
-        >
-          Tab 2 Content
-        </ForwardRef(render)>
-      }
       id="tab-2"
       key="tab-2"
       onClick={[Function]}
       onKeyPress={[Function]}
       tabIndex="0"
+      title="Tab 2"
     >
       Tab 2
     </Tab>
   </Flex>
-  <Box>
+  <Box
+    id="tab-1-tab-content"
+  >
     Tab 1 Content
   </Box>
 </Fragment>
@@ -57,18 +47,12 @@ exports[`<Tabs /> activeTabId is passed renders the first tab as active 1`] = `
       active={false}
       aria-controls="tab-1-tab-content"
       aria-selected="false"
-      content={
-        <ForwardRef(render)
-          id="tab-1-tab-content"
-        >
-          Tab 1 Content
-        </ForwardRef(render)>
-      }
       id="tab-1"
       key="tab-1"
       onClick={[Function]}
       onKeyPress={[Function]}
       tabIndex="0"
+      title="Tab 1"
     >
       Tab 1
     </Tab>
@@ -76,23 +60,19 @@ exports[`<Tabs /> activeTabId is passed renders the first tab as active 1`] = `
       active={true}
       aria-controls="tab-2-tab-content"
       aria-selected="true"
-      content={
-        <ForwardRef(render)
-          id="tab-2-tab-content"
-        >
-          Tab 2 Content
-        </ForwardRef(render)>
-      }
       id="tab-2"
       key="tab-2"
       onClick={[Function]}
       onKeyPress={[Function]}
       tabIndex="0"
+      title="Tab 2"
     >
       Tab 2
     </Tab>
   </Flex>
-  <Box>
+  <Box
+    id="tab-2-tab-content"
+  >
     Tab 2 Content
   </Box>
 </Fragment>
