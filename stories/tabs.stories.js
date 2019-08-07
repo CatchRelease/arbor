@@ -5,20 +5,11 @@ import { Box, Heading, Icon, Text, Tab, Tabs } from '../src';
 
 const stories = storiesOf('Tabs', module);
 
-const Box1 = (
-  <Box bg="palette.blue.lighter" p="largest">
-    Tab 1 Content
-  </Box>
-);
-const Box2 = (
-  <Box bg="palette.green.lighter" p="largest">
-    Tab 2 Content
-  </Box>
-);
-const Box3 = (
-  <Box bg="palette.red.lighter" id="foo-3" p="largest">
-    Tab 3 Content
-  </Box>
+const titleAsComponent = (
+  <Text>
+    WHOA!
+    <Icon ml="smaller" name="cr-logo" />
+  </Text>
 );
 
 stories.add('Default', () => (
@@ -26,17 +17,20 @@ stories.add('Default', () => (
     <Heading.h1>Tabs</Heading.h1>
 
     <Tabs activeTabId="tab-2">
-      <Tab content={Box1} id="tab-1">
-        Tab 1
+      <Tab id="tab-1" title="Tab 1">
+        <Box bg="palette.blue.lighter" p="largest">
+          Tab 1 Content
+        </Box>
       </Tab>
-      <Tab content={Box2} id="tab-2">
-        <Text>
-          WHOA!
-          <Icon ml="smaller" name="cr-logo" />
-        </Text>
+      <Tab id="tab-2" title={titleAsComponent}>
+        <Box bg="palette.green.lighter" p="largest">
+          Tab 2 Content
+        </Box>
       </Tab>
-      <Tab content={Box3} id="tab-3">
-        Tab 3
+      <Tab id="tab-3" title="Tab 3">
+        <Box bg="palette.red.lighter" id="foo-3" p="largest">
+          Tab 3 Content
+        </Box>
       </Tab>
     </Tabs>
   </Box>

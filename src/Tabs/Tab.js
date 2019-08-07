@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 import StyledTab from './StyledTab';
 
-const Tab = props => <StyledTab {...props} />;
+const Tab = ({ children, ...props }) => (
+  <StyledTab {...props}>{children}</StyledTab>
+);
 
 Tab.propTypes = {
   active: PropTypes.bool,
