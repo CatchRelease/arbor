@@ -9,27 +9,25 @@ class Tabs extends React.Component {
   constructor(props) {
     super(props);
 
-    const { activeTabLabel, children } = this.props;
+    const { activeTabId, children } = this.props;
 
     this.state = {
-      activeTabLabel: activeTabLabel || children[0].props.label
+      activeTabId: activeTabId || children[0].props.id
     };
   }
 
   get activeTabContent() {
-    const { activeTabLabel } = this.state;
+    const { activeTabId } = this.state;
     const { children } = this.props;
-    const activeTab = children.find(
-      ({ props: { label } }) => label === activeTabLabel
-    );
+    const activeTab = children.find(({ props: { id } }) => id === activeTabId);
 
     return activeTab.props.content;
   }
 
   activateTab = tab => {
-    const { label } = tab.props;
+    const { id } = tab.props;
 
-    this.setState({ activeTabLabel: label });
+    this.setState({ activeTabId: id });
   };
 
   handleKeyPress = (key, tab) => {
@@ -39,35 +37,26 @@ class Tabs extends React.Component {
   };
 
   render() {
-    const { activeTabLabel } = this.state;
+    const { activeTabId } = this.state;
     const { Component, children, ...props } = this.props;
 
     return (
       <>
         <Component {...props}>
           {children.map(tab => {
-            const {
-              label,
-              children: tabChildren,
-              content,
-              ...tabProps
-            } = tab.props;
-            const active = activeTabLabel === label;
+            const { content, id } = tab.props;
+            const active = activeTabId === id;
+            const contentId = content.props.id || `${id}-tab-content`;
 
-            return (
-              <Tab
-                active={active}
-                aria-controls={content.props.id}
-                aria-selected={active ? 'true' : 'false'}
-                key={label}
-                onClick={() => this.activateTab(tab)}
-                onKeyPress={({ key }) => this.handleKeyPress(key, tab)}
-                tabIndex="0"
-                {...tabProps}
-              >
-                {tabChildren || label}
-              </Tab>
-            );
+            return React.cloneElement(tab, {
+              'aria-controls': contentId,
+              'aria-selected': active ? 'true' : 'false',
+              active,
+              content: React.cloneElement(content, { id: contentId }),
+              key: id,
+              onClick: () => this.activateTab(tab),
+              onKeyPress: ({ key }) => this.handleKeyPress(key, tab)
+            });
           })}
         </Component>
         {this.activeTabContent}
@@ -78,16 +67,16 @@ class Tabs extends React.Component {
 
 Tabs.propTypes = {
   Component: PropTypes.elementType,
-  activeTabLabel: PropTypes.string,
+  activeTabId: PropTypes.string,
   children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
+    PropTypes.arrayOf(Tab),
+    PropTypes.objectOf(Tab)
   ]).isRequired
 };
 
 Tabs.defaultProps = {
   Component: Flex,
-  activeTabLabel: undefined
+  activeTabId: undefined
 };
 
 export default Tabs;

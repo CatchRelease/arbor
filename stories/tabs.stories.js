@@ -1,39 +1,43 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Heading, Icon, Text, Tab, TabContent, Tabs } from '../src';
+import { Box, Heading, Icon, Text, Tab, Tabs } from '../src';
 
 const stories = storiesOf('Tabs', module);
 
-const TabContent1 = (
-  <TabContent bg="palette.blue.lighter" id="tab-content-1" p="largest">
+const Box1 = (
+  <Box bg="palette.blue.lighter" p="largest">
     Tab 1 Content
-  </TabContent>
+  </Box>
 );
-const TabContent2 = (
-  <TabContent bg="palette.green.lighter" id="tab-content-2" p="largest">
+const Box2 = (
+  <Box bg="palette.green.lighter" p="largest">
     Tab 2 Content
-  </TabContent>
+  </Box>
 );
-const TabContent3 = (
-  <TabContent bg="palette.red.lighter" id="tab-content-3" p="largest">
+const Box3 = (
+  <Box bg="palette.red.lighter" id="foo-3" p="largest">
     Tab 3 Content
-  </TabContent>
+  </Box>
 );
 
 stories.add('Default', () => (
   <Box as="section" p="regular">
     <Heading.h1>Tabs</Heading.h1>
 
-    <Tabs activeTabLabel="Tab 2">
-      <Tab content={TabContent1} label="Tab 1" />
-      <Tab content={TabContent2} label="Tab 2">
+    <Tabs activeTabId="tab-2">
+      <Tab content={Box1} id="tab-1">
+        Tab 1
+      </Tab>
+      <Tab content={Box2} id="tab-2">
         <Text>
           WHOA!
           <Icon ml="smaller" name="cr-logo" />
         </Text>
       </Tab>
-      <Tab content={TabContent3} label="Tab 3" />
+      <Tab content={Box3} id="tab-3">
+        Tab 3
+      </Tab>
     </Tabs>
   </Box>
 ));
