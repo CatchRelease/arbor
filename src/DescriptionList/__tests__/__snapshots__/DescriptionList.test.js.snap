@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DescriptionList /> renders the description list properly 1`] = `
+.emotion-12 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #5B5D61;
+  font-size: 0.8125rem;
+  line-height: 1.25;
+  margin-bottom: 0.25rem;
+  box-sizing: border-box;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+<DescriptionList>
+  <dl
+    className="emotion-12 emotion-13"
+  >
+    <DescriptionTerm
+      color="text.muted"
+      fontSize="size3"
+      lineHeight="small"
+      mb="smallest"
+    >
+      <dt
+        className="emotion-0 emotion-1"
+        color="text.muted"
+        fontSize="size3"
+      >
+        Term 1
+      </dt>
+    </DescriptionTerm>
+    <DescriptionDetails
+      color="text.default"
+      fontSize="size4"
+      lineHeight="small"
+      mb="regular"
+    >
+      <dd
+        className="emotion-2 emotion-3"
+        color="text.default"
+        fontSize="size4"
+      >
+        Term 1 Details
+      </dd>
+    </DescriptionDetails>
+    <DescriptionTerm
+      color="text.muted"
+      fontSize="size3"
+      lineHeight="small"
+      mb="smallest"
+    >
+      <dt
+        className="emotion-0 emotion-1"
+        color="text.muted"
+        fontSize="size3"
+      >
+        Term 2
+      </dt>
+    </DescriptionTerm>
+    <DescriptionDetails
+      color="text.default"
+      fontSize="size4"
+      lineHeight="small"
+      mb="regular"
+    >
+      <dd
+        className="emotion-2 emotion-3"
+        color="text.default"
+        fontSize="size4"
+      >
+        Term 2 Details
+      </dd>
+    </DescriptionDetails>
+    <DescriptionTerm
+      color="text.muted"
+      fontSize="size3"
+      lineHeight="small"
+      mb="smallest"
+    >
+      <dt
+        className="emotion-0 emotion-1"
+        color="text.muted"
+        fontSize="size3"
+      >
+        Term 3
+      </dt>
+    </DescriptionTerm>
+    <DescriptionDetails
+      color="text.default"
+      fontSize="size4"
+      lineHeight="small"
+      mb="regular"
+    >
+      <dd
+        className="emotion-2 emotion-3"
+        color="text.default"
+        fontSize="size4"
+      >
+        Term 3 Details
+      </dd>
+    </DescriptionDetails>
+  </dl>
+</DescriptionList>
+`;
