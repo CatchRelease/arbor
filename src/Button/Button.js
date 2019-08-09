@@ -10,13 +10,13 @@ const Button = React.forwardRef(
   ({ children, iconStart, iconEnd, spin, variant, type, ...props }, ref) => (
     <StyledButton
       {...{
-        ...props,
-        iconStart,
+        className: `button--${variant}`,
         iconEnd,
+        iconStart,
         ref,
         type,
         variant,
-        className: `button--${variant}`
+        ...props
       }}
       text={children}
     >

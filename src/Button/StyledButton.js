@@ -5,6 +5,7 @@ import { borders, borderColor, space } from 'styled-system';
 import buttonSizes from './buttonSizes';
 import variants from './variants';
 import whiteSpace from '../utils/whiteSpace';
+import textTransform from '../utils/textTransform';
 
 const fullWidthStyles = ({ fullWidth }) =>
   fullWidth &&
@@ -41,6 +42,7 @@ const StyledButton = styled.button`
   ${variants};
   ${fullWidthStyles};
   ${space};
+  ${textTransform};
   ${whiteSpace};
   ${borders};
   ${borderColor};
@@ -50,6 +52,7 @@ StyledButton.propTypes = {
   ...borders.propTypes,
   ...borderColor.propTypes,
   ...space.propTypes,
+  ...textTransform.propTypes,
   ...whiteSpace.propTypes
 };
 
