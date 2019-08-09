@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 
-import Flex from '../Flex';
+import Box from '../Box';
 
 const activeStyles = ({ active, theme }) => {
   const color = theme.colors.intent.brand.dark;
@@ -21,9 +21,13 @@ const activeStyles = ({ active, theme }) => {
   );
 };
 
-const StyledTab = styled(Flex)`
+const StyledTab = styled(Box)`
   cursor: pointer;
   outline: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &:focus,
   &:hover {
@@ -42,10 +46,13 @@ StyledTab.defaultProps = {
   active: false,
   alignItems: 'center',
   borderBottom: '2px solid transparent',
+  borderColor: 'border.default',
   color: 'text.muted',
-  flex: '1',
+  display: 'inline-block',
   fontSize: 'size4',
   justifyContent: 'center',
+  mb: '-4px',
+  mr: 'regular',
   overflow: 'hidden',
   py: 'regular',
   tabIndex: '0',

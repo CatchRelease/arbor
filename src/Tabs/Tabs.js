@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Flex from '../Flex';
+import StyledTabs from './StyledTabs';
 import Tab from './Tab';
 import { ENTER_KEY, SPACEBAR } from '../constants';
 
@@ -47,11 +47,11 @@ class Tabs extends React.Component {
 
   render() {
     const { activeTabId } = this.state;
-    const { Component, children, ...props } = this.props;
+    const { children, ...props } = this.props;
 
     return (
       <>
-        <Component {...props}>
+        <StyledTabs {...props}>
           {children.map(tab => {
             const { id, title } = tab.props;
             const active = activeTabId === id;
@@ -70,7 +70,7 @@ class Tabs extends React.Component {
               title
             );
           })}
-        </Component>
+        </StyledTabs>
         {this.activeTabContent}
       </>
     );
@@ -78,7 +78,6 @@ class Tabs extends React.Component {
 }
 
 Tabs.propTypes = {
-  Component: PropTypes.elementType,
   activeTabId: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(Tab),
@@ -87,7 +86,6 @@ Tabs.propTypes = {
 };
 
 Tabs.defaultProps = {
-  Component: Flex,
   activeTabId: undefined
 };
 
