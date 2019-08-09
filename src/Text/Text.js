@@ -13,6 +13,7 @@ import {
   textAlign
 } from 'styled-system';
 
+import textTransform from '../utils/textTransform';
 import textOverflow from '../utils/textOverflow';
 import whiteSpace from '../utils/whiteSpace';
 
@@ -32,6 +33,7 @@ const Text = styled.p`
   ${overflow};
   ${space};
   ${textAlign};
+  ${textTransform};
   ${textOverflow};
   ${whiteSpace};
 `;
@@ -46,6 +48,7 @@ Text.propTypes = {
   ...overflow.propTypes,
   ...space.propTypes,
   ...textAlign.propTypes,
+  ...textTransform.propTypes,
   ...textOverflow.propTypes,
   ...whiteSpace.propTypes
 };
