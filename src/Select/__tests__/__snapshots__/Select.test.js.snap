@@ -121,7 +121,11 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
     <select
       className="emotion-2 emotion-3"
       id="example"
-    />
+    >
+      <option>
+        Some Option
+      </option>
+    </select>
   </div>
   <span
     className="emotion-6 emotion-7"
@@ -279,7 +283,11 @@ exports[`<Select /> renders a Select with a label correctly 1`] = `
     <select
       className="emotion-6 emotion-7"
       id="example"
-    />
+    >
+      <option>
+        Some Option
+      </option>
+    </select>
   </div>
   
 </div>
@@ -415,7 +423,11 @@ exports[`<Select /> renders a Select with a labelAside correctly 1`] = `
     <select
       className="emotion-4 emotion-5"
       id="example"
-    />
+    >
+      <option>
+        Some Option
+      </option>
+    </select>
   </div>
   
 </div>
@@ -536,7 +548,11 @@ exports[`<Select /> renders a large Select correctly 1`] = `
     <select
       className="emotion-2 emotion-3"
       id="example"
-    />
+    >
+      <option>
+        Some Option
+      </option>
+    </select>
   </div>
   
 </div>
@@ -656,7 +672,11 @@ exports[`<Select /> renders an Select correctly 1`] = `
     <select
       className="emotion-2 emotion-3"
       id="example"
-    />
+    >
+      <option>
+        Some Option
+      </option>
+    </select>
   </div>
   
 </div>
