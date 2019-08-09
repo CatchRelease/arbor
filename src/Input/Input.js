@@ -16,7 +16,7 @@ Input.propTypes = {
   /**
    * The actualy HTML element tag to use when rendering.
    */
-  as: PropTypes.stirng,
+  as: PropTypes.string,
 
   /**
    * Optional text to be displayed underneath the input.
