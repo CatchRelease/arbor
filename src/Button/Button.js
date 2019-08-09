@@ -34,9 +34,12 @@ const Button = React.forwardRef(
 
 Button.propTypes = {
   /**
-   * Text to render inside the button.
+   * Content to render inside the button.
    */
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node)
+  ]),
 
   /**
    * Disabled state of button
