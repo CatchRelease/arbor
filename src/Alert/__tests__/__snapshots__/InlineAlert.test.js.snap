@@ -703,7 +703,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with dang
 .emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  display: grid;
+  display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -771,7 +771,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with dang
     >
       <div
         className="emotion-8 emotion-9"
-        display="grid"
+        display="inline-grid"
       >
         <i
           className="ar ar-cross emotion-6 emotion-1"
@@ -883,7 +883,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with info
 .emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  display: grid;
+  display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -951,7 +951,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with info
     >
       <div
         className="emotion-8 emotion-9"
-        display="grid"
+        display="inline-grid"
       >
         <i
           className="ar ar-cross emotion-6 emotion-1"
@@ -1077,7 +1077,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with no i
 .emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  display: grid;
+  display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1116,7 +1116,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with no i
     >
       <div
         className="emotion-4 emotion-5"
-        display="grid"
+        display="inline-grid"
       >
         <i
           className="ar ar-cross emotion-2 emotion-3"
@@ -1228,7 +1228,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with succ
 .emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  display: grid;
+  display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1296,7 +1296,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with succ
     >
       <div
         className="emotion-8 emotion-9"
-        display="grid"
+        display="inline-grid"
       >
         <i
           className="ar ar-cross emotion-6 emotion-1"
@@ -1408,7 +1408,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with warn
 .emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  display: grid;
+  display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1476,7 +1476,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with warn
     >
       <div
         className="emotion-8 emotion-9"
-        display="grid"
+        display="inline-grid"
       >
         <i
           className="ar ar-cross emotion-6 emotion-1"
