@@ -41,6 +41,7 @@ ButtonContent.propTypes = {
 
 ButtonContent.defaultProps = {
   ...Grid.defaultProps,
+  display: 'inline-grid',
   alignItems: 'center',
   hasText: false,
   iconEnd: undefined,

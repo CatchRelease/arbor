@@ -132,225 +132,283 @@ const variantOptions = ['primary', 'secondary', 'minimal'];
 
 stories.add('Icon button', () => (
   <Box m="regular">
-    <ButtonTable>
-      <thead>
-        <tr className={css({ marginBottom: '10px' })}>
-          <th>
-            <Heading.h3 textAlign="left">iconStart</Heading.h3>
-          </th>
-          <th>
-            <Heading.h3 textAlign="left">iconEnd</Heading.h3>
-          </th>
-          <th>
-            <Heading.h3 textAlign="left">iconStart and iconEnd</Heading.h3>
-          </th>
-          <th>
-            <Heading.h3 textAlign="left">Icon Only</Heading.h3>
-          </th>
-        </tr>
-      </thead>
+    <Box mb="large">
+      <ButtonTable>
+        <thead>
+          <tr className={css({ marginBottom: '10px' })}>
+            <th>
+              <Heading.h3 textAlign="left">iconStart</Heading.h3>
+            </th>
+            <th>
+              <Heading.h3 textAlign="left">iconEnd</Heading.h3>
+            </th>
+            <th>
+              <Heading.h3 textAlign="left">iconStart and iconEnd</Heading.h3>
+            </th>
+            <th>
+              <Heading.h3 textAlign="left">Icon Only</Heading.h3>
+            </th>
+          </tr>
+        </thead>
 
-      <tbody>
-        <tr className={css({ marginBottom: '10px' })}>
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="small"
-              variant={select('Variant', variantOptions)}
-            >
-              button label
-            </Button>
-          </td>
+        <tbody>
+          <tr className={css({ marginBottom: '10px' })}>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="small"
+                variant={select('Variant', variantOptions)}
+              >
+                button label
+              </Button>
+            </td>
 
-          <td>
-            <Button
-              intent={select('intent', INTENTS, 'brand')}
-              size="small"
-              spin={boolean('spin', false)}
-              variant={select('Variant', variantOptions)}
-              iconEnd={icon2}
-            >
-              button label
-            </Button>
-          </td>
+            <td>
+              <Button
+                intent={select('intent', INTENTS, 'brand')}
+                size="small"
+                spin={boolean('spin', false)}
+                variant={select('Variant', variantOptions)}
+                iconEnd={icon2}
+              >
+                button label
+              </Button>
+            </td>
 
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="small"
-              variant={select('Variant', variantOptions)}
-              iconEnd={icon2}
-            >
-              button label
-            </Button>
-          </td>
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="small"
-              aria-label="Edit"
-              variant={select('Variant', variantOptions)}
-            />
-          </td>
-        </tr>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="small"
+                variant={select('Variant', variantOptions)}
+                iconEnd={icon2}
+              >
+                button label
+              </Button>
+            </td>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="small"
+                aria-label="Edit"
+                variant={select('Variant', variantOptions)}
+              />
+            </td>
+          </tr>
 
-        <tr className={css({ marginBottom: '10px' })}>
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="medium"
-              aria-label="Edit"
-              variant={select('Variant', variantOptions)}
-            >
-              button label
-            </Button>
-          </td>
+          <tr className={css({ marginBottom: '10px' })}>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="medium"
+                aria-label="Edit"
+                variant={select('Variant', variantOptions)}
+              >
+                button label
+              </Button>
+            </td>
 
-          <td>
-            <Button
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="medium"
-              variant={select('Variant', variantOptions)}
-              iconEnd={icon2}
-            >
-              button label
-            </Button>
-          </td>
+            <td>
+              <Button
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="medium"
+                variant={select('Variant', variantOptions)}
+                iconEnd={icon2}
+              >
+                button label
+              </Button>
+            </td>
 
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="medium"
-              variant={select('Variant', variantOptions)}
-              iconEnd={icon2}
-            >
-              button label
-            </Button>
-          </td>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="medium"
+                variant={select('Variant', variantOptions)}
+                iconEnd={icon2}
+              >
+                button label
+              </Button>
+            </td>
 
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="medium"
-              aria-label="Edit"
-              variant={select('Variant', variantOptions)}
-            />
-          </td>
-        </tr>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="medium"
+                aria-label="Edit"
+                variant={select('Variant', variantOptions)}
+              />
+            </td>
+          </tr>
 
-        <tr className={css({ marginBottom: '10px' })}>
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="large"
-              variant={select('Variant', variantOptions)}
-            >
-              button label
-            </Button>
-          </td>
+          <tr className={css({ marginBottom: '10px' })}>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="large"
+                variant={select('Variant', variantOptions)}
+              >
+                button label
+              </Button>
+            </td>
 
-          <td>
-            <Button
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="large"
-              variant={select('Variant', variantOptions)}
-              iconEnd={icon2}
-            >
-              button label
-            </Button>
-          </td>
+            <td>
+              <Button
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="large"
+                variant={select('Variant', variantOptions)}
+                iconEnd={icon2}
+              >
+                button label
+              </Button>
+            </td>
 
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="large"
-              variant={select('Variant', variantOptions)}
-              iconEnd={icon2}
-            >
-              button label
-            </Button>
-          </td>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="large"
+                variant={select('Variant', variantOptions)}
+                iconEnd={icon2}
+              >
+                button label
+              </Button>
+            </td>
 
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="large"
-              aria-label="Edit"
-              variant={select('Variant', variantOptions)}
-            />
-          </td>
-        </tr>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="large"
+                aria-label="Edit"
+                variant={select('Variant', variantOptions)}
+              />
+            </td>
+          </tr>
 
-        <tr className={css({ marginBottom: '10px' })}>
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="jumbo"
-              variant={select('Variant', variantOptions)}
-            >
-              button label
-            </Button>
-          </td>
+          <tr className={css({ marginBottom: '10px' })}>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="jumbo"
+                variant={select('Variant', variantOptions)}
+              >
+                button label
+              </Button>
+            </td>
 
-          <td>
-            <Button
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="jumbo"
-              variant={select('Variant', variantOptions)}
-              iconEnd={icon2}
-            >
-              button label
-            </Button>
-          </td>
+            <td>
+              <Button
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="jumbo"
+                variant={select('Variant', variantOptions)}
+                iconEnd={icon2}
+              >
+                button label
+              </Button>
+            </td>
 
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="jumbo"
-              variant={select('Variant', variantOptions)}
-              iconEnd={icon2}
-            >
-              button label
-            </Button>
-          </td>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="jumbo"
+                variant={select('Variant', variantOptions)}
+                iconEnd={icon2}
+              >
+                button label
+              </Button>
+            </td>
 
-          <td>
-            <Button
-              iconStart={icon}
-              intent={select('intent', INTENTS, 'brand')}
-              spin={boolean('spin', false)}
-              size="jumbo"
-              aria-label="Edit"
-              variant={select('Variant', variantOptions)}
-            />
-          </td>
-        </tr>
-      </tbody>
-    </ButtonTable>
+            <td>
+              <Button
+                iconStart={icon}
+                intent={select('intent', INTENTS, 'brand')}
+                spin={boolean('spin', false)}
+                size="jumbo"
+                aria-label="Edit"
+                variant={select('Variant', variantOptions)}
+              />
+            </td>
+          </tr>
+        </tbody>
+      </ButtonTable>
+    </Box>
+
+    <Box>
+      <Heading.h2>Full Width</Heading.h2>
+
+      <Box mb="regular">
+        <Button
+          iconStart={icon}
+          intent={select('intent', INTENTS, 'brand')}
+          fullWidth
+          size="jumbo"
+          spin={boolean('spin', false)}
+          variant={select('Variant', variantOptions)}
+        >
+          button label
+        </Button>
+      </Box>
+
+      <Box mb="regular">
+        <Button
+          fullWidth
+          iconEnd={icon2}
+          intent={select('intent', INTENTS, 'brand')}
+          size="jumbo"
+          spin={boolean('spin', false)}
+          variant={select('Variant', variantOptions)}
+        >
+          button label
+        </Button>
+      </Box>
+
+      <Box mb="regular">
+        <Button
+          fullWidth
+          iconEnd={icon2}
+          iconStart={icon}
+          intent={select('intent', INTENTS, 'brand')}
+          size="jumbo"
+          spin={boolean('spin', false)}
+          variant={select('Variant', variantOptions)}
+        >
+          button label
+        </Button>
+      </Box>
+
+      <Box mb="regular">
+        <Button
+          aria-label="Edit"
+          fullWidth
+          iconStart={icon}
+          intent={select('intent', INTENTS, 'brand')}
+          size="jumbo"
+          spin={boolean('spin', false)}
+          variant={select('Variant', variantOptions)}
+        />
+      </Box>
+    </Box>
   </Box>
 ));

@@ -160,7 +160,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  display: grid;
+  display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -217,7 +217,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
       >
         <div
           className="emotion-2 emotion-3"
-          display="grid"
+          display="inline-grid"
         >
           <i
             className="ar ar-chevron emotion-0 emotion-1"
@@ -244,7 +244,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
       >
         <div
           className="emotion-2 emotion-3"
-          display="grid"
+          display="inline-grid"
         >
           <i
             className="ar ar-chevron emotion-10 emotion-1"
