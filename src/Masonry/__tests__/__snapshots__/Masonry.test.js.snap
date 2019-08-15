@@ -22,9 +22,12 @@ exports[`<Masonry /> renders properly 1`] = `
   font-family: Motiva Sans;
   margin-bottom: 1rem;
   box-sizing: border-box;
-  display: inline-block;
+  display: block;
   width: 100%;
-  display: inline-block;
+  -webkit-break-inside: avoid;
+  break-inside: avoid;
+  overflow: hidden;
+  display: block;
   width: 100%;
 }
 
@@ -33,7 +36,7 @@ exports[`<Masonry /> renders properly 1`] = `
 >
   <div
     className="emotion-0 emotion-1"
-    display="inline-block"
+    display="block"
     width="100%"
   >
     <div>
@@ -42,7 +45,7 @@ exports[`<Masonry /> renders properly 1`] = `
   </div>
   <div
     className="emotion-0 emotion-1"
-    display="inline-block"
+    display="block"
     width="100%"
   >
     <div>
@@ -51,7 +54,7 @@ exports[`<Masonry /> renders properly 1`] = `
   </div>
   <div
     className="emotion-0 emotion-1"
-    display="inline-block"
+    display="block"
     width="100%"
   >
     <div>
@@ -60,7 +63,7 @@ exports[`<Masonry /> renders properly 1`] = `
   </div>
   <div
     className="emotion-0 emotion-1"
-    display="inline-block"
+    display="block"
     width="100%"
   >
     <div>
@@ -69,7 +72,7 @@ exports[`<Masonry /> renders properly 1`] = `
   </div>
   <div
     className="emotion-0 emotion-1"
-    display="inline-block"
+    display="block"
     width="100%"
   >
     <div>
@@ -78,7 +81,7 @@ exports[`<Masonry /> renders properly 1`] = `
   </div>
   <div
     className="emotion-0 emotion-1"
-    display="inline-block"
+    display="block"
     width="100%"
   >
     <div>
@@ -87,7 +90,7 @@ exports[`<Masonry /> renders properly 1`] = `
   </div>
   <div
     className="emotion-0 emotion-1"
-    display="inline-block"
+    display="block"
     width="100%"
   >
     <div>
@@ -96,7 +99,7 @@ exports[`<Masonry /> renders properly 1`] = `
   </div>
   <div
     className="emotion-0 emotion-1"
-    display="inline-block"
+    display="block"
     width="100%"
   >
     <div>
@@ -105,7 +108,7 @@ exports[`<Masonry /> renders properly 1`] = `
   </div>
   <div
     className="emotion-0 emotion-1"
-    display="inline-block"
+    display="block"
     width="100%"
   >
     <div>

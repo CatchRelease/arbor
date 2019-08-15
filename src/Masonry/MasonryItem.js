@@ -4,6 +4,8 @@ import { display, width } from 'styled-system';
 import Box from '../Box';
 
 const MasonryItem = styled(Box)`
+  break-inside: avoid;
+  overflow: hidden;
   ${display};
   ${width};
 `;
@@ -14,7 +16,7 @@ MasonryItem.propTypes = {
 };
 
 MasonryItem.defaultProps = {
-  display: 'inline-block',
+  display: 'block',
   width: '100%'
 };
 
