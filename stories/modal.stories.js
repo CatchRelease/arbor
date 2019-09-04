@@ -113,16 +113,14 @@ stories.add('default', () => (
 ));
 
 stories.add('scrolling page', () => (
-  <Box display="grid">
-    <Box height="3000px">
-      <ModalStory
-        p="large"
-        numberOfLines={number('Lines of Content', 100)}
-        height={text('Height', '300px')}
-        width={text('Modal Width', '500px')}
-      >
-        Bar
-      </ModalStory>
-    </Box>
+  <Box height="3000px">
+    <ModalStory
+      p="large"
+      numberOfLines={number('Lines of Content', 100)}
+      height={text('Height', '300px')}
+      width={text('Modal Width', '500px')}
+    >
+      Bar
+    </ModalStory>
   </Box>
 ));
