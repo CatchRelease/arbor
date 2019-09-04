@@ -31,6 +31,11 @@ const buildModalCss = ({ theme, overlayCss, modalCss }) => css`
     ${baseModalCss};
     ${typeof modalCss === 'function' ? modalCss(theme) : modalCss};
   }
+
+  /* Prevent body scrolling when modal is open */
+  .ReactModal__Body--open {
+    overflow: hidden;
+  }
 `;
 
 export default buildModalCss;
