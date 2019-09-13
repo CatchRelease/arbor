@@ -142,6 +142,10 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   font-size: 0.875rem;
 }
 
+.emotion-8:focus {
+  outline: none;
+}
+
 .emotion-15 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -405,6 +409,10 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   flex: 1;
   font-family: Motiva Sans;
   font-size: 0.875rem;
+}
+
+.emotion-8:focus {
+  outline: none;
 }
 
 .emotion-15 {
@@ -672,6 +680,10 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   font-size: 0.875rem;
 }
 
+.emotion-8:focus {
+  outline: none;
+}
+
 .emotion-15 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -935,6 +947,10 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   flex: 1;
   font-family: Motiva Sans;
   font-size: 0.875rem;
+}
+
+.emotion-8:focus {
+  outline: none;
 }
 
 .emotion-15 {
@@ -1202,6 +1218,10 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   font-size: 0.875rem;
 }
 
+.emotion-8:focus {
+  outline: none;
+}
+
 .emotion-15 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -1465,6 +1485,10 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   flex: 1;
   font-family: Motiva Sans;
   font-size: 0.875rem;
+}
+
+.emotion-8:focus {
+  outline: none;
 }
 
 .emotion-15 {
