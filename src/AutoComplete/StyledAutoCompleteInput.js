@@ -7,6 +7,10 @@ import Flex from '../Flex';
 const StyledFlex = styled(Flex)`
   font-family: ${({ theme }) => theme.brandFont};
   font-size: ${({ theme }) => theme.fontSizes.size4};
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 const StyledAutoCompleteInput = ({ innerRef, innerProps, ...props }) => (
