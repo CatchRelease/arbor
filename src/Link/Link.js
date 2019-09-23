@@ -24,6 +24,36 @@ const baseStyles = css`
 
 const variantStyles = ({ variant, theme: { colors } }) => {
   const variantMapping = {
+    brandDark: {
+      color: colors.intent.brand.dark,
+      '&:visited': {
+        color: colors.intent.brand.dark
+      },
+      '&:hover': {
+        color: colors.intent.brand.dark
+      },
+      '&:active': {
+        color: colors.intent.brand.dark
+      },
+      '&:focus': {
+        outline: `1px solid ${colors.brand.dark}`
+      }
+    },
+    brandLight: {
+      color: colors.intent.brand.light,
+      '&:visited': {
+        color: colors.intent.brand.light
+      },
+      '&:hover': {
+        color: colors.intent.brand.light
+      },
+      '&:active': {
+        color: colors.intent.brand.light
+      },
+      '&:focus': {
+        outline: `1px solid ${colors.brand.light}`
+      }
+    },
     default: {
       color: colors.blue,
       '&:visited': {
