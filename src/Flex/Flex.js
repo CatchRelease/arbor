@@ -9,7 +9,8 @@ import {
   gridGap,
   justifyContent,
   justifyItems,
-  justifySelf
+  justifySelf,
+  order
 } from 'styled-system';
 
 import Box from '../Box';
@@ -26,6 +27,7 @@ const Flex = styled(Box)`
   ${justifyContent};
   ${justifyItems};
   ${justifySelf};
+  ${order};
 `;
 
 Flex.propTypes = {
@@ -38,7 +40,8 @@ Flex.propTypes = {
   ...gridGap.propTypes,
   ...justifyContent.propTypes,
   ...justifyItems.propTypes,
-  ...justifySelf.propTypes
+  ...justifySelf.propTypes,
+  ...order.propTypes
 };
 
 export default Flex;
