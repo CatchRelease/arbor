@@ -9,6 +9,8 @@ const AVAILABLE_ICONS = [
   'calendar',
   'caret',
   'chat-bubble-outline',
+  'checkbox-checked',
+  'checkbox-indeterminate',
   'checkmark-in-circle',
   'chevron',
   'cr-logo',
@@ -16,13 +18,19 @@ const AVAILABLE_ICONS = [
   'download',
   'error',
   'info-sign',
+  'instagram',
+  'linkedin',
+  'lock',
   'swap',
   'symbol-circle',
-  'tick-circle',
   'thumb-down-outline',
   'thumb-up-outline',
+  'tick-circle',
   'trash',
-  'warning-sign'
+  'twitter',
+  'vimeo',
+  'warning-sign',
+  'youtube'
 ];
 
 const rotationOptions = {
