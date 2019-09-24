@@ -14,7 +14,11 @@ const FormField = ({ caption, children, label, labelAside, id }) => (
           <Label htmlFor={id}>{label}</Label>
         </Flex>
       )}
-      {labelAside && <Flex>{labelAside}</Flex>}
+      {labelAside && (
+        <Flex color="text.muted" fontSize="size4">
+          {labelAside}
+        </Flex>
+      )}
     </Flex>
     {children}
     {caption && (

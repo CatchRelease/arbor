@@ -535,6 +535,8 @@ exports[`<Input /> renders as Input with a labelAside correctly 1`] = `
 
 .emotion-0 {
   font-family: Motiva Sans;
+  color: #5B5D61;
+  font-size: 0.875rem;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -551,6 +553,8 @@ exports[`<Input /> renders as Input with a labelAside correctly 1`] = `
     
     <div
       className="emotion-0 emotion-1"
+      color="text.muted"
+      fontSize="size4"
     >
       <div>
         sup?

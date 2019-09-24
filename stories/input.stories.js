@@ -55,6 +55,7 @@ storiesOf('Input', module).add('default', () => (
     <Input
       large
       label="Large"
+      labelAside="Label aside text"
       id="large-input"
       type="text"
       caption="This is a large field"
