@@ -27,7 +27,12 @@ export const breakpointsMap = {
   xl: '1600px'
 };
 
+// Styled-System breakpoints
 export const breakpoints = Object.values(breakpointsMap);
+breakpoints.sm = breakpointsMap.sm;
+breakpoints.md = breakpointsMap.md;
+breakpoints.lg = breakpointsMap.lg;
+breakpoints.xl = breakpointsMap.xl;
 
 export const blues = {
   blueLighter: '#6688FF',
