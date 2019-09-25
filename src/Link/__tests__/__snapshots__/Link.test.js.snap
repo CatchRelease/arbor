@@ -6,7 +6,7 @@ exports[`<Link /> Variants properly renders a default Link 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: pointer;
-  color: #4466EE;
+  color: #098562;
 }
 
 .emotion-0:hover {
@@ -23,19 +23,19 @@ exports[`<Link /> Variants properly renders a default Link 1`] = `
 }
 
 .emotion-0:visited {
-  color: #4466EE;
+  color: #098562;
 }
 
 .emotion-0:hover {
-  color: #5577FF;
+  color: #044231;
 }
 
 .emotion-0:active {
-  color: #4455CC;
+  color: #011a13;
 }
 
 .emotion-0:focus {
-  outline: 1px solid #4455CC;
+  outline: 1px solid #098562;
 }
 
 <a

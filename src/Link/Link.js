@@ -55,18 +55,18 @@ const variantStyles = ({ variant, theme: { colors } }) => {
       }
     },
     default: {
-      color: colors.blue,
+      color: colors.palette.teal.default,
       '&:visited': {
-        color: colors.blue
+        color: colors.palette.teal.default
       },
       '&:hover': {
-        color: colors.blueLight
+        color: colors.palette.teal.dark
       },
       '&:active': {
-        color: colors.blueDark
+        color: colors.palette.teal.darker
       },
       '&:focus': {
-        outline: `1px solid ${colors.blueDark}`
+        outline: `1px solid ${colors.palette.teal.default}`
       }
     },
     muted: {
