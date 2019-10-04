@@ -7,7 +7,7 @@ import StyledAccordionHeadingText from './StyledAccordionHeadingText';
 import Icon from '../Icon';
 
 const AccordionHeaderIcon = ({ isOpen }) => (
-  <Icon mr="small" name="caret" rotation={isOpen ? null : '270'} />
+  <Icon mr="small" name="chevron" rotation={isOpen ? null : '270'} />
 );
 
 AccordionHeaderIcon.propTypes = {
