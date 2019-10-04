@@ -1,4 +1,6 @@
-import React from 'react';
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core';
+
 import { forceReRender, storiesOf } from '@storybook/react';
 import { boolean, select, withKnobs } from '@storybook/addon-knobs';
 
@@ -197,6 +199,29 @@ stories.add('default', () => {
               <Box p="regular">
                 <Heading.h2>Section 2</Heading.h2>
 
+                <Text>
+                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                  tota aperiam intellegebat. Mel delenit delectus et, veniam
+                  soleat pericula vix et. Aeque accumsan quo ex, albucius
+                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
+                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
+                  animal te quo, ius lorem feugiat veritus id.
+                </Text>
+              </Box>
+            </AccordionSection>
+
+            <AccordionSection
+              header={<Box my="small">Header 4: Custom Styles</Box>}
+              headerNote={note}
+              panelId="header-4-controlled"
+              css={css`
+                background: inherit;
+              `}
+            >
+              <Box p="regular">
+                <Text mb="regular">
+                  You can customize the look and feel of the header.
+                </Text>
                 <Text>
                   Lorem ipsum dolor sit amet, an hinc honestatis his, an his
                   tota aperiam intellegebat. Mel delenit delectus et, veniam
