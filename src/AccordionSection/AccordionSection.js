@@ -37,7 +37,15 @@ class AccordionSection extends React.Component {
   }
 
   render() {
-    const { children, header, headerNote, panelId } = this.props;
+    const {
+      children,
+      header,
+      headerNote,
+      panelId,
+      onHeaderClick,
+      isOpen,
+      ...props
+    } = this.props;
 
     return (
       <section>
@@ -47,6 +55,7 @@ class AccordionSection extends React.Component {
           onClick={this.onHeaderClick}
           panelId={panelId}
           text={header}
+          {...props}
         />
         <AccordionPanel id={panelId} isOpen={this.isOpen}>
           {children}

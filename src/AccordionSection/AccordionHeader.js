@@ -14,7 +14,14 @@ AccordionHeaderIcon.propTypes = {
   isOpen: PropTypes.bool.isRequired
 };
 
-const AccordionHeader = ({ isOpen, note, onClick, panelId, text }) => (
+const AccordionHeader = ({
+  isOpen,
+  note,
+  onClick,
+  panelId,
+  text,
+  ...props
+}) => (
   <StyledAccordionHeader
     alignItems="center"
     justifyContent="space-between"
@@ -23,6 +30,7 @@ const AccordionHeader = ({ isOpen, note, onClick, panelId, text }) => (
     onClick={onClick}
     aria-controls={panelId}
     aria-expanded={isOpen}
+    {...props}
   >
     <StyledAccordionHeading fontWeight="medium" mr="regular">
       <StyledAccordionHeadingText
