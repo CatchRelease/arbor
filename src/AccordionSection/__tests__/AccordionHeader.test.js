@@ -5,6 +5,7 @@ import AccordionHeader from '../AccordionHeader';
 
 describe('<AccordionHeader />', () => {
   const baseProps = {
+    variant: 'default',
     isOpen: false,
     panelId: 'my-accordion-1',
     text: 'My Heading'

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import AccordionHeader from './AccordionHeader';
 import AccordionPanel from './AccordionPanel';
+import VARIANTS from './variants';
 
 class AccordionSection extends React.Component {
   state = {
@@ -44,6 +45,7 @@ class AccordionSection extends React.Component {
       panelId,
       onHeaderClick,
       isOpen,
+      variant,
       ...props
     } = this.props;
 
@@ -55,9 +57,10 @@ class AccordionSection extends React.Component {
           onClick={this.onHeaderClick}
           panelId={panelId}
           text={header}
+          variant={variant}
           {...props}
         />
-        <AccordionPanel id={panelId} isOpen={this.isOpen}>
+        <AccordionPanel id={panelId} isOpen={this.isOpen} variant={variant}>
           {children}
         </AccordionPanel>
       </section>
@@ -101,13 +104,19 @@ AccordionSection.propTypes = {
    * HTML id attribute for the AccordionPanel component. Used in conjunction
    * with the AccordionHeader for the aria-controls attribute.
    */
-  panelId: PropTypes.string.isRequired
+  panelId: PropTypes.string.isRequired,
+
+  /**
+   * Link variant for styling. See storybook for examples.
+   */
+  variant: PropTypes.oneOf(VARIANTS)
 };
 
 AccordionSection.defaultProps = {
   isOpen: undefined,
   headerNote: null,
-  onHeaderClick: () => {}
+  onHeaderClick: () => {},
+  variant: 'default'
 };
 
 export default AccordionSection;

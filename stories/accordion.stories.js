@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 import { forceReRender, storiesOf } from '@storybook/react';
 import { boolean, select, withKnobs } from '@storybook/addon-knobs';
@@ -42,6 +43,8 @@ AccordionContainer.defaultProps = {
 };
 
 const doAlert = msg => window.alert(msg); // eslint-disable-line no-alert, no-undef
+
+const variantOptions = ['default', 'minimal'];
 
 stories.add('default', () => {
   const sizeSelect = select('Size', buttonOptions, defaultButtonSize);
@@ -141,6 +144,7 @@ stories.add('default', () => {
               isOpen={boolean('isOpen', isOpen)}
               onHeaderClick={onHeaderClick}
               panelId="header-1-controlled"
+              variant={select('Variant', variantOptions)}
             >
               <Box p="regular">
                 <Text mb="regular">
@@ -161,6 +165,7 @@ stories.add('default', () => {
               header={<Box my="small">Header 2: Uncontrolled </Box>}
               headerNote={note}
               panelId="header-2-uncontrolled"
+              variant={select('Variant', variantOptions)}
             >
               <Box p="regular">
                 <Text mb="regular">
@@ -182,6 +187,7 @@ stories.add('default', () => {
                 <Box my="small">Header 3: Multiple Sections of Content</Box>
               }
               panelId="header-3-uncontrolled"
+              variant={select('Variant', variantOptions)}
             >
               <Box p="regular">
                 <Heading.h2>Section 1</Heading.h2>
@@ -209,13 +215,21 @@ stories.add('default', () => {
                 </Text>
               </Box>
             </AccordionSection>
+          </Card>
+        </Flex>
+      </AccordionContainer>
 
+      <AccordionContainer>
+        <Heading.h2>Accordion with custom styles</Heading.h2>
+
+        <Flex justifyContent="center" width="500px">
+          <Card>
             <AccordionSection
-              header={<Box my="small">Header 4: Custom Styles</Box>}
+              header={<Box my="small">Header with Custom Styles</Box>}
               headerNote={note}
-              panelId="header-4-controlled"
+              panelId="custom-styles-header"
               css={css`
-                background: inherit;
+                background: red;
               `}
             >
               <Box p="regular">
@@ -242,17 +256,12 @@ stories.add('default', () => {
         <Flex justifyContent="center" width="500px">
           <Card>
             <AccordionSection
-              header={<Box my="small">Header 1: Controlled</Box>}
+              header={<Box my="small">Header with minimal buttons</Box>}
               headerNote={noteWithButtons}
-              isOpen={boolean('isOpen', isOpen)}
-              onHeaderClick={onHeaderClick}
               panelId="minimal-button-notes-panel-1"
+              variant={select('Variant', variantOptions)}
             >
               <Box p="regular">
-                <Text mb="regular">
-                  You can manually control an accordion by using isOpen and
-                  onHeaderClick together.
-                </Text>
                 <Text>
                   Lorem ipsum dolor sit amet, an hinc honestatis his, an his
                   tota aperiam intellegebat. Mel delenit delectus et, veniam
@@ -273,17 +282,12 @@ stories.add('default', () => {
         <Flex justifyContent="center" width="500px">
           <Card>
             <AccordionSection
-              header={<Box my="small">Header 1: Controlled</Box>}
+              header={<Box my="small">Header with primary buttons</Box>}
               headerNote={noteWithPrimaryButtons}
-              isOpen={boolean('isOpen', isOpen)}
-              onHeaderClick={onHeaderClick}
               panelId="primary-buttons-panel-1"
+              variant={select('Variant', variantOptions)}
             >
               <Box p="regular">
-                <Text mb="regular">
-                  You can manually control an accordion by using isOpen and
-                  onHeaderClick together.
-                </Text>
                 <Text>
                   Lorem ipsum dolor sit amet, an hinc honestatis his, an his
                   tota aperiam intellegebat. Mel delenit delectus et, veniam
@@ -304,17 +308,12 @@ stories.add('default', () => {
         <Flex justifyContent="center" width="500px">
           <Card>
             <AccordionSection
-              header={<Box my="small">Header 1: Controlled</Box>}
+              header={<Box my="small">Header with secondary buttons</Box>}
               headerNote={noteWithSecondaryButtons}
-              isOpen={boolean('isOpen', isOpen)}
-              onHeaderClick={onHeaderClick}
               panelId="secondary-buttons-panel-1"
+              variant={select('Variant', variantOptions)}
             >
               <Box p="regular">
-                <Text mb="regular">
-                  You can manually control an accordion by using isOpen and
-                  onHeaderClick together.
-                </Text>
                 <Text>
                   Lorem ipsum dolor sit amet, an hinc honestatis his, an his
                   tota aperiam intellegebat. Mel delenit delectus et, veniam

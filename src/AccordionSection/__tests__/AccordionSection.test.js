@@ -32,6 +32,18 @@ describe('<AccordionSection />', () => {
     return rendered;
   };
 
+  describe('Variants', () => {
+    ['default', 'minimal'].forEach(variant => {
+      it(`properly renders a ${variant} accordion`, () => {
+        const accordion = createWithTheme(
+          <AccordionSection {...{ ...baseProps, variant }} />
+        );
+
+        expect(accordion).toMatchSnapshot();
+      });
+    });
+  });
+
   describe('render', () => {
     const createTree = (additionalProps = {}) =>
       createWithTheme(
