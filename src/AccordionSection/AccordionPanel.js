@@ -6,11 +6,7 @@ import StyledAccordionPanel from './StyledAccordionPanel';
 const AccordionPanel = ({ isOpen, ...panelProps }) => {
   const display = isOpen ? 'block' : 'none';
 
-  return (
-    <StyledAccordionPanel
-      {...{ ...panelProps, display, borderBottom: 'default' }}
-    />
-  );
+  return <StyledAccordionPanel {...{ ...panelProps, display }} />;
 };
 
 AccordionPanel.propTypes = {

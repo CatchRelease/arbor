@@ -5,6 +5,7 @@ import StyledAccordionHeader from './StyledAccordionHeader';
 import StyledAccordionHeading from './StyledAccordionHeading';
 import StyledAccordionHeadingText from './StyledAccordionHeadingText';
 import Icon from '../Icon';
+import VARIANTS from './variants';
 
 const AccordionHeaderIcon = ({ isOpen }) => (
   <Icon mr="small" name="chevron" rotation={isOpen ? null : '270'} />
@@ -26,7 +27,6 @@ const AccordionHeader = ({
     alignItems="center"
     justifyContent="space-between"
     px="regular"
-    borderBottom="default"
     onClick={onClick}
     aria-controls={panelId}
     aria-expanded={isOpen}
@@ -71,7 +71,12 @@ AccordionHeader.propTypes = {
   /**
    * Header text for the section
    */
-  text: PropTypes.node.isRequired
+  text: PropTypes.node.isRequired,
+
+  /**
+   * Link variant for styling. See storybook for examples.
+   */
+  variant: PropTypes.oneOf(VARIANTS).isRequired
 };
 
 AccordionHeader.defaultProps = {

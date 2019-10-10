@@ -1,14 +1,33 @@
 import styled from '@emotion/styled';
 
+import { themeGet } from '@styled-system/theme-get';
+import { css } from '@emotion/core';
 import Flex from '../Flex';
 
-const StyledHeader = styled(Flex)`
-  background: ${props => props.theme.colors.background.default};
+const variantStyles = ({ variant, ...props }) => {
+  const borderColor = themeGet('borders.default')(props);
+  const backgroundColor = themeGet('colors.background.default')(props);
 
-  section:last-child & {
-    border-bottom: none;
+  switch (variant) {
+    case 'default':
+      return css`
+        background: ${backgroundColor};
+
+        border-bottom: ${borderColor};
+
+        section:last-child & {
+          border-bottom: none;
+        }
+      `;
+
+    case 'minimal':
+      return '';
+    default:
+      return '';
   }
+};
 
+const StyledHeader = styled(Flex)`
   .button--minimal:last-of-type {
     margin-right: -${props => props.theme.space.smallest};
 
@@ -23,6 +42,8 @@ const StyledHeader = styled(Flex)`
   }
 
   cursor: pointer;
+
+  ${variantStyles};
 `;
 
 StyledHeader.defaultProps = {

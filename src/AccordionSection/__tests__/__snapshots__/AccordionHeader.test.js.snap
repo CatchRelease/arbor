@@ -6,7 +6,6 @@ exports[`<AccordionHeader /> properly renders an accordion header 1`] = `
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
-  border-bottom: 1px solid #E0E1E2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,12 +18,9 @@ exports[`<AccordionHeader /> properly renders an accordion header 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: #F2F2F2;
   cursor: pointer;
-}
-
-section:last-child .emotion-7 {
-  border-bottom: none;
+  background: #F2F2F2;
+  border-bottom: 1px solid #E0E1E2;
 }
 
 .emotion-7 .button--minimal:last-of-type {
@@ -38,6 +34,10 @@ section:last-child .emotion-7 {
 .emotion-7 button + .button--secondary,
 .emotion-7 button + .button--primary {
   margin-left: 0.5rem;
+}
+
+section:last-child .emotion-7 {
+  border-bottom: none;
 }
 
 .emotion-5 {
@@ -120,7 +120,6 @@ exports[`<AccordionHeader /> renders with a note 1`] = `
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
-  border-bottom: 1px solid #E0E1E2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -133,12 +132,9 @@ exports[`<AccordionHeader /> renders with a note 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: #F2F2F2;
   cursor: pointer;
-}
-
-section:last-child .emotion-7 {
-  border-bottom: none;
+  background: #F2F2F2;
+  border-bottom: 1px solid #E0E1E2;
 }
 
 .emotion-7 .button--minimal:last-of-type {
@@ -152,6 +148,10 @@ section:last-child .emotion-7 {
 .emotion-7 button + .button--secondary,
 .emotion-7 button + .button--primary {
   margin-left: 0.5rem;
+}
+
+section:last-child .emotion-7 {
+  border-bottom: none;
 }
 
 .emotion-5 {
@@ -235,7 +235,6 @@ exports[`<AccordionHeader /> renders with an on click 1`] = `
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
-  border-bottom: 1px solid #E0E1E2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -248,12 +247,9 @@ exports[`<AccordionHeader /> renders with an on click 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: #F2F2F2;
   cursor: pointer;
-}
-
-section:last-child .emotion-7 {
-  border-bottom: none;
+  background: #F2F2F2;
+  border-bottom: 1px solid #E0E1E2;
 }
 
 .emotion-7 .button--minimal:last-of-type {
@@ -267,6 +263,10 @@ section:last-child .emotion-7 {
 .emotion-7 button + .button--secondary,
 .emotion-7 button + .button--primary {
   margin-left: 0.5rem;
+}
+
+section:last-child .emotion-7 {
+  border-bottom: none;
 }
 
 .emotion-5 {
@@ -349,7 +349,6 @@ exports[`<AccordionHeader /> renders with the panel visible 1`] = `
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
-  border-bottom: 1px solid #E0E1E2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -362,12 +361,9 @@ exports[`<AccordionHeader /> renders with the panel visible 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: #F2F2F2;
   cursor: pointer;
-}
-
-section:last-child .emotion-7 {
-  border-bottom: none;
+  background: #F2F2F2;
+  border-bottom: 1px solid #E0E1E2;
 }
 
 .emotion-7 .button--minimal:last-of-type {
@@ -381,6 +377,10 @@ section:last-child .emotion-7 {
 .emotion-7 button + .button--secondary,
 .emotion-7 button + .button--primary {
   margin-left: 0.5rem;
+}
+
+section:last-child .emotion-7 {
+  border-bottom: none;
 }
 
 .emotion-5 {
