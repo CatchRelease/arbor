@@ -3,10 +3,8 @@
 exports[`<Avatar /> renders properly 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;
-  background-color: #29863A;
   box-sizing: border-box;
   border: 1px solid;
-  border-color: #29863A;
   border-radius: 50%;
   height: 24px;
   width: 24px;
@@ -22,6 +20,22 @@ exports[`<Avatar /> renders properly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.emotion-2 backgroundColor {
+  lighter: #e9f2eb;
+  light: #bedac3;
+  default: #29863A;
+  dark: #14431d;
+  darker: #081a0b;
+}
+
+.emotion-2 borderColor {
+  lighter: #e9f2eb;
+  light: #bedac3;
+  default: #29863A;
+  dark: #14431d;
+  darker: #081a0b;
 }
 
 .emotion-0 {

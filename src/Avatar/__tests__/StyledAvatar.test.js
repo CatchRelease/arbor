@@ -12,7 +12,7 @@ describe('<StyledAvatar />', () => {
       it('renders with default colors calculated by the name string', () => {
         const avatar = shallow(
           <StyledAvatar
-            baseColor="palette.blue"
+            baseColor="palette.blue.default"
             border="1px solid"
             size="default"
             subtle={false}
@@ -31,7 +31,7 @@ describe('<StyledAvatar />', () => {
       it('renders with subtle colors calculated by the name string', () => {
         const avatar = shallow(
           <StyledAvatar
-            baseColor="palette.blue"
+            baseColor="palette.blue.default"
             border="1px solid"
             name="Batman"
             size="default"
@@ -53,7 +53,7 @@ describe('<StyledAvatar />', () => {
       it(`renders ${size} properly`, () => {
         const tree = createWithTheme(
           <StyledAvatarWithTheme
-            baseColor="palette.green"
+            baseColor="palette.green.default"
             border="1px solid"
             name="Bruce Wayne"
             size={size}

@@ -10,7 +10,7 @@ describe('<StyledAvatar />', () => {
       it('renders with default colors calculated by the name string', () => {
         const avatar = shallow(
           <StyledAvatarText
-            baseColor="palette.blue"
+            baseColor="palette.blue.default"
             size="default"
             subtle={false}
             theme={theme}
@@ -27,7 +27,7 @@ describe('<StyledAvatar />', () => {
       it('renders with subtle colors calculated by the name string', () => {
         const avatar = shallow(
           <StyledAvatarText
-            baseColor="palette.blue"
+            baseColor="palette.blue.default"
             size="default"
             subtle
             theme={theme}

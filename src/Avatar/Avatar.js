@@ -7,7 +7,9 @@ import { colorForString } from '../utils';
 import StyledAvatar from './StyledAvatar';
 import StyledAvatarText from './StyledAvatarText';
 
-const AVATAR_COLORS = Object.keys(palette).map(color => `palette.${color}`);
+const AVATAR_COLORS = Object.keys(palette).map(
+  color => `palette.${color}.default`
+);
 
 const getInitials = name => {
   const [firstName, ...additionalNames] = name.split(' ');
@@ -22,8 +24,8 @@ const getInitials = name => {
   return firstInitial;
 };
 
-const Avatar = ({ name, subtle, size, ...props }) => {
-  const baseColor = colorForString(name, AVATAR_COLORS);
+const Avatar = ({ name, subtle, size, baseColor: baseColorProp, ...props }) => {
+  const baseColor = baseColorProp || colorForString(name, AVATAR_COLORS);
 
   return (
     <StyledAvatar
@@ -47,6 +49,11 @@ const Avatar = ({ name, subtle, size, ...props }) => {
 
 Avatar.propTypes = {
   /**
+   * Base color to use for the avatar
+   */
+  baseColor: PropTypes.string,
+
+  /**
    * The name for the user's avatar. The name is used to determine the color for
    * the avatar component. See utils/colorForString.
    *
@@ -67,6 +74,7 @@ Avatar.propTypes = {
 };
 
 Avatar.defaultProps = {
+  baseColor: undefined,
   size: 'default',
   subtle: false
 };
