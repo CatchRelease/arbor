@@ -29,8 +29,8 @@
     "@styled-system/theme-get": "^5.0.16",
     "babel-plugin-emotion": "^10.0.0",
     "emotion-theming": "^10.0.0",
-    "moment": "^2.24.0",
     "lodash": "^4.17.11",
+    "moment": "^2.24.0",
     "polished": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.5.2",
@@ -42,6 +42,7 @@
     "react-popover": "^0.5.10",
     "react-select": "^3.0.4",
     "react-tippy": "^1.2.3",
+    "react-toastify": "^5.4.0",
     "styled-system": "^5.0.15"
   },
   "devDependencies": {
