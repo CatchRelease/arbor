@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { Global, css, jsx } from '@emotion/core';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast, cssTransition } from 'react-toastify';
 import { storiesOf } from '@storybook/react';
+import 'react-toastify/dist/ReactToastify.minimal.css';
 
 import { Box, Button, Heading, Link, ToastAlert } from '../src';
 import INTENTS from '../src/Alert/intents';
@@ -9,6 +10,12 @@ import INTENTS from '../src/Alert/intents';
 const stories = storiesOf('Toast', module);
 
 stories.add('default', () => {
+  const transition = cssTransition({
+    enter: 'slideIn',
+    exit: 'slideOut',
+    duration: 500
+  });
+
   const details = (
     <div>
       That&lsquo;s six wells.&nbsp;
@@ -48,6 +55,46 @@ stories.add('default', () => {
         max-width: 90vw;
       }
     }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translate(0, -100px);
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+
+    .slideIn {
+      animation-name: slideIn;
+    }
+
+    @keyframes slideOut {
+      from {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+
+      50% {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 0;
+        transform: translate(0, -100px);
+      }
+    }
+
+    .slideOut {
+      animation-name: slideOut;
+    }
   `;
 
   return (
@@ -70,7 +117,7 @@ stories.add('default', () => {
         closeButton={false}
         hideProgressBar
         position={toast.POSITION.TOP_CENTER}
-        preventExitTransition
+        transition={transition}
       />
     </Box>
   );
