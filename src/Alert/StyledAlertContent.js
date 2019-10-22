@@ -26,7 +26,10 @@ const StyledAlertContent = styled(Grid)`
 `;
 
 StyledAlertContent.propTypes = {
-  details: PropTypes.string,
+  details: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node)
+  ]),
   intent: PropTypes.oneOf(INTENTS),
   onClose: PropTypes.func
 };

@@ -27,7 +27,10 @@ const CardAlert = ({ boxShadow, details, intent, ...props }) => (
 
 CardAlert.propTypes = {
   boxShadow: PropTypes.string,
-  details: PropTypes.string,
+  details: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node)
+  ]),
   intent: PropTypes.oneOf(INTENTS)
 };
 
