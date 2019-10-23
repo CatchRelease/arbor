@@ -4,7 +4,7 @@ const toastCSS = css`
   .Toastify {
     .arbor-toast-container {
       display: grid;
-      height: 0px;
+      height: 0;
       justify-content: center;
       left: 0;
       position: fixed;
