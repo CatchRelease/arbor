@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs';
 
+import notes from './icons.md';
 import { Box, Grid, Icon, Text } from '../src';
 
 const AVAILABLE_ICONS = [
@@ -43,25 +44,29 @@ const rotationOptions = {
 const stories = storiesOf('Icons', module);
 stories.addDecorator(withKnobs);
 
-stories.add('default', () => (
-  <Grid
-    gridTemplateColumns={`repeat(${AVAILABLE_ICONS.length}, 1fr)`}
-    gridGap="large"
-    justifyItems="center"
-    alignItems="center"
-    width="100vw"
-    height="100vh"
-  >
-    {AVAILABLE_ICONS.map(icon => (
-      <Box key={icon} textAlign="center">
-        <Icon
-          name={icon}
-          color="grey100"
-          fontSize="38px"
-          rotation={select('Rotation', rotationOptions, null)}
-        />
-        <Text variant="tiny">{icon}</Text>
-      </Box>
-    ))}
-  </Grid>
-));
+stories.add(
+  'default',
+  () => (
+    <Grid
+      gridTemplateColumns={`repeat(${AVAILABLE_ICONS.length}, 1fr)`}
+      gridGap="large"
+      justifyItems="center"
+      alignItems="center"
+      width="100vw"
+      height="100vh"
+    >
+      {AVAILABLE_ICONS.map(icon => (
+        <Box key={icon} textAlign="center">
+          <Icon
+            name={icon}
+            color="grey100"
+            fontSize="38px"
+            rotation={select('Rotation', rotationOptions, null)}
+          />
+          <Text variant="tiny">{icon}</Text>
+        </Box>
+      ))}
+    </Grid>
+  ),
+  { notes: { markdown: notes } }
+);

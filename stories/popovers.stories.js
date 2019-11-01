@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
+import notes from './popovers.md';
 import { Button, Flex, Heading, Link, Popover } from '../src';
 
 const stories = storiesOf('Popover', module);
@@ -34,8 +35,12 @@ class ExamplePopover extends React.Component {
   }
 }
 
-stories.add('default', () => (
-  <Flex m="regular">
-    <ExamplePopover />
-  </Flex>
-));
+stories.add(
+  'default',
+  () => (
+    <Flex m="regular">
+      <ExamplePopover />
+    </Flex>
+  ),
+  { notes: { markdown: notes } }
+);

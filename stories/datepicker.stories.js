@@ -5,6 +5,7 @@ import { date, withKnobs } from '@storybook/addon-knobs';
 
 import 'react-day-picker/lib/style.css';
 
+import notes from './datepicker.md';
 import {
   Box,
   Button,
@@ -98,4 +99,6 @@ class ControlledDatePickers extends React.Component {
   }
 }
 
-stories.add('default', () => <ControlledDatePickers />);
+stories.add('default', () => <ControlledDatePickers />, {
+  notes: { markdown: notes }
+});

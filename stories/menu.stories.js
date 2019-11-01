@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 
+import notes from './menu.md';
 import { Box, Grid, Heading, Icon, Menu, MenuItem, Text } from '../src';
 
 const stories = storiesOf('Menu', module);
@@ -147,16 +148,24 @@ CustomMenuItemComponent.defaultProps = {
   secondaryLabel: undefined
 };
 
-stories.add('default', () => (
-  <Box as="section" p="regular">
-    <Heading.h1 mb="regular">Standard Menu</Heading.h1>
-    <Menu menuItems={menuItems} />
-  </Box>
-));
+stories.add(
+  'default',
+  () => (
+    <Box as="section" p="regular">
+      <Heading.h1 mb="regular">Standard Menu</Heading.h1>
+      <Menu menuItems={menuItems} />
+    </Box>
+  ),
+  { notes: { markdown: notes } }
+);
 
-stories.add('custom menu items', () => (
-  <Box as="section" p="regular">
-    <Heading.h1 mb="regular">Menu with Custom Menu Item</Heading.h1>
-    <Menu menuItems={menuItems} MenuItemComponent={CustomMenuItemComponent} />
-  </Box>
-));
+stories.add(
+  'custom menu items',
+  () => (
+    <Box as="section" p="regular">
+      <Heading.h1 mb="regular">Menu with Custom Menu Item</Heading.h1>
+      <Menu menuItems={menuItems} MenuItemComponent={CustomMenuItemComponent} />
+    </Box>
+  ),
+  { notes: { markdown: notes } }
+);

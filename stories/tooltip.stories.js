@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
+import notes from './tooltip.md';
 import {
   Box,
   Button,
@@ -30,41 +31,49 @@ const FancyTooltipContent = () => (
   </Box>
 );
 
-stories.add('default', () => (
-  <Grid
-    m="largest"
-    gridGap="large"
-    gridTemplateColumns="repeat(3, 1fr)"
-    justifyItems="center"
-  >
-    <Box>
-      <Tooltip position="bottom" content={<FancyTooltipContent />}>
-        <div>
-          <Button variant="primary">Button</Button>
-        </div>
-      </Tooltip>
-    </Box>
+stories.add(
+  'default',
+  () => (
+    <Grid
+      m="largest"
+      gridGap="large"
+      gridTemplateColumns="repeat(3, 1fr)"
+      justifyItems="center"
+    >
+      <Box>
+        <Tooltip position="bottom" content={<FancyTooltipContent />}>
+          <div>
+            <Button variant="primary">Button</Button>
+          </div>
+        </Tooltip>
+      </Box>
 
-    <Box>
-      <Tooltip content="I'm a tooltip!">
-        <Button variant="primary" size="small">
-          Button
-        </Button>
-      </Tooltip>
-    </Box>
+      <Box>
+        <Tooltip content="I'm a tooltip!">
+          <Button variant="primary" size="small">
+            Button
+          </Button>
+        </Tooltip>
+      </Box>
 
-    <Box>
-      <Tooltip position="right" content="Icon!">
-        <Button iconEnd={buttonIcon}>Icon Button</Button>
-      </Tooltip>
-    </Box>
+      <Box>
+        <Tooltip position="right" content="Icon!">
+          <Button iconEnd={buttonIcon}>Icon Button</Button>
+        </Tooltip>
+      </Box>
 
-    <Box>
-      <Tooltip content="Eight action items have been accepted.">
-        <Link href="#tooltip" variant="muted" onClick={e => e.preventDefault()}>
-          8 Action Items
-        </Link>
-      </Tooltip>
-    </Box>
-  </Grid>
-));
+      <Box>
+        <Tooltip content="Eight action items have been accepted.">
+          <Link
+            href="#tooltip"
+            variant="muted"
+            onClick={e => e.preventDefault()}
+          >
+            8 Action Items
+          </Link>
+        </Tooltip>
+      </Box>
+    </Grid>
+  ),
+  { notes: { markdown: notes } }
+);
