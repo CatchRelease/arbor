@@ -5,6 +5,7 @@ import React from 'react'; // eslint-disable-line no-unused-vars
 import { forceReRender, storiesOf } from '@storybook/react';
 import { boolean, select, withKnobs } from '@storybook/addon-knobs';
 
+import notes from './accordion.md';
 import {
   AccordionSection,
   Box,
@@ -46,287 +47,291 @@ const doAlert = msg => window.alert(msg); // eslint-disable-line no-alert, no-un
 
 const variantOptions = ['default', 'minimal'];
 
-stories.add('default', () => {
-  const sizeSelect = select('Size', buttonOptions, defaultButtonSize);
+stories.add(
+  'default',
+  () => {
+    const sizeSelect = select('Size', buttonOptions, defaultButtonSize);
 
-  const noteWithButtons = (
-    <Box my="smallest">
-      <Button
-        variant="minimal"
-        size={sizeSelect}
-        iconStart={annotationIcon}
-        onClick={e => {
-          doAlert('message');
-          e.stopPropagation();
-        }}
-      >
-        Message
-      </Button>
-      <Button
-        variant="minimal"
-        size={sizeSelect}
-        iconStart={trashIcon}
-        aria-label="Delete"
-        onClick={e => {
-          doAlert('Delete');
-          e.stopPropagation();
-        }}
-      />
-    </Box>
-  );
+    const noteWithButtons = (
+      <Box my="smallest">
+        <Button
+          variant="minimal"
+          size={sizeSelect}
+          iconStart={annotationIcon}
+          onClick={e => {
+            doAlert('message');
+            e.stopPropagation();
+          }}
+        >
+          Message
+        </Button>
+        <Button
+          variant="minimal"
+          size={sizeSelect}
+          iconStart={trashIcon}
+          aria-label="Delete"
+          onClick={e => {
+            doAlert('Delete');
+            e.stopPropagation();
+          }}
+        />
+      </Box>
+    );
 
-  const noteWithPrimaryButtons = (
-    <Box my="smallest">
-      <Button
-        variant="secondary"
-        size={sizeSelect}
-        onClick={e => {
-          doAlert('secondary');
-          e.stopPropagation();
-        }}
-      >
-        Secondary
-      </Button>
-      <Button
-        variant="primary"
-        size={sizeSelect}
-        onClick={e => {
-          doAlert('primary');
-          e.stopPropagation();
-        }}
-      >
-        Primary
-      </Button>
-    </Box>
-  );
+    const noteWithPrimaryButtons = (
+      <Box my="smallest">
+        <Button
+          variant="secondary"
+          size={sizeSelect}
+          onClick={e => {
+            doAlert('secondary');
+            e.stopPropagation();
+          }}
+        >
+          Secondary
+        </Button>
+        <Button
+          variant="primary"
+          size={sizeSelect}
+          onClick={e => {
+            doAlert('primary');
+            e.stopPropagation();
+          }}
+        >
+          Primary
+        </Button>
+      </Box>
+    );
 
-  const noteWithSecondaryButtons = (
-    <Box my="smallest">
-      <Button
-        variant="minimal"
-        size={sizeSelect}
-        onClick={e => {
-          doAlert('minimal');
-          e.stopPropagation();
-        }}
-      >
-        Minimal
-      </Button>
-      <Button
-        variant="secondary"
-        size={sizeSelect}
-        onClick={e => {
-          doAlert('secondary');
-          e.stopPropagation();
-        }}
-      >
-        Secondary
-      </Button>
-    </Box>
-  );
+    const noteWithSecondaryButtons = (
+      <Box my="smallest">
+        <Button
+          variant="minimal"
+          size={sizeSelect}
+          onClick={e => {
+            doAlert('minimal');
+            e.stopPropagation();
+          }}
+        >
+          Minimal
+        </Button>
+        <Button
+          variant="secondary"
+          size={sizeSelect}
+          onClick={e => {
+            doAlert('secondary');
+            e.stopPropagation();
+          }}
+        >
+          Secondary
+        </Button>
+      </Box>
+    );
 
-  const note = (
-    <Text fontSize="size4" textAlign="right" color="text.muted">
-      With Note
-    </Text>
-  );
+    const note = (
+      <Text fontSize="size4" textAlign="right" color="text.muted">
+        With Note
+      </Text>
+    );
 
-  return (
-    <>
-      <AccordionContainer>
-        <Heading.h2>Accordion</Heading.h2>
+    return (
+      <>
+        <AccordionContainer>
+          <Heading.h2>Accordion</Heading.h2>
 
-        <Flex justifyContent="center" width="500px">
-          <Card>
-            <AccordionSection
-              header={<Box my="small">Header 1: Controlled</Box>}
-              headerNote={note}
-              isOpen={boolean('isOpen', isOpen)}
-              onHeaderClick={onHeaderClick}
-              panelId="header-1-controlled"
-              variant={select('Variant', variantOptions)}
-            >
-              <Box p="regular">
-                <Text mb="regular">
-                  You can manually control an accordion by using isOpen and
-                  onHeaderClick together.
-                </Text>
-                <Text>
-                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
-                  tota aperiam intellegebat. Mel delenit delectus et, veniam
-                  soleat pericula vix et. Aeque accumsan quo ex, albucius
-                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
-                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
-                  animal te quo, ius lorem feugiat veritus id.
-                </Text>
-              </Box>
-            </AccordionSection>
-            <AccordionSection
-              header={<Box my="small">Header 2: Uncontrolled </Box>}
-              headerNote={note}
-              panelId="header-2-uncontrolled"
-              variant={select('Variant', variantOptions)}
-            >
-              <Box p="regular">
-                <Text mb="regular">
-                  If you exclude the isOpen property, the accordion state will
-                  be automattically managed internally
-                </Text>
-                <Text>
-                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
-                  tota aperiam intellegebat. Mel delenit delectus et, veniam
-                  soleat pericula vix et. Aeque accumsan quo ex, albucius
-                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
-                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
-                  animal te quo, ius lorem feugiat veritus id.
-                </Text>
-              </Box>
-            </AccordionSection>
-            <AccordionSection
-              header={
-                <Box my="small">Header 3: Multiple Sections of Content</Box>
-              }
-              panelId="header-3-uncontrolled"
-              variant={select('Variant', variantOptions)}
-            >
-              <Box p="regular">
-                <Heading.h2>Section 1</Heading.h2>
-                <Text mb="regular">You can exclude the note property</Text>
-                <Text>
-                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
-                  tota aperiam intellegebat. Mel delenit delectus et, veniam
-                  soleat pericula vix et. Aeque accumsan quo ex, albucius
-                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
-                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
-                  animal te quo, ius lorem feugiat veritus id.
-                </Text>
-              </Box>
+          <Flex justifyContent="center" width="500px">
+            <Card>
+              <AccordionSection
+                header={<Box my="small">Header 1: Controlled</Box>}
+                headerNote={note}
+                isOpen={boolean('isOpen', isOpen)}
+                onHeaderClick={onHeaderClick}
+                panelId="header-1-controlled"
+                variant={select('Variant', variantOptions)}
+              >
+                <Box p="regular">
+                  <Text mb="regular">
+                    You can manually control an accordion by using isOpen and
+                    onHeaderClick together.
+                  </Text>
+                  <Text>
+                    Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                    tota aperiam intellegebat. Mel delenit delectus et, veniam
+                    soleat pericula vix et. Aeque accumsan quo ex, albucius
+                    pericula expetendis quo ei. Debitis oporteat at eos, mei
+                    justo eruditi periculis te. Sed no mazim liber dicunt, aeque
+                    viris animal te quo, ius lorem feugiat veritus id.
+                  </Text>
+                </Box>
+              </AccordionSection>
+              <AccordionSection
+                header={<Box my="small">Header 2: Uncontrolled </Box>}
+                headerNote={note}
+                panelId="header-2-uncontrolled"
+                variant={select('Variant', variantOptions)}
+              >
+                <Box p="regular">
+                  <Text mb="regular">
+                    If you exclude the isOpen property, the accordion state will
+                    be automattically managed internally
+                  </Text>
+                  <Text>
+                    Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                    tota aperiam intellegebat. Mel delenit delectus et, veniam
+                    soleat pericula vix et. Aeque accumsan quo ex, albucius
+                    pericula expetendis quo ei. Debitis oporteat at eos, mei
+                    justo eruditi periculis te. Sed no mazim liber dicunt, aeque
+                    viris animal te quo, ius lorem feugiat veritus id.
+                  </Text>
+                </Box>
+              </AccordionSection>
+              <AccordionSection
+                header={
+                  <Box my="small">Header 3: Multiple Sections of Content</Box>
+                }
+                panelId="header-3-uncontrolled"
+                variant={select('Variant', variantOptions)}
+              >
+                <Box p="regular">
+                  <Heading.h2>Section 1</Heading.h2>
+                  <Text mb="regular">You can exclude the note property</Text>
+                  <Text>
+                    Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                    tota aperiam intellegebat. Mel delenit delectus et, veniam
+                    soleat pericula vix et. Aeque accumsan quo ex, albucius
+                    pericula expetendis quo ei. Debitis oporteat at eos, mei
+                    justo eruditi periculis te. Sed no mazim liber dicunt, aeque
+                    viris animal te quo, ius lorem feugiat veritus id.
+                  </Text>
+                </Box>
 
-              <Box p="regular">
-                <Heading.h2>Section 2</Heading.h2>
+                <Box p="regular">
+                  <Heading.h2>Section 2</Heading.h2>
 
-                <Text>
-                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
-                  tota aperiam intellegebat. Mel delenit delectus et, veniam
-                  soleat pericula vix et. Aeque accumsan quo ex, albucius
-                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
-                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
-                  animal te quo, ius lorem feugiat veritus id.
-                </Text>
-              </Box>
-            </AccordionSection>
-          </Card>
-        </Flex>
-      </AccordionContainer>
+                  <Text>
+                    Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                    tota aperiam intellegebat. Mel delenit delectus et, veniam
+                    soleat pericula vix et. Aeque accumsan quo ex, albucius
+                    pericula expetendis quo ei. Debitis oporteat at eos, mei
+                    justo eruditi periculis te. Sed no mazim liber dicunt, aeque
+                    viris animal te quo, ius lorem feugiat veritus id.
+                  </Text>
+                </Box>
+              </AccordionSection>
+            </Card>
+          </Flex>
+        </AccordionContainer>
 
-      <AccordionContainer>
-        <Heading.h2>Accordion with custom styles</Heading.h2>
+        <AccordionContainer>
+          <Heading.h2>Accordion with custom styles</Heading.h2>
 
-        <Flex justifyContent="center" width="500px">
-          <Card>
-            <AccordionSection
-              header={<Box my="small">Header with Custom Styles</Box>}
-              headerNote={note}
-              panelId="custom-styles-header"
-              css={css`
-                background: red;
-              `}
-            >
-              <Box p="regular">
-                <Text mb="regular">
-                  You can customize the look and feel of the header.
-                </Text>
-                <Text>
-                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
-                  tota aperiam intellegebat. Mel delenit delectus et, veniam
-                  soleat pericula vix et. Aeque accumsan quo ex, albucius
-                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
-                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
-                  animal te quo, ius lorem feugiat veritus id.
-                </Text>
-              </Box>
-            </AccordionSection>
-          </Card>
-        </Flex>
-      </AccordionContainer>
+          <Flex justifyContent="center" width="500px">
+            <Card>
+              <AccordionSection
+                header={<Box my="small">Header with Custom Styles</Box>}
+                headerNote={note}
+                panelId="custom-styles-header"
+                css={css`
+                  background: red;
+                `}
+              >
+                <Box p="regular">
+                  <Text mb="regular">
+                    You can customize the look and feel of the header.
+                  </Text>
+                  <Text>
+                    Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                    tota aperiam intellegebat. Mel delenit delectus et, veniam
+                    soleat pericula vix et. Aeque accumsan quo ex, albucius
+                    pericula expetendis quo ei. Debitis oporteat at eos, mei
+                    justo eruditi periculis te. Sed no mazim liber dicunt, aeque
+                    viris animal te quo, ius lorem feugiat veritus id.
+                  </Text>
+                </Box>
+              </AccordionSection>
+            </Card>
+          </Flex>
+        </AccordionContainer>
 
-      <AccordionContainer>
-        <Heading.h2>Accordion with minimal buttons in notes</Heading.h2>
+        <AccordionContainer>
+          <Heading.h2>Accordion with minimal buttons in notes</Heading.h2>
 
-        <Flex justifyContent="center" width="500px">
-          <Card>
-            <AccordionSection
-              header={<Box my="small">Header with minimal buttons</Box>}
-              headerNote={noteWithButtons}
-              panelId="minimal-button-notes-panel-1"
-              variant={select('Variant', variantOptions)}
-            >
-              <Box p="regular">
-                <Text>
-                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
-                  tota aperiam intellegebat. Mel delenit delectus et, veniam
-                  soleat pericula vix et. Aeque accumsan quo ex, albucius
-                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
-                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
-                  animal te quo, ius lorem feugiat veritus id.
-                </Text>
-              </Box>
-            </AccordionSection>
-          </Card>
-        </Flex>
-      </AccordionContainer>
+          <Flex justifyContent="center" width="500px">
+            <Card>
+              <AccordionSection
+                header={<Box my="small">Header with minimal buttons</Box>}
+                headerNote={noteWithButtons}
+                panelId="minimal-button-notes-panel-1"
+                variant={select('Variant', variantOptions)}
+              >
+                <Box p="regular">
+                  <Text>
+                    Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                    tota aperiam intellegebat. Mel delenit delectus et, veniam
+                    soleat pericula vix et. Aeque accumsan quo ex, albucius
+                    pericula expetendis quo ei. Debitis oporteat at eos, mei
+                    justo eruditi periculis te. Sed no mazim liber dicunt, aeque
+                    viris animal te quo, ius lorem feugiat veritus id.
+                  </Text>
+                </Box>
+              </AccordionSection>
+            </Card>
+          </Flex>
+        </AccordionContainer>
 
-      <AccordionContainer>
-        <Heading.h2>Accordion with primary buttons</Heading.h2>
+        <AccordionContainer>
+          <Heading.h2>Accordion with primary buttons</Heading.h2>
 
-        <Flex justifyContent="center" width="500px">
-          <Card>
-            <AccordionSection
-              header={<Box my="small">Header with primary buttons</Box>}
-              headerNote={noteWithPrimaryButtons}
-              panelId="primary-buttons-panel-1"
-              variant={select('Variant', variantOptions)}
-            >
-              <Box p="regular">
-                <Text>
-                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
-                  tota aperiam intellegebat. Mel delenit delectus et, veniam
-                  soleat pericula vix et. Aeque accumsan quo ex, albucius
-                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
-                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
-                  animal te quo, ius lorem feugiat veritus id.
-                </Text>
-              </Box>
-            </AccordionSection>
-          </Card>
-        </Flex>
-      </AccordionContainer>
+          <Flex justifyContent="center" width="500px">
+            <Card>
+              <AccordionSection
+                header={<Box my="small">Header with primary buttons</Box>}
+                headerNote={noteWithPrimaryButtons}
+                panelId="primary-buttons-panel-1"
+                variant={select('Variant', variantOptions)}
+              >
+                <Box p="regular">
+                  <Text>
+                    Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                    tota aperiam intellegebat. Mel delenit delectus et, veniam
+                    soleat pericula vix et. Aeque accumsan quo ex, albucius
+                    pericula expetendis quo ei. Debitis oporteat at eos, mei
+                    justo eruditi periculis te. Sed no mazim liber dicunt, aeque
+                    viris animal te quo, ius lorem feugiat veritus id.
+                  </Text>
+                </Box>
+              </AccordionSection>
+            </Card>
+          </Flex>
+        </AccordionContainer>
 
-      <AccordionContainer>
-        <Heading.h2>Accordion with secondary buttons</Heading.h2>
+        <AccordionContainer>
+          <Heading.h2>Accordion with secondary buttons</Heading.h2>
 
-        <Flex justifyContent="center" width="500px">
-          <Card>
-            <AccordionSection
-              header={<Box my="small">Header with secondary buttons</Box>}
-              headerNote={noteWithSecondaryButtons}
-              panelId="secondary-buttons-panel-1"
-              variant={select('Variant', variantOptions)}
-            >
-              <Box p="regular">
-                <Text>
-                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
-                  tota aperiam intellegebat. Mel delenit delectus et, veniam
-                  soleat pericula vix et. Aeque accumsan quo ex, albucius
-                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
-                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
-                  animal te quo, ius lorem feugiat veritus id.
-                </Text>
-              </Box>
-            </AccordionSection>
-          </Card>
-        </Flex>
-      </AccordionContainer>
-    </>
-  );
-});
+          <Flex justifyContent="center" width="500px">
+            <Card>
+              <AccordionSection
+                header={<Box my="small">Header with secondary buttons</Box>}
+                headerNote={noteWithSecondaryButtons}
+                panelId="secondary-buttons-panel-1"
+                variant={select('Variant', variantOptions)}
+              >
+                <Box p="regular">
+                  <Text>
+                    Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                    tota aperiam intellegebat. Mel delenit delectus et, veniam
+                    soleat pericula vix et. Aeque accumsan quo ex, albucius
+                    pericula expetendis quo ei. Debitis oporteat at eos, mei
+                    justo eruditi periculis te. Sed no mazim liber dicunt, aeque
+                    viris animal te quo, ius lorem feugiat veritus id.
+                  </Text>
+                </Box>
+              </AccordionSection>
+            </Card>
+          </Flex>
+        </AccordionContainer>
+      </>
+    );
+  },
+  { notes: { markdown: notes } }
+);

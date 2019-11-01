@@ -5,6 +5,8 @@ import { Box, DateTimePicker, Heading, Text } from '../src';
 
 import 'react-datetime/css/react-datetime.css';
 
+import notes from './dateTimepicker.md';
+
 const stories = storiesOf('DateTimePicker', module);
 
 class DateTimePickerStories extends React.Component {
@@ -40,4 +42,6 @@ class DateTimePickerStories extends React.Component {
   }
 }
 
-stories.add('default', () => <DateTimePickerStories />);
+stories.add('default', () => <DateTimePickerStories />, {
+  notes: { markdown: notes }
+});

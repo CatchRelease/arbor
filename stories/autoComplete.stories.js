@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { boolean, select, withKnobs } from '@storybook/addon-knobs';
 
+import notes from './autoComplete.md';
 import { AutoComplete, Box, Heading } from '../src';
 import palette from '../src/theme/colors/palette';
 
@@ -110,50 +111,54 @@ AutoCompleteExample.defaultProps = {
 const stories = storiesOf('AutoComplete', module);
 stories.addDecorator(withKnobs);
 
-stories.add('default', () => (
-  <Box as="section" p="regular">
-    <Heading.h1>AutoComplete</Heading.h1>
+stories.add(
+  'default',
+  () => (
+    <Box as="section" p="regular">
+      <Heading.h1>AutoComplete</Heading.h1>
 
-    <AutoCompleteExample
-      id="auto-complete-1"
-      label="AutoComplete with unstyled badges"
-      options={neutralOptions}
-      variant={select('Variant', variantOptions, 'default')}
-    />
+      <AutoCompleteExample
+        id="auto-complete-1"
+        label="AutoComplete with unstyled badges"
+        options={neutralOptions}
+        variant={select('Variant', variantOptions, 'default')}
+      />
 
-    <AutoCompleteExample
-      id="auto-complete-2"
-      label="AutoComplete with unstyled default badges"
-      options={neutralOptions.map(option => ({
-        ...option,
-        variant: 'default'
-      }))}
-      variant={select('Variant', variantOptions, 'default')}
-    />
+      <AutoCompleteExample
+        id="auto-complete-2"
+        label="AutoComplete with unstyled default badges"
+        options={neutralOptions.map(option => ({
+          ...option,
+          variant: 'default'
+        }))}
+        variant={select('Variant', variantOptions, 'default')}
+      />
 
-    <AutoCompleteExample
-      id="auto-complete-3"
-      label="AutoComplete with color badges"
-      options={colorOptions}
-      variant={select('Variant', variantOptions, 'default')}
-    />
+      <AutoCompleteExample
+        id="auto-complete-3"
+        label="AutoComplete with color badges"
+        options={colorOptions}
+        variant={select('Variant', variantOptions, 'default')}
+      />
 
-    <AutoCompleteExample
-      id="auto-complete-4"
-      label="AutoComplete with subtle color badges"
-      options={colorOptions.map(option => ({ ...option, subtle: true }))}
-      variant={select('Variant', variantOptions, 'default')}
-    />
+      <AutoCompleteExample
+        id="auto-complete-4"
+        label="AutoComplete with subtle color badges"
+        options={colorOptions.map(option => ({ ...option, subtle: true }))}
+        variant={select('Variant', variantOptions, 'default')}
+      />
 
-    <AutoCompleteExample
-      id="auto-complete-5"
-      label="AutoComplete with subtle color default badges"
-      options={colorOptions.map(option => ({
-        ...option,
-        subtle: true,
-        variant: 'default'
-      }))}
-      variant={select('Variant', variantOptions, 'default')}
-    />
-  </Box>
-));
+      <AutoCompleteExample
+        id="auto-complete-5"
+        label="AutoComplete with subtle color default badges"
+        options={colorOptions.map(option => ({
+          ...option,
+          subtle: true,
+          variant: 'default'
+        }))}
+        variant={select('Variant', variantOptions, 'default')}
+      />
+    </Box>
+  ),
+  { notes: { markdown: notes } }
+);

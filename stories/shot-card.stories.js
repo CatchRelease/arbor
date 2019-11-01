@@ -1,6 +1,7 @@
 import React from 'react';
 import stories from './card.stories';
 
+import notes from './shot-card.md';
 import {
   Box,
   Button,
@@ -53,77 +54,81 @@ const like = (
   <Icon color="icons.default" fontSize="24" name="thumb-up-outline" />
 );
 
-stories.add('Shot Card Example', () => (
-  <Box m="regular">
-    <Heading.h2>Cards</Heading.h2>
+stories.add(
+  'Shot Card Example',
+  () => (
+    <Box m="regular">
+      <Heading.h2>Cards</Heading.h2>
 
-    <Grid
-      gridGap="large"
-      gridTemplateColumns="repeat(auto-fill, minmax(360px,1fr))"
-    >
-      {exampleCards.map(card => (
-        <Card>
-          <CardRow>
-            <Checkbox icon="cr-logo" my="0" label={card.id} />
-            <Tooltip content="The Shot is 100% Licensed. All agreements and releases have been fully executed.">
-              <Button variant="minimal" size="medium" color="green">
-                License Acquired
-              </Button>
-            </Tooltip>
-          </CardRow>
+      <Grid
+        gridGap="large"
+        gridTemplateColumns="repeat(auto-fill, minmax(360px,1fr))"
+      >
+        {exampleCards.map(card => (
+          <Card>
+            <CardRow>
+              <Checkbox icon="cr-logo" my="0" label={card.id} />
+              <Tooltip content="The Shot is 100% Licensed. All agreements and releases have been fully executed.">
+                <Button variant="minimal" size="medium" color="green">
+                  License Acquired
+                </Button>
+              </Tooltip>
+            </CardRow>
 
-          <CardPreview image={card.preview} />
+            <CardPreview image={card.preview} />
 
-          <CardRow>
-            <Tooltip content="20 Action Items have been accepted.">
-              <Link
-                variant="muted"
-                color="grey80"
-                fontSize="size2"
-                href="#test"
-                onClick={e => e.preventDefault()}
-              >
-                20 Action Items
-              </Link>
-            </Tooltip>
+            <CardRow>
+              <Tooltip content="20 Action Items have been accepted.">
+                <Link
+                  variant="muted"
+                  color="grey80"
+                  fontSize="size2"
+                  href="#test"
+                  onClick={e => e.preventDefault()}
+                >
+                  20 Action Items
+                </Link>
+              </Tooltip>
 
-            <CardActions>
-              <Tooltip content="Comments">
-                <Button
-                  iconStart={comments}
-                  variant="minimal"
-                  size="medium"
-                  color="icons.default"
-                />
-              </Tooltip>
-              <Tooltip content="Download Asset">
-                <Button
-                  iconStart={download}
-                  variant="minimal"
-                  size="medium"
-                  color="icons.default"
-                />
-              </Tooltip>
-              <Tooltip content="Dislike Shot">
-                <Button
-                  iconStart={dislike}
-                  variant="minimal"
-                  size="medium"
-                  color="icons.default"
-                />
-              </Tooltip>
-              <Tooltip content="Like Shot">
-                <Button
-                  iconStart={like}
-                  variant="minimal"
-                  size="medium"
-                  color="icons.default"
-                />
-              </Tooltip>
-            </CardActions>
-          </CardRow>
-        </Card>
-      ))}
-    </Grid>
-  </Box>
-));
+              <CardActions>
+                <Tooltip content="Comments">
+                  <Button
+                    iconStart={comments}
+                    variant="minimal"
+                    size="medium"
+                    color="icons.default"
+                  />
+                </Tooltip>
+                <Tooltip content="Download Asset">
+                  <Button
+                    iconStart={download}
+                    variant="minimal"
+                    size="medium"
+                    color="icons.default"
+                  />
+                </Tooltip>
+                <Tooltip content="Dislike Shot">
+                  <Button
+                    iconStart={dislike}
+                    variant="minimal"
+                    size="medium"
+                    color="icons.default"
+                  />
+                </Tooltip>
+                <Tooltip content="Like Shot">
+                  <Button
+                    iconStart={like}
+                    variant="minimal"
+                    size="medium"
+                    color="icons.default"
+                  />
+                </Tooltip>
+              </CardActions>
+            </CardRow>
+          </Card>
+        ))}
+      </Grid>
+    </Box>
+  ),
+  { notes: { markdown: notes } }
+);

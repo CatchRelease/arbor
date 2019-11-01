@@ -4,6 +4,7 @@ import ReactModal from 'react-modal';
 import { storiesOf } from '@storybook/react';
 import { number, text, withKnobs } from '@storybook/addon-knobs';
 
+import notes from './modal.md';
 import { Box, Button, Card, Grid, Heading, Icon, Modal } from '../src';
 
 // For modal accessibility. See http://reactcommunity.org/react-modal/accessibility/ for details
@@ -101,26 +102,34 @@ ModalStory.propTypes = {
 
 const stories = storiesOf('Modal', module);
 stories.addDecorator(withKnobs);
-stories.add('default', () => (
-  <ModalStory
-    p="large"
-    numberOfLines={number('Lines of Content', 100)}
-    height={text('Height', 'calc(100% - 40px)')}
-    width={text('Modal Width', '500px')}
-  >
-    Foo
-  </ModalStory>
-));
-
-stories.add('scrolling page', () => (
-  <Box height="3000px">
+stories.add(
+  'default',
+  () => (
     <ModalStory
       p="large"
       numberOfLines={number('Lines of Content', 100)}
-      height={text('Height', '300px')}
+      height={text('Height', 'calc(100% - 40px)')}
       width={text('Modal Width', '500px')}
     >
-      Bar
+      Foo
     </ModalStory>
-  </Box>
-));
+  ),
+  { notes: { markdown: notes } }
+);
+
+stories.add(
+  'scrolling page',
+  () => (
+    <Box height="3000px">
+      <ModalStory
+        p="large"
+        numberOfLines={number('Lines of Content', 100)}
+        height={text('Height', '300px')}
+        width={text('Modal Width', '500px')}
+      >
+        Bar
+      </ModalStory>
+    </Box>
+  ),
+  { notes: { markdown: notes } }
+);

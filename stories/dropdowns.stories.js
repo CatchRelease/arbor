@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 
+import notes from './dropdowns.md';
 import {
   Avatar,
   Box,
@@ -128,20 +129,28 @@ CustomMenuItem.defaultProps = {
   secondaryLabel: undefined
 };
 
-stories.add('default', () => (
-  <Box as="section" p="regular">
-    <Heading.h1 mb="regular">Dropdown</Heading.h1>
-    <DropdownContainer>select an item</DropdownContainer>
-  </Box>
-));
+stories.add(
+  'default',
+  () => (
+    <Box as="section" p="regular">
+      <Heading.h1 mb="regular">Dropdown</Heading.h1>
+      <DropdownContainer>select an item</DropdownContainer>
+    </Box>
+  ),
+  { notes: { markdown: notes } }
+);
 
-stories.add('custom trigger', () => (
-  <Box as="section" p="regular">
-    <Heading.h1 mb="regular">Dropdown</Heading.h1>
-    <DropdownContainer
-      MenuItemComponent={CustomMenuItem}
-      TriggerComponent={Avatar}
-      name="Bruce Wayne"
-    />
-  </Box>
-));
+stories.add(
+  'custom trigger',
+  () => (
+    <Box as="section" p="regular">
+      <Heading.h1 mb="regular">Dropdown</Heading.h1>
+      <DropdownContainer
+        MenuItemComponent={CustomMenuItem}
+        TriggerComponent={Avatar}
+        name="Bruce Wayne"
+      />
+    </Box>
+  ),
+  { notes: { markdown: notes } }
+);

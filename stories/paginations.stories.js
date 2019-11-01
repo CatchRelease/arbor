@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 
+import notes from './paginations.md';
 import { Pagination, Flex } from '../src';
 
 const stories = storiesOf('Pagination', module);
@@ -37,20 +38,32 @@ class PaginationContainer extends React.Component {
   }
 }
 
-stories.add('default', () => (
-  <Flex mt="100px" justifyContent="center">
-    <PaginationContainer />
-  </Flex>
-));
+stories.add(
+  'default',
+  () => (
+    <Flex mt="100px" justifyContent="center">
+      <PaginationContainer />
+    </Flex>
+  ),
+  { notes: { markdown: notes } }
+);
 
-stories.add('small', () => (
-  <Flex mt="100px" justifyContent="center">
-    <PaginationContainer size="small" />
-  </Flex>
-));
+stories.add(
+  'small',
+  () => (
+    <Flex mt="100px" justifyContent="center">
+      <PaginationContainer size="small" />
+    </Flex>
+  ),
+  { notes: { markdown: notes } }
+);
 
-stories.add('medium', () => (
-  <Flex mt="100px" justifyContent="center">
-    <PaginationContainer size="medium" />
-  </Flex>
-));
+stories.add(
+  'medium',
+  () => (
+    <Flex mt="100px" justifyContent="center">
+      <PaginationContainer size="medium" />
+    </Flex>
+  ),
+  { notes: { markdown: notes } }
+);
