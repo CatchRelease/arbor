@@ -217,12 +217,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "secondary": Object {
             "blue": "#4B9BFF",
             "cyan": "#5FC8FF",
-            "green": "#50D2A0",
+            "green": "#9BE169",
             "orange": "#FFB46E",
             "pink": "#FF73C3",
             "purple": "#AF78FF",
             "red": "#FF5F5F",
-            "teal": "#9BE169",
+            "teal": "#50D2A0",
             "yellow": "#FFD76E",
           },
           "text": Object {
@@ -596,12 +596,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                 "secondary": Object {
                   "blue": "#4B9BFF",
                   "cyan": "#5FC8FF",
-                  "green": "#50D2A0",
+                  "green": "#9BE169",
                   "orange": "#FFB46E",
                   "pink": "#FF73C3",
                   "purple": "#AF78FF",
                   "red": "#FF5F5F",
-                  "teal": "#9BE169",
+                  "teal": "#50D2A0",
                   "yellow": "#FFD76E",
                 },
                 "text": Object {
