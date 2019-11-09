@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { boolean, withKnobs } from '@storybook/addon-knobs';
 
 import notes from './descriptionLists.md';
 import {
@@ -11,6 +12,7 @@ import {
 } from '../src';
 
 const stories = storiesOf('Description Lists', module);
+stories.addDecorator(withKnobs);
 
 stories.add(
   'Default',
@@ -18,7 +20,7 @@ stories.add(
     <Box as="section" p="regular">
       <Heading.h1>Description Lists</Heading.h1>
 
-      <DescriptionList>
+      <DescriptionList inline={boolean('Inline', false)}>
         <DescriptionTerm>Batman</DescriptionTerm>
         <DescriptionDetails>
           Batman is a fictional superhero appearing in American comic books
