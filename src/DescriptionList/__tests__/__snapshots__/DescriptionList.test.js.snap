@@ -24,7 +24,9 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
   box-sizing: border-box;
 }
 
-<DescriptionList>
+<DescriptionList
+  inline={false}
+>
   <dl
     className="emotion-12 emotion-13"
   >
