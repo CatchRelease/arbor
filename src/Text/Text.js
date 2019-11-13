@@ -54,7 +54,9 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
-  color: 'text.default'
+  color: 'text.default',
+  fontSize: 'size4',
+  lineHeight: 'small'
 };
 
 // Deprecated -- use <Text as="span"></Text>
