@@ -4,6 +4,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-6 {
@@ -107,6 +109,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -121,6 +124,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -224,6 +229,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -314,6 +320,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -341,6 +349,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -355,6 +364,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -458,6 +469,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -472,6 +484,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 .emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-8 {
@@ -578,6 +592,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
     <p
       className="emotion-2 emotion-3"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -592,6 +607,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 .emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-6 {
@@ -698,6 +715,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
     <p
       className="emotion-2 emotion-3"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -788,6 +806,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 .emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-6 {
@@ -818,6 +838,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
     <p
       className="emotion-2 emotion-3"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -832,6 +853,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 .emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-6 {
@@ -938,6 +961,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
     <p
       className="emotion-2 emotion-3"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -952,6 +976,8 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 .emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-6 {
@@ -1058,6 +1084,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
     <p
       className="emotion-2 emotion-3"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -1069,6 +1096,8 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 .emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -1175,6 +1204,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
     <p
       className="emotion-2 emotion-3"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -1262,6 +1292,8 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 .emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -1292,6 +1324,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
     <p
       className="emotion-2 emotion-3"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -1303,6 +1336,8 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 .emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -1409,6 +1444,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
     <p
       className="emotion-2 emotion-3"
       color="inherit"
+      fontSize="size4"
     >
       Button with Icon
     </p>
@@ -1432,6 +1468,8 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -1523,6 +1561,7 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button Label
     </p>
@@ -1622,6 +1661,8 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 <button
@@ -1637,6 +1678,7 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button Label
     </p>
@@ -1660,6 +1702,8 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -1751,6 +1795,7 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button Label
     </p>
@@ -1774,6 +1819,8 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -1865,6 +1912,7 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button Label
     </p>
@@ -1888,6 +1936,8 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -1987,6 +2037,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button Label
     </p>
@@ -2086,6 +2137,8 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 <button
@@ -2101,6 +2154,7 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button Label
     </p>
@@ -2124,6 +2178,8 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -2222,6 +2278,7 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button Label
     </p>
@@ -2245,6 +2302,8 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -2344,6 +2403,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button Label
     </p>
@@ -2443,6 +2503,8 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 <button
@@ -2458,6 +2520,7 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button Label
     </p>
@@ -2481,6 +2544,8 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -2579,6 +2644,7 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Button Label
     </p>
@@ -2602,6 +2668,8 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 .emotion-4 {
@@ -2694,6 +2762,7 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
     <p
       className="emotion-0 emotion-1"
       color="inherit"
+      fontSize="size4"
     >
       Full Width
     </p>

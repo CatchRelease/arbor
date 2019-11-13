@@ -15,7 +15,6 @@ const variantStyles = ({ theme, variant }) => css`
 `;
 
 const Paragraph = styled(Text)`
-  line-height: ${props => props.theme.lineHeights.small};
   ${variantStyles};
 `;
 
@@ -24,6 +23,10 @@ Paragraph.propTypes = {
    * Style variant. See storybook for examples.
    */
   variant: PropTypes.oneOf(['ui', 'longForm', 'tiny']).isRequired
+};
+
+Paragraph.defaultProps = {
+  lineHeight: 'large'
 };
 
 export default Paragraph;

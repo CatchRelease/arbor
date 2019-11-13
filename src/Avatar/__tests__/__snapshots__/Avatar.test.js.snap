@@ -42,6 +42,7 @@ exports[`<Avatar /> renders properly 1`] = `
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.75rem;
+  line-height: 1.25;
 }
 
 <div

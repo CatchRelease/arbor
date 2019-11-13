@@ -62,6 +62,7 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
+  line-height: 1.25;
   margin-left: 0.5rem;
 }
 
@@ -162,6 +163,7 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
+  line-height: 1.25;
   margin-left: 0.25rem;
 }
 
@@ -235,6 +237,7 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
+  line-height: 1.25;
   margin-left: 0.5rem;
 }
 
@@ -341,6 +344,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
+  line-height: 1.25;
   margin-left: 0.5rem;
 }
 
@@ -476,6 +480,7 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
   font-family: Motiva Sans;
   color: rgba(120,121,125,0.7);
   font-size: 0.875rem;
+  line-height: 1.25;
   margin-left: 0.5rem;
 }
 
@@ -577,6 +582,7 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   font-family: Motiva Sans;
   color: rgba(120,121,125,0.7);
   font-size: 0.875rem;
+  line-height: 1.25;
   margin-left: 0.5rem;
 }
 
@@ -676,6 +682,7 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
+  line-height: 1.25;
   margin-left: 0.5rem;
 }
 
