@@ -24,7 +24,8 @@ const Heading = styled(Text)`
 Heading.defaultProps = {
   as: 'h1',
   color: 'text.dark',
-  fontWeight: 'bold'
+  fontWeight: 'bold',
+  lineheight: 'small'
 };
 
 const createHeading = h => (
