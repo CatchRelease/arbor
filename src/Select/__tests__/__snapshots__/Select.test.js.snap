@@ -103,7 +103,7 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
 .emotion-6 {
   font-family: Motiva Sans;
   color: #EE2200;
-  line-height: 1.25;
+  line-height: 1.5;
   font-size: 0.75rem;
 }
 

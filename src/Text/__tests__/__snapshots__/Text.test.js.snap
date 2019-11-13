@@ -4,11 +4,14 @@ exports[`<Text /> properly renders a Text component 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
 
 <p
   className="emotion-0 emotion-1"
   color="text.default"
+  fontSize="size4"
 >
   The quick brown fox jumps over the lazy dog
 </p>

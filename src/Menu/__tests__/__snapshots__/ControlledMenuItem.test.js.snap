@@ -62,6 +62,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
   font-family: Motiva Sans;
   color: inherit;
   font-size: 0.875rem;
+  line-height: 1.25;
   min-width: 120px;
   overflow: hidden;
 }
@@ -84,6 +85,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
   font-family: Motiva Sans;
   color: #5B5D61;
   font-size: 0.8125rem;
+  line-height: 1.25;
   max-width: 100%;
   line-height: 0.875rem;
 }
@@ -202,6 +204,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
   font-family: Motiva Sans;
   color: inherit;
   font-size: 0.875rem;
+  line-height: 1.25;
   min-width: 120px;
   overflow: hidden;
 }
@@ -224,6 +227,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
   font-family: Motiva Sans;
   color: #5B5D61;
   font-size: 0.8125rem;
+  line-height: 1.25;
   max-width: 100%;
   line-height: 0.875rem;
 }
