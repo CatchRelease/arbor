@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
+import { withKnobs, number, select, boolean } from '@storybook/addon-knobs';
 import notes from './progressBar.md';
 import { Box, ProgressBar } from '../src';
-import { withKnobs, number, select, boolean } from '@storybook/addon-knobs';
 
 const stories = storiesOf('ProgressBar', module);
 stories.addDecorator(withKnobs);
@@ -22,12 +22,7 @@ stories.add(
     <Box m="regular" id="skip" maxWidth="750px">
       <ProgressBar percentage={96} />
       <ProgressBar percentage={66.67} iconEndName="lock" />
-      <ProgressBar
-        mt="large"
-        width="50%"
-        percentage={25}
-        showPercentage={true}
-      />
+      <ProgressBar mt="large" width="50%" percentage={25} showPercentage />
       <ProgressBar
         mt="large"
         percentage={number('percentage', 33)}

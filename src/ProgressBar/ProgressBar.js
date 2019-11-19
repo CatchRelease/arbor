@@ -1,6 +1,4 @@
 /** @jsx jsx */
-import React from 'react';
-
 import { css, jsx } from '@emotion/core';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
@@ -32,28 +30,26 @@ const BarForeground = styled(Box)`
 
 const percentageText = percentage => (
   <Text flex="0" ml="smaller" fontSize="size3" fontWeight="medium">
-    {percentage}%
+    {`${percentage}%`}
   </Text>
 );
 
-const ProgressBar = ({ percentage, iconEndName, showPercentage, ...props }) => {
-  return (
-    <ProgressBarContainer {...props}>
-      <BarBackground className="bar-background">
-        <BarForeground
-          className="bar-foreground"
-          css={css`
-            width: ${percentage}%;
-          `}
-        />
-      </BarBackground>
-      {iconEndName && (
-        <Icon ml="smaller" flex="0" fontSize="size4" name={iconEndName} />
-      )}
-      {showPercentage && percentageText(percentage)}
-    </ProgressBarContainer>
-  );
-};
+const ProgressBar = ({ percentage, iconEndName, showPercentage, ...props }) => (
+  <ProgressBarContainer {...props}>
+    <BarBackground className="bar-background">
+      <BarForeground
+        className="bar-foreground"
+        css={css`
+          width: ${percentage}%;
+        `}
+      />
+    </BarBackground>
+    {iconEndName && (
+      <Icon ml="smaller" flex="0" fontSize="size4" name={iconEndName} />
+    )}
+    {showPercentage && percentageText(percentage)}
+  </ProgressBarContainer>
+);
 
 ProgressBar.propTypes = {
   /* Show the percentage complete, or not */
