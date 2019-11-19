@@ -16,7 +16,6 @@ const ProgressBarContainer = styled(Flex)`
 `;
 
 const BarBackground = styled(Box)`
-  height: 100%;
   flex: 1;
   background-color: ${props => props.theme.colors.monochrome.grey40};
   height: ${props => props.theme.space.smallest};
