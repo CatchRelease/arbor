@@ -22,7 +22,7 @@ const FormField = ({ caption, children, label, labelAside, id }) => (
     </Flex>
     {children}
     {caption && (
-      <Paragraph as="span" variant="tiny" color="red">
+      <Paragraph as="span" variant="tiny" color="palette.red.default">
         {caption}
       </Paragraph>
     )}

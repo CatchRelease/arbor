@@ -51,7 +51,7 @@ exports[`<FormField /> renders a FormField with a caption correctly 1`] = `
 
 .emotion-2 {
   font-family: Motiva Sans;
-  color: #EE2200;
+  color: #D93838;
   line-height: 1.5;
   font-size: 0.75rem;
 }
@@ -67,7 +67,7 @@ exports[`<FormField /> renders a FormField with a caption correctly 1`] = `
   Field Child
   <span
     className="emotion-2 emotion-3"
-    color="red"
+    color="palette.red.default"
   >
     I am a caption
   </span>

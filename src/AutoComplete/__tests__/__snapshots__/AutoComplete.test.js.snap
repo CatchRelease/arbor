@@ -179,7 +179,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 
 .emotion-20 {
   font-family: Motiva Sans;
-  color: #EE2200;
+  color: #D93838;
   line-height: 1.5;
   font-size: 0.75rem;
 }
@@ -262,7 +262,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   </div>
   <span
     className="emotion-20 emotion-21"
-    color="red"
+    color="palette.red.default"
   >
     Test the auto complete input
   </span>
@@ -448,7 +448,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 
 .emotion-20 {
   font-family: Motiva Sans;
-  color: #EE2200;
+  color: #D93838;
   line-height: 1.5;
   font-size: 0.75rem;
 }
@@ -531,7 +531,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   </div>
   <span
     className="emotion-20 emotion-21"
-    color="red"
+    color="palette.red.default"
   >
     Test the auto complete input
   </span>
@@ -717,7 +717,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 
 .emotion-20 {
   font-family: Motiva Sans;
-  color: #EE2200;
+  color: #D93838;
   line-height: 1.5;
   font-size: 0.75rem;
 }
@@ -800,7 +800,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   </div>
   <span
     className="emotion-20 emotion-21"
-    color="red"
+    color="palette.red.default"
   >
     Test the auto complete input
   </span>
@@ -986,7 +986,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 
 .emotion-20 {
   font-family: Motiva Sans;
-  color: #EE2200;
+  color: #D93838;
   line-height: 1.5;
   font-size: 0.75rem;
 }
@@ -1069,7 +1069,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   </div>
   <span
     className="emotion-20 emotion-21"
-    color="red"
+    color="palette.red.default"
   >
     Test the auto complete input
   </span>
@@ -1255,7 +1255,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 
 .emotion-20 {
   font-family: Motiva Sans;
-  color: #EE2200;
+  color: #D93838;
   line-height: 1.5;
   font-size: 0.75rem;
 }
@@ -1338,7 +1338,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   </div>
   <span
     className="emotion-20 emotion-21"
-    color="red"
+    color="palette.red.default"
   >
     Test the auto complete input
   </span>
@@ -1520,7 +1520,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 
 .emotion-20 {
   font-family: Motiva Sans;
-  color: #EE2200;
+  color: #D93838;
   line-height: 1.5;
   font-size: 0.75rem;
 }
@@ -1607,7 +1607,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   </div>
   <span
     className="emotion-20 emotion-21"
-    color="red"
+    color="palette.red.default"
   >
     Test the auto complete input
   </span>
