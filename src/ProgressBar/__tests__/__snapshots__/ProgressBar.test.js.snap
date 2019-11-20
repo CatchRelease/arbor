@@ -133,9 +133,9 @@ exports[`<ProgressBar /> renders the description list properly 1`] = `
             css={
               Object {
                 "map": undefined,
-                "name": "amj49d-ProgressBar",
+                "name": "1rvwrzh-ProgressBar",
                 "next": undefined,
-                "styles": "width:42%;label:ProgressBar;",
+                "styles": "width:42%;;label:ProgressBar;",
                 "toString": [Function],
               }
             }
