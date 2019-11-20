@@ -242,7 +242,7 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
 
 .emotion-4 {
   font-family: Motiva Sans;
-  color: #EE2200;
+  color: #D93838;
   line-height: 1.5;
   font-size: 0.75rem;
 }
@@ -264,7 +264,7 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
   />
   <span
     className="emotion-4 emotion-5"
-    color="red"
+    color="palette.red.default"
   >
     I am a caption
   </span>

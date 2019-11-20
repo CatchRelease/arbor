@@ -102,7 +102,7 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
 
 .emotion-6 {
   font-family: Motiva Sans;
-  color: #EE2200;
+  color: #D93838;
   line-height: 1.5;
   font-size: 0.75rem;
 }
@@ -129,7 +129,7 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
   </div>
   <span
     className="emotion-6 emotion-7"
-    color="red"
+    color="palette.red.default"
   >
     I am a caption
   </span>
