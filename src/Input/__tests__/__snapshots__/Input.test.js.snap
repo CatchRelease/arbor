@@ -79,6 +79,8 @@ exports[`<Input /> renders a large Input correctly 1`] = `
   <input
     className="emotion-2 emotion-3"
     id="example"
+    onBlur={[Function]}
+    onChange={[Function]}
     type="text"
   />
   
@@ -163,6 +165,8 @@ exports[`<Input /> renders an Input correctly 1`] = `
   <input
     className="emotion-2 emotion-3"
     id="example"
+    onBlur={[Function]}
+    onChange={[Function]}
     type="text"
   />
   
@@ -254,6 +258,8 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
   <input
     className="emotion-2 emotion-3"
     id="example"
+    onBlur={[Function]}
+    onChange={[Function]}
     type="text"
   />
   <span
@@ -376,6 +382,8 @@ exports[`<Input /> renders an Input with a label correctly 1`] = `
   <input
     className="emotion-6 emotion-7"
     id="example"
+    onBlur={[Function]}
+    onChange={[Function]}
     type="text"
   />
   
@@ -460,6 +468,8 @@ exports[`<Input /> renders an Input with a type correctly 1`] = `
   <input
     className="emotion-2 emotion-3"
     id="example"
+    onBlur={[Function]}
+    onChange={[Function]}
     type="number"
   />
   
@@ -564,6 +574,8 @@ exports[`<Input /> renders as Input with a labelAside correctly 1`] = `
   <input
     className="emotion-4 emotion-5"
     id="example"
+    onBlur={[Function]}
+    onChange={[Function]}
     type="text"
   />
   
