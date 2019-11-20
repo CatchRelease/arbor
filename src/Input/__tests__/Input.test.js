@@ -69,7 +69,7 @@ describe('<Input />', () => {
     it('displays the caption when valid', () => {
       const wrapper = render();
 
-      expect(wrapper.find(FormField).props().caption).toEqual('The caption');
+      expect(wrapper.find(FormField)).toHaveProp('caption', 'The caption');
     });
 
     it('displays the caption when valid and blurred', () => {
@@ -77,7 +77,7 @@ describe('<Input />', () => {
 
       wrapper.find(StyledInput).simulate('blur');
 
-      expect(wrapper.find(FormField).props().caption).toEqual('The caption');
+      expect(wrapper.find(FormField)).toHaveProp('caption', 'The caption');
     });
 
     it('displays the caption when invalid but not yet blurred', () => {
@@ -86,7 +86,7 @@ describe('<Input />', () => {
 
       input.simulate('change', { target: { value: '123' } });
 
-      expect(wrapper.find(FormField).props().caption).toEqual('The caption');
+      expect(wrapper.find(FormField)).toHaveProp('caption', 'The caption');
     });
 
     it('displays the error message when invalid and blurred', () => {
@@ -96,9 +96,23 @@ describe('<Input />', () => {
       input.simulate('change', { target: { value: '123' } });
       input.simulate('blur');
 
-      expect(wrapper.find(FormField).props().caption).toEqual(
-        'Value must be 42'
-      );
+      expect(wrapper.find(FormField)).toHaveProp('caption', 'Value must be 42');
+    });
+
+    it('marks the input valid when valid', () => {
+      const wrapper = render();
+
+      expect(wrapper.find(StyledInput)).toHaveProp('isInvalid', false);
+    });
+
+    it('marks the input invalid when invalid', () => {
+      const wrapper = render();
+      const input = wrapper.find(StyledInput);
+
+      input.simulate('change', { target: { value: '123' } });
+      input.simulate('blur');
+
+      expect(wrapper.find(StyledInput)).toHaveProp('isInvalid', true);
     });
 
     it('calls onBlur with the original event', () => {
