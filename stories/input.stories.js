@@ -36,6 +36,8 @@ const labelAside = (
   </Dropdown>
 );
 
+const validateIs42 = value => (value === '42' ? null : 'Value must be 42');
+
 storiesOf('Input', module).add(
   'default',
   () => (
@@ -71,6 +73,19 @@ storiesOf('Input', module).add(
         id="secondary-text-input"
         placeholder="Yey"
         name="secondary-text-input"
+      />
+      <Input
+        label="Input with Validation"
+        id="validation-input"
+        name="validation-input"
+        validate={validateIs42}
+      />
+      <Input
+        label="Input with Validation and Caption"
+        caption="This is just a caption"
+        id="validation-input-with-caption"
+        name="validation-input-with-caption"
+        validate={validateIs42}
       />
     </form>
   ),
