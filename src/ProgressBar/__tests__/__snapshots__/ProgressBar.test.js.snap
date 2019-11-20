@@ -61,7 +61,7 @@ exports[`<ProgressBar /> renders the description list properly 1`] = `
         <div
           className="bar-background emotion-3 emotion-4"
         >
-          <ForwardRef(render)
+          <EmotionCssPropInternal
             __EMOTION_LABEL_PLEASE_DO_NOT_USE__="ProgressBar"
             __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
               Object {
@@ -136,6 +136,7 @@ exports[`<ProgressBar /> renders the description list properly 1`] = `
                 "name": "amj49d-ProgressBar",
                 "next": undefined,
                 "styles": "width:42%;label:ProgressBar;",
+                "toString": [Function],
               }
             }
           >
@@ -146,7 +147,7 @@ exports[`<ProgressBar /> renders the description list properly 1`] = `
                 className="bar-foreground emotion-0 emotion-1"
               />
             </BarForeground>
-          </ForwardRef(render)>
+          </EmotionCssPropInternal>
         </div>
       </BarBackground>
       <WithTheme(Icon)

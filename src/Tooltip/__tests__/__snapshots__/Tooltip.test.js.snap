@@ -365,6 +365,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             "name": "r4n83o-globalTippyStyles",
             "next": undefined,
             "styles": ".tippy-popper{.tippy-tooltip.arbor-theme{background:none;padding:0;}}.tippy-popper[x-placement='bottom'] .tippy-tooltip.arbor-theme [x-arrow]{border-bottom-color:#25272D;}.tippy-popper[x-placement='top'] .tippy-tooltip.arbor-theme [x-arrow]{border-top-color:#25272D;}.tippy-popper[x-placement='left'] .tippy-tooltip.arbor-theme [x-arrow]{border-left-color:#25272D;}.tippy-popper[x-placement='right'] .tippy-tooltip.arbor-theme [x-arrow]{border-right-color:#25272D;}label:globalTippyStyles;",
+            "toString": [Function],
           }
         }
       />
