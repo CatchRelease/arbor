@@ -32,6 +32,7 @@ export { default as Pagination } from './Pagination';
 export { default as Pane } from './Pane';
 export { default as Paragraph } from './Paragraph';
 export { default as Popover } from './Popover';
+export { default as ProgressBar } from './ProgressBar';
 export { default as Select } from './Select';
 export { default as Spinner } from './Spinner';
 export * from './Tabs';
