@@ -11,7 +11,12 @@ const focusedStyles = theme => css`
   outline: none;
 `;
 
-const inputStyles = ({ isDisabled, isFocused, theme }) => css`
+const invalidStyles = theme => css`
+  border: ${theme.borderWidth.small} solid ${theme.colors.palette.red.default};
+  background: ${theme.colors.palette.red.lighter};
+`;
+
+const inputStyles = ({ isDisabled, isFocused, isInvalid, theme }) => css`
   border-radius: ${theme.radii.small};
   border: ${theme.borderWidth.small} solid ${theme.colors.border.default};
   box-sizing: border-box;
@@ -30,6 +35,7 @@ const inputStyles = ({ isDisabled, isFocused, theme }) => css`
   ${placeholder({ color: theme.colors.text.placeholder })};
   ${isDisabled ? disabledStyles(theme) : ''};
   ${isFocused ? focusedStyles(theme) : ''};
+  ${isInvalid ? invalidStyles(theme) : ''};
 
   &:focus {
     ${focusedStyles(theme)};

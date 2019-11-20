@@ -12,7 +12,7 @@ const Input = React.forwardRef(
     const [touched, setTouched] = useState(false);
     const [value, setValue] = useState(props.value);
 
-    const errorMessageOrCaption = (touched && validate(value)) || caption;
+    const errorMessage = touched && validate(value);
 
     const handleBlur = event => {
       setTouched(true);
@@ -32,13 +32,14 @@ const Input = React.forwardRef(
 
     return (
       <FormField
-        caption={errorMessageOrCaption}
+        caption={errorMessage || caption}
         id={id}
         label={label}
         labelAside={labelAside}
       >
         <StyledInput
           {...{ ...props, id, ref }}
+          isInvalid={!!errorMessage}
           onBlur={handleBlur}
           onChange={handleChange}
         />
