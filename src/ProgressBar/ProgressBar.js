@@ -44,7 +44,13 @@ const ProgressBar = ({ percentage, iconEndName, showPercentage, ...props }) => (
       />
     </BarBackground>
     {iconEndName && (
-      <Icon ml="smaller" flex="0" fontSize="size4" name={iconEndName} />
+      <Icon
+        ml="smaller"
+        flex="0"
+        fontSize="size4"
+        name={iconEndName}
+        color={percentage < 100 ? 'monochrome.grey40' : 'text.default'}
+      />
     )}
     {showPercentage && percentageText(percentage)}
   </ProgressBarContainer>
