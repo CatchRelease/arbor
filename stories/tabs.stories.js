@@ -2,15 +2,15 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import notes from './tabs.md';
-import { Box, Heading, Icon, Text, Tab, Tabs } from '../src';
+import { Box, Heading, Icon, Tab, Tabs } from '../src';
 
 const stories = storiesOf('Tabs', module);
 
 const titleAsComponent = (
-  <Text>
+  <>
     WHOA!
     <Icon ml="smaller" name="cr-logo" />
-  </Text>
+  </>
 );
 
 stories.add(

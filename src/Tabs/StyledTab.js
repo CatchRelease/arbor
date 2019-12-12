@@ -16,6 +16,7 @@ const activeStyles = ({ active, theme }) => {
       &:focus,
       &:hover {
         background: transparent;
+        border-color: ${color};
       }
     `
   );
@@ -23,6 +24,8 @@ const activeStyles = ({ active, theme }) => {
 
 const StyledTab = styled(Box)`
   cursor: pointer;
+  font-weight: ${props => props.theme.fontWeights.medium};
+  line-height: ${props => props.theme.lineHeights.small};
   outline: none;
 
   &:last-child {
@@ -32,6 +35,7 @@ const StyledTab = styled(Box)`
   &:focus,
   &:hover {
     background: ${props => props.theme.colors.background.muted};
+    border-color: ${props => props.theme.colors.border.muted};
   }
 
   ${activeStyles};
@@ -45,14 +49,13 @@ StyledTab.propTypes = {
 StyledTab.defaultProps = {
   active: false,
   alignItems: 'center',
-  borderBottom: '2px solid transparent',
-  borderColor: 'border.default',
+  borderBottom: '1px solid transparent',
   color: 'text.muted',
   display: 'inline-block',
-  fontSize: 'size4',
+  fontSize: 'size5',
   justifyContent: 'center',
   mb: '-4px',
-  mr: 'regular',
+  mr: 'large',
   overflow: 'hidden',
   py: 'regular',
   tabIndex: '0',

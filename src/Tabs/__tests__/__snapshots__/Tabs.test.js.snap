@@ -3,8 +3,8 @@
 exports[`<Tabs /> activeTabId is not passed renders the first tab as active 1`] = `
 <Fragment>
   <StyledTabs
-    borderBottom="2px solid transparent"
-    borderColor="border.default"
+    borderBottom="1px solid transparent"
+    borderColor="border.muted"
     display="inline-block"
   >
     <Tab
@@ -46,8 +46,8 @@ exports[`<Tabs /> activeTabId is passed renders the first tab as active 1`] = `
 <Fragment>
   <StyledTabs
     activeTabId="tab-2"
-    borderBottom="2px solid transparent"
-    borderColor="border.default"
+    borderBottom="1px solid transparent"
+    borderColor="border.muted"
     display="inline-block"
   >
     <Tab
