@@ -4,8 +4,8 @@ const StyledTabs = Box.withComponent('div');
 
 StyledTabs.defaultProps = {
   ...Box.defaultProps,
-  borderBottom: '2px solid transparent',
-  borderColor: 'border.default',
+  borderBottom: '1px solid transparent',
+  borderColor: 'border.muted',
   display: 'inline-block'
 };
 
