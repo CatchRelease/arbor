@@ -14,11 +14,13 @@ Tab.propTypes = {
     PropTypes.arrayOf(PropTypes.node)
   ]).isRequired,
   id: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
   tabIndex: PropTypes.string
 };
 
 Tab.defaultProps = {
   active: false,
+  onClick: null,
   tabIndex: '0'
 };
 

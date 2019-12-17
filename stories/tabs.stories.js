@@ -13,6 +13,11 @@ const titleAsComponent = (
   </>
 );
 
+const alertTabOnclick = activateTab => {
+  alert('tab clicked!');
+  activateTab();
+};
+
 stories.add(
   'Default',
   () => (
@@ -33,6 +38,11 @@ stories.add(
         <Tab id="tab-3" title="Tab 3">
           <Box bg="palette.red.lighter" id="foo-3" p="largest">
             Tab 3 Content
+          </Box>
+        </Tab>
+        <Tab id="alert" title="alert!" onClick={alertTabOnclick}>
+          <Box bg="palette.red.lighter" id="foo-4" p="largest">
+            This will be rendered with an alert also
           </Box>
         </Tab>
       </Tabs>
