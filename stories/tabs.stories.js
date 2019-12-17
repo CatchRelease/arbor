@@ -40,6 +40,11 @@ stories.add(
             Tab 3 Content
           </Box>
         </Tab>
+        <Tab id="tab-4" title="Image tab">
+          <Box>
+            <img src="http://fakeimage.herokuapp.com/400x400.png" />
+          </Box>
+        </Tab>
         <Tab id="alert" title="alert!" onClick={alertTabOnclick}>
           <Box bg="palette.red.lighter" id="foo-4" p="largest">
             This will be rendered with an alert also
