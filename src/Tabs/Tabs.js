@@ -39,9 +39,9 @@ class Tabs extends React.Component {
     this.setState({ activeTabId: id });
   };
 
-  handleKeyPress = (key, tab) => {
+  handleKeyPress = (key, tab, onClick) => {
     if (key === ENTER_KEY || key === SPACEBAR) {
-      this.activateTab(tab);
+      onClick();
     }
   };
 
@@ -53,9 +53,13 @@ class Tabs extends React.Component {
       <>
         <StyledTabs {...props}>
           {children.map(tab => {
-            const { id, title } = tab.props;
+            const { id, title, onClick: originalOnClick } = tab.props;
             const active = activeTabId === id;
             const tabContentId = getTabContentId(tab);
+            const tabActivator = () => this.activateTab(tab);
+            const onClick = originalOnClick
+              ? () => originalOnClick(tabActivator)
+              : tabActivator;
 
             return React.cloneElement(
               tab,
@@ -64,8 +68,8 @@ class Tabs extends React.Component {
                 'aria-selected': active ? 'true' : 'false',
                 active,
                 key: id,
-                onClick: () => this.activateTab(tab),
-                onKeyPress: ({ key }) => this.handleKeyPress(key, tab)
+                onClick,
+                onKeyPress: ({ key }) => this.handleKeyPress(key, tab, onClick)
               },
               title
             );
