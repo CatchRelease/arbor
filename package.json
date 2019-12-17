@@ -81,7 +81,6 @@
     "prettier": "^1.14.3",
     "pretty-quick": "^1.8.0",
     "react-test-renderer": "^16.12.0",
-    "react-router-dom": "^5.1.2",
     "regenerator-runtime": "^0.12.1",
     "stylelint": "^9.6.0",
     "stylelint-config-recommended": "^2.1.0",
