@@ -42,7 +42,10 @@ stories.add(
         </Tab>
         <Tab id="tab-4" title="Image tab">
           <Box>
-            <img src="http://fakeimage.herokuapp.com/400x400.png" />
+            <img
+              alt="example of issue "
+              src="http://fakeimage.herokuapp.com/400x400.png?color=yellow"
+            />
           </Box>
         </Tab>
         <Tab id="alert" title="alert!" onClick={alertTabOnclick}>
