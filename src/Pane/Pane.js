@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { propType } from '@styled-system/prop-types';
 
 import Grid from '../Grid';
 
 const Pane = ({ innerRef, ...props }) => <Grid ref={innerRef} {...props} />;
 
 Pane.propTypes = {
-  bg: PropTypes.string,
-  boxShadow: PropTypes.string,
+  bg: propType,
+  boxShadow: propType,
   innerRef: PropTypes.func,
-  overflow: PropTypes.string,
-  width: PropTypes.string
+  overflow: propType,
+  width: propType
 };
 
 Pane.defaultProps = {
