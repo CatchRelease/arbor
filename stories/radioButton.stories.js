@@ -6,10 +6,6 @@ import { Box, RadioButton } from '../src';
 
 const stories = storiesOf('RadioButton', module);
 
-const onChange = e => {
-  console.log('ch ch ch changed', e);
-};
-
 stories.add(
   'default',
   () => (
@@ -21,7 +17,6 @@ stories.add(
         checked
         label="RadioButton checked"
       />
-
       <RadioButton
         id="disabled"
         name="disabled"
@@ -35,20 +30,6 @@ stories.add(
         checked
         label="RadioButton checked disabled"
       />
-
-      <RadioButton
-        onChange={onChange}
-        id="grouped-a"
-        name="grouped"
-        label="RadioButton grouped (a)"
-      />
-      <RadioButton
-        onChange={onChange}
-        id="grouped-b"
-        name="grouped"
-        label="RadioButton grouped (b)"
-      />
-
       <Box maxWidth="250px">
         <RadioButton
           checked

@@ -1,3 +1,4 @@
 ### Grouping
 
-Radio Buttons are grouped by the `name` prop/attribute, as in Standard HTML.
+The RadioButton component itself is just a dumb component that renders its props.
+For grouping, see RadioButtonGroup.
