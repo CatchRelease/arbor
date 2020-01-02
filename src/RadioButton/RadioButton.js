@@ -109,7 +109,6 @@ RadioButton.defaultProps = {
   checked: false,
   disabled: false,
   icon: undefined,
-  indeterminate: false,
   isInvalid: false,
   onChange: () => {},
   value: ''

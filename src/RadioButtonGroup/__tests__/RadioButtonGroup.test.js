@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactTestUtils from 'react-dom/test-utils';
 import { shallow } from 'enzyme';
 
 import createWithTheme from '../../../utils/createWithTheme';
