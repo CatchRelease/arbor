@@ -1,0 +1,1535 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioButtonGroup /> properly renders a disabled radio button group 1`] = `
+Array [
+  .emotion-8 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  font-size: 16px;
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  color: rgba(120,121,125,0.7);
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  color: #081D17;
+  border-color: #E0E1E2;
+  color: #989A9C;
+}
+
+<label
+    className="emotion-8 emotion-9"
+  >
+    <input
+      aria-invalid={false}
+      checked={true}
+      className="emotion-0 emotion-1"
+      disabled={true}
+      id="radio-button-group-test:foo"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="foo"
+    />
+    <div
+      checked={true}
+      className="emotion-4 emotion-5"
+      disabled={true}
+    >
+      <i
+        className="ar ar-radio-checked emotion-2 emotion-3"
+        fontSize="16px"
+      />
+    </div>
+    <span
+      className="emotion-6 emotion-7"
+      color="text.disabled"
+      fontSize="size4"
+    >
+      FOO
+    </span>
+  </label>,
+  .emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  border-color: #E0E1E2;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: rgba(120,121,125,0.7);
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={true}
+      id="radio-button-group-test:bar"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="bar"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={true}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.disabled"
+      fontSize="size4"
+    >
+      BAR
+    </span>
+  </label>,
+  .emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  border-color: #E0E1E2;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: rgba(120,121,125,0.7);
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={true}
+      id="radio-button-group-test:baz"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="baz"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={true}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.disabled"
+      fontSize="size4"
+    >
+      BAZ
+    </span>
+  </label>,
+  .emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  border-color: #E0E1E2;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: rgba(120,121,125,0.7);
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={true}
+      id="radio-button-group-test:quux"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="quux"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={true}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.disabled"
+      fontSize="size4"
+    >
+      QUUX
+    </span>
+  </label>,
+]
+`;
+
+exports[`<RadioButtonGroup /> properly renders a group with additional button props 1`] = `
+Array [
+  .emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  color: #081D17;
+}
+
+.emotion-2 {
+  font-size: 16px;
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+.emotion-8 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+<label
+    className="emotion-8 emotion-9"
+  >
+    <input
+      aria-invalid={false}
+      checked={true}
+      className="emotion-0 emotion-1"
+      disabled={false}
+      id="radio-button-group-test:foo"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="foo"
+    />
+    <div
+      checked={true}
+      className="emotion-4 emotion-5"
+      disabled={false}
+    >
+      <i
+        className="ar ar-radio-checked emotion-2 emotion-3"
+        fontSize="16px"
+      />
+    </div>
+    <span
+      className="emotion-6 emotion-7"
+      color="text.default"
+      fontSize="size4"
+    >
+      FOO
+    </span>
+  </label>,
+  .emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={false}
+      id="radio-button-group-test:bar"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="bar"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={false}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.default"
+      fontSize="size4"
+    >
+      BAR
+    </span>
+  </label>,
+  .emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  border-color: #E0E1E2;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: rgba(120,121,125,0.7);
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={true}
+      id="radio-button-group-test:baz"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="baz"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={true}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.disabled"
+      fontSize="size4"
+    >
+      BAZ
+    </span>
+  </label>,
+  .emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={false}
+      id="radio-button-group-test:quux"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="quux"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={false}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.default"
+      fontSize="size4"
+    >
+      QUUX
+    </span>
+  </label>,
+]
+`;
+
+exports[`<RadioButtonGroup /> properly renders a group with an initially checked value 1`] = `
+Array [
+  .emotion-8 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  color: #081D17;
+}
+
+.emotion-2 {
+  font-size: 16px;
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+<label
+    className="emotion-8 emotion-9"
+  >
+    <input
+      aria-invalid={false}
+      checked={true}
+      className="emotion-0 emotion-1"
+      disabled={false}
+      id="radio-button-group-test:foo"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="foo"
+    />
+    <div
+      checked={true}
+      className="emotion-4 emotion-5"
+      disabled={false}
+    >
+      <i
+        className="ar ar-radio-checked emotion-2 emotion-3"
+        fontSize="16px"
+      />
+    </div>
+    <span
+      className="emotion-6 emotion-7"
+      color="text.default"
+      fontSize="size4"
+    >
+      FOO
+    </span>
+  </label>,
+  .emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={false}
+      id="radio-button-group-test:bar"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="bar"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={false}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.default"
+      fontSize="size4"
+    >
+      BAR
+    </span>
+  </label>,
+  .emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  border-color: #E0E1E2;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: rgba(120,121,125,0.7);
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={true}
+      id="radio-button-group-test:baz"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="baz"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={true}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.disabled"
+      fontSize="size4"
+    >
+      BAZ
+    </span>
+  </label>,
+  .emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={false}
+      id="radio-button-group-test:quux"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="quux"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={false}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.default"
+      fontSize="size4"
+    >
+      QUUX
+    </span>
+  </label>,
+]
+`;
+
+exports[`<RadioButtonGroup /> properly renders a radio button group 1`] = `
+Array [
+  .emotion-8 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  color: #081D17;
+}
+
+.emotion-2 {
+  font-size: 16px;
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+<label
+    className="emotion-8 emotion-9"
+  >
+    <input
+      aria-invalid={false}
+      checked={true}
+      className="emotion-0 emotion-1"
+      disabled={false}
+      id="radio-button-group-test:foo"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="foo"
+    />
+    <div
+      checked={true}
+      className="emotion-4 emotion-5"
+      disabled={false}
+    >
+      <i
+        className="ar ar-radio-checked emotion-2 emotion-3"
+        fontSize="16px"
+      />
+    </div>
+    <span
+      className="emotion-6 emotion-7"
+      color="text.default"
+      fontSize="size4"
+    >
+      FOO
+    </span>
+  </label>,
+  .emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={false}
+      id="radio-button-group-test:bar"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="bar"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={false}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.default"
+      fontSize="size4"
+    >
+      BAR
+    </span>
+  </label>,
+  .emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+  border-color: #E0E1E2;
+  color: #FFFFFF;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: rgba(120,121,125,0.7);
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={true}
+      id="radio-button-group-test:baz"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="baz"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={true}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.disabled"
+      fontSize="size4"
+    >
+      BAZ
+    </span>
+  </label>,
+  .emotion-6 {
+  font-family: Motiva Sans;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1.25;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border: 1px solid #989A9C;
+  border-radius: 50%;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+}
+
+<label
+    className="emotion-6 emotion-7"
+  >
+    <input
+      aria-invalid={false}
+      checked={false}
+      className="emotion-0 emotion-1"
+      disabled={false}
+      id="radio-button-group-test:quux"
+      name="radio-button-group-test"
+      onChange={[Function]}
+      type="radio"
+      value="quux"
+    />
+    <div
+      checked={false}
+      className="emotion-2 emotion-3"
+      disabled={false}
+    />
+    <span
+      className="emotion-4 emotion-5"
+      color="text.default"
+      fontSize="size4"
+    >
+      QUUX
+    </span>
+  </label>,
+]
+`;
