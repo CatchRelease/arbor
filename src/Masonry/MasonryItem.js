@@ -5,7 +5,6 @@ import Box from '../Box';
 
 const MasonryItem = styled(Box)`
   break-inside: avoid;
-  overflow: hidden;
   ${display};
   ${width};
 `;

@@ -26,7 +26,6 @@ exports[`<Masonry /> renders properly 1`] = `
   width: 100%;
   -webkit-break-inside: avoid;
   break-inside: avoid;
-  overflow: hidden;
   display: block;
   width: 100%;
 }
