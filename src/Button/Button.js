@@ -27,7 +27,11 @@ const Button = React.forwardRef(
       {spin && <ButtonSpinner {...{ variant, ...props }} />}
       <ButtonContent {...{ hasText: !!children, iconStart, iconEnd, spin }}>
         {iconStart}
-        {children && <Text color="inherit">{children}</Text>}
+        {children && (
+          <Text color="inherit" fontSize="inherit">
+            {children}
+          </Text>
+        )}
         {iconEnd}
       </ButtonContent>
     </StyledButton>
