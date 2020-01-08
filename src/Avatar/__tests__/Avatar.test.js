@@ -42,5 +42,13 @@ describe('<Avatar />', () => {
         expect(avatar).toHaveText('AP');
       });
     });
+
+    context('no letters in provided name', () => {
+      it('renders the name as-is', () => {
+        const avatar = shallow(<Avatar name="+36" />);
+
+        expect(avatar).toHaveText('+36');
+      });
+    });
   });
 });

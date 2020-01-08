@@ -59,6 +59,11 @@ stories.add(
         subtle={boolean('subtle', false)}
         size={select('Size', sizes, 'default')}
       />
+      <Avatar
+        name={text('Avatar 10', '+42')}
+        subtle={boolean('subtle', false)}
+        size={select('Size', sizes, 'default')}
+      />
     </Flex>
   ),
   { notes: { markdown: notes } }
