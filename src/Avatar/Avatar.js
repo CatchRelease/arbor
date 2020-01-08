@@ -24,6 +24,9 @@ const getInitials = name => {
   return firstInitial;
 };
 
+const getText = name =>
+  name.match(/[A-Za-z]/) ? getInitials(name).toUpperCase() : name;
+
 const Avatar = ({ name, subtle, size, baseColor: baseColorProp, ...props }) => {
   const baseColor = baseColorProp || colorForString(name, AVATAR_COLORS);
 
@@ -41,7 +44,7 @@ const Avatar = ({ name, subtle, size, baseColor: baseColorProp, ...props }) => {
       }}
     >
       <StyledAvatarText {...{ baseColor, size, subtle }}>
-        {getInitials(name).toUpperCase()}
+        {getText(name)}
       </StyledAvatarText>
     </StyledAvatar>
   );
