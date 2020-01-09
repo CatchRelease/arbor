@@ -29,8 +29,6 @@ exports[`<Header /> renders with heading and a button 1`] = `
   outline: none;
   position: relative;
   text-align: center;
-  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
-  transition: box-shadow 0.3s ease,background 0.2s ease;
   font-size: 0.875rem;
   height: 2.5rem;
   padding: 0 1.25rem;
@@ -51,9 +49,13 @@ exports[`<Header /> renders with heading and a button 1`] = `
 
 .emotion-6:enabled {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .emotion-6 i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   vertical-align: middle;
 }
 
@@ -71,15 +73,15 @@ exports[`<Header /> renders with heading and a button 1`] = `
 }
 
 .emotion-6:enabled:active {
-  background-color: #134537;
+  background-color: #061813;
 }
 
 .emotion-6:enabled:focus {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  box-shadow: 0 0 0 3px #B6EFD0;
 }
 
 .emotion-6:enabled:hover {
-  background-color: #134537;
+  background-color: #2f413c;
 }
 
 .emotion-6::-moz-focus-inner {
@@ -95,7 +97,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
 }
 
 .emotion-6 i {
-  color: 'inherit';
+  color: inherit;
 }
 
 .emotion-4 {
@@ -205,8 +207,6 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   outline: none;
   position: relative;
   text-align: center;
-  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
-  transition: box-shadow 0.3s ease,background 0.2s ease;
   font-size: 0.875rem;
   height: 2.5rem;
   padding: 0 1.25rem;
@@ -227,9 +227,13 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 
 .emotion-12:enabled {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .emotion-12 i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   vertical-align: middle;
 }
 
@@ -247,15 +251,15 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 }
 
 .emotion-12:enabled:active {
-  background-color: #134537;
+  background-color: #061813;
 }
 
 .emotion-12:enabled:focus {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
+  box-shadow: 0 0 0 3px #B6EFD0;
 }
 
 .emotion-12:enabled:hover {
-  background-color: #134537;
+  background-color: #2f413c;
 }
 
 .emotion-12::-moz-focus-inner {
@@ -271,7 +275,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 }
 
 .emotion-12 i {
-  color: 'inherit';
+  color: inherit;
 }
 
 .emotion-4 {
@@ -312,8 +316,6 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   outline: none;
   position: relative;
   text-align: center;
-  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
-  transition: box-shadow 0.3s ease,background 0.2s ease;
   font-size: 0.875rem;
   height: 2.5rem;
   padding: 0 1.25rem;
@@ -334,9 +336,13 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 
 .emotion-6:enabled {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .emotion-6 i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   vertical-align: middle;
 }
 
@@ -358,18 +364,20 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 }
 
 .emotion-6:enabled:active {
-  color: #134537;
+  color: #061813;
   background-color: #F8F9F9;
 }
 
 .emotion-6:enabled:focus {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
-  color: #000;
+  box-shadow: 0 0 0 3px #B6EFD0;
 }
 
 .emotion-6:enabled:hover {
-  border: 1px solid #134537;
-  color: #134537;
+  border: 1px solid #2f413c;
+}
+
+.emotion-6:enabled:hover i {
+  color: #081D17;
 }
 
 .emotion-6::-moz-focus-inner {
@@ -385,7 +393,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 }
 
 .emotion-6 i {
-  color: 'inherit';
+  color: #989A9C;
 }
 
 <header

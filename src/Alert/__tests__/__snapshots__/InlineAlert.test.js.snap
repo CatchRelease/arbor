@@ -623,8 +623,6 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with dang
   outline: none;
   position: relative;
   text-align: center;
-  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
-  transition: box-shadow 0.3s ease,background 0.2s ease;
   font-size: 0.75rem;
   height: 1.5rem;
   padding: 0 0.75rem;
@@ -646,9 +644,13 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with dang
 
 .emotion-10:enabled {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .emotion-10 i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   vertical-align: middle;
 }
 
@@ -672,16 +674,19 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with dang
 
 .emotion-10:enabled:active {
   background-color: #F8F9F9;
-  color: #134537;
+  color: #061813;
 }
 
 .emotion-10:enabled:focus {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
-  color: #000;
+  box-shadow: 0 0 0 3px #B6EFD0;
 }
 
 .emotion-10:enabled:hover {
-  color: #134537;
+  background-color: #F8F9F9;
+}
+
+.emotion-10:enabled:hover i {
+  color: #081D17;
 }
 
 .emotion-10::-moz-focus-inner {
@@ -697,7 +702,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with dang
 }
 
 .emotion-10 i {
-  color: 'inherit';
+  color: #989A9C;
 }
 
 .emotion-8 {
@@ -803,8 +808,6 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with info
   outline: none;
   position: relative;
   text-align: center;
-  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
-  transition: box-shadow 0.3s ease,background 0.2s ease;
   font-size: 0.75rem;
   height: 1.5rem;
   padding: 0 0.75rem;
@@ -826,9 +829,13 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with info
 
 .emotion-10:enabled {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .emotion-10 i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   vertical-align: middle;
 }
 
@@ -852,16 +859,19 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with info
 
 .emotion-10:enabled:active {
   background-color: #F8F9F9;
-  color: #134537;
+  color: #061813;
 }
 
 .emotion-10:enabled:focus {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
-  color: #000;
+  box-shadow: 0 0 0 3px #B6EFD0;
 }
 
 .emotion-10:enabled:hover {
-  color: #134537;
+  background-color: #F8F9F9;
+}
+
+.emotion-10:enabled:hover i {
+  color: #081D17;
 }
 
 .emotion-10::-moz-focus-inner {
@@ -877,7 +887,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with info
 }
 
 .emotion-10 i {
-  color: 'inherit';
+  color: #989A9C;
 }
 
 .emotion-8 {
@@ -997,8 +1007,6 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with no i
   outline: none;
   position: relative;
   text-align: center;
-  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
-  transition: box-shadow 0.3s ease,background 0.2s ease;
   font-size: 0.75rem;
   height: 1.5rem;
   padding: 0 0.75rem;
@@ -1020,9 +1028,13 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with no i
 
 .emotion-6:enabled {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .emotion-6 i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   vertical-align: middle;
 }
 
@@ -1046,16 +1058,19 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with no i
 
 .emotion-6:enabled:active {
   background-color: #F8F9F9;
-  color: #134537;
+  color: #061813;
 }
 
 .emotion-6:enabled:focus {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
-  color: #000;
+  box-shadow: 0 0 0 3px #B6EFD0;
 }
 
 .emotion-6:enabled:hover {
-  color: #134537;
+  background-color: #F8F9F9;
+}
+
+.emotion-6:enabled:hover i {
+  color: #081D17;
 }
 
 .emotion-6::-moz-focus-inner {
@@ -1071,7 +1086,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with no i
 }
 
 .emotion-6 i {
-  color: 'inherit';
+  color: #989A9C;
 }
 
 .emotion-4 {
@@ -1148,8 +1163,6 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with succ
   outline: none;
   position: relative;
   text-align: center;
-  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
-  transition: box-shadow 0.3s ease,background 0.2s ease;
   font-size: 0.75rem;
   height: 1.5rem;
   padding: 0 0.75rem;
@@ -1171,9 +1184,13 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with succ
 
 .emotion-10:enabled {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .emotion-10 i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   vertical-align: middle;
 }
 
@@ -1197,16 +1214,19 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with succ
 
 .emotion-10:enabled:active {
   background-color: #F8F9F9;
-  color: #134537;
+  color: #061813;
 }
 
 .emotion-10:enabled:focus {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
-  color: #000;
+  box-shadow: 0 0 0 3px #B6EFD0;
 }
 
 .emotion-10:enabled:hover {
-  color: #134537;
+  background-color: #F8F9F9;
+}
+
+.emotion-10:enabled:hover i {
+  color: #081D17;
 }
 
 .emotion-10::-moz-focus-inner {
@@ -1222,7 +1242,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with succ
 }
 
 .emotion-10 i {
-  color: 'inherit';
+  color: #989A9C;
 }
 
 .emotion-8 {
@@ -1328,8 +1348,6 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with warn
   outline: none;
   position: relative;
   text-align: center;
-  -webkit-transition: box-shadow 0.3s ease,background 0.2s ease;
-  transition: box-shadow 0.3s ease,background 0.2s ease;
   font-size: 0.75rem;
   height: 1.5rem;
   padding: 0 0.75rem;
@@ -1351,9 +1369,13 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with warn
 
 .emotion-10:enabled {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .emotion-10 i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   vertical-align: middle;
 }
 
@@ -1377,16 +1399,19 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with warn
 
 .emotion-10:enabled:active {
   background-color: #F8F9F9;
-  color: #134537;
+  color: #061813;
 }
 
 .emotion-10:enabled:focus {
-  box-shadow: 0 0 0 1px #FFFFFF,0 0 0 2px #000;
-  color: #000;
+  box-shadow: 0 0 0 3px #B6EFD0;
 }
 
 .emotion-10:enabled:hover {
-  color: #134537;
+  background-color: #F8F9F9;
+}
+
+.emotion-10:enabled:hover i {
+  color: #081D17;
 }
 
 .emotion-10::-moz-focus-inner {
@@ -1402,7 +1427,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with warn
 }
 
 .emotion-10 i {
-  color: 'inherit';
+  color: #989A9C;
 }
 
 .emotion-8 {

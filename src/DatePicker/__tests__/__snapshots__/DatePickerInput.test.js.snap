@@ -55,7 +55,7 @@ exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
 
 .emotion-2:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
