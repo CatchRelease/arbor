@@ -51,7 +51,7 @@ exports[`<Textarea /> renders a Textarea with a caption correctly 1`] = `
 
 .emotion-2:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
@@ -150,7 +150,7 @@ exports[`<Textarea /> renders a Textarea with a label correctly 1`] = `
 
 .emotion-6:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
@@ -266,7 +266,7 @@ exports[`<Textarea /> renders a Textarea with a labelAside correctly 1`] = `
 
 .emotion-4:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
@@ -370,7 +370,7 @@ exports[`<Textarea /> renders a large Textarea correctly 1`] = `
 
 .emotion-2:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
@@ -453,7 +453,7 @@ exports[`<Textarea /> renders an Textarea correctly 1`] = `
 
 .emotion-2:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 

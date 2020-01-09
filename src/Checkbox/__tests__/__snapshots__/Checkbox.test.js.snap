@@ -374,7 +374,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   width: 1rem;
   background-color: #081D17;
   border-color: #081D17;
-  color: #C0F9DA;
+  color: #B6EFD0;
 }
 
 .emotion-2 {

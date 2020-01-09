@@ -90,7 +90,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 
 .emotion-17:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
@@ -359,7 +359,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 
 .emotion-17:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
@@ -628,7 +628,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 
 .emotion-17:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
@@ -897,7 +897,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 
 .emotion-17:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
@@ -1166,7 +1166,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 
 .emotion-17:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
@@ -1435,7 +1435,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 
 .emotion-17:focus {
   border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(192,249,218,0.1);
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 

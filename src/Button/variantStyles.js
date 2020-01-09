@@ -1,5 +1,5 @@
 import { css } from '@emotion/core';
-import { darken, lighten } from 'polished';
+import { shade, tint } from 'polished';
 import { themeGet } from '@styled-system/theme-get';
 
 const variants = ({ intent, variant, ...props }) => {
@@ -12,9 +12,14 @@ const variants = ({ intent, variant, ...props }) => {
       ? themeGet(`colors.intent.${intent}.lighter`)(props)
       : colorWhite;
 
-  const colorActive = lighten(0.1, color);
-  const colorFocus = darken(0.2, color);
-  const colorHover = lighten(0.1, color);
+  const colorIcon =
+    variant !== 'primary' && intent === 'brand'
+      ? themeGet(`colors.icon.default`)(props)
+      : 'inherit';
+
+  const colorActive = shade(0.16, color);
+  const colorFocus = themeGet(`colors.intent.${intent}.light`)(props);
+  const colorHover = tint(0.16, color);
 
   const common = css`
     &::-moz-focus-inner {
@@ -30,7 +35,7 @@ const variants = ({ intent, variant, ...props }) => {
     }
 
     i {
-      color: 'inherit';
+      color: ${colorIcon};
     }
   `;
 
@@ -46,7 +51,7 @@ const variants = ({ intent, variant, ...props }) => {
           }
 
           &:focus {
-            box-shadow: 0 0 0 1px ${colorWhite}, 0 0 0 2px ${colorFocus};
+            box-shadow: 0 0 0 3px ${colorFocus};
           }
 
           &:hover {
@@ -70,13 +75,15 @@ const variants = ({ intent, variant, ...props }) => {
           }
 
           &:focus {
-            box-shadow: 0 0 0 1px ${colorWhite}, 0 0 0 2px ${colorFocus};
-            color: ${colorFocus};
+            box-shadow: 0 0 0 3px ${colorFocus};
           }
 
           &:hover {
             border: 1px solid ${colorHover};
-            color: ${colorHover};
+
+            i {
+              color: ${color};
+            }
           }
         }
 
@@ -100,12 +107,15 @@ const variants = ({ intent, variant, ...props }) => {
           }
 
           &:focus {
-            box-shadow: 0 0 0 1px ${colorWhite}, 0 0 0 2px ${colorFocus};
-            color: ${colorFocus};
+            box-shadow: 0 0 0 3px ${colorFocus};
           }
 
           &:hover {
-            color: ${colorHover};
+            background-color: ${colorGrey};
+
+            i {
+              color: ${color};
+            }
           }
         }
 
