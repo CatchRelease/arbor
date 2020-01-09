@@ -23,7 +23,6 @@ const StyledButton = styled.button`
   outline: none;
   position: relative;
   text-align: center;
-  transition: box-shadow 0.3s ease, background 0.2s ease;
 
   &:disabled {
     background: ${props => props.theme.colors.background.disabled};
@@ -34,9 +33,11 @@ const StyledButton = styled.button`
 
   &:enabled {
     cursor: pointer;
+    transition: all 0.3s ease;
   }
 
   i {
+    transition: all 0.3s ease;
     vertical-align: middle;
   }
 
