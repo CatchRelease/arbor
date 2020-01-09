@@ -12,6 +12,11 @@ const variants = ({ intent, variant, ...props }) => {
       ? themeGet(`colors.intent.${intent}.lighter`)(props)
       : colorWhite;
 
+  const colorIcon =
+    variant !== 'primary' && intent === 'brand'
+      ? themeGet(`colors.icon.default`)(props)
+      : 'inherit';
+
   const colorActive = lighten(0.1, color);
   const colorFocus = darken(0.2, color);
   const colorHover = lighten(0.1, color);
@@ -30,7 +35,7 @@ const variants = ({ intent, variant, ...props }) => {
     }
 
     i {
-      color: 'inherit';
+      color: ${colorIcon};
     }
   `;
 
