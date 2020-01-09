@@ -7,7 +7,9 @@ import { colorForString } from '../utils';
 import StyledAvatar from './StyledAvatar';
 import StyledAvatarText from './StyledAvatarText';
 
-const AVATAR_COLORS = Object.keys(palette).map(color => `palette.${color}`);
+const AVATAR_COLORS = Object.keys(palette).map(
+  color => `palette.${color}.default`
+);
 
 const getInitials = name => {
   const [firstName, ...additionalNames] = name.split(' ');

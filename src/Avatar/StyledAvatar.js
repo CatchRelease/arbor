@@ -13,8 +13,8 @@ export const StyledAvatar = ({
   theme: { avatarSizes }, // eslint-disable-line react/prop-types
   ...props
 }) => {
-  const bg = subtle ? `monochrome.white` : `${baseColor}.default`;
-  const borderColor = `${baseColor}.default`;
+  const bg = subtle ? `monochrome.white` : baseColor;
+  const borderColor = baseColor;
 
   return (
     <Flex
