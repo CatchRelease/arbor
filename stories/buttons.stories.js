@@ -19,7 +19,7 @@ const ButtonTable = styled.table`
 `;
 
 const icon = <Icon name="lock" />;
-const icon2 = <Icon name="chevron" />;
+const icon2 = <Icon name="chevron-down" />;
 
 const stories = storiesOf('Buttons', module);
 stories.addDecorator(withKnobs);
