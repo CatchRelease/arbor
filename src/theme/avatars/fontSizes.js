@@ -1,6 +1,6 @@
 import { sizes } from '../typography';
 
 export default {
-  default: sizes.size2,
-  medium: sizes.size4
+  default: sizes.size1,
+  medium: sizes.size2
 };
