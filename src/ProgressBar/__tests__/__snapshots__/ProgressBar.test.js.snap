@@ -168,8 +168,8 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
           theme={
             Object {
               "avatarFontSizes": Object {
-                "default": "0.75rem",
-                "medium": "0.875rem",
+                "default": "0.6875rem",
+                "medium": "0.75rem",
               },
               "avatarSizes": Object {
                 "default": "24px",
@@ -656,8 +656,8 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
           theme={
             Object {
               "avatarFontSizes": Object {
-                "default": "0.75rem",
-                "medium": "0.875rem",
+                "default": "0.6875rem",
+                "medium": "0.75rem",
               },
               "avatarSizes": Object {
                 "default": "24px",

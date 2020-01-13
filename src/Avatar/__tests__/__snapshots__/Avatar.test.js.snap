@@ -41,7 +41,7 @@ exports[`<Avatar /> renders properly 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: #FFFFFF;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   line-height: 1.25;
 }
 
@@ -53,7 +53,7 @@ exports[`<Avatar /> renders properly 1`] = `
   <p
     className="emotion-0 emotion-1"
     color="monochrome.white"
-    fontSize="0.75rem"
+    fontSize="0.6875rem"
   >
     BW
   </p>
