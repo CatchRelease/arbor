@@ -1,6 +1,6 @@
 {
   "name": "@catchandrelease/arbor",
-  "version": "0.87.2",
+  "version": "0.87.3",
   "description": "React component library for Catch&Release",
   "main": "dist/index.js",
   "scripts": {
