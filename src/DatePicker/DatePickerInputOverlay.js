@@ -6,7 +6,7 @@ import DatePicker from './DatePicker';
 import PopoverContent from '../Popover/PopoverContent';
 
 const DatePickerInputOverlay = ({ classNames, children, ...props }) => (
-  <Box position="absolute" className="date-picker-input-overlay">
+  <Box position="absolute" className="arbor-date-picker-input-overlay">
     <PopoverContent className={classNames.overlayWrapper} {...props}>
       <DatePicker {...children.props} />
     </PopoverContent>
