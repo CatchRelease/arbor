@@ -83,6 +83,20 @@ class ControlledDatePickers extends React.Component {
         </Box>
 
         <Box>
+          <Heading.h1 mb="large">
+            DatePickerInput with Sibling (z-index check)
+          </Heading.h1>
+          <DatePickerInput
+            inputProps={inputProps}
+            onDayChange={this.onDayChange}
+            value={selectedDay}
+          />
+          <Button variant="primary" fullWidth>
+            click me
+          </Button>
+        </Box>
+
+        <Box>
           <Heading.h1 mb="large">DatePicker In Popover</Heading.h1>
           <Popover content={<SimpleDatePicker />}>
             <Button
