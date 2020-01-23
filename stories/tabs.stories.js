@@ -24,7 +24,7 @@ stories.add(
     <Box as="section" p="regular">
       <Heading.h1>Tabs</Heading.h1>
 
-      <Tabs activeTabId="tab-2">
+      <Tabs defaultTabId="tab-2">
         <Tab id="tab-1" title="Tab 1">
           <Box bg="palette.blue.lighter" p="largest">
             Tab 1 Content

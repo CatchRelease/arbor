@@ -19,93 +19,127 @@ const render = (props = {}, tabProps = {}) =>
   );
 
 describe('<Tabs />', () => {
-  context('activeTabId is not passed', () => {
-    it('renders the first tab as active', () => {
-      const tabs = render();
+  describe('controlled mode', () => {
+    it('renders the active tab as active', () => {
+      expect(render({ activeTabId: 'tab-1' }).text()).toContain(
+        'Tab 1 Content'
+      );
 
-      expect(tabs).toMatchSnapshot();
+      expect(render({ activeTabId: 'tab-2' }).text()).toContain(
+        'Tab 2 Content'
+      );
+    });
+
+    describe('event handlers', () => {
+      const itBehavesLikeSelectingATab = (event, ...args) => {
+        context('with an onClick prop', () => {
+          let onClick;
+          let tabs;
+
+          beforeEach(() => {
+            onClick = jest.fn();
+            tabs = render({ activeTabId: 'tab-2' }, { onClick });
+          });
+
+          it('does not select the tab', () => {
+            tabs.find('#tab-1').simulate(event, ...args);
+
+            expect(tabs.text()).toContain('Tab 2 Content');
+          });
+
+          it('calls the onClick callback', () => {
+            tabs.find('#tab-1').simulate(event, ...args);
+
+            expect(onClick).toHaveBeenCalledTimes(1);
+          });
+        });
+
+        context('without an onClick prop', () => {
+          it('does not select the tab', () => {
+            const tabs = render({ activeTabId: 'tab-2' });
+
+            tabs.find('#tab-1').simulate(event, ...args);
+
+            expect(tabs.text()).toContain('Tab 2 Content');
+          });
+        });
+      };
+
+      describe('clicking a tab', () => {
+        itBehavesLikeSelectingATab('click');
+      });
+
+      describe('pressing enter on a tab', () => {
+        itBehavesLikeSelectingATab('keyPress', { key: ENTER_KEY });
+      });
+
+      describe('pressing space on a tab', () => {
+        itBehavesLikeSelectingATab('keyPress', { key: SPACEBAR });
+      });
     });
   });
 
-  context('activeTabId is passed', () => {
-    it('renders the passed tab as active', () => {
-      const tabs = render({ activeTabId: 'tab-2' });
+  describe('uncontrolled mode', () => {
+    context('defaultTabId is not passed', () => {
+      it('renders the first tab as active', () => {
+        const tabs = render();
 
-      expect(tabs).toMatchSnapshot();
-    });
-  });
-
-  describe('event handlers', () => {
-    describe('clicking a tab', () => {
-      context('tab has no onClick set', () => {
-        it('activates the selected tab', () => {
-          const tabs = render({ activeTabId: 'tab-1' });
-
-          tabs.find('#tab-2').simulate('click');
-
-          expect(tabs).toHaveState({ activeTabId: 'tab-2' });
-        });
+        expect(tabs.text()).toContain('Tab 1 Content');
       });
+    });
 
-      context('tab has an onClick set', () => {
-        it('calls the passed onClick', () => {
-          const onClick = jest.fn();
-          const tabs = render({ activeTabId: 'tab-2' }, { onClick });
-          tabs.find('#tab-1').simulate('click');
-          expect(onClick).toHaveBeenCalledTimes(1);
+    context('defaultTabId is passed', () => {
+      it('renders the default tab as active', () => {
+        const tabs = render({ defaultTabId: 'tab-2' });
+
+        expect(tabs.text()).toContain('Tab 2 Content');
+      });
+    });
+
+    describe('event handlers', () => {
+      const itBehavesLikeSelectingATab = (event, ...args) => {
+        context('tab has no onClick set', () => {
+          it('activates the selected tab', () => {
+            const tabs = render({ defaultTabId: 'tab-1' });
+
+            tabs.find('#tab-2').simulate(event, ...args);
+
+            expect(tabs.text()).toContain('Tab 2 Content');
+          });
         });
 
-        it('passes a callback to activate the tab to the onClick', () => {
-          const onClick = jest.fn(callback => {
-            callback();
+        context('tab has an onClick set', () => {
+          it('calls the passed onClick', () => {
+            const onClick = jest.fn();
+            const tabs = render({ defaultTabId: 'tab-2' }, { onClick });
+            tabs.find('#tab-1').simulate(event, ...args);
+            expect(onClick).toHaveBeenCalledTimes(1);
           });
 
-          const tabs = render({ activeTabId: 'tab-2' }, { onClick });
-          tabs.find('#tab-1').simulate('click');
+          it('passes a callback to activate the tab to the onClick', () => {
+            const onClick = jest.fn(callback => {
+              callback();
+            });
 
-          expect(tabs).toHaveState({ activeTabId: 'tab-1' });
-        });
-      });
-    });
+            const tabs = render({ defaultTabId: 'tab-2' }, { onClick });
+            tabs.find('#tab-1').simulate(event, ...args);
 
-    const itHandlesKeypressesOnTabs = key => {
-      context('no onClick is set on the tab', () => {
-        it('activates the selected tab', () => {
-          const tabs = render({ activeTabId: 'tab-1' });
-
-          tabs.find('#tab-2').simulate('keyPress', { key });
-
-          expect(tabs).toHaveState({ activeTabId: 'tab-2' });
-        });
-      });
-
-      context('tab has an onClick set', () => {
-        it('calls the onClick prop', () => {
-          const onClick = jest.fn();
-          const tabs = render({ activeTabId: 'tab-2' }, { onClick });
-          tabs.find('#tab-1').simulate('keyPress', { key });
-          expect(onClick).toHaveBeenCalledTimes(1);
-        });
-
-        it('passes a callback to activate the tab to the onClick', () => {
-          const onClick = jest.fn(callback => {
-            callback();
+            expect(tabs.text()).toContain('Tab 1 Content');
           });
-
-          const tabs = render({ activeTabId: 'tab-2' }, { onClick });
-          tabs.find('#tab-1').simulate('keyPress', { key });
-
-          expect(tabs).toHaveState({ activeTabId: 'tab-1' });
         });
+      };
+
+      describe('clicking a tab', () => {
+        itBehavesLikeSelectingATab('click');
       });
-    };
 
-    describe('pressing enter on a tab', () => {
-      itHandlesKeypressesOnTabs(ENTER_KEY);
-    });
+      describe('pressing enter on a tab', () => {
+        itBehavesLikeSelectingATab('keyPress', { key: ENTER_KEY });
+      });
 
-    describe('pressing space on a tab', () => {
-      itHandlesKeypressesOnTabs(SPACEBAR);
+      describe('pressing space on a tab', () => {
+        itBehavesLikeSelectingATab('keyPress', { key: SPACEBAR });
+      });
     });
   });
 });
