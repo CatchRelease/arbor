@@ -12,17 +12,25 @@ class Tabs extends React.Component {
   constructor(props) {
     super(props);
 
-    const { activeTabId, children } = this.props;
+    const { activeTabId, defaultTabId, children } = this.props;
 
-    this.state = {
-      activeTabId: activeTabId || children[0].props.id
-    };
+    this.state = activeTabId
+      ? {}
+      : { activeTabId: defaultTabId || children[0].props.id };
   }
 
   get activeTab() {
-    const { activeTabId } = this.state;
+    const { activeTabId } = this;
     const { children } = this.props;
+
     return children.find(({ props: { id } }) => id === activeTabId);
+  }
+
+  get activeTabId() {
+    const { activeTabId: activeTabIdProp } = this.props;
+    const { activeTabId: activeTabIdFromState } = this.state;
+
+    return activeTabIdProp || activeTabIdFromState;
   }
 
   get activeTabContent() {
@@ -33,20 +41,34 @@ class Tabs extends React.Component {
     });
   }
 
-  activateTab = tab => {
-    const { id } = tab.props;
+  get isControlled() {
+    const { activeTabId } = this.props;
 
-    this.setState({ activeTabId: id });
+    return !!activeTabId;
+  }
+
+  activateTab = tab => {
+    this.setState({ activeTabId: tab.props.id });
   };
 
-  handleKeyPress = (key, tab, onClick) => {
+  handleKeyPress = (key, onClick) => {
     if (key === ENTER_KEY || key === SPACEBAR) {
       onClick();
     }
   };
 
+  handleTabClick = (tab, originalOnClick) => {
+    const callback = this.isControlled ? () => {} : () => this.activateTab(tab);
+
+    if (originalOnClick) {
+      originalOnClick(callback);
+    } else {
+      callback();
+    }
+  };
+
   render() {
-    const { activeTabId } = this.state;
+    const { activeTabId } = this;
     const { children, ...props } = this.props;
 
     return (
@@ -56,10 +78,7 @@ class Tabs extends React.Component {
             const { id, title, onClick: originalOnClick } = tab.props;
             const active = activeTabId === id;
             const tabContentId = getTabContentId(tab);
-            const tabActivator = () => this.activateTab(tab);
-            const onClick = originalOnClick
-              ? () => originalOnClick(tabActivator)
-              : tabActivator;
+            const onClick = () => this.handleTabClick(tab, originalOnClick);
 
             return React.cloneElement(
               tab,
@@ -69,7 +88,7 @@ class Tabs extends React.Component {
                 active,
                 key: id,
                 onClick,
-                onKeyPress: ({ key }) => this.handleKeyPress(key, tab, onClick)
+                onKeyPress: ({ key }) => this.handleKeyPress(key, onClick)
               },
               title
             );
@@ -83,6 +102,7 @@ class Tabs extends React.Component {
 
 Tabs.propTypes = {
   activeTabId: PropTypes.string,
+  defaultTabId: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(Tab),
     PropTypes.objectOf(Tab)
@@ -90,7 +110,8 @@ Tabs.propTypes = {
 };
 
 Tabs.defaultProps = {
-  activeTabId: undefined
+  activeTabId: undefined,
+  defaultTabId: undefined
 };
 
 export default Tabs;
