@@ -9506,10 +9506,9 @@ react-onclickoutside@^6.5.0:
   resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.8.0.tgz#9f91b5b3ed59f4d9e43fd71620dc200773a4d569"
   integrity sha512-5Q4Rn7QLEoh7WIe66KFvYIpWJ49GeHoygP1/EtJyZjXKgrWH19Tf0Ty3lWyQzrEEDyLOwUvvmBFSE3dcDdvagA==
 
-react-popover@^0.5.10:
+react-popover@CatchRelease/littlebits-react-popover#master:
   version "0.5.10"
-  resolved "https://registry.yarnpkg.com/react-popover/-/react-popover-0.5.10.tgz#40d5e854300a96722ffc1620e49d840cb1ad5db6"
-  integrity sha512-5SYDTfncywSH00I70oHd4gFRUR8V0rJ4sRADSI/P6G0RVXp9jUgaWloJ0Bk+SFnjpLPuipTKuzQNNd2CTs5Hrw==
+  resolved "https://codeload.github.com/CatchRelease/littlebits-react-popover/tar.gz/2b4a23a618b9745093e51197f711405b95175385"
   dependencies:
     css-vendor "^0.3.1"
     debug "^2.6.8"
