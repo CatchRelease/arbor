@@ -155,7 +155,9 @@ describe('<Dropdown />', () => {
         it('opens popover', () => {
           const instance = dropdown.instance();
 
-          const popoverOpenSpy = jest.spyOn(instance.popover.current, 'open');
+          const popoverOpenSpy = jest
+            .spyOn(instance.popover.current, 'open')
+            .mockReturnValue(null);
           instance.onKeyDown({ key: ARROW_DOWN, preventDefault: () => null });
 
           expect(popoverOpenSpy).toHaveBeenCalledTimes(1);
