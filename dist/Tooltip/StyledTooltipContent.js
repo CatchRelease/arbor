@@ -9,11 +9,7 @@ var _Box = _interopRequireDefault(require("../Box"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var StyledTooltipContent = _Box["default"].withComponent('div', {
-  target: "ehtq0ww0",
-  label: "StyledTooltipContent"
-});
-
+var StyledTooltipContent = _Box["default"];
 StyledTooltipContent.defaultProps = {
   bg: 'monochrome.grey90',
   borderRadius: 'small',

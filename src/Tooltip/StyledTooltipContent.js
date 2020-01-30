@@ -1,6 +1,6 @@
 import Box from '../Box';
 
-const StyledTooltipContent = Box.withComponent('div');
+const StyledTooltipContent = Box;
 
 StyledTooltipContent.defaultProps = {
   bg: 'monochrome.grey90',
