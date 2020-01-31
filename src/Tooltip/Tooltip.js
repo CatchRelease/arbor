@@ -5,7 +5,7 @@ import { ThemeProvider, withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
-import { animateFill } from 'tippy.js';
+import { animateFill, sticky } from 'tippy.js';
 
 import StyledTooltipContent from './StyledTooltipContent';
 
@@ -59,7 +59,7 @@ const Tooltip = ({ content, children, theme, ...props }) => {
           updateDuration: 0,
           animation: 'fade',
           inertia: true,
-          plugins: [animateFill],
+          plugins: [animateFill, sticky],
           ...props
         }}
       >
