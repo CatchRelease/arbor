@@ -41,7 +41,7 @@ stories.add(
       justifyItems="center"
     >
       <Box>
-        <Tooltip position="bottom" content={<FancyTooltipContent />}>
+        <Tooltip placement="bottom" content={<FancyTooltipContent />}>
           <div>
             <Button variant="primary">Button</Button>
           </div>
@@ -57,7 +57,7 @@ stories.add(
       </Box>
 
       <Box>
-        <Tooltip position="right" content="Icon!">
+        <Tooltip placement="right" content="Icon!">
           <Button iconEnd={buttonIcon}>Icon Button</Button>
         </Tooltip>
       </Box>

@@ -3,8 +3,9 @@ import React from 'react'; /* eslint-disable-line no-unused-vars */
 import { Global, css, jsx } from '@emotion/core';
 import { ThemeProvider, withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
-import 'react-tippy/dist/tippy.css';
-import { Tooltip as TippyTooltip } from 'react-tippy';
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
+import { animateFill } from 'tippy.js';
 
 import StyledTooltipContent from './StyledTooltipContent';
 
@@ -48,23 +49,22 @@ const Tooltip = ({ content, children, theme, ...props }) => {
     <>
       <Global styles={globalTippyStyles} />
 
-      <TippyTooltip
+      <Tippy
         {...{
           theme: 'arbor',
           arrow: true,
-          html: tooltipContent,
+          content: tooltipContent,
           distance: 8,
           duration: 300,
           updateDuration: 0,
-          arrowSize: 'medium',
           animation: 'fade',
           inertia: true,
-          animateFill: false,
+          plugins: [animateFill],
           ...props
         }}
       >
         {children}
-      </TippyTooltip>
+      </Tippy>
     </>
   );
 };
