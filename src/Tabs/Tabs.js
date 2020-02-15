@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Box from '../Box';
+import Flex from '../Flex';
 import StyledTabs from './StyledTabs';
 import Tab from './Tab';
 import { ENTER_KEY, SPACEBAR } from '../constants';
@@ -69,30 +71,33 @@ class Tabs extends React.Component {
 
   render() {
     const { activeTabId } = this;
-    const { children, ...props } = this.props;
+    const { children, tabBarAside, ...props } = this.props;
 
     return (
       <>
         <StyledTabs {...props}>
-          {children.map(tab => {
-            const { id, title, onClick: originalOnClick } = tab.props;
-            const active = activeTabId === id;
-            const tabContentId = getTabContentId(tab);
-            const onClick = () => this.handleTabClick(tab, originalOnClick);
+          <Box>
+            {children.map(tab => {
+              const { id, title, onClick: originalOnClick } = tab.props;
+              const active = activeTabId === id;
+              const tabContentId = getTabContentId(tab);
+              const onClick = () => this.handleTabClick(tab, originalOnClick);
 
-            return React.cloneElement(
-              tab,
-              {
-                'aria-controls': tabContentId,
-                'aria-selected': active ? 'true' : 'false',
-                active,
-                key: id,
-                onClick,
-                onKeyPress: ({ key }) => this.handleKeyPress(key, onClick)
-              },
-              title
-            );
-          })}
+              return React.cloneElement(
+                tab,
+                {
+                  'aria-controls': tabContentId,
+                  'aria-selected': active ? 'true' : 'false',
+                  active,
+                  key: id,
+                  onClick,
+                  onKeyPress: ({ key }) => this.handleKeyPress(key, onClick)
+                },
+                title
+              );
+            })}
+          </Box>
+          {tabBarAside && <Flex alignItems="center">{tabBarAside}</Flex>}
         </StyledTabs>
         {this.activeTabContent}
       </>
@@ -106,12 +111,14 @@ Tabs.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(Tab),
     PropTypes.objectOf(Tab)
-  ]).isRequired
+  ]).isRequired,
+  tabBarAside: PropTypes.node
 };
 
 Tabs.defaultProps = {
   activeTabId: undefined,
-  defaultTabId: undefined
+  defaultTabId: undefined,
+  tabBarAside: undefined
 };
 
 export default Tabs;
