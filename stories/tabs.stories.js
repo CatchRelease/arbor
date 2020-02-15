@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
+import { boolean, withKnobs } from '@storybook/addon-knobs';
 
 import notes from './tabs.md';
 import { Box, Heading, Icon, Tab, Tabs } from '../src';
 
 const stories = storiesOf('Tabs', module);
+stories.addDecorator(withKnobs);
 
 const titleAsComponent = (
   <>
@@ -12,6 +14,8 @@ const titleAsComponent = (
     <Icon ml="smaller" name="cr-logo" />
   </>
 );
+
+const aside = <Box>Hello nice friends!</Box>;
 
 const alertTabOnclick = activateTab => {
   alert('tab clicked!'); // eslint-disable-line no-alert, no-undef
@@ -24,7 +28,7 @@ stories.add(
     <Box as="section" p="regular">
       <Heading.h1>Tabs</Heading.h1>
 
-      <Tabs defaultTabId="tab-2">
+      <Tabs defaultTabId="tab-2" tabBarAside={boolean('aside', false) && aside}>
         <Tab id="tab-1" title="Tab 1">
           <Box bg="palette.blue.lighter" p="largest">
             Tab 1 Content
