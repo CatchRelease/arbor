@@ -9,6 +9,10 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
+var _Box = _interopRequireDefault(require("../Box"));
+
+var _Flex = _interopRequireDefault(require("../Flex"));
+
 var _StyledTabs = _interopRequireDefault(require("./StyledTabs"));
 
 var _Tab = _interopRequireDefault(require("./Tab"));
@@ -101,9 +105,10 @@ function (_React$Component) {
 
       var _this$props2 = this.props,
           children = _this$props2.children,
-          props = _objectWithoutProperties(_this$props2, ["children"]);
+          tabBarAside = _this$props2.tabBarAside,
+          props = _objectWithoutProperties(_this$props2, ["children", "tabBarAside"]);
 
-      return _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(_StyledTabs["default"], props, children.map(function (tab) {
+      return _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(_StyledTabs["default"], props, _react["default"].createElement(_Box["default"], null, children.map(function (tab) {
         var _tab$props = tab.props,
             id = _tab$props.id,
             title = _tab$props.title,
@@ -126,7 +131,9 @@ function (_React$Component) {
             return _this2.handleKeyPress(key, onClick);
           }
         }, title);
-      })), this.activeTabContent);
+      })), tabBarAside && _react["default"].createElement(_Flex["default"], {
+        alignItems: "center"
+      }, tabBarAside)), this.activeTabContent);
     }
   }, {
     key: "activeTab",
@@ -167,11 +174,13 @@ function (_React$Component) {
 Tabs.propTypes = {
   activeTabId: _propTypes["default"].string,
   defaultTabId: _propTypes["default"].string,
-  children: _propTypes["default"].oneOfType([_propTypes["default"].arrayOf(_Tab["default"]), _propTypes["default"].objectOf(_Tab["default"])]).isRequired
+  children: _propTypes["default"].oneOfType([_propTypes["default"].arrayOf(_Tab["default"]), _propTypes["default"].objectOf(_Tab["default"])]).isRequired,
+  tabBarAside: _propTypes["default"].node
 };
 Tabs.defaultProps = {
   activeTabId: undefined,
-  defaultTabId: undefined
+  defaultTabId: undefined,
+  tabBarAside: undefined
 };
 var _default = Tabs;
 exports["default"] = _default;
