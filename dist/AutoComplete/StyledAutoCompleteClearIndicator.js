@@ -27,21 +27,18 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 var StyledAutoCompleteClearIndicator = function StyledAutoCompleteClearIndicator(_ref) {
   var innerProps = _ref.innerProps,
-      innerRef = _ref.innerRef,
-      props = _objectWithoutProperties(_ref, ["innerProps", "innerRef"]);
+      props = _objectWithoutProperties(_ref, ["innerProps"]);
 
   return _react["default"].createElement(_Icon["default"], _extends({
     "aria-label": "clear selection",
     fontSize: "size4",
-    name: "cross",
-    ref: innerRef
+    name: "cross"
   }, _objectSpread({}, innerProps, {}, props)));
 };
 
 StyledAutoCompleteClearIndicator.propTypes = {
-  innerProps: _propTypes["default"].object.isRequired,
-  // eslint-disable-line react/forbid-prop-types
-  innerRef: _propTypes["default"].func.isRequired
+  innerProps: _propTypes["default"].object.isRequired // eslint-disable-line react/forbid-prop-types
+
 };
 var _default = StyledAutoCompleteClearIndicator;
 exports["default"] = _default;
