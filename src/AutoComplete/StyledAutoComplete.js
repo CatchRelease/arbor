@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import { withTheme } from 'emotion-theming';
 
 import buildReactSelectThemeOverrides from './buildReactSelectThemeOverrides';
-import { subComponents as styledComponents } from './styledAutoCompleteComponents';
+import styledComponents from './styledAutoCompleteComponents';
 
 const getReactSelectComponent = variant => {
   switch (variant) {

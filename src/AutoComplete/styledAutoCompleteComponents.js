@@ -1,4 +1,3 @@
-import StyledAutoComplete from './StyledAutoComplete';
 import StyledAutoCompleteClearIndicator from './StyledAutoCompleteClearIndicator';
 import StyledAutoCompleteContainer from './StyledAutoCompleteContainer';
 import StyledAutoCompleteControl from './StyledAutoCompleteControl';
@@ -13,7 +12,7 @@ import StyledAutoCompletePlaceholder from './StyledAutoCompletePlaceholder';
 import StyledAutoCompleteOption from './StyledAutoCompleteOption';
 import StyledAutoCompleteValueContainer from './StyledAutoCompleteValueContainer';
 
-export const subComponents = {
+export default {
   ClearIndicator: StyledAutoCompleteClearIndicator,
   Container: StyledAutoCompleteContainer,
   Control: StyledAutoCompleteControl,
@@ -27,9 +26,4 @@ export const subComponents = {
   Placeholder: StyledAutoCompletePlaceholder,
   Option: StyledAutoCompleteOption,
   ValueContainer: StyledAutoCompleteValueContainer
-};
-
-export default {
-  ...subComponents,
-  StyledAutoComplete
 };

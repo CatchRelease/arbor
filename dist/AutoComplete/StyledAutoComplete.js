@@ -21,7 +21,7 @@ var _emotionTheming = require("emotion-theming");
 
 var _buildReactSelectThemeOverrides = _interopRequireDefault(require("./buildReactSelectThemeOverrides"));
 
-var _styledAutoCompleteComponents = require("./styledAutoCompleteComponents");
+var _styledAutoCompleteComponents = _interopRequireDefault(require("./styledAutoCompleteComponents"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -60,7 +60,7 @@ var StyledAutoComplete = function StyledAutoComplete(_ref) {
   var SelectComponent = getReactSelectComponent(variant);
 
   var reactSelectProps = _objectSpread({
-    components: _objectSpread({}, _styledAutoCompleteComponents.subComponents, {}, components),
+    components: _objectSpread({}, _styledAutoCompleteComponents["default"], {}, components),
     theme: function theme(reactSelectTheme) {
       return _objectSpread({}, reactSelectTheme, {}, (0, _buildReactSelectThemeOverrides["default"])(_theme), {}, _theme);
     }

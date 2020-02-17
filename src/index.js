@@ -1,7 +1,11 @@
 export * from './theme';
 export { default as AccordionSection } from './AccordionSection';
 export * from './Alert';
-export { default as AutoComplete } from './AutoComplete';
+export {
+  default as AutoComplete,
+  StyledAutoComplete,
+  styledAutoCompleteComponents
+} from './AutoComplete';
 export { default as Avatar } from './Avatar';
 export { default as Badge } from './Badge';
 export { default as Box } from './Box';
@@ -43,5 +47,4 @@ export { default as Textarea } from './Textarea';
 export * from './Toast';
 export { default as Tooltip } from './Tooltip';
 export { default as reset } from './reset';
-export { styledAutoCompleteComponents } from './AutoComplete';
 export { default as theme } from './theme';

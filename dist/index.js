@@ -7,6 +7,7 @@ var _exportNames = {
   theme: true,
   AccordionSection: true,
   AutoComplete: true,
+  StyledAutoComplete: true,
   styledAutoCompleteComponents: true,
   Avatar: true,
   Badge: true,
@@ -63,6 +64,12 @@ Object.defineProperty(exports, "AutoComplete", {
   enumerable: true,
   get: function get() {
     return _AutoComplete["default"];
+  }
+});
+Object.defineProperty(exports, "StyledAutoComplete", {
+  enumerable: true,
+  get: function get() {
+    return _AutoComplete.StyledAutoComplete;
   }
 });
 Object.defineProperty(exports, "styledAutoCompleteComponents", {
