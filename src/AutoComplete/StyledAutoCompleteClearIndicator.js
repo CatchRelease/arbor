@@ -3,23 +3,17 @@ import PropTypes from 'prop-types';
 
 import Icon from '../Icon';
 
-const StyledAutoCompleteClearIndicator = ({
-  innerProps,
-  innerRef,
-  ...props
-}) => (
+const StyledAutoCompleteClearIndicator = ({ innerProps, ...props }) => (
   <Icon
     aria-label="clear selection"
     fontSize="size4"
     name="cross"
-    ref={innerRef}
     {...{ ...innerProps, ...props }}
   />
 );
 
 StyledAutoCompleteClearIndicator.propTypes = {
-  innerProps: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
-  innerRef: PropTypes.func.isRequired
+  innerProps: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
 };
 
 export default StyledAutoCompleteClearIndicator;
