@@ -7,6 +7,7 @@ var _exportNames = {
   theme: true,
   AccordionSection: true,
   AutoComplete: true,
+  styledAutoCompleteComponents: true,
   Avatar: true,
   Badge: true,
   Box: true,
@@ -62,6 +63,12 @@ Object.defineProperty(exports, "AutoComplete", {
   enumerable: true,
   get: function get() {
     return _AutoComplete["default"];
+  }
+});
+Object.defineProperty(exports, "styledAutoCompleteComponents", {
+  enumerable: true,
+  get: function get() {
+    return _AutoComplete.styledAutoCompleteComponents;
   }
 });
 Object.defineProperty(exports, "Avatar", {
@@ -321,7 +328,7 @@ Object.keys(_Alert).forEach(function (key) {
   });
 });
 
-var _AutoComplete = _interopRequireDefault(require("./AutoComplete"));
+var _AutoComplete = _interopRequireWildcard(require("./AutoComplete"));
 
 var _Avatar = _interopRequireDefault(require("./Avatar"));
 

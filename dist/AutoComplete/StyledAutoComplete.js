@@ -21,31 +21,7 @@ var _emotionTheming = require("emotion-theming");
 
 var _buildReactSelectThemeOverrides = _interopRequireDefault(require("./buildReactSelectThemeOverrides"));
 
-var _StyledAutoCompleteClearIndicator = _interopRequireDefault(require("./StyledAutoCompleteClearIndicator"));
-
-var _StyledAutoCompleteContainer = _interopRequireDefault(require("./StyledAutoCompleteContainer"));
-
-var _StyledAutoCompleteControl = _interopRequireDefault(require("./StyledAutoCompleteControl"));
-
-var _StyledAutoCompleteDropdownIndicator = _interopRequireDefault(require("./StyledAutoCompleteDropdownIndicator"));
-
-var _StyledAutoCompleteIndicatorsContainer = _interopRequireDefault(require("./StyledAutoCompleteIndicatorsContainer"));
-
-var _StyledAutoCompleteInput = _interopRequireDefault(require("./StyledAutoCompleteInput"));
-
-var _StyledAutoCompleteMenu = _interopRequireDefault(require("./StyledAutoCompleteMenu"));
-
-var _StyledAutoCompleteMenuList = _interopRequireDefault(require("./StyledAutoCompleteMenuList"));
-
-var _StyledAutoCompleteMultiValue = _interopRequireDefault(require("./StyledAutoCompleteMultiValue"));
-
-var _StyledAutoCompleteNoOptionsMessage = _interopRequireDefault(require("./StyledAutoCompleteNoOptionsMessage"));
-
-var _StyledAutoCompleteOption = _interopRequireDefault(require("./StyledAutoCompleteOption"));
-
-var _StyledAutoCompletePlaceholder = _interopRequireDefault(require("./StyledAutoCompletePlaceholder"));
-
-var _StyledAutoCompleteValueContainer = _interopRequireDefault(require("./StyledAutoCompleteValueContainer"));
+var _styledAutoCompleteComponents = require("./styledAutoCompleteComponents");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -58,22 +34,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-var styledComponents = {
-  ClearIndicator: _StyledAutoCompleteClearIndicator["default"],
-  Container: _StyledAutoCompleteContainer["default"],
-  Control: _StyledAutoCompleteControl["default"],
-  DropdownIndicator: _StyledAutoCompleteDropdownIndicator["default"],
-  IndicatorsContainer: _StyledAutoCompleteIndicatorsContainer["default"],
-  Input: _StyledAutoCompleteInput["default"],
-  Menu: _StyledAutoCompleteMenu["default"],
-  MenuList: _StyledAutoCompleteMenuList["default"],
-  MultiValue: _StyledAutoCompleteMultiValue["default"],
-  NoOptionsMessage: _StyledAutoCompleteNoOptionsMessage["default"],
-  Placeholder: _StyledAutoCompletePlaceholder["default"],
-  Option: _StyledAutoCompleteOption["default"],
-  ValueContainer: _StyledAutoCompleteValueContainer["default"]
-};
 
 var getReactSelectComponent = function getReactSelectComponent(variant) {
   switch (variant) {
@@ -100,7 +60,7 @@ var StyledAutoComplete = function StyledAutoComplete(_ref) {
   var SelectComponent = getReactSelectComponent(variant);
 
   var reactSelectProps = _objectSpread({
-    components: _objectSpread({}, styledComponents, {}, components),
+    components: _objectSpread({}, _styledAutoCompleteComponents.subComponents, {}, components),
     theme: function theme(reactSelectTheme) {
       return _objectSpread({}, reactSelectTheme, {}, (0, _buildReactSelectThemeOverrides["default"])(_theme), {}, _theme);
     }

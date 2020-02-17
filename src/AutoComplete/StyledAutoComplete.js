@@ -7,36 +7,7 @@ import PropTypes from 'prop-types';
 import { withTheme } from 'emotion-theming';
 
 import buildReactSelectThemeOverrides from './buildReactSelectThemeOverrides';
-
-import StyledAutoCompleteClearIndicator from './StyledAutoCompleteClearIndicator';
-import StyledAutoCompleteContainer from './StyledAutoCompleteContainer';
-import StyledAutoCompleteControl from './StyledAutoCompleteControl';
-import StyledAutoCompleteDropdownIndicator from './StyledAutoCompleteDropdownIndicator';
-import StyledAutoCompleteIndicatorsContainer from './StyledAutoCompleteIndicatorsContainer';
-import StyledAutoCompleteInput from './StyledAutoCompleteInput';
-import StyledAutoCompleteMenu from './StyledAutoCompleteMenu';
-import StyledAutoCompleteMenuList from './StyledAutoCompleteMenuList';
-import StyledAutoCompleteMultiValue from './StyledAutoCompleteMultiValue';
-import StyledAutoCompleteNoOptionsMessage from './StyledAutoCompleteNoOptionsMessage';
-import StyledAutoCompleteOption from './StyledAutoCompleteOption';
-import StyledAutoCompletePlaceholder from './StyledAutoCompletePlaceholder';
-import StyledAutoCompleteValueContainer from './StyledAutoCompleteValueContainer';
-
-const styledComponents = {
-  ClearIndicator: StyledAutoCompleteClearIndicator,
-  Container: StyledAutoCompleteContainer,
-  Control: StyledAutoCompleteControl,
-  DropdownIndicator: StyledAutoCompleteDropdownIndicator,
-  IndicatorsContainer: StyledAutoCompleteIndicatorsContainer,
-  Input: StyledAutoCompleteInput,
-  Menu: StyledAutoCompleteMenu,
-  MenuList: StyledAutoCompleteMenuList,
-  MultiValue: StyledAutoCompleteMultiValue,
-  NoOptionsMessage: StyledAutoCompleteNoOptionsMessage,
-  Placeholder: StyledAutoCompletePlaceholder,
-  Option: StyledAutoCompleteOption,
-  ValueContainer: StyledAutoCompleteValueContainer
-};
+import { subComponents as styledComponents } from './styledAutoCompleteComponents';
 
 const getReactSelectComponent = variant => {
   switch (variant) {

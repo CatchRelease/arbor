@@ -43,4 +43,5 @@ export { default as Textarea } from './Textarea';
 export * from './Toast';
 export { default as Tooltip } from './Tooltip';
 export { default as reset } from './reset';
+export { styledAutoCompleteComponents } from './AutoComplete';
 export { default as theme } from './theme';
