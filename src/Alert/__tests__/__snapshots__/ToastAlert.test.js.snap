@@ -895,10 +895,6 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with dange
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
-  color: #081D17;
-}
-
 .emotion-10::-moz-focus-inner {
   border: 0;
 }
@@ -909,10 +905,6 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with dange
 
 .emotion-10:focus:hover {
   border: 1px solid transparent;
-}
-
-.emotion-10 i {
-  color: #989A9C;
 }
 
 .emotion-8 {
@@ -1101,10 +1093,6 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with info 
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
-  color: #081D17;
-}
-
 .emotion-10::-moz-focus-inner {
   border: 0;
 }
@@ -1115,10 +1103,6 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with info 
 
 .emotion-10:focus:hover {
   border: 1px solid transparent;
-}
-
-.emotion-10 i {
-  color: #989A9C;
 }
 
 .emotion-8 {
@@ -1334,10 +1318,6 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with no in
   background-color: #F8F9F9;
 }
 
-.emotion-6:enabled:hover i {
-  color: #081D17;
-}
-
 .emotion-6::-moz-focus-inner {
   border: 0;
 }
@@ -1348,10 +1328,6 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with no in
 
 .emotion-6:focus:hover {
   border: 1px solid transparent;
-}
-
-.emotion-6 i {
-  color: #989A9C;
 }
 
 .emotion-4 {
@@ -1497,10 +1473,6 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with succe
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
-  color: #081D17;
-}
-
 .emotion-10::-moz-focus-inner {
   border: 0;
 }
@@ -1511,10 +1483,6 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with succe
 
 .emotion-10:focus:hover {
   border: 1px solid transparent;
-}
-
-.emotion-10 i {
-  color: #989A9C;
 }
 
 .emotion-8 {
@@ -1703,10 +1671,6 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with warni
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
-  color: #081D17;
-}
-
 .emotion-10::-moz-focus-inner {
   border: 0;
 }
@@ -1717,10 +1681,6 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with warni
 
 .emotion-10:focus:hover {
   border: 1px solid transparent;
-}
-
-.emotion-10 i {
-  color: #989A9C;
 }
 
 .emotion-8 {

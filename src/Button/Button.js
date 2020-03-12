@@ -8,6 +8,7 @@ import StyledButton from './StyledButton';
 import Text from '../Text';
 import VARIANTS from './variants';
 import intent from '../theme/colors/intent';
+import palette from '../theme/colors/palette';
 
 const INTENTS = Object.keys(intent);
 
@@ -74,6 +75,11 @@ Button.propTypes = {
   intent: PropTypes.oneOf(INTENTS),
 
   /**
+   * Button color as a key of the theme's color palette, for overriding variant styles.
+   * */
+  paletteColor: PropTypes.oneOf(['', ...Object.keys(palette)]),
+
+  /**
    * Indicate if the spinner should display.
    */
   spin: PropTypes.bool,
@@ -98,11 +104,12 @@ Button.defaultProps = {
   children: undefined,
   disabled: false,
   fullWidth: false,
-  intent: 'brand',
   iconEnd: undefined,
   iconStart: undefined,
-  spin: false,
+  intent: 'brand',
+  paletteColor: '',
   size: 'large',
+  spin: false,
   type: undefined,
   variant: 'primary'
 };

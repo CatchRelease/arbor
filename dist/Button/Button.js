@@ -23,7 +23,17 @@ var _variants = _interopRequireDefault(require("./variants"));
 
 var _intent = _interopRequireDefault(require("../theme/colors/intent"));
 
+var _palette = _interopRequireDefault(require("../theme/colors/palette"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -99,6 +109,11 @@ Button.propTypes = {
   intent: _propTypes["default"].oneOf(INTENTS),
 
   /**
+   * Button color as a key of the theme's color palette, for overriding variant styles.
+   * */
+  paletteColor: _propTypes["default"].oneOf([''].concat(_toConsumableArray(Object.keys(_palette["default"])))),
+
+  /**
    * Indicate if the spinner should display.
    */
   spin: _propTypes["default"].bool,
@@ -122,11 +137,12 @@ Button.defaultProps = {
   children: undefined,
   disabled: false,
   fullWidth: false,
-  intent: 'brand',
   iconEnd: undefined,
   iconStart: undefined,
-  spin: false,
+  intent: 'brand',
+  paletteColor: '',
   size: 'large',
+  spin: false,
   type: undefined,
   variant: 'primary'
 };

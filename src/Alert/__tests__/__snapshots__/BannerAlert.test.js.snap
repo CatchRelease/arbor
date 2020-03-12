@@ -811,10 +811,6 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with dang
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
-  color: #081D17;
-}
-
 .emotion-10::-moz-focus-inner {
   border: 0;
 }
@@ -825,10 +821,6 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with dang
 
 .emotion-10:focus:hover {
   border: 1px solid transparent;
-}
-
-.emotion-10 i {
-  color: #989A9C;
 }
 
 .emotion-8 {
@@ -1009,10 +1001,6 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with info
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
-  color: #081D17;
-}
-
 .emotion-10::-moz-focus-inner {
   border: 0;
 }
@@ -1023,10 +1011,6 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with info
 
 .emotion-10:focus:hover {
   border: 1px solid transparent;
-}
-
-.emotion-10 i {
-  color: #989A9C;
 }
 
 .emotion-8 {
@@ -1228,10 +1212,6 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with no i
   background-color: #F8F9F9;
 }
 
-.emotion-6:enabled:hover i {
-  color: #081D17;
-}
-
 .emotion-6::-moz-focus-inner {
   border: 0;
 }
@@ -1242,10 +1222,6 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with no i
 
 .emotion-6:focus:hover {
   border: 1px solid transparent;
-}
-
-.emotion-6 i {
-  color: #989A9C;
 }
 
 .emotion-4 {
@@ -1388,10 +1364,6 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with succ
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
-  color: #081D17;
-}
-
 .emotion-10::-moz-focus-inner {
   border: 0;
 }
@@ -1402,10 +1374,6 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with succ
 
 .emotion-10:focus:hover {
   border: 1px solid transparent;
-}
-
-.emotion-10 i {
-  color: #989A9C;
 }
 
 .emotion-8 {
@@ -1586,10 +1554,6 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with warn
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
-  color: #081D17;
-}
-
 .emotion-10::-moz-focus-inner {
   border: 0;
 }
@@ -1600,10 +1564,6 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with warn
 
 .emotion-10:focus:hover {
   border: 1px solid transparent;
-}
-
-.emotion-10 i {
-  color: #989A9C;
 }
 
 .emotion-8 {
