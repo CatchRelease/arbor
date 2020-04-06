@@ -181,7 +181,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 <div
@@ -450,7 +450,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 <div
@@ -719,7 +719,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 <div
@@ -988,7 +988,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 <div
@@ -1257,7 +1257,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 <div
@@ -1522,7 +1522,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 .emotion-13 {
