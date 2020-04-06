@@ -71,7 +71,7 @@ exports[`<Textarea /> renders a Textarea with a caption correctly 1`] = `
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
 }
 
 <div

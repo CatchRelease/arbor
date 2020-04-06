@@ -7,7 +7,7 @@ import Text from '../Text';
 const VARIANT_MAPPING = {
   ui: 'size4',
   longForm: 'size5',
-  tiny: 'size2'
+  tiny: 'size3'
 };
 
 const variantStyles = ({ theme, variant }) => css`
