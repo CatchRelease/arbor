@@ -5,6 +5,7 @@ exports[`<Card /> renders a Card properly 1`] = `
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-radius: 6px;
   box-shadow: 0 0 1px rgba(37,39,45,0.47);

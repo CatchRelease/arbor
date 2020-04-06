@@ -10,7 +10,8 @@ import {
   minWidth,
   overflow,
   space,
-  textAlign
+  textAlign,
+  width
 } from 'styled-system';
 
 import textTransform from '../utils/textTransform';
@@ -36,6 +37,7 @@ const Text = styled.p`
   ${textTransform};
   ${textOverflow};
   ${whiteSpace};
+  ${width};
 `;
 
 Text.propTypes = {
@@ -50,7 +52,8 @@ Text.propTypes = {
   ...textAlign.propTypes,
   ...textTransform.propTypes,
   ...textOverflow.propTypes,
-  ...whiteSpace.propTypes
+  ...whiteSpace.propTypes,
+  ...width.propTypes
 };
 
 Text.defaultProps = {

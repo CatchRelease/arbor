@@ -31,6 +31,7 @@ exports[`<PaneAlert /> property renders a banner alert with danger intent 1`] = 
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #D93838;
@@ -93,6 +94,7 @@ exports[`<PaneAlert /> property renders a banner alert with info intent 1`] = `
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #4263EB;
@@ -157,6 +159,7 @@ exports[`<PaneAlert /> property renders a banner alert with no intent 1`] = `
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-color: intent.undefined.default;
   box-shadow: 0 0 1px rgba(37,39,45,0.47);
@@ -237,6 +240,7 @@ exports[`<PaneAlert /> property renders a banner alert with success intent 1`] =
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #29863A;
@@ -313,6 +317,7 @@ exports[`<PaneAlert /> property renders a banner alert with warning intent 1`] =
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #C55205;
@@ -396,6 +401,7 @@ exports[`<PaneAlert /> with details property renders a banner alert, with danger
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #D93838;
@@ -475,6 +481,7 @@ exports[`<PaneAlert /> with details property renders a banner alert, with info i
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #4263EB;
@@ -549,6 +556,7 @@ exports[`<PaneAlert /> with details property renders a banner alert, with no int
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-color: intent.undefined.default;
   box-shadow: 0 0 1px rgba(37,39,45,0.47);
@@ -650,6 +658,7 @@ exports[`<PaneAlert /> with details property renders a banner alert, with succes
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #29863A;
@@ -743,6 +752,7 @@ exports[`<PaneAlert /> with details property renders a banner alert, with warnin
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #C55205;
@@ -926,6 +936,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with danger
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #D93838;
@@ -1108,6 +1119,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with info i
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #4263EB;
@@ -1195,6 +1207,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with no int
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-color: intent.undefined.default;
   box-shadow: 0 0 1px rgba(37,39,45,0.47);
@@ -1498,6 +1511,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with succes
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #29863A;
@@ -1694,6 +1708,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with warnin
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #C55205;

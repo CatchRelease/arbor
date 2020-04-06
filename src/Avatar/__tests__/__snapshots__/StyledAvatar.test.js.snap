@@ -4,6 +4,7 @@ exports[`<StyledAvatar /> sizes renders default properly 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   background-color: #29863A;
+  width: 24px;
   box-sizing: border-box;
   border: 1px solid;
   border-color: #29863A;
@@ -27,6 +28,7 @@ exports[`<StyledAvatar /> sizes renders medium properly 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   background-color: #29863A;
+  width: 32px;
   box-sizing: border-box;
   border: 1px solid;
   border-color: #29863A;

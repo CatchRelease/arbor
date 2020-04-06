@@ -32,6 +32,7 @@ exports[`<ToastAlert /> property renders a banner alert with danger intent 1`] =
   background-color: #FFFFFF;
   overflow: hidden;
   text-align: center;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #D93838;
@@ -96,6 +97,7 @@ exports[`<ToastAlert /> property renders a banner alert with info intent 1`] = `
   background-color: #FFFFFF;
   overflow: hidden;
   text-align: center;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #4263EB;
@@ -162,6 +164,7 @@ exports[`<ToastAlert /> property renders a banner alert with no intent 1`] = `
   background-color: #FFFFFF;
   overflow: hidden;
   text-align: center;
+  width: 100%;
   box-sizing: border-box;
   border-color: intent.undefined.default;
   border-radius: 6px;
@@ -244,6 +247,7 @@ exports[`<ToastAlert /> property renders a banner alert with success intent 1`] 
   background-color: #FFFFFF;
   overflow: hidden;
   text-align: center;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #29863A;
@@ -322,6 +326,7 @@ exports[`<ToastAlert /> property renders a banner alert with warning intent 1`] 
   background-color: #FFFFFF;
   overflow: hidden;
   text-align: center;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #C55205;
@@ -411,6 +416,7 @@ exports[`<ToastAlert /> with details property renders a banner alert, with dange
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #D93838;
@@ -505,6 +511,7 @@ exports[`<ToastAlert /> with details property renders a banner alert, with info 
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #4263EB;
@@ -581,6 +588,7 @@ exports[`<ToastAlert /> with details property renders a banner alert, with no in
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-color: intent.undefined.default;
   border-radius: 6px;
@@ -668,6 +676,7 @@ exports[`<ToastAlert /> with details property renders a banner alert, with succe
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #29863A;
@@ -762,6 +771,7 @@ exports[`<ToastAlert /> with details property renders a banner alert, with warni
   font-family: Motiva Sans;
   background-color: #FFFFFF;
   overflow: hidden;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #C55205;
@@ -942,6 +952,7 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with dange
   background-color: #FFFFFF;
   overflow: hidden;
   text-align: center;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #D93838;
@@ -1126,6 +1137,7 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with info 
   background-color: #FFFFFF;
   overflow: hidden;
   text-align: center;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #4263EB;
@@ -1215,6 +1227,7 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with no in
   background-color: #FFFFFF;
   overflow: hidden;
   text-align: center;
+  width: 100%;
   box-sizing: border-box;
   border-color: intent.undefined.default;
   border-radius: 6px;
@@ -1520,6 +1533,7 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with succe
   background-color: #FFFFFF;
   overflow: hidden;
   text-align: center;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #29863A;
@@ -1718,6 +1732,7 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with warni
   background-color: #FFFFFF;
   overflow: hidden;
   text-align: center;
+  width: 100%;
   box-sizing: border-box;
   border-left: 3px solid;
   border-color: #C55205;

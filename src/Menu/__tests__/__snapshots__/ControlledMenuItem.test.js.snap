@@ -33,6 +33,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
 
 .emotion-9 {
   font-family: Motiva Sans;
+  width: 100%;
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;
@@ -175,6 +176,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
 
 .emotion-9 {
   font-family: Motiva Sans;
+  width: 100%;
   box-sizing: border-box;
   width: 100%;
   display: -webkit-box;

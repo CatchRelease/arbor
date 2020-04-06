@@ -21,6 +21,7 @@ exports[`<Masonry /> renders properly 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   margin-bottom: 1rem;
+  width: 100%;
   box-sizing: border-box;
   display: block;
   width: 100%;

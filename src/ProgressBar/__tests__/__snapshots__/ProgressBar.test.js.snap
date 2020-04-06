@@ -99,6 +99,8 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
                   ";",
                   [Function],
                   ";",
+                  [Function],
+                  ";",
                   "label:Box;",
                   "box-sizing:border-box;",
                   [Function],
@@ -561,6 +563,8 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
                 "__emotion_styles": Array [
                   "label:Box;",
                   "label:Text;",
+                  [Function],
+                  ";",
                   [Function],
                   ";",
                   [Function],
