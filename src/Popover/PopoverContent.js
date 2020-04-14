@@ -7,7 +7,10 @@ const PopoverContent = styled(Card)`
   box-shadow: ${props => props.theme.shadows.elevation2};
   min-height: 40px;
   min-width: 160px;
-  overflow: hidden;
 `;
+
+PopoverContent.defaultProps = {
+  overflow: 'hidden'
+};
 
 export default PopoverContent;

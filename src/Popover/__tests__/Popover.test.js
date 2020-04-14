@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import mountWithTheme from '../../../utils/mountWithTheme';
+import Card from '../../Card';
 import Popover from '../Popover';
 
 const mountNode = document.createElement('div');
@@ -41,6 +42,28 @@ describe('<Popover />', () => {
 
     expect(popover).toHaveProp({
       foo: 'bar'
+    });
+  });
+
+  describe('content', () => {
+    const renderPopoverContent = props => {
+      const popover = renderPopover(props);
+      const body = popover.prop('body');
+      return mount(body).find(Card);
+    };
+
+    it('defaults to overflow: hidden', () => {
+      const content = renderPopoverContent();
+
+      expect(content).toHaveProp({ overflow: 'hidden' });
+    });
+
+    it('supports passing explicit overflow', () => {
+      const content = renderPopoverContent({
+        contentProps: { overflow: 'visible' }
+      });
+
+      expect(content).toHaveProp({ overflow: 'visible' });
     });
   });
 

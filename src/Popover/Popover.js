@@ -92,13 +92,16 @@ class Popover extends React.Component {
     const {
       children,
       content,
+      contentProps,
       preferPlace,
       place,
       ...popoverProps
     } = this.props;
     const { isOpen } = this.state;
 
-    const styledContent = <PopoverContent>{content}</PopoverContent>;
+    const styledContent = (
+      <PopoverContent {...contentProps}>{content}</PopoverContent>
+    );
 
     const trigger = React.cloneElement(children, {
       onClick: this.toggle
@@ -126,6 +129,11 @@ Popover.propTypes = {
    * Content to display within the Popover
    */
   content: PropTypes.node.isRequired,
+
+  /**
+   * Props to be passed to the PopoverContent component
+   */
+  contentProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 
   /**
    * The trigger which will open the popover when it is clicked. By default,
@@ -178,6 +186,7 @@ Popover.propTypes = {
 };
 
 Popover.defaultProps = {
+  contentProps: {},
   preferPlace: 'below',
   place: 'column',
   onOpen: () => null,
