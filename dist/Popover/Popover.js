@@ -142,12 +142,13 @@ function (_React$Component) {
       var _this$props = this.props,
           children = _this$props.children,
           content = _this$props.content,
+          contentProps = _this$props.contentProps,
           preferPlace = _this$props.preferPlace,
           place = _this$props.place,
-          popoverProps = _objectWithoutProperties(_this$props, ["children", "content", "preferPlace", "place"]);
+          popoverProps = _objectWithoutProperties(_this$props, ["children", "content", "contentProps", "preferPlace", "place"]);
 
       var isOpen = this.state.isOpen;
-      var styledContent = (0, _core.jsx)(_PopoverContent["default"], null, content);
+      var styledContent = (0, _core.jsx)(_PopoverContent["default"], contentProps, content);
 
       var trigger = _react["default"].cloneElement(children, {
         onClick: this.toggle
@@ -173,6 +174,12 @@ Popover.propTypes = {
    * Content to display within the Popover
    */
   content: _propTypes["default"].node.isRequired,
+
+  /**
+   * Props to be passed to the PopoverContent component
+   */
+  contentProps: _propTypes["default"].object,
+  // eslint-disable-line react/forbid-prop-types
 
   /**
    * The trigger which will open the popover when it is clicked. By default,
@@ -206,6 +213,7 @@ Popover.propTypes = {
   place: _propTypes["default"].oneOf(['above', 'right', 'below', 'left', 'row', 'column', 'start', 'end'])
 };
 Popover.defaultProps = {
+  contentProps: {},
   preferPlace: 'below',
   place: 'column',
   onOpen: function onOpen() {
