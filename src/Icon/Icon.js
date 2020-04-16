@@ -1,7 +1,14 @@
 /** @jsx jsx */
 import { ClassNames, css, jsx } from '@emotion/core';
 import styled from '@emotion/styled';
-import { color, display, fontSize, textAlign, space } from 'styled-system';
+import {
+  color,
+  display,
+  fontSize,
+  textAlign,
+  space,
+  textShadow
+} from 'styled-system';
 import { withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 
@@ -15,16 +22,18 @@ const StyledIcon = styled.i`
   ${color};
   ${display};
   ${fontSize};
+  ${rotationStyles};
   ${space};
   ${textAlign};
-  ${rotationStyles};
+  ${textShadow};
 `;
 
 StyledIcon.propTypes = {
   ...color.propTypes,
   ...fontSize.propTypes,
   ...space.propTypes,
-  ...textAlign.propTypes
+  ...textAlign.propTypes,
+  ...textShadow.propTypes
 };
 
 const Icon = ({ name, theme, ...props }) => {

@@ -70,3 +70,31 @@ stories.add(
   ),
   { notes: { markdown: notes } }
 );
+
+stories.add(
+  'text-shadowing',
+  () => (
+    <Grid
+      gridTemplateColumns={`repeat(${AVAILABLE_ICONS.length}, 1fr)`}
+      gridGap="large"
+      justifyItems="center"
+      alignItems="center"
+      width="100vw"
+      height="100vh"
+    >
+      {AVAILABLE_ICONS.map(icon => (
+        <Box key={icon} textAlign="center">
+          <Icon
+            name={icon}
+            color="grey100"
+            fontSize="38px"
+            textShadow="0px 1px 2px red"
+            rotation={select('Rotation', rotationOptions, null)}
+          />
+          <Text variant="tiny">{icon}</Text>
+        </Box>
+      ))}
+    </Grid>
+  ),
+  { notes: { markdown: notes } }
+);

@@ -82,10 +82,10 @@ section:last-child .emotion-7 {
 }
 
 .emotion-0 {
-  margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
+  margin-right: 0.75rem;
 }
 
 <header
@@ -196,10 +196,10 @@ section:last-child .emotion-7 {
 }
 
 .emotion-0 {
-  margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
+  margin-right: 0.75rem;
 }
 
 <header
@@ -311,10 +311,10 @@ section:last-child .emotion-7 {
 }
 
 .emotion-0 {
-  margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
+  margin-right: 0.75rem;
 }
 
 <header
