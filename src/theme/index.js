@@ -1,4 +1,4 @@
-import { rem, transparentize } from 'polished';
+import { rem } from 'polished';
 import {
   background,
   border,
@@ -9,6 +9,7 @@ import {
   palette,
   primary,
   secondary,
+  shadow,
   text
 } from './colors';
 
@@ -100,6 +101,7 @@ export const colors = {
   palette,
   primary,
   secondary,
+  shadow,
   text
 };
 
@@ -154,14 +156,20 @@ const borders = {
   default: `${borderWidth.small} solid ${colors.border.default}`
 };
 
-const blurryShadowColor = transparentize(0.7, colors.monochrome.grey90);
-const borderShadowColor = transparentize(0.53, colors.monochrome.grey90);
 export const boxShadows = {
-  elevation0: `0 0 1px ${borderShadowColor}`,
-  elevation1: `0 0 1px ${borderShadowColor}, 0 2px 4px -2px ${blurryShadowColor}`,
-  elevation2: `0 0 1px ${borderShadowColor}, 0 5px 8px -4px ${blurryShadowColor}`,
-  elevation3: `0 0 1px ${borderShadowColor}, 0 8px 10px -4px ${blurryShadowColor}`,
-  elevation4: `0 0 1px ${borderShadowColor}, 0 16px 24px -8px ${blurryShadowColor}`
+  elevation0: `0 0 1px ${colors.shadow.border}`,
+  elevation1: `0 0 1px ${colors.shadow.border}, 0 2px 4px -2px ${
+    colors.shadow.blurry
+  }`,
+  elevation2: `0 0 1px ${colors.shadow.border}, 0 5px 8px -4px ${
+    colors.shadow.blurry
+  }`,
+  elevation3: `0 0 1px ${colors.shadow.border}, 0 8px 10px -4px ${
+    colors.shadow.blurry
+  }`,
+  elevation4: `0 0 1px ${colors.shadow.border}, 0 16px 24px -8px ${
+    colors.shadow.blurry
+  }`
 };
 
 export default {

@@ -95,6 +95,7 @@ var colors = _objectSpread({
   palette: _colors.palette,
   primary: _colors.primary,
   secondary: _colors.secondary,
+  shadow: _colors.shadow,
   text: _colors.text
 });
 
@@ -149,14 +150,12 @@ exports.borderWidth = borderWidth;
 var borders = {
   "default": "".concat(borderWidth.small, " solid ").concat(colors.border["default"])
 };
-var blurryShadowColor = (0, _polished.transparentize)(0.7, colors.monochrome.grey90);
-var borderShadowColor = (0, _polished.transparentize)(0.53, colors.monochrome.grey90);
 var boxShadows = {
-  elevation0: "0 0 1px ".concat(borderShadowColor),
-  elevation1: "0 0 1px ".concat(borderShadowColor, ", 0 2px 4px -2px ").concat(blurryShadowColor),
-  elevation2: "0 0 1px ".concat(borderShadowColor, ", 0 5px 8px -4px ").concat(blurryShadowColor),
-  elevation3: "0 0 1px ".concat(borderShadowColor, ", 0 8px 10px -4px ").concat(blurryShadowColor),
-  elevation4: "0 0 1px ".concat(borderShadowColor, ", 0 16px 24px -8px ").concat(blurryShadowColor)
+  elevation0: "0 0 1px ".concat(colors.shadow.border),
+  elevation1: "0 0 1px ".concat(colors.shadow.border, ", 0 2px 4px -2px ").concat(colors.shadow.blurry),
+  elevation2: "0 0 1px ".concat(colors.shadow.border, ", 0 5px 8px -4px ").concat(colors.shadow.blurry),
+  elevation3: "0 0 1px ".concat(colors.shadow.border, ", 0 8px 10px -4px ").concat(colors.shadow.blurry),
+  elevation4: "0 0 1px ".concat(colors.shadow.border, ", 0 16px 24px -8px ").concat(colors.shadow.blurry)
 };
 exports.boxShadows = boxShadows;
 var _default = {

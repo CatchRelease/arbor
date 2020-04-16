@@ -57,6 +57,12 @@ Object.defineProperty(exports, "secondary", {
     return _secondary["default"];
   }
 });
+Object.defineProperty(exports, "shadow", {
+  enumerable: true,
+  get: function get() {
+    return _shadow["default"];
+  }
+});
 Object.defineProperty(exports, "text", {
   enumerable: true,
   get: function get() {
@@ -81,6 +87,8 @@ var _palette = _interopRequireDefault(require("./palette"));
 var _primary = _interopRequireDefault(require("./primary"));
 
 var _secondary = _interopRequireDefault(require("./secondary"));
+
+var _shadow = _interopRequireDefault(require("./shadow"));
 
 var _text = _interopRequireDefault(require("./text"));
 

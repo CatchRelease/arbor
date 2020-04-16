@@ -226,6 +226,10 @@ exports[`<Spinner /> spinner is not spinning properly renders a spinner 1`] = `
             "teal": "#50D2A0",
             "yellow": "#FFD76E",
           },
+          "shadow": Object {
+            "blurry": "rgba(37,39,45,0.3)",
+            "border": "rgba(37,39,45,0.47)",
+          },
           "text": Object {
             "dark": "#0F0F10",
             "default": "#25272D",
@@ -531,6 +535,10 @@ exports[`<Spinner /> spinner is not spinning properly renders a spinner 1`] = `
               "red": "#FF5F5F",
               "teal": "#50D2A0",
               "yellow": "#FFD76E",
+            },
+            "shadow": Object {
+              "blurry": "rgba(37,39,45,0.3)",
+              "border": "rgba(37,39,45,0.47)",
             },
             "text": Object {
               "dark": "#0F0F10",
@@ -848,6 +856,10 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
             "teal": "#50D2A0",
             "yellow": "#FFD76E",
           },
+          "shadow": Object {
+            "blurry": "rgba(37,39,45,0.3)",
+            "border": "rgba(37,39,45,0.47)",
+          },
           "text": Object {
             "dark": "#0F0F10",
             "default": "#25272D",
@@ -1153,6 +1165,10 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
               "red": "#FF5F5F",
               "teal": "#50D2A0",
               "yellow": "#FFD76E",
+            },
+            "shadow": Object {
+              "blurry": "rgba(37,39,45,0.3)",
+              "border": "rgba(37,39,45,0.47)",
             },
             "text": Object {
               "dark": "#0F0F10",
@@ -1471,6 +1487,10 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
             "teal": "#50D2A0",
             "yellow": "#FFD76E",
           },
+          "shadow": Object {
+            "blurry": "rgba(37,39,45,0.3)",
+            "border": "rgba(37,39,45,0.47)",
+          },
           "text": Object {
             "dark": "#0F0F10",
             "default": "#25272D",
@@ -1776,6 +1796,10 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
               "red": "#FF5F5F",
               "teal": "#50D2A0",
               "yellow": "#FFD76E",
+            },
+            "shadow": Object {
+              "blurry": "rgba(37,39,45,0.3)",
+              "border": "rgba(37,39,45,0.47)",
             },
             "text": Object {
               "dark": "#0F0F10",
