@@ -7,4 +7,5 @@ export { default as monochrome } from './monochrome';
 export { default as palette } from './palette';
 export { default as primary } from './primary';
 export { default as secondary } from './secondary';
+export { default as shadow } from './shadow';
 export { default as text } from './text';
