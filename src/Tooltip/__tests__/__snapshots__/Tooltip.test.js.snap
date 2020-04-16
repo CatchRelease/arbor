@@ -225,6 +225,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             "teal": "#50D2A0",
             "yellow": "#FFD76E",
           },
+          "shadow": Object {
+            "blurry": "rgba(37,39,45,0.3)",
+            "border": "rgba(37,39,45,0.47)",
+          },
           "text": Object {
             "dark": "#0F0F10",
             "default": "#25272D",
@@ -604,6 +608,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                   "red": "#FF5F5F",
                   "teal": "#50D2A0",
                   "yellow": "#FFD76E",
+                },
+                "shadow": Object {
+                  "blurry": "rgba(37,39,45,0.3)",
+                  "border": "rgba(37,39,45,0.47)",
                 },
                 "text": Object {
                   "dark": "#0F0F10",
