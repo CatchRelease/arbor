@@ -10,9 +10,13 @@ import Icon from '../Icon';
 const StyledAutoCompleteMultiValue = ({
   data,
   data: { label },
+  paletteColor,
   removeProps
 }) => {
-  const paletteColor = colorForString(label, Object.keys(palette));
+  const color =
+    paletteColor === null
+      ? colorForString(label, Object.keys(palette))
+      : paletteColor;
 
   const iconEnd = (
     <Icon
@@ -28,7 +32,7 @@ const StyledAutoCompleteMultiValue = ({
     <Badge
       {...{
         iconEnd,
-        paletteColor,
+        paletteColor: color,
         subtle: true,
         variant: 'pill',
         ...data
@@ -47,7 +51,12 @@ StyledAutoCompleteMultiValue.propTypes = {
     onClick: PropTypes.func.isRequired,
     onMouseDown: PropTypes.func.isRequired,
     onTouchEnd: PropTypes.func.isRequired
-  }).isRequired
+  }).isRequired,
+  paletteColor: PropTypes.oneOf(['', ...Object.keys(palette)])
+};
+
+StyledAutoCompleteMultiValue.defaultProps = {
+  paletteColor: null
 };
 
 export default StyledAutoCompleteMultiValue;

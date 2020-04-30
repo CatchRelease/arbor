@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { boolean, select, withKnobs } from '@storybook/addon-knobs';
 
+import { styledAutoCompleteComponents } from '../src/AutoComplete';
 import notes from './autoComplete.md';
 import { AutoComplete, Box, Heading } from '../src';
 import palette from '../src/theme/colors/palette';
@@ -47,6 +48,10 @@ const filterOptions = (options, inputValue: '') =>
   options.filter(option =>
     option.label.toLowerCase().includes(inputValue.toLowerCase())
   );
+
+const { MultiValue } = styledAutoCompleteComponents;
+
+const NeutralMultiValue = props => <MultiValue {...props} paletteColor="" />;
 
 class AutoCompleteExample extends React.Component {
   state = {
@@ -157,6 +162,16 @@ stories.add(
           variant: 'default'
         }))}
         variant={select('Variant', variantOptions, 'default')}
+      />
+
+      <AutoCompleteExample
+        id="auto-complete-6"
+        label="AutoComplete with custom neutral badges"
+        options={neutralOptions}
+        variant={select('Variant', variantOptions, 'default')}
+        components={{
+          MultiValue: NeutralMultiValue
+        }}
       />
     </Box>
   ),
