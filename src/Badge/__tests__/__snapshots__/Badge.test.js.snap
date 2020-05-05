@@ -272,6 +272,74 @@ exports[`<Badge /> Colors properly renders a neutral badge 1`] = `
 </div>
 `;
 
+exports[`<Badge /> Colors properly renders a neutral badge 2`] = `
+.emotion-4 {
+  font-family: Motiva Sans;
+  max-width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #0F0F10;
+  border-color: #0F0F10;
+  border-radius: 2px;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<div
+  className="emotion-4 emotion-5"
+  height="24px"
+>
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
+  >
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
+</div>
+`;
+
 exports[`<Badge /> Colors properly renders a orange badge 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;
@@ -901,14 +969,14 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #F2F2F2;
+  background: #e7e7e7;
   border-color: #0F0F10;
   border-radius: 2px;
 }
 
 .emotion-2 {
   font-family: Motiva Sans;
-  color: #5B5D61;
+  color: #070708;
   box-sizing: border-box;
   display: grid;
   -webkit-align-items: center;
@@ -921,7 +989,7 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
 
 .emotion-0 {
   font-family: Motiva Sans;
-  color: #5B5D61;
+  color: #070708;
   font-size: 0.8125rem;
   font-weight: 500;
   line-height: 1.5;
@@ -936,12 +1004,80 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
 >
   <div
     className="emotion-2 emotion-3"
-    color="monochrome.grey80"
+    color="palette.neutral.dark"
     display="grid"
   >
     <span
       className="emotion-0 emotion-1"
-      color="monochrome.grey80"
+      color="palette.neutral.dark"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<Badge /> Subtle properly renders a subtle neutral badge 2`] = `
+.emotion-4 {
+  font-family: Motiva Sans;
+  max-width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #e7e7e7;
+  border-color: #0F0F10;
+  border-radius: 2px;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: #070708;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #070708;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<div
+  className="emotion-4 emotion-5"
+  height="24px"
+>
+  <div
+    className="emotion-2 emotion-3"
+    color="palette.neutral.dark"
+    display="grid"
+  >
+    <span
+      className="emotion-0 emotion-1"
+      color="palette.neutral.dark"
       fontSize="size3"
       fontWeight="medium"
       overflow="hidden"

@@ -156,6 +156,13 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
               "light": "#bedac3",
               "lighter": "#e9f2eb",
             },
+            "neutral": Object {
+              "dark": "#070708",
+              "darker": "#020203",
+              "default": "#0F0F10",
+              "light": "#b7b7b7",
+              "lighter": "#e7e7e7",
+            },
             "orange": Object {
               "dark": "#622902",
               "darker": "#271000",
@@ -203,6 +210,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             "blue": "#4263EB",
             "cyan": "#0D7F91",
             "green": "#29863A",
+            "neutral": "#0F0F10",
             "orange": "#C55205",
             "pink": "#D6336C",
             "purple": "#7048E8",
@@ -540,6 +548,13 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                     "light": "#bedac3",
                     "lighter": "#e9f2eb",
                   },
+                  "neutral": Object {
+                    "dark": "#070708",
+                    "darker": "#020203",
+                    "default": "#0F0F10",
+                    "light": "#b7b7b7",
+                    "lighter": "#e7e7e7",
+                  },
                   "orange": Object {
                     "dark": "#622902",
                     "darker": "#271000",
@@ -587,6 +602,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                   "blue": "#4263EB",
                   "cyan": "#0D7F91",
                   "green": "#29863A",
+                  "neutral": "#0F0F10",
                   "orange": "#C55205",
                   "pink": "#D6336C",
                   "purple": "#7048E8",

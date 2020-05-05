@@ -78,7 +78,7 @@ Badge.propTypes = {
   /**
    * Badge color as a key of the theme's color palette.
    * */
-  paletteColor: PropTypes.oneOf(['', ...Object.keys(palette)]),
+  paletteColor: PropTypes.oneOf([...Object.keys(palette)]),
 
   /**
    * Arbor icon to insert after badge text.
@@ -103,7 +103,7 @@ Badge.propTypes = {
 };
 
 Badge.defaultProps = {
-  paletteColor: '',
+  paletteColor: 'neutral',
   subtle: false,
   iconEnd: undefined,
   iconStart: undefined,
