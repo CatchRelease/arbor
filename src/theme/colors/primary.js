@@ -1,6 +1,7 @@
 export const blue = '#4263EB';
 export const cyan = '#0D7F91';
 export const green = '#29863A';
+export const neutral = '#0F0F10';
 export const orange = '#C55205';
 export const pink = '#D6336C';
 export const purple = '#7048E8';
@@ -12,6 +13,7 @@ export default {
   blue,
   cyan,
   green,
+  neutral,
   orange,
   pink,
   purple,

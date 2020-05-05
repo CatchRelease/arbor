@@ -21,6 +21,7 @@ export const {
   blue,
   cyan,
   green,
+  neutral,
   orange,
   pink,
   purple,
