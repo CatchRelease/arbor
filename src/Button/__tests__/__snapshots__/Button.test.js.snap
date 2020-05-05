@@ -2602,6 +2602,238 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
 </button>
 `;
 
+exports[`<Button /> fontSize properly renders a button with custom font preset size 1`] = `
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  visibility: visible;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: inherit;
+  font-size: inherit;
+  line-height: 1.25;
+}
+
+.emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  position: relative;
+  text-align: center;
+  font-size: 1.25rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  background-color: #081D17;
+  color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.emotion-4:disabled {
+  background: #EBECEC;
+  border: 1px solid transparent;
+  color: rgba(120,121,125,0.7);
+  cursor: not-allowed;
+}
+
+.emotion-4:enabled {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.emotion-4 i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+}
+
+.emotion-4 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.emotion-4 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-4 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-4:enabled:active {
+  background-color: #061813;
+}
+
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 3px #B6EFD0;
+}
+
+.emotion-4:enabled:hover {
+  background-color: #2f413c;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+<button
+  className="button--primary emotion-4 emotion-5"
+  disabled={false}
+  fontSize="size6"
+  fontWeight="medium"
+  size="large"
+>
+  <div
+    className="emotion-2 emotion-3"
+    display="inline-grid"
+  >
+    <p
+      className="emotion-0 emotion-1"
+      color="inherit"
+      fontSize="inherit"
+    >
+      Size Button
+    </p>
+  </div>
+</button>
+`;
+
+exports[`<Button /> fontSize properly renders a button with custom pixel font size 1`] = `
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  visibility: visible;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: inherit;
+  font-size: inherit;
+  line-height: 1.25;
+}
+
+.emotion-4 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  position: relative;
+  text-align: center;
+  font-size: 100;
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  background-color: #081D17;
+  color: #C0F9DA;
+  font-weight: 500;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.emotion-4:disabled {
+  background: #EBECEC;
+  border: 1px solid transparent;
+  color: rgba(120,121,125,0.7);
+  cursor: not-allowed;
+}
+
+.emotion-4:enabled {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.emotion-4 i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+}
+
+.emotion-4 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.emotion-4 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-4 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-4:enabled:active {
+  background-color: #061813;
+}
+
+.emotion-4:enabled:focus {
+  box-shadow: 0 0 0 3px #B6EFD0;
+}
+
+.emotion-4:enabled:hover {
+  background-color: #2f413c;
+}
+
+.emotion-4::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-4:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-4:focus:hover {
+  border: 1px solid transparent;
+}
+
+<button
+  className="button--primary emotion-4 emotion-5"
+  disabled={false}
+  fontSize="100"
+  fontWeight="medium"
+  size="large"
+>
+  <div
+    className="emotion-2 emotion-3"
+    display="inline-grid"
+  >
+    <p
+      className="emotion-0 emotion-1"
+      color="inherit"
+      fontSize="inherit"
+    >
+      Size Button
+    </p>
+  </div>
+</button>
+`;
+
 exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;

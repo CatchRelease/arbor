@@ -94,4 +94,22 @@ describe('<Button />', () => {
       expect(button).toMatchSnapshot();
     });
   });
+
+  describe('fontSize', () => {
+    it('properly renders a button with custom font preset size', () => {
+      const button = createWithTheme(
+        <Button fontSize="size6">Size Button</Button>
+      );
+
+      expect(button).toMatchSnapshot();
+    });
+
+    it('properly renders a button with custom pixel font size', () => {
+      const button = createWithTheme(
+        <Button fontSize="100">Size Button</Button>
+      );
+
+      expect(button).toMatchSnapshot();
+    });
+  });
 });
