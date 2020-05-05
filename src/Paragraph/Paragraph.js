@@ -10,9 +10,15 @@ const VARIANT_MAPPING = {
   tiny: 'size3'
 };
 
-const variantStyles = ({ theme, variant }) => css`
-  font-size: ${theme.fontSizes[VARIANT_MAPPING[variant]]};
-`;
+const variantStyles = ({ theme, variant, fontSize }) => {
+  const fontSizeOverride = theme.fontSizes[fontSize]
+    ? theme.fontSizes[fontSize]
+    : fontSize;
+
+  return css`
+    font-size: ${fontSizeOverride || theme.fontSizes[VARIANT_MAPPING[variant]]};
+  `;
+};
 
 const Paragraph = styled(Text)`
   ${variantStyles};
