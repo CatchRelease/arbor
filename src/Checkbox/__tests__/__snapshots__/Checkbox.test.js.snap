@@ -474,6 +474,7 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
   background: #FFFFFF;
   border-color: #E0E1E2;
   color: #FFFFFF;
+  cursor: not-allowed;
 }
 
 .emotion-4 {
@@ -576,6 +577,7 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   background: #FFFFFF;
   border-color: #E0E1E2;
   color: #FFFFFF;
+  cursor: not-allowed;
 }
 
 .emotion-6 {

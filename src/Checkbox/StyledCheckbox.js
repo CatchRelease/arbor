@@ -34,6 +34,7 @@ const disabledStyles = ({ theme, checked, disabled }) =>
       : theme.colors.monochrome.white};
     border-color: ${theme.colors.border.default};
     color: ${checked ? theme.colors.grey60 : theme.colors.monochrome.white};
+    cursor: not-allowed;
   `;
 
 const StyledCheckbox = styled(Flex)`
