@@ -3,13 +3,15 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.yellow = exports.teal = exports.red = exports.purple = exports.pink = exports.orange = exports.green = exports.cyan = exports.blue = void 0;
+exports["default"] = exports.yellow = exports.teal = exports.red = exports.purple = exports.pink = exports.orange = exports.neutral = exports.green = exports.cyan = exports.blue = void 0;
 var blue = '#4263EB';
 exports.blue = blue;
 var cyan = '#0D7F91';
 exports.cyan = cyan;
 var green = '#29863A';
 exports.green = green;
+var neutral = '#0F0F10';
+exports.neutral = neutral;
 var orange = '#C55205';
 exports.orange = orange;
 var pink = '#D6336C';
@@ -26,6 +28,7 @@ var _default = {
   blue: blue,
   cyan: cyan,
   green: green,
+  neutral: neutral,
   orange: orange,
   pink: pink,
   purple: purple,

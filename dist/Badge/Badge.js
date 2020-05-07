@@ -103,7 +103,7 @@ Badge.propTypes = {
   /**
    * Badge color as a key of the theme's color palette.
    * */
-  paletteColor: _propTypes["default"].oneOf([''].concat(_toConsumableArray(Object.keys(_palette["default"])))),
+  paletteColor: _propTypes["default"].oneOf(_toConsumableArray(Object.keys(_palette["default"]))),
 
   /**
    * Arbor icon to insert after badge text.
@@ -126,7 +126,7 @@ Badge.propTypes = {
   variant: _propTypes["default"].oneOf(['default', 'pill'])
 };
 Badge.defaultProps = {
-  paletteColor: '',
+  paletteColor: 'neutral',
   subtle: false,
   iconEnd: undefined,
   iconStart: undefined,

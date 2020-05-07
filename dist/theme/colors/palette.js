@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.yellow = exports.teal = exports.red = exports.purple = exports.pink = exports.orange = exports.green = exports.cyan = exports.blue = void 0;
+exports["default"] = exports.yellow = exports.teal = exports.red = exports.purple = exports.pink = exports.orange = exports.neutral = exports.green = exports.cyan = exports.blue = void 0;
 
 var _polished = require("polished");
 
@@ -43,6 +43,7 @@ var palette = Object.entries(_primary["default"]).reduce(paletteReducer, {});
 var blue = palette.blue,
     cyan = palette.cyan,
     green = palette.green,
+    neutral = palette.neutral,
     orange = palette.orange,
     pink = palette.pink,
     purple = palette.purple,
@@ -55,6 +56,7 @@ exports.red = red;
 exports.purple = purple;
 exports.pink = pink;
 exports.orange = orange;
+exports.neutral = neutral;
 exports.green = green;
 exports.cyan = cyan;
 exports.blue = blue;
