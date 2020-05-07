@@ -1,5 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Paragraph /> fontSize properly renders a paragraph with custom font preset size 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+<p
+  className="emotion-0 emotion-1"
+  fontSize="size6"
+>
+  This is a paragraph
+</p>
+`;
+
+exports[`<Paragraph /> fontSize properly renders a paragraph with custom pixel font size 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  font-size: 100;
+  line-height: 1.5;
+  font-size: 100;
+}
+
+<p
+  className="emotion-0 emotion-1"
+  fontSize="100"
+>
+  Size Button
+</p>
+`;
+
 exports[`<Paragraph /> props variant renders a longForm variant 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
