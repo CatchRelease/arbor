@@ -21,6 +21,17 @@ const variants = ({ intent, variant, paletteColor, ...props }) => {
   const colorActive = shade(0.16, colorIntent);
   const colorFocus = themeGet(`colors.intent.${intent}.light`)(props);
   const colorHover = tint(0.16, colorIntent);
+  const colorIcon = () => {
+    if (paletteColor) {
+      return themeGet(`colors.palette.${paletteColor}.default`)(props);
+    }
+
+    if (variant !== 'primary' && intent === 'brand') {
+      return themeGet(`colors.icon.default`)(props);
+    }
+
+    return 'inherit';
+  };
 
   const common = css`
     &::-moz-focus-inner {
@@ -33,6 +44,10 @@ const variants = ({ intent, variant, paletteColor, ...props }) => {
 
     &:focus:hover {
       border: 1px solid transparent;
+    }
+
+    i {
+      color: ${colorIcon()};
     }
   `;
 
@@ -77,6 +92,10 @@ const variants = ({ intent, variant, paletteColor, ...props }) => {
 
           &:hover {
             border: 1px solid ${colorHover};
+
+            i {
+              color: ${color()};
+            }
           }
         }
 
@@ -105,6 +124,10 @@ const variants = ({ intent, variant, paletteColor, ...props }) => {
 
           &:hover {
             background-color: ${colorGrey};
+
+            i {
+              color: ${color()};
+            }
           }
         }
 

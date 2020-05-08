@@ -142,6 +142,10 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   background-color: #F8F9F9;
 }
 
+.emotion-4:enabled:hover i {
+  color: #081D17;
+}
+
 .emotion-4::-moz-focus-inner {
   border: 0;
 }
@@ -152,6 +156,10 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 
 .emotion-4:focus:hover {
   border: 1px solid transparent;
+}
+
+.emotion-4 i {
+  color: #989A9C;
 }
 
 .emotion-2 {
