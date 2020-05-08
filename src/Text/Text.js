@@ -60,6 +60,6 @@ Text.defaultProps = {
 };
 
 // Deprecated -- use <Text as="span"></Text>
-Text.span = props => <Text as="span" {...props} />;
+Text.span = (props) => <Text as="span" {...props} />;
 
 export default Text;

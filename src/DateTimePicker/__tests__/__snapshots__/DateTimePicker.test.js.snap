@@ -30,15 +30,15 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
   color: #989A9C;
 }
 
-.emotion-0 .form-control:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-0 .form-control::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-0 .form-control:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-0 .form-control::placeholder {
   color: #989A9C;
 }
 

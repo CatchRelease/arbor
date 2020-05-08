@@ -27,7 +27,7 @@ class Popover extends React.Component {
     document.removeEventListener('keypress', this.handleKeyboard, true);
   }
 
-  handleOutsideClick = e => {
+  handleOutsideClick = (e) => {
     const { isOpen } = this.state;
 
     if (!isOpen) {
@@ -44,7 +44,7 @@ class Popover extends React.Component {
     }
   };
 
-  handleKeyboard = e => {
+  handleKeyboard = (e) => {
     if (e.key === 'Escape') {
       this.close();
     }

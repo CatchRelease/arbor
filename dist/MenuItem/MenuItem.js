@@ -24,7 +24,7 @@ var MenuItem = function MenuItem(_ref) {
       children = _ref.children,
       props = _objectWithoutProperties(_ref, ["innerRef", "children"]);
 
-  return _react["default"].createElement(_StyledMenuItem["default"], _extends({
+  return /*#__PURE__*/_react["default"].createElement(_StyledMenuItem["default"], _extends({
     ref: innerRef
   }, props), children);
 };

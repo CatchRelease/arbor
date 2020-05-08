@@ -18,7 +18,7 @@ describe('<Menu />', () => {
   };
 
   function shallowWithProps(additionalProps = {}) {
-    const props = Object.assign({}, baseProps, additionalProps);
+    const props = { ...baseProps, ...additionalProps };
 
     return shallow(<Menu {...{ ...props }} />);
   }
@@ -40,7 +40,7 @@ describe('<Menu />', () => {
       const menu = shallowWithProps({ menuItems });
 
       expect(
-        menu.find(MenuItem).map(menuItem => menuItem.props().label)
+        menu.find(MenuItem).map((menuItem) => menuItem.props().label)
       ).toEqual(['Ready to Clear', 'License Acquired']);
     });
 
@@ -54,12 +54,9 @@ describe('<Menu />', () => {
       ];
       const menu = shallowWithProps({ menuItems });
 
-      expect(
-        menu
-          .find(MenuItem)
-          .first()
-          .props().id
-      ).toEqual('menu-item_clearance_state_ready_to_clear');
+      expect(menu.find(MenuItem).first().props().id).toEqual(
+        'menu-item_clearance_state_ready_to_clear'
+      );
     });
 
     it('properly sets a MenuItem as selected', () => {

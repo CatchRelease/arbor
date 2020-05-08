@@ -1,17 +1,17 @@
 import { css } from '@emotion/core';
-import { placeholder, transparentize } from 'polished';
+import { transparentize } from 'polished';
 
-const disabledStyles = theme => css`
+const disabledStyles = (theme) => css`
   background: ${theme.colors.background.default};
 `;
 
-const focusedStyles = theme => css`
+const focusedStyles = (theme) => css`
   border: ${theme.borderWidth.small} solid ${theme.colors.intent.brand.dark};
   box-shadow: 0 0 8px ${transparentize(0.9, theme.colors.intent.brand.light)};
   outline: none;
 `;
 
-const invalidStyles = theme => css`
+const invalidStyles = (theme) => css`
   border: ${theme.borderWidth.small} solid ${theme.colors.palette.red.default};
   background: ${theme.colors.palette.red.lighter};
 `;
@@ -32,7 +32,9 @@ const inputStyles = ({ isDisabled, isFocused, isInvalid, theme }) => css`
     font-size: ${theme.fontSizes.input.mobile};
   }
 
-  ${placeholder({ color: theme.colors.text.placeholder })};
+  ::placeholder {
+    color: ${theme.colors.text.placeholder};
+  }
   ${isDisabled ? disabledStyles(theme) : ''};
   ${isFocused ? focusedStyles(theme) : ''};
   ${isInvalid ? invalidStyles(theme) : ''};

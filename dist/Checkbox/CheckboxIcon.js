@@ -20,14 +20,14 @@ var CheckboxIcon = function CheckboxIcon(_ref) {
       indeterminate = _ref.indeterminate;
 
   if (indeterminate) {
-    return _react["default"].createElement(_Icon["default"], {
+    return /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
       name: "checkbox-indeterminate",
       fontSize: iconFontSize
     });
   }
 
   if (checked) {
-    return _react["default"].createElement(_Icon["default"], {
+    return /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
       name: "checkbox-checked",
       fontSize: iconFontSize
     });

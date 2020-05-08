@@ -23,7 +23,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -32,9 +32,10 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 var conditionalProps = function conditionalProps(details) {
-  return Object.assign({}, !details && {
+  var props = !details ? {
     textAlign: 'center'
-  });
+  } : {};
+  return props;
 };
 
 var CardAlert = function CardAlert(_ref) {
@@ -43,11 +44,11 @@ var CardAlert = function CardAlert(_ref) {
       intent = _ref.intent,
       props = _objectWithoutProperties(_ref, ["boxShadow", "details", "intent"]);
 
-  return _react["default"].createElement(_IntentAlert["default"], _extends({
+  return /*#__PURE__*/_react["default"].createElement(_IntentAlert["default"], _extends({
     Component: _Card["default"],
     boxShadow: boxShadow,
     intent: intent
-  }, conditionalProps(details)), _react["default"].createElement(_AlertContent["default"], _objectSpread({
+  }, conditionalProps(details)), /*#__PURE__*/_react["default"].createElement(_AlertContent["default"], _objectSpread({
     details: details,
     intent: intent
   }, props)));

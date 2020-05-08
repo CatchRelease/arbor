@@ -49,7 +49,7 @@ class Tabs extends React.Component {
     return !!activeTabId;
   }
 
-  activateTab = tab => {
+  activateTab = (tab) => {
     this.setState({ activeTabId: tab.props.id });
   };
 
@@ -77,7 +77,7 @@ class Tabs extends React.Component {
       <>
         <StyledTabs {...props}>
           <Box>
-            {children.map(tab => {
+            {children.map((tab) => {
               const { id, title, onClick: originalOnClick } = tab.props;
               const active = activeTabId === id;
               const tabContentId = getTabContentId(tab);

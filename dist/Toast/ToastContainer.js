@@ -26,9 +26,9 @@ var transition = (0, _reactToastify.cssTransition)({
 });
 
 var ToastContainer = function ToastContainer(props) {
-  return _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(_core.Global, {
+  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_core.Global, {
     styles: _toastCSS["default"]
-  }), _react["default"].createElement(_reactToastify.ToastContainer, _extends({
+  }), /*#__PURE__*/_react["default"].createElement(_reactToastify.ToastContainer, _extends({
     className: "arbor-toast-container",
     closeButton: false,
     hideProgressBar: true,

@@ -25,7 +25,7 @@ var Pane = function Pane(_ref) {
   var innerRef = _ref.innerRef,
       props = _objectWithoutProperties(_ref, ["innerRef"]);
 
-  return _react["default"].createElement(_Grid["default"], _extends({
+  return /*#__PURE__*/_react["default"].createElement(_Grid["default"], _extends({
     ref: innerRef
   }, props));
 };

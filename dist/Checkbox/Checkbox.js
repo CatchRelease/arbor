@@ -42,10 +42,10 @@ var Checkbox = function Checkbox(_ref) {
       icon = _ref.icon,
       props = _objectWithoutProperties(_ref, ["id", "name", "label", "disabled", "isInvalid", "checked", "onChange", "value", "indeterminate", "icon"]);
 
-  return _react["default"].createElement(_CheckboxLabel["default"], _extends({
+  return /*#__PURE__*/_react["default"].createElement(_CheckboxLabel["default"], _extends({
     alignItems: "center",
     my: "regular"
-  }, props), _react["default"].createElement(_CheckboxInput["default"], {
+  }, props), /*#__PURE__*/_react["default"].createElement(_CheckboxInput["default"], {
     id: id,
     type: "checkbox",
     name: name,
@@ -54,19 +54,19 @@ var Checkbox = function Checkbox(_ref) {
     onChange: onChange,
     disabled: disabled,
     "aria-invalid": isInvalid
-  }), _react["default"].createElement(_StyledCheckbox["default"], {
+  }), /*#__PURE__*/_react["default"].createElement(_StyledCheckbox["default"], {
     disabled: disabled,
     checked: checked,
     indeterminate: indeterminate
-  }, _react["default"].createElement(_CheckboxIcon["default"], {
+  }, /*#__PURE__*/_react["default"].createElement(_CheckboxIcon["default"], {
     checked: checked,
     indeterminate: indeterminate
-  })), icon && _react["default"].createElement(_Icon["default"], {
+  })), icon && /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
     fontSize: "24px",
     name: icon,
     color: disabled ? 'icon.disabled' : 'icon.default',
     ml: "smaller"
-  }), _react["default"].createElement(_Text["default"], {
+  }), /*#__PURE__*/_react["default"].createElement(_Text["default"], {
     as: "span",
     fontSize: "size4",
     color: disabled ? 'text.disabled' : 'text.default',

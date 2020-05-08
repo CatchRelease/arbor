@@ -32,7 +32,7 @@ const options = [
 
 describe('<AutoComplete />', () => {
   describe('Variants', () => {
-    ['async', 'asyncCreatable', 'creatable', 'default'].forEach(variant => {
+    ['async', 'asyncCreatable', 'creatable', 'default'].forEach((variant) => {
       it(`properly renders a ${variant} auto complete`, () => {
         const autoComplete = createWithTheme(
           <AutoComplete

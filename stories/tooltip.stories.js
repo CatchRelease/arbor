@@ -67,7 +67,7 @@ stories.add(
           <Link
             href="#tooltip"
             variant="muted"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             8 Action Items
           </Link>

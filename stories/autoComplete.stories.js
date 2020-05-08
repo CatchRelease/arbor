@@ -45,18 +45,21 @@ const neutralOptions = [
 const variantOptions = ['async', 'asyncCreatable', 'creatable', 'default'];
 
 const filterOptions = (options, inputValue: '') =>
-  options.filter(option =>
+  options.filter((option) =>
     option.label.toLowerCase().includes(inputValue.toLowerCase())
   );
 
 const { MultiValue } = styledAutoCompleteComponents;
 
-const NeutralMultiValue = props => <MultiValue {...props} paletteColor="" />;
+const NeutralMultiValue = (props) => <MultiValue {...props} paletteColor="" />;
 
 class AutoCompleteExample extends React.Component {
-  state = {
-    selectedOption: null
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedOption: null
+    };
+  }
 
   get additionalProps() {
     const { options, variant } = this.props;
@@ -65,8 +68,8 @@ class AutoCompleteExample extends React.Component {
       case 'async':
       case 'asyncCreatable':
         return {
-          loadOptions: inputValue =>
-            new Promise(resolve => {
+          loadOptions: (inputValue) =>
+            new Promise((resolve) => {
               setTimeout(() => {
                 resolve(filterOptions(options, inputValue));
               }, 1000);
@@ -77,7 +80,7 @@ class AutoCompleteExample extends React.Component {
     }
   }
 
-  handleChange = selectedOption => {
+  handleChange = (selectedOption) => {
     this.setState({ selectedOption });
   };
 
@@ -132,7 +135,7 @@ stories.add(
       <AutoCompleteExample
         id="auto-complete-2"
         label="AutoComplete with unstyled default badges"
-        options={neutralOptions.map(option => ({
+        options={neutralOptions.map((option) => ({
           ...option,
           variant: 'default'
         }))}
@@ -149,14 +152,14 @@ stories.add(
       <AutoCompleteExample
         id="auto-complete-4"
         label="AutoComplete with subtle color badges"
-        options={colorOptions.map(option => ({ ...option, subtle: true }))}
+        options={colorOptions.map((option) => ({ ...option, subtle: true }))}
         variant={select('Variant', variantOptions, 'default')}
       />
 
       <AutoCompleteExample
         id="auto-complete-5"
         label="AutoComplete with subtle color default badges"
-        options={colorOptions.map(option => ({
+        options={colorOptions.map((option) => ({
           ...option,
           subtle: true,
           variant: 'default'

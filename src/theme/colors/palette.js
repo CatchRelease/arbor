@@ -2,7 +2,7 @@ import { shade, tint } from 'polished';
 
 import primary from './primary';
 
-const generateColorModifiers = color => ({
+const generateColorModifiers = (color) => ({
   lighter: tint(0.9, color),
   light: tint(0.7, color),
   default: color,

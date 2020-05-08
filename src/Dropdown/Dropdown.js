@@ -28,7 +28,7 @@ class Dropdown extends React.Component {
     this.menu.current.focusMenuItem(0);
   };
 
-  onKeyDown = e => {
+  onKeyDown = (e) => {
     const { key } = e;
 
     if (document.activeElement !== this.button.current) {
@@ -43,7 +43,7 @@ class Dropdown extends React.Component {
     this.popover.current.open(this.onOpen);
   };
 
-  onChange = value => {
+  onChange = (value) => {
     const { onChange } = this.props;
 
     this.popover.current.close();

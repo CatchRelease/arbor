@@ -2,7 +2,7 @@ import React from 'react';
 
 import StyledInput from '../Input/StyledInput';
 
-const StyledTextarea = props => <StyledInput {...props} />;
+const StyledTextarea = (props) => <StyledInput {...props} />;
 
 StyledTextarea.defaultProps = {
   as: 'textarea'

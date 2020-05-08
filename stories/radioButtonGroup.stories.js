@@ -8,7 +8,7 @@ import { Box, Flex, RadioButtonGroup } from '../src';
 const stories = storiesOf('RadioButtonGroup', module);
 stories.addDecorator(withKnobs);
 
-const onChange = value => {
+const onChange = (value) => {
   console.log('ch ch ch changed', value); // eslint-disable-line no-console
 };
 

@@ -14,7 +14,7 @@ const transition = cssTransition({
   duration: 500
 });
 
-const ToastContainer = props => (
+const ToastContainer = (props) => (
   <>
     <Global styles={toastCSS} />
 

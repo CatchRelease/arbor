@@ -12,7 +12,7 @@ class ExamplePopover extends React.Component {
     this.popover = React.createRef();
   }
 
-  closePopover = e => {
+  closePopover = (e) => {
     e.preventDefault();
     this.popover.current.close();
   };

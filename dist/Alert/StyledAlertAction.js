@@ -19,9 +19,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var StyledAlertAction = function StyledAlertAction(_ref) {
   var onClose = _ref.onClose;
-  return _react["default"].createElement(_Box["default"], null, _react["default"].createElement(_Button["default"], {
+  return /*#__PURE__*/_react["default"].createElement(_Box["default"], null, /*#__PURE__*/_react["default"].createElement(_Button["default"], {
     "aria-label": "close",
-    iconStart: _react["default"].createElement(_Icon["default"], {
+    iconStart: /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
       fontSize: "larger",
       name: "cross"
     }),

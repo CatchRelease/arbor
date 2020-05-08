@@ -5,7 +5,7 @@ import Box from '../Box';
 import Icon from '../Icon';
 import INTENTS from './intents';
 
-const getIconName = intent => {
+const getIconName = (intent) => {
   switch (intent) {
     case 'danger':
       return 'error';

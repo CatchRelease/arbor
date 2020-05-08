@@ -10,11 +10,14 @@ import notes from './dateTimepicker.md';
 const stories = storiesOf('DateTimePicker', module);
 
 class DateTimePickerStories extends React.Component {
-  state = {
-    selectedTime: new Date()
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedTime: new Date()
+    };
+  }
 
-  onChange = momentOb => {
+  onChange = (momentOb) => {
     this.setState({ selectedTime: momentOb });
   };
 

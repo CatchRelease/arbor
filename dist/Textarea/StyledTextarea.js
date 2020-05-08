@@ -12,7 +12,7 @@ var _StyledInput = _interopRequireDefault(require("../Input/StyledInput"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var StyledTextarea = function StyledTextarea(props) {
-  return _react["default"].createElement(_StyledInput["default"], props);
+  return /*#__PURE__*/_react["default"].createElement(_StyledInput["default"], props);
 };
 
 StyledTextarea.defaultProps = {

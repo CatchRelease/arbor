@@ -49,7 +49,7 @@ describe('<StyledAvatar />', () => {
   });
 
   context('sizes', () => {
-    Object.keys(sizes).forEach(size => {
+    Object.keys(sizes).forEach((size) => {
       it(`renders ${size} properly`, () => {
         const tree = createWithTheme(
           <StyledAvatarWithTheme

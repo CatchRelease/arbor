@@ -16,14 +16,13 @@ describe('<AccordionSection />', () => {
     ...baseProps
   };
 
-  const renderControlled = additionalProps => {
-    const props = Object.assign({}, controlledProps, additionalProps);
+  const renderControlled = (additionalProps) => {
+    const props = { ...controlledProps, ...additionalProps };
     return shallow(<AccordionSection {...{ ...props }} />);
   };
 
   const renderWithState = (...args) => {
-    const props =
-      args.length === 1 ? baseProps : Object.assign({}, baseProps, args[0]);
+    const props = args.length === 1 ? baseProps : { ...baseProps, ...args[0] };
     const state = args.length === 1 ? args[0] : args[1];
 
     const rendered = shallow(<AccordionSection {...{ ...props }} />);
@@ -33,7 +32,7 @@ describe('<AccordionSection />', () => {
   };
 
   describe('Variants', () => {
-    ['default', 'minimal'].forEach(variant => {
+    ['default', 'minimal'].forEach((variant) => {
       it(`properly renders a ${variant} accordion`, () => {
         const accordion = createWithTheme(
           <AccordionSection {...{ ...baseProps, variant }} />

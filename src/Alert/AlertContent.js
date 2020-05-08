@@ -27,13 +27,12 @@ const AlertContent = ({
     {intent && <StyledAlertIntent intent={intent} />}
     <StyledAlertMessage>
       {message}
-      {oneLine &&
-        details && (
-          <StyledAlertDetails as="span">
-            &nbsp;
-            {details}
-          </StyledAlertDetails>
-        )}
+      {oneLine && details && (
+        <StyledAlertDetails as="span">
+          &nbsp;
+          {details}
+        </StyledAlertDetails>
+      )}
     </StyledAlertMessage>
     {onClose && <StyledAlertAction onClose={onClose} />}
     {!oneLine && (

@@ -37,15 +37,15 @@ exports[`<Textarea /> renders a Textarea with a caption correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-2:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::placeholder {
   color: #989A9C;
 }
 
@@ -136,15 +136,15 @@ exports[`<Textarea /> renders a Textarea with a label correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-6:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-6::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-6:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-6::placeholder {
   color: #989A9C;
 }
 
@@ -252,15 +252,15 @@ exports[`<Textarea /> renders a Textarea with a labelAside correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-4:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-4::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-4:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-4::placeholder {
   color: #989A9C;
 }
 
@@ -356,15 +356,15 @@ exports[`<Textarea /> renders a large Textarea correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-2:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::placeholder {
   color: #989A9C;
 }
 
@@ -439,15 +439,15 @@ exports[`<Textarea /> renders an Textarea correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-2:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::placeholder {
   color: #989A9C;
 }
 

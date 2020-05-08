@@ -10,7 +10,7 @@ const icon = <Icon name="cr-logo" />;
 
 describe('<Badge />', () => {
   describe('Variants', () => {
-    ['default', 'pill'].forEach(variant => {
+    ['default', 'pill'].forEach((variant) => {
       it(`properly renders a ${variant} badge`, () => {
         const badge = createWithTheme(
           <Badge variant={variant}>Badge Text</Badge>
@@ -22,7 +22,7 @@ describe('<Badge />', () => {
   });
 
   describe('Colors', () => {
-    colors.forEach(color => {
+    colors.forEach((color) => {
       it(`properly renders a ${color} badge`, () => {
         const badge = createWithTheme(
           <Badge paletteColor={color}>Badge Text</Badge>
@@ -40,7 +40,7 @@ describe('<Badge />', () => {
   });
 
   describe('Subtle', () => {
-    colors.forEach(color => {
+    colors.forEach((color) => {
       it(`properly renders a subtle ${color} badge`, () => {
         const badge = createWithTheme(
           <Badge paletteColor={color} subtle>

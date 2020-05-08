@@ -25,9 +25,9 @@ const StyledButton = styled.button`
   text-align: center;
 
   &:disabled {
-    background: ${props => props.theme.colors.background.disabled};
+    background: ${(props) => props.theme.colors.background.disabled};
     border: 1px solid transparent;
-    color: ${props => props.theme.colors.text.disabled};
+    color: ${(props) => props.theme.colors.text.disabled};
     cursor: not-allowed;
   }
 

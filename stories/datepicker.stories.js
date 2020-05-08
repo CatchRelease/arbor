@@ -25,11 +25,14 @@ const defaultBefore = DateUtils.addMonths(today, -2);
 const defaultAfter = DateUtils.addMonths(today, 2);
 
 class ControlledDatePickers extends React.Component {
-  state = {
-    selectedDay: undefined
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedDay: undefined
+    };
+  }
 
-  onDayChange = day => {
+  onDayChange = (day) => {
     this.setState({ selectedDay: day });
   };
 

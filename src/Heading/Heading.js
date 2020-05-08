@@ -28,7 +28,7 @@ Heading.defaultProps = {
   lineheight: 'small'
 };
 
-const createHeading = h => (
+const createHeading = (h) => (
   { children, ...props } // eslint-disable-line react/prop-types
 ) => (
   <Heading as={h} {...props}>
@@ -57,7 +57,7 @@ Heading.h4.defaultProps = {
 };
 
 Heading.h5 = styled(createHeading('h5'))`
-  line-height: ${props => props.theme.lineHeights.large};
+  line-height: ${(props) => props.theme.lineHeights.large};
 `;
 Heading.h5.defaultProps = {
   fontSize: 'size4',
@@ -65,7 +65,7 @@ Heading.h5.defaultProps = {
 };
 
 Heading.h6 = styled(createHeading('h6'))`
-  line-height: ${props => props.theme.lineHeights.large};
+  line-height: ${(props) => props.theme.lineHeights.large};
 `;
 Heading.h6.defaultProps = {
   fontSize: 'size4',

@@ -24,8 +24,8 @@ var Masonry = function Masonry(_ref) {
       rowGap = _ref.rowGap,
       props = _objectWithoutProperties(_ref, ["children", "rowGap"]);
 
-  return _react["default"].createElement(_MasonryContainer["default"], props, [].concat(children).map(function (child) {
-    return _react["default"].createElement(_MasonryItem["default"], {
+  return /*#__PURE__*/_react["default"].createElement(_MasonryContainer["default"], props, [].concat(children).map(function (child) {
+    return /*#__PURE__*/_react["default"].createElement(_MasonryItem["default"], {
       key: child.key,
       mb: rowGap
     }, child);

@@ -3,7 +3,7 @@ import React from 'react';
 import StyledDateTimePicker from './StyledDateTimePicker';
 import dateTimePickerDefaults from './dateTimePickerDefaults';
 
-const DateTimePicker = props => (
+const DateTimePicker = (props) => (
   <StyledDateTimePicker {...dateTimePickerDefaults} {...props} />
 );
 

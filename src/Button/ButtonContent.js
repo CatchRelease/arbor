@@ -29,7 +29,7 @@ const gridTemplateColumns = ({ hasText, iconStart, iconEnd }) => {
 
 const ButtonContent = styled(Grid)`
   grid-template-columns: ${gridTemplateColumns};
-  visibility: ${props => (props.spin ? 'hidden' : 'visible')};
+  visibility: ${(props) => (props.spin ? 'hidden' : 'visible')};
 `;
 
 ButtonContent.propTypes = {

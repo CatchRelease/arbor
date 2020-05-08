@@ -25,19 +25,19 @@ var FormField = function FormField(_ref) {
       label = _ref.label,
       labelAside = _ref.labelAside,
       id = _ref.id;
-  return _react["default"].createElement(_StyledFormField["default"], {
+  return /*#__PURE__*/_react["default"].createElement(_StyledFormField["default"], {
     caption: caption
-  }, _react["default"].createElement(_Flex["default"], {
+  }, /*#__PURE__*/_react["default"].createElement(_Flex["default"], {
     alignItems: "center"
-  }, label && _react["default"].createElement(_Flex["default"], {
+  }, label && /*#__PURE__*/_react["default"].createElement(_Flex["default"], {
     flex: "1",
     alignItems: "center"
-  }, _react["default"].createElement(_Label["default"], {
+  }, /*#__PURE__*/_react["default"].createElement(_Label["default"], {
     htmlFor: id
-  }, label)), labelAside && _react["default"].createElement(_Flex["default"], {
+  }, label)), labelAside && /*#__PURE__*/_react["default"].createElement(_Flex["default"], {
     color: "text.muted",
     fontSize: "size4"
-  }, labelAside)), children, caption && _react["default"].createElement(_Paragraph["default"], {
+  }, labelAside)), children, caption && /*#__PURE__*/_react["default"].createElement(_Paragraph["default"], {
     as: "span",
     variant: "tiny",
     color: "palette.red.default"

@@ -19,8 +19,9 @@ module.exports = {
         ]
       }
     ],
-    'import/no-named-as-default': false,
-    'react/forbid-foreign-prop-types': false
+    'import/no-named-as-default': 0,
+    'react/forbid-foreign-prop-types': 0,
+    'react/jsx-props-no-spreading': 0
   },
   overrides: [
     {

@@ -12,7 +12,7 @@ var _Flex = _interopRequireDefault(require("../Flex"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var CardRow = function CardRow(props) {
-  return _react["default"].createElement(_Flex["default"], props);
+  return /*#__PURE__*/_react["default"].createElement(_Flex["default"], props);
 };
 
 CardRow.defaultProps = {

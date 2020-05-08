@@ -34,8 +34,8 @@ describe('<RadioButtonGroup />', () => {
     onChange
   };
 
-  const createWithProps = additionalProps => {
-    const props = Object.assign({}, baseProps, additionalProps);
+  const createWithProps = (additionalProps) => {
+    const props = { ...baseProps, ...additionalProps };
 
     return createWithTheme(<RadioButtonGroup {...{ ...props }} />);
   };

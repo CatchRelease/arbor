@@ -75,11 +75,14 @@ const menuItems = [
 ];
 
 class DropdownContainer extends React.Component {
-  state = {
-    selected: 'clearance_cancelled'
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      selected: 'clearance_cancelled'
+    };
+  }
 
-  onChange = value => {
+  onChange = (value) => {
     this.setState({ selected: value });
   };
 

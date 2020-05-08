@@ -41,10 +41,10 @@ var RadioButton = function RadioButton(_ref) {
       icon = _ref.icon,
       props = _objectWithoutProperties(_ref, ["id", "name", "label", "disabled", "isInvalid", "checked", "onChange", "value", "icon"]);
 
-  return _react["default"].createElement(_RadioButtonLabel["default"], _extends({
+  return /*#__PURE__*/_react["default"].createElement(_RadioButtonLabel["default"], _extends({
     alignItems: "center",
     my: "regular"
-  }, props), _react["default"].createElement(_RadioButtonInput["default"], {
+  }, props), /*#__PURE__*/_react["default"].createElement(_RadioButtonInput["default"], {
     id: id,
     type: "radio",
     name: name,
@@ -53,17 +53,17 @@ var RadioButton = function RadioButton(_ref) {
     onChange: onChange,
     disabled: disabled,
     "aria-invalid": isInvalid
-  }), _react["default"].createElement(_StyledRadioButton["default"], {
+  }), /*#__PURE__*/_react["default"].createElement(_StyledRadioButton["default"], {
     disabled: disabled,
     checked: checked
-  }, _react["default"].createElement(_RadioButtonIcon["default"], {
+  }, /*#__PURE__*/_react["default"].createElement(_RadioButtonIcon["default"], {
     checked: checked
-  })), icon && _react["default"].createElement(_Icon["default"], {
+  })), icon && /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
     fontSize: "24px",
     name: icon,
     color: disabled ? 'icon.disabled' : 'icon.default',
     ml: "smaller"
-  }), _react["default"].createElement(_Text["default"], {
+  }), /*#__PURE__*/_react["default"].createElement(_Text["default"], {
     as: "span",
     fontSize: "size4",
     color: disabled ? 'text.disabled' : 'text.default',

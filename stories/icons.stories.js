@@ -55,7 +55,7 @@ stories.add(
       width="100vw"
       height="100vh"
     >
-      {AVAILABLE_ICONS.map(icon => (
+      {AVAILABLE_ICONS.map((icon) => (
         <Box key={icon} textAlign="center">
           <Icon
             name={icon}

@@ -25,7 +25,7 @@ const ExampleComponent = styled.div`
   ${columns};
 `;
 
-const render = props =>
+const render = (props) =>
   create(
     <ExampleComponent {...{ theme, ...props }}>Hello World</ExampleComponent>
   );

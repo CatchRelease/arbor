@@ -6,13 +6,15 @@ import Card from '../Card';
 import IntentAlert from './IntentAlert';
 import INTENTS from './intents';
 
-const conditionalProps = details =>
-  Object.assign(
-    {},
-    !details && {
-      textAlign: 'center'
-    }
-  );
+const conditionalProps = (details) => {
+  const props = !details
+    ? {
+        textAlign: 'center'
+      }
+    : {};
+
+  return props;
+};
 
 const CardAlert = ({ boxShadow, details, intent, ...props }) => (
   <IntentAlert

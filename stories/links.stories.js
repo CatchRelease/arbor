@@ -14,7 +14,7 @@ stories.add(
         fontSize="size2"
         href="#brandDark"
         m="regular"
-        onClick={e => e.preventDefault()}
+        onClick={(e) => e.preventDefault()}
         variant="brandDark"
       >
         Brand Dark
@@ -23,7 +23,7 @@ stories.add(
         fontSize="size2"
         href="#brandLight"
         m="regular"
-        onClick={e => e.preventDefault()}
+        onClick={(e) => e.preventDefault()}
         variant="brandLight"
       >
         Brand Light
@@ -32,7 +32,7 @@ stories.add(
         fontSize="size2"
         href="#default"
         m="regular"
-        onClick={e => e.preventDefault()}
+        onClick={(e) => e.preventDefault()}
       >
         Default Link
       </Link>
@@ -40,7 +40,7 @@ stories.add(
         fontSize="size2"
         href="#muted"
         m="regular"
-        onClick={e => e.preventDefault()}
+        onClick={(e) => e.preventDefault()}
         variant="muted"
       >
         Muted Link

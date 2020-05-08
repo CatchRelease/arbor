@@ -12,7 +12,7 @@ var _Grid = _interopRequireDefault(require("../Grid"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var StyledHeader = function StyledHeader(props) {
-  return _react["default"].createElement(_Grid["default"], props);
+  return /*#__PURE__*/_react["default"].createElement(_Grid["default"], props);
 };
 
 StyledHeader.defaultProps = {

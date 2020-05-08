@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
 const StyledFormField = styled.div`
-  margin-bottom: ${props =>
+  margin-bottom: ${(props) =>
     props.caption ? props.theme.space.smaller : props.theme.space.regular};
 `;
 

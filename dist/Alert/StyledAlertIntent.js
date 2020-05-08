@@ -38,9 +38,9 @@ var getIconName = function getIconName(intent) {
 
 var StyledAlertIntent = function StyledAlertIntent(_ref) {
   var intent = _ref.intent;
-  return _react["default"].createElement(_Box["default"], {
+  return /*#__PURE__*/_react["default"].createElement(_Box["default"], {
     "aria-label": intent
-  }, _react["default"].createElement(_Icon["default"], {
+  }, /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
     color: "intent.".concat(intent, ".default"),
     fontSize: "size4",
     name: getIconName(intent)

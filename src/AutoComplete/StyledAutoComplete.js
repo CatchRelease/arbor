@@ -9,7 +9,7 @@ import { withTheme } from 'emotion-theming';
 import buildReactSelectThemeOverrides from './buildReactSelectThemeOverrides';
 import styledComponents from './styledAutoCompleteComponents';
 
-const getReactSelectComponent = variant => {
+const getReactSelectComponent = (variant) => {
   switch (variant) {
     case 'async':
       return ReactSelectAsync;
@@ -26,7 +26,7 @@ const StyledAutoComplete = ({ components, theme, variant, ...props }) => {
   const SelectComponent = getReactSelectComponent(variant);
   const reactSelectProps = {
     components: { ...styledComponents, ...components },
-    theme: reactSelectTheme => ({
+    theme: (reactSelectTheme) => ({
       ...reactSelectTheme,
       ...buildReactSelectThemeOverrides(theme),
       ...theme

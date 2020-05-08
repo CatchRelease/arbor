@@ -2,7 +2,7 @@ import React from 'react';
 
 import Pane from '../Pane';
 
-const Card = props => <Pane {...props} />;
+const Card = (props) => <Pane {...props} />;
 
 Card.defaultProps = {
   borderRadius: 'large'

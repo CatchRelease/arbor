@@ -29,7 +29,7 @@ class Menu extends React.Component {
     document.removeEventListener('keydown', this.onKeyDown, true);
   }
 
-  onMenuItemSelect = value => {
+  onMenuItemSelect = (value) => {
     const { onChange } = this.props;
     this.setState({ selected: value }, () => onChange(value));
   };

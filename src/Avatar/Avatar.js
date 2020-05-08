@@ -8,10 +8,10 @@ import StyledAvatar from './StyledAvatar';
 import StyledAvatarText from './StyledAvatarText';
 
 const AVATAR_COLORS = Object.keys(palette).map(
-  color => `palette.${color}.default`
+  (color) => `palette.${color}.default`
 );
 
-const getInitials = name => {
+const getInitials = (name) => {
   const [firstName, ...additionalNames] = name.split(' ');
   const firstInitial = firstName[0];
 
@@ -24,7 +24,7 @@ const getInitials = name => {
   return firstInitial;
 };
 
-const getText = name =>
+const getText = (name) =>
   name.match(/[A-Za-z]/) ? getInitials(name).toUpperCase() : name;
 
 const Avatar = ({ name, subtle, size, baseColor: baseColorProp, ...props }) => {

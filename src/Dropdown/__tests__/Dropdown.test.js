@@ -21,7 +21,7 @@ describe('<Dropdown />', () => {
   };
 
   function mountWithProps(additionalProps = {}) {
-    const props = Object.assign({}, baseProps, additionalProps);
+    const props = { ...baseProps, ...additionalProps };
 
     return mountWithTheme(<Dropdown {...{ ...props }}>Click Me</Dropdown>);
   }

@@ -6,9 +6,12 @@ import AccordionPanel from './AccordionPanel';
 import VARIANTS from './variants';
 
 class AccordionSection extends React.Component {
-  state = {
-    isOpen: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false
+    };
+  }
 
   get isControlled() {
     const { isOpen } = this.props;
@@ -34,7 +37,7 @@ class AccordionSection extends React.Component {
   };
 
   toggle() {
-    this.setState(prevState => ({ isOpen: !prevState.isOpen }));
+    this.setState((prevState) => ({ isOpen: !prevState.isOpen }));
   }
 
   render() {

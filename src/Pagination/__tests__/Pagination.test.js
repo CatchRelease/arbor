@@ -9,7 +9,7 @@ describe('<Pagination />', () => {
 
   let wrapper;
 
-  const shallowPagination = props => {
+  const shallowPagination = (props) => {
     const baseProps = {
       paginate: () => null
     };

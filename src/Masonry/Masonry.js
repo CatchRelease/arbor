@@ -6,7 +6,7 @@ import MasonryItem from './MasonryItem';
 
 const Masonry = ({ children, rowGap, ...props }) => (
   <MasonryContainer {...props}>
-    {[].concat(children).map(child => (
+    {[].concat(children).map((child) => (
       <MasonryItem key={child.key} mb={rowGap}>
         {child}
       </MasonryItem>
