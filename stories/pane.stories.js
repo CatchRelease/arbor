@@ -13,7 +13,7 @@ const ExamplePane = styled(Pane)`
 `;
 
 const Description = styled(Text)`
-  font-size: ${props => props.theme.fontSizes.size1};
+  font-size: ${(props) => props.theme.fontSizes.size1};
   text-align: center;
 `;
 

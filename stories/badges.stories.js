@@ -26,7 +26,7 @@ stories.add(
         >
           NEUTRAL
         </Badge>
-        {badgeColors.map(color => (
+        {badgeColors.map((color) => (
           <Badge
             paletteColor={color}
             key={color}
@@ -57,7 +57,7 @@ stories.add(
         >
           NEUTRAL
         </Badge>
-        {badgeColors.map(color => (
+        {badgeColors.map((color) => (
           <Badge
             paletteColor={color}
             key={color}
@@ -89,7 +89,7 @@ stories.add(
         >
           NEUTRAL
         </Badge>
-        {badgeColors.map(color => (
+        {badgeColors.map((color) => (
           <Badge
             paletteColor={color}
             key={color}
@@ -122,7 +122,7 @@ stories.add(
         >
           NEUTRAL
         </Badge>
-        {badgeColors.map(color => (
+        {badgeColors.map((color) => (
           <Badge
             paletteColor={color}
             key={color}

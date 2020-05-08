@@ -29,7 +29,7 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var gridPlaceholder = _react["default"].createElement("span", {
+var gridPlaceholder = /*#__PURE__*/_react["default"].createElement("span", {
   "aria-hidden": true
 });
 
@@ -41,17 +41,17 @@ var AlertContent = function AlertContent(_ref) {
       onClose = _ref.onClose,
       props = _objectWithoutProperties(_ref, ["details", "intent", "message", "oneLine", "onClose"]);
 
-  return _react["default"].createElement(_StyledAlertContent["default"], _extends({
+  return /*#__PURE__*/_react["default"].createElement(_StyledAlertContent["default"], _extends({
     details: details,
     intent: intent,
     onClose: onClose
-  }, props), intent && _react["default"].createElement(_StyledAlertIntent["default"], {
+  }, props), intent && /*#__PURE__*/_react["default"].createElement(_StyledAlertIntent["default"], {
     intent: intent
-  }), _react["default"].createElement(_StyledAlertMessage["default"], null, message, oneLine && details && _react["default"].createElement(_StyledAlertDetails["default"], {
+  }), /*#__PURE__*/_react["default"].createElement(_StyledAlertMessage["default"], null, message, oneLine && details && /*#__PURE__*/_react["default"].createElement(_StyledAlertDetails["default"], {
     as: "span"
-  }, "\xA0", details)), onClose && _react["default"].createElement(_StyledAlertAction["default"], {
+  }, "\xA0", details)), onClose && /*#__PURE__*/_react["default"].createElement(_StyledAlertAction["default"], {
     onClose: onClose
-  }), !oneLine && _react["default"].createElement(_react["default"].Fragment, null, details && intent && gridPlaceholder, details && _react["default"].createElement(_StyledAlertDetails["default"], null, details), details && onClose && gridPlaceholder));
+  }), !oneLine && /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, details && intent && gridPlaceholder, details && /*#__PURE__*/_react["default"].createElement(_StyledAlertDetails["default"], null, details), details && onClose && gridPlaceholder));
 };
 
 AlertContent.propTypes = {

@@ -68,7 +68,7 @@ var ButtonSpinner = function ButtonSpinner(_ref) {
       intent = _ref.intent,
       size = _ref.size,
       variant = _ref.variant;
-  return _react["default"].createElement(_Spinner["default"], {
+  return /*#__PURE__*/_react["default"].createElement(_Spinner["default"], {
     color: spinnerColor(disabled, variant, intent),
     length: 0,
     radius: spinnerRadius(size),

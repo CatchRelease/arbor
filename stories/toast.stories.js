@@ -25,7 +25,7 @@ stories.add(
       <Box as="section" p="regular">
         <Heading.h1>Toast</Heading.h1>
 
-        {INTENTS.map(intent => (
+        {INTENTS.map((intent) => (
           <Box mb="smaller" textAlign="right">
             <Button
               intent={intent}

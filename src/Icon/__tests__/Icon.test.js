@@ -38,7 +38,7 @@ describe('<Icon />', () => {
     expect(icon).toMatchSnapshot();
   });
 
-  ['90', '180', '270'].forEach(rotation => {
+  ['90', '180', '270'].forEach((rotation) => {
     it(`supports ${rotation} degree rotation`, () => {
       const tree = createWithTheme(<Icon {...{ rotation, name: 'my-icon' }} />);
 

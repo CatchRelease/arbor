@@ -21,7 +21,7 @@ const RadioButtonGroup = ({
 }) => {
   const [checkedValueState, setCheckedValueState] = useState(checkedValue);
 
-  const buttonOnChange = e => {
+  const buttonOnChange = (e) => {
     groupOnChange(e, setCheckedValueState, onChange);
   };
 

@@ -9,7 +9,7 @@ expect.extend(matchers);
 describe('<Paragraph />', () => {
   describe('props', () => {
     describe('variant', () => {
-      ['ui', 'longForm', 'tiny'].forEach(variant => {
+      ['ui', 'longForm', 'tiny'].forEach((variant) => {
         it(`renders a ${variant} variant`, () => {
           const tree = createWithTheme(
             <Paragraph variant={variant}>Hello World</Paragraph>
@@ -24,7 +24,9 @@ describe('<Paragraph />', () => {
   describe('fontSize', () => {
     it('properly renders a paragraph with custom font preset size', () => {
       const paragraph = createWithTheme(
-        <Paragraph fontSize="size6">This is a paragraph</Paragraph>
+        <Paragraph fontSize="size6" variant="ui">
+          This is a paragraph
+        </Paragraph>
       );
 
       expect(paragraph).toMatchSnapshot();
@@ -32,7 +34,9 @@ describe('<Paragraph />', () => {
 
     it('properly renders a paragraph with custom pixel font size', () => {
       const paragraph = createWithTheme(
-        <Paragraph fontSize="100">Size Button</Paragraph>
+        <Paragraph fontSize="100" variant="ui">
+          Size Button
+        </Paragraph>
       );
 
       expect(paragraph).toMatchSnapshot();

@@ -28,12 +28,12 @@ var DatePickerInputOverlay = function DatePickerInputOverlay(_ref) {
       children = _ref.children,
       props = _objectWithoutProperties(_ref, ["classNames", "children"]);
 
-  return _react["default"].createElement(_Box["default"], {
+  return /*#__PURE__*/_react["default"].createElement(_Box["default"], {
     position: "absolute",
     zIndex: "100"
-  }, _react["default"].createElement(_PopoverContent["default"], _extends({
+  }, /*#__PURE__*/_react["default"].createElement(_PopoverContent["default"], _extends({
     className: classNames.overlayWrapper
-  }, props), _react["default"].createElement(_DatePicker["default"], children.props)));
+  }, props), /*#__PURE__*/_react["default"].createElement(_DatePicker["default"], children.props)));
 };
 
 DatePickerInputOverlay.propTypes = {

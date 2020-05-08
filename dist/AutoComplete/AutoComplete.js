@@ -28,12 +28,12 @@ var AutoComplete = function AutoComplete(_ref) {
       labelAside = _ref.labelAside,
       props = _objectWithoutProperties(_ref, ["caption", "id", "label", "labelAside"]);
 
-  return _react["default"].createElement(_FormField["default"], {
+  return /*#__PURE__*/_react["default"].createElement(_FormField["default"], {
     caption: caption,
     id: id,
     label: label,
     labelAside: labelAside
-  }, _react["default"].createElement(_StyledAutoComplete["default"], _extends({
+  }, /*#__PURE__*/_react["default"].createElement(_StyledAutoComplete["default"], _extends({
     "aria-label": label
   }, props)));
 };

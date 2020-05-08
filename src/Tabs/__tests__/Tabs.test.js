@@ -117,7 +117,7 @@ describe('<Tabs />', () => {
           });
 
           it('passes a callback to activate the tab to the onClick', () => {
-            const onClick = jest.fn(callback => {
+            const onClick = jest.fn((callback) => {
               callback();
             });
 

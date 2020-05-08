@@ -14,7 +14,7 @@ const spinnerColor = (disabled, variant, intent) => {
   }
 };
 
-const spinnerRadius = size => {
+const spinnerRadius = (size) => {
   switch (size) {
     case 'small':
       return 5;
@@ -29,7 +29,7 @@ const spinnerRadius = size => {
   }
 };
 
-const spinnerWidth = size => {
+const spinnerWidth = (size) => {
   switch (size) {
     case 'small':
       return 2;

@@ -23,11 +23,11 @@ var DatePickerNavbar = function DatePickerNavbar(_ref) {
   var onPreviousClick = _ref.onPreviousClick,
       onNextClick = _ref.onNextClick,
       className = _ref.className;
-  return _react["default"].createElement(_Flex["default"], {
+  return /*#__PURE__*/_react["default"].createElement(_Flex["default"], {
     className: className,
     alignItems: "center"
-  }, _react["default"].createElement(_Button["default"], {
-    iconStart: _react["default"].createElement(_Icon["default"], {
+  }, /*#__PURE__*/_react["default"].createElement(_Button["default"], {
+    iconStart: /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
       color: "icon.default",
       name: "chevron",
       rotation: "90"
@@ -39,15 +39,15 @@ var DatePickerNavbar = function DatePickerNavbar(_ref) {
     variant: "minimal",
     "aria-label": "Previous Month",
     type: "button"
-  }), _react["default"].createElement(_Box["default"], {
+  }), /*#__PURE__*/_react["default"].createElement(_Box["default"], {
     mr: "small",
     ml: "small"
-  }, _react["default"].createElement(_Icon["default"], {
+  }, /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
     color: "icon.default",
     fontSize: "size5",
     name: "symbol-circle"
-  })), _react["default"].createElement(_Button["default"], {
-    iconStart: _react["default"].createElement(_Icon["default"], {
+  })), /*#__PURE__*/_react["default"].createElement(_Button["default"], {
+    iconStart: /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
       color: "icon.default",
       name: "chevron",
       rotation: "270"

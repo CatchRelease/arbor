@@ -24,7 +24,7 @@ const getBorderColor = ({ paletteColor, theme }) =>
 const StyledBadge = styled(Flex)`
   background: ${getBackground};
   border-color: ${getBorderColor};
-  border-radius: ${props => (props.variant === 'pill' ? '999px' : '2px')};
+  border-radius: ${(props) => (props.variant === 'pill' ? '999px' : '2px')};
 `;
 
 StyledBadge.propTypes = {

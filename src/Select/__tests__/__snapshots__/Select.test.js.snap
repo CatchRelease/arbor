@@ -65,15 +65,15 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-2:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::placeholder {
   color: #989A9C;
 }
 
@@ -205,15 +205,15 @@ exports[`<Select /> renders a Select with a label correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-6:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-6::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-6:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-6::placeholder {
   color: #989A9C;
 }
 
@@ -362,15 +362,15 @@ exports[`<Select /> renders a Select with a labelAside correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-4:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-4::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-4:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-4::placeholder {
   color: #989A9C;
 }
 
@@ -507,15 +507,15 @@ exports[`<Select /> renders a large Select correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-2:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::placeholder {
   color: #989A9C;
 }
 
@@ -631,15 +631,15 @@ exports[`<Select /> renders an Select correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-2:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::placeholder {
   color: #989A9C;
 }
 

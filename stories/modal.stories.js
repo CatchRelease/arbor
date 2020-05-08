@@ -11,9 +11,12 @@ import { Box, Button, Card, Grid, Heading, Icon, Modal } from '../src';
 ReactModal.setAppElement(document.body); // eslint-disable-line no-undef
 
 class ModalStory extends React.Component {
-  state = {
-    modalIsOpen: true
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      modalIsOpen: true
+    };
+  }
 
   get content() {
     const { numberOfLines } = this.props;

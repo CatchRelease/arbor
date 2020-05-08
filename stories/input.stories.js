@@ -36,7 +36,7 @@ const labelAside = (
   </Dropdown>
 );
 
-const validateIs42 = value => (value === '42' ? null : 'Value must be 42');
+const validateIs42 = (value) => (value === '42' ? null : 'Value must be 42');
 
 storiesOf('Input', module).add(
   'default',

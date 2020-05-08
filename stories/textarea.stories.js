@@ -6,7 +6,7 @@ import { storiesOf } from '@storybook/react';
 import notes from './textarea.md';
 import { Dropdown, Label, Textarea } from '../src';
 
-const secondaryLabel = id => (
+const secondaryLabel = (id) => (
   <Label
     htmlFor={id}
     css={css`

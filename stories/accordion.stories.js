@@ -36,14 +36,14 @@ const defaultButtonSize = 'small';
 
 const trashIcon = <Icon name="trash" />;
 const annotationIcon = <Icon name="annotation" />;
-const AccordionContainer = Flex.withComponent('div'); // eslint-disable-line arbor/use-create-with-component
+const AccordionContainer = Flex.withComponent('div');
 AccordionContainer.defaultProps = {
   mt: '100px',
   flexDirection: 'column',
   alignItems: 'center'
 };
 
-const doAlert = msg => window.alert(msg); // eslint-disable-line no-alert, no-undef
+const doAlert = (msg) => window.alert(msg); // eslint-disable-line no-alert, no-undef
 
 const variantOptions = ['default', 'minimal'];
 
@@ -58,7 +58,7 @@ stories.add(
           variant="minimal"
           size={sizeSelect}
           iconStart={annotationIcon}
-          onClick={e => {
+          onClick={(e) => {
             doAlert('message');
             e.stopPropagation();
           }}
@@ -70,7 +70,7 @@ stories.add(
           size={sizeSelect}
           iconStart={trashIcon}
           aria-label="Delete"
-          onClick={e => {
+          onClick={(e) => {
             doAlert('Delete');
             e.stopPropagation();
           }}
@@ -83,7 +83,7 @@ stories.add(
         <Button
           variant="secondary"
           size={sizeSelect}
-          onClick={e => {
+          onClick={(e) => {
             doAlert('secondary');
             e.stopPropagation();
           }}
@@ -93,7 +93,7 @@ stories.add(
         <Button
           variant="primary"
           size={sizeSelect}
-          onClick={e => {
+          onClick={(e) => {
             doAlert('primary');
             e.stopPropagation();
           }}
@@ -108,7 +108,7 @@ stories.add(
         <Button
           variant="minimal"
           size={sizeSelect}
-          onClick={e => {
+          onClick={(e) => {
             doAlert('minimal');
             e.stopPropagation();
           }}
@@ -118,7 +118,7 @@ stories.add(
         <Button
           variant="secondary"
           size={sizeSelect}
-          onClick={e => {
+          onClick={(e) => {
             doAlert('secondary');
             e.stopPropagation();
           }}

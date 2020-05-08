@@ -8,20 +8,15 @@ import { Pagination, Flex } from '../src';
 const stories = storiesOf('Pagination', module);
 
 class PaginationContainer extends React.Component {
-  static propTypes = {
-    size: PropTypes.string
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentPage: 1,
+      totalPages: 11
+    };
+  }
 
-  static defaultProps = {
-    size: undefined
-  };
-
-  state = {
-    currentPage: 1,
-    totalPages: 11
-  };
-
-  paginate = newPage => {
+  paginate = (newPage) => {
     this.setState({ currentPage: newPage });
   };
 
@@ -37,6 +32,14 @@ class PaginationContainer extends React.Component {
     );
   }
 }
+
+PaginationContainer.propTypes = {
+  size: PropTypes.string
+};
+
+PaginationContainer.defaultProps = {
+  size: undefined
+};
 
 stories.add(
   'default',

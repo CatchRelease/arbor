@@ -158,18 +158,10 @@ const borders = {
 
 export const boxShadows = {
   elevation0: `0 0 1px ${colors.shadow.border}`,
-  elevation1: `0 0 1px ${colors.shadow.border}, 0 2px 4px -2px ${
-    colors.shadow.blurry
-  }`,
-  elevation2: `0 0 1px ${colors.shadow.border}, 0 5px 8px -4px ${
-    colors.shadow.blurry
-  }`,
-  elevation3: `0 0 1px ${colors.shadow.border}, 0 8px 10px -4px ${
-    colors.shadow.blurry
-  }`,
-  elevation4: `0 0 1px ${colors.shadow.border}, 0 16px 24px -8px ${
-    colors.shadow.blurry
-  }`
+  elevation1: `0 0 1px ${colors.shadow.border}, 0 2px 4px -2px ${colors.shadow.blurry}`,
+  elevation2: `0 0 1px ${colors.shadow.border}, 0 5px 8px -4px ${colors.shadow.blurry}`,
+  elevation3: `0 0 1px ${colors.shadow.border}, 0 8px 10px -4px ${colors.shadow.blurry}`,
+  elevation4: `0 0 1px ${colors.shadow.border}, 0 16px 24px -8px ${colors.shadow.blurry}`
 };
 
 export default {

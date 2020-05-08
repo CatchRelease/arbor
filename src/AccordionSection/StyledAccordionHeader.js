@@ -29,16 +29,16 @@ const variantStyles = ({ variant, ...props }) => {
 
 const StyledHeader = styled(Flex)`
   .button--minimal:last-of-type {
-    margin-right: -${props => props.theme.space.smallest};
+    margin-right: -${(props) => props.theme.space.smallest};
 
     + :not(object) {
-      margin-left: ${props => props.theme.space.smallest};
+      margin-left: ${(props) => props.theme.space.smallest};
     }
   }
 
   button + .button--secondary,
   button + .button--primary {
-    margin-left: ${props => props.theme.space.smaller};
+    margin-left: ${(props) => props.theme.space.smaller};
   }
 
   cursor: pointer;

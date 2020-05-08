@@ -29,7 +29,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 var AccordionHeaderIcon = function AccordionHeaderIcon(_ref) {
   var isOpen = _ref.isOpen;
-  return _react["default"].createElement(_Icon["default"], {
+  return /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
     mr: "small",
     name: "chevron",
     rotation: isOpen ? null : '270'
@@ -48,21 +48,21 @@ var AccordionHeader = function AccordionHeader(_ref2) {
       text = _ref2.text,
       props = _objectWithoutProperties(_ref2, ["isOpen", "note", "onClick", "panelId", "text"]);
 
-  return _react["default"].createElement(_StyledAccordionHeader["default"], _extends({
+  return /*#__PURE__*/_react["default"].createElement(_StyledAccordionHeader["default"], _extends({
     alignItems: "center",
     justifyContent: "space-between",
     px: "regular",
     onClick: onClick,
     "aria-controls": panelId,
     "aria-expanded": isOpen
-  }, props), _react["default"].createElement(_StyledAccordionHeading["default"], {
+  }, props), /*#__PURE__*/_react["default"].createElement(_StyledAccordionHeading["default"], {
     fontWeight: "medium",
     mr: "regular"
-  }, _react["default"].createElement(_StyledAccordionHeadingText["default"], {
+  }, /*#__PURE__*/_react["default"].createElement(_StyledAccordionHeadingText["default"], {
     alignItems: "center",
     "aria-controls": panelId,
     "aria-expanded": isOpen
-  }, _react["default"].createElement(AccordionHeaderIcon, {
+  }, /*#__PURE__*/_react["default"].createElement(AccordionHeaderIcon, {
     isOpen: isOpen
   }), text)), note);
 };

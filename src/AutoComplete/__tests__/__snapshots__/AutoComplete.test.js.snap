@@ -76,15 +76,15 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   color: #989A9C;
 }
 
-.emotion-17:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-17::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-17:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-17::placeholder {
   color: #989A9C;
 }
 
@@ -345,15 +345,15 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   color: #989A9C;
 }
 
-.emotion-17:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-17::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-17:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-17::placeholder {
   color: #989A9C;
 }
 
@@ -614,15 +614,15 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   color: #989A9C;
 }
 
-.emotion-17:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-17::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-17:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-17::placeholder {
   color: #989A9C;
 }
 
@@ -883,15 +883,15 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   color: #989A9C;
 }
 
-.emotion-17:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-17::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-17:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-17::placeholder {
   color: #989A9C;
 }
 
@@ -1152,15 +1152,15 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   color: #989A9C;
 }
 
-.emotion-17:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-17::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-17:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-17::placeholder {
   color: #989A9C;
 }
 
@@ -1421,15 +1421,15 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   color: #989A9C;
 }
 
-.emotion-17:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-17::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-17:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-17::placeholder {
   color: #989A9C;
 }
 

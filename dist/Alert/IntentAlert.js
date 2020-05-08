@@ -25,7 +25,7 @@ var IntentAlert = function IntentAlert(_ref) {
       Component = _ref.Component,
       props = _objectWithoutProperties(_ref, ["intent", "children", "Component"]);
 
-  return _react["default"].createElement(Component, _extends({
+  return /*#__PURE__*/_react["default"].createElement(Component, _extends({
     borderLeft: intent ? '3px solid' : null,
     borderColor: "intent.".concat(intent, ".default")
   }, props), children);

@@ -17,7 +17,7 @@ const titleAsComponent = (
 
 const aside = <Box>Hello nice friends!</Box>;
 
-const alertTabOnclick = activateTab => {
+const alertTabOnclick = (activateTab) => {
   alert('tab clicked!'); // eslint-disable-line no-alert, no-undef
   activateTab();
 };

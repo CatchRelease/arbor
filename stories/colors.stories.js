@@ -23,7 +23,7 @@ const getReadableColor = (color, hex, modifier = '', colorGroup) => {
   }
 };
 
-const getFrUnits = obj =>
+const getFrUnits = (obj) =>
   Object.entries(obj)
     .map(() => '1fr')
     .join(' ');

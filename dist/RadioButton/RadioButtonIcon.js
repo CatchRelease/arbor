@@ -19,7 +19,7 @@ var RadioButtonIcon = function RadioButtonIcon(_ref) {
   var checked = _ref.checked;
 
   if (checked) {
-    return _react["default"].createElement(_Icon["default"], {
+    return /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
       name: "radio-checked",
       fontSize: iconFontSize
     });

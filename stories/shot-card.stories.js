@@ -64,7 +64,7 @@ stories.add(
         gridGap="large"
         gridTemplateColumns="repeat(auto-fill, minmax(360px,1fr))"
       >
-        {exampleCards.map(card => (
+        {exampleCards.map((card) => (
           <Card>
             <CardRow>
               <Checkbox icon="cr-logo" my="0" label={card.id} />
@@ -84,7 +84,7 @@ stories.add(
                   color="grey80"
                   fontSize="size2"
                   href="#test"
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   20 Action Items
                 </Link>

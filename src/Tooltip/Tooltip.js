@@ -1,6 +1,6 @@
 /** @jsx jsx */
+import React from 'react'; /* eslint-disable-line no-unused-vars */
 import { Global, css, jsx } from '@emotion/core';
-import { Fragment } from 'react';
 import { ThemeProvider, withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
 import 'react-tippy/dist/tippy.css';
@@ -8,7 +8,7 @@ import { Tooltip as TippyTooltip } from 'react-tippy';
 
 import StyledTooltipContent from './StyledTooltipContent';
 
-const globalTippyStyles = theme => {
+const globalTippyStyles = (theme) => {
   const arrowColor = theme.colors.monochrome.grey90;
 
   return css`
@@ -45,7 +45,7 @@ const Tooltip = ({ content, children, theme, ...props }) => {
   );
 
   return (
-    <Fragment>
+    <>
       <Global styles={globalTippyStyles} />
 
       <TippyTooltip
@@ -65,7 +65,7 @@ const Tooltip = ({ content, children, theme, ...props }) => {
       >
         {children}
       </TippyTooltip>
-    </Fragment>
+    </>
   );
 };
 

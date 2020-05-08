@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 
 import mountWithTheme from '../../../utils/mountWithTheme';
@@ -8,9 +9,15 @@ import Popover from '../Popover';
 const mountNode = document.createElement('div');
 document.body.appendChild(mountNode);
 
-const mount = element => mountWithTheme(element, { attachTo: mountNode });
+const mount = (element) => {
+  // This is required to clean up after the mountNode, if this doesn't happen
+  // subsequent calls to rendering the body will fail.
+  ReactDOM.unmountComponentAtNode(mountNode);
 
-const simulateClick = node => {
+  return mountWithTheme(element, { attachTo: mountNode });
+};
+
+const simulateClick = (node) => {
   const clickEvent = new window.MouseEvent('click', {
     bubbles: true,
     cancelable: true,
@@ -24,7 +31,7 @@ describe('<Popover />', () => {
     content: 'Hello World'
   };
 
-  const renderPopover = props =>
+  const renderPopover = (props) =>
     shallow(
       <Popover {...{ ...baseProps, ...props }}>
         <button type="button">Trigger</button>
@@ -46,7 +53,7 @@ describe('<Popover />', () => {
   });
 
   describe('content', () => {
-    const renderPopoverContent = props => {
+    const renderPopoverContent = (props) => {
       const popover = renderPopover(props);
       const body = popover.prop('body');
       return mount(body).find(Card);
@@ -104,7 +111,7 @@ describe('<Popover />', () => {
         const node = wrapper
           .find('button')
           .filterWhere(
-            button => button.props().children === 'Inside the popover'
+            (button) => button.props().children === 'Inside the popover'
           )
           .getDOMNode();
         simulateClick(node);
@@ -130,7 +137,9 @@ describe('<Popover />', () => {
 
       const node = wrapper
         .find('button')
-        .filterWhere(button => button.props().children === 'Inside the popover')
+        .filterWhere(
+          (button) => button.props().children === 'Inside the popover'
+        )
         .getDOMNode();
 
       const event = new window.KeyboardEvent('keypress', {

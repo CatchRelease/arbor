@@ -6,13 +6,15 @@ import Box from '../Box';
 import IntentAlert from './IntentAlert';
 import INTENTS from './intents';
 
-const conditionalProps = intent =>
-  Object.assign(
-    {},
-    intent && {
-      bg: `intent.${intent}.lighter`
-    }
-  );
+const conditionalProps = (intent) => {
+  const props = intent
+    ? {
+        bg: `intent.${intent}.lighter`
+      }
+    : {};
+
+  return props;
+};
 
 const BannerAlert = ({ intent, ...props }) => (
   <IntentAlert

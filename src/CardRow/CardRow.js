@@ -2,7 +2,7 @@ import React from 'react';
 
 import Flex from '../Flex';
 
-const CardRow = props => <Flex {...props} />;
+const CardRow = (props) => <Flex {...props} />;
 
 CardRow.defaultProps = {
   px: 'regular',

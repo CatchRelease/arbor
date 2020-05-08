@@ -9,7 +9,7 @@ import Icon from '../Icon';
 import Text from '../Text';
 
 const ProgressBarContainer = styled(Flex)`
-  border-radius: ${props => props.theme.radii.large};
+  border-radius: ${(props) => props.theme.radii.large};
   height: 16px;
   max-width: 100%;
   align-items: center;
@@ -17,17 +17,17 @@ const ProgressBarContainer = styled(Flex)`
 
 const BarBackground = styled(Box)`
   flex: 1;
-  background-color: ${props => props.theme.colors.monochrome.grey40};
-  height: ${props => props.theme.space.smallest};
+  background-color: ${(props) => props.theme.colors.monochrome.grey40};
+  height: ${(props) => props.theme.space.smallest};
   border-radius: inherit;
 `;
 const BarForeground = styled(Box)`
   height: 100%;
-  background-color: ${props => props.theme.colors.text.default};
+  background-color: ${(props) => props.theme.colors.text.default};
   border-radius: inherit;
 `;
 
-const percentageText = percentage => (
+const percentageText = (percentage) => (
   <Text flex="0" ml="smaller" fontSize="size3" fontWeight="medium">
     {`${percentage}%`}
   </Text>

@@ -710,7 +710,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             }
           }
         >
-          <ForwardRef(render)
+          <StyledTooltipContent
             bg="monochrome.grey90"
             borderRadius="small"
             color="white"
@@ -718,7 +718,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             p="smaller"
           >
             Hello World
-          </ForwardRef(render)>
+          </StyledTooltipContent>
         </ThemeProvider>
       }
       inertia={true}
@@ -742,6 +742,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
       trigger="mouseenter focus"
       unmountHTMLWhenHide={false}
       updateDuration={0}
+      zIndex={9999}
     >
       <div
         className=""

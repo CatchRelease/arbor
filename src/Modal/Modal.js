@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import ReactModal from 'react-modal';
 import PropTypes from 'prop-types';
 import { Global } from '@emotion/core';
@@ -16,7 +16,7 @@ export const Modal = ({
   const combinedModalCss = buildModalCss({ theme, modalCss, overlayCss });
 
   return (
-    <Fragment>
+    <>
       <Global styles={combinedModalCss} />
       <ReactModal
         overlayClassName="ArborModalOverlay"
@@ -25,7 +25,7 @@ export const Modal = ({
       >
         {children}
       </ReactModal>
-    </Fragment>
+    </>
   );
 };
 

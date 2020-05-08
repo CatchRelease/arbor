@@ -5,11 +5,11 @@ import INTENTS from '../intents';
 
 const noop = () => null;
 
-const behavesLikeAnAlert = Component => {
+const behavesLikeAnAlert = (Component) => {
   const render = (props = {}) =>
     createWithTheme(<Component message="Hey look, an alert!" {...props} />);
 
-  [undefined, ...INTENTS].forEach(intent => {
+  [undefined, ...INTENTS].forEach((intent) => {
     const readableIntent = intent || 'no';
 
     it(`property renders a banner alert with ${readableIntent} intent`, () => {

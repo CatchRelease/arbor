@@ -17,12 +17,12 @@ describe('<ControlledMenuItem />', () => {
   };
 
   function createWithProps(additionalProps) {
-    const props = Object.assign({}, baseProps, additionalProps);
+    const props = { ...baseProps, ...additionalProps };
     return createWithTheme(<ControlledMenuItem {...{ ...props }} />);
   }
 
   function mountWithProps(additionalProps) {
-    const props = Object.assign({}, baseProps, additionalProps);
+    const props = { ...baseProps, ...additionalProps };
     return mountWithTheme(<ControlledMenuItem {...{ ...props }} />);
   }
 
@@ -53,7 +53,7 @@ describe('<ControlledMenuItem />', () => {
   describe('keydown', () => {
     const value = 'ready_to_clear';
 
-    const behavesLikeKeyboardSelector = key => {
+    const behavesLikeKeyboardSelector = (key) => {
       context('menu item is focused', () => {
         it('calls the onSelect callback', () => {
           const onSelect = jest.fn();

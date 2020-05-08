@@ -21,7 +21,7 @@ var Tab = function Tab(_ref) {
   var children = _ref.children,
       props = _objectWithoutProperties(_ref, ["children"]);
 
-  return _react["default"].createElement(_StyledTab["default"], props, children);
+  return /*#__PURE__*/_react["default"].createElement(_StyledTab["default"], props, children);
 };
 
 Tab.propTypes = {

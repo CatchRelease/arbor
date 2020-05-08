@@ -12,7 +12,7 @@ var _CardAlert = _interopRequireDefault(require("./CardAlert"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var ToastAlert = function ToastAlert(props) {
-  return _react["default"].createElement(_CardAlert["default"], props);
+  return /*#__PURE__*/_react["default"].createElement(_CardAlert["default"], props);
 };
 
 ToastAlert.defaultProps = {

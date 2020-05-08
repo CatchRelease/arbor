@@ -9,7 +9,7 @@ const baseModalCss = css`
   outline: none;
 `;
 
-const baseOverlayCss = theme => css`
+const baseOverlayCss = (theme) => css`
   align-items: center;
   background: ${transparentize(0.5, theme.colors.grey90)};
   bottom: 0;

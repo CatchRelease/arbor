@@ -14,7 +14,7 @@ const Input = React.forwardRef(
 
     const errorMessage = touched && validate(value);
 
-    const handleBlur = event => {
+    const handleBlur = (event) => {
       setTouched(true);
 
       if (onBlur) {
@@ -22,7 +22,7 @@ const Input = React.forwardRef(
       }
     };
 
-    const handleChange = event => {
+    const handleChange = (event) => {
       setValue(event.target.value);
 
       if (onChange) {

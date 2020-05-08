@@ -42,15 +42,15 @@ exports[`<Input /> renders a large Input correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-2:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::placeholder {
   color: #989A9C;
 }
 
@@ -128,15 +128,15 @@ exports[`<Input /> renders an Input correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-2:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::placeholder {
   color: #989A9C;
 }
 
@@ -210,15 +210,15 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-2:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::placeholder {
   color: #989A9C;
 }
 
@@ -312,15 +312,15 @@ exports[`<Input /> renders an Input with a label correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-6:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-6::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-6:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-6::placeholder {
   color: #989A9C;
 }
 
@@ -431,15 +431,15 @@ exports[`<Input /> renders an Input with a type correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-2:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-2:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-2::placeholder {
   color: #989A9C;
 }
 
@@ -517,15 +517,15 @@ exports[`<Input /> renders as Input with a labelAside correctly 1`] = `
   color: #989A9C;
 }
 
-.emotion-4:-moz-placeholder {
-  color: #989A9C;
-}
-
 .emotion-4::-moz-placeholder {
   color: #989A9C;
 }
 
 .emotion-4:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-4::placeholder {
   color: #989A9C;
 }
 

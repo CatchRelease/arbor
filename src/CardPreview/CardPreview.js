@@ -5,8 +5,8 @@ import { ratio } from '../utils';
 import Box from '../Box';
 
 const CardPreview = styled(Box)`
-  background: url(${props => props.image}) center center no-repeat
-    ${props => props.theme.colors.monochrome.black};
+  background: url(${(props) => props.image}) center center no-repeat
+    ${(props) => props.theme.colors.monochrome.black};
   background-size: contain;
   ${ratio};
 `;

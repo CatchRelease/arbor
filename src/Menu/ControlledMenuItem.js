@@ -22,7 +22,7 @@ class ControlledMenuItem extends React.PureComponent {
     document.removeEventListener('keydown', this.onKeyDown, true);
   }
 
-  onKeyDown = e => {
+  onKeyDown = (e) => {
     const { key } = e;
     const { isFocused } = this.props;
 
@@ -99,7 +99,7 @@ class ControlledMenuItem extends React.PureComponent {
               <Text
                 as="span"
                 fontSize="size3"
-                css={theme => ({
+                css={(theme) => ({
                   // Put primary and secondary labels on the same baseline
                   lineHeight: theme.fontSizes.size4
                 })}

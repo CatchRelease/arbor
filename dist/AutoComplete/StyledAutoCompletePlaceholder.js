@@ -23,7 +23,7 @@ var StyledAutoCompletePlaceholder = function StyledAutoCompletePlaceholder(_ref)
   var children = _ref.children,
       props = _objectWithoutProperties(_ref, ["children"]);
 
-  return _react["default"].createElement(_Flex["default"], _extends({
+  return /*#__PURE__*/_react["default"].createElement(_Flex["default"], _extends({
     alignSelf: "center",
     color: "text.placeholder",
     position: "absolute"

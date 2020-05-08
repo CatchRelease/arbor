@@ -12,7 +12,7 @@ var _Pane = _interopRequireDefault(require("../Pane"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var Card = function Card(props) {
-  return _react["default"].createElement(_Pane["default"], props);
+  return /*#__PURE__*/_react["default"].createElement(_Pane["default"], props);
 };
 
 Card.defaultProps = {
