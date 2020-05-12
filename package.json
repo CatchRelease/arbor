@@ -51,6 +51,7 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
+    "@emotion/cache": "^10.0.29",
     "@emotion/snapshot-serializer": "^0.8.2",
     "@storybook/storybook-deployer": "^2.8.5",
     "@storybook/addon-a11y": "^5.3.18",
