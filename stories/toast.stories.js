@@ -26,7 +26,7 @@ stories.add(
         <Heading.h1>Toast</Heading.h1>
 
         {INTENTS.map((intent) => (
-          <Box mb="smaller" textAlign="right">
+          <Box key={intent} mb="smaller" textAlign="right">
             <Button
               intent={intent}
               onClick={() => toast[intent](message, details)}
