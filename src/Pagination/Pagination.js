@@ -57,7 +57,7 @@ class Pagination extends React.Component {
         <Button
           {...{ size, variant }}
           mx="smallest"
-          key={item}
+          key={`${item}-${index}`}
           onClick={() => this.paginate(item)}
         >
           {item}
@@ -77,6 +77,7 @@ class Pagination extends React.Component {
         {...{ size }}
         variant="minimal"
         mr="small"
+        key="pagination-previous"
         disabled={previousDisabled}
         onClick={() => this.paginate(currentPage - 1)}
       >
@@ -94,6 +95,7 @@ class Pagination extends React.Component {
         {...{ size }}
         variant="minimal"
         ml="small"
+        key="pagination-next"
         disabled={nextDisabled}
         onClick={() => this.paginate(currentPage + 1)}
       >
