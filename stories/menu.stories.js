@@ -153,7 +153,7 @@ stories.add(
   () => (
     <Box as="section" p="regular">
       <Heading.h1 mb="regular">Standard Menu</Heading.h1>
-      <Menu menuItems={menuItems} />
+      <Menu name="Standard Menu" menuItems={menuItems} />
     </Box>
   ),
   { notes: { markdown: notes } }
@@ -164,7 +164,11 @@ stories.add(
   () => (
     <Box as="section" p="regular">
       <Heading.h1 mb="regular">Menu with Custom Menu Item</Heading.h1>
-      <Menu menuItems={menuItems} MenuItemComponent={CustomMenuItemComponent} />
+      <Menu
+        name="Custom Menu"
+        menuItems={menuItems}
+        MenuItemComponent={CustomMenuItemComponent}
+      />
     </Box>
   ),
   { notes: { markdown: notes } }
