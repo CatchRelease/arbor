@@ -1,7 +1,8 @@
 language: node_js
 node_js:
   - '10.15'
-  - '12.2'
+  - '12.16'
+  - '14.2'
 branches:
   only:
     - master
@@ -15,5 +16,5 @@ deploy:
   local_dir: storybook-static
   skip_cleanup: true
   on:
-    node_js: '12.2'
+    node_js: '12.16'
     branch: 'master'
