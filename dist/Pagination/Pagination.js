@@ -102,7 +102,7 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
           variant: variant
         }, {
           mx: "smallest",
-          key: item,
+          key: "".concat(item, "-").concat(index),
           onClick: function onClick() {
             return _this.paginate(item);
           }
@@ -123,6 +123,7 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
       }, {
         variant: "minimal",
         mr: "small",
+        key: "pagination-previous",
         disabled: previousDisabled,
         onClick: function onClick() {
           return _this.paginate(currentPage - 1);
@@ -142,6 +143,7 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
       }, {
         variant: "minimal",
         ml: "small",
+        key: "pagination-next",
         disabled: nextDisabled,
         onClick: function onClick() {
           return _this.paginate(currentPage + 1);
