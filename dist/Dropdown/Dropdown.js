@@ -135,7 +135,8 @@ var Dropdown = /*#__PURE__*/function (_React$Component) {
       }, popoverProps), /*#__PURE__*/_react["default"].createElement(TriggerComponent, _extends({
         ref: this.button,
         "aria-haspopup": true,
-        "aria-expanded": isOpen
+        "aria-expanded": isOpen,
+        isOpen: isOpen
       }, props), children));
     }
   }]);

@@ -77,6 +77,7 @@ class Dropdown extends React.Component {
           ref={this.button}
           aria-haspopup
           aria-expanded={isOpen}
+          isOpen={isOpen}
           {...props}
         >
           {children}
