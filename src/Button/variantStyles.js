@@ -30,10 +30,6 @@ const variants = ({ intent, variant, paletteColor, ...props }) => {
       return themeGet(`colors.icon.default`)(props);
     }
 
-    if (variant === 'minimal' && intent === 'brand' && disabled === true) {
-      return themeGet(`colors.icon.disabled`)(props);
-    }
-
     return 'inherit';
   };
 
@@ -114,6 +110,10 @@ const variants = ({ intent, variant, paletteColor, ...props }) => {
         &:disabled {
           background-color: transparent;
           color: ${themeGet(`colors.text.disabled`)(props)};
+
+          i {
+            color: ${themeGet(`colors.icon.disabled`)(props)};
+          }
         }
 
         &:enabled {
