@@ -2028,6 +2028,10 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-4:disabled i {
+  color: rgba(190,190,192,0.7);
+}
+
 .emotion-4:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
@@ -2403,6 +2407,10 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 .emotion-4:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-4:disabled i {
+  color: rgba(190,190,192,0.7);
 }
 
 .emotion-4:enabled:active {

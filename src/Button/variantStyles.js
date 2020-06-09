@@ -110,6 +110,12 @@ const variants = ({ intent, variant, paletteColor, ...props }) => {
         &:disabled {
           background-color: transparent;
           color: ${themeGet(`colors.text.disabled`)(props)};
+
+          /* quiet an invalid lint error - button cannot be disabled and enabled at the same time */
+          /* stylelint-disable-next-line no-descending-specificity */
+          i {
+            color: ${themeGet(`colors.icon.disabled`)(props)};
+          }
         }
 
         &:enabled {

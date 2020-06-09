@@ -129,6 +129,10 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-4:disabled i {
+  color: rgba(190,190,192,0.7);
+}
+
 .emotion-4:enabled:active {
   background-color: #F8F9F9;
   color: #061813;

@@ -882,6 +882,10 @@ exports[`<CardAlert /> with onClose property renders a banner alert, with danger
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-10:disabled i {
+  color: rgba(190,190,192,0.7);
+}
+
 .emotion-10:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
@@ -1086,6 +1090,10 @@ exports[`<CardAlert /> with onClose property renders a banner alert, with info i
 .emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-10:disabled i {
+  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10:enabled:active {
@@ -1321,6 +1329,10 @@ exports[`<CardAlert /> with onClose property renders a banner alert, with no int
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-6:disabled i {
+  color: rgba(190,190,192,0.7);
+}
+
 .emotion-6:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
@@ -1482,6 +1494,10 @@ exports[`<CardAlert /> with onClose property renders a banner alert, with succes
 .emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-10:disabled i {
+  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10:enabled:active {
@@ -1688,6 +1704,10 @@ exports[`<CardAlert /> with onClose property renders a banner alert, with warnin
 .emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-10:disabled i {
+  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10:enabled:active {
