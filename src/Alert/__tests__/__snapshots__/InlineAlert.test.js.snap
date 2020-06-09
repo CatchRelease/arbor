@@ -672,6 +672,10 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with dang
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-10:disabled i {
+  color: rgba(190,190,192,0.7);
+}
+
 .emotion-10:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
@@ -855,6 +859,10 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with info
 .emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-10:disabled i {
+  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10:enabled:active {
@@ -1056,6 +1064,10 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with no i
   color: rgba(120,121,125,0.7);
 }
 
+.emotion-6:disabled i {
+  color: rgba(190,190,192,0.7);
+}
+
 .emotion-6:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
@@ -1210,6 +1222,10 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with succ
 .emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-10:disabled i {
+  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10:enabled:active {
@@ -1395,6 +1411,10 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with warn
 .emotion-10:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
+}
+
+.emotion-10:disabled i {
+  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10:enabled:active {
