@@ -780,6 +780,10 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with dang
   vertical-align: middle;
 }
 
+.emotion-10 i:disabled {
+  color: rgba(190,190,192,0.7);
+}
+
 .emotion-10 i {
   width: 1.5rem;
   font-size: 0.6875rem;
@@ -976,6 +980,10 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with info
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
+}
+
+.emotion-10 i:disabled {
+  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10 i {
@@ -1197,6 +1205,10 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with no i
   vertical-align: middle;
 }
 
+.emotion-6 i:disabled {
+  color: rgba(190,190,192,0.7);
+}
+
 .emotion-6 i {
   width: 1.5rem;
   font-size: 0.6875rem;
@@ -1355,6 +1367,10 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with succ
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
+}
+
+.emotion-10 i:disabled {
+  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10 i {
@@ -1553,6 +1569,10 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with warn
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
+}
+
+.emotion-10 i:disabled {
+  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10 i {

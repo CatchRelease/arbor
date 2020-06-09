@@ -59,6 +59,10 @@ exports[`<Header /> renders with heading and a button 1`] = `
   vertical-align: middle;
 }
 
+.emotion-6 i:disabled {
+  color: rgba(190,190,192,0.7);
+}
+
 .emotion-6 i {
   width: 2.5rem;
   font-size: 0.875rem;
@@ -237,6 +241,10 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   vertical-align: middle;
 }
 
+.emotion-12 i:disabled {
+  color: rgba(190,190,192,0.7);
+}
+
 .emotion-12 i {
   width: 2.5rem;
   font-size: 0.875rem;
@@ -344,6 +352,10 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
+}
+
+.emotion-6 i:disabled {
+  color: rgba(190,190,192,0.7);
 }
 
 .emotion-6 i {
