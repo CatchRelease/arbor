@@ -3,11 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.yellow = exports.teal = exports.red = exports.purple = exports.pink = exports.orange = exports.neutral = exports.green = exports.cyan = exports.blue = void 0;
+exports["default"] = exports.yellow = exports.teal = exports.red = exports.purple = exports.pink = exports.orange = exports.neutral = exports.green = exports.cyan = exports.brand = exports.blue = void 0;
 
 var _polished = require("polished");
 
 var _primary = _interopRequireDefault(require("./primary"));
+
+var _brand = _interopRequireDefault(require("./brand"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -44,7 +46,9 @@ var paletteReducer = function paletteReducer(palette, _ref) {
 };
 
 var palette = Object.entries(_primary["default"]).reduce(paletteReducer, {});
+palette.brand = generateColorModifiers(_brand["default"]["default"]);
 var blue = palette.blue,
+    brand = palette.brand,
     cyan = palette.cyan,
     green = palette.green,
     neutral = palette.neutral,
@@ -63,6 +67,7 @@ exports.orange = orange;
 exports.neutral = neutral;
 exports.green = green;
 exports.cyan = cyan;
+exports.brand = brand;
 exports.blue = blue;
 var _default = palette;
 exports["default"] = _default;

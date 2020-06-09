@@ -68,6 +68,74 @@ exports[`<Badge /> Colors properly renders a blue badge 1`] = `
 </div>
 `;
 
+exports[`<Badge /> Colors properly renders a brand badge 1`] = `
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emotion-4 {
+  font-family: Motiva Sans;
+  max-width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #081D17;
+  border-color: #081D17;
+  border-radius: 2px;
+}
+
+<div
+  className="emotion-4 emotion-5"
+  height="24px"
+>
+  <div
+    className="emotion-2 emotion-3"
+    color="monochrome.white"
+    display="grid"
+  >
+    <span
+      className="emotion-0 emotion-1"
+      color="monochrome.white"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
+</div>
+`;
+
 exports[`<Badge /> Colors properly renders a cyan badge 1`] = `
 .emotion-2 {
   font-family: Motiva Sans;
@@ -806,6 +874,74 @@ exports[`<Badge /> Subtle properly renders a subtle blue badge 1`] = `
     <span
       className="emotion-0 emotion-1"
       color="palette.blue.dark"
+      fontSize="size3"
+      fontWeight="medium"
+      overflow="hidden"
+    >
+      Badge Text
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<Badge /> Subtle properly renders a subtle brand badge 1`] = `
+.emotion-4 {
+  font-family: Motiva Sans;
+  max-width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid;
+  height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #e6e8e7;
+  border-color: #081D17;
+  border-radius: 2px;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  color: #040e0b;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-gap: 0.25rem;
+  grid-template-columns: 1fr;
+}
+
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #040e0b;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+<div
+  className="emotion-4 emotion-5"
+  height="24px"
+>
+  <div
+    className="emotion-2 emotion-3"
+    color="palette.brand.dark"
+    display="grid"
+  >
+    <span
+      className="emotion-0 emotion-1"
+      color="palette.brand.dark"
       fontSize="size3"
       fontWeight="medium"
       overflow="hidden"

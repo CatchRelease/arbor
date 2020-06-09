@@ -1,6 +1,7 @@
 import { shade, tint } from 'polished';
 
 import primary from './primary';
+import brandColors from './brand';
 
 const generateColorModifiers = (color) => ({
   lighter: tint(0.9, color),
@@ -17,8 +18,11 @@ const paletteReducer = (palette, [color, value]) =>
 
 const palette = Object.entries(primary).reduce(paletteReducer, {});
 
+palette.brand = generateColorModifiers(brandColors.default);
+
 export const {
   blue,
+  brand,
   cyan,
   green,
   neutral,

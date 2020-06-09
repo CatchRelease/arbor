@@ -142,6 +142,13 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
               "light": "#c6d0f9",
               "lighter": "#eceffd",
             },
+            "brand": Object {
+              "dark": "#040e0b",
+              "darker": "#010504",
+              "default": "#081D17",
+              "light": "#b4bbb9",
+              "lighter": "#e6e8e7",
+            },
             "cyan": Object {
               "dark": "#063f48",
               "darker": "#02191c",
@@ -533,6 +540,13 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
                     "default": "#4263EB",
                     "light": "#c6d0f9",
                     "lighter": "#eceffd",
+                  },
+                  "brand": Object {
+                    "dark": "#040e0b",
+                    "darker": "#010504",
+                    "default": "#081D17",
+                    "light": "#b4bbb9",
+                    "lighter": "#e6e8e7",
                   },
                   "cyan": Object {
                     "dark": "#063f48",
