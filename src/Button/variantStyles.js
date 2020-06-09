@@ -30,6 +30,10 @@ const variants = ({ intent, variant, paletteColor, ...props }) => {
       return themeGet(`colors.icon.default`)(props);
     }
 
+    if (variant === 'minimal' && intent === 'brand' && disabled === true) {
+      return themeGet(`colors.icon.disabled`)(props);
+    }
+
     return 'inherit';
   };
 

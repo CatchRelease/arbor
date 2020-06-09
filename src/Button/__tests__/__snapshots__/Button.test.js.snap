@@ -45,10 +45,6 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
   vertical-align: middle;
 }
 
-.emotion-6 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-6 i {
   width: 1.5rem;
   font-size: 0.6875rem;
@@ -183,10 +179,6 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
   vertical-align: middle;
 }
 
-.emotion-6 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-6 i {
   width: 2rem;
   font-size: 0.75rem;
@@ -288,10 +280,6 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-6 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-6 i {
@@ -435,10 +423,6 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
   vertical-align: middle;
 }
 
-.emotion-6 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-6 i {
   width: 3rem;
   font-size: 1rem;
@@ -547,10 +531,6 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-8 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-8 i {
@@ -690,10 +670,6 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   vertical-align: middle;
 }
 
-.emotion-8 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-8 i {
   width: 2rem;
   font-size: 0.75rem;
@@ -798,10 +774,6 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-8 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-8 i {
@@ -948,10 +920,6 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   vertical-align: middle;
 }
 
-.emotion-8 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-8 i {
   width: 3rem;
   font-size: 1rem;
@@ -1063,10 +1031,6 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-6 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-6 i {
@@ -1203,10 +1167,6 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   vertical-align: middle;
 }
 
-.emotion-6 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-6 i {
   width: 2rem;
   font-size: 0.75rem;
@@ -1308,10 +1268,6 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-6 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-6 i {
@@ -1455,10 +1411,6 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   vertical-align: middle;
 }
 
-.emotion-6 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-6 i {
   width: 3rem;
   font-size: 1rem;
@@ -1581,10 +1533,6 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-4 i {
   width: 3rem;
   font-size: 1rem;
@@ -1683,10 +1631,6 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-4 i {
@@ -1827,10 +1771,6 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-4 i {
   width: 2rem;
   font-size: 0.75rem;
@@ -1948,10 +1888,6 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-4 i {
@@ -2074,10 +2010,6 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-4 i {
   width: 2.5rem;
   font-size: 0.875rem;
@@ -2186,10 +2118,6 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-4 i {
@@ -2330,10 +2258,6 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
   vertical-align: middle;
 }
 
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-4 i {
   width: 2.5rem;
   font-size: 0.875rem;
@@ -2463,10 +2387,6 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-4 i {
   width: 2.5rem;
   font-size: 0.875rem;
@@ -2575,10 +2495,6 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-4 i {
@@ -2719,10 +2635,6 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-4 i {
   width: 2.5rem;
   font-size: 0.875rem;
@@ -2851,10 +2763,6 @@ exports[`<Button /> fontSize properly renders a button with custom font preset s
   vertical-align: middle;
 }
 
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-4 i {
   width: 2.5rem;
   font-size: 0.875rem;
@@ -2973,10 +2881,6 @@ exports[`<Button /> fontSize properly renders a button with custom pixel font si
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-4 i {
@@ -3098,10 +3002,6 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-4 i {

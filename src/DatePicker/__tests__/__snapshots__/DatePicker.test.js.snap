@@ -111,10 +111,6 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   vertical-align: middle;
 }
 
-.emotion-4 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-4 i {
   width: 1.5rem;
   font-size: 0.6875rem;

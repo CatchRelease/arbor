@@ -864,10 +864,6 @@ exports[`<CardAlert /> with onClose property renders a banner alert, with danger
   vertical-align: middle;
 }
 
-.emotion-10 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-10 i {
   width: 1.5rem;
   font-size: 0.6875rem;
@@ -1072,10 +1068,6 @@ exports[`<CardAlert /> with onClose property renders a banner alert, with info i
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-10 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10 i {
@@ -1311,10 +1303,6 @@ exports[`<CardAlert /> with onClose property renders a banner alert, with no int
   vertical-align: middle;
 }
 
-.emotion-6 i:disabled {
-  color: rgba(190,190,192,0.7);
-}
-
 .emotion-6 i {
   width: 1.5rem;
   font-size: 0.6875rem;
@@ -1476,10 +1464,6 @@ exports[`<CardAlert /> with onClose property renders a banner alert, with succes
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-10 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10 i {
@@ -1686,10 +1670,6 @@ exports[`<CardAlert /> with onClose property renders a banner alert, with warnin
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
-}
-
-.emotion-10 i:disabled {
-  color: rgba(190,190,192,0.7);
 }
 
 .emotion-10 i {
