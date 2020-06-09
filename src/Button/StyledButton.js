@@ -25,9 +25,9 @@ const StyledButton = styled.button`
   text-align: center;
 
   &:disabled {
-    background: ${(props) => props.theme.colors.background.disabled};
+    background: ${props => props.theme.colors.background.disabled};
     border: 1px solid transparent;
-    color: ${(props) => props.theme.colors.text.disabled};
+    color: ${props => props.theme.colors.text.disabled};
     cursor: not-allowed;
   }
 
@@ -39,6 +39,10 @@ const StyledButton = styled.button`
   i {
     transition: all 0.3s ease;
     vertical-align: middle;
+
+    &:disabled {
+      color: ${props => props.theme.colors.icon.disabled};
+    }
   }
 
   ${sizeStyles};
