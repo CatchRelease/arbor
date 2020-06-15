@@ -25,7 +25,7 @@ export { default as Grid } from './Grid';
 export { default as Header } from './Header';
 export { default as Heading } from './Heading';
 export { default as Icon } from './Icon';
-export { default as Input } from './Input';
+export * from './Input';
 export { default as Label } from './Label';
 export { default as Link } from './Link';
 export { default as Masonry } from './Masonry';

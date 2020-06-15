@@ -4,7 +4,7 @@ import DayPickerInput from 'react-day-picker/DayPickerInput';
 
 import datePickerDefaults from './datePickerDefaults';
 import DatePickerInputOverlay from './DatePickerInputOverlay';
-import Input from '../Input';
+import Input from '../Input/Input';
 
 const DatePickerInput = ({ dayPickerProps, ...props }) => (
   <DayPickerInput
