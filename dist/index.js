@@ -30,6 +30,7 @@ var _exportNames = {
   Heading: true,
   Icon: true,
   Input: true,
+  inputStyles: true,
   Label: true,
   Link: true,
   Masonry: true,
@@ -192,6 +193,12 @@ Object.defineProperty(exports, "Input", {
   enumerable: true,
   get: function get() {
     return _Input["default"];
+  }
+});
+Object.defineProperty(exports, "inputStyles", {
+  enumerable: true,
+  get: function get() {
+    return _Input.inputStyles;
   }
 });
 Object.defineProperty(exports, "Label", {
@@ -386,7 +393,7 @@ var _Heading = _interopRequireDefault(require("./Heading"));
 
 var _Icon = _interopRequireDefault(require("./Icon"));
 
-var _Input = _interopRequireDefault(require("./Input"));
+var _Input = _interopRequireWildcard(require("./Input"));
 
 var _Label = _interopRequireDefault(require("./Label"));
 
