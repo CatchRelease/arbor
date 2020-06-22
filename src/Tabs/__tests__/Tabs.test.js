@@ -9,6 +9,7 @@ import { ENTER_KEY, SPACEBAR } from '../../constants';
 const render = (props = {}, tabProps = {}) =>
   shallow(
     <Tabs {...props}>
+      {null}
       <Tab id="tab-1" title="Tab 1" {...tabProps}>
         <Box>Tab 1 Content</Box>
       </Tab>

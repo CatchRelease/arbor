@@ -29,6 +29,7 @@ stories.add(
       <Heading.h1>Tabs</Heading.h1>
 
       <Tabs defaultTabId="tab-2" tabBarAside={boolean('aside', false) && aside}>
+        {null /* see if we can handle null */}
         <Tab id="tab-1" title="Tab 1">
           <Box bg="palette.blue.lighter" p="largest">
             Tab 1 Content
