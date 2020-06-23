@@ -95,7 +95,9 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
         defaultTabId = _this$props.defaultTabId,
         children = _this$props.children;
     _this.state = activeTabId ? {} : {
-      activeTabId: defaultTabId || children[0].props.id
+      activeTabId: defaultTabId || children.find(function (tab) {
+        return !!tab;
+      }).props.id
     };
     return _this;
   }
@@ -113,6 +115,10 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
           props = _objectWithoutProperties(_this$props2, ["children", "tabBarAside"]);
 
       return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_StyledTabs["default"], props, /*#__PURE__*/_react["default"].createElement(_Box["default"], null, children.map(function (tab) {
+        if (!tab) {
+          return tab;
+        }
+
         var _tab$props = tab.props,
             id = _tab$props.id,
             title = _tab$props.title,
@@ -144,8 +150,12 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
     get: function get() {
       var activeTabId = this.activeTabId;
       var children = this.props.children;
-      return children.find(function (_ref3) {
-        var id = _ref3.props.id;
+      return children.find(function (tab) {
+        if (!tab) {
+          return false;
+        }
+
+        var id = tab.props.id;
         return id === activeTabId;
       });
     }

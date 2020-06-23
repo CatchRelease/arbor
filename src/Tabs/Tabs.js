@@ -18,14 +18,22 @@ class Tabs extends React.Component {
 
     this.state = activeTabId
       ? {}
-      : { activeTabId: defaultTabId || children[0].props.id };
+      : { activeTabId: defaultTabId || children.find((tab) => !!tab).props.id };
   }
 
   get activeTab() {
     const { activeTabId } = this;
     const { children } = this.props;
 
-    return children.find(({ props: { id } }) => id === activeTabId);
+    return children.find((tab) => {
+      if (!tab) {
+        return false;
+      }
+      const {
+        props: { id }
+      } = tab;
+      return id === activeTabId;
+    });
   }
 
   get activeTabId() {
@@ -78,6 +86,9 @@ class Tabs extends React.Component {
         <StyledTabs {...props}>
           <Box>
             {children.map((tab) => {
+              if (!tab) {
+                return tab;
+              }
               const { id, title, onClick: originalOnClick } = tab.props;
               const active = activeTabId === id;
               const tabContentId = getTabContentId(tab);
