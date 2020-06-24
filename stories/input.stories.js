@@ -87,6 +87,13 @@ storiesOf('Input', module).add(
         name="validation-input-with-caption"
         validate={validateIs42}
       />
+      <Input
+        label="Input with non-string value prop (should not throw a prop-type warning)"
+        id="input-with-non-string-value"
+        name="input-with-non-string-value"
+        value={42}
+        validate={validateIs42}
+      />
     </form>
   ),
   { notes: { markdown: notes } }
