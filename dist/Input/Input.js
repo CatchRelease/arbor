@@ -53,14 +53,15 @@ var Input = _react["default"].forwardRef(function (_ref, ref) {
       onBlur = _ref.onBlur,
       onChange = _ref.onChange,
       validate = _ref.validate,
-      props = _objectWithoutProperties(_ref, ["caption", "label", "labelAside", "id", "onBlur", "onChange", "validate"]);
+      propValue = _ref.value,
+      props = _objectWithoutProperties(_ref, ["caption", "label", "labelAside", "id", "onBlur", "onChange", "validate", "value"]);
 
   var _useState = (0, _react.useState)(false),
       _useState2 = _slicedToArray(_useState, 2),
       touched = _useState2[0],
       setTouched = _useState2[1];
 
-  var _useState3 = (0, _react.useState)(props.value),
+  var _useState3 = (0, _react.useState)(propValue),
       _useState4 = _slicedToArray(_useState3, 2),
       value = _useState4[0],
       setValue = _useState4[1];
@@ -92,6 +93,7 @@ var Input = _react["default"].forwardRef(function (_ref, ref) {
     id: id,
     ref: ref
   }), {
+    value: propValue ? propValue.toString() : propValue,
     isInvalid: !!errorMessage,
     onBlur: handleBlur,
     onChange: handleChange
@@ -148,7 +150,7 @@ Input.propTypes = {
   /**
    * HTML Input value
    */
-  value: _propTypes["default"].string
+  value: _propTypes["default"].oneOfType([_propTypes["default"].string, _propTypes["default"].number, _propTypes["default"].bool])
 };
 Input.defaultProps = {
   as: 'input',
