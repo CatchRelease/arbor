@@ -6,11 +6,21 @@ import StyledInput from './StyledInput';
 
 const Input = React.forwardRef(
   (
-    { caption, label, labelAside, id, onBlur, onChange, validate, ...props },
+    {
+      caption,
+      label,
+      labelAside,
+      id,
+      onBlur,
+      onChange,
+      validate,
+      value: propValue,
+      ...props
+    },
     ref
   ) => {
     const [touched, setTouched] = useState(false);
-    const [value, setValue] = useState(props.value);
+    const [value, setValue] = useState(propValue);
 
     const errorMessage = touched && validate(value);
 
@@ -39,6 +49,7 @@ const Input = React.forwardRef(
       >
         <StyledInput
           {...{ ...props, id, ref }}
+          value={propValue ? propValue.toString() : propValue}
           isInvalid={!!errorMessage}
           onBlur={handleBlur}
           onChange={handleChange}
@@ -98,7 +109,11 @@ Input.propTypes = {
   /**
    * HTML Input value
    */
-  value: PropTypes.string
+  value: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+    PropTypes.bool
+  ])
 };
 
 Input.defaultProps = {
