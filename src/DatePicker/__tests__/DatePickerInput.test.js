@@ -36,5 +36,16 @@ describe('<DatePickerInput />', () => {
         datePickerInput.find('DayPickerInput').props().dayPickerProps.foo
       ).toEqual('bar');
     });
+
+    it('allows overriding autoComplete', () => {
+      const tree = createWithTheme(
+        <DatePickerInput
+          foo="bar"
+          inputProps={{ id: 'date-picker-input', autoComplete: 'on' }}
+        />
+      );
+
+      expect(tree).toMatchSnapshot();
+    });
   });
 });
