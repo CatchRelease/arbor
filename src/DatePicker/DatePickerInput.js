@@ -6,7 +6,11 @@ import datePickerDefaults from './datePickerDefaults';
 import DatePickerInputOverlay from './DatePickerInputOverlay';
 import Input from '../Input';
 
-const DatePickerInput = ({ dayPickerProps, ...props }) => (
+const defaultInputProps = {
+  autoComplete: 'off'
+};
+
+const DatePickerInput = ({ dayPickerProps, inputProps, ...props }) => (
   <DayPickerInput
     component={Input}
     overlayComponent={DatePickerInputOverlay}
@@ -14,16 +18,22 @@ const DatePickerInput = ({ dayPickerProps, ...props }) => (
       ...datePickerDefaults,
       ...dayPickerProps
     }}
+    inputProps={{
+      ...defaultInputProps,
+      ...inputProps
+    }}
     {...props}
   />
 );
 
 DatePickerInput.propTypes = {
-  dayPickerProps: PropTypes.object // eslint-disable-line react/forbid-prop-types
+  dayPickerProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  inputProps: PropTypes.object // eslint-disable-line react/forbid-prop-types
 };
 
 DatePickerInput.defaultProps = {
-  dayPickerProps: {}
+  dayPickerProps: {},
+  inputProps: {}
 };
 
 export default DatePickerInput;
