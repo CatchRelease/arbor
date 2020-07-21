@@ -96,6 +96,7 @@ class AutoCompleteExample extends React.Component {
             }`,
             hideDropdownIndicator: boolean('hideDropdownIndicator', false),
             isMulti: boolean('isMulti', true),
+            isDisabled: boolean('isDisabled', false),
             onChange: this.handleChange,
             value: selectedOption,
             ...this.additionalProps,

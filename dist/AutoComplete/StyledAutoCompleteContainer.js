@@ -26,9 +26,10 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 var StyledAutoCompleteContainer = function StyledAutoCompleteContainer(_ref) {
-  var innerRef = _ref.innerRef,
+  var cx = _ref.cx,
+      innerRef = _ref.innerRef,
       children = _ref.children,
-      props = _objectWithoutProperties(_ref, ["innerRef", "children"]);
+      props = _objectWithoutProperties(_ref, ["cx", "innerRef", "children"]);
 
   return /*#__PURE__*/_react["default"].createElement(_Box["default"], _extends({
     ref: innerRef
@@ -36,6 +37,7 @@ var StyledAutoCompleteContainer = function StyledAutoCompleteContainer(_ref) {
 };
 
 StyledAutoCompleteContainer.propTypes = {
+  cx: _propTypes["default"].func.isRequired,
   children: _propTypes["default"].oneOfType([_propTypes["default"].node, _propTypes["default"].arrayOf(_propTypes["default"].node)]).isRequired,
   innerRef: _propTypes["default"].func.isRequired
 };

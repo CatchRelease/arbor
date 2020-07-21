@@ -20,8 +20,9 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 var StyledAutoCompletePlaceholder = function StyledAutoCompletePlaceholder(_ref) {
-  var children = _ref.children,
-      props = _objectWithoutProperties(_ref, ["children"]);
+  var cx = _ref.cx,
+      children = _ref.children,
+      props = _objectWithoutProperties(_ref, ["cx", "children"]);
 
   return /*#__PURE__*/_react["default"].createElement(_Flex["default"], _extends({
     alignSelf: "center",
@@ -31,6 +32,7 @@ var StyledAutoCompletePlaceholder = function StyledAutoCompletePlaceholder(_ref)
 };
 
 StyledAutoCompletePlaceholder.propTypes = {
+  cx: _propTypes["default"].func.isRequired,
   children: _propTypes["default"].oneOfType([_propTypes["default"].node, _propTypes["default"].arrayOf(_propTypes["default"].node)]).isRequired
 };
 var _default = StyledAutoCompletePlaceholder;

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Flex from '../Flex';
 
 const StyledAutoCompleteValueContainer = ({
+  cx,
   innerProps,
   children,
   ...props
@@ -19,6 +20,7 @@ const StyledAutoCompleteValueContainer = ({
 );
 
 StyledAutoCompleteValueContainer.propTypes = {
+  cx: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
