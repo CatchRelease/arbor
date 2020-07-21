@@ -5,6 +5,7 @@ import { withTheme } from 'emotion-theming';
 import Box from '../Box';
 
 const StyledAutoCompleteMenuList = ({
+  cx,
   innerRef,
   innerProps,
   children,
@@ -16,6 +17,7 @@ const StyledAutoCompleteMenuList = ({
 );
 
 StyledAutoCompleteMenuList.propTypes = {
+  cx: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)

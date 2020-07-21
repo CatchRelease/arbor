@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Grid from '../Grid';
 
 const StyledAutoCompleteIndicatorsContainer = ({
+  cx,
   innerProps,
   children,
   ...props
@@ -19,6 +20,7 @@ const StyledAutoCompleteIndicatorsContainer = ({
 );
 
 StyledAutoCompleteIndicatorsContainer.propTypes = {
+  cx: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)

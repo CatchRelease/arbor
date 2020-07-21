@@ -207,18 +207,15 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   >
     <div
       className="emotion-17 emotion-18"
-      cx={[Function]}
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
         className="emotion-10 emotion-3"
-        cx={[Function]}
       >
         <div
           className="emotion-6 emotion-3"
           color="text.placeholder"
-          cx={[Function]}
         >
           Select...
         </div>
@@ -229,7 +226,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
           autoComplete="off"
           autoCorrect="off"
           className="emotion-8 emotion-9"
-          cx={[Function]}
+          disabled={false}
           id="react-select-2-input"
           onBlur={[Function]}
           onChange={[Function]}
@@ -242,7 +239,6 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
       </div>
       <div
         className="emotion-15 emotion-16"
-        cx={[Function]}
         display="grid"
       >
         <span
@@ -252,7 +248,6 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
           aria-hidden="true"
           aria-label="show options"
           className="ar ar-chevron emotion-13 emotion-14"
-          cx={[Function]}
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -476,18 +471,15 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   >
     <div
       className="emotion-17 emotion-18"
-      cx={[Function]}
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
         className="emotion-10 emotion-3"
-        cx={[Function]}
       >
         <div
           className="emotion-6 emotion-3"
           color="text.placeholder"
-          cx={[Function]}
         >
           Select...
         </div>
@@ -498,7 +490,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
           autoComplete="off"
           autoCorrect="off"
           className="emotion-8 emotion-9"
-          cx={[Function]}
+          disabled={false}
           id="react-select-3-input"
           onBlur={[Function]}
           onChange={[Function]}
@@ -511,7 +503,6 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
       </div>
       <div
         className="emotion-15 emotion-16"
-        cx={[Function]}
         display="grid"
       >
         <span
@@ -521,7 +512,6 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
           aria-hidden="true"
           aria-label="show options"
           className="ar ar-chevron emotion-13 emotion-14"
-          cx={[Function]}
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -745,18 +735,15 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   >
     <div
       className="emotion-17 emotion-18"
-      cx={[Function]}
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
         className="emotion-10 emotion-3"
-        cx={[Function]}
       >
         <div
           className="emotion-6 emotion-3"
           color="text.placeholder"
-          cx={[Function]}
         >
           Select...
         </div>
@@ -767,7 +754,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
           autoComplete="off"
           autoCorrect="off"
           className="emotion-8 emotion-9"
-          cx={[Function]}
+          disabled={false}
           id="react-select-4-input"
           onBlur={[Function]}
           onChange={[Function]}
@@ -780,7 +767,6 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
       </div>
       <div
         className="emotion-15 emotion-16"
-        cx={[Function]}
         display="grid"
       >
         <span
@@ -790,7 +776,6 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
           aria-hidden="true"
           aria-label="show options"
           className="ar ar-chevron emotion-13 emotion-14"
-          cx={[Function]}
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -1014,18 +999,15 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   >
     <div
       className="emotion-17 emotion-18"
-      cx={[Function]}
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
         className="emotion-10 emotion-3"
-        cx={[Function]}
       >
         <div
           className="emotion-6 emotion-3"
           color="text.placeholder"
-          cx={[Function]}
         >
           Select...
         </div>
@@ -1036,7 +1018,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
           autoComplete="off"
           autoCorrect="off"
           className="emotion-8 emotion-9"
-          cx={[Function]}
+          disabled={false}
           id="react-select-5-input"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1049,7 +1031,6 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
       </div>
       <div
         className="emotion-15 emotion-16"
-        cx={[Function]}
         display="grid"
       >
         <span
@@ -1059,7 +1040,6 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
           aria-hidden="true"
           aria-label="show options"
           className="ar ar-chevron emotion-13 emotion-14"
-          cx={[Function]}
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -1283,18 +1263,15 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   >
     <div
       className="emotion-17 emotion-18"
-      cx={[Function]}
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
         className="emotion-10 emotion-3"
-        cx={[Function]}
       >
         <div
           className="emotion-6 emotion-3"
           color="text.placeholder"
-          cx={[Function]}
         >
           Select...
         </div>
@@ -1305,7 +1282,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
           autoComplete="off"
           autoCorrect="off"
           className="emotion-8 emotion-9"
-          cx={[Function]}
+          disabled={false}
           id="react-select-6-input"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1318,7 +1295,6 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
       </div>
       <div
         className="emotion-15 emotion-16"
-        cx={[Function]}
         display="grid"
       >
         <span
@@ -1328,7 +1304,6 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
           aria-hidden="true"
           aria-label="show options"
           className="ar ar-chevron emotion-13 emotion-14"
-          cx={[Function]}
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -1552,18 +1527,15 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   >
     <div
       className="emotion-17 emotion-18"
-      cx={[Function]}
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
         className="emotion-10 emotion-3"
-        cx={[Function]}
       >
         <div
           className="emotion-6 emotion-3"
           color="text.placeholder"
-          cx={[Function]}
         >
           Select...
         </div>
@@ -1574,7 +1546,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
           autoComplete="off"
           autoCorrect="off"
           className="emotion-8 emotion-9"
-          cx={[Function]}
+          disabled={false}
           id="react-select-7-input"
           onBlur={[Function]}
           onChange={[Function]}
@@ -1587,7 +1559,6 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
       </div>
       <div
         className="emotion-15 emotion-16"
-        cx={[Function]}
         display="grid"
       >
         <span
@@ -1597,7 +1568,6 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
           aria-hidden="true"
           aria-label="show options"
           className="ar ar-chevron emotion-13 emotion-14"
-          cx={[Function]}
           display="none"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}

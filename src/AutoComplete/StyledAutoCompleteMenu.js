@@ -4,7 +4,7 @@ import { withTheme } from 'emotion-theming';
 
 import Card from '../Card';
 
-const StyledAutoCompleteMenu = ({ innerProps, children, ...props }) => (
+const StyledAutoCompleteMenu = ({ cx, innerProps, children, ...props }) => (
   <Card
     mt="smaller"
     position="absolute"
@@ -17,6 +17,7 @@ const StyledAutoCompleteMenu = ({ innerProps, children, ...props }) => (
 );
 
 StyledAutoCompleteMenu.propTypes = {
+  cx: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)

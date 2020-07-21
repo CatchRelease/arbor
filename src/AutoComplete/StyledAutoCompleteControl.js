@@ -10,6 +10,7 @@ const StyledFlex = styled(Flex)`
 `;
 
 const StyledAutoCompleteControl = ({
+  cx,
   innerRef,
   innerProps,
   children,
@@ -21,6 +22,7 @@ const StyledAutoCompleteControl = ({
 );
 
 StyledAutoCompleteControl.propTypes = {
+  cx: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)

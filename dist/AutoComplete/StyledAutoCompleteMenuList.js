@@ -28,10 +28,11 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 var StyledAutoCompleteMenuList = function StyledAutoCompleteMenuList(_ref) {
-  var innerRef = _ref.innerRef,
+  var cx = _ref.cx,
+      innerRef = _ref.innerRef,
       innerProps = _ref.innerProps,
       children = _ref.children,
-      props = _objectWithoutProperties(_ref, ["innerRef", "innerProps", "children"]);
+      props = _objectWithoutProperties(_ref, ["cx", "innerRef", "innerProps", "children"]);
 
   return /*#__PURE__*/_react["default"].createElement(_Box["default"], _extends({
     as: "ul",
@@ -41,6 +42,7 @@ var StyledAutoCompleteMenuList = function StyledAutoCompleteMenuList(_ref) {
 };
 
 StyledAutoCompleteMenuList.propTypes = {
+  cx: _propTypes["default"].func.isRequired,
   children: _propTypes["default"].oneOfType([_propTypes["default"].node, _propTypes["default"].arrayOf(_propTypes["default"].node)]).isRequired,
   innerProps: _propTypes["default"].object,
   // eslint-disable-line react/forbid-prop-types

@@ -26,9 +26,10 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 var StyledAutoCompleteDropdownIndicator = function StyledAutoCompleteDropdownIndicator(_ref) {
-  var innerProps = _ref.innerProps,
+  var cx = _ref.cx,
+      innerProps = _ref.innerProps,
       hideDropdownIndicator = _ref.selectProps.hideDropdownIndicator,
-      props = _objectWithoutProperties(_ref, ["innerProps", "selectProps"]);
+      props = _objectWithoutProperties(_ref, ["cx", "innerProps", "selectProps"]);
 
   return /*#__PURE__*/_react["default"].createElement(_Icon["default"], _extends({
     display: hideDropdownIndicator ? 'none' : 'block',
@@ -38,6 +39,7 @@ var StyledAutoCompleteDropdownIndicator = function StyledAutoCompleteDropdownInd
 };
 
 StyledAutoCompleteDropdownIndicator.propTypes = {
+  cx: _propTypes["default"].func.isRequired,
   innerProps: _propTypes["default"].object,
   // eslint-disable-line react/forbid-prop-types
   selectProps: _propTypes["default"].shape({

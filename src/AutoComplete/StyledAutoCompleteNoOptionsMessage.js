@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Text from '../Text';
 
 const StyledAutoCompleteNoOption = ({
+  cx,
   innerRef,
   innerProps,
   children,
@@ -20,6 +21,7 @@ const StyledAutoCompleteNoOption = ({
 );
 
 StyledAutoCompleteNoOption.propTypes = {
+  cx: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)

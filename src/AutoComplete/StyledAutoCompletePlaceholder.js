@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Flex from '../Flex';
 
-const StyledAutoCompletePlaceholder = ({ children, ...props }) => (
+const StyledAutoCompletePlaceholder = ({ cx, children, ...props }) => (
   <Flex
     alignSelf="center"
     color="text.placeholder"
@@ -15,6 +15,7 @@ const StyledAutoCompletePlaceholder = ({ children, ...props }) => (
 );
 
 StyledAutoCompletePlaceholder.propTypes = {
+  cx: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)

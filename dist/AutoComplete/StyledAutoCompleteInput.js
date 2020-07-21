@@ -36,28 +36,45 @@ var StyledFlex = ( /*#__PURE__*/0, _styledBase["default"])(_Flex["default"], {
 }, ";font-size:", function (_ref2) {
   var theme = _ref2.theme;
   return theme.fontSizes.size4;
-}, ";&:focus{outline:none;}" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9BdXRvQ29tcGxldGUvU3R5bGVkQXV0b0NvbXBsZXRlSW5wdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBTStCIiwiZmlsZSI6Ii4uLy4uL3NyYy9BdXRvQ29tcGxldGUvU3R5bGVkQXV0b0NvbXBsZXRlSW5wdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IFByb3BUeXBlcyBmcm9tICdwcm9wLXR5cGVzJztcbmltcG9ydCBzdHlsZWQgZnJvbSAnQGVtb3Rpb24vc3R5bGVkJztcblxuaW1wb3J0IEZsZXggZnJvbSAnLi4vRmxleCc7XG5cbmNvbnN0IFN0eWxlZEZsZXggPSBzdHlsZWQoRmxleClgXG4gIGZvbnQtZmFtaWx5OiAkeyh7IHRoZW1lIH0pID0+IHRoZW1lLmJyYW5kRm9udH07XG4gIGZvbnQtc2l6ZTogJHsoeyB0aGVtZSB9KSA9PiB0aGVtZS5mb250U2l6ZXMuc2l6ZTR9O1xuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IG5vbmU7XG4gIH1cbmA7XG5cbmNvbnN0IFN0eWxlZEF1dG9Db21wbGV0ZUlucHV0ID0gKHsgaW5uZXJSZWYsIGlubmVyUHJvcHMsIC4uLnByb3BzIH0pID0+IChcbiAgPFN0eWxlZEZsZXhcbiAgICBhcz1cImlucHV0XCJcbiAgICBib3JkZXI9XCJub25lXCJcbiAgICBmbGV4PVwiMVwiXG4gICAgcmVmPXtpbm5lclJlZn1cbiAgICB7Li4ueyAuLi5pbm5lclByb3BzLCAuLi5wcm9wcyB9fVxuICAvPlxuKTtcblxuU3R5bGVkQXV0b0NvbXBsZXRlSW5wdXQucHJvcFR5cGVzID0ge1xuICBpbm5lclByb3BzOiBQcm9wVHlwZXMub2JqZWN0LCAvLyBlc2xpbnQtZGlzYWJsZS1saW5lIHJlYWN0L2ZvcmJpZC1wcm9wLXR5cGVzXG4gIGlubmVyUmVmOiBQcm9wVHlwZXMuZnVuYy5pc1JlcXVpcmVkXG59O1xuXG5TdHlsZWRBdXRvQ29tcGxldGVJbnB1dC5kZWZhdWx0UHJvcHMgPSB7XG4gIGlubmVyUHJvcHM6IHt9XG59O1xuXG5leHBvcnQgZGVmYXVsdCBTdHlsZWRBdXRvQ29tcGxldGVJbnB1dDtcbiJdfQ== */"));
+}, ";&:focus{outline:none;}" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9BdXRvQ29tcGxldGUvU3R5bGVkQXV0b0NvbXBsZXRlSW5wdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBTStCIiwiZmlsZSI6Ii4uLy4uL3NyYy9BdXRvQ29tcGxldGUvU3R5bGVkQXV0b0NvbXBsZXRlSW5wdXQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IFByb3BUeXBlcyBmcm9tICdwcm9wLXR5cGVzJztcbmltcG9ydCBzdHlsZWQgZnJvbSAnQGVtb3Rpb24vc3R5bGVkJztcblxuaW1wb3J0IEZsZXggZnJvbSAnLi4vRmxleCc7XG5cbmNvbnN0IFN0eWxlZEZsZXggPSBzdHlsZWQoRmxleClgXG4gIGZvbnQtZmFtaWx5OiAkeyh7IHRoZW1lIH0pID0+IHRoZW1lLmJyYW5kRm9udH07XG4gIGZvbnQtc2l6ZTogJHsoeyB0aGVtZSB9KSA9PiB0aGVtZS5mb250U2l6ZXMuc2l6ZTR9O1xuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IG5vbmU7XG4gIH1cbmA7XG5cbmNvbnN0IFN0eWxlZEF1dG9Db21wbGV0ZUlucHV0ID0gKHtcbiAgY3gsXG4gIGdldFN0eWxlcyxcbiAgaW5uZXJQcm9wcyxcbiAgaW5uZXJSZWYsXG4gIGlzRGlzYWJsZWQsXG4gIGlzSGlkZGVuLFxuICBzZWxlY3RQcm9wcyxcbiAgdGhlbWUsXG4gIC4uLnByb3BzXG59KSA9PiB7XG4gIHJldHVybiAoXG4gICAgPFN0eWxlZEZsZXhcbiAgICAgIGFzPVwiaW5wdXRcIlxuICAgICAgYm9yZGVyPVwibm9uZVwiXG4gICAgICBmbGV4PVwiMVwiXG4gICAgICBkaXNhYmxlZD17aXNEaXNhYmxlZH1cbiAgICAgIHJlZj17aW5uZXJSZWZ9XG4gICAgICB7Li4ueyAuLi5pbm5lclByb3BzLCAuLi5wcm9wcyB9fVxuICAgIC8+XG4gICk7XG59O1xuXG5TdHlsZWRBdXRvQ29tcGxldGVJbnB1dC5wcm9wVHlwZXMgPSB7XG4gIGN4OiBQcm9wVHlwZXMuZnVuYy5pc1JlcXVpcmVkLFxuICBnZXRTdHlsZXM6IFByb3BUeXBlcy5mdW5jLmlzUmVxdWlyZWQsXG4gIGlubmVyUHJvcHM6IFByb3BUeXBlcy5vYmplY3QsIC8vIGVzbGludC1kaXNhYmxlLWxpbmUgcmVhY3QvZm9yYmlkLXByb3AtdHlwZXNcbiAgaW5uZXJSZWY6IFByb3BUeXBlcy5mdW5jLmlzUmVxdWlyZWQsXG4gIGlzRGlzYWJsZWQ6IFByb3BUeXBlcy5ib29sLFxuICBpc0hpZGRlbjogUHJvcFR5cGVzLmJvb2wsXG4gIHNlbGVjdFByb3BzOiBQcm9wVHlwZXMub2JqZWN0LmlzUmVxdWlyZWQsIC8vIGVzbGludC1kaXNhYmxlLWxpbmUgcmVhY3QvZm9yYmlkLXByb3AtdHlwZXNcbiAgdGhlbWU6IFByb3BUeXBlcy5vYmplY3QuaXNSZXF1aXJlZCAvLyBlc2xpbnQtZGlzYWJsZS1saW5lIHJlYWN0L2ZvcmJpZC1wcm9wLXR5cGVzXG59O1xuXG5TdHlsZWRBdXRvQ29tcGxldGVJbnB1dC5kZWZhdWx0UHJvcHMgPSB7XG4gIGlubmVyUHJvcHM6IHt9LFxuICBpc0hpZGRlbjogdW5kZWZpbmVkLFxuICBpc0Rpc2FibGVkOiB1bmRlZmluZWRcbn07XG5cbmV4cG9ydCBkZWZhdWx0IFN0eWxlZEF1dG9Db21wbGV0ZUlucHV0O1xuIl19 */"));
 
 var StyledAutoCompleteInput = function StyledAutoCompleteInput(_ref3) {
-  var innerRef = _ref3.innerRef,
+  var cx = _ref3.cx,
+      getStyles = _ref3.getStyles,
       innerProps = _ref3.innerProps,
-      props = _objectWithoutProperties(_ref3, ["innerRef", "innerProps"]);
+      innerRef = _ref3.innerRef,
+      isDisabled = _ref3.isDisabled,
+      isHidden = _ref3.isHidden,
+      selectProps = _ref3.selectProps,
+      theme = _ref3.theme,
+      props = _objectWithoutProperties(_ref3, ["cx", "getStyles", "innerProps", "innerRef", "isDisabled", "isHidden", "selectProps", "theme"]);
 
   return /*#__PURE__*/_react["default"].createElement(StyledFlex, _extends({
     as: "input",
     border: "none",
     flex: "1",
+    disabled: isDisabled,
     ref: innerRef
   }, _objectSpread(_objectSpread({}, innerProps), props)));
 };
 
 StyledAutoCompleteInput.propTypes = {
+  cx: _propTypes["default"].func.isRequired,
+  getStyles: _propTypes["default"].func.isRequired,
   innerProps: _propTypes["default"].object,
   // eslint-disable-line react/forbid-prop-types
-  innerRef: _propTypes["default"].func.isRequired
+  innerRef: _propTypes["default"].func.isRequired,
+  isDisabled: _propTypes["default"].bool,
+  isHidden: _propTypes["default"].bool,
+  selectProps: _propTypes["default"].object.isRequired,
+  // eslint-disable-line react/forbid-prop-types
+  theme: _propTypes["default"].object.isRequired // eslint-disable-line react/forbid-prop-types
+
 };
 StyledAutoCompleteInput.defaultProps = {
-  innerProps: {}
+  innerProps: {},
+  isHidden: undefined,
+  isDisabled: undefined
 };
 var _default = StyledAutoCompleteInput;
 exports["default"] = _default;
