@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import React from 'react';
 import { ClassNames, css, jsx } from '@emotion/core';
 import styled from '@emotion/styled';
 import {
@@ -39,7 +40,7 @@ StyledIcon.propTypes = {
   ...opacity.propTypes
 };
 
-const Icon = ({ name, theme, ...props }) => {
+const Icon = React.forwardRef(({ name, theme, ...props }, ref) => {
   const { iconFontPrefix } = theme;
 
   return (
@@ -47,12 +48,13 @@ const Icon = ({ name, theme, ...props }) => {
       {({ cx }) => (
         <StyledIcon
           className={cx(iconFontPrefix, `${iconFontPrefix}-${name}`)}
+          ref={ref}
           {...props}
         />
       )}
     </ClassNames>
   );
-};
+});
 
 Icon.propTypes = {
   /**

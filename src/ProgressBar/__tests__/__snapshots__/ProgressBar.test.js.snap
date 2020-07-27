@@ -151,14 +151,14 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
           </EmotionCssPropInternal>
         </div>
       </BarBackground>
-      <WithTheme(Icon)
+      <WithTheme(Component)
         color="monochrome.grey40"
         flex="0"
         fontSize="size4"
         ml="smaller"
         name="calendar"
       >
-        <Icon
+        <ForwardRef
           color="monochrome.grey40"
           flex="0"
           fontSize="size4"
@@ -500,8 +500,8 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
               />
             </StyledIcon>
           </ForwardRef(render)>
-        </Icon>
-      </WithTheme(Icon)>
+        </ForwardRef>
+      </WithTheme(Component)>
     </div>
   </ProgressBarContainer>
 </ProgressBar>
@@ -658,14 +658,14 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
           </EmotionCssPropInternal>
         </div>
       </BarBackground>
-      <WithTheme(Icon)
+      <WithTheme(Component)
         color="text.default"
         flex="0"
         fontSize="size4"
         ml="smaller"
         name="calendar"
       >
-        <Icon
+        <ForwardRef
           color="text.default"
           flex="0"
           fontSize="size4"
@@ -1007,8 +1007,8 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
               />
             </StyledIcon>
           </ForwardRef(render)>
-        </Icon>
-      </WithTheme(Icon)>
+        </ForwardRef>
+      </WithTheme(Component)>
     </div>
   </ProgressBarContainer>
 </ProgressBar>

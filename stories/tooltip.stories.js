@@ -58,7 +58,7 @@ stories.add(
       </Box>
 
       <Box>
-        <Tooltip placement="right" content="Icon!">
+        <Tooltip placement="right" content="Icon Button!">
           <Button iconEnd={buttonIcon}>Icon Button</Button>
         </Tooltip>
       </Box>
@@ -76,8 +76,14 @@ stories.add(
       </Box>
 
       <Box>
-        <Tooltip placement="right" content="Icon!">
+        <Tooltip placement="right" content="John Doe">
           <Avatar name="John Doe" />
+        </Tooltip>
+      </Box>
+
+      <Box>
+        <Tooltip placement="right" content="Download Icon!">
+          <Icon name="download" />
         </Tooltip>
       </Box>
     </Grid>
