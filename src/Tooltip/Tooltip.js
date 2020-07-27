@@ -38,7 +38,7 @@ const globalTippyStyles = (theme) => {
   `;
 };
 
-const Tooltip = ({ content, children, theme, ...props }) => {
+const Tooltip = ({ content, children, theme, position, ...props }) => {
   const tooltipContent = (
     <ThemeProvider theme={theme}>
       <StyledTooltipContent>{content}</StyledTooltipContent>
@@ -60,6 +60,7 @@ const Tooltip = ({ content, children, theme, ...props }) => {
           animation: 'fade',
           inertia: true,
           plugins: [animateFill, sticky],
+          placement: position,
           ...props
         }}
       >
@@ -82,9 +83,18 @@ Tooltip.propTypes = {
   content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
 
   /**
+   * Position for the tooltip (deprecated, use placement instead)
+   * */
+  position: PropTypes.string,
+
+  /**
    * Theme used for styling the Tooltip.
    */
   theme: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
+};
+
+Tooltip.defaultProps = {
+  position: undefined
 };
 
 export default withTheme(Tooltip);
