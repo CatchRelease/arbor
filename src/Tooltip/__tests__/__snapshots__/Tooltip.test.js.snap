@@ -759,6 +759,11 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             "fn": [Function],
             "name": "animateFill",
           },
+          Object {
+            "defaultValue": false,
+            "fn": [Function],
+            "name": "sticky",
+          },
         ]
       }
       theme="arbor"
@@ -1108,6 +1113,11 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
               "defaultValue": false,
               "fn": [Function],
               "name": "animateFill",
+            },
+            Object {
+              "defaultValue": false,
+              "fn": [Function],
+              "name": "sticky",
             },
           ]
         }
