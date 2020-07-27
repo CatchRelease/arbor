@@ -94,7 +94,7 @@ Tooltip.propTypes = {
 };
 
 Tooltip.defaultProps = {
-  position: undefined
+  position: 'top'
 };
 
 export default withTheme(Tooltip);
