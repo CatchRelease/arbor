@@ -3,7 +3,7 @@ import React from 'react'; /* eslint-disable-line no-unused-vars */
 import { Global, css, jsx } from '@emotion/core';
 import { ThemeProvider, withTheme } from 'emotion-theming';
 import PropTypes from 'prop-types';
-import Tippy from '@tippy.js/react';
+import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { animateFill, sticky } from 'tippy.js';
 
@@ -54,9 +54,7 @@ const Tooltip = ({ content, children, theme, position, ...props }) => {
           theme: 'arbor',
           arrow: true,
           content: tooltipContent,
-          distance: 8,
           duration: 300,
-          updateDuration: 0,
           animation: 'fade',
           inertia: true,
           plugins: [animateFill, sticky],

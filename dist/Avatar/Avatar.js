@@ -68,7 +68,7 @@ var getText = function getText(name) {
   return name.match(/[A-Za-z]/) ? getInitials(name).toUpperCase() : name;
 };
 
-var Avatar = function Avatar(_ref) {
+var Avatar = _react["default"].forwardRef(function (_ref, ref) {
   var name = _ref.name,
       subtle = _ref.subtle,
       size = _ref.size,
@@ -83,13 +83,14 @@ var Avatar = function Avatar(_ref) {
     borderRadius: '50%',
     justifyContent: 'center',
     size: size,
-    subtle: subtle
+    subtle: subtle,
+    ref: ref
   }, props), /*#__PURE__*/_react["default"].createElement(_StyledAvatarText["default"], {
     baseColor: baseColor,
     size: size,
     subtle: subtle
   }, getText(name)));
-};
+});
 
 Avatar.propTypes = {
   /**

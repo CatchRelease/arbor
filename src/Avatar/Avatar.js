@@ -27,28 +27,31 @@ const getInitials = (name) => {
 const getText = (name) =>
   name.match(/[A-Za-z]/) ? getInitials(name).toUpperCase() : name;
 
-const Avatar = ({ name, subtle, size, baseColor: baseColorProp, ...props }) => {
-  const baseColor = baseColorProp || colorForString(name, AVATAR_COLORS);
+const Avatar = React.forwardRef(
+  ({ name, subtle, size, baseColor: baseColorProp, ...props }, ref) => {
+    const baseColor = baseColorProp || colorForString(name, AVATAR_COLORS);
 
-  return (
-    <StyledAvatar
-      {...{
-        alignItems: 'center',
-        baseColor,
-        border: '1px solid',
-        borderRadius: '50%',
-        justifyContent: 'center',
-        size,
-        subtle,
-        ...props
-      }}
-    >
-      <StyledAvatarText {...{ baseColor, size, subtle }}>
-        {getText(name)}
-      </StyledAvatarText>
-    </StyledAvatar>
-  );
-};
+    return (
+      <StyledAvatar
+        {...{
+          alignItems: 'center',
+          baseColor,
+          border: '1px solid',
+          borderRadius: '50%',
+          justifyContent: 'center',
+          size,
+          subtle,
+          ref,
+          ...props
+        }}
+      >
+        <StyledAvatarText {...{ baseColor, size, subtle }}>
+          {getText(name)}
+        </StyledAvatarText>
+      </StyledAvatar>
+    );
+  }
+);
 
 Avatar.propTypes = {
   /**

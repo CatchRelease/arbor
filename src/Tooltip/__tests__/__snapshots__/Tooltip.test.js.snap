@@ -16,6 +16,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
 >
   <Tooltip
     content="Hello World"
+    position="top"
     theme={
       Object {
         "avatarFontSizes": Object {
@@ -749,9 +750,9 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           </StyledTooltipContent>
         </ThemeProvider>
       }
-      distance={8}
       duration={300}
       inertia={true}
+      placement="top"
       plugins={
         Array [
           Object {
@@ -767,7 +768,6 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
         ]
       }
       theme="arbor"
-      updateDuration={0}
     >
       <Tippy
         animation="fade"
@@ -1104,9 +1104,9 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             </StyledTooltipContent>
           </ThemeProvider>
         }
-        distance={8}
         duration={300}
         inertia={true}
+        placement="top"
         plugins={
           Array [
             Object {
@@ -1122,7 +1122,6 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           ]
         }
         theme="arbor"
-        updateDuration={0}
       >
         <p>
           I have a tooltip

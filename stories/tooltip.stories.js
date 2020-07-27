@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import notes from './tooltip.md';
 import {
+  Avatar,
   Box,
   Button,
   Grid,
@@ -71,6 +72,12 @@ stories.add(
           >
             8 Action Items
           </Link>
+        </Tooltip>
+      </Box>
+
+      <Box>
+        <Tooltip placement="right" content="Icon!">
+          <Avatar name="John Doe" />
         </Tooltip>
       </Box>
     </Grid>
