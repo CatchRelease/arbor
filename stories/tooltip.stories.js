@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import notes from './tooltip.md';
 import {
+  Avatar,
   Box,
   Button,
   Grid,
@@ -41,7 +42,7 @@ stories.add(
       justifyItems="center"
     >
       <Box>
-        <Tooltip position="bottom" content={<FancyTooltipContent />}>
+        <Tooltip placement="bottom" content={<FancyTooltipContent />}>
           <div>
             <Button variant="primary">Button</Button>
           </div>
@@ -57,7 +58,7 @@ stories.add(
       </Box>
 
       <Box>
-        <Tooltip position="right" content="Icon!">
+        <Tooltip placement="right" content="Icon Button!">
           <Button iconEnd={buttonIcon}>Icon Button</Button>
         </Tooltip>
       </Box>
@@ -71,6 +72,18 @@ stories.add(
           >
             8 Action Items
           </Link>
+        </Tooltip>
+      </Box>
+
+      <Box>
+        <Tooltip placement="right" content="John Doe">
+          <Avatar name="John Doe" />
+        </Tooltip>
+      </Box>
+
+      <Box>
+        <Tooltip placement="right" content="Download Icon!">
+          <Icon name="download" />
         </Tooltip>
       </Box>
     </Grid>

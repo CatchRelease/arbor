@@ -5,19 +5,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+
+var _react = require("react");
 
 var _core = require("@emotion/core");
 
-var _emotionTheming = require("emotion-theming");
-
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-require("react-tippy/dist/tippy.css");
+var _react2 = _interopRequireDefault(require("@tippyjs/react"));
 
-var _reactTippy = require("react-tippy");
+require("tippy.js/dist/tippy.css");
 
-var _StyledTooltipContent = _interopRequireDefault(require("./StyledTooltipContent"));
+var _tippy2 = require("tippy.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -27,38 +27,89 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var globalTippyStyles = function globalTippyStyles(theme) {
-  var arrowColor = theme.colors.monochrome.grey90;
-  return /*#__PURE__*/(0, _core.css)(".tippy-popper{.tippy-tooltip.arbor-theme{background:none;padding:0;}}.tippy-popper[x-placement='bottom'] .tippy-tooltip.arbor-theme [x-arrow]{border-bottom-color:", arrowColor, ";}.tippy-popper[x-placement='top'] .tippy-tooltip.arbor-theme [x-arrow]{border-top-color:", arrowColor, ";}.tippy-popper[x-placement='left'] .tippy-tooltip.arbor-theme [x-arrow]{border-left-color:", arrowColor, ";}.tippy-popper[x-placement='right'] .tippy-tooltip.arbor-theme [x-arrow]{border-right-color:", arrowColor, ";}" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9Ub29sdGlwL1Rvb2x0aXAuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBYVkiLCJmaWxlIjoiLi4vLi4vc3JjL1Rvb2x0aXAvVG9vbHRpcC5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKiBAanN4IGpzeCAqL1xuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsgLyogZXNsaW50LWRpc2FibGUtbGluZSBuby11bnVzZWQtdmFycyAqL1xuaW1wb3J0IHsgR2xvYmFsLCBjc3MsIGpzeCB9IGZyb20gJ0BlbW90aW9uL2NvcmUnO1xuaW1wb3J0IHsgVGhlbWVQcm92aWRlciwgd2l0aFRoZW1lIH0gZnJvbSAnZW1vdGlvbi10aGVtaW5nJztcbmltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcyc7XG5pbXBvcnQgJ3JlYWN0LXRpcHB5L2Rpc3QvdGlwcHkuY3NzJztcbmltcG9ydCB7IFRvb2x0aXAgYXMgVGlwcHlUb29sdGlwIH0gZnJvbSAncmVhY3QtdGlwcHknO1xuXG5pbXBvcnQgU3R5bGVkVG9vbHRpcENvbnRlbnQgZnJvbSAnLi9TdHlsZWRUb29sdGlwQ29udGVudCc7XG5cbmNvbnN0IGdsb2JhbFRpcHB5U3R5bGVzID0gKHRoZW1lKSA9PiB7XG4gIGNvbnN0IGFycm93Q29sb3IgPSB0aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5OTA7XG5cbiAgcmV0dXJuIGNzc2BcbiAgICAudGlwcHktcG9wcGVyIHtcbiAgICAgIC50aXBweS10b29sdGlwLmFyYm9yLXRoZW1lIHtcbiAgICAgICAgYmFja2dyb3VuZDogbm9uZTtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgIH1cbiAgICB9XG5cbiAgICAudGlwcHktcG9wcGVyW3gtcGxhY2VtZW50PSdib3R0b20nXSAudGlwcHktdG9vbHRpcC5hcmJvci10aGVtZSBbeC1hcnJvd10ge1xuICAgICAgYm9yZGVyLWJvdHRvbS1jb2xvcjogJHthcnJvd0NvbG9yfTtcbiAgICB9XG5cbiAgICAudGlwcHktcG9wcGVyW3gtcGxhY2VtZW50PSd0b3AnXSAudGlwcHktdG9vbHRpcC5hcmJvci10aGVtZSBbeC1hcnJvd10ge1xuICAgICAgYm9yZGVyLXRvcC1jb2xvcjogJHthcnJvd0NvbG9yfTtcbiAgICB9XG5cbiAgICAudGlwcHktcG9wcGVyW3gtcGxhY2VtZW50PSdsZWZ0J10gLnRpcHB5LXRvb2x0aXAuYXJib3ItdGhlbWUgW3gtYXJyb3ddIHtcbiAgICAgIGJvcmRlci1sZWZ0LWNvbG9yOiAke2Fycm93Q29sb3J9O1xuICAgIH1cblxuICAgIC50aXBweS1wb3BwZXJbeC1wbGFjZW1lbnQ9J3JpZ2h0J10gLnRpcHB5LXRvb2x0aXAuYXJib3ItdGhlbWUgW3gtYXJyb3ddIHtcbiAgICAgIGJvcmRlci1yaWdodC1jb2xvcjogJHthcnJvd0NvbG9yfTtcbiAgICB9XG4gIGA7XG59O1xuXG5jb25zdCBUb29sdGlwID0gKHsgY29udGVudCwgY2hpbGRyZW4sIHRoZW1lLCAuLi5wcm9wcyB9KSA9PiB7XG4gIGNvbnN0IHRvb2x0aXBDb250ZW50ID0gKFxuICAgIDxUaGVtZVByb3ZpZGVyIHRoZW1lPXt0aGVtZX0+XG4gICAgICA8U3R5bGVkVG9vbHRpcENvbnRlbnQ+e2NvbnRlbnR9PC9TdHlsZWRUb29sdGlwQ29udGVudD5cbiAgICA8L1RoZW1lUHJvdmlkZXI+XG4gICk7XG5cbiAgcmV0dXJuIChcbiAgICA8PlxuICAgICAgPEdsb2JhbCBzdHlsZXM9e2dsb2JhbFRpcHB5U3R5bGVzfSAvPlxuXG4gICAgICA8VGlwcHlUb29sdGlwXG4gICAgICAgIHsuLi57XG4gICAgICAgICAgdGhlbWU6ICdhcmJvcicsXG4gICAgICAgICAgYXJyb3c6IHRydWUsXG4gICAgICAgICAgaHRtbDogdG9vbHRpcENvbnRlbnQsXG4gICAgICAgICAgZGlzdGFuY2U6IDgsXG4gICAgICAgICAgZHVyYXRpb246IDMwMCxcbiAgICAgICAgICB1cGRhdGVEdXJhdGlvbjogMCxcbiAgICAgICAgICBhcnJvd1NpemU6ICdtZWRpdW0nLFxuICAgICAgICAgIGFuaW1hdGlvbjogJ2ZhZGUnLFxuICAgICAgICAgIGluZXJ0aWE6IHRydWUsXG4gICAgICAgICAgYW5pbWF0ZUZpbGw6IGZhbHNlLFxuICAgICAgICAgIC4uLnByb3BzXG4gICAgICAgIH19XG4gICAgICA+XG4gICAgICAgIHtjaGlsZHJlbn1cbiAgICAgIDwvVGlwcHlUb29sdGlwPlxuICAgIDwvPlxuICApO1xufTtcblxuVG9vbHRpcC5wcm9wVHlwZXMgPSB7XG4gIC8qKlxuICAgKiBOb2RlIHdoaWNoIHdpbGwgdHJpZ2dlciB0aGUgdG9vbHRpcC4gVGhpcyBzaG91bGQgYmUgZWl0aGVyIGFuIEljb24sIEJ1dHRvbixcbiAgICogb3IgTGluay5cbiAgICogKi9cbiAgY2hpbGRyZW46IFByb3BUeXBlcy5lbGVtZW50LmlzUmVxdWlyZWQsXG5cbiAgLyoqXG4gICAqIENvbnRlbnQgdG8gZGlzcGxheSB3aXRoaW4gdGhlIHRvb2x0aXAgd2hlbiBpdCBpcyBkaXNwbGF5ZWRcbiAgICogKi9cbiAgY29udGVudDogUHJvcFR5cGVzLm9uZU9mVHlwZShbUHJvcFR5cGVzLnN0cmluZywgUHJvcFR5cGVzLm5vZGVdKS5pc1JlcXVpcmVkLFxuXG4gIC8qKlxuICAgKiBUaGVtZSB1c2VkIGZvciBzdHlsaW5nIHRoZSBUb29sdGlwLlxuICAgKi9cbiAgdGhlbWU6IFByb3BUeXBlcy5vYmplY3QuaXNSZXF1aXJlZCAvLyBlc2xpbnQtZGlzYWJsZS1saW5lIHJlYWN0L2ZvcmJpZC1wcm9wLXR5cGVzXG59O1xuXG5leHBvcnQgZGVmYXVsdCB3aXRoVGhlbWUoVG9vbHRpcCk7XG4iXX0= */"));
-};
+var StyledTippy = ( /*#__PURE__*/0, _styledBase["default"])(_react2["default"], {
+  target: "e1ntyi310",
+  label: "StyledTippy"
+})("background:none;padding:0;&[data-placement^='top'] > .tippy-arrow::before{border-top-color:", function (props) {
+  return props.theme.colors.monochrome.grey90;
+}, ";}&[data-placement^='bottom'] > .tippy-arrow::before{border-bottom-color:", function (props) {
+  return props.theme.colors.monochrome.grey90;
+}, ";}&[data-placement^='left'] > .tippy-arrow::before{border-left-color:", function (props) {
+  return props.theme.colors.monochrome.grey90;
+}, ";}&[data-placement^='right'] > .tippy-arrow::before{border-right-color:", function (props) {
+  return props.theme.colors.monochrome.grey90;
+}, ";}.tippy-content{background:", function (props) {
+  return props.theme.colors.monochrome.grey90;
+}, ";border-radius:", function (props) {
+  return props.theme.space.small;
+}, ";color:", function (props) {
+  return props.theme.colors.monochrome.white;
+}, ";font-size:", function (props) {
+  return props.theme.fontSizes.size4;
+}, ";padding:", function (props) {
+  return props.theme.space.smaller;
+}, ";font-family:", function (props) {
+  return props.theme.brandFont;
+}, ";line-height:", function (props) {
+  return props.theme.space.small;
+}, ";}" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9Ub29sdGlwL1Rvb2x0aXAuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBU2lDIiwiZmlsZSI6Ii4uLy4uL3NyYy9Ub29sdGlwL1Rvb2x0aXAuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKiogQGpzeCBqc3ggKi9cbmltcG9ydCB7IHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOyAvKiBlc2xpbnQtZGlzYWJsZS1saW5lIG5vLXVudXNlZC12YXJzICovXG5pbXBvcnQgeyBqc3ggfSBmcm9tICdAZW1vdGlvbi9jb3JlJztcbmltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcyc7XG5pbXBvcnQgVGlwcHkgZnJvbSAnQHRpcHB5anMvcmVhY3QnO1xuaW1wb3J0ICd0aXBweS5qcy9kaXN0L3RpcHB5LmNzcyc7XG5pbXBvcnQgeyBhbmltYXRlRmlsbCwgc3RpY2t5IH0gZnJvbSAndGlwcHkuanMnO1xuaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xuXG5jb25zdCBTdHlsZWRUaXBweSA9IHN0eWxlZChUaXBweSlgXG4gIGJhY2tncm91bmQ6IG5vbmU7XG4gIHBhZGRpbmc6IDA7XG5cbiAgJltkYXRhLXBsYWNlbWVudF49J3RvcCddID4gLnRpcHB5LWFycm93OjpiZWZvcmUge1xuICAgIGJvcmRlci10b3AtY29sb3I6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5OTB9O1xuICB9XG5cbiAgJltkYXRhLXBsYWNlbWVudF49J2JvdHRvbSddID4gLnRpcHB5LWFycm93OjpiZWZvcmUge1xuICAgIGJvcmRlci1ib3R0b20tY29sb3I6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5OTB9O1xuICB9XG5cbiAgJltkYXRhLXBsYWNlbWVudF49J2xlZnQnXSA+IC50aXBweS1hcnJvdzo6YmVmb3JlIHtcbiAgICBib3JkZXItbGVmdC1jb2xvcjogJHsocHJvcHMpID0+IHByb3BzLnRoZW1lLmNvbG9ycy5tb25vY2hyb21lLmdyZXk5MH07XG4gIH1cblxuICAmW2RhdGEtcGxhY2VtZW50Xj0ncmlnaHQnXSA+IC50aXBweS1hcnJvdzo6YmVmb3JlIHtcbiAgICBib3JkZXItcmlnaHQtY29sb3I6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5OTB9O1xuICB9XG5cbiAgLnRpcHB5LWNvbnRlbnQge1xuICAgIGJhY2tncm91bmQ6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5OTB9O1xuICAgIGJvcmRlci1yYWRpdXM6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5zcGFjZS5zbWFsbH07XG4gICAgY29sb3I6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5jb2xvcnMubW9ub2Nocm9tZS53aGl0ZX07XG4gICAgZm9udC1zaXplOiAkeyhwcm9wcykgPT4gcHJvcHMudGhlbWUuZm9udFNpemVzLnNpemU0fTtcbiAgICBwYWRkaW5nOiAkeyhwcm9wcykgPT4gcHJvcHMudGhlbWUuc3BhY2Uuc21hbGxlcn07XG4gICAgZm9udC1mYW1pbHk6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5icmFuZEZvbnR9O1xuICAgIGxpbmUtaGVpZ2h0OiAkeyhwcm9wcykgPT4gcHJvcHMudGhlbWUuc3BhY2Uuc21hbGx9O1xuICB9XG5gO1xuXG5jb25zdCBUb29sdGlwID0gKHsgY29udGVudCwgY2hpbGRyZW4sIHJlbmRlciwgLi4ucHJvcHMgfSkgPT4ge1xuICBjb25zdCBbbW91bnRlZCwgc2V0TW91bnRlZF0gPSB1c2VTdGF0ZShmYWxzZSk7XG5cbiAgY29uc3QgbGF6eVBsdWdpbiA9IHtcbiAgICBmbjogKCkgPT4gKHtcbiAgICAgIG9uU2hvdzogKCkgPT4gc2V0TW91bnRlZCh0cnVlKSxcbiAgICAgIG9uSGlkZGVuOiAoKSA9PiBzZXRNb3VudGVkKGZhbHNlKVxuICAgIH0pXG4gIH07XG5cbiAgY29uc3QgcmVuZGVyUHJvcHMgPSB7fTtcblxuICBpZiAocmVuZGVyKSB7XG4gICAgcmVuZGVyUHJvcHMucmVuZGVyID0gKC4uLmFyZ3MpID0+IChtb3VudGVkID8gcmVuZGVyKC4uLmFyZ3MpIDogJycpO1xuICB9IGVsc2Uge1xuICAgIHJlbmRlclByb3BzLmNvbnRlbnQgPSBtb3VudGVkID8gY29udGVudCA6ICcnO1xuICB9XG5cbiAgcmV0dXJuIChcbiAgICA8U3R5bGVkVGlwcHlcbiAgICAgIHsuLi57XG4gICAgICAgIGFycm93OiB0cnVlLFxuICAgICAgICBkdXJhdGlvbjogMzAwLFxuICAgICAgICBhbmltYXRpb246ICdmYWRlJyxcbiAgICAgICAgaW5lcnRpYTogdHJ1ZSxcbiAgICAgICAgcGx1Z2luczogW2FuaW1hdGVGaWxsLCBzdGlja3ksIGxhenlQbHVnaW5dLFxuICAgICAgICAuLi5wcm9wcyxcbiAgICAgICAgLi4ucmVuZGVyUHJvcHNcbiAgICAgIH19XG4gICAgPlxuICAgICAge2NoaWxkcmVufVxuICAgIDwvU3R5bGVkVGlwcHk+XG4gICk7XG59O1xuXG5Ub29sdGlwLnByb3BUeXBlcyA9IHtcbiAgLyoqXG4gICAqIE5vZGUgd2hpY2ggd2lsbCB0cmlnZ2VyIHRoZSB0b29sdGlwLiBUaGlzIHNob3VsZCBiZSBlaXRoZXIgYW4gSWNvbiwgQnV0dG9uLFxuICAgKiBvciBMaW5rLlxuICAgKiAqL1xuICBjaGlsZHJlbjogUHJvcFR5cGVzLmVsZW1lbnQuaXNSZXF1aXJlZCxcblxuICAvKipcbiAgICogQ29udGVudCB0byBkaXNwbGF5IHdpdGhpbiB0aGUgdG9vbHRpcCB3aGVuIGl0IGlzIGRpc3BsYXllZFxuICAgKiAqL1xuICBjb250ZW50OiBQcm9wVHlwZXMub25lT2ZUeXBlKFtQcm9wVHlwZXMuc3RyaW5nLCBQcm9wVHlwZXMubm9kZV0pLFxuXG4gIC8qKlxuICAgKiBSZW5kZXIgZnVuY3Rpb24gZm9yIHJlbmRlcmluZyB0aXBweSBlbGVtZW50IGZyb20gc2NyYXRjaFxuICAgKi9cbiAgcmVuZGVyOiBQcm9wVHlwZXMuZnVuY1xufTtcblxuVG9vbHRpcC5kZWZhdWx0UHJvcHMgPSB7XG4gIGNvbnRlbnQ6IG51bGwsXG4gIHJlbmRlcjogbnVsbFxufTtcblxuZXhwb3J0IGRlZmF1bHQgVG9vbHRpcDtcbiJdfQ== */"));
 
 var Tooltip = function Tooltip(_ref) {
   var content = _ref.content,
       children = _ref.children,
-      theme = _ref.theme,
-      props = _objectWithoutProperties(_ref, ["content", "children", "theme"]);
+      render = _ref.render,
+      props = _objectWithoutProperties(_ref, ["content", "children", "render"]);
 
-  var tooltipContent = (0, _core.jsx)(_emotionTheming.ThemeProvider, {
-    theme: theme
-  }, (0, _core.jsx)(_StyledTooltipContent["default"], null, content));
-  return (0, _core.jsx)(_react["default"].Fragment, null, (0, _core.jsx)(_core.Global, {
-    styles: globalTippyStyles
-  }), (0, _core.jsx)(_reactTippy.Tooltip, _objectSpread({
-    theme: 'arbor',
+  var _useState = (0, _react.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      mounted = _useState2[0],
+      setMounted = _useState2[1];
+
+  var lazyPlugin = {
+    fn: function fn() {
+      return {
+        onShow: function onShow() {
+          return setMounted(true);
+        },
+        onHidden: function onHidden() {
+          return setMounted(false);
+        }
+      };
+    }
+  };
+  var renderProps = {};
+
+  if (render) {
+    renderProps.render = function () {
+      return mounted ? render.apply(void 0, arguments) : '';
+    };
+  } else {
+    renderProps.content = mounted ? content : '';
+  }
+
+  return (0, _core.jsx)(StyledTippy, _objectSpread(_objectSpread({
     arrow: true,
-    html: tooltipContent,
-    distance: 8,
     duration: 300,
-    updateDuration: 0,
-    arrowSize: 'medium',
     animation: 'fade',
     inertia: true,
-    animateFill: false
-  }, props), children));
+    plugins: [_tippy2.animateFill, _tippy2.sticky, lazyPlugin]
+  }, props), renderProps), children);
 };
 
 Tooltip.propTypes = {
@@ -71,15 +122,16 @@ Tooltip.propTypes = {
   /**
    * Content to display within the tooltip when it is displayed
    * */
-  content: _propTypes["default"].oneOfType([_propTypes["default"].string, _propTypes["default"].node]).isRequired,
+  content: _propTypes["default"].oneOfType([_propTypes["default"].string, _propTypes["default"].node]),
 
   /**
-   * Theme used for styling the Tooltip.
+   * Render function for rendering tippy element from scratch
    */
-  theme: _propTypes["default"].object.isRequired // eslint-disable-line react/forbid-prop-types
-
+  render: _propTypes["default"].func
 };
-
-var _default = (0, _emotionTheming.withTheme)(Tooltip);
-
+Tooltip.defaultProps = {
+  content: null,
+  render: null
+};
+var _default = Tooltip;
 exports["default"] = _default;

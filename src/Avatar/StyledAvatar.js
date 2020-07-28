@@ -5,30 +5,36 @@ import Flex from '../Flex';
 
 import { sizes } from '../theme/avatars';
 
-export const StyledAvatar = ({
-  baseColor,
-  border,
-  size,
-  subtle,
-  theme: { avatarSizes }, // eslint-disable-line react/prop-types
-  ...props
-}) => {
-  const bg = subtle ? `monochrome.white` : baseColor;
-  const borderColor = baseColor;
+export const StyledAvatar = React.forwardRef(
+  (
+    {
+      baseColor,
+      border,
+      size,
+      subtle,
+      theme: { avatarSizes }, // eslint-disable-line react/prop-types
+      ...props
+    },
+    ref
+  ) => {
+    const bg = subtle ? `monochrome.white` : baseColor;
+    const borderColor = baseColor;
 
-  return (
-    <Flex
-      {...{
-        width: avatarSizes[size],
-        height: avatarSizes[size],
-        bg,
-        border,
-        borderColor,
-        ...props
-      }}
-    />
-  );
-};
+    return (
+      <Flex
+        {...{
+          width: avatarSizes[size],
+          height: avatarSizes[size],
+          bg,
+          border,
+          borderColor,
+          ref,
+          ...props
+        }}
+      />
+    );
+  }
+);
 
 StyledAvatar.propTypes = {
   baseColor: PropTypes.string.isRequired,

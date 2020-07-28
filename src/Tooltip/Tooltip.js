@@ -1,71 +1,75 @@
 /** @jsx jsx */
-import React from 'react'; /* eslint-disable-line no-unused-vars */
-import { Global, css, jsx } from '@emotion/core';
-import { ThemeProvider, withTheme } from 'emotion-theming';
+import { useState } from 'react'; /* eslint-disable-line no-unused-vars */
+import { jsx } from '@emotion/core';
 import PropTypes from 'prop-types';
-import 'react-tippy/dist/tippy.css';
-import { Tooltip as TippyTooltip } from 'react-tippy';
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import { animateFill, sticky } from 'tippy.js';
+import styled from '@emotion/styled';
 
-import StyledTooltipContent from './StyledTooltipContent';
+const StyledTippy = styled(Tippy)`
+  background: none;
+  padding: 0;
 
-const globalTippyStyles = (theme) => {
-  const arrowColor = theme.colors.monochrome.grey90;
+  &[data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: ${(props) => props.theme.colors.monochrome.grey90};
+  }
 
-  return css`
-    .tippy-popper {
-      .tippy-tooltip.arbor-theme {
-        background: none;
-        padding: 0;
-      }
-    }
+  &[data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: ${(props) => props.theme.colors.monochrome.grey90};
+  }
 
-    .tippy-popper[x-placement='bottom'] .tippy-tooltip.arbor-theme [x-arrow] {
-      border-bottom-color: ${arrowColor};
-    }
+  &[data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: ${(props) => props.theme.colors.monochrome.grey90};
+  }
 
-    .tippy-popper[x-placement='top'] .tippy-tooltip.arbor-theme [x-arrow] {
-      border-top-color: ${arrowColor};
-    }
+  &[data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: ${(props) => props.theme.colors.monochrome.grey90};
+  }
 
-    .tippy-popper[x-placement='left'] .tippy-tooltip.arbor-theme [x-arrow] {
-      border-left-color: ${arrowColor};
-    }
+  .tippy-content {
+    background: ${(props) => props.theme.colors.monochrome.grey90};
+    border-radius: ${(props) => props.theme.space.small};
+    color: ${(props) => props.theme.colors.monochrome.white};
+    font-size: ${(props) => props.theme.fontSizes.size4};
+    padding: ${(props) => props.theme.space.smaller};
+    font-family: ${(props) => props.theme.brandFont};
+    line-height: ${(props) => props.theme.space.small};
+  }
+`;
 
-    .tippy-popper[x-placement='right'] .tippy-tooltip.arbor-theme [x-arrow] {
-      border-right-color: ${arrowColor};
-    }
-  `;
-};
+const Tooltip = ({ content, children, render, ...props }) => {
+  const [mounted, setMounted] = useState(false);
 
-const Tooltip = ({ content, children, theme, ...props }) => {
-  const tooltipContent = (
-    <ThemeProvider theme={theme}>
-      <StyledTooltipContent>{content}</StyledTooltipContent>
-    </ThemeProvider>
-  );
+  const lazyPlugin = {
+    fn: () => ({
+      onShow: () => setMounted(true),
+      onHidden: () => setMounted(false)
+    })
+  };
+
+  const renderProps = {};
+
+  if (render) {
+    renderProps.render = (...args) => (mounted ? render(...args) : '');
+  } else {
+    renderProps.content = mounted ? content : '';
+  }
 
   return (
-    <>
-      <Global styles={globalTippyStyles} />
-
-      <TippyTooltip
-        {...{
-          theme: 'arbor',
-          arrow: true,
-          html: tooltipContent,
-          distance: 8,
-          duration: 300,
-          updateDuration: 0,
-          arrowSize: 'medium',
-          animation: 'fade',
-          inertia: true,
-          animateFill: false,
-          ...props
-        }}
-      >
-        {children}
-      </TippyTooltip>
-    </>
+    <StyledTippy
+      {...{
+        arrow: true,
+        duration: 300,
+        animation: 'fade',
+        inertia: true,
+        plugins: [animateFill, sticky, lazyPlugin],
+        ...props,
+        ...renderProps
+      }}
+    >
+      {children}
+    </StyledTippy>
   );
 };
 
@@ -79,12 +83,17 @@ Tooltip.propTypes = {
   /**
    * Content to display within the tooltip when it is displayed
    * */
-  content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
 
   /**
-   * Theme used for styling the Tooltip.
+   * Render function for rendering tippy element from scratch
    */
-  theme: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
+  render: PropTypes.func
 };
 
-export default withTheme(Tooltip);
+Tooltip.defaultProps = {
+  content: null,
+  render: null
+};
+
+export default Tooltip;

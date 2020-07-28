@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import React from 'react';
 import { ClassNames, css, jsx } from '@emotion/core';
 import styled from '@emotion/styled';
 import {
@@ -39,7 +40,7 @@ StyledIcon.propTypes = {
   ...opacity.propTypes
 };
 
-const Icon = ({ name, theme, ...props }) => {
+const Icon = ({ name, theme, iconRef, ...props }) => {
   const { iconFontPrefix } = theme;
 
   return (
@@ -47,6 +48,7 @@ const Icon = ({ name, theme, ...props }) => {
       {({ cx }) => (
         <StyledIcon
           className={cx(iconFontPrefix, `${iconFontPrefix}-${name}`)}
+          ref={iconRef}
           {...props}
         />
       )}
@@ -71,11 +73,21 @@ Icon.propTypes = {
   /**
    * Theme used for styling the Icon.
    */
-  theme: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
+  theme: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+
+  /**
+   * Ref from forward ref
+   */
+  iconRef: PropTypes.any // eslint-disable-line react/forbid-prop-types
 };
 
 Icon.defaultProps = {
-  rotation: null
+  rotation: null,
+  iconRef: null
 };
 
-export default withTheme(Icon);
+const WithThemeIcon = withTheme(Icon);
+
+export default React.forwardRef((props, ref) => {
+  return <WithThemeIcon {...props} iconRef={ref} />;
+});
