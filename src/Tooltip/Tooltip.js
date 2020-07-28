@@ -1,7 +1,5 @@
 /** @jsx jsx */
-import React, {
-  useState
-} from 'react'; /* eslint-disable-line no-unused-vars */
+import { useState } from 'react'; /* eslint-disable-line no-unused-vars */
 import { jsx } from '@emotion/core';
 import PropTypes from 'prop-types';
 import Tippy from '@tippyjs/react';
