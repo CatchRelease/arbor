@@ -2,757 +2,67 @@
 
 exports[`<Tooltip /> properly renders a tooltip 1`] = `
 .emotion-0 {
-  font-family: Motiva Sans;
-  background-color: #25272D;
+  background: none;
+  padding: 0;
+}
+
+.emotion-0[data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #25272D;
+}
+
+.emotion-0[data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: #25272D;
+}
+
+.emotion-0[data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: #25272D;
+}
+
+.emotion-0[data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: #25272D;
+}
+
+.emotion-0 .tippy-content {
+  background: #25272D;
+  border-radius: 0.75rem;
   color: #FFFFFF;
   font-size: 0.875rem;
   padding: 0.5rem;
-  box-sizing: border-box;
-  border-radius: 3px;
+  font-family: Motiva Sans;
+  line-height: 0.75rem;
 }
 
-<WithTheme(Tooltip)
+<Tooltip
   content="Hello World"
 >
-  <Tooltip
+  <StyledTippy
+    animation="fade"
+    arrow={true}
     content="Hello World"
-    position="top"
-    theme={
-      Object {
-        "avatarFontSizes": Object {
-          "default": "0.6875rem",
-          "medium": "0.75rem",
+    duration={300}
+    inertia={true}
+    plugins={
+      Array [
+        Object {
+          "defaultValue": false,
+          "fn": [Function],
+          "name": "animateFill",
         },
-        "avatarSizes": Object {
-          "default": "24px",
-          "medium": "32px",
+        Object {
+          "defaultValue": false,
+          "fn": [Function],
+          "name": "sticky",
         },
-        "borderWidth": Object {
-          "large": "4px",
-          "medium": "2px",
-          "small": "1px",
-        },
-        "borders": Object {
-          "default": "1px solid #E0E1E2",
-        },
-        "brandFont": "Motiva Sans",
-        "breakpoints": Array [
-          "512px",
-          "768px",
-          "1024px",
-          "1600px",
-        ],
-        "breakpointsMap": Object {
-          "lg": "1024px",
-          "md": "768px",
-          "sm": "512px",
-          "xl": "1600px",
-        },
-        "colors": Object {
-          "background": Object {
-            "default": "#F2F2F2",
-            "disabled": "#EBECEC",
-            "muted": "#F8F9F9",
-            "white": "#FFFFFF",
-          },
-          "black": "#000000",
-          "blue": "#4466EE",
-          "blueDark": "#4455CC",
-          "blueDarkest": "#2E374E",
-          "blueLight": "#5577FF",
-          "blueLighter": "#6688FF",
-          "border": Object {
-            "dark": "#5B5D61",
-            "default": "#E0E1E2",
-            "muted": "#EBECEC",
-          },
-          "brand": Object {
-            "dark": "#081D17",
-            "darker": "#081D17",
-            "default": "#081D17",
-            "light": "#B6EFD0",
-            "lighter": "#C0F9DA",
-          },
-          "bronze": "#CC7700",
-          "bronzeDark": "#AA5500",
-          "bronzeLight": "#CC9900",
-          "green": "#00AA44",
-          "greenDark": "#008833",
-          "greenLight": "#00BB44",
-          "greenLighter": "#00CC66",
-          "grey10": "#F8F9F9",
-          "grey100": "#0F0F10",
-          "grey20": "#F2F2F2",
-          "grey30": "#EBECEC",
-          "grey40": "#E0E1E2",
-          "grey50": "#BEBEC0",
-          "grey60": "#989A9C",
-          "grey70": "#78797D",
-          "grey80": "#5B5D61",
-          "grey90": "#25272D",
-          "icon": Object {
-            "default": "#989A9C",
-            "disabled": "rgba(190,190,192,0.7)",
-          },
-          "intent": Object {
-            "brand": Object {
-              "dark": "#081D17",
-              "darker": "#081D17",
-              "default": "#081D17",
-              "light": "#B6EFD0",
-              "lighter": "#C0F9DA",
-            },
-            "danger": Object {
-              "dark": "#6c1c1c",
-              "darker": "#2b0b0b",
-              "default": "#D93838",
-              "light": "#f3c3c3",
-              "lighter": "#fbebeb",
-            },
-            "info": Object {
-              "dark": "#213175",
-              "darker": "#0d132e",
-              "default": "#4263EB",
-              "light": "#c6d0f9",
-              "lighter": "#eceffd",
-            },
-            "success": Object {
-              "dark": "#14431d",
-              "darker": "#081a0b",
-              "default": "#29863A",
-              "light": "#bedac3",
-              "lighter": "#e9f2eb",
-            },
-            "warning": Object {
-              "dark": "#622902",
-              "darker": "#271000",
-              "default": "#C55205",
-              "light": "#edcbb4",
-              "lighter": "#f9ede6",
-            },
-          },
-          "monochrome": Object {
-            "black": "#000000",
-            "grey10": "#F8F9F9",
-            "grey100": "#0F0F10",
-            "grey20": "#F2F2F2",
-            "grey30": "#EBECEC",
-            "grey40": "#E0E1E2",
-            "grey50": "#BEBEC0",
-            "grey60": "#989A9C",
-            "grey70": "#78797D",
-            "grey80": "#5B5D61",
-            "grey90": "#25272D",
-            "white": "#FFFFFF",
-          },
-          "palette": Object {
-            "blue": Object {
-              "dark": "#213175",
-              "darker": "#0d132e",
-              "default": "#4263EB",
-              "light": "#c6d0f9",
-              "lighter": "#eceffd",
-            },
-            "brand": Object {
-              "dark": "#040e0b",
-              "darker": "#010504",
-              "default": "#081D17",
-              "light": "#b4bbb9",
-              "lighter": "#e6e8e7",
-            },
-            "cyan": Object {
-              "dark": "#063f48",
-              "darker": "#02191c",
-              "default": "#0D7F91",
-              "light": "#b6d8de",
-              "lighter": "#e6f2f4",
-            },
-            "green": Object {
-              "dark": "#14431d",
-              "darker": "#081a0b",
-              "default": "#29863A",
-              "light": "#bedac3",
-              "lighter": "#e9f2eb",
-            },
-            "neutral": Object {
-              "dark": "#070708",
-              "darker": "#020203",
-              "default": "#0F0F10",
-              "light": "#b7b7b7",
-              "lighter": "#e7e7e7",
-            },
-            "orange": Object {
-              "dark": "#622902",
-              "darker": "#271000",
-              "default": "#C55205",
-              "light": "#edcbb4",
-              "lighter": "#f9ede6",
-            },
-            "pink": Object {
-              "dark": "#6b1936",
-              "darker": "#2a0a15",
-              "default": "#D6336C",
-              "light": "#f2c1d2",
-              "lighter": "#faeaf0",
-            },
-            "purple": Object {
-              "dark": "#382474",
-              "darker": "#160e2e",
-              "default": "#7048E8",
-              "light": "#d4c8f8",
-              "lighter": "#f0ecfc",
-            },
-            "red": Object {
-              "dark": "#6c1c1c",
-              "darker": "#2b0b0b",
-              "default": "#D93838",
-              "light": "#f3c3c3",
-              "lighter": "#fbebeb",
-            },
-            "teal": Object {
-              "dark": "#044231",
-              "darker": "#011a13",
-              "default": "#098562",
-              "light": "#b5dacf",
-              "lighter": "#e6f2ef",
-            },
-            "yellow": Object {
-              "dark": "#513400",
-              "darker": "#201400",
-              "default": "#A36900",
-              "light": "#e3d2b2",
-              "lighter": "#f5f0e5",
-            },
-          },
-          "primary": Object {
-            "blue": "#4263EB",
-            "cyan": "#0D7F91",
-            "green": "#29863A",
-            "neutral": "#0F0F10",
-            "orange": "#C55205",
-            "pink": "#D6336C",
-            "purple": "#7048E8",
-            "red": "#D93838",
-            "teal": "#098562",
-            "yellow": "#A36900",
-          },
-          "red": "#EE2200",
-          "redDark": "#DD1100",
-          "redLight": "#FF4444",
-          "redLighter": "#FF6655",
-          "secondary": Object {
-            "blue": "#4B9BFF",
-            "cyan": "#5FC8FF",
-            "green": "#9BE169",
-            "orange": "#FFB46E",
-            "pink": "#FF73C3",
-            "purple": "#AF78FF",
-            "red": "#FF5F5F",
-            "teal": "#50D2A0",
-            "yellow": "#FFD76E",
-          },
-          "shadow": Object {
-            "blurry": "rgba(37,39,45,0.3)",
-            "border": "rgba(37,39,45,0.47)",
-          },
-          "text": Object {
-            "dark": "#0F0F10",
-            "default": "#25272D",
-            "disabled": "rgba(120,121,125,0.7)",
-            "muted": "#5B5D61",
-            "placeholder": "#989A9C",
-          },
-          "white": "#FFFFFF",
-        },
-        "fontSizes": Object {
-          "input": Object {
-            "default": "0.875rem",
-            "mobile": "1rem",
-          },
-          "size1": "0.6875rem",
-          "size2": "0.75rem",
-          "size3": "0.8125rem",
-          "size4": "0.875rem",
-          "size5": "1rem",
-          "size6": "1.25rem",
-          "size7": "1.5rem",
-          "size8": "1.75rem",
-          "size9": "2.125rem",
-        },
-        "fontWeights": Object {
-          "bold": 700,
-          "medium": 500,
-          "regular": 400,
-        },
-        "fonts": Object {
-          "default": "Motiva Sans",
-          "icon": "Arbor",
-        },
-        "iconFontPrefix": "ar",
-        "icons": Object {
-          "annotation": "039",
-          "calendar": "035",
-          "caret": "037",
-          "chatBubbleOutline": "003",
-          "checkboxChecked": "030",
-          "checkboxIndeterminate": "02f",
-          "checkboxMarkedCircleOutline": "000",
-          "chevron": "03a",
-          "crLogo": "02e",
-          "cross": "03b",
-          "download": "004",
-          "swap": "038",
-          "symbolCircle": "034",
-          "thumbDownOutline": "001",
-          "thumbUpOutline": "002",
-          "trash": "036",
-        },
-        "lineHeights": Object {
-          "large": 1.5,
-          "regular": 1,
-          "small": 1.25,
-        },
-        "radii": Object {
-          "large": "6px",
-          "larger": "12px",
-          "small": "3px",
-        },
-        "shadows": Object {
-          "elevation0": "0 0 1px rgba(37,39,45,0.47)",
-          "elevation1": "0 0 1px rgba(37,39,45,0.47), 0 2px 4px -2px rgba(37,39,45,0.3)",
-          "elevation2": "0 0 1px rgba(37,39,45,0.47), 0 5px 8px -4px rgba(37,39,45,0.3)",
-          "elevation3": "0 0 1px rgba(37,39,45,0.47), 0 8px 10px -4px rgba(37,39,45,0.3)",
-          "elevation4": "0 0 1px rgba(37,39,45,0.47), 0 16px 24px -8px rgba(37,39,45,0.3)",
-        },
-        "space": Object {
-          "large": "1.5rem",
-          "larger": "2rem",
-          "largest": "4rem",
-          "regular": "1rem",
-          "small": "0.75rem",
-          "smaller": "0.5rem",
-          "smallest": "0.25rem",
-        },
-      }
+      ]
     }
   >
-    <ForwardRef(render)
-      styles={[Function]}
-    >
-      <InnerGlobal
-        cache={
-          Object {
-            "insert": [Function],
-            "inserted": Object {
-              "1lyk3tb-StyledTooltipContent-Box-Text-Box": true,
-            },
-            "key": "css",
-            "nonce": undefined,
-            "registered": Object {},
-            "sheet": StyleSheet {
-              "before": null,
-              "container": <head>
-                <style
-                  data-emotion="css-global"
-                >
-                  
-                  .tippy-popper .tippy-tooltip.arbor-theme{background:none;padding:0;}
-                </style>
-                <style
-                  data-emotion="css-global"
-                >
-                  
-                  .tippy-popper[x-placement='bottom'] .tippy-tooltip.arbor-theme [x-arrow]{border-bottom-color:#25272D;}
-                </style>
-                <style
-                  data-emotion="css-global"
-                >
-                  
-                  .tippy-popper[x-placement='top'] .tippy-tooltip.arbor-theme [x-arrow]{border-top-color:#25272D;}
-                </style>
-                <style
-                  data-emotion="css-global"
-                >
-                  
-                  .tippy-popper[x-placement='left'] .tippy-tooltip.arbor-theme [x-arrow]{border-left-color:#25272D;}
-                </style>
-                <style
-                  data-emotion="css-global"
-                >
-                  
-                  .tippy-popper[x-placement='right'] .tippy-tooltip.arbor-theme [x-arrow]{border-right-color:#25272D;}
-                </style>
-                <style
-                  data-emotion="css"
-                >
-                  
-                  .emotion-0{font-family:Motiva Sans;background-color:#25272D;color:#FFFFFF;font-size:0.875rem;padding:0.5rem;box-sizing:border-box;border-radius:3px;}
-                </style>
-              </head>,
-              "ctr": 1,
-              "isSpeedy": false,
-              "key": "css",
-              "nonce": undefined,
-              "tags": Array [
-                <style
-                  data-emotion="css"
-                >
-                  
-                  .emotion-0{font-family:Motiva Sans;background-color:#25272D;color:#FFFFFF;font-size:0.875rem;padding:0.5rem;box-sizing:border-box;border-radius:3px;}
-                </style>,
-              ],
-            },
-          }
-        }
-        serialized={
-          Object {
-            "map": undefined,
-            "name": "1fvcsko",
-            "next": undefined,
-            "styles": ".tippy-popper{.tippy-tooltip.arbor-theme{background:none;padding:0;}}.tippy-popper[x-placement='bottom'] .tippy-tooltip.arbor-theme [x-arrow]{border-bottom-color:#25272D;}.tippy-popper[x-placement='top'] .tippy-tooltip.arbor-theme [x-arrow]{border-top-color:#25272D;}.tippy-popper[x-placement='left'] .tippy-tooltip.arbor-theme [x-arrow]{border-left-color:#25272D;}.tippy-popper[x-placement='right'] .tippy-tooltip.arbor-theme [x-arrow]{border-right-color:#25272D;}",
-            "toString": [Function],
-          }
-        }
-      />
-    </ForwardRef(render)>
     <ForwardRef(TippyWrapper)
       animation="fade"
       arrow={true}
-      content={
-        <ThemeProvider
-          theme={
-            Object {
-              "avatarFontSizes": Object {
-                "default": "0.6875rem",
-                "medium": "0.75rem",
-              },
-              "avatarSizes": Object {
-                "default": "24px",
-                "medium": "32px",
-              },
-              "borderWidth": Object {
-                "large": "4px",
-                "medium": "2px",
-                "small": "1px",
-              },
-              "borders": Object {
-                "default": "1px solid #E0E1E2",
-              },
-              "brandFont": "Motiva Sans",
-              "breakpoints": Array [
-                "512px",
-                "768px",
-                "1024px",
-                "1600px",
-              ],
-              "breakpointsMap": Object {
-                "lg": "1024px",
-                "md": "768px",
-                "sm": "512px",
-                "xl": "1600px",
-              },
-              "colors": Object {
-                "background": Object {
-                  "default": "#F2F2F2",
-                  "disabled": "#EBECEC",
-                  "muted": "#F8F9F9",
-                  "white": "#FFFFFF",
-                },
-                "black": "#000000",
-                "blue": "#4466EE",
-                "blueDark": "#4455CC",
-                "blueDarkest": "#2E374E",
-                "blueLight": "#5577FF",
-                "blueLighter": "#6688FF",
-                "border": Object {
-                  "dark": "#5B5D61",
-                  "default": "#E0E1E2",
-                  "muted": "#EBECEC",
-                },
-                "brand": Object {
-                  "dark": "#081D17",
-                  "darker": "#081D17",
-                  "default": "#081D17",
-                  "light": "#B6EFD0",
-                  "lighter": "#C0F9DA",
-                },
-                "bronze": "#CC7700",
-                "bronzeDark": "#AA5500",
-                "bronzeLight": "#CC9900",
-                "green": "#00AA44",
-                "greenDark": "#008833",
-                "greenLight": "#00BB44",
-                "greenLighter": "#00CC66",
-                "grey10": "#F8F9F9",
-                "grey100": "#0F0F10",
-                "grey20": "#F2F2F2",
-                "grey30": "#EBECEC",
-                "grey40": "#E0E1E2",
-                "grey50": "#BEBEC0",
-                "grey60": "#989A9C",
-                "grey70": "#78797D",
-                "grey80": "#5B5D61",
-                "grey90": "#25272D",
-                "icon": Object {
-                  "default": "#989A9C",
-                  "disabled": "rgba(190,190,192,0.7)",
-                },
-                "intent": Object {
-                  "brand": Object {
-                    "dark": "#081D17",
-                    "darker": "#081D17",
-                    "default": "#081D17",
-                    "light": "#B6EFD0",
-                    "lighter": "#C0F9DA",
-                  },
-                  "danger": Object {
-                    "dark": "#6c1c1c",
-                    "darker": "#2b0b0b",
-                    "default": "#D93838",
-                    "light": "#f3c3c3",
-                    "lighter": "#fbebeb",
-                  },
-                  "info": Object {
-                    "dark": "#213175",
-                    "darker": "#0d132e",
-                    "default": "#4263EB",
-                    "light": "#c6d0f9",
-                    "lighter": "#eceffd",
-                  },
-                  "success": Object {
-                    "dark": "#14431d",
-                    "darker": "#081a0b",
-                    "default": "#29863A",
-                    "light": "#bedac3",
-                    "lighter": "#e9f2eb",
-                  },
-                  "warning": Object {
-                    "dark": "#622902",
-                    "darker": "#271000",
-                    "default": "#C55205",
-                    "light": "#edcbb4",
-                    "lighter": "#f9ede6",
-                  },
-                },
-                "monochrome": Object {
-                  "black": "#000000",
-                  "grey10": "#F8F9F9",
-                  "grey100": "#0F0F10",
-                  "grey20": "#F2F2F2",
-                  "grey30": "#EBECEC",
-                  "grey40": "#E0E1E2",
-                  "grey50": "#BEBEC0",
-                  "grey60": "#989A9C",
-                  "grey70": "#78797D",
-                  "grey80": "#5B5D61",
-                  "grey90": "#25272D",
-                  "white": "#FFFFFF",
-                },
-                "palette": Object {
-                  "blue": Object {
-                    "dark": "#213175",
-                    "darker": "#0d132e",
-                    "default": "#4263EB",
-                    "light": "#c6d0f9",
-                    "lighter": "#eceffd",
-                  },
-                  "brand": Object {
-                    "dark": "#040e0b",
-                    "darker": "#010504",
-                    "default": "#081D17",
-                    "light": "#b4bbb9",
-                    "lighter": "#e6e8e7",
-                  },
-                  "cyan": Object {
-                    "dark": "#063f48",
-                    "darker": "#02191c",
-                    "default": "#0D7F91",
-                    "light": "#b6d8de",
-                    "lighter": "#e6f2f4",
-                  },
-                  "green": Object {
-                    "dark": "#14431d",
-                    "darker": "#081a0b",
-                    "default": "#29863A",
-                    "light": "#bedac3",
-                    "lighter": "#e9f2eb",
-                  },
-                  "neutral": Object {
-                    "dark": "#070708",
-                    "darker": "#020203",
-                    "default": "#0F0F10",
-                    "light": "#b7b7b7",
-                    "lighter": "#e7e7e7",
-                  },
-                  "orange": Object {
-                    "dark": "#622902",
-                    "darker": "#271000",
-                    "default": "#C55205",
-                    "light": "#edcbb4",
-                    "lighter": "#f9ede6",
-                  },
-                  "pink": Object {
-                    "dark": "#6b1936",
-                    "darker": "#2a0a15",
-                    "default": "#D6336C",
-                    "light": "#f2c1d2",
-                    "lighter": "#faeaf0",
-                  },
-                  "purple": Object {
-                    "dark": "#382474",
-                    "darker": "#160e2e",
-                    "default": "#7048E8",
-                    "light": "#d4c8f8",
-                    "lighter": "#f0ecfc",
-                  },
-                  "red": Object {
-                    "dark": "#6c1c1c",
-                    "darker": "#2b0b0b",
-                    "default": "#D93838",
-                    "light": "#f3c3c3",
-                    "lighter": "#fbebeb",
-                  },
-                  "teal": Object {
-                    "dark": "#044231",
-                    "darker": "#011a13",
-                    "default": "#098562",
-                    "light": "#b5dacf",
-                    "lighter": "#e6f2ef",
-                  },
-                  "yellow": Object {
-                    "dark": "#513400",
-                    "darker": "#201400",
-                    "default": "#A36900",
-                    "light": "#e3d2b2",
-                    "lighter": "#f5f0e5",
-                  },
-                },
-                "primary": Object {
-                  "blue": "#4263EB",
-                  "cyan": "#0D7F91",
-                  "green": "#29863A",
-                  "neutral": "#0F0F10",
-                  "orange": "#C55205",
-                  "pink": "#D6336C",
-                  "purple": "#7048E8",
-                  "red": "#D93838",
-                  "teal": "#098562",
-                  "yellow": "#A36900",
-                },
-                "red": "#EE2200",
-                "redDark": "#DD1100",
-                "redLight": "#FF4444",
-                "redLighter": "#FF6655",
-                "secondary": Object {
-                  "blue": "#4B9BFF",
-                  "cyan": "#5FC8FF",
-                  "green": "#9BE169",
-                  "orange": "#FFB46E",
-                  "pink": "#FF73C3",
-                  "purple": "#AF78FF",
-                  "red": "#FF5F5F",
-                  "teal": "#50D2A0",
-                  "yellow": "#FFD76E",
-                },
-                "shadow": Object {
-                  "blurry": "rgba(37,39,45,0.3)",
-                  "border": "rgba(37,39,45,0.47)",
-                },
-                "text": Object {
-                  "dark": "#0F0F10",
-                  "default": "#25272D",
-                  "disabled": "rgba(120,121,125,0.7)",
-                  "muted": "#5B5D61",
-                  "placeholder": "#989A9C",
-                },
-                "white": "#FFFFFF",
-              },
-              "fontSizes": Object {
-                "input": Object {
-                  "default": "0.875rem",
-                  "mobile": "1rem",
-                },
-                "size1": "0.6875rem",
-                "size2": "0.75rem",
-                "size3": "0.8125rem",
-                "size4": "0.875rem",
-                "size5": "1rem",
-                "size6": "1.25rem",
-                "size7": "1.5rem",
-                "size8": "1.75rem",
-                "size9": "2.125rem",
-              },
-              "fontWeights": Object {
-                "bold": 700,
-                "medium": 500,
-                "regular": 400,
-              },
-              "fonts": Object {
-                "default": "Motiva Sans",
-                "icon": "Arbor",
-              },
-              "iconFontPrefix": "ar",
-              "icons": Object {
-                "annotation": "039",
-                "calendar": "035",
-                "caret": "037",
-                "chatBubbleOutline": "003",
-                "checkboxChecked": "030",
-                "checkboxIndeterminate": "02f",
-                "checkboxMarkedCircleOutline": "000",
-                "chevron": "03a",
-                "crLogo": "02e",
-                "cross": "03b",
-                "download": "004",
-                "swap": "038",
-                "symbolCircle": "034",
-                "thumbDownOutline": "001",
-                "thumbUpOutline": "002",
-                "trash": "036",
-              },
-              "lineHeights": Object {
-                "large": 1.5,
-                "regular": 1,
-                "small": 1.25,
-              },
-              "radii": Object {
-                "large": "6px",
-                "larger": "12px",
-                "small": "3px",
-              },
-              "shadows": Object {
-                "elevation0": "0 0 1px rgba(37,39,45,0.47)",
-                "elevation1": "0 0 1px rgba(37,39,45,0.47), 0 2px 4px -2px rgba(37,39,45,0.3)",
-                "elevation2": "0 0 1px rgba(37,39,45,0.47), 0 5px 8px -4px rgba(37,39,45,0.3)",
-                "elevation3": "0 0 1px rgba(37,39,45,0.47), 0 8px 10px -4px rgba(37,39,45,0.3)",
-                "elevation4": "0 0 1px rgba(37,39,45,0.47), 0 16px 24px -8px rgba(37,39,45,0.3)",
-              },
-              "space": Object {
-                "large": "1.5rem",
-                "larger": "2rem",
-                "largest": "4rem",
-                "regular": "1rem",
-                "small": "0.75rem",
-                "smaller": "0.5rem",
-                "smallest": "0.25rem",
-              },
-            }
-          }
-        >
-          <StyledTooltipContent
-            bg="monochrome.grey90"
-            borderRadius="small"
-            color="white"
-            fontSize="size4"
-            p="smaller"
-          >
-            Hello World
-          </StyledTooltipContent>
-        </ThemeProvider>
-      }
+      className="emotion-0 emotion-1"
+      content="Hello World"
       duration={300}
       inertia={true}
-      placement="top"
       plugins={
         Array [
           Object {
@@ -767,346 +77,14 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           },
         ]
       }
-      theme="arbor"
     >
       <Tippy
         animation="fade"
         arrow={true}
-        content={
-          <ThemeProvider
-            theme={
-              Object {
-                "avatarFontSizes": Object {
-                  "default": "0.6875rem",
-                  "medium": "0.75rem",
-                },
-                "avatarSizes": Object {
-                  "default": "24px",
-                  "medium": "32px",
-                },
-                "borderWidth": Object {
-                  "large": "4px",
-                  "medium": "2px",
-                  "small": "1px",
-                },
-                "borders": Object {
-                  "default": "1px solid #E0E1E2",
-                },
-                "brandFont": "Motiva Sans",
-                "breakpoints": Array [
-                  "512px",
-                  "768px",
-                  "1024px",
-                  "1600px",
-                ],
-                "breakpointsMap": Object {
-                  "lg": "1024px",
-                  "md": "768px",
-                  "sm": "512px",
-                  "xl": "1600px",
-                },
-                "colors": Object {
-                  "background": Object {
-                    "default": "#F2F2F2",
-                    "disabled": "#EBECEC",
-                    "muted": "#F8F9F9",
-                    "white": "#FFFFFF",
-                  },
-                  "black": "#000000",
-                  "blue": "#4466EE",
-                  "blueDark": "#4455CC",
-                  "blueDarkest": "#2E374E",
-                  "blueLight": "#5577FF",
-                  "blueLighter": "#6688FF",
-                  "border": Object {
-                    "dark": "#5B5D61",
-                    "default": "#E0E1E2",
-                    "muted": "#EBECEC",
-                  },
-                  "brand": Object {
-                    "dark": "#081D17",
-                    "darker": "#081D17",
-                    "default": "#081D17",
-                    "light": "#B6EFD0",
-                    "lighter": "#C0F9DA",
-                  },
-                  "bronze": "#CC7700",
-                  "bronzeDark": "#AA5500",
-                  "bronzeLight": "#CC9900",
-                  "green": "#00AA44",
-                  "greenDark": "#008833",
-                  "greenLight": "#00BB44",
-                  "greenLighter": "#00CC66",
-                  "grey10": "#F8F9F9",
-                  "grey100": "#0F0F10",
-                  "grey20": "#F2F2F2",
-                  "grey30": "#EBECEC",
-                  "grey40": "#E0E1E2",
-                  "grey50": "#BEBEC0",
-                  "grey60": "#989A9C",
-                  "grey70": "#78797D",
-                  "grey80": "#5B5D61",
-                  "grey90": "#25272D",
-                  "icon": Object {
-                    "default": "#989A9C",
-                    "disabled": "rgba(190,190,192,0.7)",
-                  },
-                  "intent": Object {
-                    "brand": Object {
-                      "dark": "#081D17",
-                      "darker": "#081D17",
-                      "default": "#081D17",
-                      "light": "#B6EFD0",
-                      "lighter": "#C0F9DA",
-                    },
-                    "danger": Object {
-                      "dark": "#6c1c1c",
-                      "darker": "#2b0b0b",
-                      "default": "#D93838",
-                      "light": "#f3c3c3",
-                      "lighter": "#fbebeb",
-                    },
-                    "info": Object {
-                      "dark": "#213175",
-                      "darker": "#0d132e",
-                      "default": "#4263EB",
-                      "light": "#c6d0f9",
-                      "lighter": "#eceffd",
-                    },
-                    "success": Object {
-                      "dark": "#14431d",
-                      "darker": "#081a0b",
-                      "default": "#29863A",
-                      "light": "#bedac3",
-                      "lighter": "#e9f2eb",
-                    },
-                    "warning": Object {
-                      "dark": "#622902",
-                      "darker": "#271000",
-                      "default": "#C55205",
-                      "light": "#edcbb4",
-                      "lighter": "#f9ede6",
-                    },
-                  },
-                  "monochrome": Object {
-                    "black": "#000000",
-                    "grey10": "#F8F9F9",
-                    "grey100": "#0F0F10",
-                    "grey20": "#F2F2F2",
-                    "grey30": "#EBECEC",
-                    "grey40": "#E0E1E2",
-                    "grey50": "#BEBEC0",
-                    "grey60": "#989A9C",
-                    "grey70": "#78797D",
-                    "grey80": "#5B5D61",
-                    "grey90": "#25272D",
-                    "white": "#FFFFFF",
-                  },
-                  "palette": Object {
-                    "blue": Object {
-                      "dark": "#213175",
-                      "darker": "#0d132e",
-                      "default": "#4263EB",
-                      "light": "#c6d0f9",
-                      "lighter": "#eceffd",
-                    },
-                    "brand": Object {
-                      "dark": "#040e0b",
-                      "darker": "#010504",
-                      "default": "#081D17",
-                      "light": "#b4bbb9",
-                      "lighter": "#e6e8e7",
-                    },
-                    "cyan": Object {
-                      "dark": "#063f48",
-                      "darker": "#02191c",
-                      "default": "#0D7F91",
-                      "light": "#b6d8de",
-                      "lighter": "#e6f2f4",
-                    },
-                    "green": Object {
-                      "dark": "#14431d",
-                      "darker": "#081a0b",
-                      "default": "#29863A",
-                      "light": "#bedac3",
-                      "lighter": "#e9f2eb",
-                    },
-                    "neutral": Object {
-                      "dark": "#070708",
-                      "darker": "#020203",
-                      "default": "#0F0F10",
-                      "light": "#b7b7b7",
-                      "lighter": "#e7e7e7",
-                    },
-                    "orange": Object {
-                      "dark": "#622902",
-                      "darker": "#271000",
-                      "default": "#C55205",
-                      "light": "#edcbb4",
-                      "lighter": "#f9ede6",
-                    },
-                    "pink": Object {
-                      "dark": "#6b1936",
-                      "darker": "#2a0a15",
-                      "default": "#D6336C",
-                      "light": "#f2c1d2",
-                      "lighter": "#faeaf0",
-                    },
-                    "purple": Object {
-                      "dark": "#382474",
-                      "darker": "#160e2e",
-                      "default": "#7048E8",
-                      "light": "#d4c8f8",
-                      "lighter": "#f0ecfc",
-                    },
-                    "red": Object {
-                      "dark": "#6c1c1c",
-                      "darker": "#2b0b0b",
-                      "default": "#D93838",
-                      "light": "#f3c3c3",
-                      "lighter": "#fbebeb",
-                    },
-                    "teal": Object {
-                      "dark": "#044231",
-                      "darker": "#011a13",
-                      "default": "#098562",
-                      "light": "#b5dacf",
-                      "lighter": "#e6f2ef",
-                    },
-                    "yellow": Object {
-                      "dark": "#513400",
-                      "darker": "#201400",
-                      "default": "#A36900",
-                      "light": "#e3d2b2",
-                      "lighter": "#f5f0e5",
-                    },
-                  },
-                  "primary": Object {
-                    "blue": "#4263EB",
-                    "cyan": "#0D7F91",
-                    "green": "#29863A",
-                    "neutral": "#0F0F10",
-                    "orange": "#C55205",
-                    "pink": "#D6336C",
-                    "purple": "#7048E8",
-                    "red": "#D93838",
-                    "teal": "#098562",
-                    "yellow": "#A36900",
-                  },
-                  "red": "#EE2200",
-                  "redDark": "#DD1100",
-                  "redLight": "#FF4444",
-                  "redLighter": "#FF6655",
-                  "secondary": Object {
-                    "blue": "#4B9BFF",
-                    "cyan": "#5FC8FF",
-                    "green": "#9BE169",
-                    "orange": "#FFB46E",
-                    "pink": "#FF73C3",
-                    "purple": "#AF78FF",
-                    "red": "#FF5F5F",
-                    "teal": "#50D2A0",
-                    "yellow": "#FFD76E",
-                  },
-                  "shadow": Object {
-                    "blurry": "rgba(37,39,45,0.3)",
-                    "border": "rgba(37,39,45,0.47)",
-                  },
-                  "text": Object {
-                    "dark": "#0F0F10",
-                    "default": "#25272D",
-                    "disabled": "rgba(120,121,125,0.7)",
-                    "muted": "#5B5D61",
-                    "placeholder": "#989A9C",
-                  },
-                  "white": "#FFFFFF",
-                },
-                "fontSizes": Object {
-                  "input": Object {
-                    "default": "0.875rem",
-                    "mobile": "1rem",
-                  },
-                  "size1": "0.6875rem",
-                  "size2": "0.75rem",
-                  "size3": "0.8125rem",
-                  "size4": "0.875rem",
-                  "size5": "1rem",
-                  "size6": "1.25rem",
-                  "size7": "1.5rem",
-                  "size8": "1.75rem",
-                  "size9": "2.125rem",
-                },
-                "fontWeights": Object {
-                  "bold": 700,
-                  "medium": 500,
-                  "regular": 400,
-                },
-                "fonts": Object {
-                  "default": "Motiva Sans",
-                  "icon": "Arbor",
-                },
-                "iconFontPrefix": "ar",
-                "icons": Object {
-                  "annotation": "039",
-                  "calendar": "035",
-                  "caret": "037",
-                  "chatBubbleOutline": "003",
-                  "checkboxChecked": "030",
-                  "checkboxIndeterminate": "02f",
-                  "checkboxMarkedCircleOutline": "000",
-                  "chevron": "03a",
-                  "crLogo": "02e",
-                  "cross": "03b",
-                  "download": "004",
-                  "swap": "038",
-                  "symbolCircle": "034",
-                  "thumbDownOutline": "001",
-                  "thumbUpOutline": "002",
-                  "trash": "036",
-                },
-                "lineHeights": Object {
-                  "large": 1.5,
-                  "regular": 1,
-                  "small": 1.25,
-                },
-                "radii": Object {
-                  "large": "6px",
-                  "larger": "12px",
-                  "small": "3px",
-                },
-                "shadows": Object {
-                  "elevation0": "0 0 1px rgba(37,39,45,0.47)",
-                  "elevation1": "0 0 1px rgba(37,39,45,0.47), 0 2px 4px -2px rgba(37,39,45,0.3)",
-                  "elevation2": "0 0 1px rgba(37,39,45,0.47), 0 5px 8px -4px rgba(37,39,45,0.3)",
-                  "elevation3": "0 0 1px rgba(37,39,45,0.47), 0 8px 10px -4px rgba(37,39,45,0.3)",
-                  "elevation4": "0 0 1px rgba(37,39,45,0.47), 0 16px 24px -8px rgba(37,39,45,0.3)",
-                },
-                "space": Object {
-                  "large": "1.5rem",
-                  "larger": "2rem",
-                  "largest": "4rem",
-                  "regular": "1rem",
-                  "small": "0.75rem",
-                  "smaller": "0.5rem",
-                  "smallest": "0.25rem",
-                },
-              }
-            }
-          >
-            <StyledTooltipContent
-              bg="monochrome.grey90"
-              borderRadius="small"
-              color="white"
-              fontSize="size4"
-              p="smaller"
-            >
-              Hello World
-            </StyledTooltipContent>
-          </ThemeProvider>
-        }
+        className="emotion-0 emotion-1"
+        content="Hello World"
         duration={300}
         inertia={true}
-        placement="top"
         plugins={
           Array [
             Object {
@@ -1121,373 +99,21 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             },
           ]
         }
-        theme="arbor"
       >
         <p>
           I have a tooltip
         </p>
         <Portal
           containerInfo={
-            .emotion-0 {
-  font-family: Motiva Sans;
-  background-color: #25272D;
-  color: #FFFFFF;
-  font-size: 0.875rem;
-  padding: 0.5rem;
-  box-sizing: border-box;
-  border-radius: 3px;
-}
-
-<div>
-              <div
-                class="emotion-0 emotion-1"
-                color="white"
-                font-size="size4"
-              >
-                Hello World
-              </div>
+            <div>
+              Hello World
             </div>
           }
         >
-          <ThemeProvider
-            theme={
-              Object {
-                "avatarFontSizes": Object {
-                  "default": "0.6875rem",
-                  "medium": "0.75rem",
-                },
-                "avatarSizes": Object {
-                  "default": "24px",
-                  "medium": "32px",
-                },
-                "borderWidth": Object {
-                  "large": "4px",
-                  "medium": "2px",
-                  "small": "1px",
-                },
-                "borders": Object {
-                  "default": "1px solid #E0E1E2",
-                },
-                "brandFont": "Motiva Sans",
-                "breakpoints": Array [
-                  "512px",
-                  "768px",
-                  "1024px",
-                  "1600px",
-                ],
-                "breakpointsMap": Object {
-                  "lg": "1024px",
-                  "md": "768px",
-                  "sm": "512px",
-                  "xl": "1600px",
-                },
-                "colors": Object {
-                  "background": Object {
-                    "default": "#F2F2F2",
-                    "disabled": "#EBECEC",
-                    "muted": "#F8F9F9",
-                    "white": "#FFFFFF",
-                  },
-                  "black": "#000000",
-                  "blue": "#4466EE",
-                  "blueDark": "#4455CC",
-                  "blueDarkest": "#2E374E",
-                  "blueLight": "#5577FF",
-                  "blueLighter": "#6688FF",
-                  "border": Object {
-                    "dark": "#5B5D61",
-                    "default": "#E0E1E2",
-                    "muted": "#EBECEC",
-                  },
-                  "brand": Object {
-                    "dark": "#081D17",
-                    "darker": "#081D17",
-                    "default": "#081D17",
-                    "light": "#B6EFD0",
-                    "lighter": "#C0F9DA",
-                  },
-                  "bronze": "#CC7700",
-                  "bronzeDark": "#AA5500",
-                  "bronzeLight": "#CC9900",
-                  "green": "#00AA44",
-                  "greenDark": "#008833",
-                  "greenLight": "#00BB44",
-                  "greenLighter": "#00CC66",
-                  "grey10": "#F8F9F9",
-                  "grey100": "#0F0F10",
-                  "grey20": "#F2F2F2",
-                  "grey30": "#EBECEC",
-                  "grey40": "#E0E1E2",
-                  "grey50": "#BEBEC0",
-                  "grey60": "#989A9C",
-                  "grey70": "#78797D",
-                  "grey80": "#5B5D61",
-                  "grey90": "#25272D",
-                  "icon": Object {
-                    "default": "#989A9C",
-                    "disabled": "rgba(190,190,192,0.7)",
-                  },
-                  "intent": Object {
-                    "brand": Object {
-                      "dark": "#081D17",
-                      "darker": "#081D17",
-                      "default": "#081D17",
-                      "light": "#B6EFD0",
-                      "lighter": "#C0F9DA",
-                    },
-                    "danger": Object {
-                      "dark": "#6c1c1c",
-                      "darker": "#2b0b0b",
-                      "default": "#D93838",
-                      "light": "#f3c3c3",
-                      "lighter": "#fbebeb",
-                    },
-                    "info": Object {
-                      "dark": "#213175",
-                      "darker": "#0d132e",
-                      "default": "#4263EB",
-                      "light": "#c6d0f9",
-                      "lighter": "#eceffd",
-                    },
-                    "success": Object {
-                      "dark": "#14431d",
-                      "darker": "#081a0b",
-                      "default": "#29863A",
-                      "light": "#bedac3",
-                      "lighter": "#e9f2eb",
-                    },
-                    "warning": Object {
-                      "dark": "#622902",
-                      "darker": "#271000",
-                      "default": "#C55205",
-                      "light": "#edcbb4",
-                      "lighter": "#f9ede6",
-                    },
-                  },
-                  "monochrome": Object {
-                    "black": "#000000",
-                    "grey10": "#F8F9F9",
-                    "grey100": "#0F0F10",
-                    "grey20": "#F2F2F2",
-                    "grey30": "#EBECEC",
-                    "grey40": "#E0E1E2",
-                    "grey50": "#BEBEC0",
-                    "grey60": "#989A9C",
-                    "grey70": "#78797D",
-                    "grey80": "#5B5D61",
-                    "grey90": "#25272D",
-                    "white": "#FFFFFF",
-                  },
-                  "palette": Object {
-                    "blue": Object {
-                      "dark": "#213175",
-                      "darker": "#0d132e",
-                      "default": "#4263EB",
-                      "light": "#c6d0f9",
-                      "lighter": "#eceffd",
-                    },
-                    "brand": Object {
-                      "dark": "#040e0b",
-                      "darker": "#010504",
-                      "default": "#081D17",
-                      "light": "#b4bbb9",
-                      "lighter": "#e6e8e7",
-                    },
-                    "cyan": Object {
-                      "dark": "#063f48",
-                      "darker": "#02191c",
-                      "default": "#0D7F91",
-                      "light": "#b6d8de",
-                      "lighter": "#e6f2f4",
-                    },
-                    "green": Object {
-                      "dark": "#14431d",
-                      "darker": "#081a0b",
-                      "default": "#29863A",
-                      "light": "#bedac3",
-                      "lighter": "#e9f2eb",
-                    },
-                    "neutral": Object {
-                      "dark": "#070708",
-                      "darker": "#020203",
-                      "default": "#0F0F10",
-                      "light": "#b7b7b7",
-                      "lighter": "#e7e7e7",
-                    },
-                    "orange": Object {
-                      "dark": "#622902",
-                      "darker": "#271000",
-                      "default": "#C55205",
-                      "light": "#edcbb4",
-                      "lighter": "#f9ede6",
-                    },
-                    "pink": Object {
-                      "dark": "#6b1936",
-                      "darker": "#2a0a15",
-                      "default": "#D6336C",
-                      "light": "#f2c1d2",
-                      "lighter": "#faeaf0",
-                    },
-                    "purple": Object {
-                      "dark": "#382474",
-                      "darker": "#160e2e",
-                      "default": "#7048E8",
-                      "light": "#d4c8f8",
-                      "lighter": "#f0ecfc",
-                    },
-                    "red": Object {
-                      "dark": "#6c1c1c",
-                      "darker": "#2b0b0b",
-                      "default": "#D93838",
-                      "light": "#f3c3c3",
-                      "lighter": "#fbebeb",
-                    },
-                    "teal": Object {
-                      "dark": "#044231",
-                      "darker": "#011a13",
-                      "default": "#098562",
-                      "light": "#b5dacf",
-                      "lighter": "#e6f2ef",
-                    },
-                    "yellow": Object {
-                      "dark": "#513400",
-                      "darker": "#201400",
-                      "default": "#A36900",
-                      "light": "#e3d2b2",
-                      "lighter": "#f5f0e5",
-                    },
-                  },
-                  "primary": Object {
-                    "blue": "#4263EB",
-                    "cyan": "#0D7F91",
-                    "green": "#29863A",
-                    "neutral": "#0F0F10",
-                    "orange": "#C55205",
-                    "pink": "#D6336C",
-                    "purple": "#7048E8",
-                    "red": "#D93838",
-                    "teal": "#098562",
-                    "yellow": "#A36900",
-                  },
-                  "red": "#EE2200",
-                  "redDark": "#DD1100",
-                  "redLight": "#FF4444",
-                  "redLighter": "#FF6655",
-                  "secondary": Object {
-                    "blue": "#4B9BFF",
-                    "cyan": "#5FC8FF",
-                    "green": "#9BE169",
-                    "orange": "#FFB46E",
-                    "pink": "#FF73C3",
-                    "purple": "#AF78FF",
-                    "red": "#FF5F5F",
-                    "teal": "#50D2A0",
-                    "yellow": "#FFD76E",
-                  },
-                  "shadow": Object {
-                    "blurry": "rgba(37,39,45,0.3)",
-                    "border": "rgba(37,39,45,0.47)",
-                  },
-                  "text": Object {
-                    "dark": "#0F0F10",
-                    "default": "#25272D",
-                    "disabled": "rgba(120,121,125,0.7)",
-                    "muted": "#5B5D61",
-                    "placeholder": "#989A9C",
-                  },
-                  "white": "#FFFFFF",
-                },
-                "fontSizes": Object {
-                  "input": Object {
-                    "default": "0.875rem",
-                    "mobile": "1rem",
-                  },
-                  "size1": "0.6875rem",
-                  "size2": "0.75rem",
-                  "size3": "0.8125rem",
-                  "size4": "0.875rem",
-                  "size5": "1rem",
-                  "size6": "1.25rem",
-                  "size7": "1.5rem",
-                  "size8": "1.75rem",
-                  "size9": "2.125rem",
-                },
-                "fontWeights": Object {
-                  "bold": 700,
-                  "medium": 500,
-                  "regular": 400,
-                },
-                "fonts": Object {
-                  "default": "Motiva Sans",
-                  "icon": "Arbor",
-                },
-                "iconFontPrefix": "ar",
-                "icons": Object {
-                  "annotation": "039",
-                  "calendar": "035",
-                  "caret": "037",
-                  "chatBubbleOutline": "003",
-                  "checkboxChecked": "030",
-                  "checkboxIndeterminate": "02f",
-                  "checkboxMarkedCircleOutline": "000",
-                  "chevron": "03a",
-                  "crLogo": "02e",
-                  "cross": "03b",
-                  "download": "004",
-                  "swap": "038",
-                  "symbolCircle": "034",
-                  "thumbDownOutline": "001",
-                  "thumbUpOutline": "002",
-                  "trash": "036",
-                },
-                "lineHeights": Object {
-                  "large": 1.5,
-                  "regular": 1,
-                  "small": 1.25,
-                },
-                "radii": Object {
-                  "large": "6px",
-                  "larger": "12px",
-                  "small": "3px",
-                },
-                "shadows": Object {
-                  "elevation0": "0 0 1px rgba(37,39,45,0.47)",
-                  "elevation1": "0 0 1px rgba(37,39,45,0.47), 0 2px 4px -2px rgba(37,39,45,0.3)",
-                  "elevation2": "0 0 1px rgba(37,39,45,0.47), 0 5px 8px -4px rgba(37,39,45,0.3)",
-                  "elevation3": "0 0 1px rgba(37,39,45,0.47), 0 8px 10px -4px rgba(37,39,45,0.3)",
-                  "elevation4": "0 0 1px rgba(37,39,45,0.47), 0 16px 24px -8px rgba(37,39,45,0.3)",
-                },
-                "space": Object {
-                  "large": "1.5rem",
-                  "larger": "2rem",
-                  "largest": "4rem",
-                  "regular": "1rem",
-                  "small": "0.75rem",
-                  "smaller": "0.5rem",
-                  "smallest": "0.25rem",
-                },
-              }
-            }
-          >
-            <StyledTooltipContent
-              bg="monochrome.grey90"
-              borderRadius="small"
-              color="white"
-              fontSize="size4"
-              p="smaller"
-            >
-              <div
-                className="emotion-0 emotion-1"
-                color="white"
-                fontSize="size4"
-              >
-                Hello World
-              </div>
-            </StyledTooltipContent>
-          </ThemeProvider>
+          Hello World
         </Portal>
       </Tippy>
     </ForwardRef(TippyWrapper)>
-  </Tooltip>
-</WithTheme(Tooltip)>
+  </StyledTippy>
+</Tooltip>
 `;
