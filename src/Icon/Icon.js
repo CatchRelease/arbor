@@ -40,7 +40,7 @@ StyledIcon.propTypes = {
   ...opacity.propTypes
 };
 
-const Icon = React.forwardRef(({ name, theme, ...props }, ref) => {
+const Icon = ({ name, theme, iconRef, ...props }) => {
   const { iconFontPrefix } = theme;
 
   return (
@@ -48,13 +48,13 @@ const Icon = React.forwardRef(({ name, theme, ...props }, ref) => {
       {({ cx }) => (
         <StyledIcon
           className={cx(iconFontPrefix, `${iconFontPrefix}-${name}`)}
-          ref={ref}
+          ref={iconRef}
           {...props}
         />
       )}
     </ClassNames>
   );
-});
+};
 
 Icon.propTypes = {
   /**
@@ -73,11 +73,21 @@ Icon.propTypes = {
   /**
    * Theme used for styling the Icon.
    */
-  theme: PropTypes.object.isRequired // eslint-disable-line react/forbid-prop-types
+  theme: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+
+  /**
+   * Ref from forward ref
+   */
+  iconRef: PropTypes.any // eslint-disable-line react/forbid-prop-types
 };
 
 Icon.defaultProps = {
-  rotation: null
+  rotation: null,
+  iconRef: null
 };
 
-export default withTheme(Icon);
+const WithThemeIcon = withTheme(Icon);
+
+export default React.forwardRef((props, ref) => {
+  return <WithThemeIcon {...props} iconRef={ref} />;
+});
