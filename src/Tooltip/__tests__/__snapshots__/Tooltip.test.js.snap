@@ -34,11 +34,12 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
 
 <Tooltip
   content="Hello World"
+  render={null}
 >
   <StyledTippy
     animation="fade"
     arrow={true}
-    content="Hello World"
+    content=""
     duration={300}
     inertia={true}
     plugins={
@@ -53,6 +54,9 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           "fn": [Function],
           "name": "sticky",
         },
+        Object {
+          "fn": [Function],
+        },
       ]
     }
   >
@@ -60,7 +64,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
       animation="fade"
       arrow={true}
       className="emotion-0 emotion-1"
-      content="Hello World"
+      content=""
       duration={300}
       inertia={true}
       plugins={
@@ -75,6 +79,9 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
             "fn": [Function],
             "name": "sticky",
           },
+          Object {
+            "fn": [Function],
+          },
         ]
       }
     >
@@ -82,7 +89,7 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
         animation="fade"
         arrow={true}
         className="emotion-0 emotion-1"
-        content="Hello World"
+        content=""
         duration={300}
         inertia={true}
         plugins={
@@ -97,6 +104,9 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
               "fn": [Function],
               "name": "sticky",
             },
+            Object {
+              "fn": [Function],
+            },
           ]
         }
       >
@@ -106,12 +116,10 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
         <Portal
           containerInfo={
             <div>
-              Hello World
+              
             </div>
           }
-        >
-          Hello World
-        </Portal>
+        />
       </Tippy>
     </ForwardRef(TippyWrapper)>
   </StyledTippy>

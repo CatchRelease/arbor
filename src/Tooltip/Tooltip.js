@@ -1,5 +1,7 @@
 /** @jsx jsx */
-import React from 'react'; /* eslint-disable-line no-unused-vars */
+import React, {
+  useState
+} from 'react'; /* eslint-disable-line no-unused-vars */
 import { jsx } from '@emotion/core';
 import PropTypes from 'prop-types';
 import Tippy from '@tippyjs/react';
@@ -38,17 +40,34 @@ const StyledTippy = styled(Tippy)`
   }
 `;
 
-const Tooltip = ({ content, children, ...props }) => {
+const Tooltip = ({ content, children, render, ...props }) => {
+  const [mounted, setMounted] = useState(false);
+
+  const lazyPlugin = {
+    fn: () => ({
+      onShow: () => setMounted(true),
+      onHidden: () => setMounted(false)
+    })
+  };
+
+  const renderProps = {};
+
+  if (render) {
+    renderProps.render = (...args) => (mounted ? render(...args) : '');
+  } else {
+    renderProps.content = mounted ? content : '';
+  }
+
   return (
     <StyledTippy
       {...{
         arrow: true,
-        content,
         duration: 300,
         animation: 'fade',
         inertia: true,
-        plugins: [animateFill, sticky],
-        ...props
+        plugins: [animateFill, sticky, lazyPlugin],
+        ...props,
+        ...renderProps
       }}
     >
       {children}
@@ -66,7 +85,17 @@ Tooltip.propTypes = {
   /**
    * Content to display within the tooltip when it is displayed
    * */
-  content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+
+  /**
+   * Render function for rendering tippy element from scratch
+   */
+  render: PropTypes.func
+};
+
+Tooltip.defaultProps = {
+  content: null,
+  render: null
 };
 
 export default Tooltip;
