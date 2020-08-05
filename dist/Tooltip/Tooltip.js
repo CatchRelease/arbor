@@ -5,27 +5,31 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
-
 var _react = require("react");
 
 var _core = require("@emotion/core");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _react2 = _interopRequireDefault(require("@tippyjs/react"));
+var _headless = _interopRequireDefault(require("@tippyjs/react/headless"));
 
-require("tippy.js/dist/tippy.css");
+var _tippy = require("tippy.js");
 
-var _tippy2 = require("tippy.js");
+var _framerMotion = require("framer-motion");
+
+var _Box = _interopRequireDefault(require("../Box"));
+
+var _Card = _interopRequireDefault(require("../Card"));
+
+var _Grid = _interopRequireDefault(require("../Grid"));
+
+var _Heading = _interopRequireDefault(require("../Heading"));
+
+var _Text = _interopRequireDefault(require("../Text"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -43,38 +47,24 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var StyledTippy = ( /*#__PURE__*/0, _styledBase["default"])(_react2["default"], {
-  target: "e1ntyi310",
-  label: "StyledTippy"
-})("background:none;padding:0;&[data-placement^='top'] > .tippy-arrow::before{border-top-color:", function (props) {
-  return props.theme.colors.monochrome.grey90;
-}, ";}&[data-placement^='bottom'] > .tippy-arrow::before{border-bottom-color:", function (props) {
-  return props.theme.colors.monochrome.grey90;
-}, ";}&[data-placement^='left'] > .tippy-arrow::before{border-left-color:", function (props) {
-  return props.theme.colors.monochrome.grey90;
-}, ";}&[data-placement^='right'] > .tippy-arrow::before{border-right-color:", function (props) {
-  return props.theme.colors.monochrome.grey90;
-}, ";}.tippy-content{background:", function (props) {
-  return props.theme.colors.monochrome.grey90;
-}, ";border-radius:", function (props) {
-  return props.theme.space.small;
-}, ";color:", function (props) {
-  return props.theme.colors.monochrome.white;
-}, ";font-size:", function (props) {
-  return props.theme.fontSizes.size4;
-}, ";padding:", function (props) {
-  return props.theme.space.smaller;
-}, ";font-family:", function (props) {
-  return props.theme.brandFont;
-}, ";line-height:", function (props) {
-  return props.theme.space.small;
-}, ";}" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9Ub29sdGlwL1Rvb2x0aXAuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBU2lDIiwiZmlsZSI6Ii4uLy4uL3NyYy9Ub29sdGlwL1Rvb2x0aXAuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKiogQGpzeCBqc3ggKi9cbmltcG9ydCB7IHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnOyAvKiBlc2xpbnQtZGlzYWJsZS1saW5lIG5vLXVudXNlZC12YXJzICovXG5pbXBvcnQgeyBqc3ggfSBmcm9tICdAZW1vdGlvbi9jb3JlJztcbmltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcyc7XG5pbXBvcnQgVGlwcHkgZnJvbSAnQHRpcHB5anMvcmVhY3QnO1xuaW1wb3J0ICd0aXBweS5qcy9kaXN0L3RpcHB5LmNzcyc7XG5pbXBvcnQgeyBhbmltYXRlRmlsbCwgc3RpY2t5IH0gZnJvbSAndGlwcHkuanMnO1xuaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xuXG5jb25zdCBTdHlsZWRUaXBweSA9IHN0eWxlZChUaXBweSlgXG4gIGJhY2tncm91bmQ6IG5vbmU7XG4gIHBhZGRpbmc6IDA7XG5cbiAgJltkYXRhLXBsYWNlbWVudF49J3RvcCddID4gLnRpcHB5LWFycm93OjpiZWZvcmUge1xuICAgIGJvcmRlci10b3AtY29sb3I6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5OTB9O1xuICB9XG5cbiAgJltkYXRhLXBsYWNlbWVudF49J2JvdHRvbSddID4gLnRpcHB5LWFycm93OjpiZWZvcmUge1xuICAgIGJvcmRlci1ib3R0b20tY29sb3I6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5OTB9O1xuICB9XG5cbiAgJltkYXRhLXBsYWNlbWVudF49J2xlZnQnXSA+IC50aXBweS1hcnJvdzo6YmVmb3JlIHtcbiAgICBib3JkZXItbGVmdC1jb2xvcjogJHsocHJvcHMpID0+IHByb3BzLnRoZW1lLmNvbG9ycy5tb25vY2hyb21lLmdyZXk5MH07XG4gIH1cblxuICAmW2RhdGEtcGxhY2VtZW50Xj0ncmlnaHQnXSA+IC50aXBweS1hcnJvdzo6YmVmb3JlIHtcbiAgICBib3JkZXItcmlnaHQtY29sb3I6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5OTB9O1xuICB9XG5cbiAgLnRpcHB5LWNvbnRlbnQge1xuICAgIGJhY2tncm91bmQ6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5OTB9O1xuICAgIGJvcmRlci1yYWRpdXM6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5zcGFjZS5zbWFsbH07XG4gICAgY29sb3I6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5jb2xvcnMubW9ub2Nocm9tZS53aGl0ZX07XG4gICAgZm9udC1zaXplOiAkeyhwcm9wcykgPT4gcHJvcHMudGhlbWUuZm9udFNpemVzLnNpemU0fTtcbiAgICBwYWRkaW5nOiAkeyhwcm9wcykgPT4gcHJvcHMudGhlbWUuc3BhY2Uuc21hbGxlcn07XG4gICAgZm9udC1mYW1pbHk6ICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5icmFuZEZvbnR9O1xuICAgIGxpbmUtaGVpZ2h0OiAkeyhwcm9wcykgPT4gcHJvcHMudGhlbWUuc3BhY2Uuc21hbGx9O1xuICB9XG5gO1xuXG5jb25zdCBUb29sdGlwID0gKHsgY29udGVudCwgY2hpbGRyZW4sIHJlbmRlciwgLi4ucHJvcHMgfSkgPT4ge1xuICBjb25zdCBbbW91bnRlZCwgc2V0TW91bnRlZF0gPSB1c2VTdGF0ZShmYWxzZSk7XG5cbiAgY29uc3QgbGF6eVBsdWdpbiA9IHtcbiAgICBmbjogKCkgPT4gKHtcbiAgICAgIG9uU2hvdzogKCkgPT4gc2V0TW91bnRlZCh0cnVlKSxcbiAgICAgIG9uSGlkZGVuOiAoKSA9PiBzZXRNb3VudGVkKGZhbHNlKVxuICAgIH0pXG4gIH07XG5cbiAgY29uc3QgcmVuZGVyUHJvcHMgPSB7fTtcblxuICBpZiAocmVuZGVyKSB7XG4gICAgcmVuZGVyUHJvcHMucmVuZGVyID0gKC4uLmFyZ3MpID0+IChtb3VudGVkID8gcmVuZGVyKC4uLmFyZ3MpIDogJycpO1xuICB9IGVsc2Uge1xuICAgIHJlbmRlclByb3BzLmNvbnRlbnQgPSBtb3VudGVkID8gY29udGVudCA6ICcnO1xuICB9XG5cbiAgcmV0dXJuIChcbiAgICA8U3R5bGVkVGlwcHlcbiAgICAgIHsuLi57XG4gICAgICAgIGFycm93OiB0cnVlLFxuICAgICAgICBkdXJhdGlvbjogMzAwLFxuICAgICAgICBhbmltYXRpb246ICdmYWRlJyxcbiAgICAgICAgaW5lcnRpYTogdHJ1ZSxcbiAgICAgICAgcGx1Z2luczogW2FuaW1hdGVGaWxsLCBzdGlja3ksIGxhenlQbHVnaW5dLFxuICAgICAgICAuLi5wcm9wcyxcbiAgICAgICAgLi4ucmVuZGVyUHJvcHNcbiAgICAgIH19XG4gICAgPlxuICAgICAge2NoaWxkcmVufVxuICAgIDwvU3R5bGVkVGlwcHk+XG4gICk7XG59O1xuXG5Ub29sdGlwLnByb3BUeXBlcyA9IHtcbiAgLyoqXG4gICAqIE5vZGUgd2hpY2ggd2lsbCB0cmlnZ2VyIHRoZSB0b29sdGlwLiBUaGlzIHNob3VsZCBiZSBlaXRoZXIgYW4gSWNvbiwgQnV0dG9uLFxuICAgKiBvciBMaW5rLlxuICAgKiAqL1xuICBjaGlsZHJlbjogUHJvcFR5cGVzLmVsZW1lbnQuaXNSZXF1aXJlZCxcblxuICAvKipcbiAgICogQ29udGVudCB0byBkaXNwbGF5IHdpdGhpbiB0aGUgdG9vbHRpcCB3aGVuIGl0IGlzIGRpc3BsYXllZFxuICAgKiAqL1xuICBjb250ZW50OiBQcm9wVHlwZXMub25lT2ZUeXBlKFtQcm9wVHlwZXMuc3RyaW5nLCBQcm9wVHlwZXMubm9kZV0pLFxuXG4gIC8qKlxuICAgKiBSZW5kZXIgZnVuY3Rpb24gZm9yIHJlbmRlcmluZyB0aXBweSBlbGVtZW50IGZyb20gc2NyYXRjaFxuICAgKi9cbiAgcmVuZGVyOiBQcm9wVHlwZXMuZnVuY1xufTtcblxuVG9vbHRpcC5kZWZhdWx0UHJvcHMgPSB7XG4gIGNvbnRlbnQ6IG51bGwsXG4gIHJlbmRlcjogbnVsbFxufTtcblxuZXhwb3J0IGRlZmF1bHQgVG9vbHRpcDtcbiJdfQ== */"));
+function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
-var Tooltip = function Tooltip(_ref) {
-  var content = _ref.content,
-      children = _ref.children,
-      render = _ref.render,
-      props = _objectWithoutProperties(_ref, ["content", "children", "render"]);
+var _ref = process.env.NODE_ENV === "production" ? {
+  name: "542wex",
+  styles: "word-break:break-word;"
+} : {
+  name: "542wex",
+  styles: "word-break:break-word;",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9Ub29sdGlwL1Rvb2x0aXAuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBc0RnQiIsImZpbGUiOiIuLi8uLi9zcmMvVG9vbHRpcC9Ub29sdGlwLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqIEBqc3gganN4ICovXG5pbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JzsgLyogZXNsaW50LWRpc2FibGUtbGluZSBuby11bnVzZWQtdmFycyAqL1xuaW1wb3J0IHsgY3NzLCBqc3ggfSBmcm9tICdAZW1vdGlvbi9jb3JlJztcbmltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcyc7XG5pbXBvcnQgVGlwcHkgZnJvbSAnQHRpcHB5anMvcmVhY3QvaGVhZGxlc3MnO1xuaW1wb3J0IHsgc3RpY2t5IH0gZnJvbSAndGlwcHkuanMnO1xuaW1wb3J0IHsgbW90aW9uIH0gZnJvbSAnZnJhbWVyLW1vdGlvbic7XG5cbmltcG9ydCBCb3ggZnJvbSAnLi4vQm94JztcbmltcG9ydCBDYXJkIGZyb20gJy4uL0NhcmQnO1xuaW1wb3J0IEdyaWQgZnJvbSAnLi4vR3JpZCc7XG5pbXBvcnQgSGVhZGluZyBmcm9tICcuLi9IZWFkaW5nJztcbmltcG9ydCBUZXh0IGZyb20gJy4uL1RleHQnO1xuXG5jb25zdCBUb29sdGlwID0gKHsgdGl0bGUsIGNvbnRlbnQsIGNoaWxkcmVuLCByZW5kZXIsIC4uLnByb3BzIH0pID0+IHtcbiAgY29uc3QgW21vdW50ZWQsIHNldE1vdW50ZWRdID0gdXNlU3RhdGUoZmFsc2UpO1xuXG4gIGNvbnN0IGxhenlQbHVnaW4gPSB7XG4gICAgZm46ICgpID0+ICh7XG4gICAgICBvbk1vdW50OiAoKSA9PiBzZXRNb3VudGVkKHRydWUpLFxuICAgICAgb25IaWRlOiAoKSA9PiBzZXRNb3VudGVkKGZhbHNlKVxuICAgIH0pXG4gIH07XG4gIGNvbnN0IHNwcmluZ0NvbmZpZyA9IHtcbiAgICB0eXBlOiAnc3ByaW5nJyxcbiAgICBkYW1waW5nOiAyNCxcbiAgICBzdGlmZm5lc3M6IDQ4MCxcbiAgICByZXN0U3BlZWQ6IDAuMSxcbiAgICByZXN0RGVsdGE6IDAuNlxuICB9O1xuXG4gIGNvbnN0IHZhcmlhbnRzID0ge1xuICAgIHZpc2libGU6IHsgb3BhY2l0eTogMSwgc2NhbGU6IDEgfSxcbiAgICBoaWRkZW46IHsgb3BhY2l0eTogMCwgc2NhbGU6IDAuNSB9XG4gIH07XG5cbiAgY29uc3QgcmVuZGVyVG9vbHRpcCA9IChhdHRycykgPT4gKFxuICAgIDxCb3hcbiAgICAgIGFzPXttb3Rpb24uZGl2fVxuICAgICAgaW5pdGlhbD1cImhpZGRlblwiXG4gICAgICB2YXJpYW50cz17dmFyaWFudHN9XG4gICAgICBhbmltYXRlPXttb3VudGVkID8gJ3Zpc2libGUnIDogJ2hpZGRlbid9XG4gICAgICB0cmFuc2l0aW9uPXtzcHJpbmdDb25maWd9XG4gICAgICB7Li4uYXR0cnN9XG4gICAgPlxuICAgICAgPENhcmRcbiAgICAgICAgYmc9XCJtb25vY2hyb21lLmdyZXk5MFwiXG4gICAgICAgIGJvcmRlclJhZGl1cz1cInNtYWxsXCJcbiAgICAgICAgYm94U2hhZG93PVwiZWxldmF0aW9uMVwiXG4gICAgICAgIGNvbG9yPVwibW9ub2Nocm9tZS53aGl0ZVwiXG4gICAgICAgIGdyaWRHYXA9XCJzbWFsbGVzdFwiXG4gICAgICAgIGZvbnRTaXplPVwic2l6ZTNcIlxuICAgICAgICBtYXhXaWR0aD1cIjIwMHB4XCJcbiAgICAgICAgcD1cInNtYWxsZXJcIlxuICAgICAgICBjc3M9e2Nzc2BcbiAgICAgICAgICB3b3JkLWJyZWFrOiBicmVhay13b3JkO1xuICAgICAgICBgfVxuICAgICAgICB7Li4ucHJvcHN9XG4gICAgICA+XG4gICAgICAgIHt0aXRsZSAmJiAoXG4gICAgICAgICAgPEhlYWRpbmcuaDNcbiAgICAgICAgICAgIG1iPVwiMFwiXG4gICAgICAgICAgICBmb250U2l6ZT1cImluaGVyaXRcIlxuICAgICAgICAgICAgY29sb3I9XCJpbmhlcml0XCJcbiAgICAgICAgICAgIHRleHRBbGlnbj1cImluaGVyaXRcIlxuICAgICAgICAgID5cbiAgICAgICAgICAgIHt0aXRsZX1cbiAgICAgICAgICA8L0hlYWRpbmcuaDM+XG4gICAgICAgICl9XG4gICAgICAgIHtjb250ZW50ICYmIChcbiAgICAgICAgICA8VGV4dFxuICAgICAgICAgICAgYXM9e0dyaWR9XG4gICAgICAgICAgICBmb250U2l6ZT1cImluaGVyaXRcIlxuICAgICAgICAgICAgY29sb3I9XCJpbmhlcml0XCJcbiAgICAgICAgICAgIHRleHRBbGlnbj1cImluaGVyaXRcIlxuICAgICAgICAgID5cbiAgICAgICAgICAgIHtjb250ZW50fVxuICAgICAgICAgIDwvVGV4dD5cbiAgICAgICAgKX1cbiAgICAgIDwvQ2FyZD5cbiAgICA8L0JveD5cbiAgKTtcblxuICByZXR1cm4gKFxuICAgIDxUaXBweVxuICAgICAgcmVuZGVyPXsoYXR0cnMpID0+IChtb3VudGVkID8gcmVuZGVyVG9vbHRpcChhdHRycykgOiAnJyl9XG4gICAgICBvZmZzZXQ9e1swLCA0XX1cbiAgICAgIHBsdWdpbnM9e1tzdGlja3ksIGxhenlQbHVnaW5dfVxuICAgICAgcG9wcGVyT3B0aW9ucz17e1xuICAgICAgICBtb2RpZmllcnM6IFtcbiAgICAgICAgICB7XG4gICAgICAgICAgICBuYW1lOiAncHJldmVudE92ZXJmbG93JyxcbiAgICAgICAgICAgIG9wdGlvbnM6IHtcbiAgICAgICAgICAgICAgcGFkZGluZzogNFxuICAgICAgICAgICAgfVxuICAgICAgICAgIH1cbiAgICAgICAgXVxuICAgICAgfX1cbiAgICA+XG4gICAgICB7Y2hpbGRyZW59XG4gICAgPC9UaXBweT5cbiAgKTtcbn07XG5cblRvb2x0aXAucHJvcFR5cGVzID0ge1xuICAvKipcbiAgICogTm9kZSB3aGljaCB3aWxsIHRyaWdnZXIgdGhlIHRvb2x0aXAuIFRoaXMgc2hvdWxkIGJlIGVpdGhlciBhbiBJY29uLCBCdXR0b24sXG4gICAqIG9yIExpbmsuXG4gICAqICovXG4gIGNoaWxkcmVuOiBQcm9wVHlwZXMuZWxlbWVudC5pc1JlcXVpcmVkLFxuXG4gIC8qKlxuICAgKiBDb250ZW50IHRvIGRpc3BsYXkgd2l0aGluIHRoZSB0b29sdGlwIHdoZW4gaXQgaXMgZGlzcGxheWVkXG4gICAqICovXG4gIGNvbnRlbnQ6IFByb3BUeXBlcy5vbmVPZlR5cGUoW1Byb3BUeXBlcy5zdHJpbmcsIFByb3BUeXBlcy5ub2RlXSksXG5cbiAgLyoqXG4gICAqIFRpdGxlIHRvIGRpc3BsYXkgYWJvdmUgdGhlIHRvb2x0aXAgY29udGVudFxuICAgKiAqL1xuICB0aXRsZTogUHJvcFR5cGVzLm9uZU9mVHlwZShbUHJvcFR5cGVzLnN0cmluZywgUHJvcFR5cGVzLm5vZGVdKSxcblxuICAvKipcbiAgICogUmVuZGVyIGZ1bmN0aW9uIGZvciByZW5kZXJpbmcgdGlwcHkgZWxlbWVudCBmcm9tIHNjcmF0Y2hcbiAgICovXG4gIHJlbmRlcjogUHJvcFR5cGVzLmZ1bmNcbn07XG5cblRvb2x0aXAuZGVmYXVsdFByb3BzID0ge1xuICBjb250ZW50OiBudWxsLFxuICB0aXRsZTogbnVsbCxcbiAgcmVuZGVyOiBudWxsXG59O1xuXG5leHBvcnQgZGVmYXVsdCBUb29sdGlwO1xuIl19 */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+};
+
+var Tooltip = function Tooltip(_ref2) {
+  var title = _ref2.title,
+      content = _ref2.content,
+      children = _ref2.children,
+      render = _ref2.render,
+      props = _objectWithoutProperties(_ref2, ["title", "content", "children", "render"]);
 
   var _useState = (0, _react.useState)(false),
       _useState2 = _slicedToArray(_useState, 2),
@@ -84,32 +74,78 @@ var Tooltip = function Tooltip(_ref) {
   var lazyPlugin = {
     fn: function fn() {
       return {
-        onShow: function onShow() {
+        onMount: function onMount() {
           return setMounted(true);
         },
-        onHidden: function onHidden() {
+        onHide: function onHide() {
           return setMounted(false);
         }
       };
     }
   };
-  var renderProps = {};
+  var springConfig = {
+    type: 'spring',
+    damping: 24,
+    stiffness: 480,
+    restSpeed: 0.1,
+    restDelta: 0.6
+  };
+  var variants = {
+    visible: {
+      opacity: 1,
+      scale: 1
+    },
+    hidden: {
+      opacity: 0,
+      scale: 0.5
+    }
+  };
 
-  if (render) {
-    renderProps.render = function () {
-      return mounted ? render.apply(void 0, arguments) : '';
-    };
-  } else {
-    renderProps.content = mounted ? content : '';
-  }
+  var renderTooltip = function renderTooltip(attrs) {
+    return (0, _core.jsx)(_Box["default"], _extends({
+      as: _framerMotion.motion.div,
+      initial: "hidden",
+      variants: variants,
+      animate: mounted ? 'visible' : 'hidden',
+      transition: springConfig
+    }, attrs), (0, _core.jsx)(_Card["default"], _extends({
+      bg: "monochrome.grey90",
+      borderRadius: "small",
+      boxShadow: "elevation1",
+      color: "monochrome.white",
+      gridGap: "smallest",
+      fontSize: "size3",
+      maxWidth: "200px",
+      p: "smaller",
+      css: _ref
+    }, props), title && (0, _core.jsx)(_Heading["default"].h3, {
+      mb: "0",
+      fontSize: "inherit",
+      color: "inherit",
+      textAlign: "inherit"
+    }, title), content && (0, _core.jsx)(_Text["default"], {
+      as: _Grid["default"],
+      fontSize: "inherit",
+      color: "inherit",
+      textAlign: "inherit"
+    }, content)));
+  };
 
-  return (0, _core.jsx)(StyledTippy, _objectSpread(_objectSpread({
-    arrow: true,
-    duration: 300,
-    animation: 'fade',
-    inertia: true,
-    plugins: [_tippy2.animateFill, _tippy2.sticky, lazyPlugin]
-  }, props), renderProps), children);
+  return (0, _core.jsx)(_headless["default"], {
+    render: function render(attrs) {
+      return mounted ? renderTooltip(attrs) : '';
+    },
+    offset: [0, 4],
+    plugins: [_tippy.sticky, lazyPlugin],
+    popperOptions: {
+      modifiers: [{
+        name: 'preventOverflow',
+        options: {
+          padding: 4
+        }
+      }]
+    }
+  }, children);
 };
 
 Tooltip.propTypes = {
@@ -125,12 +161,18 @@ Tooltip.propTypes = {
   content: _propTypes["default"].oneOfType([_propTypes["default"].string, _propTypes["default"].node]),
 
   /**
+   * Title to display above the tooltip content
+   * */
+  title: _propTypes["default"].oneOfType([_propTypes["default"].string, _propTypes["default"].node]),
+
+  /**
    * Render function for rendering tippy element from scratch
    */
   render: _propTypes["default"].func
 };
 Tooltip.defaultProps = {
   content: null,
+  title: null,
   render: null
 };
 var _default = Tooltip;
