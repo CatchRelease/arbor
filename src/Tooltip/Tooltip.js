@@ -1,75 +1,104 @@
 /** @jsx jsx */
 import { useState } from 'react'; /* eslint-disable-line no-unused-vars */
-import { jsx } from '@emotion/core';
+import { css, jsx } from '@emotion/core';
 import PropTypes from 'prop-types';
-import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
-import { animateFill, sticky } from 'tippy.js';
-import styled from '@emotion/styled';
+import Tippy from '@tippyjs/react/headless';
+import { sticky } from 'tippy.js';
+import { motion } from 'framer-motion';
 
-const StyledTippy = styled(Tippy)`
-  background: none;
-  padding: 0;
+import Box from '../Box';
+import Card from '../Card';
+import Grid from '../Grid';
+import Heading from '../Heading';
+import Text from '../Text';
 
-  &[data-placement^='top'] > .tippy-arrow::before {
-    border-top-color: ${(props) => props.theme.colors.monochrome.grey90};
-  }
-
-  &[data-placement^='bottom'] > .tippy-arrow::before {
-    border-bottom-color: ${(props) => props.theme.colors.monochrome.grey90};
-  }
-
-  &[data-placement^='left'] > .tippy-arrow::before {
-    border-left-color: ${(props) => props.theme.colors.monochrome.grey90};
-  }
-
-  &[data-placement^='right'] > .tippy-arrow::before {
-    border-right-color: ${(props) => props.theme.colors.monochrome.grey90};
-  }
-
-  .tippy-content {
-    background: ${(props) => props.theme.colors.monochrome.grey90};
-    border-radius: ${(props) => props.theme.space.small};
-    color: ${(props) => props.theme.colors.monochrome.white};
-    font-size: ${(props) => props.theme.fontSizes.size4};
-    padding: ${(props) => props.theme.space.smaller};
-    font-family: ${(props) => props.theme.brandFont};
-    line-height: ${(props) => props.theme.space.small};
-  }
-`;
-
-const Tooltip = ({ content, children, render, ...props }) => {
+const Tooltip = ({ title, content, children, render, ...props }) => {
   const [mounted, setMounted] = useState(false);
 
   const lazyPlugin = {
     fn: () => ({
-      onShow: () => setMounted(true),
-      onHidden: () => setMounted(false)
+      onMount: () => setMounted(true),
+      onHide: () => setMounted(false)
     })
   };
+  const springConfig = {
+    type: 'spring',
+    damping: 24,
+    stiffness: 480,
+    restSpeed: 0.1,
+    restDelta: 0.6
+  };
 
-  const renderProps = {};
+  const variants = {
+    visible: { opacity: 1, scale: 1 },
+    hidden: { opacity: 0, scale: 0.5 }
+  };
 
-  if (render) {
-    renderProps.render = (...args) => (mounted ? render(...args) : '');
-  } else {
-    renderProps.content = mounted ? content : '';
-  }
+  const renderTooltip = (attrs) => (
+    <Box
+      as={motion.div}
+      initial="hidden"
+      variants={variants}
+      animate={mounted ? 'visible' : 'hidden'}
+      transition={springConfig}
+      {...attrs}
+    >
+      <Card
+        bg="monochrome.grey90"
+        borderRadius="small"
+        boxShadow="elevation1"
+        color="monochrome.white"
+        gridGap="smallest"
+        fontSize="size3"
+        maxWidth="200px"
+        p="smaller"
+        css={css`
+          word-break: break-word;
+        `}
+        {...props}
+      >
+        {title && (
+          <Heading.h3
+            mb="0"
+            fontSize="inherit"
+            color="inherit"
+            textAlign="inherit"
+          >
+            {title}
+          </Heading.h3>
+        )}
+        {content && (
+          <Text
+            as={Grid}
+            fontSize="inherit"
+            color="inherit"
+            textAlign="inherit"
+          >
+            {content}
+          </Text>
+        )}
+      </Card>
+    </Box>
+  );
 
   return (
-    <StyledTippy
-      {...{
-        arrow: true,
-        duration: 300,
-        animation: 'fade',
-        inertia: true,
-        plugins: [animateFill, sticky, lazyPlugin],
-        ...props,
-        ...renderProps
+    <Tippy
+      render={(attrs) => (mounted ? renderTooltip(attrs) : '')}
+      offset={[0, 4]}
+      plugins={[sticky, lazyPlugin]}
+      popperOptions={{
+        modifiers: [
+          {
+            name: 'preventOverflow',
+            options: {
+              padding: 4
+            }
+          }
+        ]
       }}
     >
       {children}
-    </StyledTippy>
+    </Tippy>
   );
 };
 
@@ -86,6 +115,11 @@ Tooltip.propTypes = {
   content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
 
   /**
+   * Title to display above the tooltip content
+   * */
+  title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+
+  /**
    * Render function for rendering tippy element from scratch
    */
   render: PropTypes.func
@@ -93,6 +127,7 @@ Tooltip.propTypes = {
 
 Tooltip.defaultProps = {
   content: null,
+  title: null,
   render: null
 };
 

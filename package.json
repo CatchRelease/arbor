@@ -1,6 +1,6 @@
 {
   "name": "@catchandrelease/arbor",
-  "version": "0.93.0",
+  "version": "0.93.1",
   "description": "React component library for Catch&Release",
   "main": "dist/index.js",
   "scripts": {
@@ -31,6 +31,7 @@
     "@tippyjs/react": "^4.1.0",
     "babel-plugin-emotion": "^10.0.33",
     "emotion-theming": "^10.0.27",
+    "framer-motion": "^2.3.0",
     "lodash": "^4.17.11",
     "moment": "^2.25.3",
     "polished": "^3.6.3",
