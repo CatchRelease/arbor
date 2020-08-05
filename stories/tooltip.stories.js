@@ -9,26 +9,20 @@ import {
   Grid,
   Icon,
   Link,
-  Paragraph,
-  Text,
+  Heading,
   Tooltip
 } from '../src';
 
 const stories = storiesOf('Tooltips', module);
 
-const buttonIcon = <Icon name="download" />;
+const buttonIcon = <Icon name="download-fas" />;
 
 const FancyTooltipContent = () => (
-  <Box textAlign="left" maxWidth="200px">
-    <Grid gridGap="smallest" gridTemplateColumns="0fr 1fr" mb="smallest">
-      <Icon color="intent.brand.light" name="cr-logo" />
-      <Text color="inherit" fontWeight="bold">
-        Title of some content!
-      </Text>
-    </Grid>
-    <Paragraph variant="ui" color="inherit">
-      More detail to explain what the title actually means.
-    </Paragraph>
+  <Box fontSize="size9">
+    <Icon color="intent.brand.light" name="cr-logo" />
+    <Heading color="monochrome.white">
+      A tooltip&apos;s content and title props can accept custom components
+    </Heading>
   </Box>
 );
 
@@ -36,56 +30,63 @@ stories.add(
   'default',
   () => (
     <Grid
-      m="largest"
+      padding="large"
       gridGap="large"
-      gridTemplateColumns="repeat(3, 1fr)"
+      gridTemplateColumns="repeat(3,1fr)"
+      alignContent="start"
+      alignItems="center"
       justifyItems="center"
     >
-      <Box>
-        <Tooltip placement="bottom" content={<FancyTooltipContent />}>
-          <div>
-            <Button variant="primary">Button</Button>
-          </div>
-        </Tooltip>
-      </Box>
+      <Tooltip placement="bottom" content={<FancyTooltipContent />}>
+        <Button variant="primary">tooltip with custom content</Button>
+      </Tooltip>
 
-      <Box>
-        <Tooltip content="I'm a tooltip!">
-          <Button variant="primary" size="small">
-            Button
-          </Button>
-        </Tooltip>
-      </Box>
+      <Tooltip
+        title="A tooltip title"
+        content="Here's an example of a tooltip that has a title."
+      >
+        <Button variant="minimal" iconStart={<Icon name="thumbs-up-fas" />}>
+          tooltip with title
+        </Button>
+      </Tooltip>
 
-      <Box>
-        <Tooltip placement="right" content="Icon Button!">
-          <Button iconEnd={buttonIcon}>Icon Button</Button>
-        </Tooltip>
-      </Box>
+      <Tooltip
+        title="Other props"
+        content="The tooltip container accepts all Grid props. Title and content inherit fontSize, color, and textAlign."
+        fontSize="size7"
+        color="palette.purple.default"
+        padding="large"
+        justifyItems="center"
+        gridGap="small"
+        bg="monochrome.white"
+        borderRadius="larger"
+      >
+        <Button variant="minimal" iconStart={<Icon name="info-circle" />}>
+          other props
+        </Button>
+      </Tooltip>
 
-      <Box>
-        <Tooltip content="Eight action items have been accepted.">
-          <Link
-            href="#tooltip"
-            variant="muted"
-            onClick={(e) => e.preventDefault()}
-          >
-            8 Action Items
-          </Link>
-        </Tooltip>
-      </Box>
+      <Tooltip content="Download">
+        <Button variant="minimal" iconStart={buttonIcon} />
+      </Tooltip>
 
-      <Box>
-        <Tooltip placement="right" content="John Doe">
-          <Avatar name="John Doe" />
-        </Tooltip>
-      </Box>
+      <Tooltip content="Eight action items have been accepted.">
+        <Link
+          href="#tooltip"
+          variant="muted"
+          onClick={(e) => e.preventDefault()}
+        >
+          8 Action Items
+        </Link>
+      </Tooltip>
 
-      <Box>
-        <Tooltip placement="right" content="Download Icon!">
-          <Icon name="download" />
-        </Tooltip>
-      </Box>
+      <Tooltip content="John Doe">
+        <Avatar name="John Doe" />
+      </Tooltip>
+
+      <Tooltip placement="right" content="Info Icon!">
+        <Icon name="info-circle" />
+      </Tooltip>
     </Grid>
   ),
   { notes: { markdown: notes } }

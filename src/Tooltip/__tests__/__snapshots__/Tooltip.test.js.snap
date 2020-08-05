@@ -1,54 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Tooltip /> properly renders a tooltip 1`] = `
-.emotion-0 {
-  background: none;
-  padding: 0;
-}
-
-.emotion-0[data-placement^='top'] > .tippy-arrow::before {
-  border-top-color: #25272D;
-}
-
-.emotion-0[data-placement^='bottom'] > .tippy-arrow::before {
-  border-bottom-color: #25272D;
-}
-
-.emotion-0[data-placement^='left'] > .tippy-arrow::before {
-  border-left-color: #25272D;
-}
-
-.emotion-0[data-placement^='right'] > .tippy-arrow::before {
-  border-right-color: #25272D;
-}
-
-.emotion-0 .tippy-content {
-  background: #25272D;
-  border-radius: 0.75rem;
-  color: #FFFFFF;
-  font-size: 0.875rem;
-  padding: 0.5rem;
-  font-family: Motiva Sans;
-  line-height: 0.75rem;
-}
-
 <Tooltip
   content="Hello World"
   render={null}
+  title={null}
 >
-  <StyledTippy
-    animation="fade"
-    arrow={true}
-    content=""
-    duration={300}
-    inertia={true}
+  <ForwardRef(TippyWrapper)
+    offset={
+      Array [
+        0,
+        4,
+      ]
+    }
     plugins={
       Array [
-        Object {
-          "defaultValue": false,
-          "fn": [Function],
-          "name": "animateFill",
-        },
         Object {
           "defaultValue": false,
           "fn": [Function],
@@ -59,21 +25,29 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
         },
       ]
     }
+    popperOptions={
+      Object {
+        "modifiers": Array [
+          Object {
+            "name": "preventOverflow",
+            "options": Object {
+              "padding": 4,
+            },
+          },
+        ],
+      }
+    }
+    render={[Function]}
   >
-    <ForwardRef(TippyWrapper)
-      animation="fade"
-      arrow={true}
-      className="emotion-0 emotion-1"
-      content=""
-      duration={300}
-      inertia={true}
+    <Tippy
+      offset={
+        Array [
+          0,
+          4,
+        ]
+      }
       plugins={
         Array [
-          Object {
-            "defaultValue": false,
-            "fn": [Function],
-            "name": "animateFill",
-          },
           Object {
             "defaultValue": false,
             "fn": [Function],
@@ -84,44 +58,35 @@ exports[`<Tooltip /> properly renders a tooltip 1`] = `
           },
         ]
       }
-    >
-      <Tippy
-        animation="fade"
-        arrow={true}
-        className="emotion-0 emotion-1"
-        content=""
-        duration={300}
-        inertia={true}
-        plugins={
-          Array [
+      popperOptions={
+        Object {
+          "modifiers": Array [
             Object {
-              "defaultValue": false,
-              "fn": [Function],
-              "name": "animateFill",
+              "name": "preventOverflow",
+              "options": Object {
+                "padding": 4,
+              },
             },
-            Object {
-              "defaultValue": false,
-              "fn": [Function],
-              "name": "sticky",
-            },
-            Object {
-              "fn": [Function],
-            },
-          ]
+          ],
         }
-      >
-        <p>
-          I have a tooltip
-        </p>
-        <Portal
-          containerInfo={
-            <div>
-              
-            </div>
-          }
-        />
-      </Tippy>
-    </ForwardRef(TippyWrapper)>
-  </StyledTippy>
+      }
+      render={[Function]}
+    >
+      <p>
+        I have a tooltip
+      </p>
+      <Portal
+        containerInfo={
+          <div
+            data-tippy-root=""
+            id="tippy-1"
+            style="pointer-events: none; z-index: 9999;"
+          >
+            
+          </div>
+        }
+      />
+    </Tippy>
+  </ForwardRef(TippyWrapper)>
 </Tooltip>
 `;
