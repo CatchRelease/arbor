@@ -40,14 +40,14 @@ StyledIcon.propTypes = {
   ...opacity.propTypes
 };
 
-const Icon = ({ name, theme, iconRef, ...props }) => {
+const Icon = ({ className, name, theme, iconRef, ...props }) => {
   const { iconFontPrefix } = theme;
 
   return (
     <ClassNames>
       {({ cx }) => (
         <StyledIcon
-          className={cx(iconFontPrefix, `${iconFontPrefix}-${name}`)}
+          className={cx(iconFontPrefix, `${iconFontPrefix}-${name}`, className)}
           ref={iconRef}
           {...props}
         />
@@ -57,6 +57,8 @@ const Icon = ({ name, theme, iconRef, ...props }) => {
 };
 
 Icon.propTypes = {
+  className: PropTypes.string,
+
   /**
    * Name of the icon to render. Must be a supported icon loaded via an icon
    * font on the page. The font prefix will be prepended and can be customized
@@ -82,6 +84,7 @@ Icon.propTypes = {
 };
 
 Icon.defaultProps = {
+  className: undefined,
   rotation: null,
   iconRef: null
 };
