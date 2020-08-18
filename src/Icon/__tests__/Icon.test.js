@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
 
 import createWithTheme from '../../../utils/createWithTheme';
+import mountWithTheme from '../../../utils/mountWithTheme';
 import Icon from '../Icon';
 
 describe('<Icon />', () => {
@@ -44,5 +45,27 @@ describe('<Icon />', () => {
 
       expect(tree).toMatchSnapshot();
     });
+  });
+
+  it('sets arbor icon class names', () => {
+    const wrapper = mountWithTheme(<Icon name="test-icon-name" />);
+
+    expect(wrapper.find('StyledIcon')).toHaveClassName('ar ar-test-icon-name');
+  });
+
+  it('does not clobber arbor icon class names when passing css prop', () => {
+    const wrapper = mountWithTheme(
+      <Icon css={{ cursor: 'pointer' }} name="test-icon-name" />
+    );
+
+    expect(wrapper.find('StyledIcon')).toHaveClassName('ar ar-test-icon-name');
+  });
+
+  it('forwards ref', () => {
+    const ref = React.createRef();
+
+    const wrapper = mountWithTheme(<Icon name="test-icon-name" ref={ref} />);
+
+    expect(ref.current).toBe(wrapper.find('StyledIcon').getDOMNode());
   });
 });
