@@ -43,10 +43,11 @@ var StyledAutoCompleteMultiValue = function StyledAutoCompleteMultiValue(_ref) {
   var data = _ref.data,
       label = _ref.data.label,
       paletteColor = _ref.paletteColor,
+      variant = _ref.variant,
+      readOnly = _ref.readOnly,
       removeProps = _ref.removeProps;
   var color = paletteColor === null ? (0, _utils.colorForString)(label, Object.keys(_colors.palette)) : paletteColor;
-
-  var iconEnd = /*#__PURE__*/_react["default"].createElement(_Icon["default"], _extends({
+  var iconEnd = readOnly ? null : /*#__PURE__*/_react["default"].createElement(_Icon["default"], _extends({
     "aria-label": "remove",
     css: {
       cursor: 'pointer'
@@ -54,12 +55,11 @@ var StyledAutoCompleteMultiValue = function StyledAutoCompleteMultiValue(_ref) {
     fontSize: "size3",
     name: "cross"
   }, removeProps));
-
   return /*#__PURE__*/_react["default"].createElement(_Badge["default"], _objectSpread({
     iconEnd: iconEnd,
     paletteColor: color,
     subtle: true,
-    variant: 'pill'
+    variant: variant
   }, data), label);
 };
 
@@ -71,11 +71,20 @@ StyledAutoCompleteMultiValue.propTypes = {
     onClick: _propTypes["default"].func.isRequired,
     onMouseDown: _propTypes["default"].func.isRequired,
     onTouchEnd: _propTypes["default"].func.isRequired
-  }).isRequired,
-  paletteColor: _propTypes["default"].oneOf([''].concat(_toConsumableArray(Object.keys(_colors.palette))))
+  }),
+  paletteColor: _propTypes["default"].oneOf([''].concat(_toConsumableArray(Object.keys(_colors.palette)))),
+  readOnly: _propTypes["default"].bool,
+  variant: _propTypes["default"].oneOf(['default', 'pill'])
 };
 StyledAutoCompleteMultiValue.defaultProps = {
-  paletteColor: null
+  removeProps: {
+    onClick: function onClick() {},
+    onMouseDown: function onMouseDown() {},
+    onTouchEnd: function onTouchEnd() {}
+  },
+  paletteColor: null,
+  readOnly: false,
+  variant: 'default'
 };
 var _default = StyledAutoCompleteMultiValue;
 exports["default"] = _default;

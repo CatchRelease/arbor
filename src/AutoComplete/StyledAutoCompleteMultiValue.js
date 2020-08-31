@@ -11,6 +11,8 @@ const StyledAutoCompleteMultiValue = ({
   data,
   data: { label },
   paletteColor,
+  variant,
+  readOnly,
   removeProps
 }) => {
   const color =
@@ -18,7 +20,7 @@ const StyledAutoCompleteMultiValue = ({
       ? colorForString(label, Object.keys(palette))
       : paletteColor;
 
-  const iconEnd = (
+  const iconEnd = readOnly ? null : (
     <Icon
       aria-label="remove"
       css={{ cursor: 'pointer' }}
@@ -34,7 +36,7 @@ const StyledAutoCompleteMultiValue = ({
         iconEnd,
         paletteColor: color,
         subtle: true,
-        variant: 'pill',
+        variant,
         ...data
       }}
     >
@@ -51,12 +53,21 @@ StyledAutoCompleteMultiValue.propTypes = {
     onClick: PropTypes.func.isRequired,
     onMouseDown: PropTypes.func.isRequired,
     onTouchEnd: PropTypes.func.isRequired
-  }).isRequired,
-  paletteColor: PropTypes.oneOf(['', ...Object.keys(palette)])
+  }),
+  paletteColor: PropTypes.oneOf(['', ...Object.keys(palette)]),
+  readOnly: PropTypes.bool,
+  variant: PropTypes.oneOf(['default', 'pill'])
 };
 
 StyledAutoCompleteMultiValue.defaultProps = {
-  paletteColor: null
+  removeProps: {
+    onClick: () => {},
+    onMouseDown: () => {},
+    onTouchEnd: () => {}
+  },
+  paletteColor: null,
+  readOnly: false,
+  variant: 'default'
 };
 
 export default StyledAutoCompleteMultiValue;

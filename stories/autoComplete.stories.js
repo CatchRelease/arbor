@@ -51,7 +51,11 @@ const filterOptions = (options, inputValue: '') =>
 
 const { MultiValue } = styledAutoCompleteComponents;
 
-const NeutralMultiValue = (props) => <MultiValue {...props} paletteColor="" />;
+const NeutralMultiValue = (props) => (
+  <MultiValue {...props} paletteColor="neutral" />
+);
+const ReadOnlyMultiValue = (props) => <MultiValue {...props} readOnly />;
+const PillMultiValue = (props) => <MultiValue {...props} variant="pill" />;
 
 class AutoCompleteExample extends React.Component {
   constructor(props) {
@@ -175,6 +179,26 @@ stories.add(
         variant={select('Variant', variantOptions, 'default')}
         components={{
           MultiValue: NeutralMultiValue
+        }}
+      />
+
+      <AutoCompleteExample
+        id="auto-complete-7"
+        label="AutoComplete with read-only badges"
+        options={neutralOptions}
+        variant={select('Variant', variantOptions, 'default')}
+        components={{
+          MultiValue: ReadOnlyMultiValue
+        }}
+      />
+
+      <AutoCompleteExample
+        id="auto-complete-8"
+        label="AutoComplete with pill-shaped badges"
+        options={neutralOptions}
+        variant={select('Variant', variantOptions, 'default')}
+        components={{
+          MultiValue: PillMultiValue
         }}
       />
     </Box>
