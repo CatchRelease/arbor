@@ -37,7 +37,11 @@ var ResponivePopover = _react["default"].forwardRef(function (_ref, ref) {
   var desktopRef = (0, _react.useRef)(null);
   var display = isMobileFullScreen ? ['none', 'block'] : undefined;
   (0, _react.useEffect)(function () {
-    // eslint-disable-next-line no-param-reassign
+    if (!ref) {
+      return;
+    } // eslint-disable-next-line no-param-reassign
+
+
     ref.current = {
       close: function close() {
         desktopRef.current.close();
