@@ -182,9 +182,9 @@ describe('<Pagination />', () => {
           expect(button).toExist();
           expect(button).toHaveProp({
             variant: 'primary',
-            mx: 'smallest'
+            mx: 'smallest',
+            disabled: false
           });
-          expect(button).not.toBeDisabled();
         });
 
         it('calls paginate on click', () => {
@@ -210,9 +210,9 @@ describe('<Pagination />', () => {
           expect(button).toExist();
           expect(button).toHaveProp({
             variant: 'minimal',
-            mx: 'smallest'
+            mx: 'smallest',
+            disabled: false
           });
-          expect(button).not.toBeDisabled();
         });
 
         it('calls paginate on click', () => {
@@ -238,12 +238,9 @@ describe('<Pagination />', () => {
           expect(button).toExist();
           expect(button).toHaveProp({
             variant: 'minimal',
-            mx: 'smallest'
+            mx: 'smallest',
+            disabled: true
           });
-        });
-
-        it('disabled', () => {
-          expect(button).toBeDisabled();
         });
 
         it('no onClick event', () => {
@@ -273,7 +270,7 @@ describe('<Pagination />', () => {
         });
 
         it('is disabled', () => {
-          expect(button).toBeDisabled();
+          expect(button).toHaveProp({ disabled: true });
         });
       });
 
@@ -295,7 +292,7 @@ describe('<Pagination />', () => {
         });
 
         it('is not disabled', () => {
-          expect(button).not.toBeDisabled();
+          expect(button).toHaveProp({ disabled: false });
         });
 
         it('calls paginate on click', () => {
@@ -327,7 +324,7 @@ describe('<Pagination />', () => {
         });
 
         it('is disabled', () => {
-          expect(button).toBeDisabled();
+          expect(button).toHaveProp({ disabled: true });
         });
       });
 
@@ -347,7 +344,7 @@ describe('<Pagination />', () => {
         });
 
         it('is not disabled', () => {
-          expect(button).not.toBeDisabled();
+          expect(button).toHaveProp({ disabled: false });
         });
 
         it('calls paginate on click', () => {

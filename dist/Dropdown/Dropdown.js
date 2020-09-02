@@ -62,7 +62,15 @@ var Dropdown = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
 
     _this.onOpen = function () {
-      _this.menu.current.focusMenuItem(0);
+      _this.setState({
+        isOpen: true
+      });
+    };
+
+    _this.onClose = function () {
+      _this.setState({
+        isOpen: false
+      });
     };
 
     _this.onKeyDown = function (e) {
@@ -78,7 +86,7 @@ var Dropdown = /*#__PURE__*/function (_React$Component) {
 
       e.preventDefault();
 
-      _this.popover.current.open(_this.onOpen);
+      _this.popover.current.open();
     };
 
     _this.onChange = function (value) {
@@ -89,9 +97,11 @@ var Dropdown = /*#__PURE__*/function (_React$Component) {
       onChange(value);
     };
 
+    _this.state = {
+      isOpen: false
+    };
     _this.popover = _react["default"].createRef();
     _this.button = _react["default"].createRef();
-    _this.menu = _react["default"].createRef();
     return _this;
   }
 
@@ -117,12 +127,14 @@ var Dropdown = /*#__PURE__*/function (_React$Component) {
           selected = _this$props.selected,
           props = _objectWithoutProperties(_this$props, ["MenuItemComponent", "TriggerComponent", "children", "menuItems", "popoverProps", "selected"]);
 
-      var isOpen = this.popover.current && this.popover.current.state.isOpen;
+      var isOpen = this.state.isOpen;
 
       var menu = /*#__PURE__*/_react["default"].createElement(_Menu["default"], _extends({
         MenuItemComponent: MenuItemComponent,
         onChange: this.onChange,
-        ref: this.menu
+        ref: function ref(menuRef) {
+          return menuRef && menuRef.focusMenuItem(0);
+        }
       }, {
         menuItems: menuItems,
         name: props.name,
@@ -131,6 +143,8 @@ var Dropdown = /*#__PURE__*/function (_React$Component) {
 
       return /*#__PURE__*/_react["default"].createElement(_Popover["default"], _extends({
         ref: this.popover,
+        onOpen: this.onOpen,
+        onClose: this.onClose,
         content: menu
       }, popoverProps), /*#__PURE__*/_react["default"].createElement(TriggerComponent, _extends({
         ref: this.button,

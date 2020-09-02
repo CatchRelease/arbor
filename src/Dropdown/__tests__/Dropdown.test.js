@@ -1,5 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { act } from 'react-dom/test-utils';
+
 import mountWithTheme from '../../../utils/mountWithTheme';
 
 import Button from '../../Button';
@@ -101,26 +103,6 @@ describe('<Dropdown />', () => {
     });
   });
 
-  describe('onOpen', () => {
-    it('focus the first item', () => {
-      const dropdown = mountWithProps();
-      const instance = dropdown.instance();
-
-      // open the popover to render the menu
-      instance.popover.current.open();
-
-      const focusMenuItemSpy = jest.spyOn(
-        instance.menu.current,
-        'focusMenuItem'
-      );
-
-      instance.onOpen();
-
-      expect(focusMenuItemSpy).toHaveBeenCalledTimes(1);
-      expect(focusMenuItemSpy).toHaveBeenLastCalledWith(0);
-    });
-  });
-
   describe('onKeyDown', () => {
     context('arrow down', () => {
       let activeElementSpy;
@@ -139,10 +121,9 @@ describe('<Dropdown />', () => {
         it('does not open popover', () => {
           const instance = dropdown.instance();
 
-          const popoverOpenSpy = jest.spyOn(instance.popover.current, 'open');
           instance.onKeyDown({ key: ARROW_DOWN, preventDefault: () => null });
 
-          expect(popoverOpenSpy).not.toHaveBeenCalled();
+          expect(dropdown).toHaveState({ isOpen: false });
         });
       });
 
@@ -152,16 +133,14 @@ describe('<Dropdown />', () => {
           activeElementSpy.mockReturnValue(buttonDOMNode);
         });
 
-        it('opens popover', () => {
+        it('opens popover', async () => {
           const instance = dropdown.instance();
 
-          const popoverOpenSpy = jest
-            .spyOn(instance.popover.current, 'open')
-            .mockReturnValue(null);
-          instance.onKeyDown({ key: ARROW_DOWN, preventDefault: () => null });
+          act(() => {
+            instance.onKeyDown({ key: ARROW_DOWN, preventDefault: () => null });
+          });
 
-          expect(popoverOpenSpy).toHaveBeenCalledTimes(1);
-          expect(popoverOpenSpy).toHaveBeenLastCalledWith(instance.onOpen);
+          expect(dropdown).toHaveState({ isOpen: true });
         });
       });
     });

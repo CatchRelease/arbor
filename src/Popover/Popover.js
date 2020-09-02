@@ -1,115 +1,104 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import React from 'react';
+import React, { useRef, useEffect, useState, forwardRef } from 'react';
 import ReactPopover from 'react-popover';
 import PropTypes from 'prop-types';
-
+import { useKeyPress } from 'react-use';
 import PopoverContent from './PopoverContent';
 
-class Popover extends React.Component {
-  state = {
-    isOpen: false
-  };
-
-  constructor(props) {
-    super(props);
-
-    this.node = React.createRef();
-  }
-
-  componentDidMount() {
-    document.addEventListener('click', this.handleOutsideClick, true);
-    document.addEventListener('keypress', this.handleKeyboard, true);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('click', this.handleOutsideClick, true);
-    document.removeEventListener('keypress', this.handleKeyboard, true);
-  }
-
-  handleOutsideClick = (e) => {
-    const { isOpen } = this.state;
-
-    if (!isOpen) {
-      return;
-    }
-
-    const currentRef = this.node.current;
-
-    if (
-      !currentRef.containerEl.contains(e.target) &&
-      !currentRef.targetEl.contains(e.target)
-    ) {
-      this.close();
-    }
-  };
-
-  handleKeyboard = (e) => {
-    if (e.key === 'Escape') {
-      this.close();
-    }
-  };
-
-  open(callback) {
-    const { onOpen } = this.props;
-    const { isOpen } = this.state;
-
-    if (isOpen) {
-      return;
-    }
-
-    this.setState({ isOpen: true }, () => {
-      if (callback) {
-        callback();
-      }
-
-      onOpen();
-    });
-  }
-
-  close() {
-    const { onClose } = this.props;
-    const { isOpen } = this.state;
-
-    if (!isOpen) {
-      return;
-    }
-
-    this.setState({ isOpen: false }, onClose);
-  }
-
-  toggle = () => {
-    const { isOpen } = this.state;
-
-    if (isOpen) {
-      this.close();
-    } else {
-      this.open();
-    }
-  };
-
-  render() {
-    const {
+const Popover = forwardRef(
+  (
+    {
       children,
       content,
       contentProps,
       preferPlace,
       place,
+      onOpen,
+      onClose,
       ...popoverProps
-    } = this.props;
-    const { isOpen } = this.state;
+    },
+    ref
+  ) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const popoverEl = useRef(null);
+    const isEscapePressed = useKeyPress('Escape');
+    const isFirstRun = useRef(true);
+
+    useEffect(() => {
+      if (isFirstRun.current) {
+        isFirstRun.current = false;
+        return;
+      }
+
+      if (isOpen) {
+        onOpen();
+      } else {
+        onClose();
+      }
+    }, [isOpen]);
+
+    const open = () => {
+      setIsOpen(true);
+    };
+
+    const close = () => {
+      setIsOpen(false);
+    };
+
+    const handleOutsideClick = (e) => {
+      const currentRef = popoverEl.current;
+
+      if (
+        currentRef.containerEl &&
+        !currentRef.containerEl.contains(e.target) &&
+        currentRef.targetEl &&
+        !currentRef.targetEl.contains(e.target)
+      ) {
+        close();
+      }
+    };
+
+    useEffect(() => {
+      if (ref) {
+        // eslint-disable-next-line no-param-reassign
+        ref.current = { open, close };
+      }
+    }, []);
+
+    useEffect(() => {
+      if (isEscapePressed) {
+        close();
+      }
+    }, [isEscapePressed]);
+
+    useEffect(() => {
+      document.addEventListener('click', handleOutsideClick, true);
+
+      return () => {
+        document.removeEventListener('click', handleOutsideClick, true);
+      };
+    }, []);
+
+    const toggle = () => {
+      if (isOpen) {
+        close();
+      } else {
+        open();
+      }
+    };
 
     const styledContent = (
       <PopoverContent {...contentProps}>{content}</PopoverContent>
     );
 
     const trigger = React.cloneElement(children, {
-      onClick: this.toggle
+      onClick: toggle
     });
 
     return (
       <ReactPopover
-        ref={this.node}
+        ref={popoverEl}
         isOpen={isOpen}
         body={styledContent}
         preferPlace={preferPlace}
@@ -122,7 +111,7 @@ class Popover extends React.Component {
       </ReactPopover>
     );
   }
-}
+);
 
 Popover.propTypes = {
   /**

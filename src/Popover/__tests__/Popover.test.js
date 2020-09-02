@@ -1,257 +1,132 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { shallow } from 'enzyme';
 
-import mountWithTheme from '../../../utils/mountWithTheme';
-import Card from '../../Card';
+import { screen, waitFor } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import renderWithTheme from '../../../utils/renderWithTheme';
+
 import Popover from '../Popover';
-
-const mountNode = document.createElement('div');
-document.body.appendChild(mountNode);
-
-const mount = (element) => {
-  // This is required to clean up after the mountNode, if this doesn't happen
-  // subsequent calls to rendering the body will fail.
-  ReactDOM.unmountComponentAtNode(mountNode);
-
-  return mountWithTheme(element, { attachTo: mountNode });
-};
-
-const simulateClick = (node) => {
-  const clickEvent = new window.MouseEvent('click', {
-    bubbles: true,
-    cancelable: true,
-    view: window
-  });
-  node.dispatchEvent(clickEvent);
-};
 
 describe('<Popover />', () => {
   const baseProps = {
-    content: 'Hello World'
+    content: (
+      <>
+        Hello World
+        <button type="submit">inside</button>
+      </>
+    )
   };
 
   const renderPopover = (props) =>
-    shallow(
-      <Popover {...{ ...baseProps, ...props }}>
-        <button type="button">Trigger</button>
-      </Popover>
+    renderWithTheme(
+      <div>
+        <Popover {...{ ...baseProps, ...props }}>
+          <button type="button">Trigger</button>
+        </Popover>
+        <div data-testid="outside">Outside of the popover</div>
+      </div>
     );
 
-  it('is closed by default', () => {
-    const popover = renderPopover();
+  const renderAndOpen = (props) => {
+    const utils = renderPopover(props);
+    userEvent.click(screen.getByRole('button', { name: 'Trigger' }));
+    return utils;
+  };
 
-    expect(popover.state().isOpen).toBe(false);
+  it('is closed by default', () => {
+    renderPopover();
+
+    expect(screen.queryByText('Hello World')).not.toBeInTheDocument();
   });
 
-  it('passes props to ReactPopover', () => {
-    const popover = renderPopover({ foo: 'bar' });
+  describe('opening the popover', () => {
+    it('opens the popover on trigger click', () => {
+      renderPopover();
+      userEvent.click(screen.getByRole('button', { name: 'Trigger' }));
 
-    expect(popover).toHaveProp({
-      foo: 'bar'
+      expect(screen.queryByText('Hello World')).toBeInTheDocument();
+    });
+
+    it('calls the onOpen prop', () => {
+      const onOpenSpy = jest.fn();
+      renderPopover({ onOpen: onOpenSpy });
+      userEvent.click(screen.getByRole('button', { name: 'Trigger' }));
+
+      expect(onOpenSpy).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  describe('closing the popover', () => {
+    let onClose;
+
+    beforeEach(() => {
+      onClose = jest.fn();
+      renderAndOpen({ onClose });
+    });
+
+    const itClosesThePopover = () => {
+      it('closes the popover', async () => {
+        await waitFor(() => {
+          expect(screen.queryByText('Hello World')).not.toBeInTheDocument();
+        });
+      });
+
+      it('calls the onClose prop', async () => {
+        await waitFor(() => {
+          expect(onClose).toHaveBeenCalledTimes(1);
+        });
+      });
+    };
+
+    describe('clicking on the trigger', () => {
+      beforeEach(() => {
+        userEvent.click(screen.getByRole('button', { name: 'Trigger' }));
+      });
+
+      itClosesThePopover();
+    });
+
+    describe('clicking outside the popover', () => {
+      beforeEach(() => {
+        userEvent.click(screen.getByTestId('outside'));
+      });
+
+      itClosesThePopover();
+    });
+
+    describe('clicking inside the popover', () => {
+      it('does not close the popover', () => {
+        userEvent.click(screen.getByRole('button', { name: 'inside' }));
+
+        expect(screen.queryByText('Hello World')).toBeInTheDocument();
+      });
+    });
+
+    describe('pressing escape', () => {
+      beforeEach(() => {
+        userEvent.type(screen.getByText('Hello World'), '{esc}');
+      });
+
+      itClosesThePopover();
     });
   });
 
   describe('content', () => {
-    const renderPopoverContent = (props) => {
-      const popover = renderPopover(props);
-      const body = popover.prop('body');
-      return mount(body).find(Card);
-    };
-
     it('defaults to overflow: hidden', () => {
-      const content = renderPopoverContent();
+      renderAndOpen();
 
-      expect(content).toHaveProp({ overflow: 'hidden' });
+      expect(screen.getByText('Hello World').closest('div')).toHaveStyle({
+        overflow: 'hidden'
+      });
     });
 
     it('supports passing explicit overflow', () => {
-      const content = renderPopoverContent({
+      renderAndOpen({
         contentProps: { overflow: 'visible' }
       });
 
-      expect(content).toHaveProp({ overflow: 'visible' });
-    });
-  });
-
-  describe('outside clicks', () => {
-    describe('clicking outisde of the popover', () => {
-      it('closes the popover', () => {
-        const popover = renderPopover();
-        popover.setState({ isOpen: true });
-
-        const wrapper = mount(
-          <div>
-            <div id="outside">Outside of the popover</div>
-            {popover}
-          </div>
-        );
-
-        const outsideNode = wrapper.find('#outside').getDOMNode();
-        simulateClick(outsideNode);
-
-        expect(popover.state().isOpen).toBe(false);
+      expect(screen.getByText('Hello World').closest('div')).toHaveStyle({
+        overflow: 'visible'
       });
-    });
-
-    describe('clicking inside the popover', () => {
-      it('does not cloes the popover', () => {
-        const popover = renderPopover({
-          content: <button type="submit">Inside the popover</button>
-        });
-        popover.setState({ isOpen: true });
-
-        const wrapper = mount(
-          <div>
-            <div id="outside">Outside of the popover</div>
-            {popover}
-          </div>
-        );
-
-        const node = wrapper
-          .find('button')
-          .filterWhere(
-            (button) => button.props().children === 'Inside the popover'
-          )
-          .getDOMNode();
-        simulateClick(node);
-
-        expect(popover.state().isOpen).toBe(true);
-      });
-    });
-  });
-
-  describe('pressing escape', () => {
-    it('closes the popover', () => {
-      const popover = renderPopover({
-        content: <button type="submit">Inside the popover</button>
-      });
-      popover.setState({ isOpen: true });
-
-      const wrapper = mount(
-        <div>
-          <div id="outside">Outside of the popover</div>
-          {popover}
-        </div>
-      );
-
-      const node = wrapper
-        .find('button')
-        .filterWhere(
-          (button) => button.props().children === 'Inside the popover'
-        )
-        .getDOMNode();
-
-      const event = new window.KeyboardEvent('keypress', {
-        key: 'Escape'
-      });
-      node.dispatchEvent(event);
-
-      expect(popover.state().isOpen).toBe(false);
-    });
-  });
-
-  describe('Trigger', () => {
-    describe('onClick', () => {
-      context('popover is closed', () => {
-        it('opens the popover', () => {
-          const popover = shallow(
-            <Popover content="Hello World">
-              <button type="button">Popover</button>
-            </Popover>
-          );
-
-          popover.find('button').simulate('click');
-
-          expect(popover.state().isOpen).toBe(true);
-        });
-      });
-
-      context('popover is open', () => {
-        it('closes the popover', () => {
-          const popover = shallow(
-            <Popover content="Hello World">
-              <button type="button">Popover</button>
-            </Popover>
-          );
-          popover.setState({ isOpen: true });
-
-          popover.find('button').simulate('click');
-
-          expect(popover.state().isOpen).toBe(false);
-        });
-      });
-    });
-  });
-
-  describe('open', () => {
-    let onOpenSpy;
-    let popover;
-
-    beforeEach(() => {
-      onOpenSpy = jest.fn();
-      popover = shallow(
-        <Popover content="Hello World" onOpen={onOpenSpy}>
-          <button type="button">Popover</button>
-        </Popover>
-      );
-    });
-
-    context('not yet opened', () => {
-      beforeEach(() => {
-        popover.setState({ isOpen: false });
-      });
-
-      it('opens the popover', () => {
-        popover.instance().open();
-        expect(popover).toHaveState('isOpen', true);
-      });
-
-      it('calls the onOpen prop', () => {
-        popover.instance().open();
-        expect(onOpenSpy).toHaveBeenCalledTimes(1);
-      });
-
-      it('calls the provided callback', () => {
-        const callbackSpy = jest.fn();
-
-        popover.instance().open(callbackSpy);
-        expect(callbackSpy).toHaveBeenCalledTimes(1);
-      });
-    });
-
-    context('already opened', () => {
-      beforeEach(() => {
-        popover.setState({ isOpen: true });
-      });
-
-      it('does not call the onOpen prop', () => {
-        popover.instance().open();
-        expect(onOpenSpy).not.toHaveBeenCalled();
-      });
-
-      it('does not call the provided callback', () => {
-        const callbackSpy = jest.fn();
-
-        popover.instance().open(callbackSpy);
-        expect(callbackSpy).not.toHaveBeenCalled();
-      });
-    });
-  });
-
-  describe('close', () => {
-    it('calls the onClose callback if provided', () => {
-      const onCloseSpy = jest.fn();
-      const popover = shallow(
-        <Popover content="Hello World" onClose={onCloseSpy}>
-          <button type="button">Popover</button>
-        </Popover>
-      );
-      popover.setState({ isOpen: true });
-
-      popover.instance().close();
-
-      expect(onCloseSpy).toHaveBeenCalled();
     });
   });
 });

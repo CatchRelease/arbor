@@ -6,10 +6,10 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "default", {
   enumerable: true,
   get: function get() {
-    return _Popover["default"];
+    return _ResponsivePopover["default"];
   }
 });
 
-var _Popover = _interopRequireDefault(require("./Popover"));
+var _ResponsivePopover = _interopRequireDefault(require("./ResponsivePopover"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }

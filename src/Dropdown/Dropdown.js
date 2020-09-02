@@ -11,9 +11,12 @@ class Dropdown extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      isOpen: false
+    };
+
     this.popover = React.createRef();
     this.button = React.createRef();
-    this.menu = React.createRef();
   }
 
   componentDidMount() {
@@ -25,7 +28,11 @@ class Dropdown extends React.Component {
   }
 
   onOpen = () => {
-    this.menu.current.focusMenuItem(0);
+    this.setState({ isOpen: true });
+  };
+
+  onClose = () => {
+    this.setState({ isOpen: false });
   };
 
   onKeyDown = (e) => {
@@ -40,7 +47,8 @@ class Dropdown extends React.Component {
     }
 
     e.preventDefault();
-    this.popover.current.open(this.onOpen);
+
+    this.popover.current.open();
   };
 
   onChange = (value) => {
@@ -60,19 +68,25 @@ class Dropdown extends React.Component {
       selected,
       ...props
     } = this.props;
-    const isOpen = this.popover.current && this.popover.current.state.isOpen;
+    const { isOpen } = this.state;
 
     const menu = (
       <Menu
         MenuItemComponent={MenuItemComponent}
         onChange={this.onChange}
-        ref={this.menu}
+        ref={(menuRef) => menuRef && menuRef.focusMenuItem(0)}
         {...{ menuItems, name: props.name, selected }}
       />
     );
 
     return (
-      <Popover ref={this.popover} content={menu} {...popoverProps}>
+      <Popover
+        ref={this.popover}
+        onOpen={this.onOpen}
+        onClose={this.onClose}
+        content={menu}
+        {...popoverProps}
+      >
         <TriggerComponent
           ref={this.button}
           aria-haspopup
