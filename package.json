@@ -4,7 +4,7 @@
   "description": "React component library for Catch&Release",
   "main": "dist/index.js",
   "scripts": {
-    "test": "TZ=UTC jest --env=jest-environment-jsdom-sixteen",
+    "test": "TZ=UTC jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "yarn eslint && stylelint src",
@@ -86,7 +86,6 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.0.1",
     "jest-emotion": "^10.0.32",
-    "jest-environment-jsdom-sixteen": "^1.0.3",
     "jest-enzyme": "^7.1.2",
     "jest-plugin-context": "^2.9.0",
     "prettier": "^2.0.5",
@@ -97,6 +96,9 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0"
+  },
+  "resolutions": {
+    "jest-environment-jsdom": "^26.0.1"
   },
   "storybook-deployer": {
     "gitUsername": "GH Pages Bot",
