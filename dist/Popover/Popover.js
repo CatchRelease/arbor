@@ -111,7 +111,10 @@ var Popover = (0, _react.forwardRef)(function (_ref, ref) {
     };
   }, []);
 
-  var toggle = function toggle() {
+  var toggle = function toggle(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
     if (isOpen) {
       close();
     } else {

@@ -80,7 +80,10 @@ const Popover = forwardRef(
       };
     }, []);
 
-    const toggle = () => {
+    const toggle = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
       if (isOpen) {
         close();
       } else {
