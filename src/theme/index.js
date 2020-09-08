@@ -20,6 +20,7 @@ import {
   sizes as fontSizes
 } from './typography';
 import { fontSizes as avatarFontSizes, sizes as avatarSizes } from './avatars';
+import { sizes as buttonSizes } from './buttons';
 
 export const breakpointsMap = {
   sm: '512px',
@@ -164,6 +165,10 @@ export const boxShadows = {
   elevation4: `0 0 1px ${colors.shadow.border}, 0 16px 24px -8px ${colors.shadow.blurry}`
 };
 
+const buttons = {
+  sizes: buttonSizes
+};
+
 export default {
   avatarSizes,
   avatarFontSizes,
@@ -172,6 +177,7 @@ export default {
   brandFont,
   breakpoints,
   breakpointsMap,
+  buttons,
   colors,
   fonts,
   fontSizes,

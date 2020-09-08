@@ -87,6 +87,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;

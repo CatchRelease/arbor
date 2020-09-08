@@ -30,48 +30,85 @@ stories.addDecorator(withKnobs);
 stories.add(
   'default',
   () => (
-    <div style={{ padding: '10px', width: '500px' }}>
+    <div style={{ padding: '10px', width: '90%' }}>
       <Heading.h1>Sizes</Heading.h1>
 
-      <Grid gridGap="10px 138px" gridTemplateColumns="repeat(4, max-content)">
-        <Heading.h5 as="h2">Small</Heading.h5>
-        <Heading.h5 as="h2">Medium</Heading.h5>
-        <Heading.h5 as="h2">Large</Heading.h5>
-        <Heading.h5 as="h2">Jumbo</Heading.h5>
+      <Grid
+        gridGap="10px 138px"
+        gridTemplateColumns={[
+          'repeat(1, 0fr)',
+          'repeat(1, 0fr)',
+          'repeat(3, 1fr)',
+          'repeat(5, 1fr)'
+        ]}
+      >
+        <div>
+          <Heading.h5 as="h2">Small</Heading.h5>
 
-        <Button
-          intent={select('intent', INTENTS, 'brand')}
-          spin={boolean('spin', false)}
-          size="small"
-        >
-          button label
-        </Button>
-        <Button
-          intent={select('intent', INTENTS, 'brand')}
-          spin={boolean('spin', false)}
-          size="medium"
-        >
-          button label
-        </Button>
-        <Button
-          intent={select('intent', INTENTS, 'brand')}
-          spin={boolean('spin', false)}
-          size="large"
-        >
-          button label
-        </Button>
-        <Button
-          intent={select('intent', INTENTS, 'brand')}
-          spin={boolean('spin', false)}
-          size="jumbo"
-        >
-          button label
-        </Button>
+          <Button
+            intent={select('intent', INTENTS, 'brand')}
+            spin={boolean('spin', false)}
+            size="small"
+          >
+            button label
+          </Button>
+        </div>
+        <div>
+          <Heading.h5 as="h2">Medium</Heading.h5>
+
+          <Button
+            intent={select('intent', INTENTS, 'brand')}
+            spin={boolean('spin', false)}
+            size="medium"
+          >
+            button label
+          </Button>
+        </div>
+        <div>
+          <Heading.h5 as="h2">Large</Heading.h5>
+
+          <Button
+            intent={select('intent', INTENTS, 'brand')}
+            spin={boolean('spin', false)}
+            size="large"
+          >
+            button label
+          </Button>
+        </div>
+        <div>
+          <Heading.h5 as="h2">Jumbo</Heading.h5>
+
+          <Button
+            intent={select('intent', INTENTS, 'brand')}
+            spin={boolean('spin', false)}
+            size="jumbo"
+          >
+            button label
+          </Button>
+        </div>
+        <div>
+          <Heading.h5 as="h2">Responsive Size</Heading.h5>
+
+          <Button
+            intent={select('intent', INTENTS, 'brand')}
+            spin={boolean('spin', false)}
+            size={['small', 'medium', 'large', 'jumbo']}
+          >
+            button label
+          </Button>
+        </div>
       </Grid>
 
       <Heading.h1>Style</Heading.h1>
 
-      <Grid gridGap="10px 138px" gridTemplateColumns="repeat(3, 1fr)">
+      <Grid
+        gridGap="10px 138px"
+        gridTemplateColumns={[
+          'repeat(1, 0fr)',
+          'repeat(1, 0fr)',
+          'repeat(3, 1fr)'
+        ]}
+      >
         <Button
           intent={select('intent', INTENTS, 'brand')}
           spin={boolean('spin', false)}
@@ -129,6 +166,16 @@ stories.add(
           variant="primary"
         >
           full width button
+        </Button>
+      </Box>
+      <Box width="500px" my="regular">
+        <Button
+          intent={select('intent', INTENTS, 'brand')}
+          spin={boolean('spin', false)}
+          fullWidth={[true, true, false]}
+          variant="primary"
+        >
+          responsive full width button
         </Button>
       </Box>
     </div>

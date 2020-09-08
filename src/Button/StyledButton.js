@@ -1,23 +1,43 @@
 import styled from '@emotion/styled';
-import { css } from '@emotion/core';
+
 import {
   borders,
   borderColor,
+  display,
   fontWeight,
+  fontSize,
   lineHeight,
-  space
+  space,
+  variant
 } from 'styled-system';
 
-import sizeStyles from './sizeStyles';
 import textTransform from '../utils/textTransform';
 import variantStyles from './variantStyles';
 import whiteSpace from '../utils/whiteSpace';
 
-const fullWidthStyles = ({ fullWidth }) =>
-  fullWidth &&
-  css`
-    width: 100%;
-  `;
+const fullWidth = variant({
+  prop: 'fullWidth',
+  variants: {
+    true: {
+      width: '100%'
+    },
+    false: {
+      width: 'auto'
+    }
+  }
+});
+
+const size = variant({
+  prop: 'size',
+  scale: 'buttons.sizes',
+  variants: {
+    small: {},
+    medium: {},
+    large: {},
+    jumbo: {}
+  }
+});
+
 const StyledButton = styled.button`
   appearance: none;
   outline: none;
@@ -41,26 +61,30 @@ const StyledButton = styled.button`
     vertical-align: middle;
   }
 
-  ${sizeStyles};
+  ${size};
   ${variantStyles};
   ${fontWeight};
-  ${fullWidthStyles};
+  ${fontSize};
+  ${fullWidth};
   ${lineHeight};
   ${space};
   ${textTransform};
   ${whiteSpace};
   ${borders};
   ${borderColor};
+  ${display};
 `;
 
 StyledButton.propTypes = {
   ...borders.propTypes,
   ...borderColor.propTypes,
   ...fontWeight.propTypes,
+  ...fontSize.propTypes,
   ...lineHeight.propTypes,
   ...space.propTypes,
   ...textTransform.propTypes,
-  ...whiteSpace.propTypes
+  ...whiteSpace.propTypes,
+  ...display.propTypes
 };
 
 StyledButton.defaultProps = {

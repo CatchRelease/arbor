@@ -825,6 +825,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with danger
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1033,6 +1034,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with info i
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1266,6 +1268,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with no int
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1433,6 +1436,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with succes
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1641,6 +1645,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with warnin
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;

@@ -630,6 +630,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with dang
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -819,6 +820,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with info
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1022,6 +1024,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with no i
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1182,6 +1185,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with succ
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1371,6 +1375,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with warn
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;

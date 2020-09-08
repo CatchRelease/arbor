@@ -21,6 +21,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -155,6 +156,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -258,6 +260,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -399,6 +402,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -509,6 +513,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -646,6 +651,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -752,6 +758,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -896,6 +903,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1009,6 +1017,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1143,6 +1152,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1246,6 +1256,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1387,6 +1398,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1509,6 +1521,7 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1609,6 +1622,7 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1747,6 +1761,7 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1866,6 +1881,7 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -1986,6 +2002,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -2100,6 +2117,7 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -2238,6 +2256,7 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
   background-color: #FFFFFF;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -2367,6 +2386,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
   border: 1px solid transparent;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -2481,6 +2501,7 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -2619,6 +2640,7 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
   background-color: #FFFFFF;
   color: #081D17;
   font-weight: 500;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -2741,12 +2763,14 @@ exports[`<Button /> fontSize properly renders a button with custom font preset s
   outline: none;
   position: relative;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   height: 2.5rem;
   padding: 0 1.25rem;
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  font-size: 1.25rem;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -2861,12 +2885,14 @@ exports[`<Button /> fontSize properly renders a button with custom pixel font si
   outline: none;
   position: relative;
   text-align: center;
-  font-size: 100;
+  font-size: 0.875rem;
   height: 2.5rem;
   padding: 0 1.25rem;
   background-color: #081D17;
   color: #C0F9DA;
   font-weight: 500;
+  font-size: 100;
+  width: auto;
   line-height: 1;
   border: 1px solid transparent;
   border-radius: 3px;

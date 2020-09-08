@@ -205,6 +205,70 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
                   "sm": "512px",
                   "xl": "1600px",
                 },
+                "buttons": Object {
+                  "sizes": Object {
+                    "jumbo": Object {
+                      "fontSize": "0.875rem",
+                      "height": "3rem",
+                      "i": Object {
+                        "&:first-child": Object {
+                          "ml": "-1.5rem",
+                        },
+                        "&:last-child": Object {
+                          "mr": "-1.5rem",
+                        },
+                        "fontSize": "1rem",
+                        "width": "3rem",
+                      },
+                      "p": "0 1.5rem",
+                    },
+                    "large": Object {
+                      "fontSize": "0.875rem",
+                      "height": "2.5rem",
+                      "i": Object {
+                        "&:first-child": Object {
+                          "ml": "-1.25rem",
+                        },
+                        "&:last-child": Object {
+                          "mr": "-1.25rem",
+                        },
+                        "fontSize": "0.875rem",
+                        "width": "2.5rem",
+                      },
+                      "p": "0 1.25rem",
+                    },
+                    "medium": Object {
+                      "fontSize": "0.8125rem",
+                      "height": "2rem",
+                      "i": Object {
+                        "&:first-child": Object {
+                          "ml": "-1rem",
+                        },
+                        "&:last-child": Object {
+                          "mr": "-1rem",
+                        },
+                        "fontSize": "0.75rem",
+                        "width": "2rem",
+                      },
+                      "p": "0 1rem",
+                    },
+                    "small": Object {
+                      "fontSize": "0.75rem",
+                      "height": "1.5rem",
+                      "i": Object {
+                        "&:first-child": Object {
+                          "ml": "-0.75rem",
+                        },
+                        "&:last-child": Object {
+                          "mr": "-0.75rem",
+                        },
+                        "fontSize": "0.6875rem",
+                        "width": "1.5rem",
+                      },
+                      "p": "0 0.75rem",
+                    },
+                  },
+                },
                 "colors": Object {
                   "background": Object {
                     "default": "#F2F2F2",
@@ -721,6 +785,70 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
                   "md": "768px",
                   "sm": "512px",
                   "xl": "1600px",
+                },
+                "buttons": Object {
+                  "sizes": Object {
+                    "jumbo": Object {
+                      "fontSize": "0.875rem",
+                      "height": "3rem",
+                      "i": Object {
+                        "&:first-child": Object {
+                          "ml": "-1.5rem",
+                        },
+                        "&:last-child": Object {
+                          "mr": "-1.5rem",
+                        },
+                        "fontSize": "1rem",
+                        "width": "3rem",
+                      },
+                      "p": "0 1.5rem",
+                    },
+                    "large": Object {
+                      "fontSize": "0.875rem",
+                      "height": "2.5rem",
+                      "i": Object {
+                        "&:first-child": Object {
+                          "ml": "-1.25rem",
+                        },
+                        "&:last-child": Object {
+                          "mr": "-1.25rem",
+                        },
+                        "fontSize": "0.875rem",
+                        "width": "2.5rem",
+                      },
+                      "p": "0 1.25rem",
+                    },
+                    "medium": Object {
+                      "fontSize": "0.8125rem",
+                      "height": "2rem",
+                      "i": Object {
+                        "&:first-child": Object {
+                          "ml": "-1rem",
+                        },
+                        "&:last-child": Object {
+                          "mr": "-1rem",
+                        },
+                        "fontSize": "0.75rem",
+                        "width": "2rem",
+                      },
+                      "p": "0 1rem",
+                    },
+                    "small": Object {
+                      "fontSize": "0.75rem",
+                      "height": "1.5rem",
+                      "i": Object {
+                        "&:first-child": Object {
+                          "ml": "-0.75rem",
+                        },
+                        "&:last-child": Object {
+                          "mr": "-0.75rem",
+                        },
+                        "fontSize": "0.6875rem",
+                        "width": "1.5rem",
+                      },
+                      "p": "0 0.75rem",
+                    },
+                  },
                 },
                 "colors": Object {
                   "background": Object {
