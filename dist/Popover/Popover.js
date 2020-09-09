@@ -80,8 +80,18 @@ var Popover = /*#__PURE__*/function (_React$Component) {
       }
     };
 
-    _this.toggle = function () {
+    _this.toggle = function (e) {
       var isOpen = _this.state.isOpen;
+
+      if (e) {
+        if (typeof e.preventDefault === 'function') {
+          e.preventDefault();
+        }
+
+        if (typeof e.stopPropagation === 'function') {
+          e.stopPropagation();
+        }
+      }
 
       if (isOpen) {
         _this.close();

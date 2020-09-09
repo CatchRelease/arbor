@@ -78,8 +78,18 @@ class Popover extends React.Component {
     this.setState({ isOpen: false }, onClose);
   }
 
-  toggle = () => {
+  toggle = (e) => {
     const { isOpen } = this.state;
+
+    if (e) {
+      if (typeof e.preventDefault === 'function') {
+        e.preventDefault();
+      }
+
+      if (typeof e.stopPropagation === 'function') {
+        e.stopPropagation();
+      }
+    }
 
     if (isOpen) {
       this.close();
