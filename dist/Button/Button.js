@@ -95,7 +95,7 @@ Button.propTypes = {
    * Property to set for a button to take the full width of it's parent
    * container.
    * */
-  fullWidth: _propTypes["default"].bool,
+  fullWidth: _propTypes["default"].oneOfType([_propTypes["default"].arrayOf(_propTypes["default"].bool), _propTypes["default"].bool]),
 
   /**
    * Icon to render after the button text.
@@ -125,7 +125,7 @@ Button.propTypes = {
   /**
    * Button size
    * */
-  size: _propTypes["default"].oneOf(_sizes["default"]),
+  size: _propTypes["default"].oneOfType([_propTypes["default"].arrayOf(_propTypes["default"].oneOf(_sizes["default"])), _propTypes["default"].oneOf(_sizes["default"])]),
 
   /**
    * Button type.
