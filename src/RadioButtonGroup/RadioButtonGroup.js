@@ -8,7 +8,7 @@ const groupOnChange = (e, setCheckedValueState, onChange) => {
     target: { value }
   } = e;
   setCheckedValueState(value);
-  onChange(value);
+  onChange(e);
 };
 
 const RadioButtonGroup = ({

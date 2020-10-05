@@ -66,12 +66,10 @@ describe('<RadioButtonGroup />', () => {
 
   it('calls the passed onChange when one of the items is clicked', () => {
     const wrapper = shallow(<RadioButtonGroup {...{ ...baseProps }} />);
+    const event = { target: { value: options[1].value } };
 
-    wrapper
-      .find(RadioButton)
-      .at(1)
-      .simulate('change', { target: { value: options[1].value } });
+    wrapper.find(RadioButton).at(1).simulate('change', event);
 
-    expect(onChange).toHaveBeenLastCalledWith(options[1].value);
+    expect(onChange).toHaveBeenLastCalledWith(event);
   });
 });

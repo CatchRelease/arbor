@@ -40,7 +40,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var groupOnChange = function groupOnChange(e, setCheckedValueState, onChange) {
   var value = e.target.value;
   setCheckedValueState(value);
-  onChange(value);
+  onChange(e);
 };
 
 var RadioButtonGroup = function RadioButtonGroup(_ref) {
