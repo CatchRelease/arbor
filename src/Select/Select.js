@@ -5,11 +5,24 @@ import FormField from '../FormField';
 import StyledSelect from './StyledSelect';
 
 const Select = React.forwardRef(
-  ({ caption, children, label, labelAside, id, ...props }, ref) => (
-    <FormField caption={caption} id={id} label={label} labelAside={labelAside}>
+  ({ caption, children, label, labelAside, id, ...props }, ref) => {
+    const select = (
       <StyledSelect {...{ ...props, id, ref }}>{children}</StyledSelect>
-    </FormField>
-  )
+    );
+
+    return caption || label ? (
+      <FormField
+        caption={caption}
+        id={id}
+        label={label}
+        labelAside={labelAside}
+      >
+        {select}
+      </FormField>
+    ) : (
+      select
+    );
+  }
 );
 
 Select.propTypes = {
