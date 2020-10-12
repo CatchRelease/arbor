@@ -33,15 +33,17 @@ var Select = _react["default"].forwardRef(function (_ref, ref) {
       id = _ref.id,
       props = _objectWithoutProperties(_ref, ["caption", "children", "label", "labelAside", "id"]);
 
-  return /*#__PURE__*/_react["default"].createElement(_FormField["default"], {
+  var select = /*#__PURE__*/_react["default"].createElement(_StyledSelect["default"], _objectSpread(_objectSpread({}, props), {}, {
+    id: id,
+    ref: ref
+  }), children);
+
+  return caption || label ? /*#__PURE__*/_react["default"].createElement(_FormField["default"], {
     caption: caption,
     id: id,
     label: label,
     labelAside: labelAside
-  }, /*#__PURE__*/_react["default"].createElement(_StyledSelect["default"], _objectSpread(_objectSpread({}, props), {}, {
-    id: id,
-    ref: ref
-  }), children));
+  }, select) : select;
 });
 
 Select.propTypes = {
@@ -58,7 +60,7 @@ Select.propTypes = {
   /**
    * HTML ID for the select
    */
-  id: _propTypes["default"].string.isRequired,
+  id: _propTypes["default"].string,
 
   /**
    * Label text for the select
@@ -71,6 +73,7 @@ Select.propTypes = {
   labelAside: _propTypes["default"].node
 };
 Select.defaultProps = {
+  id: undefined,
   caption: '',
   label: '',
   labelAside: null
