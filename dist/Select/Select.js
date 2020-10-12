@@ -60,7 +60,7 @@ Select.propTypes = {
   /**
    * HTML ID for the select
    */
-  id: _propTypes["default"].string.isRequired,
+  id: _propTypes["default"].string,
 
   /**
    * Label text for the select
@@ -73,6 +73,7 @@ Select.propTypes = {
   labelAside: _propTypes["default"].node
 };
 Select.defaultProps = {
+  id: undefined,
   caption: '',
   label: '',
   labelAside: null

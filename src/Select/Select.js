@@ -42,7 +42,7 @@ Select.propTypes = {
   /**
    * HTML ID for the select
    */
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
 
   /**
    * Label text for the select
@@ -56,6 +56,7 @@ Select.propTypes = {
 };
 
 Select.defaultProps = {
+  id: undefined,
   caption: '',
   label: '',
   labelAside: null
