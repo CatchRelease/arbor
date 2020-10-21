@@ -65,7 +65,7 @@ class ModalStory extends React.Component {
               px="regular"
               py="small"
             >
-              <Heading.h1 mb="0">My Modal Header</Heading.h1>
+              <Heading.H1 mb="0">My Modal Header</Heading.H1>
               <Button
                 iconStart={<Icon name="cross" />}
                 onClick={this.closeModal}

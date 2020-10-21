@@ -9,7 +9,7 @@ describe('<Header />', () => {
   it('renders with heading and no buttons', () => {
     const tree = createWithTheme(
       <Header>
-        <Heading.h1>My Heading</Heading.h1>
+        <Heading.H1>My Heading</Heading.H1>
       </Header>
     );
 
@@ -19,7 +19,7 @@ describe('<Header />', () => {
   it('renders with heading and a button', () => {
     const tree = createWithTheme(
       <Header>
-        <Heading.h1>My Heading</Heading.h1>
+        <Heading.H1>My Heading</Heading.H1>
         <Button variant="primary">Primary</Button>
       </Header>
     );
@@ -30,7 +30,7 @@ describe('<Header />', () => {
   it('renders with heaeding and multiple buttons', () => {
     const tree = createWithTheme(
       <Header>
-        <Heading.h1>My Heading</Heading.h1>
+        <Heading.H1>My Heading</Heading.H1>
         <Button variant="secondary">Secondary</Button>
         <Button variant="primary">Primary</Button>
       </Header>

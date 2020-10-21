@@ -20,7 +20,7 @@ class ExamplePopover extends React.Component {
   render() {
     const popoverContent = (
       <div>
-        <Heading.h2>Popover Content</Heading.h2>
+        <Heading.H2>Popover Content</Heading.H2>
         <Link href="#click" onClick={this.closePopover}>
           Click me to close
         </Link>

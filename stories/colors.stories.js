@@ -40,12 +40,12 @@ const Swatch = ({ color, hex, modifier, colorGroup }) => (
     <Text color={getReadableColor(color, hex, modifier, colorGroup)}>
       {capitalize(modifier)}
     </Text>
-    <Heading.h3
+    <Heading.H3
       as="h2"
       color={getReadableColor(color, hex, modifier, colorGroup)}
     >
       {hex.toUpperCase()}
-    </Heading.h3>
+    </Heading.H3>
   </Flex>
 );
 
@@ -68,7 +68,7 @@ const SwatchCollection = ({
   modifierOverride
 }) => (
   <section>
-    <Heading.h1>{capitalize(color)}</Heading.h1>
+    <Heading.H1>{capitalize(color)}</Heading.H1>
     <Grid gridTemplateRows={getFrUnits(collection)} key={color}>
       {Object.entries(collection).map(([modifier, hex]) => (
         <Swatch

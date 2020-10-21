@@ -66,12 +66,12 @@ class ControlledDatePickers extends React.Component {
     return (
       <Flex mt="largest" justifyContent="space-around">
         <Box>
-          <Heading.h1 mb="large">DatePicker</Heading.h1>
+          <Heading.H1 mb="large">DatePicker</Heading.H1>
           <SimpleDatePicker />
         </Box>
 
         <Box>
-          <Heading.h1 mb="large">DatePickerInput</Heading.h1>
+          <Heading.H1 mb="large">DatePickerInput</Heading.H1>
           <DatePickerInput
             dayPickerProps={{
               disabledDays: {
@@ -86,9 +86,9 @@ class ControlledDatePickers extends React.Component {
         </Box>
 
         <Box>
-          <Heading.h1 mb="large">
+          <Heading.H1 mb="large">
             DatePickerInput with Sibling (z-index check)
-          </Heading.h1>
+          </Heading.H1>
           <DatePickerInput
             inputProps={inputProps}
             onDayChange={this.onDayChange}
@@ -100,7 +100,7 @@ class ControlledDatePickers extends React.Component {
         </Box>
 
         <Box>
-          <Heading.h1 mb="large">DatePicker In Popover</Heading.h1>
+          <Heading.H1 mb="large">DatePicker In Popover</Heading.H1>
           <Popover content={<SimpleDatePicker />}>
             <Button
               iconStart={<Icon color="icon.default" name="calendar" />}

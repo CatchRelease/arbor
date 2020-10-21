@@ -27,17 +27,17 @@ class DateTimePickerStories extends React.Component {
     return (
       <>
         <Box mb="large">
-          <Text.span>Selected:</Text.span>
-          <Text.span>
+          <Text.Span>Selected:</Text.Span>
+          <Text.Span>
             {selectedTime && selectedTime.format
               ? selectedTime.format()
               : 'Nothing'}
-          </Text.span>
+          </Text.Span>
         </Box>
         <Box width="200px">
-          <Heading.h1 mb="large">TimePicker</Heading.h1>
+          <Heading.H1 mb="large">TimePicker</Heading.H1>
 
-          <Heading.h3 mb="small">Default</Heading.h3>
+          <Heading.H3 mb="small">Default</Heading.H3>
           <DateTimePicker value={selectedTime} onChange={this.onChange} />
         </Box>
       </>

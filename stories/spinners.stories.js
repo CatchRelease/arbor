@@ -12,7 +12,7 @@ stories.add(
   'Default',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Spinners</Heading.h1>
+      <Heading.H1>Spinners</Heading.H1>
 
       <Spinner
         color={text('color', 'monochrome.black')}

@@ -128,7 +128,7 @@ stories.add(
   'default',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>AutoComplete</Heading.h1>
+      <Heading.H1>AutoComplete</Heading.H1>
 
       <AutoCompleteExample
         id="auto-complete-1"

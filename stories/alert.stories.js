@@ -22,7 +22,7 @@ stories.add(
   'Banner',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Banner Alert</Heading.h1>
+      <Heading.H1>Banner Alert</Heading.H1>
 
       <BannerAlert
         details={text(
@@ -42,7 +42,7 @@ stories.add(
   'Card',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Card Alert</Heading.h1>
+      <Heading.H1>Card Alert</Heading.H1>
 
       <CardAlert
         details={text(
@@ -65,7 +65,7 @@ stories.add(
   'Inline',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Box Alert</Heading.h1>
+      <Heading.H1>Box Alert</Heading.H1>
 
       <InlineAlert
         details={text('Details', '')}
@@ -85,7 +85,7 @@ stories.add(
   'Pane',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Pane Alert</Heading.h1>
+      <Heading.H1>Pane Alert</Heading.H1>
 
       <PaneAlert
         details={text(
@@ -108,7 +108,7 @@ stories.add(
   'Toast',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Toast Alert</Heading.h1>
+      <Heading.H1>Toast Alert</Heading.H1>
 
       <ToastAlert
         details={text(

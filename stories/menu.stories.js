@@ -152,7 +152,7 @@ stories.add(
   'default',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1 mb="regular">Standard Menu</Heading.h1>
+      <Heading.H1 mb="regular">Standard Menu</Heading.H1>
       <Menu name="Standard Menu" menuItems={menuItems} />
     </Box>
   ),
@@ -163,7 +163,7 @@ stories.add(
   'custom menu items',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1 mb="regular">Menu with Custom Menu Item</Heading.h1>
+      <Heading.H1 mb="regular">Menu with Custom Menu Item</Heading.H1>
       <Menu
         name="Custom Menu"
         menuItems={menuItems}

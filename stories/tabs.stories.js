@@ -26,7 +26,7 @@ stories.add(
   'Default',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Tabs</Heading.h1>
+      <Heading.H1>Tabs</Heading.H1>
 
       <Tabs defaultTabId="tab-2" tabBarAside={boolean('aside', false) && aside}>
         {null /* see if we can handle null */}
@@ -71,7 +71,7 @@ stories.add(
 
     return (
       <Box as="section" p="regular">
-        <Heading.h1>Controlled Tabs</Heading.h1>
+        <Heading.H1>Controlled Tabs</Heading.H1>
 
         <Tabs activeTabId={activeTabId}>
           <Tab id="tab-1" title="Tab 1" onClick={() => setActiveTabId('tab-1')}>

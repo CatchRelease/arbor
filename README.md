@@ -36,7 +36,7 @@ import { ThemeProvider } from 'emotion-theming';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Heading.h1>Hello World</Heading.h1>
+      <Heading.H1>Hello World</Heading.H1>
     </ThemeProvider>
   );
 }

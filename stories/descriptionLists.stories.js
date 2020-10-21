@@ -18,7 +18,7 @@ stories.add(
   'Default',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Description Lists</Heading.h1>
+      <Heading.H1>Description Lists</Heading.H1>
 
       <DescriptionList inline={boolean('Inline', false)}>
         <DescriptionTerm>Batman</DescriptionTerm>
