@@ -23,7 +23,7 @@ stories.add(
 
     return (
       <Box as="section" p="regular">
-        <Heading.h1>Toast</Heading.h1>
+        <Heading.H1>Toast</Heading.H1>
 
         {INTENTS.map((intent) => (
           <Box key={intent} mb="smaller" textAlign="right">

@@ -136,7 +136,7 @@ stories.add(
   'default',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1 mb="regular">Dropdown</Heading.h1>
+      <Heading.H1 mb="regular">Dropdown</Heading.H1>
       <DropdownContainer>select an item</DropdownContainer>
     </Box>
   ),
@@ -147,7 +147,7 @@ stories.add(
   'custom trigger',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1 mb="regular">Dropdown</Heading.h1>
+      <Heading.H1 mb="regular">Dropdown</Heading.H1>
       <DropdownContainer
         MenuItemComponent={CustomMenuItem}
         TriggerComponent={Avatar}

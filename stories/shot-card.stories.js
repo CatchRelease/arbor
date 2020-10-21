@@ -62,7 +62,7 @@ stories.add(
   'Shot Card Example',
   () => (
     <Box m="regular">
-      <Heading.h2>Cards</Heading.h2>
+      <Heading.H2>Cards</Heading.H2>
 
       <Grid
         gridGap="large"

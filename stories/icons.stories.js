@@ -36,9 +36,9 @@ const AVAILABLE_ICONS = [
 
 const rotationOptions = {
   None: null,
-  '90': '90',
-  '180': '180',
-  '270': '270'
+  90: '90',
+  180: '180',
+  270: '270'
 };
 
 const stories = storiesOf('Icons', module);

@@ -12,7 +12,7 @@ stories.add(
   'default',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1 mb="regular">Menu Item</Heading.h1>
+      <Heading.H1 mb="regular">Menu Item</Heading.H1>
       <MenuItem
         isDisabled={boolean('isDisabled', false)}
         isFocused={boolean('isFocused', false)}

@@ -137,7 +137,7 @@ stories.add(
     return (
       <>
         <AccordionContainer>
-          <Heading.h2>Accordion</Heading.h2>
+          <Heading.H2>Accordion</Heading.H2>
 
           <Flex justifyContent="center" width="500px">
             <Card>
@@ -193,7 +193,7 @@ stories.add(
                 variant={select('Variant', variantOptions)}
               >
                 <Box p="regular">
-                  <Heading.h2>Section 1</Heading.h2>
+                  <Heading.H2>Section 1</Heading.H2>
                   <Text mb="regular">You can exclude the note property</Text>
                   <Text>
                     Lorem ipsum dolor sit amet, an hinc honestatis his, an his
@@ -206,7 +206,7 @@ stories.add(
                 </Box>
 
                 <Box p="regular">
-                  <Heading.h2>Section 2</Heading.h2>
+                  <Heading.H2>Section 2</Heading.H2>
 
                   <Text>
                     Lorem ipsum dolor sit amet, an hinc honestatis his, an his
@@ -223,7 +223,7 @@ stories.add(
         </AccordionContainer>
 
         <AccordionContainer>
-          <Heading.h2>Accordion with custom styles</Heading.h2>
+          <Heading.H2>Accordion with custom styles</Heading.H2>
 
           <Flex justifyContent="center" width="500px">
             <Card>
@@ -254,7 +254,7 @@ stories.add(
         </AccordionContainer>
 
         <AccordionContainer>
-          <Heading.h2>Accordion with minimal buttons in notes</Heading.h2>
+          <Heading.H2>Accordion with minimal buttons in notes</Heading.H2>
 
           <Flex justifyContent="center" width="500px">
             <Card>
@@ -280,7 +280,7 @@ stories.add(
         </AccordionContainer>
 
         <AccordionContainer>
-          <Heading.h2>Accordion with primary buttons</Heading.h2>
+          <Heading.H2>Accordion with primary buttons</Heading.H2>
 
           <Flex justifyContent="center" width="500px">
             <Card>
@@ -306,7 +306,7 @@ stories.add(
         </AccordionContainer>
 
         <AccordionContainer>
-          <Heading.h2>Accordion with secondary buttons</Heading.h2>
+          <Heading.H2>Accordion with secondary buttons</Heading.H2>
 
           <Flex justifyContent="center" width="500px">
             <Card>

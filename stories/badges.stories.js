@@ -17,7 +17,7 @@ stories.add(
   'Default',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Badges</Heading.h1>
+      <Heading.H1>Badges</Heading.H1>
       <Flex>
         <Badge
           mr="regular"
@@ -47,7 +47,7 @@ stories.add(
   'Icon End',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Badges with ending icon</Heading.h1>
+      <Heading.H1>Badges with ending icon</Heading.H1>
       <Flex>
         <Badge
           mr="regular"
@@ -79,7 +79,7 @@ stories.add(
   'Icon Start',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Badges with staring icon</Heading.h1>
+      <Heading.H1>Badges with staring icon</Heading.H1>
       <Flex>
         <Badge
           mr="regular"
@@ -111,7 +111,7 @@ stories.add(
   'Icon Start & Icon End',
   () => (
     <Box as="section" p="regular">
-      <Heading.h1>Badges with starting and ending icons</Heading.h1>
+      <Heading.H1>Badges with starting and ending icons</Heading.H1>
       <Flex>
         <Badge
           mr="regular"

@@ -36,38 +36,38 @@ const createHeading = (h) => (
   </Heading>
 );
 
-Heading.h1 = createHeading('h1');
-Heading.h1.defaultProps = {
+Heading.H1 = createHeading('h1');
+Heading.H1.defaultProps = {
   fontSize: 'size7'
 };
 
-Heading.h2 = createHeading('h2');
-Heading.h2.defaultProps = {
+Heading.H2 = createHeading('h2');
+Heading.H2.defaultProps = {
   fontSize: 'size6'
 };
 
-Heading.h3 = createHeading('h3');
-Heading.h3.defaultProps = {
+Heading.H3 = createHeading('h3');
+Heading.H3.defaultProps = {
   fontSize: 'size5'
 };
 
-Heading.h4 = createHeading('h4');
-Heading.h4.defaultProps = {
+Heading.H4 = createHeading('h4');
+Heading.H4.defaultProps = {
   fontSize: 'size4'
 };
 
-Heading.h5 = styled(createHeading('h5'))`
+Heading.H5 = styled(createHeading('h5'))`
   line-height: ${(props) => props.theme.lineHeights.large};
 `;
-Heading.h5.defaultProps = {
+Heading.H5.defaultProps = {
   fontSize: 'size4',
   fontWeight: 'medium'
 };
 
-Heading.h6 = styled(createHeading('h6'))`
+Heading.H6 = styled(createHeading('h6'))`
   line-height: ${(props) => props.theme.lineHeights.large};
 `;
-Heading.h6.defaultProps = {
+Heading.H6.defaultProps = {
   fontSize: 'size4',
   fontWeight: 'regular'
 };

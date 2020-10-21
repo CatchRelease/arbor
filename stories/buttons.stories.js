@@ -31,7 +31,7 @@ stories.add(
   'default',
   () => (
     <div style={{ padding: '10px', width: '90%' }}>
-      <Heading.h1>Sizes</Heading.h1>
+      <Heading.H1>Sizes</Heading.H1>
 
       <Grid
         gridGap="10px 138px"
@@ -43,7 +43,7 @@ stories.add(
         ]}
       >
         <div>
-          <Heading.h5 as="h2">Small</Heading.h5>
+          <Heading.H5 as="h2">Small</Heading.H5>
 
           <Button
             intent={select('intent', INTENTS, 'brand')}
@@ -54,7 +54,7 @@ stories.add(
           </Button>
         </div>
         <div>
-          <Heading.h5 as="h2">Medium</Heading.h5>
+          <Heading.H5 as="h2">Medium</Heading.H5>
 
           <Button
             intent={select('intent', INTENTS, 'brand')}
@@ -65,7 +65,7 @@ stories.add(
           </Button>
         </div>
         <div>
-          <Heading.h5 as="h2">Large</Heading.h5>
+          <Heading.H5 as="h2">Large</Heading.H5>
 
           <Button
             intent={select('intent', INTENTS, 'brand')}
@@ -76,7 +76,7 @@ stories.add(
           </Button>
         </div>
         <div>
-          <Heading.h5 as="h2">Jumbo</Heading.h5>
+          <Heading.H5 as="h2">Jumbo</Heading.H5>
 
           <Button
             intent={select('intent', INTENTS, 'brand')}
@@ -87,7 +87,7 @@ stories.add(
           </Button>
         </div>
         <div>
-          <Heading.h5 as="h2">Responsive Size</Heading.h5>
+          <Heading.H5 as="h2">Responsive Size</Heading.H5>
 
           <Button
             intent={select('intent', INTENTS, 'brand')}
@@ -99,7 +99,7 @@ stories.add(
         </div>
       </Grid>
 
-      <Heading.h1>Style</Heading.h1>
+      <Heading.H1>Style</Heading.H1>
 
       <Grid
         gridGap="10px 138px"
@@ -201,18 +201,18 @@ stories.add(
             <thead>
               <tr className={css({ marginBottom: '10px' })}>
                 <th>
-                  <Heading.h3 textAlign="left">iconStart</Heading.h3>
+                  <Heading.H3 textAlign="left">iconStart</Heading.H3>
                 </th>
                 <th>
-                  <Heading.h3 textAlign="left">iconEnd</Heading.h3>
+                  <Heading.H3 textAlign="left">iconEnd</Heading.H3>
                 </th>
                 <th>
-                  <Heading.h3 textAlign="left">
+                  <Heading.H3 textAlign="left">
                     iconStart and iconEnd
-                  </Heading.h3>
+                  </Heading.H3>
                 </th>
                 <th>
-                  <Heading.h3 textAlign="left">Icon Only</Heading.h3>
+                  <Heading.H3 textAlign="left">Icon Only</Heading.H3>
                 </th>
               </tr>
             </thead>
@@ -362,7 +362,7 @@ stories.add(
         </Box>
 
         <Box>
-          <Heading.h2>Full Width</Heading.h2>
+          <Heading.H2>Full Width</Heading.H2>
 
           <Box mb="regular">
             <Button iconStart={icon} fullWidth size="jumbo" {...knobs}>

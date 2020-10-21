@@ -58,14 +58,14 @@ const Tooltip = ({ title, content, children, render, ...props }) => {
         {...props}
       >
         {title && (
-          <Heading.h3
+          <Heading.H3
             mb="0"
             fontSize="inherit"
             color="inherit"
             textAlign="inherit"
           >
             {title}
-          </Heading.h3>
+          </Heading.H3>
         )}
         {content && (
           <Text
