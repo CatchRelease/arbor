@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { select, text, withKnobs } from '@storybook/addon-knobs';
+import { select, text } from '@storybook/addon-knobs';
 
 import notes from './alert.md';
 import {
@@ -16,7 +16,6 @@ import INTENTS from '../src/Alert/intents';
 
 const ON_CLOSE_OPTIONS = ['', () => alert('Close Me!')]; // eslint-disable-line no-alert, no-undef
 const stories = storiesOf('Alerts', module);
-stories.addDecorator(withKnobs);
 
 stories.add(
   'Banner',

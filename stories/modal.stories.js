@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactModal from 'react-modal';
 import { storiesOf } from '@storybook/react';
-import { number, text, withKnobs } from '@storybook/addon-knobs';
+import { number, text } from '@storybook/addon-knobs';
 
 import notes from './modal.md';
 import { Box, Button, Card, Grid, Heading, Icon, Modal } from '../src';
@@ -104,7 +104,7 @@ ModalStory.propTypes = {
 };
 
 const stories = storiesOf('Modal', module);
-stories.addDecorator(withKnobs);
+
 stories.add(
   'default',
   () => (

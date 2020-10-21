@@ -3,7 +3,7 @@ import { css, jsx } from '@emotion/core';
 import React from 'react'; // eslint-disable-line no-unused-vars
 
 import { forceReRender, storiesOf } from '@storybook/react';
-import { boolean, select, withKnobs } from '@storybook/addon-knobs';
+import { boolean, select } from '@storybook/addon-knobs';
 
 import notes from './accordion.md';
 import {
@@ -18,7 +18,6 @@ import {
 } from '../src';
 
 const stories = storiesOf('Accordion', module);
-stories.addDecorator(withKnobs);
 
 let isOpen = false;
 const onHeaderClick = () => {

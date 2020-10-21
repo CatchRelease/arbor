@@ -1,12 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { withKnobs, number, select, boolean } from '@storybook/addon-knobs';
+import { number, select, boolean } from '@storybook/addon-knobs';
 import notes from './progressBar.md';
 import { Box, ProgressBar } from '../src';
 
 const stories = storiesOf('ProgressBar', module);
-stories.addDecorator(withKnobs);
 
 const AVAILABLE_ICONS = {
   '<disabled>': null,
