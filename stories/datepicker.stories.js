@@ -1,7 +1,7 @@
 import React from 'react';
 import { DateUtils } from 'react-day-picker';
 import { storiesOf } from '@storybook/react';
-import { date, withKnobs } from '@storybook/addon-knobs';
+import { date } from '@storybook/addon-knobs';
 
 import 'react-day-picker/lib/style.css';
 
@@ -18,7 +18,6 @@ import {
 } from '../src';
 
 const stories = storiesOf('DatePicker', module);
-stories.addDecorator(withKnobs);
 
 const today = new Date();
 const defaultBefore = DateUtils.addMonths(today, -2);

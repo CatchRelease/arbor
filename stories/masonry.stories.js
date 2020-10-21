@@ -3,7 +3,7 @@ import random from 'lodash/random';
 import shuffle from 'lodash/shuffle';
 import { readableColor } from 'polished';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
 
 import notes from './masonry.md';
 import { colors, Box, Flex, Masonry, Text } from '../src';
@@ -15,8 +15,6 @@ const boxColors = shuffle([
 ]);
 
 const stories = storiesOf('Masonry', module);
-
-stories.addDecorator(withKnobs);
 
 stories.add(
   'default',

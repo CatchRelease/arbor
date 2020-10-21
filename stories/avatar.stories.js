@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { boolean, select, text, withKnobs } from '@storybook/addon-knobs';
+import { boolean, select, text } from '@storybook/addon-knobs';
 
 import notes from './avatar.md';
 import { Avatar, Flex, theme } from '../src';
@@ -8,7 +8,6 @@ import { Avatar, Flex, theme } from '../src';
 const sizes = Object.keys(theme.avatarSizes);
 
 const stories = storiesOf('Avatar', module);
-stories.addDecorator(withKnobs);
 
 stories.add(
   'default',

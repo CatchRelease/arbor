@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
 import { storiesOf } from '@storybook/react';
-import { boolean, select, withKnobs } from '@storybook/addon-knobs';
+import { boolean, select } from '@storybook/addon-knobs';
 
 import notes from './buttons.md';
 import intent from '../src/theme/colors/intent';
@@ -25,7 +25,6 @@ const icon = <Icon name="lock" />;
 const icon2 = <Icon name="chevron-down" />;
 
 const stories = storiesOf('Buttons', module);
-stories.addDecorator(withKnobs);
 
 stories.add(
   'default',

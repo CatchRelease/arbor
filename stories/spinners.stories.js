@@ -1,12 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { boolean, number, text, withKnobs } from '@storybook/addon-knobs';
+import { boolean, number, text } from '@storybook/addon-knobs';
 
 import notes from './spinners.md';
 import { Box, Heading, Spinner } from '../src';
 
 const stories = storiesOf('Spinners', module);
-stories.addDecorator(withKnobs);
 
 stories.add(
   'Default',

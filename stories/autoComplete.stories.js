@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
-import { boolean, select, withKnobs } from '@storybook/addon-knobs';
+import { boolean, select } from '@storybook/addon-knobs';
 
 import { styledAutoCompleteComponents } from '../src/AutoComplete';
 import notes from './autoComplete.md';
@@ -122,7 +122,6 @@ AutoCompleteExample.defaultProps = {
 };
 
 const stories = storiesOf('AutoComplete', module);
-stories.addDecorator(withKnobs);
 
 stories.add(
   'default',

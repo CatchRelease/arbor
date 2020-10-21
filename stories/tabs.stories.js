@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { boolean, withKnobs } from '@storybook/addon-knobs';
+import { boolean } from '@storybook/addon-knobs';
 
 import notes from './tabs.md';
 import { Box, Heading, Icon, Tab, Tabs } from '../src';
 
 const stories = storiesOf('Tabs', module);
-stories.addDecorator(withKnobs);
 
 const titleAsComponent = (
   <>

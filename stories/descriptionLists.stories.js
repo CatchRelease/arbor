@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { boolean, withKnobs } from '@storybook/addon-knobs';
+import { boolean } from '@storybook/addon-knobs';
 
 import notes from './descriptionLists.md';
 import {
@@ -12,7 +12,6 @@ import {
 } from '../src';
 
 const stories = storiesOf('Description Lists', module);
-stories.addDecorator(withKnobs);
 
 stories.add(
   'Default',

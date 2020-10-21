@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs';
 
 import notes from './checkbox.md';
 import { Box, Checkbox } from '../src';
@@ -32,7 +32,6 @@ stories.add(
   { notes: { markdown: notes } }
 );
 
-stories.addDecorator(withKnobs);
 stories.add(
   'with icon',
   () => (

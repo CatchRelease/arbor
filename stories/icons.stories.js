@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, select } from '@storybook/addon-knobs';
+import { select } from '@storybook/addon-knobs';
 
 import notes from './icons.md';
 import { Box, Grid, Icon, Text } from '../src';
@@ -42,7 +42,6 @@ const rotationOptions = {
 };
 
 const stories = storiesOf('Icons', module);
-stories.addDecorator(withKnobs);
 
 stories.add(
   'default',

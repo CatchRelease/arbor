@@ -1,12 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { boolean, withKnobs } from '@storybook/addon-knobs';
+import { boolean } from '@storybook/addon-knobs';
 import notes from './radioButtonGroup.md';
 import { Box, Flex, RadioButtonGroup } from '../src';
 
 const stories = storiesOf('RadioButtonGroup', module);
-stories.addDecorator(withKnobs);
 
 const onChange = (value) => {
   console.log('ch ch ch changed', value); // eslint-disable-line no-console

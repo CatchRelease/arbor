@@ -1,12 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { select, text, withKnobs } from '@storybook/addon-knobs';
+import { select, text } from '@storybook/addon-knobs';
 
 import notes from './header.md';
 import { Button, Grid, Heading, Header } from '../src';
 
 const stories = storiesOf('Header', module);
-stories.addDecorator(withKnobs);
 
 const headingOptions = {
   h1: 'h1',
