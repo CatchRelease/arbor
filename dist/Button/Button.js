@@ -51,7 +51,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 var INTENTS = Object.keys(_intent["default"]);
 
-var Button = _react["default"].forwardRef(function (_ref, ref) {
+var Button = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
   var children = _ref.children,
       iconStart = _ref.iconStart,
       iconEnd = _ref.iconEnd,

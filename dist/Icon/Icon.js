@@ -94,7 +94,7 @@ Icon.defaultProps = {
 };
 var WithThemeIcon = (0, _emotionTheming.withTheme)(Icon);
 
-var _default = _react["default"].forwardRef(function (props, ref) {
+var _default = /*#__PURE__*/_react["default"].forwardRef(function (props, ref) {
   return (0, _core.jsx)(WithThemeIcon, _extends({}, props, {
     iconRef: ref
   }));
