@@ -68,7 +68,7 @@ var getText = function getText(name) {
   return name.match(/[A-Za-z]/) ? getInitials(name).toUpperCase() : name;
 };
 
-var Avatar = _react["default"].forwardRef(function (_ref, ref) {
+var Avatar = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
   var name = _ref.name,
       subtle = _ref.subtle,
       size = _ref.size,

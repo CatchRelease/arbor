@@ -321,6 +321,7 @@ var _theme = _interopRequireWildcard(require("./theme"));
 Object.keys(_theme).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _theme[key]) return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {
@@ -336,6 +337,7 @@ var _Alert = require("./Alert");
 Object.keys(_Alert).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _Alert[key]) return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {
@@ -373,6 +375,7 @@ var _DescriptionList = require("./DescriptionList");
 Object.keys(_DescriptionList).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _DescriptionList[key]) return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {
@@ -430,6 +433,7 @@ var _Tabs = require("./Tabs");
 Object.keys(_Tabs).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _Tabs[key]) return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {
@@ -447,6 +451,7 @@ var _Toast = require("./Toast");
 Object.keys(_Toast).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _Toast[key]) return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {

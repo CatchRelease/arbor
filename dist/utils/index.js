@@ -46,6 +46,7 @@ var _columns = require("./columns");
 Object.keys(_columns).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _columns[key]) return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {

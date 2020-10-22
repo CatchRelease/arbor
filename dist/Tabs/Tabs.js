@@ -37,7 +37,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function () { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
@@ -130,7 +130,7 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
           return _this2.handleTabClick(tab, originalOnClick);
         };
 
-        return _react["default"].cloneElement(tab, {
+        return /*#__PURE__*/_react["default"].cloneElement(tab, {
           'aria-controls': tabContentId,
           'aria-selected': active ? 'true' : 'false',
           active: active,
@@ -170,7 +170,7 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
     key: "activeTabContent",
     get: function get() {
       var activeTab = this.activeTab;
-      return _react["default"].cloneElement(activeTab.props.children, {
+      return /*#__PURE__*/_react["default"].cloneElement(activeTab.props.children, {
         id: getTabContentId(activeTab)
       });
     }
