@@ -125,7 +125,6 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
                   ";border-radius:inherit;",
                 ],
                 "defaultProps": undefined,
-                "displayName": "BarForeground",
                 "render": [Function],
                 "withComponent": [Function],
               }
@@ -706,7 +705,6 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
                   ";border-radius:inherit;",
                 ],
                 "defaultProps": undefined,
-                "displayName": "BarForeground",
                 "render": [Function],
                 "withComponent": [Function],
               }
