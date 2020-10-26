@@ -21,6 +21,7 @@ export { default as DateTimePicker } from './DateTimePicker';
 export * from './DescriptionList';
 export { default as Dropdown } from './Dropdown';
 export { default as Flex } from './Flex';
+export { default as FormField } from './FormField';
 export { default as Grid } from './Grid';
 export { default as Header } from './Header';
 export { default as Heading } from './Heading';

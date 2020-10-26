@@ -56,7 +56,7 @@ FormField.propTypes = {
 
   /**
    * HTML ID for the input to be used in conjunction with the label for
-   * accessiblity.
+   * accessibility.
    */
   id: _propTypes["default"].string.isRequired,
 
