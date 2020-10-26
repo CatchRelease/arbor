@@ -25,6 +25,7 @@ var _exportNames = {
   DateTimePicker: true,
   Dropdown: true,
   Flex: true,
+  FormField: true,
   Grid: true,
   Header: true,
   Heading: true,
@@ -163,6 +164,12 @@ Object.defineProperty(exports, "Flex", {
   enumerable: true,
   get: function get() {
     return _Flex["default"];
+  }
+});
+Object.defineProperty(exports, "FormField", {
+  enumerable: true,
+  get: function get() {
+    return _FormField["default"];
   }
 });
 Object.defineProperty(exports, "Grid", {
@@ -387,6 +394,8 @@ Object.keys(_DescriptionList).forEach(function (key) {
 var _Dropdown = _interopRequireDefault(require("./Dropdown"));
 
 var _Flex = _interopRequireDefault(require("./Flex"));
+
+var _FormField = _interopRequireDefault(require("./FormField"));
 
 var _Grid = _interopRequireDefault(require("./Grid"));
 
