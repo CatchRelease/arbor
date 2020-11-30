@@ -19,7 +19,7 @@ const getReadableColor = (color, hex, modifier = '', colorGroup) => {
       return `${colorGroup}.${color}.light`;
     case 'monochrome':
     default:
-      return readableColor(hex, 'monochrome.black', 'monochrome.white');
+      return readableColor(hex, 'monochrome.black', 'monochrome.white', false);
   }
 };
 
