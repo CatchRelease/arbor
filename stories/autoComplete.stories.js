@@ -44,7 +44,7 @@ const neutralOptions = [
 
 const variantOptions = ['async', 'asyncCreatable', 'creatable', 'default'];
 
-const filterOptions = (options, inputValue: '') =>
+const filterOptions = (options, inputValue = '') =>
   options.filter((option) =>
     option.label.toLowerCase().includes(inputValue.toLowerCase())
   );
