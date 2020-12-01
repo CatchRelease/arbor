@@ -30,7 +30,7 @@ export { default as Input } from './Input';
 export { inputStyles } from './Input';
 export { default as Label } from './Label';
 export { default as Link } from './Link';
-export { default as Masonry } from './Masonry';
+export { default as Masonry, MasonryItem, MasonryContainer } from './Masonry';
 export { default as Menu } from './Menu';
 export { default as MenuItem } from './MenuItem';
 export { default as Modal } from './Modal';

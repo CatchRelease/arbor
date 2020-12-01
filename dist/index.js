@@ -35,6 +35,8 @@ var _exportNames = {
   Label: true,
   Link: true,
   Masonry: true,
+  MasonryItem: true,
+  MasonryContainer: true,
   Menu: true,
   MenuItem: true,
   Modal: true,
@@ -226,6 +228,18 @@ Object.defineProperty(exports, "Masonry", {
     return _Masonry["default"];
   }
 });
+Object.defineProperty(exports, "MasonryItem", {
+  enumerable: true,
+  get: function get() {
+    return _Masonry.MasonryItem;
+  }
+});
+Object.defineProperty(exports, "MasonryContainer", {
+  enumerable: true,
+  get: function get() {
+    return _Masonry.MasonryContainer;
+  }
+});
 Object.defineProperty(exports, "Menu", {
   enumerable: true,
   get: function get() {
@@ -411,7 +425,7 @@ var _Label = _interopRequireDefault(require("./Label"));
 
 var _Link = _interopRequireDefault(require("./Link"));
 
-var _Masonry = _interopRequireDefault(require("./Masonry"));
+var _Masonry = _interopRequireWildcard(require("./Masonry"));
 
 var _Menu = _interopRequireDefault(require("./Menu"));
 
