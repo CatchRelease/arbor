@@ -1,6 +1,6 @@
 import { configure } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-import { matchers } from 'jest-emotion';
+import { matchers } from '@emotion/jest';
 
 require('jest-enzyme');
 

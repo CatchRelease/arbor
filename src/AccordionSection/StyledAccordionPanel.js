@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 import { themeGet } from '@styled-system/theme-get';
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import Box from '../Box';
 
 const variantStyles = ({ variant, ...props }) => {

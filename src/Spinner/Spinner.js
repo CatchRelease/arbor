@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { themeGet } from '@styled-system/theme-get';
-import { withTheme } from 'emotion-theming';
+import { withTheme, keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
 import { system } from 'styled-system';
-import { keyframes } from '@emotion/core';
+
 import Box from '../Box';
 
 const StyledSpinner = styled(Box)`

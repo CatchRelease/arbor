@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import { css } from '@emotion/react';
 import { shade, tint } from 'polished';
 import { themeGet } from '@styled-system/theme-get';
 

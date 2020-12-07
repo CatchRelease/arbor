@@ -126,6 +126,7 @@ exports[`<InlineAlert /> property renders a banner alert with no intent 1`] = `
   align-items: center;
   grid-column-gap: 1rem;
   grid-row-gap: 0.5rem;
+  grid-template-columns: ;
 }
 
 .emotion-0 {
@@ -420,6 +421,7 @@ exports[`<InlineAlert /> with details property renders a banner alert, with no i
   align-items: center;
   grid-column-gap: 1rem;
   grid-row-gap: 0.5rem;
+  grid-template-columns: ;
 }
 
 .emotion-2 {
@@ -619,6 +621,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with dang
 .emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -676,6 +679,8 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with dang
 .emotion-10:disabled i {
   color: rgba(190,190,192,0.7);
 }
+
+
 
 .emotion-10:enabled:active {
   background-color: #F8F9F9;
@@ -809,6 +814,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with info
 .emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -866,6 +872,8 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with info
 .emotion-10:disabled i {
   color: rgba(190,190,192,0.7);
 }
+
+
 
 .emotion-10:enabled:active {
   background-color: #F8F9F9;
@@ -1013,6 +1021,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with no i
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -1070,6 +1079,8 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with no i
 .emotion-6:disabled i {
   color: rgba(190,190,192,0.7);
 }
+
+
 
 .emotion-6:enabled:active {
   background-color: #F8F9F9;
@@ -1174,6 +1185,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with succ
 .emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -1231,6 +1243,8 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with succ
 .emotion-10:disabled i {
   color: rgba(190,190,192,0.7);
 }
+
+
 
 .emotion-10:enabled:active {
   background-color: #F8F9F9;
@@ -1364,6 +1378,7 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with warn
 .emotion-10 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -1421,6 +1436,8 @@ exports[`<InlineAlert /> with onClose property renders a banner alert, with warn
 .emotion-10:disabled i {
   color: rgba(190,190,192,0.7);
 }
+
+
 
 .emotion-10:enabled:active {
   background-color: #F8F9F9;

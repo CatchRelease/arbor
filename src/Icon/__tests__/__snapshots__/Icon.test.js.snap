@@ -2,25 +2,26 @@
 
 exports[`<Icon /> applies a class based off the icon name using the theme prefix 1`] = `
 <i
-  className="super super-example-icon css-10g4yor-StyledIcon emotion-0"
+  className="super super-example-icon emotion-0 emotion-1"
 />
 `;
 
 exports[`<Icon /> applies a class of just the icon font prefix 1`] = `
 <i
-  className="super super-example-icon css-10g4yor-StyledIcon emotion-0"
+  className="super super-example-icon emotion-0 emotion-1"
 />
 `;
 
 exports[`<Icon /> renders an icon properly 1`] = `
 <i
-  className="ar ar-my-icon css-10g4yor-StyledIcon emotion-0"
+  className="ar ar-my-icon emotion-0 emotion-1"
 />
 `;
 
 exports[`<Icon /> supports 90 degree rotation 1`] = `
 .emotion-0 {
   -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -33,6 +34,7 @@ exports[`<Icon /> supports 90 degree rotation 1`] = `
 exports[`<Icon /> supports 180 degree rotation 1`] = `
 .emotion-0 {
   -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
@@ -45,6 +47,7 @@ exports[`<Icon /> supports 180 degree rotation 1`] = `
 exports[`<Icon /> supports 270 degree rotation 1`] = `
 .emotion-0 {
   -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }

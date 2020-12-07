@@ -5,8 +5,10 @@ exports[`<CardActions renders the CardActions component properly 1`] = `
   font-family: Motiva Sans;
   box-sizing: border-box;
   grid-gap: 0.5rem;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
+
+
 
 <div
   className="emotion-4 emotion-5"

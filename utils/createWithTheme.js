@@ -1,11 +1,10 @@
 import React from 'react';
-import { CacheProvider } from '@emotion/core';
+import { CacheProvider, ThemeProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 import { create } from 'react-test-renderer';
-import { ThemeProvider } from 'emotion-theming';
 import theme from '../src/theme';
 
-const myCache = createCache();
+const myCache = createCache({ key: 'test' });
 myCache.compat = true;
 
 export default (Component) =>

@@ -11,6 +11,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -59,6 +60,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
   margin-right: -0.75rem;
 }
 
+
+
 .emotion-6:enabled:active {
   background-color: #061813;
 }
@@ -86,6 +89,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
 .emotion-6 i {
   color: inherit;
 }
+
+
 
 .emotion-4 {
   font-family: Motiva Sans;
@@ -131,6 +136,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
   line-height: 1.25;
 }
 
+
+
 .emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -146,6 +153,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -193,6 +201,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
 .emotion-6 i:last-child {
   margin-right: -1rem;
 }
+
+
 
 .emotion-6:enabled:active {
   background-color: #061813;
@@ -250,6 +260,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -298,6 +309,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
   margin-right: -1.25rem;
 }
 
+
+
 .emotion-6:enabled:active {
   background-color: #061813;
 }
@@ -332,6 +345,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
   font-size: inherit;
   line-height: 1.25;
 }
+
+
 
 .emotion-4 {
   font-family: Motiva Sans;
@@ -377,6 +392,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
   line-height: 1.25;
 }
 
+
+
 .emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -392,6 +409,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -439,6 +457,8 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
 .emotion-6 i:last-child {
   margin-right: -1.5rem;
 }
+
+
 
 .emotion-6:enabled:active {
   background-color: #061813;
@@ -503,6 +523,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 .emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -551,6 +572,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   margin-right: -0.75rem;
 }
 
+
+
 .emotion-8:enabled:active {
   background-color: #061813;
 }
@@ -578,6 +601,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 .emotion-8 i {
   color: inherit;
 }
+
+
 
 .emotion-6 {
   font-family: Motiva Sans;
@@ -626,6 +651,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   line-height: 1.25;
 }
 
+
+
 .emotion-6 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -641,6 +668,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 .emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -688,6 +716,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 .emotion-8 i:last-child {
   margin-right: -1rem;
 }
+
+
 
 .emotion-8:enabled:active {
   background-color: #061813;
@@ -748,6 +778,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 .emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -796,6 +827,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   margin-right: -1.25rem;
 }
 
+
+
 .emotion-8:enabled:active {
   background-color: #061813;
 }
@@ -830,6 +863,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   font-size: inherit;
   line-height: 1.25;
 }
+
+
 
 .emotion-6 {
   font-family: Motiva Sans;
@@ -878,6 +913,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   line-height: 1.25;
 }
 
+
+
 .emotion-6 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -893,6 +930,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 .emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -940,6 +978,8 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 .emotion-8 i:last-child {
   margin-right: -1.5rem;
 }
+
+
 
 .emotion-8:enabled:active {
   background-color: #061813;
@@ -1007,6 +1047,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -1055,6 +1096,8 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   margin-right: -0.75rem;
 }
 
+
+
 .emotion-6:enabled:active {
   background-color: #061813;
 }
@@ -1094,6 +1137,8 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   grid-template-columns: 0fr 1fr;
   visibility: visible;
 }
+
+
 
 <button
   className="button--primary emotion-6 emotion-7"
@@ -1139,9 +1184,12 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   visibility: visible;
 }
 
+
+
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -1189,6 +1237,8 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 .emotion-6 i:last-child {
   margin-right: -1rem;
 }
+
+
 
 .emotion-6:enabled:active {
   background-color: #061813;
@@ -1246,6 +1296,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -1294,6 +1345,8 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   margin-right: -1.25rem;
 }
 
+
+
 .emotion-6:enabled:active {
   background-color: #061813;
 }
@@ -1341,6 +1394,8 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   visibility: visible;
 }
 
+
+
 <button
   className="button--primary emotion-6 emotion-7"
   disabled={false}
@@ -1385,9 +1440,12 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   visibility: visible;
 }
 
+
+
 .emotion-6 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -1435,6 +1493,8 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 .emotion-6 i:last-child {
   margin-right: -1.5rem;
 }
+
+
 
 .emotion-6:enabled:active {
   background-color: #061813;
@@ -1511,6 +1571,7 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -1558,6 +1619,8 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 .emotion-4 i:last-child {
   margin-right: -1.5rem;
 }
+
+
 
 .emotion-4:enabled:active {
   background-color: #061813;
@@ -1612,6 +1675,7 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -1659,6 +1723,8 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
 .emotion-4 i:last-child {
   margin-right: -1.25rem;
 }
+
+
 
 .emotion-4:enabled:active {
   background-color: #061813;
@@ -1751,6 +1817,7 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -1798,6 +1865,8 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
 .emotion-4 i:last-child {
   margin-right: -1rem;
 }
+
+
 
 .emotion-4:enabled:active {
   background-color: #061813;
@@ -1871,6 +1940,7 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -1918,6 +1988,8 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
 .emotion-4 i:last-child {
   margin-right: -0.75rem;
 }
+
+
 
 .emotion-4:enabled:active {
   background-color: #061813;
@@ -1991,6 +2063,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -2048,6 +2121,8 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 .emotion-4:disabled i {
   color: rgba(190,190,192,0.7);
 }
+
+
 
 .emotion-4:enabled:active {
   background-color: #F8F9F9;
@@ -2107,6 +2182,7 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -2154,6 +2230,8 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
 .emotion-4 i:last-child {
   margin-right: -1.25rem;
 }
+
+
 
 .emotion-4:enabled:active {
   background-color: #061813;
@@ -2246,6 +2324,7 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -2375,6 +2454,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -2432,6 +2512,8 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 .emotion-4:disabled i {
   color: rgba(190,190,192,0.7);
 }
+
+
 
 .emotion-4:enabled:active {
   background-color: #F8F9F9;
@@ -2491,6 +2573,7 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -2538,6 +2621,8 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
 .emotion-4 i:last-child {
   margin-right: -1.25rem;
 }
+
+
 
 .emotion-4:enabled:active {
   background-color: #061813;
@@ -2630,6 +2715,7 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -2759,6 +2845,7 @@ exports[`<Button /> fontSize properly renders a button with custom font preset s
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -2807,6 +2894,8 @@ exports[`<Button /> fontSize properly renders a button with custom font preset s
 .emotion-4 i:last-child {
   margin-right: -1.25rem;
 }
+
+
 
 .emotion-4:enabled:active {
   background-color: #061813;
@@ -2881,6 +2970,7 @@ exports[`<Button /> fontSize properly renders a button with custom pixel font si
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -2929,6 +3019,8 @@ exports[`<Button /> fontSize properly renders a button with custom pixel font si
 .emotion-4 i:last-child {
   margin-right: -1.25rem;
 }
+
+
 
 .emotion-4:enabled:active {
   background-color: #061813;
@@ -3003,6 +3095,7 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
 .emotion-4 {
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   outline: none;
   position: relative;
@@ -3050,6 +3143,8 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
 .emotion-4 i:last-child {
   margin-right: -1.25rem;
 }
+
+
 
 .emotion-4:enabled:active {
   background-color: #061813;

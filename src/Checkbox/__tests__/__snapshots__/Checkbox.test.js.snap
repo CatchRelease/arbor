@@ -21,8 +21,7 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   opacity: 0;
   overflow: hidden;
@@ -44,8 +43,8 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -116,8 +115,7 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   opacity: 0;
   overflow: hidden;
@@ -139,8 +137,8 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -222,8 +220,7 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
 .emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   opacity: 0;
   overflow: hidden;
@@ -257,8 +254,8 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -329,8 +326,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   opacity: 0;
   overflow: hidden;
@@ -360,8 +356,8 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -436,8 +432,7 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   opacity: 0;
   overflow: hidden;
@@ -459,8 +454,8 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -535,8 +530,7 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   opacity: 0;
   overflow: hidden;
@@ -562,8 +556,8 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -643,8 +637,7 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   opacity: 0;
   overflow: hidden;
@@ -666,8 +659,8 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   background-color: #FFFFFF;
   border-radius: 3px;

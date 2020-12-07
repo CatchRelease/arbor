@@ -1814,6 +1814,8 @@ exports[`<Badge /> iconEnd properly renders a badge with an ending icon 1`] = `
   grid-template-columns: 1fr 0fr;
 }
 
+
+
 <div
   className="emotion-6 emotion-7"
   height="24px"
@@ -1871,6 +1873,8 @@ exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a st
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+
 
 .emotion-6 {
   font-family: Motiva Sans;
@@ -1945,6 +1949,8 @@ exports[`<Badge /> iconStart properly renders a badge with a starting icon 1`] =
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+
 
 .emotion-4 {
   font-family: Motiva Sans;

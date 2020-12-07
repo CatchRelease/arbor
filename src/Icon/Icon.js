@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from 'react';
-import { ClassNames, css, jsx } from '@emotion/core';
+import { ClassNames, css, jsx, withTheme } from '@emotion/react';
 import styled from '@emotion/styled';
 import {
   color,
@@ -11,7 +11,7 @@ import {
   textShadow,
   opacity
 } from 'styled-system';
-import { withTheme } from 'emotion-theming';
+
 import PropTypes from 'prop-types';
 
 const rotationStyles = ({ rotation }) =>

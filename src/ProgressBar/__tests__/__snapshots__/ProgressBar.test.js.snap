@@ -556,7 +556,7 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
               }
             }
           >
-            <ForwardRef(render)>
+            <EmotionClassNames>
               <StyledIcon
                 className="ar ar-calendar"
                 color="monochrome.grey40"
@@ -571,7 +571,7 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
                   fontSize="size4"
                 />
               </StyledIcon>
-            </ForwardRef(render)>
+            </EmotionClassNames>
           </Icon>
         </WithTheme(Icon)>
       </ForwardRef>
@@ -1136,7 +1136,7 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
               }
             }
           >
-            <ForwardRef(render)>
+            <EmotionClassNames>
               <StyledIcon
                 className="ar ar-calendar"
                 color="text.default"
@@ -1151,7 +1151,7 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
                   fontSize="size4"
                 />
               </StyledIcon>
-            </ForwardRef(render)>
+            </EmotionClassNames>
           </Icon>
         </WithTheme(Icon)>
       </ForwardRef>

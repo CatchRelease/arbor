@@ -12,7 +12,7 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
   align-items: center;
   bottom: 0;
   color: #989A9C;
-  content: '\\f037';
+  content: '037';
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -38,11 +38,12 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   background: #FFFFFF;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-2 {
     font-size: 1rem;
   }
@@ -148,7 +149,7 @@ exports[`<Select /> renders a Select with a label correctly 1`] = `
   align-items: center;
   bottom: 0;
   color: #989A9C;
-  content: '\\f037';
+  content: '037';
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -174,11 +175,12 @@ exports[`<Select /> renders a Select with a label correctly 1`] = `
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   background: #FFFFFF;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-6 {
     font-size: 1rem;
   }
@@ -305,7 +307,7 @@ exports[`<Select /> renders a Select with a labelAside correctly 1`] = `
   align-items: center;
   bottom: 0;
   color: #989A9C;
-  content: '\\f037';
+  content: '037';
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -331,11 +333,12 @@ exports[`<Select /> renders a Select with a labelAside correctly 1`] = `
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   background: #FFFFFF;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-0 {
     font-size: 1rem;
   }
@@ -402,7 +405,7 @@ exports[`<Select /> renders a large Select correctly 1`] = `
   align-items: center;
   bottom: 0;
   color: #989A9C;
-  content: '\\f037';
+  content: '037';
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -429,11 +432,12 @@ exports[`<Select /> renders a large Select correctly 1`] = `
   padding: 0.75rem 0.5rem;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   background: #FFFFFF;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-0 {
     font-size: 1rem;
   }
@@ -500,7 +504,7 @@ exports[`<Select /> renders an Select correctly 1`] = `
   align-items: center;
   bottom: 0;
   color: #989A9C;
-  content: '\\f037';
+  content: '037';
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -526,11 +530,12 @@ exports[`<Select /> renders an Select correctly 1`] = `
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
   background: #FFFFFF;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-0 {
     font-size: 1rem;
   }

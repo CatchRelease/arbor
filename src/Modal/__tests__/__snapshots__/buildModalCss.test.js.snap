@@ -1,6 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`buildModalCss modalCss is provided renders properly 1`] = `
+
+
 .emotion-0 .ArborModalOverlay {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -13,8 +15,8 @@ exports[`buildModalCss modalCss is provided renders properly 1`] = `
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   left: 0;
   position: fixed;
@@ -33,8 +35,8 @@ exports[`buildModalCss modalCss is provided renders properly 1`] = `
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   outline: none;
   background: red;
@@ -50,6 +52,8 @@ exports[`buildModalCss modalCss is provided renders properly 1`] = `
 `;
 
 exports[`buildModalCss no additional css provided renders properly 1`] = `
+
+
 .emotion-0 .ArborModalOverlay {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -62,8 +66,8 @@ exports[`buildModalCss no additional css provided renders properly 1`] = `
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   left: 0;
   position: fixed;
@@ -82,8 +86,8 @@ exports[`buildModalCss no additional css provided renders properly 1`] = `
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   outline: none;
 }
@@ -98,6 +102,8 @@ exports[`buildModalCss no additional css provided renders properly 1`] = `
 `;
 
 exports[`buildModalCss overlayCss is provided renders properly 1`] = `
+
+
 .emotion-0 .ArborModalOverlay {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -110,8 +116,8 @@ exports[`buildModalCss overlayCss is provided renders properly 1`] = `
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   left: 0;
   position: fixed;
@@ -131,8 +137,8 @@ exports[`buildModalCss overlayCss is provided renders properly 1`] = `
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   outline: none;
 }
