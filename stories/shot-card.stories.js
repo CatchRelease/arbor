@@ -1,5 +1,5 @@
 import React from 'react';
-import stories from './card.stories';
+import { stories } from './card.stories';
 
 import notes from './shot-card.md';
 import {
