@@ -24,7 +24,6 @@ exports[`<Masonry /> renders properly 1`] = `
   box-sizing: border-box;
   display: block;
   width: 100%;
-  -webkit-break-inside: avoid;
   break-inside: avoid;
   display: block;
   width: 100%;

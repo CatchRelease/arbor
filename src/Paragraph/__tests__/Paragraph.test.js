@@ -1,5 +1,5 @@
 import React from 'react';
-import { matchers } from 'jest-emotion';
+import { matchers } from '@emotion/jest';
 
 import createWithTheme from '../../../utils/createWithTheme';
 import Paragraph from '../Paragraph';

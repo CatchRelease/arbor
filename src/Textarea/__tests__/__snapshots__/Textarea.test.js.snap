@@ -27,7 +27,7 @@ exports[`<Textarea /> renders a Textarea with a caption correctly 1`] = `
   width: 100%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-2 {
     font-size: 1rem;
   }
@@ -126,7 +126,7 @@ exports[`<Textarea /> renders a Textarea with a label correctly 1`] = `
   width: 100%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-6 {
     font-size: 1rem;
   }
@@ -242,7 +242,7 @@ exports[`<Textarea /> renders a Textarea with a labelAside correctly 1`] = `
   width: 100%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-4 {
     font-size: 1rem;
   }
@@ -346,7 +346,7 @@ exports[`<Textarea /> renders a large Textarea correctly 1`] = `
   padding: 0.75rem 0.5rem;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-2 {
     font-size: 1rem;
   }
@@ -429,7 +429,7 @@ exports[`<Textarea /> renders an Textarea correctly 1`] = `
   width: 100%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-2 {
     font-size: 1rem;
   }

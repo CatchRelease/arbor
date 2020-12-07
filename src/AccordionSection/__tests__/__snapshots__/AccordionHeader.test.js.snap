@@ -16,7 +16,6 @@ exports[`<AccordionHeader /> properly renders an accordion header 1`] = `
   align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
   background: #F2F2F2;
@@ -31,8 +30,8 @@ exports[`<AccordionHeader /> properly renders an accordion header 1`] = `
   margin-left: 0.25rem;
 }
 
-.emotion-7 button + .button--secondary,
-.emotion-7 button + .button--primary {
+.emotion-7 button+.button--secondary,
+.emotion-7 button+.button--primary {
   margin-left: 0.5rem;
 }
 
@@ -58,7 +57,6 @@ section:last-child .emotion-7 {
   align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 0;
 }
@@ -84,6 +82,7 @@ section:last-child .emotion-7 {
 .emotion-0 {
   margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
@@ -130,7 +129,6 @@ exports[`<AccordionHeader /> renders with a note 1`] = `
   align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
   background: #F2F2F2;
@@ -145,8 +143,8 @@ exports[`<AccordionHeader /> renders with a note 1`] = `
   margin-left: 0.25rem;
 }
 
-.emotion-7 button + .button--secondary,
-.emotion-7 button + .button--primary {
+.emotion-7 button+.button--secondary,
+.emotion-7 button+.button--primary {
   margin-left: 0.5rem;
 }
 
@@ -172,7 +170,6 @@ section:last-child .emotion-7 {
   align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 0;
 }
@@ -198,6 +195,7 @@ section:last-child .emotion-7 {
 .emotion-0 {
   margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
@@ -245,7 +243,6 @@ exports[`<AccordionHeader /> renders with an on click 1`] = `
   align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
   background: #F2F2F2;
@@ -260,8 +257,8 @@ exports[`<AccordionHeader /> renders with an on click 1`] = `
   margin-left: 0.25rem;
 }
 
-.emotion-7 button + .button--secondary,
-.emotion-7 button + .button--primary {
+.emotion-7 button+.button--secondary,
+.emotion-7 button+.button--primary {
   margin-left: 0.5rem;
 }
 
@@ -287,7 +284,6 @@ section:last-child .emotion-7 {
   align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 0;
 }
@@ -313,6 +309,7 @@ section:last-child .emotion-7 {
 .emotion-0 {
   margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
@@ -359,7 +356,6 @@ exports[`<AccordionHeader /> renders with the panel visible 1`] = `
   align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
   background: #F2F2F2;
@@ -374,8 +370,8 @@ exports[`<AccordionHeader /> renders with the panel visible 1`] = `
   margin-left: 0.25rem;
 }
 
-.emotion-7 button + .button--secondary,
-.emotion-7 button + .button--primary {
+.emotion-7 button+.button--secondary,
+.emotion-7 button+.button--primary {
   margin-left: 0.5rem;
 }
 
@@ -401,7 +397,6 @@ section:last-child .emotion-7 {
   align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 0;
 }

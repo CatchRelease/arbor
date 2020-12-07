@@ -1,5 +1,5 @@
 import React from 'react';
-import { withTheme } from 'emotion-theming';
+import { withTheme } from '@emotion/react';
 import PropTypes from 'prop-types';
 import Flex from '../Flex';
 

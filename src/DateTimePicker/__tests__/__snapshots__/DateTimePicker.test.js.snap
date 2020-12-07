@@ -20,7 +20,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
   width: 100%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .emotion-0 .form-control {
     font-size: 1rem;
   }

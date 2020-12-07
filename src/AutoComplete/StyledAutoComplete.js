@@ -4,7 +4,7 @@ import ReactSelectAsync from 'react-select/async';
 import ReactSelectAsyncCreatable from 'react-select/async-creatable';
 import ReactSelectCreatable from 'react-select/creatable';
 import PropTypes from 'prop-types';
-import { withTheme } from 'emotion-theming';
+import { withTheme } from '@emotion/react';
 
 import buildReactSelectThemeOverrides from './buildReactSelectThemeOverrides';
 import styledComponents from './styledAutoCompleteComponents';

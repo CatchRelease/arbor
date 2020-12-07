@@ -5,6 +5,7 @@ exports[`<CardPreview /> renders a CardPreview properly 1`] = `
   font-family: Motiva Sans;
   box-sizing: border-box;
   background: url(example.gif) center center no-repeat #000000;
+  -webkit-background-size: contain;
   background-size: contain;
   height: 0;
   padding-bottom: 56.25%;
