@@ -71,4 +71,5 @@ stories.add(
   { notes: { markdown: notes } }
 );
 
-export default stories;
+// eslint-disable-next-line import/prefer-default-export
+export { stories };
