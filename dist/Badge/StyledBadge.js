@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -45,7 +45,7 @@ var getBorderColor = function getBorderColor(_ref2) {
   return paletteColor ? theme.colors.palette[paletteColor]["default"] : theme.colors.monochrome.grey100;
 };
 
-var StyledBadge = ( /*#__PURE__*/0, _styledBase["default"])(_Flex["default"], {
+var StyledBadge = ( /*#__PURE__*/0, _base["default"])(_Flex["default"], {
   target: "e1q9vwte0",
   label: "StyledBadge"
 })("background:", getBackground, ";border-color:", getBorderColor, ";border-radius:", function (props) {

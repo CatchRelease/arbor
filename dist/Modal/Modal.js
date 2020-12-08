@@ -11,9 +11,7 @@ var _reactModal = _interopRequireDefault(require("react-modal"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _core = require("@emotion/core");
-
-var _emotionTheming = require("emotion-theming");
+var _react2 = require("@emotion/react");
 
 var _buildModalCss = _interopRequireDefault(require("./buildModalCss"));
 
@@ -37,7 +35,7 @@ var Modal = function Modal(_ref) {
     modalCss: modalCss,
     overlayCss: overlayCss
   });
-  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_core.Global, {
+  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_react2.Global, {
     styles: combinedModalCss
   }), /*#__PURE__*/_react["default"].createElement(_reactModal["default"], _extends({
     overlayClassName: "ArborModalOverlay",
@@ -69,6 +67,6 @@ Modal.defaultProps = {
   overlayCss: {}
 };
 
-var _default = (0, _emotionTheming.withTheme)(Modal);
+var _default = (0, _react2.withTheme)(Modal);
 
 exports["default"] = _default;

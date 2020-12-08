@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -21,7 +21,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var CardPreview = ( /*#__PURE__*/0, _styledBase["default"])(_Box["default"], {
+var CardPreview = ( /*#__PURE__*/0, _base["default"])(_Box["default"], {
   target: "e181cw5e0",
   label: "CardPreview"
 })("background:url(", function (props) {

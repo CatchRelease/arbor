@@ -7,7 +7,7 @@ exports["default"] = exports.StyledAvatar = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _emotionTheming = require("emotion-theming");
+var _react2 = require("@emotion/react");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -55,6 +55,6 @@ StyledAvatar.propTypes = {
   subtle: _propTypes["default"].bool.isRequired
 };
 
-var _default = (0, _emotionTheming.withTheme)(StyledAvatar);
+var _default = (0, _react2.withTheme)(StyledAvatar);
 
 exports["default"] = _default;

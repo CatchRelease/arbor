@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _reactDayPicker = _interopRequireDefault(require("react-day-picker"));
 
@@ -15,7 +15,7 @@ require("react-day-picker/lib/style.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var StyledDatePicker = ( /*#__PURE__*/0, _styledBase["default"])(_reactDayPicker["default"], {
+var StyledDatePicker = ( /*#__PURE__*/0, _base["default"])(_reactDayPicker["default"], {
   target: "e1j5od5a0",
   label: "StyledDatePicker"
 })("color:", function (props) {

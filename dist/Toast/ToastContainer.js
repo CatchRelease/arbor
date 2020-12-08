@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _core = require("@emotion/core");
+var _react2 = require("@emotion/react");
 
 var _reactToastify = require("react-toastify");
 
@@ -26,7 +26,7 @@ var transition = (0, _reactToastify.cssTransition)({
 });
 
 var ToastContainer = function ToastContainer(props) {
-  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_core.Global, {
+  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_react2.Global, {
     styles: _toastCSS["default"]
   }), /*#__PURE__*/_react["default"].createElement(_reactToastify.ToastContainer, _extends({
     className: "arbor-toast-container",

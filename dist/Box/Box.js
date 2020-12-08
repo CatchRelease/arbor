@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _styledSystem = require("styled-system");
 
@@ -19,7 +19,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var Box = ( /*#__PURE__*/0, _styledBase["default"])(_Text["default"].withComponent('div', {
+var Box = ( /*#__PURE__*/0, _base["default"])(_Text["default"].withComponent('div', {
   target: "eo7fp001",
   label: "Box"
 }), {

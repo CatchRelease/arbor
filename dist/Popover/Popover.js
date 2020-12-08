@@ -7,9 +7,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _core = require("@emotion/core");
+var _react = require("@emotion/react");
 
-var _react = _interopRequireDefault(require("react"));
+var _react2 = _interopRequireDefault(require("react"));
 
 var _reactPopover = _interopRequireDefault(require("react-popover"));
 
@@ -100,7 +100,7 @@ var Popover = /*#__PURE__*/function (_React$Component) {
       }
     };
 
-    _this.node = /*#__PURE__*/_react["default"].createRef();
+    _this.node = /*#__PURE__*/_react2["default"].createRef();
     return _this;
   }
 
@@ -162,13 +162,13 @@ var Popover = /*#__PURE__*/function (_React$Component) {
           popoverProps = _objectWithoutProperties(_this$props, ["children", "content", "contentProps", "preferPlace", "place"]);
 
       var isOpen = this.state.isOpen;
-      var styledContent = (0, _core.jsx)(_PopoverContent["default"], contentProps, content);
+      var styledContent = (0, _react.jsx)(_PopoverContent["default"], contentProps, content);
 
-      var trigger = /*#__PURE__*/_react["default"].cloneElement(children, {
+      var trigger = /*#__PURE__*/_react2["default"].cloneElement(children, {
         onClick: this.toggle
       });
 
-      return (0, _core.jsx)(_reactPopover["default"], _extends({
+      return (0, _react.jsx)(_reactPopover["default"], _extends({
         ref: this.node,
         isOpen: isOpen,
         body: styledContent,
@@ -181,7 +181,7 @@ var Popover = /*#__PURE__*/function (_React$Component) {
   }]);
 
   return Popover;
-}(_react["default"].Component);
+}(_react2["default"].Component);
 
 Popover.propTypes = {
   /**

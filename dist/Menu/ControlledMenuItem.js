@@ -7,9 +7,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _core = require("@emotion/core");
+var _react = require("@emotion/react");
 
-var _react = _interopRequireDefault(require("react"));
+var _react2 = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -121,7 +121,7 @@ var ControlledMenuItem = /*#__PURE__*/function (_React$PureComponent) {
           name = _this$props2.name,
           secondaryLabel = _this$props2.secondaryLabel,
           value = _this$props2.value;
-      return (0, _core.jsx)(MenuItemComponent, _objectSpread({
+      return (0, _react.jsx)(MenuItemComponent, _objectSpread({
         'aria-selected': isSelected,
         alignItems: 'center',
         isFocused: isFocused,
@@ -129,34 +129,34 @@ var ControlledMenuItem = /*#__PURE__*/function (_React$PureComponent) {
         onClick: this.onSelect,
         onKeyPress: this.onKeyDown,
         role: 'option'
-      }, this.props), (0, _core.jsx)("input", {
+      }, this.props), (0, _react.jsx)("input", {
         id: id,
         name: name,
         value: value,
         css: (0, _polished.hideVisually)(),
         type: 'hidden'
-      }), (0, _core.jsx)(_Flex["default"], {
+      }), (0, _react.jsx)(_Flex["default"], {
         width: "100%",
         justifyContent: "space-between"
-      }, (0, _core.jsx)(_Flex["default"], {
+      }, (0, _react.jsx)(_Flex["default"], {
         flex: "1 0 auto",
         maxWidth: secondaryLabel ? "calc(100% - ".concat(MIN_WIDTH, " - ").concat(PADDING, ")") : '100%'
-      }, iconName && (0, _core.jsx)(_Icon["default"], {
+      }, iconName && (0, _react.jsx)(_Icon["default"], {
         name: iconName,
         mr: "small",
         color: baseColor,
         fontSize: "16px"
-      }), (0, _core.jsx)(_Text["default"], {
+      }), (0, _react.jsx)(_Text["default"], {
         as: "span",
         color: "inherit",
         minWidth: MIN_WIDTH,
         fontSize: "size4",
         overflow: "hidden"
-      }, label)), secondaryLabel && (0, _core.jsx)(_Flex["default"], {
+      }, label)), secondaryLabel && (0, _react.jsx)(_Flex["default"], {
         pl: PADDING,
         overflow: "hidden",
         flex: "0 1 auto"
-      }, (0, _core.jsx)(_Text["default"], {
+      }, (0, _react.jsx)(_Text["default"], {
         as: "span",
         fontSize: "size3",
         css: function css(theme) {
@@ -172,7 +172,7 @@ var ControlledMenuItem = /*#__PURE__*/function (_React$PureComponent) {
   }]);
 
   return ControlledMenuItem;
-}(_react["default"].PureComponent);
+}(_react2["default"].PureComponent);
 
 ControlledMenuItem.propTypes = {
   /**

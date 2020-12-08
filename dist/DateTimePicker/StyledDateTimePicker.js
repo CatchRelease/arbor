@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _reactDatetime = _interopRequireDefault(require("react-datetime"));
 
@@ -15,7 +15,7 @@ require("react-datetime/css/react-datetime.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var StyledDateTimePicker = ( /*#__PURE__*/0, _styledBase["default"])(_reactDatetime["default"], {
+var StyledDateTimePicker = ( /*#__PURE__*/0, _base["default"])(_reactDatetime["default"], {
   target: "eys0iix0",
   label: "StyledDateTimePicker"
 })("color:", function (props) {
