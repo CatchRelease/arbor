@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _Flex = _interopRequireDefault(require("../Flex"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var CheckboxLabel = ( /*#__PURE__*/0, _styledBase["default"])(_Flex["default"], {
+var CheckboxLabel = ( /*#__PURE__*/0, _base["default"])(_Flex["default"], {
   target: "eqny7xp0",
   label: "CheckboxLabel"
 })("cursor:", function (props) {

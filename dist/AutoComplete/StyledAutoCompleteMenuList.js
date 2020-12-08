@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _emotionTheming = require("emotion-theming");
+var _react2 = require("@emotion/react");
 
 var _Box = _interopRequireDefault(require("../Box"));
 
@@ -52,6 +52,6 @@ StyledAutoCompleteMenuList.defaultProps = {
   innerProps: {}
 };
 
-var _default = (0, _emotionTheming.withTheme)(StyledAutoCompleteMenuList);
+var _default = (0, _react2.withTheme)(StyledAutoCompleteMenuList);
 
 exports["default"] = _default;

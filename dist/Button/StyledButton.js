@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _styledSystem = require("styled-system");
 
@@ -44,7 +44,7 @@ var size = (0, _styledSystem.variant)({
     jumbo: {}
   }
 });
-var StyledButton = (0, _styledBase["default"])("button", {
+var StyledButton = (0, _base["default"])("button", {
   target: "e1gh64dh0",
   label: "StyledButton"
 })("appearance:none;outline:none;position:relative;text-align:center;&:disabled{background:", function (props) {

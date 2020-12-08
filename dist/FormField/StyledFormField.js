@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var StyledFormField = (0, _styledBase["default"])("div", {
+var StyledFormField = (0, _base["default"])("div", {
   target: "e1bwginl0",
   label: "StyledFormField"
 })("margin-bottom:", function (props) {

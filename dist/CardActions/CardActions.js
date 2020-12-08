@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
-var _core = require("@emotion/core");
+var _react = require("@emotion/react");
 
 var _Grid = _interopRequireDefault(require("../Grid"));
 
@@ -15,13 +15,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var gridStyles = function gridStyles(_ref) {
   var children = _ref.children;
-  return /*#__PURE__*/(0, _core.css)("grid-template-columns:repeat(", children.length, ",1fr);" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9DYXJkQWN0aW9ucy9DYXJkQWN0aW9ucy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFLd0MiLCJmaWxlIjoiLi4vLi4vc3JjL0NhcmRBY3Rpb25zL0NhcmRBY3Rpb25zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY3NzIH0gZnJvbSAnQGVtb3Rpb24vY29yZSc7XG5pbXBvcnQgc3R5bGVkIGZyb20gJ0BlbW90aW9uL3N0eWxlZCc7XG5cbmltcG9ydCBHcmlkIGZyb20gJy4uL0dyaWQnO1xuXG5jb25zdCBncmlkU3R5bGVzID0gKHsgY2hpbGRyZW4gfSkgPT4gY3NzYFxuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgke2NoaWxkcmVuLmxlbmd0aH0sIDFmcik7XG5gO1xuXG5jb25zdCBDYXJkQWN0aW9ucyA9IHN0eWxlZChHcmlkKWBcbiAgJHtncmlkU3R5bGVzfTtcbmA7XG5cbkNhcmRBY3Rpb25zLmRlZmF1bHRQcm9wcyA9IHtcbiAgZ3JpZEdhcDogJ3NtYWxsZXInXG59O1xuXG5leHBvcnQgZGVmYXVsdCBDYXJkQWN0aW9ucztcbiJdfQ== */"));
+  return /*#__PURE__*/(0, _react.css)("grid-template-columns:repeat(", children.length, ", 1fr);;label:gridStyles;" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9DYXJkQWN0aW9ucy9DYXJkQWN0aW9ucy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFLd0MiLCJmaWxlIjoiLi4vLi4vc3JjL0NhcmRBY3Rpb25zL0NhcmRBY3Rpb25zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY3NzIH0gZnJvbSAnQGVtb3Rpb24vcmVhY3QnO1xuaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xuXG5pbXBvcnQgR3JpZCBmcm9tICcuLi9HcmlkJztcblxuY29uc3QgZ3JpZFN0eWxlcyA9ICh7IGNoaWxkcmVuIH0pID0+IGNzc2BcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoJHtjaGlsZHJlbi5sZW5ndGh9LCAxZnIpO1xuYDtcblxuY29uc3QgQ2FyZEFjdGlvbnMgPSBzdHlsZWQoR3JpZClgXG4gICR7Z3JpZFN0eWxlc307XG5gO1xuXG5DYXJkQWN0aW9ucy5kZWZhdWx0UHJvcHMgPSB7XG4gIGdyaWRHYXA6ICdzbWFsbGVyJ1xufTtcblxuZXhwb3J0IGRlZmF1bHQgQ2FyZEFjdGlvbnM7XG4iXX0= */"));
 };
 
-var CardActions = ( /*#__PURE__*/0, _styledBase["default"])(_Grid["default"], {
+var CardActions = ( /*#__PURE__*/0, _base["default"])(_Grid["default"], {
   target: "e1lpmm440",
   label: "CardActions"
-})(gridStyles, ";" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9DYXJkQWN0aW9ucy9DYXJkQWN0aW9ucy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFTZ0MiLCJmaWxlIjoiLi4vLi4vc3JjL0NhcmRBY3Rpb25zL0NhcmRBY3Rpb25zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY3NzIH0gZnJvbSAnQGVtb3Rpb24vY29yZSc7XG5pbXBvcnQgc3R5bGVkIGZyb20gJ0BlbW90aW9uL3N0eWxlZCc7XG5cbmltcG9ydCBHcmlkIGZyb20gJy4uL0dyaWQnO1xuXG5jb25zdCBncmlkU3R5bGVzID0gKHsgY2hpbGRyZW4gfSkgPT4gY3NzYFxuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgke2NoaWxkcmVuLmxlbmd0aH0sIDFmcik7XG5gO1xuXG5jb25zdCBDYXJkQWN0aW9ucyA9IHN0eWxlZChHcmlkKWBcbiAgJHtncmlkU3R5bGVzfTtcbmA7XG5cbkNhcmRBY3Rpb25zLmRlZmF1bHRQcm9wcyA9IHtcbiAgZ3JpZEdhcDogJ3NtYWxsZXInXG59O1xuXG5leHBvcnQgZGVmYXVsdCBDYXJkQWN0aW9ucztcbiJdfQ== */"));
+})(gridStyles, ";" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9DYXJkQWN0aW9ucy9DYXJkQWN0aW9ucy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFTZ0MiLCJmaWxlIjoiLi4vLi4vc3JjL0NhcmRBY3Rpb25zL0NhcmRBY3Rpb25zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY3NzIH0gZnJvbSAnQGVtb3Rpb24vcmVhY3QnO1xuaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xuXG5pbXBvcnQgR3JpZCBmcm9tICcuLi9HcmlkJztcblxuY29uc3QgZ3JpZFN0eWxlcyA9ICh7IGNoaWxkcmVuIH0pID0+IGNzc2BcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoJHtjaGlsZHJlbi5sZW5ndGh9LCAxZnIpO1xuYDtcblxuY29uc3QgQ2FyZEFjdGlvbnMgPSBzdHlsZWQoR3JpZClgXG4gICR7Z3JpZFN0eWxlc307XG5gO1xuXG5DYXJkQWN0aW9ucy5kZWZhdWx0UHJvcHMgPSB7XG4gIGdyaWRHYXA6ICdzbWFsbGVyJ1xufTtcblxuZXhwb3J0IGRlZmF1bHQgQ2FyZEFjdGlvbnM7XG4iXX0= */"));
 CardActions.defaultProps = {
   gridGap: 'smaller'
 };

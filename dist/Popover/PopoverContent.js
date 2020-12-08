@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _Card = _interopRequireDefault(require("../Card"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var PopoverContent = ( /*#__PURE__*/0, _styledBase["default"])(_Card["default"], {
+var PopoverContent = ( /*#__PURE__*/0, _base["default"])(_Card["default"], {
   target: "exkv8pi0",
   label: "PopoverContent"
 })("background:", function (props) {

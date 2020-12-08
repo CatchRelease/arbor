@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -27,7 +27,7 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var StyledFlex = ( /*#__PURE__*/0, _styledBase["default"])(_Flex["default"], {
+var StyledFlex = ( /*#__PURE__*/0, _base["default"])(_Flex["default"], {
   target: "el72kbu0",
   label: "StyledFlex"
 })("font-family:", function (_ref) {

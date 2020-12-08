@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = exports.StyledText = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _Flex = _interopRequireDefault(require("../Flex"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var StyledText = ( /*#__PURE__*/0, _styledBase["default"])(_Flex["default"], {
+var StyledText = ( /*#__PURE__*/0, _base["default"])(_Flex["default"], {
   target: "exx962x0",
   label: "StyledText"
 })("background:none;border:none;font-size:inherit;font-weight:", function (props) {

@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _Flex = _interopRequireDefault(require("../Flex"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var RadioButtonLabel = ( /*#__PURE__*/0, _styledBase["default"])(_Flex["default"], {
+var RadioButtonLabel = ( /*#__PURE__*/0, _base["default"])(_Flex["default"], {
   target: "eonocg80",
   label: "RadioButtonLabel"
 })("cursor:", function (props) {

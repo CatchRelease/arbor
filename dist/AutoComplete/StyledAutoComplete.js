@@ -17,7 +17,7 @@ var _creatable = _interopRequireDefault(require("react-select/creatable"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _emotionTheming = require("emotion-theming");
+var _react2 = require("@emotion/react");
 
 var _buildReactSelectThemeOverrides = _interopRequireDefault(require("./buildReactSelectThemeOverrides"));
 
@@ -80,6 +80,6 @@ StyledAutoComplete.defaultProps = {
   variant: 'default'
 };
 
-var _default = (0, _emotionTheming.withTheme)(StyledAutoComplete);
+var _default = (0, _react2.withTheme)(StyledAutoComplete);
 
 exports["default"] = _default;

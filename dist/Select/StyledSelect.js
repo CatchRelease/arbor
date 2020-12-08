@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _styledBase = _interopRequireDefault(require("@emotion/styled-base"));
+var _base = _interopRequireDefault(require("@emotion/styled/base"));
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -19,8 +19,8 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var StyledSelectInput = ( /*#__PURE__*/0, _styledBase["default"])(_StyledInput["default"], {
-  target: "e1xemphv0",
+var StyledSelectInput = ( /*#__PURE__*/0, _base["default"])(_StyledInput["default"], {
+  target: "e1xemphv1",
   label: "StyledSelectInput"
 })("appearance:none;background:", function (props) {
   return props.theme.colors.background.white;
@@ -28,8 +28,8 @@ var StyledSelectInput = ( /*#__PURE__*/0, _styledBase["default"])(_StyledInput["
 StyledSelectInput.defaultProps = {
   as: 'select'
 };
-var StyledSelectWrapper = (0, _styledBase["default"])("div", {
-  target: "e1xemphv1",
+var StyledSelectWrapper = (0, _base["default"])("div", {
+  target: "e1xemphv0",
   label: "StyledSelectWrapper"
 })("position:relative;&:after{align-items:center;bottom:0;color:", function (props) {
   return props.theme.colors.icon["default"];
