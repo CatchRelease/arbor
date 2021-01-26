@@ -1,5 +1,6 @@
 [![Build
 Status](https://travis-ci.com/CatchRelease/arbor.svg?branch=master)](https://travis-ci.com/CatchRelease/arbor)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FCatchRelease%2Farbor.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FCatchRelease%2Farbor?ref=badge_shield)
 
 [![code style:
 prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -51,3 +52,6 @@ See [emotion-theming](https://github.com/emotion-js/emotion/blob/master/docs/the
 ## License
 
 The package is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FCatchRelease%2Farbor.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FCatchRelease%2Farbor?ref=badge_large)
