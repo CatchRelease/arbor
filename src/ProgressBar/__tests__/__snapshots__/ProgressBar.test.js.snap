@@ -532,6 +532,12 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
                   "regular": 1,
                   "small": 1.25,
                 },
+                "mediaQueries": Object {
+                  "lg": "@media screen and (min-width: 1024px)",
+                  "md": "@media screen and (min-width: 768px)",
+                  "sm": "@media screen and (min-width: 512px)",
+                  "xl": "@media screen and (min-width: 1600px)",
+                },
                 "radii": Object {
                   "large": "6px",
                   "larger": "12px",
@@ -1111,6 +1117,12 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
                   "large": 1.5,
                   "regular": 1,
                   "small": 1.25,
+                },
+                "mediaQueries": Object {
+                  "lg": "@media screen and (min-width: 1024px)",
+                  "md": "@media screen and (min-width: 768px)",
+                  "sm": "@media screen and (min-width: 512px)",
+                  "xl": "@media screen and (min-width: 1600px)",
                 },
                 "radii": Object {
                   "large": "6px",

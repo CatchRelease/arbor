@@ -367,6 +367,12 @@ exports[`<Spinner /> spinner is not spinning properly renders a spinner 1`] = `
           "regular": 1,
           "small": 1.25,
         },
+        "mediaQueries": Object {
+          "lg": "@media screen and (min-width: 1024px)",
+          "md": "@media screen and (min-width: 768px)",
+          "sm": "@media screen and (min-width: 512px)",
+          "xl": "@media screen and (min-width: 1600px)",
+        },
         "radii": Object {
           "large": "6px",
           "larger": "12px",
@@ -924,6 +930,12 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           "regular": 1,
           "small": 1.25,
         },
+        "mediaQueries": Object {
+          "lg": "@media screen and (min-width: 1024px)",
+          "md": "@media screen and (min-width: 768px)",
+          "sm": "@media screen and (min-width: 512px)",
+          "xl": "@media screen and (min-width: 1600px)",
+        },
         "radii": Object {
           "large": "6px",
           "larger": "12px",
@@ -1309,6 +1321,12 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
             "large": 1.5,
             "regular": 1,
             "small": 1.25,
+          },
+          "mediaQueries": Object {
+            "lg": "@media screen and (min-width: 1024px)",
+            "md": "@media screen and (min-width: 768px)",
+            "sm": "@media screen and (min-width: 512px)",
+            "xl": "@media screen and (min-width: 1600px)",
           },
           "radii": Object {
             "large": "6px",
@@ -1983,6 +2001,12 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           "regular": 1,
           "small": 1.25,
         },
+        "mediaQueries": Object {
+          "lg": "@media screen and (min-width: 1024px)",
+          "md": "@media screen and (min-width: 768px)",
+          "sm": "@media screen and (min-width: 512px)",
+          "xl": "@media screen and (min-width: 1600px)",
+        },
         "radii": Object {
           "large": "6px",
           "larger": "12px",
@@ -2368,6 +2392,12 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
             "large": 1.5,
             "regular": 1,
             "small": 1.25,
+          },
+          "mediaQueries": Object {
+            "lg": "@media screen and (min-width: 1024px)",
+            "md": "@media screen and (min-width: 768px)",
+            "sm": "@media screen and (min-width: 512px)",
+            "xl": "@media screen and (min-width: 1600px)",
           },
           "radii": Object {
             "large": "6px",

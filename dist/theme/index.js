@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.boxShadows = exports.borderWidth = exports.borderRadius = exports.spacings = exports.lineHeights = exports.icons = exports.colors = exports.bronzes = exports.black = exports.greens = exports.reds = exports.whites = exports.greys = exports.blues = exports.breakpoints = exports.breakpointsMap = void 0;
+exports["default"] = exports.boxShadows = exports.borderWidth = exports.borderRadius = exports.spacings = exports.lineHeights = exports.icons = exports.colors = exports.bronzes = exports.black = exports.greens = exports.reds = exports.whites = exports.greys = exports.blues = exports.mediaQueries = exports.breakpoints = exports.breakpointsMap = void 0;
 
 var _polished = require("polished");
 
@@ -35,6 +35,13 @@ breakpoints.sm = breakpointsMap.sm;
 breakpoints.md = breakpointsMap.md;
 breakpoints.lg = breakpointsMap.lg;
 breakpoints.xl = breakpointsMap.xl;
+var mediaQueries = {
+  sm: "@media screen and (min-width: ".concat(breakpointsMap.sm, ")"),
+  md: "@media screen and (min-width: ".concat(breakpointsMap.md, ")"),
+  lg: "@media screen and (min-width: ".concat(breakpointsMap.lg, ")"),
+  xl: "@media screen and (min-width: ".concat(breakpointsMap.xl, ")")
+};
+exports.mediaQueries = mediaQueries;
 var blues = {
   blueLighter: '#6688FF',
   blueLight: '#5577FF',
@@ -179,6 +186,7 @@ var _default = {
   icons: icons,
   iconFontPrefix: 'ar',
   lineHeights: lineHeights,
+  mediaQueries: mediaQueries,
   radii: borderRadius,
   shadows: boxShadows,
   space: spacings

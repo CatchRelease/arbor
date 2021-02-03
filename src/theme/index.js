@@ -36,6 +36,13 @@ breakpoints.md = breakpointsMap.md;
 breakpoints.lg = breakpointsMap.lg;
 breakpoints.xl = breakpointsMap.xl;
 
+export const mediaQueries = {
+  sm: `@media screen and (min-width: ${breakpointsMap.sm})`,
+  md: `@media screen and (min-width: ${breakpointsMap.md})`,
+  lg: `@media screen and (min-width: ${breakpointsMap.lg})`,
+  xl: `@media screen and (min-width: ${breakpointsMap.xl})`
+};
+
 export const blues = {
   blueLighter: '#6688FF',
   blueLight: '#5577FF',
@@ -185,6 +192,7 @@ export default {
   icons,
   iconFontPrefix: 'ar',
   lineHeights,
+  mediaQueries,
   radii: borderRadius,
   shadows: boxShadows,
   space: spacings
