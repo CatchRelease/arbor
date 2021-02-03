@@ -1,16 +1,11 @@
 import styled from '@emotion/styled';
+import propTypes from '@styled-system/prop-types';
 import {
   alignContent,
   alignItems,
-  gridAutoFlow,
-  gridColumnGap,
-  gridGap,
-  gridRowGap,
-  gridTemplateAreas,
-  gridTemplateColumns,
-  gridTemplateRows,
   justifyContent,
-  justifyItems
+  justifyItems,
+  grid
 } from 'styled-system';
 
 import Box from '../Box';
@@ -18,26 +13,14 @@ import Box from '../Box';
 const Grid = styled(Box)`
   ${alignContent};
   ${alignItems};
-  ${gridAutoFlow};
-  ${gridColumnGap};
-  ${gridGap};
-  ${gridRowGap};
-  ${gridTemplateAreas};
-  ${gridTemplateColumns};
-  ${gridTemplateRows};
+  ${grid};
   ${justifyContent};
   ${justifyItems};
 `;
 
 Grid.propTypes = {
   ...alignContent.propTypes,
-  ...gridAutoFlow.propTypes,
-  ...gridColumnGap.propTypes,
-  ...gridGap.propTypes,
-  ...gridTemplateAreas.propTypes,
-  ...gridTemplateColumns.propTypes,
-  ...gridTemplateRows.propTypes,
-  ...gridRowGap.propTypes,
+  ...propTypes.grid,
   ...justifyContent.propTypes,
   ...justifyItems.propTypes
 };
