@@ -110,6 +110,14 @@ var Menu = /*#__PURE__*/function (_React$Component) {
       document.removeEventListener('keydown', this.onKeyDown, true);
     }
   }, {
+    key: "currentlyFocused",
+    get: function get() {
+      var currentlyFocused = this.state.currentlyFocused;
+      var menuItems = this.props.menuItems;
+      var focusedMenuItem = menuItems[currentlyFocused];
+      return this.domIdForMenuItem(focusedMenuItem);
+    }
+  }, {
     key: "domIdForMenuItem",
     value: function domIdForMenuItem(menuItem) {
       if (menuItem === undefined) return undefined;
@@ -186,14 +194,6 @@ var Menu = /*#__PURE__*/function (_React$Component) {
         "aria-activedescendant": currentlyFocused,
         flexDirection: "column"
       }, this.renderMenuItems());
-    }
-  }, {
-    key: "currentlyFocused",
-    get: function get() {
-      var currentlyFocused = this.state.currentlyFocused;
-      var menuItems = this.props.menuItems;
-      var focusedMenuItem = menuItems[currentlyFocused];
-      return this.domIdForMenuItem(focusedMenuItem);
     }
   }]);
 

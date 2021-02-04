@@ -103,6 +103,41 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
   }
 
   _createClass(Tabs, [{
+    key: "activeTab",
+    get: function get() {
+      var activeTabId = this.activeTabId;
+      var children = this.props.children;
+      return children.find(function (tab) {
+        if (!tab) {
+          return false;
+        }
+
+        var id = tab.props.id;
+        return id === activeTabId;
+      });
+    }
+  }, {
+    key: "activeTabId",
+    get: function get() {
+      var activeTabIdProp = this.props.activeTabId;
+      var activeTabIdFromState = this.state.activeTabId;
+      return activeTabIdProp || activeTabIdFromState;
+    }
+  }, {
+    key: "activeTabContent",
+    get: function get() {
+      var activeTab = this.activeTab;
+      return /*#__PURE__*/_react["default"].cloneElement(activeTab.props.children, {
+        id: getTabContentId(activeTab)
+      });
+    }
+  }, {
+    key: "isControlled",
+    get: function get() {
+      var activeTabId = this.props.activeTabId;
+      return !!activeTabId;
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
@@ -144,41 +179,6 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
       })), tabBarAside && /*#__PURE__*/_react["default"].createElement(_Flex["default"], {
         alignItems: "center"
       }, tabBarAside)), this.activeTabContent);
-    }
-  }, {
-    key: "activeTab",
-    get: function get() {
-      var activeTabId = this.activeTabId;
-      var children = this.props.children;
-      return children.find(function (tab) {
-        if (!tab) {
-          return false;
-        }
-
-        var id = tab.props.id;
-        return id === activeTabId;
-      });
-    }
-  }, {
-    key: "activeTabId",
-    get: function get() {
-      var activeTabIdProp = this.props.activeTabId;
-      var activeTabIdFromState = this.state.activeTabId;
-      return activeTabIdProp || activeTabIdFromState;
-    }
-  }, {
-    key: "activeTabContent",
-    get: function get() {
-      var activeTab = this.activeTab;
-      return /*#__PURE__*/_react["default"].cloneElement(activeTab.props.children, {
-        id: getTabContentId(activeTab)
-      });
-    }
-  }, {
-    key: "isControlled",
-    get: function get() {
-      var activeTabId = this.props.activeTabId;
-      return !!activeTabId;
     }
   }]);
 

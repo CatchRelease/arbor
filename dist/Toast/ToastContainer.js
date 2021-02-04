@@ -21,8 +21,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 var transition = (0, _reactToastify.cssTransition)({
   enter: 'toastSlideIn',
-  exit: 'toastSlideOut',
-  duration: 500
+  exit: 'toastSlideOut'
 });
 
 var ToastContainer = function ToastContainer(props) {

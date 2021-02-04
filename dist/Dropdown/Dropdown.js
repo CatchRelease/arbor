@@ -119,15 +119,14 @@ var Dropdown = /*#__PURE__*/function (_React$Component) {
 
       var isOpen = this.popover.current && this.popover.current.state.isOpen;
 
-      var menu = /*#__PURE__*/_react["default"].createElement(_Menu["default"], _extends({
+      var menu = /*#__PURE__*/_react["default"].createElement(_Menu["default"], {
         MenuItemComponent: MenuItemComponent,
         onChange: this.onChange,
-        ref: this.menu
-      }, {
+        ref: this.menu,
         menuItems: menuItems,
         name: props.name,
         selected: selected
-      }));
+      });
 
       return /*#__PURE__*/_react["default"].createElement(_Popover["default"], _extends({
         ref: this.popover,
