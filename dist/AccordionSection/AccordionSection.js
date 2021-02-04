@@ -74,6 +74,19 @@ var AccordionSection = /*#__PURE__*/function (_React$Component) {
   }
 
   _createClass(AccordionSection, [{
+    key: "isControlled",
+    get: function get() {
+      var isOpen = this.props.isOpen;
+      return isOpen !== undefined;
+    }
+  }, {
+    key: "isOpen",
+    get: function get() {
+      var controlledIsOpen = this.props.isOpen;
+      var internalIsOpen = this.state.isOpen;
+      return this.isControlled ? controlledIsOpen : internalIsOpen;
+    }
+  }, {
     key: "toggle",
     value: function toggle() {
       this.setState(function (prevState) {
@@ -107,19 +120,6 @@ var AccordionSection = /*#__PURE__*/function (_React$Component) {
         isOpen: this.isOpen,
         variant: variant
       }, children));
-    }
-  }, {
-    key: "isControlled",
-    get: function get() {
-      var isOpen = this.props.isOpen;
-      return isOpen !== undefined;
-    }
-  }, {
-    key: "isOpen",
-    get: function get() {
-      var controlledIsOpen = this.props.isOpen;
-      var internalIsOpen = this.state.isOpen;
-      return this.isControlled ? controlledIsOpen : internalIsOpen;
     }
   }]);
 

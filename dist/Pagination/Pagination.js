@@ -15,8 +15,6 @@ var _Button = _interopRequireDefault(require("../Button"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -87,26 +85,24 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
       var paginationItem;
 
       if (item === ELLIPSIS) {
-        paginationItem = /*#__PURE__*/_react["default"].createElement(_Button["default"], _extends({
-          size: size
-        }, {
+        paginationItem = /*#__PURE__*/_react["default"].createElement(_Button["default"], {
+          size: size,
           variant: "minimal",
           mx: "smallest",
           key: "".concat(item, "-").concat(index),
           disabled: true
-        }), item);
+        }, item);
       } else {
         var variant = currentPage === item ? 'primary' : 'minimal';
-        paginationItem = /*#__PURE__*/_react["default"].createElement(_Button["default"], _extends({
+        paginationItem = /*#__PURE__*/_react["default"].createElement(_Button["default"], {
           size: size,
-          variant: variant
-        }, {
+          variant: variant,
           mx: "smallest",
           key: "".concat(item, "-").concat(index),
           onClick: function onClick() {
             return _this.paginate(item);
           }
-        }), item);
+        }, item);
       }
 
       return paginationItem;
@@ -118,9 +114,8 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
           previousText = _this$props3.previousText,
           size = _this$props3.size;
       var previousDisabled = currentPage === 1;
-      return /*#__PURE__*/_react["default"].createElement(_Button["default"], _extends({
-        size: size
-      }, {
+      return /*#__PURE__*/_react["default"].createElement(_Button["default"], {
+        size: size,
         variant: "minimal",
         mr: "small",
         key: "pagination-previous",
@@ -128,7 +123,7 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
         onClick: function onClick() {
           return _this.paginate(currentPage - 1);
         }
-      }), previousText);
+      }, previousText);
     };
 
     _this.renderNextItem = function () {
@@ -138,9 +133,8 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
           nextText = _this$props4.nextText,
           size = _this$props4.size;
       var nextDisabled = currentPage === totalPages;
-      return /*#__PURE__*/_react["default"].createElement(_Button["default"], _extends({
-        size: size
-      }, {
+      return /*#__PURE__*/_react["default"].createElement(_Button["default"], {
+        size: size,
         variant: "minimal",
         ml: "small",
         key: "pagination-next",
@@ -148,7 +142,7 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
         onClick: function onClick() {
           return _this.paginate(currentPage + 1);
         }
-      }), nextText);
+      }, nextText);
     };
 
     return _this;
