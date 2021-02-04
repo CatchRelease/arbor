@@ -42,6 +42,15 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   line-height: 1.5;
 }
 
+.emotion-19 {
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+
+
+
 .emotion-17 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -159,6 +168,16 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   grid-gap: 0.5rem;
 }
 
+.emotion-12 {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 1px;
+  box-sizing: border-box;
+}
+
 .emotion-13 {
   display: block;
 }
@@ -168,21 +187,6 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   color: #D93838;
   line-height: 1.5;
   font-size: 0.8125rem;
-}
-
-.emotion-19 {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.emotion-12 {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  margin-bottom: 0;
-  margin-top: 0;
-  width: 1px;
-  box-sizing: border-box;
 }
 
 <div
@@ -307,6 +311,15 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   line-height: 1.5;
 }
 
+.emotion-19 {
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+
+
+
 .emotion-17 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -424,6 +437,16 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   grid-gap: 0.5rem;
 }
 
+.emotion-12 {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 1px;
+  box-sizing: border-box;
+}
+
 .emotion-13 {
   display: block;
 }
@@ -433,21 +456,6 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   color: #D93838;
   line-height: 1.5;
   font-size: 0.8125rem;
-}
-
-.emotion-19 {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.emotion-12 {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  margin-bottom: 0;
-  margin-top: 0;
-  width: 1px;
-  box-sizing: border-box;
 }
 
 <div
@@ -572,6 +580,15 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   line-height: 1.5;
 }
 
+.emotion-19 {
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+
+
+
 .emotion-17 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -689,6 +706,16 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   grid-gap: 0.5rem;
 }
 
+.emotion-12 {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 1px;
+  box-sizing: border-box;
+}
+
 .emotion-13 {
   display: block;
 }
@@ -698,21 +725,6 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   color: #D93838;
   line-height: 1.5;
   font-size: 0.8125rem;
-}
-
-.emotion-19 {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.emotion-12 {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  margin-bottom: 0;
-  margin-top: 0;
-  width: 1px;
-  box-sizing: border-box;
 }
 
 <div
@@ -837,6 +849,15 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   line-height: 1.5;
 }
 
+.emotion-19 {
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+
+
+
 .emotion-17 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -954,6 +975,16 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   grid-gap: 0.5rem;
 }
 
+.emotion-12 {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 1px;
+  box-sizing: border-box;
+}
+
 .emotion-13 {
   display: block;
 }
@@ -963,21 +994,6 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   color: #D93838;
   line-height: 1.5;
   font-size: 0.8125rem;
-}
-
-.emotion-19 {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.emotion-12 {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  margin-bottom: 0;
-  margin-top: 0;
-  width: 1px;
-  box-sizing: border-box;
 }
 
 <div
@@ -1102,6 +1118,15 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   line-height: 1.5;
 }
 
+.emotion-19 {
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+
+
+
 .emotion-17 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -1219,6 +1244,16 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   grid-gap: 0.5rem;
 }
 
+.emotion-12 {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 1px;
+  box-sizing: border-box;
+}
+
 .emotion-13 {
   display: block;
 }
@@ -1228,21 +1263,6 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   color: #D93838;
   line-height: 1.5;
   font-size: 0.8125rem;
-}
-
-.emotion-19 {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.emotion-12 {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  margin-bottom: 0;
-  margin-top: 0;
-  width: 1px;
-  box-sizing: border-box;
 }
 
 <div
@@ -1367,6 +1387,15 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   line-height: 1.5;
 }
 
+.emotion-19 {
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+
+
+
 .emotion-17 {
   font-family: Motiva Sans;
   box-sizing: border-box;
@@ -1484,6 +1513,16 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   grid-gap: 0.5rem;
 }
 
+.emotion-12 {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 1px;
+  box-sizing: border-box;
+}
+
 .emotion-20 {
   font-family: Motiva Sans;
   color: #D93838;
@@ -1493,21 +1532,6 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 
 .emotion-13 {
   display: none;
-}
-
-.emotion-19 {
-  position: relative;
-  box-sizing: border-box;
-}
-
-.emotion-12 {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  margin-bottom: 0;
-  margin-top: 0;
-  width: 1px;
-  box-sizing: border-box;
 }
 
 <div
