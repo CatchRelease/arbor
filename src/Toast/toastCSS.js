@@ -35,6 +35,8 @@ const toastCSS = css`
   }
 
   .toastSlideIn {
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
     animation-name: toastSlideIn;
   }
 
@@ -55,6 +57,8 @@ const toastCSS = css`
   }
 
   .toastSlideOut {
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
     animation-name: toastSlideOut;
   }
 `;

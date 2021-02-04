@@ -10,8 +10,7 @@ import toastCSS from './toastCSS';
 
 const transition = cssTransition({
   enter: 'toastSlideIn',
-  exit: 'toastSlideOut',
-  duration: 500
+  exit: 'toastSlideOut'
 });
 
 const ToastContainer = (props) => (
