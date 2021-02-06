@@ -31,7 +31,7 @@ yarn add @catchandrelease/arbor
 import React from 'react';
 import { render } from 'react-dom';
 import { Heading, theme } from '@catchandrelease/arbor';
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 
 function App() {
   return (
@@ -46,7 +46,7 @@ render(<App />, document.getElementById('app'));
 
 The application must be wrapped in an emotion `ThemeProvider` in order to work.
 You can import the base theme from arbor, or customize it and pass in your own.
-See [emotion-theming](https://github.com/emotion-js/emotion/blob/master/docs/theming.md).
+See [emotion-theming](https://github.com/emotion-js/emotion/blob/master/docs/theming.mdx).
 
 ## License
 
