@@ -16,6 +16,17 @@ const invalidStyles = (theme) => css`
   background: ${theme.colors.palette.red.lighter};
 `;
 
+/* stylelint-disable property-no-vendor-prefix */
+const hideArrowsAddedByBrowsers = css`
+  ::-webkit-outer-spin-button,
+  ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  -moz-appearance: textfield;
+`;
+/* stylelint-enable property-no-vendor-prefix */
+
 const inputStyles = ({ isDisabled, isFocused, isInvalid, theme }) => css`
   border-radius: ${theme.radii.small};
   border: ${theme.borderWidth.small} solid ${theme.colors.border.default};
@@ -50,6 +61,8 @@ const inputStyles = ({ isDisabled, isFocused, isInvalid, theme }) => css`
   &:required {
     box-shadow: none;
   }
+
+  ${hideArrowsAddedByBrowsers}
 `;
 
 export default inputStyles;

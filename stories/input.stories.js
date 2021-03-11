@@ -51,6 +51,13 @@ storiesOf('Input', module).add(
         name="email"
       />
       <Input
+        label="Number Field"
+        id="number-field"
+        type="number"
+        placeholder="12345"
+        name="number"
+      />
+      <Input
         label="Disabled"
         id="disabled-input"
         disabled
