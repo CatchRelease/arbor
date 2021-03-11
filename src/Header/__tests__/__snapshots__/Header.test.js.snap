@@ -145,13 +145,13 @@ exports[`<Header /> renders with heading and a button 1`] = `
       className="emotion-4 emotion-5"
       display="inline-grid"
     >
-      <p
+      <span
         className="emotion-2 emotion-3"
         color="inherit"
         fontSize="inherit"
       >
         Primary
-      </p>
+      </span>
     </div>
   </button>
 </header>
@@ -428,13 +428,13 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
       className="emotion-4 emotion-5"
       display="inline-grid"
     >
-      <p
+      <span
         className="emotion-2 emotion-3"
         color="inherit"
         fontSize="inherit"
       >
         Secondary
-      </p>
+      </span>
     </div>
   </button>
   <button
@@ -447,13 +447,13 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
       className="emotion-4 emotion-5"
       display="inline-grid"
     >
-      <p
+      <span
         className="emotion-2 emotion-3"
         color="inherit"
         fontSize="inherit"
       >
         Primary
-      </p>
+      </span>
     </div>
   </button>
 </header>

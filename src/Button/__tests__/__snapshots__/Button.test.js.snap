@@ -114,13 +114,13 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
     className="emotion-4 emotion-5"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
     <i
       className="ar ar-cr-logo emotion-2 emotion-3"
     />
@@ -242,13 +242,13 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
     className="emotion-4 emotion-5"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
     <i
       className="ar ar-cr-logo emotion-2 emotion-3"
     />
@@ -370,13 +370,13 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
     className="emotion-4 emotion-5"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
     <i
       className="ar ar-cr-logo emotion-2 emotion-3"
     />
@@ -498,13 +498,13 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
     className="emotion-4 emotion-5"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
     <i
       className="ar ar-cr-logo emotion-2 emotion-3"
     />
@@ -629,13 +629,13 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <p
+    <span
       className="emotion-2 emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
     <i
       className="ar ar-download emotion-0 emotion-1"
     />
@@ -760,13 +760,13 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <p
+    <span
       className="emotion-2 emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
     <i
       className="ar ar-download emotion-0 emotion-1"
     />
@@ -891,13 +891,13 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <p
+    <span
       className="emotion-2 emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
     <i
       className="ar ar-download emotion-0 emotion-1"
     />
@@ -1022,13 +1022,13 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <p
+    <span
       className="emotion-2 emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
     <i
       className="ar ar-download emotion-0 emotion-1"
     />
@@ -1153,13 +1153,13 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <p
+    <span
       className="emotion-2 emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -1281,13 +1281,13 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <p
+    <span
       className="emotion-2 emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -1409,13 +1409,13 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <p
+    <span
       className="emotion-2 emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -1537,13 +1537,13 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
     <i
       className="ar ar-cr-logo emotion-0 emotion-1"
     />
-    <p
+    <span
       className="emotion-2 emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -1660,13 +1660,13 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button Label
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -1783,13 +1783,13 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button Label
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -1906,13 +1906,13 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button Label
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -2029,13 +2029,13 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button Label
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -2167,13 +2167,13 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button Label
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -2290,13 +2290,13 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button Label
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -2420,13 +2420,13 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button Label
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -2558,13 +2558,13 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button Label
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -2681,13 +2681,13 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button Label
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -2811,13 +2811,13 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Button Label
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -2936,13 +2936,13 @@ exports[`<Button /> fontSize properly renders a button with custom font preset s
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Size Button
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -3061,13 +3061,13 @@ exports[`<Button /> fontSize properly renders a button with custom pixel font si
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Size Button
-    </p>
+    </span>
   </div>
 </button>
 `;
@@ -3184,13 +3184,13 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
     className="emotion-2 emotion-3"
     display="inline-grid"
   >
-    <p
+    <span
       className="emotion-0 emotion-1"
       color="inherit"
       fontSize="inherit"
     >
       Full Width
-    </p>
+    </span>
   </div>
 </button>
 `;

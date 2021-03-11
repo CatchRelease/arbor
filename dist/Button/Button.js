@@ -75,6 +75,7 @@ var Button = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
     iconEnd: iconEnd,
     spin: spin
   }, iconStart, children && /*#__PURE__*/_react["default"].createElement(_Text["default"], {
+    as: "span",
     color: "inherit",
     fontSize: "inherit"
   }, children), iconEnd));

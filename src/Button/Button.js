@@ -29,7 +29,7 @@ const Button = React.forwardRef(
       <ButtonContent {...{ hasText: !!children, iconStart, iconEnd, spin }}>
         {iconStart}
         {children && (
-          <Text color="inherit" fontSize="inherit">
+          <Text as="span" color="inherit" fontSize="inherit">
             {children}
           </Text>
         )}
