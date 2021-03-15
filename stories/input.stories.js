@@ -58,6 +58,14 @@ storiesOf('Input', module).add(
         name="number"
       />
       <Input
+        label="Number Field w/ Hidden Browser Arrows"
+        id="number-field-hidden-arrows"
+        type="number"
+        placeholder="12345"
+        name="number"
+        hideArrows="true"
+      />
+      <Input
         label="Disabled"
         id="disabled-input"
         disabled
