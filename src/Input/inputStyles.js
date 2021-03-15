@@ -16,7 +16,24 @@ const invalidStyles = (theme) => css`
   background: ${theme.colors.palette.red.lighter};
 `;
 
-const inputStyles = ({ isDisabled, isFocused, isInvalid, theme }) => css`
+/* stylelint-disable property-no-vendor-prefix */
+const hideArrowsStyles = css`
+  ::-webkit-outer-spin-button,
+  ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  -moz-appearance: textfield;
+`;
+/* stylelint-enable property-no-vendor-prefix */
+
+const inputStyles = ({
+  hideArrows,
+  isDisabled,
+  isFocused,
+  isInvalid,
+  theme
+}) => css`
   border-radius: ${theme.radii.small};
   border: ${theme.borderWidth.small} solid ${theme.colors.border.default};
   box-sizing: border-box;
@@ -50,6 +67,8 @@ const inputStyles = ({ isDisabled, isFocused, isInvalid, theme }) => css`
   &:required {
     box-shadow: none;
   }
+
+  ${hideArrows ? hideArrowsStyles : ''}
 `;
 
 export default inputStyles;
