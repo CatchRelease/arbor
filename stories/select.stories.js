@@ -53,7 +53,7 @@ storiesOf('Select', module).add(
         id="select-with-node-label"
         label={
           <Flex>
-            <Text>Role</Text>
+            <Text>Select w/ tooltip</Text>
             <Tooltip content="This is a tooltip">
               <Icon name="info-sign" color="icon.default" ml="smallest" />
             </Tooltip>
