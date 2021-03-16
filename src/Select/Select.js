@@ -47,7 +47,7 @@ Select.propTypes = {
   /**
    * Label text for the select
    */
-  label: PropTypes.string,
+  label: PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
 
   /**
    * Component that goes to the right of the label. Does not have to only be text.

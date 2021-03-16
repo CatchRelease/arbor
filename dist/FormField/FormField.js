@@ -63,7 +63,7 @@ FormField.propTypes = {
   /**
    * Label text for the form field
    */
-  label: _propTypes["default"].string,
+  label: _propTypes["default"].oneOfType([_propTypes["default"].node, _propTypes["default"].string]),
 
   /**
    * Component that goes to the right of the label. Does not have to only be text.
