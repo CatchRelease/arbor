@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = `
-.emotion-22 {
+.emotion-23 {
   margin-bottom: 0.5rem;
 }
 
@@ -42,7 +42,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   line-height: 1.5;
 }
 
-.emotion-19 {
+.emotion-20 {
   position: relative;
   box-sizing: border-box;
 }
@@ -51,7 +51,21 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 
 
 
-.emotion-17 {
+.emotion-6 {
+  z-index: 9999;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkExMXlUZXh0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVFJIiwiZmlsZSI6IkExMXlUZXh0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQGZsb3dcbi8qKiBAanN4IGpzeCAqL1xuaW1wb3J0IHsgdHlwZSBFbGVtZW50Q29uZmlnIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsganN4IH0gZnJvbSAnQGVtb3Rpb24vcmVhY3QnO1xuXG4vLyBBc3Npc3RpdmUgdGV4dCB0byBkZXNjcmliZSB2aXN1YWwgZWxlbWVudHMuIEhpZGRlbiBmb3Igc2lnaHRlZCB1c2Vycy5cbmNvbnN0IEExMXlUZXh0ID0gKHByb3BzOiBFbGVtZW50Q29uZmlnPCdzcGFuJz4pID0+IChcbiAgPHNwYW5cbiAgICBjc3M9e3tcbiAgICAgIGxhYmVsOiAnYTExeVRleHQnLFxuICAgICAgekluZGV4OiA5OTk5LFxuICAgICAgYm9yZGVyOiAwLFxuICAgICAgY2xpcDogJ3JlY3QoMXB4LCAxcHgsIDFweCwgMXB4KScsXG4gICAgICBoZWlnaHQ6IDEsXG4gICAgICB3aWR0aDogMSxcbiAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLFxuICAgICAgb3ZlcmZsb3c6ICdoaWRkZW4nLFxuICAgICAgcGFkZGluZzogMCxcbiAgICAgIHdoaXRlU3BhY2U6ICdub3dyYXAnLFxuICAgIH19XG4gICAgey4uLnByb3BzfVxuICAvPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgQTExeVRleHQ7XG4iXX0= */
+
+.emotion-18 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -71,42 +85,42 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 }
 
 @media (max-width: 768px) {
-  .emotion-17 {
+  .emotion-18 {
     font-size: 1rem;
   }
 }
 
-.emotion-17::-webkit-input-placeholder {
+.emotion-18::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::-moz-placeholder {
+.emotion-18::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-17:-ms-input-placeholder {
+.emotion-18:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::placeholder {
+.emotion-18::placeholder {
   color: #989A9C;
 }
 
-.emotion-17:focus {
+.emotion-18:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-17:disabled {
+.emotion-18:disabled {
   background: #F2F2F2;
 }
 
-.emotion-17:required {
+.emotion-18:required {
   box-shadow: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -123,7 +137,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   grid-gap: 0.25rem;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -137,7 +151,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   align-self: center;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -152,11 +166,11 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   font-size: 0.875rem;
 }
 
-.emotion-8:focus {
+.emotion-9:focus {
   outline: none;
 }
 
-.emotion-15 {
+.emotion-16 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -168,7 +182,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   grid-gap: 0.5rem;
 }
 
-.emotion-12 {
+.emotion-13 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -178,11 +192,11 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   box-sizing: border-box;
 }
 
-.emotion-13 {
+.emotion-14 {
   display: block;
 }
 
-.emotion-20 {
+.emotion-21 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -190,7 +204,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 }
 
 <div
-  className="emotion-22 emotion-23"
+  className="emotion-23 emotion-24"
 >
   <div
     className="emotion-4 emotion-3"
@@ -207,19 +221,25 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
     </div>
   </div>
   <div
-    className=" emotion-19"
+    className=" emotion-20"
     onKeyDown={[Function]}
   >
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="emotion-6"
+    />
     <div
-      className="emotion-17 emotion-18"
+      className="emotion-18 emotion-19"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-10 emotion-3"
+        className="emotion-11 emotion-3"
       >
         <div
-          className="emotion-6 emotion-3"
+          className="emotion-7 emotion-3"
           color="text.placeholder"
         >
           Select...
@@ -230,7 +250,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-8 emotion-9"
+          className="emotion-9 emotion-10"
           disabled={false}
           id="react-select-2-input"
           onBlur={[Function]}
@@ -243,16 +263,16 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
         />
       </div>
       <div
-        className="emotion-15 emotion-16"
+        className="emotion-16 emotion-17"
         display="grid"
       >
         <span
-          className=" emotion-12"
+          className=" emotion-13"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-13 emotion-14"
+          className="ar ar-chevron emotion-14 emotion-15"
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -261,7 +281,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
     </div>
   </div>
   <span
-    className="emotion-20 emotion-21"
+    className="emotion-21 emotion-22"
     color="palette.red.default"
   >
     Test the auto complete input
@@ -270,7 +290,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 `;
 
 exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto complete 1`] = `
-.emotion-22 {
+.emotion-23 {
   margin-bottom: 0.5rem;
 }
 
@@ -311,7 +331,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   line-height: 1.5;
 }
 
-.emotion-19 {
+.emotion-20 {
   position: relative;
   box-sizing: border-box;
 }
@@ -320,7 +340,21 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 
 
 
-.emotion-17 {
+.emotion-6 {
+  z-index: 9999;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkExMXlUZXh0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVFJIiwiZmlsZSI6IkExMXlUZXh0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQGZsb3dcbi8qKiBAanN4IGpzeCAqL1xuaW1wb3J0IHsgdHlwZSBFbGVtZW50Q29uZmlnIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsganN4IH0gZnJvbSAnQGVtb3Rpb24vcmVhY3QnO1xuXG4vLyBBc3Npc3RpdmUgdGV4dCB0byBkZXNjcmliZSB2aXN1YWwgZWxlbWVudHMuIEhpZGRlbiBmb3Igc2lnaHRlZCB1c2Vycy5cbmNvbnN0IEExMXlUZXh0ID0gKHByb3BzOiBFbGVtZW50Q29uZmlnPCdzcGFuJz4pID0+IChcbiAgPHNwYW5cbiAgICBjc3M9e3tcbiAgICAgIGxhYmVsOiAnYTExeVRleHQnLFxuICAgICAgekluZGV4OiA5OTk5LFxuICAgICAgYm9yZGVyOiAwLFxuICAgICAgY2xpcDogJ3JlY3QoMXB4LCAxcHgsIDFweCwgMXB4KScsXG4gICAgICBoZWlnaHQ6IDEsXG4gICAgICB3aWR0aDogMSxcbiAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLFxuICAgICAgb3ZlcmZsb3c6ICdoaWRkZW4nLFxuICAgICAgcGFkZGluZzogMCxcbiAgICAgIHdoaXRlU3BhY2U6ICdub3dyYXAnLFxuICAgIH19XG4gICAgey4uLnByb3BzfVxuICAvPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgQTExeVRleHQ7XG4iXX0= */
+
+.emotion-18 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -340,42 +374,42 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 }
 
 @media (max-width: 768px) {
-  .emotion-17 {
+  .emotion-18 {
     font-size: 1rem;
   }
 }
 
-.emotion-17::-webkit-input-placeholder {
+.emotion-18::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::-moz-placeholder {
+.emotion-18::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-17:-ms-input-placeholder {
+.emotion-18:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::placeholder {
+.emotion-18::placeholder {
   color: #989A9C;
 }
 
-.emotion-17:focus {
+.emotion-18:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-17:disabled {
+.emotion-18:disabled {
   background: #F2F2F2;
 }
 
-.emotion-17:required {
+.emotion-18:required {
   box-shadow: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -392,7 +426,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   grid-gap: 0.25rem;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -406,7 +440,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   align-self: center;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -421,11 +455,11 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   font-size: 0.875rem;
 }
 
-.emotion-8:focus {
+.emotion-9:focus {
   outline: none;
 }
 
-.emotion-15 {
+.emotion-16 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -437,7 +471,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   grid-gap: 0.5rem;
 }
 
-.emotion-12 {
+.emotion-13 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -447,11 +481,11 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   box-sizing: border-box;
 }
 
-.emotion-13 {
+.emotion-14 {
   display: block;
 }
 
-.emotion-20 {
+.emotion-21 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -459,7 +493,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 }
 
 <div
-  className="emotion-22 emotion-23"
+  className="emotion-23 emotion-24"
 >
   <div
     className="emotion-4 emotion-3"
@@ -476,19 +510,25 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
     </div>
   </div>
   <div
-    className=" emotion-19"
+    className=" emotion-20"
     onKeyDown={[Function]}
   >
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="emotion-6"
+    />
     <div
-      className="emotion-17 emotion-18"
+      className="emotion-18 emotion-19"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-10 emotion-3"
+        className="emotion-11 emotion-3"
       >
         <div
-          className="emotion-6 emotion-3"
+          className="emotion-7 emotion-3"
           color="text.placeholder"
         >
           Select...
@@ -499,7 +539,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-8 emotion-9"
+          className="emotion-9 emotion-10"
           disabled={false}
           id="react-select-3-input"
           onBlur={[Function]}
@@ -512,16 +552,16 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
         />
       </div>
       <div
-        className="emotion-15 emotion-16"
+        className="emotion-16 emotion-17"
         display="grid"
       >
         <span
-          className=" emotion-12"
+          className=" emotion-13"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-13 emotion-14"
+          className="ar ar-chevron emotion-14 emotion-15"
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -530,7 +570,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
     </div>
   </div>
   <span
-    className="emotion-20 emotion-21"
+    className="emotion-21 emotion-22"
     color="palette.red.default"
   >
     Test the auto complete input
@@ -539,7 +579,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 `;
 
 exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`] = `
-.emotion-22 {
+.emotion-23 {
   margin-bottom: 0.5rem;
 }
 
@@ -580,7 +620,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   line-height: 1.5;
 }
 
-.emotion-19 {
+.emotion-20 {
   position: relative;
   box-sizing: border-box;
 }
@@ -589,7 +629,21 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 
 
 
-.emotion-17 {
+.emotion-6 {
+  z-index: 9999;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkExMXlUZXh0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVFJIiwiZmlsZSI6IkExMXlUZXh0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQGZsb3dcbi8qKiBAanN4IGpzeCAqL1xuaW1wb3J0IHsgdHlwZSBFbGVtZW50Q29uZmlnIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsganN4IH0gZnJvbSAnQGVtb3Rpb24vcmVhY3QnO1xuXG4vLyBBc3Npc3RpdmUgdGV4dCB0byBkZXNjcmliZSB2aXN1YWwgZWxlbWVudHMuIEhpZGRlbiBmb3Igc2lnaHRlZCB1c2Vycy5cbmNvbnN0IEExMXlUZXh0ID0gKHByb3BzOiBFbGVtZW50Q29uZmlnPCdzcGFuJz4pID0+IChcbiAgPHNwYW5cbiAgICBjc3M9e3tcbiAgICAgIGxhYmVsOiAnYTExeVRleHQnLFxuICAgICAgekluZGV4OiA5OTk5LFxuICAgICAgYm9yZGVyOiAwLFxuICAgICAgY2xpcDogJ3JlY3QoMXB4LCAxcHgsIDFweCwgMXB4KScsXG4gICAgICBoZWlnaHQ6IDEsXG4gICAgICB3aWR0aDogMSxcbiAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLFxuICAgICAgb3ZlcmZsb3c6ICdoaWRkZW4nLFxuICAgICAgcGFkZGluZzogMCxcbiAgICAgIHdoaXRlU3BhY2U6ICdub3dyYXAnLFxuICAgIH19XG4gICAgey4uLnByb3BzfVxuICAvPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgQTExeVRleHQ7XG4iXX0= */
+
+.emotion-18 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -609,42 +663,42 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 }
 
 @media (max-width: 768px) {
-  .emotion-17 {
+  .emotion-18 {
     font-size: 1rem;
   }
 }
 
-.emotion-17::-webkit-input-placeholder {
+.emotion-18::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::-moz-placeholder {
+.emotion-18::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-17:-ms-input-placeholder {
+.emotion-18:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::placeholder {
+.emotion-18::placeholder {
   color: #989A9C;
 }
 
-.emotion-17:focus {
+.emotion-18:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-17:disabled {
+.emotion-18:disabled {
   background: #F2F2F2;
 }
 
-.emotion-17:required {
+.emotion-18:required {
   box-shadow: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -661,7 +715,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   grid-gap: 0.25rem;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -675,7 +729,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   align-self: center;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -690,11 +744,11 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   font-size: 0.875rem;
 }
 
-.emotion-8:focus {
+.emotion-9:focus {
   outline: none;
 }
 
-.emotion-15 {
+.emotion-16 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -706,7 +760,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   grid-gap: 0.5rem;
 }
 
-.emotion-12 {
+.emotion-13 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -716,11 +770,11 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   box-sizing: border-box;
 }
 
-.emotion-13 {
+.emotion-14 {
   display: block;
 }
 
-.emotion-20 {
+.emotion-21 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -728,7 +782,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 }
 
 <div
-  className="emotion-22 emotion-23"
+  className="emotion-23 emotion-24"
 >
   <div
     className="emotion-4 emotion-3"
@@ -745,19 +799,25 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
     </div>
   </div>
   <div
-    className=" emotion-19"
+    className=" emotion-20"
     onKeyDown={[Function]}
   >
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="emotion-6"
+    />
     <div
-      className="emotion-17 emotion-18"
+      className="emotion-18 emotion-19"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-10 emotion-3"
+        className="emotion-11 emotion-3"
       >
         <div
-          className="emotion-6 emotion-3"
+          className="emotion-7 emotion-3"
           color="text.placeholder"
         >
           Select...
@@ -768,7 +828,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-8 emotion-9"
+          className="emotion-9 emotion-10"
           disabled={false}
           id="react-select-4-input"
           onBlur={[Function]}
@@ -781,16 +841,16 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
         />
       </div>
       <div
-        className="emotion-15 emotion-16"
+        className="emotion-16 emotion-17"
         display="grid"
       >
         <span
-          className=" emotion-12"
+          className=" emotion-13"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-13 emotion-14"
+          className="ar ar-chevron emotion-14 emotion-15"
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -799,7 +859,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
     </div>
   </div>
   <span
-    className="emotion-20 emotion-21"
+    className="emotion-21 emotion-22"
     color="palette.red.default"
   >
     Test the auto complete input
@@ -808,7 +868,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 `;
 
 exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] = `
-.emotion-22 {
+.emotion-23 {
   margin-bottom: 0.5rem;
 }
 
@@ -849,7 +909,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   line-height: 1.5;
 }
 
-.emotion-19 {
+.emotion-20 {
   position: relative;
   box-sizing: border-box;
 }
@@ -858,7 +918,21 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 
 
 
-.emotion-17 {
+.emotion-6 {
+  z-index: 9999;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkExMXlUZXh0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVFJIiwiZmlsZSI6IkExMXlUZXh0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQGZsb3dcbi8qKiBAanN4IGpzeCAqL1xuaW1wb3J0IHsgdHlwZSBFbGVtZW50Q29uZmlnIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsganN4IH0gZnJvbSAnQGVtb3Rpb24vcmVhY3QnO1xuXG4vLyBBc3Npc3RpdmUgdGV4dCB0byBkZXNjcmliZSB2aXN1YWwgZWxlbWVudHMuIEhpZGRlbiBmb3Igc2lnaHRlZCB1c2Vycy5cbmNvbnN0IEExMXlUZXh0ID0gKHByb3BzOiBFbGVtZW50Q29uZmlnPCdzcGFuJz4pID0+IChcbiAgPHNwYW5cbiAgICBjc3M9e3tcbiAgICAgIGxhYmVsOiAnYTExeVRleHQnLFxuICAgICAgekluZGV4OiA5OTk5LFxuICAgICAgYm9yZGVyOiAwLFxuICAgICAgY2xpcDogJ3JlY3QoMXB4LCAxcHgsIDFweCwgMXB4KScsXG4gICAgICBoZWlnaHQ6IDEsXG4gICAgICB3aWR0aDogMSxcbiAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLFxuICAgICAgb3ZlcmZsb3c6ICdoaWRkZW4nLFxuICAgICAgcGFkZGluZzogMCxcbiAgICAgIHdoaXRlU3BhY2U6ICdub3dyYXAnLFxuICAgIH19XG4gICAgey4uLnByb3BzfVxuICAvPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgQTExeVRleHQ7XG4iXX0= */
+
+.emotion-18 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -878,42 +952,42 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 }
 
 @media (max-width: 768px) {
-  .emotion-17 {
+  .emotion-18 {
     font-size: 1rem;
   }
 }
 
-.emotion-17::-webkit-input-placeholder {
+.emotion-18::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::-moz-placeholder {
+.emotion-18::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-17:-ms-input-placeholder {
+.emotion-18:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::placeholder {
+.emotion-18::placeholder {
   color: #989A9C;
 }
 
-.emotion-17:focus {
+.emotion-18:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-17:disabled {
+.emotion-18:disabled {
   background: #F2F2F2;
 }
 
-.emotion-17:required {
+.emotion-18:required {
   box-shadow: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -930,7 +1004,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   grid-gap: 0.25rem;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -944,7 +1018,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   align-self: center;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -959,11 +1033,11 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   font-size: 0.875rem;
 }
 
-.emotion-8:focus {
+.emotion-9:focus {
   outline: none;
 }
 
-.emotion-15 {
+.emotion-16 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -975,7 +1049,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   grid-gap: 0.5rem;
 }
 
-.emotion-12 {
+.emotion-13 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -985,11 +1059,11 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   box-sizing: border-box;
 }
 
-.emotion-13 {
+.emotion-14 {
   display: block;
 }
 
-.emotion-20 {
+.emotion-21 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -997,7 +1071,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 }
 
 <div
-  className="emotion-22 emotion-23"
+  className="emotion-23 emotion-24"
 >
   <div
     className="emotion-4 emotion-3"
@@ -1014,19 +1088,25 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
     </div>
   </div>
   <div
-    className=" emotion-19"
+    className=" emotion-20"
     onKeyDown={[Function]}
   >
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="emotion-6"
+    />
     <div
-      className="emotion-17 emotion-18"
+      className="emotion-18 emotion-19"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-10 emotion-3"
+        className="emotion-11 emotion-3"
       >
         <div
-          className="emotion-6 emotion-3"
+          className="emotion-7 emotion-3"
           color="text.placeholder"
         >
           Select...
@@ -1037,7 +1117,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-8 emotion-9"
+          className="emotion-9 emotion-10"
           disabled={false}
           id="react-select-5-input"
           onBlur={[Function]}
@@ -1050,16 +1130,16 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
         />
       </div>
       <div
-        className="emotion-15 emotion-16"
+        className="emotion-16 emotion-17"
         display="grid"
       >
         <span
-          className=" emotion-12"
+          className=" emotion-13"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-13 emotion-14"
+          className="ar ar-chevron emotion-14 emotion-15"
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -1068,7 +1148,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
     </div>
   </div>
   <span
-    className="emotion-20 emotion-21"
+    className="emotion-21 emotion-22"
     color="palette.red.default"
   >
     Test the auto complete input
@@ -1077,7 +1157,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 `;
 
 exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete with a dropdown indicator 1`] = `
-.emotion-22 {
+.emotion-23 {
   margin-bottom: 0.5rem;
 }
 
@@ -1118,7 +1198,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   line-height: 1.5;
 }
 
-.emotion-19 {
+.emotion-20 {
   position: relative;
   box-sizing: border-box;
 }
@@ -1127,7 +1207,21 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 
 
 
-.emotion-17 {
+.emotion-6 {
+  z-index: 9999;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkExMXlUZXh0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVFJIiwiZmlsZSI6IkExMXlUZXh0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQGZsb3dcbi8qKiBAanN4IGpzeCAqL1xuaW1wb3J0IHsgdHlwZSBFbGVtZW50Q29uZmlnIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsganN4IH0gZnJvbSAnQGVtb3Rpb24vcmVhY3QnO1xuXG4vLyBBc3Npc3RpdmUgdGV4dCB0byBkZXNjcmliZSB2aXN1YWwgZWxlbWVudHMuIEhpZGRlbiBmb3Igc2lnaHRlZCB1c2Vycy5cbmNvbnN0IEExMXlUZXh0ID0gKHByb3BzOiBFbGVtZW50Q29uZmlnPCdzcGFuJz4pID0+IChcbiAgPHNwYW5cbiAgICBjc3M9e3tcbiAgICAgIGxhYmVsOiAnYTExeVRleHQnLFxuICAgICAgekluZGV4OiA5OTk5LFxuICAgICAgYm9yZGVyOiAwLFxuICAgICAgY2xpcDogJ3JlY3QoMXB4LCAxcHgsIDFweCwgMXB4KScsXG4gICAgICBoZWlnaHQ6IDEsXG4gICAgICB3aWR0aDogMSxcbiAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLFxuICAgICAgb3ZlcmZsb3c6ICdoaWRkZW4nLFxuICAgICAgcGFkZGluZzogMCxcbiAgICAgIHdoaXRlU3BhY2U6ICdub3dyYXAnLFxuICAgIH19XG4gICAgey4uLnByb3BzfVxuICAvPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgQTExeVRleHQ7XG4iXX0= */
+
+.emotion-18 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1147,42 +1241,42 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 }
 
 @media (max-width: 768px) {
-  .emotion-17 {
+  .emotion-18 {
     font-size: 1rem;
   }
 }
 
-.emotion-17::-webkit-input-placeholder {
+.emotion-18::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::-moz-placeholder {
+.emotion-18::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-17:-ms-input-placeholder {
+.emotion-18:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::placeholder {
+.emotion-18::placeholder {
   color: #989A9C;
 }
 
-.emotion-17:focus {
+.emotion-18:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-17:disabled {
+.emotion-18:disabled {
   background: #F2F2F2;
 }
 
-.emotion-17:required {
+.emotion-18:required {
   box-shadow: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1199,7 +1293,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   grid-gap: 0.25rem;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -1213,7 +1307,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   align-self: center;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -1228,11 +1322,11 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   font-size: 0.875rem;
 }
 
-.emotion-8:focus {
+.emotion-9:focus {
   outline: none;
 }
 
-.emotion-15 {
+.emotion-16 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -1244,7 +1338,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   grid-gap: 0.5rem;
 }
 
-.emotion-12 {
+.emotion-13 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -1254,11 +1348,11 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   box-sizing: border-box;
 }
 
-.emotion-13 {
+.emotion-14 {
   display: block;
 }
 
-.emotion-20 {
+.emotion-21 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -1266,7 +1360,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 }
 
 <div
-  className="emotion-22 emotion-23"
+  className="emotion-23 emotion-24"
 >
   <div
     className="emotion-4 emotion-3"
@@ -1283,19 +1377,25 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
     </div>
   </div>
   <div
-    className=" emotion-19"
+    className=" emotion-20"
     onKeyDown={[Function]}
   >
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="emotion-6"
+    />
     <div
-      className="emotion-17 emotion-18"
+      className="emotion-18 emotion-19"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-10 emotion-3"
+        className="emotion-11 emotion-3"
       >
         <div
-          className="emotion-6 emotion-3"
+          className="emotion-7 emotion-3"
           color="text.placeholder"
         >
           Select...
@@ -1306,7 +1406,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-8 emotion-9"
+          className="emotion-9 emotion-10"
           disabled={false}
           id="react-select-6-input"
           onBlur={[Function]}
@@ -1319,16 +1419,16 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
         />
       </div>
       <div
-        className="emotion-15 emotion-16"
+        className="emotion-16 emotion-17"
         display="grid"
       >
         <span
-          className=" emotion-12"
+          className=" emotion-13"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-13 emotion-14"
+          className="ar ar-chevron emotion-14 emotion-15"
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -1337,7 +1437,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
     </div>
   </div>
   <span
-    className="emotion-20 emotion-21"
+    className="emotion-21 emotion-22"
     color="palette.red.default"
   >
     Test the auto complete input
@@ -1346,7 +1446,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 `;
 
 exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete without a dropdown indicator 1`] = `
-.emotion-22 {
+.emotion-23 {
   margin-bottom: 0.5rem;
 }
 
@@ -1387,7 +1487,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   line-height: 1.5;
 }
 
-.emotion-19 {
+.emotion-20 {
   position: relative;
   box-sizing: border-box;
 }
@@ -1396,7 +1496,21 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 
 
 
-.emotion-17 {
+.emotion-6 {
+  z-index: 9999;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkExMXlUZXh0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVFJIiwiZmlsZSI6IkExMXlUZXh0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQGZsb3dcbi8qKiBAanN4IGpzeCAqL1xuaW1wb3J0IHsgdHlwZSBFbGVtZW50Q29uZmlnIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsganN4IH0gZnJvbSAnQGVtb3Rpb24vcmVhY3QnO1xuXG4vLyBBc3Npc3RpdmUgdGV4dCB0byBkZXNjcmliZSB2aXN1YWwgZWxlbWVudHMuIEhpZGRlbiBmb3Igc2lnaHRlZCB1c2Vycy5cbmNvbnN0IEExMXlUZXh0ID0gKHByb3BzOiBFbGVtZW50Q29uZmlnPCdzcGFuJz4pID0+IChcbiAgPHNwYW5cbiAgICBjc3M9e3tcbiAgICAgIGxhYmVsOiAnYTExeVRleHQnLFxuICAgICAgekluZGV4OiA5OTk5LFxuICAgICAgYm9yZGVyOiAwLFxuICAgICAgY2xpcDogJ3JlY3QoMXB4LCAxcHgsIDFweCwgMXB4KScsXG4gICAgICBoZWlnaHQ6IDEsXG4gICAgICB3aWR0aDogMSxcbiAgICAgIHBvc2l0aW9uOiAnYWJzb2x1dGUnLFxuICAgICAgb3ZlcmZsb3c6ICdoaWRkZW4nLFxuICAgICAgcGFkZGluZzogMCxcbiAgICAgIHdoaXRlU3BhY2U6ICdub3dyYXAnLFxuICAgIH19XG4gICAgey4uLnByb3BzfVxuICAvPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgQTExeVRleHQ7XG4iXX0= */
+
+.emotion-18 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1416,42 +1530,42 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 }
 
 @media (max-width: 768px) {
-  .emotion-17 {
+  .emotion-18 {
     font-size: 1rem;
   }
 }
 
-.emotion-17::-webkit-input-placeholder {
+.emotion-18::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::-moz-placeholder {
+.emotion-18::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-17:-ms-input-placeholder {
+.emotion-18:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-17::placeholder {
+.emotion-18::placeholder {
   color: #989A9C;
 }
 
-.emotion-17:focus {
+.emotion-18:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-17:disabled {
+.emotion-18:disabled {
   background: #F2F2F2;
 }
 
-.emotion-17:required {
+.emotion-18:required {
   box-shadow: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1468,7 +1582,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   grid-gap: 0.25rem;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -1482,7 +1596,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   align-self: center;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -1497,11 +1611,11 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   font-size: 0.875rem;
 }
 
-.emotion-8:focus {
+.emotion-9:focus {
   outline: none;
 }
 
-.emotion-15 {
+.emotion-16 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -1513,7 +1627,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   grid-gap: 0.5rem;
 }
 
-.emotion-12 {
+.emotion-13 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -1523,19 +1637,19 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   box-sizing: border-box;
 }
 
-.emotion-20 {
+.emotion-21 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
   font-size: 0.8125rem;
 }
 
-.emotion-13 {
+.emotion-14 {
   display: none;
 }
 
 <div
-  className="emotion-22 emotion-23"
+  className="emotion-23 emotion-24"
 >
   <div
     className="emotion-4 emotion-3"
@@ -1552,19 +1666,25 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
     </div>
   </div>
   <div
-    className=" emotion-19"
+    className=" emotion-20"
     onKeyDown={[Function]}
   >
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="emotion-6"
+    />
     <div
-      className="emotion-17 emotion-18"
+      className="emotion-18 emotion-19"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-10 emotion-3"
+        className="emotion-11 emotion-3"
       >
         <div
-          className="emotion-6 emotion-3"
+          className="emotion-7 emotion-3"
           color="text.placeholder"
         >
           Select...
@@ -1575,7 +1695,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-8 emotion-9"
+          className="emotion-9 emotion-10"
           disabled={false}
           id="react-select-7-input"
           onBlur={[Function]}
@@ -1588,16 +1708,16 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
         />
       </div>
       <div
-        className="emotion-15 emotion-16"
+        className="emotion-16 emotion-17"
         display="grid"
       >
         <span
-          className=" emotion-12"
+          className=" emotion-13"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-13 emotion-14"
+          className="ar ar-chevron emotion-14 emotion-15"
           display="none"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -1606,7 +1726,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
     </div>
   </div>
   <span
-    className="emotion-20 emotion-21"
+    className="emotion-21 emotion-22"
     color="palette.red.default"
   >
     Test the auto complete input
