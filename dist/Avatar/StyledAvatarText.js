@@ -15,6 +15,8 @@ var _Text = _interopRequireDefault(require("../Text"));
 
 var _avatars = require("../theme/avatars");
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -36,10 +38,10 @@ var StyledAvatarText = function StyledAvatarText(_ref) {
 
   var color = subtle ? baseColor : 'monochrome.white';
   var fontSize = avatarFontSizes[size];
-  return /*#__PURE__*/_react["default"].createElement(_Text["default"], _objectSpread({
+  return (0, _jsxRuntime.jsx)(_Text["default"], _objectSpread({}, _objectSpread({
     color: color,
     fontSize: fontSize
-  }, props));
+  }, props)));
 };
 
 exports.StyledAvatarText = StyledAvatarText;

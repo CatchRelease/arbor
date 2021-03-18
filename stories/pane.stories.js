@@ -1,6 +1,5 @@
-/** @jsx jsx */
 import styled from '@emotion/styled';
-import { css, jsx } from '@emotion/react';
+import { css } from '@emotion/react';
 import { storiesOf } from '@storybook/react';
 
 import notes from './pane.md';

@@ -15,20 +15,24 @@ var _Button = _interopRequireDefault(require("../Button"));
 
 var _Icon = _interopRequireDefault(require("../Icon"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var StyledAlertAction = function StyledAlertAction(_ref) {
   var onClose = _ref.onClose;
-  return /*#__PURE__*/_react["default"].createElement(_Box["default"], null, /*#__PURE__*/_react["default"].createElement(_Button["default"], {
-    "aria-label": "close",
-    iconStart: /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
-      fontSize: "larger",
-      name: "cross"
-    }),
-    onClick: onClose,
-    size: "small",
-    variant: "minimal"
-  }));
+  return (0, _jsxRuntime.jsx)(_Box["default"], {
+    children: (0, _jsxRuntime.jsx)(_Button["default"], {
+      "aria-label": "close",
+      iconStart: (0, _jsxRuntime.jsx)(_Icon["default"], {
+        fontSize: "larger",
+        name: "cross"
+      }),
+      onClick: onClose,
+      size: "small",
+      variant: "minimal"
+    })
+  });
 };
 
 StyledAlertAction.propTypes = {

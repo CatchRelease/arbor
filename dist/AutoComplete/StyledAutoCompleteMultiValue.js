@@ -17,6 +17,8 @@ var _Badge = _interopRequireDefault(require("../Badge"));
 
 var _Icon = _interopRequireDefault(require("../Icon"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -36,8 +38,6 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
@@ -59,18 +59,20 @@ var StyledAutoCompleteMultiValue = function StyledAutoCompleteMultiValue(_ref) {
       readOnly = _ref.readOnly,
       removeProps = _ref.removeProps;
   var color = paletteColor === null ? (0, _utils.colorForString)(label, Object.keys(_colors.palette)) : paletteColor;
-  var iconEnd = readOnly ? null : /*#__PURE__*/_react["default"].createElement(_Icon["default"], _extends({
+  var iconEnd = readOnly ? null : (0, _jsxRuntime.jsx)(_Icon["default"], _objectSpread({
     "aria-label": "remove",
     css: _ref2,
     fontSize: "size3",
     name: "cross"
   }, removeProps));
-  return /*#__PURE__*/_react["default"].createElement(_Badge["default"], _objectSpread({
+  return (0, _jsxRuntime.jsx)(_Badge["default"], _objectSpread(_objectSpread({}, _objectSpread({
     iconEnd: iconEnd,
     paletteColor: color,
     subtle: true,
     variant: variant
-  }, data), label);
+  }, data)), {}, {
+    children: label
+  }));
 };
 
 StyledAutoCompleteMultiValue.propTypes = {

@@ -17,6 +17,8 @@ var _sizes = _interopRequireDefault(require("./sizes"));
 
 var _Spinner = _interopRequireDefault(require("../Spinner"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
@@ -61,7 +63,7 @@ var ButtonSpinner = function ButtonSpinner(_ref) {
   var diameter = Array.isArray(size) ? size.map(function (value) {
     return (0, _polished.rem)("".concat(spinnerDiameters[value], "px"));
   }) : (0, _polished.rem)("".concat(spinnerDiameters[size], "px"));
-  return /*#__PURE__*/_react["default"].createElement(StyledButtonSpinner, {
+  return (0, _jsxRuntime.jsx)(StyledButtonSpinner, {
     diameter: diameter,
     color: spinnerColor(disabled, variant, intent)
   });

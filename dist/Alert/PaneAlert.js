@@ -17,6 +17,8 @@ var _Pane = _interopRequireDefault(require("../Pane"));
 
 var _intents = _interopRequireDefault(require("./intents"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -34,13 +36,14 @@ var PaneAlert = function PaneAlert(_ref) {
       intent = _ref.intent,
       props = _objectWithoutProperties(_ref, ["boxShadow", "intent"]);
 
-  return /*#__PURE__*/_react["default"].createElement(_IntentAlert["default"], {
+  return (0, _jsxRuntime.jsx)(_IntentAlert["default"], {
     Component: _Pane["default"],
     boxShadow: boxShadow,
-    intent: intent
-  }, /*#__PURE__*/_react["default"].createElement(_AlertContent["default"], _objectSpread({
-    intent: intent
-  }, props)));
+    intent: intent,
+    children: (0, _jsxRuntime.jsx)(_AlertContent["default"], _objectSpread({}, _objectSpread({
+      intent: intent
+    }, props)))
+  });
 };
 
 PaneAlert.propTypes = {

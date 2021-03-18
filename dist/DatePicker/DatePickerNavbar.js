@@ -17,49 +17,53 @@ var _Flex = _interopRequireDefault(require("../Flex"));
 
 var _Icon = _interopRequireDefault(require("../Icon"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var DatePickerNavbar = function DatePickerNavbar(_ref) {
   var onPreviousClick = _ref.onPreviousClick,
       onNextClick = _ref.onNextClick,
       className = _ref.className;
-  return /*#__PURE__*/_react["default"].createElement(_Flex["default"], {
+  return (0, _jsxRuntime.jsxs)(_Flex["default"], {
     className: className,
-    alignItems: "center"
-  }, /*#__PURE__*/_react["default"].createElement(_Button["default"], {
-    iconStart: /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
-      color: "icon.default",
-      name: "chevron",
-      rotation: "90"
-    }),
-    onClick: function onClick() {
-      return onPreviousClick();
-    },
-    size: "small",
-    variant: "minimal",
-    "aria-label": "Previous Month",
-    type: "button"
-  }), /*#__PURE__*/_react["default"].createElement(_Box["default"], {
-    mr: "small",
-    ml: "small"
-  }, /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
-    color: "icon.default",
-    fontSize: "size5",
-    name: "symbol-circle"
-  })), /*#__PURE__*/_react["default"].createElement(_Button["default"], {
-    iconStart: /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
-      color: "icon.default",
-      name: "chevron",
-      rotation: "270"
-    }),
-    onClick: function onClick() {
-      return onNextClick();
-    },
-    size: "small",
-    variant: "minimal",
-    "aria-label": "Next Month",
-    type: "button"
-  }));
+    alignItems: "center",
+    children: [(0, _jsxRuntime.jsx)(_Button["default"], {
+      iconStart: (0, _jsxRuntime.jsx)(_Icon["default"], {
+        color: "icon.default",
+        name: "chevron",
+        rotation: "90"
+      }),
+      onClick: function onClick() {
+        return onPreviousClick();
+      },
+      size: "small",
+      variant: "minimal",
+      "aria-label": "Previous Month",
+      type: "button"
+    }), (0, _jsxRuntime.jsx)(_Box["default"], {
+      mr: "small",
+      ml: "small",
+      children: (0, _jsxRuntime.jsx)(_Icon["default"], {
+        color: "icon.default",
+        fontSize: "size5",
+        name: "symbol-circle"
+      })
+    }), (0, _jsxRuntime.jsx)(_Button["default"], {
+      iconStart: (0, _jsxRuntime.jsx)(_Icon["default"], {
+        color: "icon.default",
+        name: "chevron",
+        rotation: "270"
+      }),
+      onClick: function onClick() {
+        return onNextClick();
+      },
+      size: "small",
+      variant: "minimal",
+      "aria-label": "Next Month",
+      type: "button"
+    })]
+  });
 };
 
 DatePickerNavbar.propTypes = {

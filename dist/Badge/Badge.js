@@ -17,6 +17,8 @@ var _StyledBadge = _interopRequireDefault(require("./StyledBadge"));
 
 var _Text = _interopRequireDefault(require("../Text"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -76,26 +78,30 @@ var Badge = function Badge(_ref) {
 
   var textColor = getTextColor(paletteColor, subtle);
   var gridTemplateColumns = getGridTemplateColumns(iconStart, iconEnd);
-  return /*#__PURE__*/_react["default"].createElement(_StyledBadge["default"], _objectSpread({
+  return (0, _jsxRuntime.jsx)(_StyledBadge["default"], _objectSpread(_objectSpread({}, _objectSpread({
     paletteColor: paletteColor,
     subtle: subtle,
     variant: variant
-  }, props), /*#__PURE__*/_react["default"].createElement(_Grid["default"], {
-    color: textColor,
-    alignItems: "center",
-    gridTemplateColumns: gridTemplateColumns,
-    gridGap: "smallest"
-  }, iconStart, /*#__PURE__*/_react["default"].createElement(_Text["default"], {
-    as: 'span',
-    color: textColor,
-    fontSize: 'size3',
-    fontWeight: 'medium',
-    iconStart: undefined,
-    lineHeight: 'large',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap'
-  }, children), iconEnd));
+  }, props)), {}, {
+    children: (0, _jsxRuntime.jsxs)(_Grid["default"], {
+      color: textColor,
+      alignItems: "center",
+      gridTemplateColumns: gridTemplateColumns,
+      gridGap: "smallest",
+      children: [iconStart, (0, _jsxRuntime.jsx)(_Text["default"], {
+        as: 'span',
+        color: textColor,
+        fontSize: 'size3',
+        fontWeight: 'medium',
+        iconStart: undefined,
+        lineHeight: 'large',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        whiteSpace: 'nowrap',
+        children: children
+      }), iconEnd]
+    })
+  }));
 };
 
 Badge.propTypes = {

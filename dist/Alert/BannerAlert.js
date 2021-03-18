@@ -17,9 +17,9 @@ var _IntentAlert = _interopRequireDefault(require("./IntentAlert"));
 
 var _intents = _interopRequireDefault(require("./intents"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -42,15 +42,17 @@ var BannerAlert = function BannerAlert(_ref) {
   var intent = _ref.intent,
       props = _objectWithoutProperties(_ref, ["intent"]);
 
-  return /*#__PURE__*/_react["default"].createElement(_IntentAlert["default"], _extends({
+  return (0, _jsxRuntime.jsx)(_IntentAlert["default"], _objectSpread(_objectSpread({
     Component: _Box["default"],
     intent: intent,
     textAlign: "center"
-  }, conditionalProps(intent)), /*#__PURE__*/_react["default"].createElement(_AlertContent["default"], _extends({
-    oneLine: true
-  }, _objectSpread({
-    intent: intent
-  }, props))));
+  }, conditionalProps(intent)), {}, {
+    children: (0, _jsxRuntime.jsx)(_AlertContent["default"], _objectSpread({
+      oneLine: true
+    }, _objectSpread({
+      intent: intent
+    }, props)))
+  }));
 };
 
 BannerAlert.propTypes = {

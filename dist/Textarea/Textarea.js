@@ -13,6 +13,8 @@ var _FormField = _interopRequireDefault(require("../FormField"));
 
 var _StyledTextarea = _interopRequireDefault(require("./StyledTextarea"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -32,15 +34,16 @@ var Textarea = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
       id = _ref.id,
       props = _objectWithoutProperties(_ref, ["caption", "label", "labelAside", "id"]);
 
-  return /*#__PURE__*/_react["default"].createElement(_FormField["default"], {
+  return (0, _jsxRuntime.jsx)(_FormField["default"], {
     caption: caption,
     id: id,
     label: label,
-    labelAside: labelAside
-  }, /*#__PURE__*/_react["default"].createElement(_StyledTextarea["default"], _objectSpread(_objectSpread({}, props), {}, {
-    id: id,
-    ref: ref
-  })));
+    labelAside: labelAside,
+    children: (0, _jsxRuntime.jsx)(_StyledTextarea["default"], _objectSpread({}, _objectSpread(_objectSpread({}, props), {}, {
+      id: id,
+      ref: ref
+    })))
+  });
 });
 
 Textarea.propTypes = {

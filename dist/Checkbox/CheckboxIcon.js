@@ -11,6 +11,8 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _Icon = _interopRequireDefault(require("../Icon"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var iconFontSize = '16px';
@@ -20,14 +22,14 @@ var CheckboxIcon = function CheckboxIcon(_ref) {
       indeterminate = _ref.indeterminate;
 
   if (indeterminate) {
-    return /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
+    return (0, _jsxRuntime.jsx)(_Icon["default"], {
       name: "checkbox-indeterminate",
       fontSize: iconFontSize
     });
   }
 
   if (checked) {
-    return /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
+    return (0, _jsxRuntime.jsx)(_Icon["default"], {
       name: "checkbox-checked",
       fontSize: iconFontSize
     });

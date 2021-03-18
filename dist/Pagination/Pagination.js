@@ -13,6 +13,10 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _Button = _interopRequireDefault(require("../Button"));
 
+var _react2 = require("@emotion/react");
+
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -85,7 +89,7 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
       var paginationItem;
 
       if (item === ELLIPSIS) {
-        paginationItem = /*#__PURE__*/_react["default"].createElement(_Button["default"], {
+        paginationItem = (0, _react2.createElement)(_Button["default"], {
           size: size,
           variant: "minimal",
           mx: "smallest",
@@ -94,7 +98,7 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
         }, item);
       } else {
         var variant = currentPage === item ? 'primary' : 'minimal';
-        paginationItem = /*#__PURE__*/_react["default"].createElement(_Button["default"], {
+        paginationItem = (0, _react2.createElement)(_Button["default"], {
           size: size,
           variant: variant,
           mx: "smallest",
@@ -114,7 +118,7 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
           previousText = _this$props3.previousText,
           size = _this$props3.size;
       var previousDisabled = currentPage === 1;
-      return /*#__PURE__*/_react["default"].createElement(_Button["default"], {
+      return (0, _react2.createElement)(_Button["default"], {
         size: size,
         variant: "minimal",
         mr: "small",
@@ -133,7 +137,7 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
           nextText = _this$props4.nextText,
           size = _this$props4.size;
       var nextDisabled = currentPage === totalPages;
-      return /*#__PURE__*/_react["default"].createElement(_Button["default"], {
+      return (0, _react2.createElement)(_Button["default"], {
         size: size,
         variant: "minimal",
         ml: "small",
@@ -159,7 +163,9 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
         return null;
       }
 
-      return /*#__PURE__*/_react["default"].createElement("div", null, this.renderPreviousItem(), this.getPaginationOptions().map(this.renderPaginationItem), this.renderNextItem());
+      return (0, _jsxRuntime.jsxs)("div", {
+        children: [this.renderPreviousItem(), this.getPaginationOptions().map(this.renderPaginationItem), this.renderNextItem()]
+      });
     }
   }]);
 

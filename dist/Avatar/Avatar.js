@@ -19,6 +19,8 @@ var _StyledAvatar = _interopRequireDefault(require("./StyledAvatar"));
 
 var _StyledAvatarText = _interopRequireDefault(require("./StyledAvatarText"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -76,7 +78,7 @@ var Avatar = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
       props = _objectWithoutProperties(_ref, ["name", "subtle", "size", "baseColor"]);
 
   var baseColor = baseColorProp || (0, _utils.colorForString)(name, AVATAR_COLORS);
-  return /*#__PURE__*/_react["default"].createElement(_StyledAvatar["default"], _objectSpread({
+  return (0, _jsxRuntime.jsx)(_StyledAvatar["default"], _objectSpread(_objectSpread({}, _objectSpread({
     alignItems: 'center',
     baseColor: baseColor,
     border: '1px solid',
@@ -85,11 +87,14 @@ var Avatar = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
     size: size,
     subtle: subtle,
     ref: ref
-  }, props), /*#__PURE__*/_react["default"].createElement(_StyledAvatarText["default"], {
-    baseColor: baseColor,
-    size: size,
-    subtle: subtle
-  }, getText(name)));
+  }, props)), {}, {
+    children: (0, _jsxRuntime.jsx)(_StyledAvatarText["default"], {
+      baseColor: baseColor,
+      size: size,
+      subtle: subtle,
+      children: getText(name)
+    })
+  }));
 });
 
 Avatar.propTypes = {

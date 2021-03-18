@@ -13,9 +13,9 @@ var _MenuItem = _interopRequireDefault(require("../MenuItem"));
 
 var _Text = _interopRequireDefault(require("../Text"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -33,9 +33,13 @@ var StyledAutoCompleteOption = function StyledAutoCompleteOption(_ref) {
       children = _ref.children,
       props = _objectWithoutProperties(_ref, ["cx", "innerProps", "children"]);
 
-  return /*#__PURE__*/_react["default"].createElement(_MenuItem["default"], _extends({
+  return (0, _jsxRuntime.jsx)(_MenuItem["default"], _objectSpread(_objectSpread({
     as: "li"
-  }, _objectSpread(_objectSpread({}, innerProps), props)), /*#__PURE__*/_react["default"].createElement(_Text["default"], null, children));
+  }, _objectSpread(_objectSpread({}, innerProps), props)), {}, {
+    children: (0, _jsxRuntime.jsx)(_Text["default"], {
+      children: children
+    })
+  }));
 };
 
 StyledAutoCompleteOption.propTypes = {

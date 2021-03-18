@@ -13,6 +13,8 @@ var _FormField = _interopRequireDefault(require("../FormField"));
 
 var _StyledSelect = _interopRequireDefault(require("./StyledSelect"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -33,17 +35,19 @@ var Select = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
       id = _ref.id,
       props = _objectWithoutProperties(_ref, ["caption", "children", "label", "labelAside", "id"]);
 
-  var select = /*#__PURE__*/_react["default"].createElement(_StyledSelect["default"], _objectSpread(_objectSpread({}, props), {}, {
+  var select = (0, _jsxRuntime.jsx)(_StyledSelect["default"], _objectSpread(_objectSpread({}, _objectSpread(_objectSpread({}, props), {}, {
     id: id,
     ref: ref
-  }), children);
-
-  return caption || label ? /*#__PURE__*/_react["default"].createElement(_FormField["default"], {
+  })), {}, {
+    children: children
+  }));
+  return caption || label ? (0, _jsxRuntime.jsx)(_FormField["default"], {
     caption: caption,
     id: id,
     label: label,
-    labelAside: labelAside
-  }, select) : select;
+    labelAside: labelAside,
+    children: select
+  }) : select;
 });
 
 Select.propTypes = {

@@ -22,7 +22,8 @@ module.exports = {
     ],
     'import/no-named-as-default': 0,
     'react/forbid-foreign-prop-types': 0,
-    'react/jsx-props-no-spreading': 0
+    'react/jsx-props-no-spreading': 0,
+    'react/react-in-jsx-scope': 'off'
   },
   overrides: [
     {

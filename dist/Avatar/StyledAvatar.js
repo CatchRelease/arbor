@@ -15,6 +15,8 @@ var _Flex = _interopRequireDefault(require("../Flex"));
 
 var _avatars = require("../theme/avatars");
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -37,14 +39,14 @@ var StyledAvatar = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref
 
   var bg = subtle ? "monochrome.white" : baseColor;
   var borderColor = baseColor;
-  return /*#__PURE__*/_react["default"].createElement(_Flex["default"], _objectSpread({
+  return (0, _jsxRuntime.jsx)(_Flex["default"], _objectSpread({}, _objectSpread({
     width: avatarSizes[size],
     height: avatarSizes[size],
     bg: bg,
     border: border,
     borderColor: borderColor,
     ref: ref
-  }, props));
+  }, props)));
 });
 
 exports.StyledAvatar = StyledAvatar;

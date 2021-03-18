@@ -1,6 +1,5 @@
-/** @jsx jsx */
 import React from 'react';
-import { ClassNames, css, jsx, withTheme } from '@emotion/react';
+import { ClassNames, css, withTheme } from '@emotion/react';
 import styled from '@emotion/styled';
 import {
   color,

@@ -11,6 +11,8 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _StyledAccordionPanel = _interopRequireDefault(require("./StyledAccordionPanel"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -28,9 +30,9 @@ var AccordionPanel = function AccordionPanel(_ref) {
       panelProps = _objectWithoutProperties(_ref, ["isOpen"]);
 
   var display = isOpen ? 'block' : 'none';
-  return /*#__PURE__*/_react["default"].createElement(_StyledAccordionPanel["default"], _objectSpread(_objectSpread({}, panelProps), {}, {
+  return (0, _jsxRuntime.jsx)(_StyledAccordionPanel["default"], _objectSpread({}, _objectSpread(_objectSpread({}, panelProps), {}, {
     display: display
-  }));
+  })));
 };
 
 AccordionPanel.propTypes = {
