@@ -1,10 +1,10 @@
-import React from 'react';
+import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 
 import FormField from '../FormField';
 import StyledSelect from './StyledSelect';
 
-const Select = React.forwardRef(
+const Select = forwardRef(
   ({ caption, children, label, labelAside, id, ...props }, ref) => {
     const select = (
       <StyledSelect {...{ ...props, id, ref }}>{children}</StyledSelect>

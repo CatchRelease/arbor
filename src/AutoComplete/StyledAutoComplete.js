@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactSelect from 'react-select';
 import ReactSelectAsync from 'react-select/async';
 import ReactSelectAsyncCreatable from 'react-select/async-creatable';

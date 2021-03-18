@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import { DateUtils } from 'react-day-picker';
 import { storiesOf } from '@storybook/react';
 import { date } from '@storybook/addon-knobs';
@@ -23,7 +23,7 @@ const today = new Date();
 const defaultBefore = DateUtils.addMonths(today, -2);
 const defaultAfter = DateUtils.addMonths(today, 2);
 
-class ControlledDatePickers extends React.Component {
+class ControlledDatePickers extends Component {
   constructor(props) {
     super(props);
     this.state = {

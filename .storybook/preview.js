@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Global, ThemeProvider } from '@emotion/react';
 
 import { reset, theme } from '../src';

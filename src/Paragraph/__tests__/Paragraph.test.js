@@ -1,4 +1,3 @@
-import React from 'react';
 import { matchers } from '@emotion/jest';
 
 import createWithTheme from '../../../utils/createWithTheme';

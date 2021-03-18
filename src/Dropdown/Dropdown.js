@@ -1,4 +1,4 @@
-import React from 'react';
+import { createRef, Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Button from '../Button';
@@ -7,13 +7,13 @@ import MenuItem from '../MenuItem';
 import Popover from '../Popover';
 import { ARROW_DOWN } from '../constants';
 
-class Dropdown extends React.Component {
+class Dropdown extends Component {
   constructor(props) {
     super(props);
 
-    this.popover = React.createRef();
-    this.button = React.createRef();
-    this.menu = React.createRef();
+    this.popover = createRef();
+    this.button = createRef();
+    this.menu = createRef();
   }
 
   componentDidMount() {

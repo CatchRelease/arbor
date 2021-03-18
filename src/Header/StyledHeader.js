@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Grid from '../Grid';
 
 const StyledHeader = (props) => <Grid {...props} />;

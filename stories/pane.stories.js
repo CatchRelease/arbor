@@ -19,7 +19,7 @@ const Description = styled(Text)`
 const stories = storiesOf('Panes', module);
 
 stories.add(
-  'defaul',
+  'default',
   () => (
     <Grid
       m="regular"

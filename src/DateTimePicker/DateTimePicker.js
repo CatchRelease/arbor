@@ -1,5 +1,3 @@
-import React from 'react';
-
 import StyledDateTimePicker from './StyledDateTimePicker';
 import dateTimePickerDefaults from './dateTimePickerDefaults';
 

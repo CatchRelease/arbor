@@ -1,4 +1,3 @@
-import React from 'react';
 import random from 'lodash/random';
 import shuffle from 'lodash/shuffle';
 import { readableColor } from 'polished';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { toast as reactToastifyToast } from 'react-toastify';
 
 import { ToastAlert } from '../Alert';

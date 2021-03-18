@@ -1,4 +1,4 @@
-import React from 'react';
+import { createRef, Component } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import notes from './popovers.md';
@@ -6,10 +6,10 @@ import { Button, Flex, Heading, Link, Popover } from '../src';
 
 const stories = storiesOf('Popover', module);
 
-class ExamplePopover extends React.Component {
+class ExamplePopover extends Component {
   constructor(props) {
     super(props);
-    this.popover = React.createRef();
+    this.popover = createRef();
   }
 
   closePopover = (e) => {

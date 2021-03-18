@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactModal from 'react-modal';
 import { Global, css } from '@emotion/react';
 import { shallow } from 'enzyme';

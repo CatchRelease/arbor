@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { Box, DateTimePicker, Heading, Text } from '../src';
@@ -9,7 +9,7 @@ import notes from './dateTimepicker.md';
 
 const stories = storiesOf('DateTimePicker', module);
 
-class DateTimePickerStories extends React.Component {
+class DateTimePickerStories extends Component {
   constructor(props) {
     super(props);
     this.state = {

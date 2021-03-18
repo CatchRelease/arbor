@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Pane from '../Pane';
 
 const Card = (props) => <Pane {...props} />;

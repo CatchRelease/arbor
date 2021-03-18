@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Masonry from '../Masonry';
 import createWithTheme from '../../../utils/createWithTheme';
 

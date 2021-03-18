@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 
@@ -74,7 +74,7 @@ const menuItems = [
   }
 ];
 
-class DropdownContainer extends React.Component {
+class DropdownContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {

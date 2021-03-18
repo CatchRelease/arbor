@@ -1,10 +1,10 @@
-import React from 'react';
+import { createRef, cloneElement, Component } from 'react';
 import ReactPopover from 'react-popover';
 import PropTypes from 'prop-types';
 
 import PopoverContent from './PopoverContent';
 
-class Popover extends React.Component {
+class Popover extends Component {
   constructor(props) {
     super(props);
 
@@ -12,7 +12,7 @@ class Popover extends React.Component {
       isOpen: false
     };
 
-    this.node = React.createRef();
+    this.node = createRef();
   }
 
   componentDidMount() {
@@ -111,7 +111,7 @@ class Popover extends React.Component {
       <PopoverContent {...contentProps}>{content}</PopoverContent>
     );
 
-    const trigger = React.cloneElement(children, {
+    const trigger = cloneElement(children, {
       onClick: this.toggle
     });
 

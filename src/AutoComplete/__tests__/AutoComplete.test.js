@@ -1,5 +1,3 @@
-import React from 'react';
-
 import AutoComplete from '../AutoComplete';
 import createWithTheme from '../../../utils/createWithTheme';
 

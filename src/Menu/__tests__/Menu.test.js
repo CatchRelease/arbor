@@ -1,4 +1,3 @@
-import React from 'react';
 import { shallow } from 'enzyme';
 
 import { ARROW_DOWN, ARROW_UP, HOME_KEY, END_KEY } from '../../constants';
