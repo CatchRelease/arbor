@@ -1,6 +1,3 @@
-/** @jsx jsx */
-
-import { jsx } from '@emotion/react';
 import { storiesOf } from '@storybook/react';
 
 import notes from './input.md';

@@ -19,9 +19,9 @@ var _textOverflow = _interopRequireDefault(require("../utils/textOverflow"));
 
 var _whiteSpace = _interopRequireDefault(require("../utils/whiteSpace"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -46,7 +46,7 @@ Text.defaultProps = {
 }; // Deprecated -- use <Text as="span"></Text>
 
 Text.Span = function (props) {
-  return /*#__PURE__*/_react["default"].createElement(Text, _extends({
+  return (0, _jsxRuntime.jsx)(Text, _objectSpread({
     as: "span"
   }, props));
 };

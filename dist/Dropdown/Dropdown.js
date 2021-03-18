@@ -21,9 +21,15 @@ var _Popover = _interopRequireDefault(require("../Popover"));
 
 var _constants = require("../constants");
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
@@ -118,8 +124,7 @@ var Dropdown = /*#__PURE__*/function (_React$Component) {
           props = _objectWithoutProperties(_this$props, ["MenuItemComponent", "TriggerComponent", "children", "menuItems", "popoverProps", "selected"]);
 
       var isOpen = this.popover.current && this.popover.current.state.isOpen;
-
-      var menu = /*#__PURE__*/_react["default"].createElement(_Menu["default"], {
+      var menu = (0, _jsxRuntime.jsx)(_Menu["default"], {
         MenuItemComponent: MenuItemComponent,
         onChange: this.onChange,
         ref: this.menu,
@@ -127,15 +132,18 @@ var Dropdown = /*#__PURE__*/function (_React$Component) {
         name: props.name,
         selected: selected
       });
-
-      return /*#__PURE__*/_react["default"].createElement(_Popover["default"], _extends({
+      return (0, _jsxRuntime.jsx)(_Popover["default"], _objectSpread(_objectSpread({
         ref: this.popover,
         content: menu
-      }, popoverProps), /*#__PURE__*/_react["default"].createElement(TriggerComponent, _extends({
-        ref: this.button,
-        "aria-haspopup": true,
-        "aria-expanded": isOpen
-      }, props), children));
+      }, popoverProps), {}, {
+        children: (0, _jsxRuntime.jsx)(TriggerComponent, _objectSpread(_objectSpread({
+          ref: this.button,
+          "aria-haspopup": true,
+          "aria-expanded": isOpen
+        }, props), {}, {
+          children: children
+        }))
+      }));
     }
   }]);
 

@@ -7,9 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = require("@emotion/react");
-
-var _react2 = _interopRequireDefault(require("react"));
+var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -24,6 +22,8 @@ var _Icon = _interopRequireDefault(require("../Icon"));
 var _MenuItem = _interopRequireDefault(require("../MenuItem"));
 
 var _Text = _interopRequireDefault(require("../Text"));
+
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -121,7 +121,7 @@ var ControlledMenuItem = /*#__PURE__*/function (_React$PureComponent) {
           name = _this$props2.name,
           secondaryLabel = _this$props2.secondaryLabel,
           value = _this$props2.value;
-      return (0, _react.jsx)(MenuItemComponent, _objectSpread({
+      return (0, _jsxRuntime.jsxs)(MenuItemComponent, _objectSpread(_objectSpread({}, _objectSpread({
         'aria-selected': isSelected,
         alignItems: 'center',
         isFocused: isFocused,
@@ -129,50 +129,57 @@ var ControlledMenuItem = /*#__PURE__*/function (_React$PureComponent) {
         onClick: this.onSelect,
         onKeyPress: this.onKeyDown,
         role: 'option'
-      }, this.props), (0, _react.jsx)("input", {
-        id: id,
-        name: name,
-        value: value,
-        css: (0, _polished.hideVisually)(),
-        type: 'hidden'
-      }), (0, _react.jsx)(_Flex["default"], {
-        width: "100%",
-        justifyContent: "space-between"
-      }, (0, _react.jsx)(_Flex["default"], {
-        flex: "1 0 auto",
-        maxWidth: secondaryLabel ? "calc(100% - ".concat(MIN_WIDTH, " - ").concat(PADDING, ")") : '100%'
-      }, iconName && (0, _react.jsx)(_Icon["default"], {
-        name: iconName,
-        mr: "small",
-        color: baseColor,
-        fontSize: "16px"
-      }), (0, _react.jsx)(_Text["default"], {
-        as: "span",
-        color: "inherit",
-        minWidth: MIN_WIDTH,
-        fontSize: "size4",
-        overflow: "hidden"
-      }, label)), secondaryLabel && (0, _react.jsx)(_Flex["default"], {
-        pl: PADDING,
-        overflow: "hidden",
-        flex: "0 1 auto"
-      }, (0, _react.jsx)(_Text["default"], {
-        as: "span",
-        fontSize: "size3",
-        css: function css(theme) {
-          return {
-            // Put primary and secondary labels on the same baseline
-            lineHeight: theme.fontSizes.size4
-          };
-        },
-        color: "text.muted",
-        maxWidth: "100%"
-      }, secondaryLabel))));
+      }, this.props)), {}, {
+        children: [(0, _jsxRuntime.jsx)("input", {
+          id: id,
+          name: name,
+          value: value,
+          css: (0, _polished.hideVisually)(),
+          type: 'hidden'
+        }), (0, _jsxRuntime.jsxs)(_Flex["default"], {
+          width: "100%",
+          justifyContent: "space-between",
+          children: [(0, _jsxRuntime.jsxs)(_Flex["default"], {
+            flex: "1 0 auto",
+            maxWidth: secondaryLabel ? "calc(100% - ".concat(MIN_WIDTH, " - ").concat(PADDING, ")") : '100%',
+            children: [iconName && (0, _jsxRuntime.jsx)(_Icon["default"], {
+              name: iconName,
+              mr: "small",
+              color: baseColor,
+              fontSize: "16px"
+            }), (0, _jsxRuntime.jsx)(_Text["default"], {
+              as: "span",
+              color: "inherit",
+              minWidth: MIN_WIDTH,
+              fontSize: "size4",
+              overflow: "hidden",
+              children: label
+            })]
+          }), secondaryLabel && (0, _jsxRuntime.jsx)(_Flex["default"], {
+            pl: PADDING,
+            overflow: "hidden",
+            flex: "0 1 auto",
+            children: (0, _jsxRuntime.jsx)(_Text["default"], {
+              as: "span",
+              fontSize: "size3",
+              css: function css(theme) {
+                return {
+                  // Put primary and secondary labels on the same baseline
+                  lineHeight: theme.fontSizes.size4
+                };
+              },
+              color: "text.muted",
+              maxWidth: "100%",
+              children: secondaryLabel
+            })
+          })]
+        })]
+      }));
     }
   }]);
 
   return ControlledMenuItem;
-}(_react2["default"].PureComponent);
+}(_react["default"].PureComponent);
 
 ControlledMenuItem.propTypes = {
   /**

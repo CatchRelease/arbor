@@ -19,6 +19,8 @@ var _styledSystem = require("styled-system");
 
 var _Box = _interopRequireDefault(require("../Box"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 var _templateObject;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -75,13 +77,14 @@ var Spinner = function Spinner(_ref) {
     return null;
   }
 
-  return /*#__PURE__*/_react["default"].createElement(StyledSpinner, _objectSpread({
+  return (0, _jsxRuntime.jsx)(StyledSpinner, _objectSpread(_objectSpread({}, _objectSpread({
     color: themedColor
-  }, props), _toConsumableArray(Array(12).keys()).map(function (value) {
-    return /*#__PURE__*/_react["default"].createElement(StyledSpinnerDot, {
-      key: value,
-      color: themedColor
-    });
+  }, props)), {}, {
+    children: _toConsumableArray(Array(12).keys()).map(function (value) {
+      return (0, _jsxRuntime.jsx)(StyledSpinnerDot, {
+        color: themedColor
+      }, value);
+    })
   }));
 };
 

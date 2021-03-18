@@ -17,6 +17,8 @@ var _Paragraph = _interopRequireDefault(require("../Paragraph"));
 
 var _StyledFormField = _interopRequireDefault(require("./StyledFormField"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var FormField = function FormField(_ref) {
@@ -25,23 +27,29 @@ var FormField = function FormField(_ref) {
       label = _ref.label,
       labelAside = _ref.labelAside,
       id = _ref.id;
-  return /*#__PURE__*/_react["default"].createElement(_StyledFormField["default"], {
-    caption: caption
-  }, /*#__PURE__*/_react["default"].createElement(_Flex["default"], {
-    alignItems: "center"
-  }, label && /*#__PURE__*/_react["default"].createElement(_Flex["default"], {
-    flex: "1",
-    alignItems: "center"
-  }, /*#__PURE__*/_react["default"].createElement(_Label["default"], {
-    htmlFor: id
-  }, label)), labelAside && /*#__PURE__*/_react["default"].createElement(_Flex["default"], {
-    color: "text.muted",
-    fontSize: "size4"
-  }, labelAside)), children, caption && /*#__PURE__*/_react["default"].createElement(_Paragraph["default"], {
-    as: "span",
-    variant: "tiny",
-    color: "palette.red.default"
-  }, caption));
+  return (0, _jsxRuntime.jsxs)(_StyledFormField["default"], {
+    caption: caption,
+    children: [(0, _jsxRuntime.jsxs)(_Flex["default"], {
+      alignItems: "center",
+      children: [label && (0, _jsxRuntime.jsx)(_Flex["default"], {
+        flex: "1",
+        alignItems: "center",
+        children: (0, _jsxRuntime.jsx)(_Label["default"], {
+          htmlFor: id,
+          children: label
+        })
+      }), labelAside && (0, _jsxRuntime.jsx)(_Flex["default"], {
+        color: "text.muted",
+        fontSize: "size4",
+        children: labelAside
+      })]
+    }), children, caption && (0, _jsxRuntime.jsx)(_Paragraph["default"], {
+      as: "span",
+      variant: "tiny",
+      color: "palette.red.default",
+      children: caption
+    })]
+  });
 };
 
 FormField.propTypes = {

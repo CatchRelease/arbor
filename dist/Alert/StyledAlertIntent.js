@@ -15,6 +15,8 @@ var _Icon = _interopRequireDefault(require("../Icon"));
 
 var _intents = _interopRequireDefault(require("./intents"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var getIconName = function getIconName(intent) {
@@ -38,13 +40,14 @@ var getIconName = function getIconName(intent) {
 
 var StyledAlertIntent = function StyledAlertIntent(_ref) {
   var intent = _ref.intent;
-  return /*#__PURE__*/_react["default"].createElement(_Box["default"], {
-    "aria-label": intent
-  }, /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
-    color: "intent.".concat(intent, ".default"),
-    fontSize: "size4",
-    name: getIconName(intent)
-  }));
+  return (0, _jsxRuntime.jsx)(_Box["default"], {
+    "aria-label": intent,
+    children: (0, _jsxRuntime.jsx)(_Icon["default"], {
+      color: "intent.".concat(intent, ".default"),
+      fontSize: "size4",
+      name: getIconName(intent)
+    })
+  });
 };
 
 StyledAlertIntent.propTypes = {

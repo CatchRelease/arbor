@@ -21,6 +21,8 @@ var _MenuItem = _interopRequireDefault(require("../MenuItem"));
 
 var _StyledMenu = _interopRequireDefault(require("./StyledMenu"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -175,7 +177,7 @@ var Menu = /*#__PURE__*/function (_React$Component) {
       var isSelected = menuItem.value === selected;
       var id = this.domIdForMenuItem(menuItem);
       var isFocused = index === currentlyFocused;
-      return /*#__PURE__*/_react["default"].createElement(_ControlledMenuItem["default"], _objectSpread({
+      return (0, _jsxRuntime.jsx)(_ControlledMenuItem["default"], _objectSpread({}, _objectSpread({
         id: id,
         isFocused: isFocused,
         isSelected: isSelected,
@@ -183,17 +185,18 @@ var Menu = /*#__PURE__*/function (_React$Component) {
         MenuItemComponent: MenuItemComponent,
         name: name,
         onSelect: this.onMenuItemSelect
-      }, menuItem));
+      }, menuItem)));
     }
   }, {
     key: "render",
     value: function render() {
       var currentlyFocused = this.currentlyFocused;
-      return /*#__PURE__*/_react["default"].createElement(_StyledMenu["default"], {
+      return (0, _jsxRuntime.jsx)(_StyledMenu["default"], {
         role: "listbox",
         "aria-activedescendant": currentlyFocused,
-        flexDirection: "column"
-      }, this.renderMenuItems());
+        flexDirection: "column",
+        children: this.renderMenuItems()
+      });
     }
   }]);
 

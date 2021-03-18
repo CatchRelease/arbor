@@ -23,6 +23,8 @@ var _buildReactSelectThemeOverrides = _interopRequireDefault(require("./buildRea
 
 var _styledAutoCompleteComponents = _interopRequireDefault(require("./styledAutoCompleteComponents"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -66,7 +68,7 @@ var StyledAutoComplete = function StyledAutoComplete(_ref) {
     }
   }, props);
 
-  return /*#__PURE__*/_react["default"].createElement(SelectComponent, _objectSpread(_objectSpread({}, reactSelectProps), props));
+  return (0, _jsxRuntime.jsx)(SelectComponent, _objectSpread({}, _objectSpread(_objectSpread({}, reactSelectProps), props)));
 };
 
 StyledAutoComplete.propTypes = {

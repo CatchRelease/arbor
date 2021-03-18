@@ -11,6 +11,8 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _Icon = _interopRequireDefault(require("../Icon"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var iconFontSize = '16px';
@@ -19,7 +21,7 @@ var RadioButtonIcon = function RadioButtonIcon(_ref) {
   var checked = _ref.checked;
 
   if (checked) {
-    return /*#__PURE__*/_react["default"].createElement(_Icon["default"], {
+    return (0, _jsxRuntime.jsx)(_Icon["default"], {
       name: "radio-checked",
       fontSize: iconFontSize
     });

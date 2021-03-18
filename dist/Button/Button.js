@@ -25,6 +25,8 @@ var _intent = _interopRequireDefault(require("../theme/colors/intent"));
 
 var _palette = _interopRequireDefault(require("../theme/colors/palette"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -60,24 +62,28 @@ var Button = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
       type = _ref.type,
       props = _objectWithoutProperties(_ref, ["children", "iconStart", "iconEnd", "spin", "variant", "type"]);
 
-  return /*#__PURE__*/_react["default"].createElement(_StyledButton["default"], _objectSpread({
+  return (0, _jsxRuntime.jsxs)(_StyledButton["default"], _objectSpread(_objectSpread({}, _objectSpread({
     className: "button--".concat(variant),
     iconEnd: iconEnd,
     iconStart: iconStart,
     ref: ref,
     type: type,
     variant: variant
-  }, props), spin && /*#__PURE__*/_react["default"].createElement(_ButtonSpinner["default"], _objectSpread({
-    variant: variant
-  }, props)), /*#__PURE__*/_react["default"].createElement(_ButtonContent["default"], {
-    hasText: !!children,
-    iconStart: iconStart,
-    iconEnd: iconEnd,
-    spin: spin
-  }, iconStart, children && /*#__PURE__*/_react["default"].createElement(_Text["default"], {
-    color: "inherit",
-    fontSize: "inherit"
-  }, children), iconEnd));
+  }, props)), {}, {
+    children: [spin && (0, _jsxRuntime.jsx)(_ButtonSpinner["default"], _objectSpread({}, _objectSpread({
+      variant: variant
+    }, props))), (0, _jsxRuntime.jsxs)(_ButtonContent["default"], {
+      hasText: !!children,
+      iconStart: iconStart,
+      iconEnd: iconEnd,
+      spin: spin,
+      children: [iconStart, children && (0, _jsxRuntime.jsx)(_Text["default"], {
+        color: "inherit",
+        fontSize: "inherit",
+        children: children
+      }), iconEnd]
+    })]
+  }));
 });
 
 Button.propTypes = {

@@ -21,7 +21,15 @@ var _Tab = _interopRequireDefault(require("./Tab"));
 
 var _constants = require("../constants");
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
@@ -149,36 +157,43 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
           tabBarAside = _this$props2.tabBarAside,
           props = _objectWithoutProperties(_this$props2, ["children", "tabBarAside"]);
 
-      return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_StyledTabs["default"], props, /*#__PURE__*/_react["default"].createElement(_Box["default"], null, children.map(function (tab) {
-        if (!tab) {
-          return tab;
-        }
+      return (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+        children: [(0, _jsxRuntime.jsxs)(_StyledTabs["default"], _objectSpread(_objectSpread({}, props), {}, {
+          children: [(0, _jsxRuntime.jsx)(_Box["default"], {
+            children: children.map(function (tab) {
+              if (!tab) {
+                return tab;
+              }
 
-        var _tab$props = tab.props,
-            id = _tab$props.id,
-            title = _tab$props.title,
-            originalOnClick = _tab$props.onClick;
-        var active = activeTabId === id;
-        var tabContentId = getTabContentId(tab);
+              var _tab$props = tab.props,
+                  id = _tab$props.id,
+                  title = _tab$props.title,
+                  originalOnClick = _tab$props.onClick;
+              var active = activeTabId === id;
+              var tabContentId = getTabContentId(tab);
 
-        var onClick = function onClick() {
-          return _this2.handleTabClick(tab, originalOnClick);
-        };
+              var onClick = function onClick() {
+                return _this2.handleTabClick(tab, originalOnClick);
+              };
 
-        return /*#__PURE__*/_react["default"].cloneElement(tab, {
-          'aria-controls': tabContentId,
-          'aria-selected': active ? 'true' : 'false',
-          active: active,
-          key: id,
-          onClick: onClick,
-          onKeyPress: function onKeyPress(_ref2) {
-            var key = _ref2.key;
-            return _this2.handleKeyPress(key, onClick);
-          }
-        }, title);
-      })), tabBarAside && /*#__PURE__*/_react["default"].createElement(_Flex["default"], {
-        alignItems: "center"
-      }, tabBarAside)), this.activeTabContent);
+              return /*#__PURE__*/_react["default"].cloneElement(tab, {
+                'aria-controls': tabContentId,
+                'aria-selected': active ? 'true' : 'false',
+                active: active,
+                key: id,
+                onClick: onClick,
+                onKeyPress: function onKeyPress(_ref2) {
+                  var key = _ref2.key;
+                  return _this2.handleKeyPress(key, onClick);
+                }
+              }, title);
+            })
+          }), tabBarAside && (0, _jsxRuntime.jsx)(_Flex["default"], {
+            alignItems: "center",
+            children: tabBarAside
+          })]
+        })), this.activeTabContent]
+      });
     }
   }]);
 

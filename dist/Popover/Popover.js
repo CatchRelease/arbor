@@ -7,9 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = require("@emotion/react");
-
-var _react2 = _interopRequireDefault(require("react"));
+var _react = _interopRequireDefault(require("react"));
 
 var _reactPopover = _interopRequireDefault(require("react-popover"));
 
@@ -17,9 +15,15 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _PopoverContent = _interopRequireDefault(require("./PopoverContent"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
@@ -56,9 +60,6 @@ var Popover = /*#__PURE__*/function (_React$Component) {
     _classCallCheck(this, Popover);
 
     _this = _super.call(this, props);
-    _this.state = {
-      isOpen: false
-    };
 
     _this.handleOutsideClick = function (e) {
       var isOpen = _this.state.isOpen;
@@ -100,7 +101,10 @@ var Popover = /*#__PURE__*/function (_React$Component) {
       }
     };
 
-    _this.node = /*#__PURE__*/_react2["default"].createRef();
+    _this.state = {
+      isOpen: false
+    };
+    _this.node = /*#__PURE__*/_react["default"].createRef();
     return _this;
   }
 
@@ -162,13 +166,15 @@ var Popover = /*#__PURE__*/function (_React$Component) {
           popoverProps = _objectWithoutProperties(_this$props, ["children", "content", "contentProps", "preferPlace", "place"]);
 
       var isOpen = this.state.isOpen;
-      var styledContent = (0, _react.jsx)(_PopoverContent["default"], contentProps, content);
+      var styledContent = (0, _jsxRuntime.jsx)(_PopoverContent["default"], _objectSpread(_objectSpread({}, contentProps), {}, {
+        children: content
+      }));
 
-      var trigger = /*#__PURE__*/_react2["default"].cloneElement(children, {
+      var trigger = /*#__PURE__*/_react["default"].cloneElement(children, {
         onClick: this.toggle
       });
 
-      return (0, _react.jsx)(_reactPopover["default"], _extends({
+      return (0, _jsxRuntime.jsx)(_reactPopover["default"], _objectSpread(_objectSpread({
         ref: this.node,
         isOpen: isOpen,
         body: styledContent,
@@ -176,12 +182,14 @@ var Popover = /*#__PURE__*/function (_React$Component) {
         place: place,
         tipSize: 0.01,
         enterExitTransitionDurationMs: 0
-      }, popoverProps), trigger);
+      }, popoverProps), {}, {
+        children: trigger
+      }));
     }
   }]);
 
   return Popover;
-}(_react2["default"].Component);
+}(_react["default"].Component);
 
 Popover.propTypes = {
   /**

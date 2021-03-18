@@ -13,6 +13,8 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _RadioButton = _interopRequireDefault(require("../RadioButton"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
@@ -60,21 +62,23 @@ var RadioButtonGroup = function RadioButtonGroup(_ref) {
     groupOnChange(e, setCheckedValueState, onChange);
   };
 
-  return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, options.map(function (_ref2, idx) {
-    var label = _ref2.label,
-        value = _ref2.value,
-        optionDisabled = _ref2.disabled;
-    return /*#__PURE__*/_react["default"].createElement(_RadioButton["default"], _objectSpread({
-      id: "".concat(name, ":").concat(value),
-      key: "".concat(name, ":").concat(value),
-      name: name,
-      disabled: disabled || optionDisabled,
-      label: label,
-      value: value,
-      onChange: buttonOnChange,
-      checked: checkedValueState ? checkedValueState === value : idx === 0
-    }, buttonProps));
-  }));
+  return (0, _jsxRuntime.jsx)(_jsxRuntime.Fragment, {
+    children: options.map(function (_ref2, idx) {
+      var label = _ref2.label,
+          value = _ref2.value,
+          optionDisabled = _ref2.disabled;
+      return (0, _jsxRuntime.jsx)(_RadioButton["default"], _objectSpread({}, _objectSpread({
+        id: "".concat(name, ":").concat(value),
+        key: "".concat(name, ":").concat(value),
+        name: name,
+        disabled: disabled || optionDisabled,
+        label: label,
+        value: value,
+        onChange: buttonOnChange,
+        checked: checkedValueState ? checkedValueState === value : idx === 0
+      }, buttonProps)));
+    })
+  });
 };
 
 RadioButtonGroup.propTypes = {

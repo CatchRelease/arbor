@@ -1,5 +1,3 @@
-/** @jsx jsx */
-import { jsx } from '@emotion/react';
 import React from 'react';
 import ReactPopover from 'react-popover';
 import PropTypes from 'prop-types';
@@ -7,12 +5,12 @@ import PropTypes from 'prop-types';
 import PopoverContent from './PopoverContent';
 
 class Popover extends React.Component {
-  state = {
-    isOpen: false
-  };
-
   constructor(props) {
     super(props);
+
+    this.state = {
+      isOpen: false
+    };
 
     this.node = React.createRef();
   }
@@ -50,6 +48,26 @@ class Popover extends React.Component {
     }
   };
 
+  toggle = (e) => {
+    const { isOpen } = this.state;
+
+    if (e) {
+      if (typeof e.preventDefault === 'function') {
+        e.preventDefault();
+      }
+
+      if (typeof e.stopPropagation === 'function') {
+        e.stopPropagation();
+      }
+    }
+
+    if (isOpen) {
+      this.close();
+    } else {
+      this.open();
+    }
+  };
+
   open(callback) {
     const { onOpen } = this.props;
     const { isOpen } = this.state;
@@ -77,26 +95,6 @@ class Popover extends React.Component {
 
     this.setState({ isOpen: false }, onClose);
   }
-
-  toggle = (e) => {
-    const { isOpen } = this.state;
-
-    if (e) {
-      if (typeof e.preventDefault === 'function') {
-        e.preventDefault();
-      }
-
-      if (typeof e.stopPropagation === 'function') {
-        e.stopPropagation();
-      }
-    }
-
-    if (isOpen) {
-      this.close();
-    } else {
-      this.open();
-    }
-  };
 
   render() {
     const {

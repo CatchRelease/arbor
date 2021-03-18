@@ -15,13 +15,13 @@ var _FormField = _interopRequireDefault(require("../FormField"));
 
 var _StyledInput = _interopRequireDefault(require("./StyledInput"));
 
+var _jsxRuntime = require("@emotion/react/jsx-runtime");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
@@ -84,20 +84,21 @@ var Input = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
     }
   };
 
-  return /*#__PURE__*/_react["default"].createElement(_FormField["default"], {
+  return (0, _jsxRuntime.jsx)(_FormField["default"], {
     caption: errorMessage || caption,
     id: id,
     label: label,
-    labelAside: labelAside
-  }, /*#__PURE__*/_react["default"].createElement(_StyledInput["default"], _extends({}, _objectSpread(_objectSpread({}, props), {}, {
-    id: id,
-    ref: ref
-  }), {
-    value: propValue ? propValue.toString() : propValue,
-    isInvalid: !!errorMessage,
-    onBlur: handleBlur,
-    onChange: handleChange
-  })));
+    labelAside: labelAside,
+    children: (0, _jsxRuntime.jsx)(_StyledInput["default"], _objectSpread(_objectSpread({}, _objectSpread(_objectSpread({}, props), {}, {
+      id: id,
+      ref: ref
+    })), {}, {
+      value: propValue ? propValue.toString() : propValue,
+      isInvalid: !!errorMessage,
+      onBlur: handleBlur,
+      onChange: handleChange
+    }))
+  });
 });
 
 Input.propTypes = {
