@@ -1,11 +1,11 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import AccordionHeader from './AccordionHeader';
 import AccordionPanel from './AccordionPanel';
 import VARIANTS from './variants';
 
-class AccordionSection extends React.Component {
+class AccordionSection extends Component {
   constructor(props) {
     super(props);
     this.state = {

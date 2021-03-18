@@ -1,5 +1,4 @@
 import { css } from '@emotion/react';
-import React from 'react'; // eslint-disable-line no-unused-vars
 
 import { forceReRender, storiesOf } from '@storybook/react';
 import { boolean, select } from '@storybook/addon-knobs';

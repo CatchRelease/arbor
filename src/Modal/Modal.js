@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactModal from 'react-modal';
 import PropTypes from 'prop-types';
 import { Global, withTheme } from '@emotion/react';

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import createWithTheme from '../../../utils/createWithTheme';
 import Textarea from '../Textarea';
 

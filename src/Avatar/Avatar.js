@@ -1,4 +1,4 @@
-import React from 'react';
+import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 
 import { sizes } from '../theme/avatars';
@@ -27,7 +27,7 @@ const getInitials = (name) => {
 const getText = (name) =>
   name.match(/[A-Za-z]/) ? getInitials(name).toUpperCase() : name;
 
-const Avatar = React.forwardRef(
+const Avatar = forwardRef(
   ({ name, subtle, size, baseColor: baseColorProp, ...props }, ref) => {
     const baseColor = baseColorProp || colorForString(name, AVATAR_COLORS);
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import mountWithTheme from '../../../utils/mountWithTheme';
 import createWithTheme from '../../../utils/createWithTheme';
 import { ENTER_KEY, SPACEBAR } from '../../constants';

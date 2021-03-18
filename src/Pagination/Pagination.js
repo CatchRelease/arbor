@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Button from '../Button';
@@ -6,7 +6,7 @@ import Button from '../Button';
 const DELTA = 2;
 const ELLIPSIS = '...';
 
-class Pagination extends React.Component {
+class Pagination extends Component {
   getPaginationOptions = () => {
     const { currentPage, totalPages } = this.props;
 

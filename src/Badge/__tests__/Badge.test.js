@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Badge from '../Badge';
 import Icon from '../../Icon';
 import createWithTheme from '../../../utils/createWithTheme';

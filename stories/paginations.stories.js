@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 
@@ -7,7 +7,7 @@ import { Pagination, Flex } from '../src';
 
 const stories = storiesOf('Pagination', module);
 
-class PaginationContainer extends React.Component {
+class PaginationContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactModal from 'react-modal';
 import { storiesOf } from '@storybook/react';
@@ -10,7 +10,7 @@ import { Box, Button, Card, Grid, Heading, Icon, Modal } from '../src';
 // For modal accessibility. See http://reactcommunity.org/react-modal/accessibility/ for details
 ReactModal.setAppElement(document.body); // eslint-disable-line no-undef
 
-class ModalStory extends React.Component {
+class ModalStory extends Component {
   constructor(props) {
     super(props);
     this.state = {

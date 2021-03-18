@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import snakeCase from 'lodash/snakeCase';
 
@@ -9,7 +9,7 @@ import StyledMenu from './StyledMenu';
 
 const NAVIGATION_KEYS = [ARROW_UP, ARROW_DOWN];
 
-class Menu extends React.Component {
+class Menu extends Component {
   constructor(props) {
     super(props);
 

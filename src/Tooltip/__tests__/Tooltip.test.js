@@ -1,5 +1,3 @@
-import React from 'react';
-
 import mountWithTheme from '../../../utils/mountWithTheme';
 import Tooltip from '../Tooltip';
 

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { forwardRef, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import FormField from '../FormField';
 import StyledInput from './StyledInput';
 
-const Input = React.forwardRef(
+const Input = forwardRef(
   (
     {
       caption,

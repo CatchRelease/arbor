@@ -1,4 +1,3 @@
-import React from 'react';
 import { CacheProvider, ThemeProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 import { create } from 'react-test-renderer';

@@ -1,4 +1,3 @@
-import React from 'react';
 import createWithTheme from '../../../utils/createWithTheme';
 
 import Card from '../Card';

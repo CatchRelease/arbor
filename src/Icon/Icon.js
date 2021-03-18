@@ -1,4 +1,4 @@
-import React from 'react';
+import { forwardRef } from 'react';
 import { ClassNames, css, withTheme } from '@emotion/react';
 import styled from '@emotion/styled';
 import {
@@ -90,6 +90,6 @@ Icon.defaultProps = {
 
 const WithThemeIcon = withTheme(Icon);
 
-export default React.forwardRef((props, ref) => {
+export default forwardRef((props, ref) => {
   return <WithThemeIcon {...props} iconRef={ref} />;
 });

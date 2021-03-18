@@ -1,4 +1,3 @@
-import React from 'react';
 import mountWithTheme from '../../../utils/mountWithTheme';
 
 import ProgressBar from '../ProgressBar';

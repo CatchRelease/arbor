@@ -1,5 +1,3 @@
-import React from 'react';
-
 import StyledInput from '../Input/StyledInput';
 
 const StyledTextarea = (props) => <StyledInput {...props} />;

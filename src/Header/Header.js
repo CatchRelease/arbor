@@ -1,4 +1,4 @@
-import React from 'react';
+import { Children } from 'react';
 import PropTypes from 'prop-types';
 
 import StyledHeader from './StyledHeader';
@@ -12,7 +12,7 @@ const getColumns = (children = []) => {
 };
 
 const Header = ({ children, ...props }) => {
-  const [headingText, ...remainingChildren] = React.Children.toArray(children);
+  const [headingText, ...remainingChildren] = Children.toArray(children);
 
   return (
     <StyledHeader

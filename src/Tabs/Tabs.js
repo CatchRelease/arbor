@@ -1,4 +1,4 @@
-import React from 'react';
+import { cloneElement, Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Box from '../Box';
@@ -10,7 +10,7 @@ import { ENTER_KEY, SPACEBAR } from '../constants';
 const getTabContentId = ({ props: { children, id } }) =>
   children.props.id || `${id}-tab-content`;
 
-class Tabs extends React.Component {
+class Tabs extends Component {
   constructor(props) {
     super(props);
 
@@ -46,7 +46,7 @@ class Tabs extends React.Component {
   get activeTabContent() {
     const { activeTab } = this;
 
-    return React.cloneElement(activeTab.props.children, {
+    return cloneElement(activeTab.props.children, {
       id: getTabContentId(activeTab)
     });
   }
@@ -94,7 +94,7 @@ class Tabs extends React.Component {
               const tabContentId = getTabContentId(tab);
               const onClick = () => this.handleTabClick(tab, originalOnClick);
 
-              return React.cloneElement(
+              return cloneElement(
                 tab,
                 {
                   'aria-controls': tabContentId,

@@ -1,4 +1,4 @@
-import React from 'react';
+import { createRef } from 'react';
 import { ThemeProvider } from '@emotion/react';
 
 import createWithTheme from '../../../utils/createWithTheme';
@@ -62,7 +62,7 @@ describe('<Icon />', () => {
   });
 
   it('forwards ref', () => {
-    const ref = React.createRef();
+    const ref = createRef();
 
     const wrapper = mountWithTheme(<Icon name="test-icon-name" ref={ref} />);
 

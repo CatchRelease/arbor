@@ -1,4 +1,4 @@
-import React from 'react';
+import { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { hideVisually } from 'polished';
 
@@ -11,7 +11,7 @@ import Text from '../Text';
 const MIN_WIDTH = '120px';
 const PADDING = '8px';
 
-class ControlledMenuItem extends React.PureComponent {
+class ControlledMenuItem extends PureComponent {
   componentDidMount() {
     document.addEventListener('keydown', this.onKeyDown, true);
   }

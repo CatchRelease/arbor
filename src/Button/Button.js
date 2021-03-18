@@ -1,4 +1,4 @@
-import React from 'react';
+import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 
 import ButtonContent from './ButtonContent';
@@ -12,7 +12,7 @@ import palette from '../theme/colors/palette';
 
 const INTENTS = Object.keys(intent);
 
-const Button = React.forwardRef(
+const Button = forwardRef(
   ({ children, iconStart, iconEnd, spin, variant, type, ...props }, ref) => (
     <StyledButton
       {...{

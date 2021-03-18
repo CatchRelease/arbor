@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { boolean, select } from '@storybook/addon-knobs';
@@ -57,7 +57,7 @@ const NeutralMultiValue = (props) => (
 const ReadOnlyMultiValue = (props) => <MultiValue {...props} readOnly />;
 const PillMultiValue = (props) => <MultiValue {...props} variant="pill" />;
 
-class AutoCompleteExample extends React.Component {
+class AutoCompleteExample extends Component {
   constructor(props) {
     super(props);
     this.state = {

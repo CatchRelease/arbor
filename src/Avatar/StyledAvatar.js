@@ -1,11 +1,11 @@
-import React from 'react';
+import { forwardRef } from 'react';
 import { withTheme } from '@emotion/react';
 import PropTypes from 'prop-types';
 import Flex from '../Flex';
 
 import { sizes } from '../theme/avatars';
 
-export const StyledAvatar = React.forwardRef(
+export const StyledAvatar = forwardRef(
   (
     {
       baseColor,
