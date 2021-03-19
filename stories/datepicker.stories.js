@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { DateUtils } from 'react-day-picker';
-import { storiesOf } from '@storybook/react';
 import { date } from '@storybook/addon-knobs';
 
 import 'react-day-picker/lib/style.css';
@@ -16,8 +15,6 @@ import {
   Icon,
   Popover
 } from '../src';
-
-const stories = storiesOf('DatePicker', module);
 
 const today = new Date();
 const defaultBefore = DateUtils.addMonths(today, -2);
@@ -115,6 +112,13 @@ class ControlledDatePickers extends Component {
   }
 }
 
-stories.add('default', () => <ControlledDatePickers />, {
-  notes: { markdown: notes }
-});
+export default {
+  title: 'DatePicker'
+};
+
+export const Default = () => <ControlledDatePickers />;
+
+Default.story = {
+  name: 'default',
+  parameters: { notes: { markdown: notes } }
+};

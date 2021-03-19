@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import { storiesOf } from '@storybook/react';
 import { boolean, select } from '@storybook/addon-knobs';
 
 import { styledAutoCompleteComponents } from '../src/AutoComplete';
@@ -121,86 +120,89 @@ AutoCompleteExample.defaultProps = {
   variant: 'default'
 };
 
-const stories = storiesOf('AutoComplete', module);
+export default {
+  title: 'AutoComplete'
+};
 
-stories.add(
-  'default',
-  () => (
-    <Box as="section" p="regular">
-      <Heading.H1>AutoComplete</Heading.H1>
+export const Default = () => (
+  <Box as="section" p="regular">
+    <Heading.H1>AutoComplete</Heading.H1>
 
-      <AutoCompleteExample
-        id="auto-complete-1"
-        label="AutoComplete with unstyled badges"
-        options={neutralOptions}
-        variant={select('Variant', variantOptions, 'default')}
-      />
+    <AutoCompleteExample
+      id="auto-complete-1"
+      label="AutoComplete with unstyled badges"
+      options={neutralOptions}
+      variant={select('Variant', variantOptions, 'default')}
+    />
 
-      <AutoCompleteExample
-        id="auto-complete-2"
-        label="AutoComplete with unstyled default badges"
-        options={neutralOptions.map((option) => ({
-          ...option,
-          variant: 'default'
-        }))}
-        variant={select('Variant', variantOptions, 'default')}
-      />
+    <AutoCompleteExample
+      id="auto-complete-2"
+      label="AutoComplete with unstyled default badges"
+      options={neutralOptions.map((option) => ({
+        ...option,
+        variant: 'default'
+      }))}
+      variant={select('Variant', variantOptions, 'default')}
+    />
 
-      <AutoCompleteExample
-        id="auto-complete-3"
-        label="AutoComplete with color badges"
-        options={colorOptions}
-        variant={select('Variant', variantOptions, 'default')}
-      />
+    <AutoCompleteExample
+      id="auto-complete-3"
+      label="AutoComplete with color badges"
+      options={colorOptions}
+      variant={select('Variant', variantOptions, 'default')}
+    />
 
-      <AutoCompleteExample
-        id="auto-complete-4"
-        label="AutoComplete with subtle color badges"
-        options={colorOptions.map((option) => ({ ...option, subtle: true }))}
-        variant={select('Variant', variantOptions, 'default')}
-      />
+    <AutoCompleteExample
+      id="auto-complete-4"
+      label="AutoComplete with subtle color badges"
+      options={colorOptions.map((option) => ({ ...option, subtle: true }))}
+      variant={select('Variant', variantOptions, 'default')}
+    />
 
-      <AutoCompleteExample
-        id="auto-complete-5"
-        label="AutoComplete with subtle color default badges"
-        options={colorOptions.map((option) => ({
-          ...option,
-          subtle: true,
-          variant: 'default'
-        }))}
-        variant={select('Variant', variantOptions, 'default')}
-      />
+    <AutoCompleteExample
+      id="auto-complete-5"
+      label="AutoComplete with subtle color default badges"
+      options={colorOptions.map((option) => ({
+        ...option,
+        subtle: true,
+        variant: 'default'
+      }))}
+      variant={select('Variant', variantOptions, 'default')}
+    />
 
-      <AutoCompleteExample
-        id="auto-complete-6"
-        label="AutoComplete with custom neutral badges"
-        options={neutralOptions}
-        variant={select('Variant', variantOptions, 'default')}
-        components={{
-          MultiValue: NeutralMultiValue
-        }}
-      />
+    <AutoCompleteExample
+      id="auto-complete-6"
+      label="AutoComplete with custom neutral badges"
+      options={neutralOptions}
+      variant={select('Variant', variantOptions, 'default')}
+      components={{
+        MultiValue: NeutralMultiValue
+      }}
+    />
 
-      <AutoCompleteExample
-        id="auto-complete-7"
-        label="AutoComplete with read-only badges"
-        options={neutralOptions}
-        variant={select('Variant', variantOptions, 'default')}
-        components={{
-          MultiValue: ReadOnlyMultiValue
-        }}
-      />
+    <AutoCompleteExample
+      id="auto-complete-7"
+      label="AutoComplete with read-only badges"
+      options={neutralOptions}
+      variant={select('Variant', variantOptions, 'default')}
+      components={{
+        MultiValue: ReadOnlyMultiValue
+      }}
+    />
 
-      <AutoCompleteExample
-        id="auto-complete-8"
-        label="AutoComplete with pill-shaped badges"
-        options={neutralOptions}
-        variant={select('Variant', variantOptions, 'default')}
-        components={{
-          MultiValue: PillMultiValue
-        }}
-      />
-    </Box>
-  ),
-  { notes: { markdown: notes } }
+    <AutoCompleteExample
+      id="auto-complete-8"
+      label="AutoComplete with pill-shaped badges"
+      options={neutralOptions}
+      variant={select('Variant', variantOptions, 'default')}
+      components={{
+        MultiValue: PillMultiValue
+      }}
+    />
+  </Box>
 );
+
+Default.story = {
+  name: 'default',
+  parameters: { notes: { markdown: notes } }
+};

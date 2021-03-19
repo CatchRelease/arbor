@@ -1,4 +1,3 @@
-import { storiesOf } from '@storybook/react';
 import { select } from '@storybook/addon-knobs';
 
 import notes from './icons.md';
@@ -40,31 +39,34 @@ const rotationOptions = {
   270: '270'
 };
 
-const stories = storiesOf('Icons', module);
+export default {
+  title: 'Icons'
+};
 
-stories.add(
-  'default',
-  () => (
-    <Grid
-      gridTemplateColumns={`repeat(${AVAILABLE_ICONS.length}, 1fr)`}
-      gridGap="large"
-      justifyItems="center"
-      alignItems="center"
-      width="100vw"
-      height="100vh"
-    >
-      {AVAILABLE_ICONS.map((icon) => (
-        <Box key={icon} textAlign="center">
-          <Icon
-            name={icon}
-            color="grey100"
-            fontSize="38px"
-            rotation={select('Rotation', rotationOptions, null)}
-          />
-          <Text variant="tiny">{icon}</Text>
-        </Box>
-      ))}
-    </Grid>
-  ),
-  { notes: { markdown: notes } }
+export const Default = () => (
+  <Grid
+    gridTemplateColumns={`repeat(${AVAILABLE_ICONS.length}, 1fr)`}
+    gridGap="large"
+    justifyItems="center"
+    alignItems="center"
+    width="100vw"
+    height="100vh"
+  >
+    {AVAILABLE_ICONS.map((icon) => (
+      <Box key={icon} textAlign="center">
+        <Icon
+          name={icon}
+          color="grey100"
+          fontSize="38px"
+          rotation={select('Rotation', rotationOptions, null)}
+        />
+        <Text variant="tiny">{icon}</Text>
+      </Box>
+    ))}
+  </Grid>
 );
+
+Default.story = {
+  name: 'default',
+  parameters: { notes: { markdown: notes } }
+};

@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import { storiesOf } from '@storybook/react';
 
 import notes from './dropdowns.md';
 import {
@@ -13,8 +12,6 @@ import {
   MenuItem,
   Text
 } from '../src';
-
-const stories = storiesOf('Dropdown', module);
 
 const menuItems = [
   {
@@ -132,28 +129,34 @@ CustomMenuItem.defaultProps = {
   secondaryLabel: undefined
 };
 
-stories.add(
-  'default',
-  () => (
-    <Box as="section" p="regular">
-      <Heading.H1 mb="regular">Dropdown</Heading.H1>
-      <DropdownContainer>select an item</DropdownContainer>
-    </Box>
-  ),
-  { notes: { markdown: notes } }
+export default {
+  title: 'Dropdown'
+};
+
+export const Default = () => (
+  <Box as="section" p="regular">
+    <Heading.H1 mb="regular">Dropdown</Heading.H1>
+    <DropdownContainer>select an item</DropdownContainer>
+  </Box>
 );
 
-stories.add(
-  'custom trigger',
-  () => (
-    <Box as="section" p="regular">
-      <Heading.H1 mb="regular">Dropdown</Heading.H1>
-      <DropdownContainer
-        MenuItemComponent={CustomMenuItem}
-        TriggerComponent={Avatar}
-        name="Bruce Wayne"
-      />
-    </Box>
-  ),
-  { notes: { markdown: notes } }
+Default.story = {
+  name: 'default',
+  parameters: { notes: { markdown: notes } }
+};
+
+export const CustomTrigger = () => (
+  <Box as="section" p="regular">
+    <Heading.H1 mb="regular">Dropdown</Heading.H1>
+    <DropdownContainer
+      MenuItemComponent={CustomMenuItem}
+      TriggerComponent={Avatar}
+      name="Bruce Wayne"
+    />
+  </Box>
 );
+
+CustomTrigger.story = {
+  name: 'custom trigger',
+  parameters: { notes: { markdown: notes } }
+};

@@ -1,10 +1,7 @@
 import PropTypes from 'prop-types';
-import { storiesOf } from '@storybook/react';
 
 import notes from './menu.md';
 import { Box, Grid, Heading, Icon, Menu, MenuItem, Text } from '../src';
-
-const stories = storiesOf('Menu', module);
 
 const menuItems = [
   {
@@ -147,28 +144,34 @@ CustomMenuItemComponent.defaultProps = {
   secondaryLabel: undefined
 };
 
-stories.add(
-  'default',
-  () => (
-    <Box as="section" p="regular">
-      <Heading.H1 mb="regular">Standard Menu</Heading.H1>
-      <Menu name="Standard Menu" menuItems={menuItems} />
-    </Box>
-  ),
-  { notes: { markdown: notes } }
+export default {
+  title: 'Menu'
+};
+
+export const Default = () => (
+  <Box as="section" p="regular">
+    <Heading.H1 mb="regular">Standard Menu</Heading.H1>
+    <Menu name="Standard Menu" menuItems={menuItems} />
+  </Box>
 );
 
-stories.add(
-  'custom menu items',
-  () => (
-    <Box as="section" p="regular">
-      <Heading.H1 mb="regular">Menu with Custom Menu Item</Heading.H1>
-      <Menu
-        name="Custom Menu"
-        menuItems={menuItems}
-        MenuItemComponent={CustomMenuItemComponent}
-      />
-    </Box>
-  ),
-  { notes: { markdown: notes } }
+Default.story = {
+  name: 'default',
+  parameters: { notes: { markdown: notes } }
+};
+
+export const CustomMenuItems = () => (
+  <Box as="section" p="regular">
+    <Heading.H1 mb="regular">Menu with Custom Menu Item</Heading.H1>
+    <Menu
+      name="Custom Menu"
+      menuItems={menuItems}
+      MenuItemComponent={CustomMenuItemComponent}
+    />
+  </Box>
 );
+
+CustomMenuItems.story = {
+  name: 'custom menu items',
+  parameters: { notes: { markdown: notes } }
+};
