@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = require("react");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -27,7 +27,7 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var Textarea = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
+var Textarea = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
   var caption = _ref.caption,
       label = _ref.label,
       labelAside = _ref.labelAside,
@@ -45,7 +45,6 @@ var Textarea = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
     })))
   });
 });
-
 Textarea.propTypes = {
   /**
    * Optional help text to be rendered within the FormField component

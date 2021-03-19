@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = require("react");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -42,8 +42,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 var DELTA = 2;
 var ELLIPSIS = '...';
 
-var Pagination = /*#__PURE__*/function (_React$Component) {
-  _inherits(Pagination, _React$Component);
+var Pagination = /*#__PURE__*/function (_Component) {
+  _inherits(Pagination, _Component);
 
   var _super = _createSuper(Pagination);
 
@@ -170,7 +170,7 @@ var Pagination = /*#__PURE__*/function (_React$Component) {
   }]);
 
   return Pagination;
-}(_react["default"].Component);
+}(_react.Component);
 
 Pagination.propTypes = {
   /**

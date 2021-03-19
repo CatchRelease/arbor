@@ -5,13 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = exports.Modal = void 0;
 
-var _react = _interopRequireDefault(require("react"));
-
 var _reactModal = _interopRequireDefault(require("react-modal"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _react2 = require("@emotion/react");
+var _react = require("@emotion/react");
 
 var _buildModalCss = _interopRequireDefault(require("./buildModalCss"));
 
@@ -42,7 +40,7 @@ var Modal = function Modal(_ref) {
     overlayCss: overlayCss
   });
   return (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
-    children: [(0, _jsxRuntime.jsx)(_react2.Global, {
+    children: [(0, _jsxRuntime.jsx)(_react.Global, {
       styles: combinedModalCss
     }), (0, _jsxRuntime.jsx)(_reactModal["default"], _objectSpread(_objectSpread({
       overlayClassName: "ArborModalOverlay",
@@ -77,6 +75,6 @@ Modal.defaultProps = {
   overlayCss: {}
 };
 
-var _default = (0, _react2.withTheme)(Modal);
+var _default = (0, _react.withTheme)(Modal);
 
 exports["default"] = _default;

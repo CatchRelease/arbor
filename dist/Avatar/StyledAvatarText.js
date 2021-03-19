@@ -5,11 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = exports.StyledAvatarText = void 0;
 
-var _react = _interopRequireDefault(require("react"));
-
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _react2 = require("@emotion/react");
+var _react = require("@emotion/react");
 
 var _Text = _interopRequireDefault(require("../Text"));
 
@@ -51,6 +49,6 @@ StyledAvatarText.propTypes = {
   subtle: _propTypes["default"].bool.isRequired
 };
 
-var _default = (0, _react2.withTheme)(StyledAvatarText);
+var _default = (0, _react.withTheme)(StyledAvatarText);
 
 exports["default"] = _default;

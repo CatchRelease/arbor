@@ -5,8 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
-
 var _Grid = _interopRequireDefault(require("../Grid"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");

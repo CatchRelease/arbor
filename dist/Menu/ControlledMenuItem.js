@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = require("react");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -56,8 +56,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 var MIN_WIDTH = '120px';
 var PADDING = '8px';
 
-var ControlledMenuItem = /*#__PURE__*/function (_React$PureComponent) {
-  _inherits(ControlledMenuItem, _React$PureComponent);
+var ControlledMenuItem = /*#__PURE__*/function (_PureComponent) {
+  _inherits(ControlledMenuItem, _PureComponent);
 
   var _super = _createSuper(ControlledMenuItem);
 
@@ -179,7 +179,7 @@ var ControlledMenuItem = /*#__PURE__*/function (_React$PureComponent) {
   }]);
 
   return ControlledMenuItem;
-}(_react["default"].PureComponent);
+}(_react.PureComponent);
 
 ControlledMenuItem.propTypes = {
   /**

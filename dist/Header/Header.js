@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = require("react");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -48,10 +48,10 @@ var Header = function Header(_ref) {
   var children = _ref.children,
       props = _objectWithoutProperties(_ref, ["children"]);
 
-  var _React$Children$toArr = _react["default"].Children.toArray(children),
-      _React$Children$toArr2 = _toArray(_React$Children$toArr),
-      headingText = _React$Children$toArr2[0],
-      remainingChildren = _React$Children$toArr2.slice(1);
+  var _Children$toArray = _react.Children.toArray(children),
+      _Children$toArray2 = _toArray(_Children$toArray),
+      headingText = _Children$toArray2[0],
+      remainingChildren = _Children$toArray2.slice(1);
 
   return (0, _jsxRuntime.jsxs)(_StyledHeader["default"], _objectSpread(_objectSpread({
     alignItems: "end",

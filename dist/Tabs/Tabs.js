@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = require("react");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -62,8 +62,8 @@ var getTabContentId = function getTabContentId(_ref) {
   return children.props.id || "".concat(id, "-tab-content");
 };
 
-var Tabs = /*#__PURE__*/function (_React$Component) {
-  _inherits(Tabs, _React$Component);
+var Tabs = /*#__PURE__*/function (_Component) {
+  _inherits(Tabs, _Component);
 
   var _super = _createSuper(Tabs);
 
@@ -135,7 +135,7 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
     key: "activeTabContent",
     get: function get() {
       var activeTab = this.activeTab;
-      return /*#__PURE__*/_react["default"].cloneElement(activeTab.props.children, {
+      return /*#__PURE__*/(0, _react.cloneElement)(activeTab.props.children, {
         id: getTabContentId(activeTab)
       });
     }
@@ -176,7 +176,7 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
                 return _this2.handleTabClick(tab, originalOnClick);
               };
 
-              return /*#__PURE__*/_react["default"].cloneElement(tab, {
+              return /*#__PURE__*/(0, _react.cloneElement)(tab, {
                 'aria-controls': tabContentId,
                 'aria-selected': active ? 'true' : 'false',
                 active: active,
@@ -198,7 +198,7 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
   }]);
 
   return Tabs;
-}(_react["default"].Component);
+}(_react.Component);
 
 Tabs.propTypes = {
   activeTabId: _propTypes["default"].string,

@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = require("react");
 
 var _reactPopover = _interopRequireDefault(require("react-popover"));
 
@@ -49,8 +49,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var Popover = /*#__PURE__*/function (_React$Component) {
-  _inherits(Popover, _React$Component);
+var Popover = /*#__PURE__*/function (_Component) {
+  _inherits(Popover, _Component);
 
   var _super = _createSuper(Popover);
 
@@ -104,7 +104,7 @@ var Popover = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       isOpen: false
     };
-    _this.node = /*#__PURE__*/_react["default"].createRef();
+    _this.node = /*#__PURE__*/(0, _react.createRef)();
     return _this;
   }
 
@@ -169,11 +169,9 @@ var Popover = /*#__PURE__*/function (_React$Component) {
       var styledContent = (0, _jsxRuntime.jsx)(_PopoverContent["default"], _objectSpread(_objectSpread({}, contentProps), {}, {
         children: content
       }));
-
-      var trigger = /*#__PURE__*/_react["default"].cloneElement(children, {
+      var trigger = /*#__PURE__*/(0, _react.cloneElement)(children, {
         onClick: this.toggle
       });
-
       return (0, _jsxRuntime.jsx)(_reactPopover["default"], _objectSpread(_objectSpread({
         ref: this.node,
         isOpen: isOpen,
@@ -189,7 +187,7 @@ var Popover = /*#__PURE__*/function (_React$Component) {
   }]);
 
   return Popover;
-}(_react["default"].Component);
+}(_react.Component);
 
 Popover.propTypes = {
   /**

@@ -5,9 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
-
-var _react2 = require("@emotion/react");
+var _react = require("@emotion/react");
 
 var _reactToastify = require("react-toastify");
 
@@ -32,7 +30,7 @@ var transition = (0, _reactToastify.cssTransition)({
 
 var ToastContainer = function ToastContainer(props) {
   return (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
-    children: [(0, _jsxRuntime.jsx)(_react2.Global, {
+    children: [(0, _jsxRuntime.jsx)(_react.Global, {
       styles: _toastCSS["default"]
     }), (0, _jsxRuntime.jsx)(_reactToastify.ToastContainer, _objectSpread({
       className: "arbor-toast-container",
