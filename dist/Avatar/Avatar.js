@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = require("react");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -70,7 +70,7 @@ var getText = function getText(name) {
   return name.match(/[A-Za-z]/) ? getInitials(name).toUpperCase() : name;
 };
 
-var Avatar = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
+var Avatar = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
   var name = _ref.name,
       subtle = _ref.subtle,
       size = _ref.size,
@@ -96,7 +96,6 @@ var Avatar = /*#__PURE__*/_react["default"].forwardRef(function (_ref, ref) {
     })
   }));
 });
-
 Avatar.propTypes = {
   /**
    * Base color to use for the avatar

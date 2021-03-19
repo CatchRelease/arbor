@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = require("react");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -55,8 +55,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var Dropdown = /*#__PURE__*/function (_React$Component) {
-  _inherits(Dropdown, _React$Component);
+var Dropdown = /*#__PURE__*/function (_Component) {
+  _inherits(Dropdown, _Component);
 
   var _super = _createSuper(Dropdown);
 
@@ -95,9 +95,9 @@ var Dropdown = /*#__PURE__*/function (_React$Component) {
       onChange(value);
     };
 
-    _this.popover = /*#__PURE__*/_react["default"].createRef();
-    _this.button = /*#__PURE__*/_react["default"].createRef();
-    _this.menu = /*#__PURE__*/_react["default"].createRef();
+    _this.popover = /*#__PURE__*/(0, _react.createRef)();
+    _this.button = /*#__PURE__*/(0, _react.createRef)();
+    _this.menu = /*#__PURE__*/(0, _react.createRef)();
     return _this;
   }
 
@@ -148,7 +148,7 @@ var Dropdown = /*#__PURE__*/function (_React$Component) {
   }]);
 
   return Dropdown;
-}(_react["default"].Component);
+}(_react.Component);
 
 Dropdown.propTypes = {
   /**

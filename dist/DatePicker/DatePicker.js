@@ -5,8 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
-
 var _datePickerDefaults = _interopRequireDefault(require("./datePickerDefaults"));
 
 var _StyledDatePicker = _interopRequireDefault(require("./StyledDatePicker"));

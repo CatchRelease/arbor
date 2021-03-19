@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = require("react");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -51,8 +51,8 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
-var AccordionSection = /*#__PURE__*/function (_React$Component) {
-  _inherits(AccordionSection, _React$Component);
+var AccordionSection = /*#__PURE__*/function (_Component) {
+  _inherits(AccordionSection, _Component);
 
   var _super = _createSuper(AccordionSection);
 
@@ -133,7 +133,7 @@ var AccordionSection = /*#__PURE__*/function (_React$Component) {
   }]);
 
   return AccordionSection;
-}(_react["default"].Component);
+}(_react.Component);
 
 AccordionSection.propTypes = {
   /**

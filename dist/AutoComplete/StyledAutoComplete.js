@@ -5,8 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
-
 var _reactSelect = _interopRequireDefault(require("react-select"));
 
 var _async = _interopRequireDefault(require("react-select/async"));
@@ -17,7 +15,7 @@ var _creatable = _interopRequireDefault(require("react-select/creatable"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _react2 = require("@emotion/react");
+var _react = require("@emotion/react");
 
 var _buildReactSelectThemeOverrides = _interopRequireDefault(require("./buildReactSelectThemeOverrides"));
 
@@ -82,6 +80,6 @@ StyledAutoComplete.defaultProps = {
   variant: 'default'
 };
 
-var _default = (0, _react2.withTheme)(StyledAutoComplete);
+var _default = (0, _react.withTheme)(StyledAutoComplete);
 
 exports["default"] = _default;

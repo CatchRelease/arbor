@@ -5,11 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(require("react"));
-
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _react2 = require("@emotion/react");
+var _react = require("@emotion/react");
 
 var _Card = _interopRequireDefault(require("../Card"));
 
@@ -50,6 +48,6 @@ StyledAutoCompleteMenu.propTypes = {
 
 };
 
-var _default = (0, _react2.withTheme)(StyledAutoCompleteMenu);
+var _default = (0, _react.withTheme)(StyledAutoCompleteMenu);
 
 exports["default"] = _default;
