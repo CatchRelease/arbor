@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 import { capitalize } from 'lodash';
 import { readableColor } from 'polished';
-import { storiesOf } from '@storybook/react';
 
 import notes from './colors.md';
-import { colors, Flex, Heading, Grid, Text } from '../src';
+import { colors, Flex, Heading, Grid, Text as TextComponent } from '../src';
 
 const getReadableColor = (color, hex, modifier = '', colorGroup) => {
   switch (modifier) {
@@ -36,9 +35,9 @@ const Swatch = ({ color, hex, modifier, colorGroup }) => (
     key={modifier}
     px="small"
   >
-    <Text color={getReadableColor(color, hex, modifier, colorGroup)}>
+    <TextComponent color={getReadableColor(color, hex, modifier, colorGroup)}>
       {capitalize(modifier)}
-    </Text>
+    </TextComponent>
     <Heading.H3
       as="h2"
       color={getReadableColor(color, hex, modifier, colorGroup)}
@@ -124,84 +123,92 @@ Swatches.defaultProps = {
   modifierOverride: undefined
 };
 
-storiesOf('Colors', module).add(
-  'Background',
-  () => (
-    <Swatches
-      colorGroup="background"
-      palette={colors.background}
-      modifierOverride="monochrome"
-    />
-  ),
-  { notes: { markdown: notes } }
+export default {
+  title: 'Colors'
+};
+
+export const Background = () => (
+  <Swatches
+    colorGroup="background"
+    palette={colors.background}
+    modifierOverride="monochrome"
+  />
 );
 
-storiesOf('Colors', module).add(
-  'Border',
-  () => (
-    <Swatches
-      colorGroup="border"
-      palette={colors.border}
-      modifierOverride="monochrome"
-    />
-  ),
-  { notes: { markdown: notes } }
+Background.story = {
+  parameters: { notes: { markdown: notes } }
+};
+
+export const Border = () => (
+  <Swatches
+    colorGroup="border"
+    palette={colors.border}
+    modifierOverride="monochrome"
+  />
 );
 
-storiesOf('Colors', module).add(
-  'Icon',
-  () => (
-    <Swatches
-      colorGroup="icon"
-      palette={colors.icon}
-      modifierOverride="monochrome"
-    />
-  ),
-  { notes: { markdown: notes } }
+Border.story = {
+  parameters: { notes: { markdown: notes } }
+};
+
+export const Icon = () => (
+  <Swatches
+    colorGroup="icon"
+    palette={colors.icon}
+    modifierOverride="monochrome"
+  />
 );
 
-storiesOf('Colors', module).add(
-  'Intent',
-  () => <Swatches colorGroup="intent" palette={colors.intent} />,
-  { notes: { markdown: notes } }
+Icon.story = {
+  parameters: { notes: { markdown: notes } }
+};
+
+export const Intent = () => (
+  <Swatches colorGroup="intent" palette={colors.intent} />
 );
 
-storiesOf('Colors', module).add(
-  'Monochrome',
-  () => {
-    const { black, white, ...greys } = colors.monochrome;
+Intent.story = {
+  parameters: { notes: { markdown: notes } }
+};
 
-    return <Swatches palette={{ black, grey: greys, white }} />;
-  },
-  { notes: { markdown: notes } }
+export const Monochrome = () => {
+  const { black, white, ...greys } = colors.monochrome;
+
+  return <Swatches palette={{ black, grey: greys, white }} />;
+};
+
+Monochrome.story = {
+  parameters: { notes: { markdown: notes } }
+};
+
+export const Palette = () => (
+  <Swatches colorGroup="palette" palette={colors.palette} />
 );
 
-storiesOf('Colors', module).add(
-  'Palette',
-  () => <Swatches colorGroup="palette" palette={colors.palette} />,
-  { notes: { markdown: notes } }
+Palette.story = {
+  parameters: { notes: { markdown: notes } }
+};
+
+export const Primary = () => <Swatches palette={colors.primary} />;
+
+Primary.story = {
+  parameters: { notes: { markdown: notes } }
+};
+
+export const Secondary = () => <Swatches palette={colors.secondary} />;
+
+Secondary.story = {
+  parameters: { notes: { markdown: notes } }
+};
+
+export const Text = () => (
+  <Swatches
+    colorGroup="text"
+    palette={colors.text}
+    modifierOverride="monochrome"
+  />
 );
 
-storiesOf('Colors', module).add(
-  'Primary',
-  () => <Swatches palette={colors.primary} />,
-  { notes: { markdown: notes } }
-);
-
-storiesOf('Colors', module).add(
-  'Secondary',
-  () => <Swatches palette={colors.secondary} />,
-  { notes: { markdown: notes } }
-);
-
-storiesOf('Colors', module).add(
-  'Text',
-  () => (
-    <Swatches
-      colorGroup="text"
-      palette={colors.text}
-      modifierOverride="monochrome"
-    />
-  ),
-  { notes: { markdown: notes } }
-);
+Text.story = {
+  parameters: { notes: { markdown: notes } }
+};

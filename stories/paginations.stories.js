@@ -1,11 +1,8 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import { storiesOf } from '@storybook/react';
 
 import notes from './paginations.md';
 import { Pagination, Flex } from '../src';
-
-const stories = storiesOf('Pagination', module);
 
 class PaginationContainer extends Component {
   constructor(props) {
@@ -41,32 +38,39 @@ PaginationContainer.defaultProps = {
   size: undefined
 };
 
-stories.add(
-  'default',
-  () => (
-    <Flex mt="100px" justifyContent="center">
-      <PaginationContainer />
-    </Flex>
-  ),
-  { notes: { markdown: notes } }
+export default {
+  title: 'Pagination'
+};
+
+export const Default = () => (
+  <Flex mt="100px" justifyContent="center">
+    <PaginationContainer />
+  </Flex>
 );
 
-stories.add(
-  'small',
-  () => (
-    <Flex mt="100px" justifyContent="center">
-      <PaginationContainer size="small" />
-    </Flex>
-  ),
-  { notes: { markdown: notes } }
+Default.story = {
+  name: 'default',
+  parameters: { notes: { markdown: notes } }
+};
+
+export const Small = () => (
+  <Flex mt="100px" justifyContent="center">
+    <PaginationContainer size="small" />
+  </Flex>
 );
 
-stories.add(
-  'medium',
-  () => (
-    <Flex mt="100px" justifyContent="center">
-      <PaginationContainer size="medium" />
-    </Flex>
-  ),
-  { notes: { markdown: notes } }
+Small.story = {
+  name: 'small',
+  parameters: { notes: { markdown: notes } }
+};
+
+export const Medium = () => (
+  <Flex mt="100px" justifyContent="center">
+    <PaginationContainer size="medium" />
+  </Flex>
 );
+
+Medium.story = {
+  name: 'medium',
+  parameters: { notes: { markdown: notes } }
+};

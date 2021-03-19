@@ -1,10 +1,6 @@
-import { storiesOf } from '@storybook/react';
-
 import { boolean } from '@storybook/addon-knobs';
 import notes from './radioButtonGroup.md';
 import { Box, Flex, RadioButtonGroup } from '../src';
-
-const stories = storiesOf('RadioButtonGroup', module);
 
 const onChange = (value) => {
   console.log('ch ch ch changed', value); // eslint-disable-line no-console
@@ -30,27 +26,32 @@ const groupOptions = [
   }
 ];
 
-stories.add(
-  'default',
-  () => (
-    <Box p="larger">
+export default {
+  title: 'RadioButtonGroup'
+};
+
+export const Default = () => (
+  <Box p="larger">
+    <RadioButtonGroup
+      options={groupOptions}
+      name="grouped"
+      onChange={onChange}
+      disabled={boolean('Disabled (Group level)', false)}
+    />
+
+    <Flex flexDirection="row">
       <RadioButtonGroup
         options={groupOptions}
-        name="grouped"
+        name="grouped-across"
         onChange={onChange}
         disabled={boolean('Disabled (Group level)', false)}
+        buttonProps={{ mr: 'small' }}
       />
-
-      <Flex flexDirection="row">
-        <RadioButtonGroup
-          options={groupOptions}
-          name="grouped-across"
-          onChange={onChange}
-          disabled={boolean('Disabled (Group level)', false)}
-          buttonProps={{ mr: 'small' }}
-        />
-      </Flex>
-    </Box>
-  ),
-  { notes: { markdown: notes } }
+    </Flex>
+  </Box>
 );
+
+Default.story = {
+  name: 'default',
+  parameters: { notes: { markdown: notes } }
+};

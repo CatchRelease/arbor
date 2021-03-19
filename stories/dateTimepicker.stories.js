@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { storiesOf } from '@storybook/react';
 
 import { Box, DateTimePicker, Heading, Text } from '../src';
 
@@ -7,7 +6,9 @@ import 'react-datetime/css/react-datetime.css';
 
 import notes from './dateTimepicker.md';
 
-const stories = storiesOf('DateTimePicker', module);
+export default {
+  title: 'DateTimePicker'
+};
 
 class DateTimePickerStories extends Component {
   constructor(props) {
@@ -45,6 +46,9 @@ class DateTimePickerStories extends Component {
   }
 }
 
-stories.add('default', () => <DateTimePickerStories />, {
-  notes: { markdown: notes }
-});
+export const Default = () => <DateTimePickerStories />;
+
+Default.story = {
+  name: 'default',
+  parameters: { notes: { markdown: notes } }
+};

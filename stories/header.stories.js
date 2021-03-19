@@ -1,10 +1,7 @@
-import { storiesOf } from '@storybook/react';
 import { select, text } from '@storybook/addon-knobs';
 
 import notes from './header.md';
 import { Button, Grid, Heading, Header } from '../src';
-
-const stories = storiesOf('Header', module);
 
 const headingOptions = {
   h1: 'H1',
@@ -21,25 +18,30 @@ const buttonOptions = {
   2: 2
 };
 
-stories.add(
-  'default',
-  () => {
-    const DynamicHeading = Heading[select('Heading Tag', headingOptions, 'H1')];
-    const buttonCount = select('Button Count', buttonOptions, 2);
+export default {
+  title: 'Header'
+};
 
-    return (
-      <Grid gridGap="large">
-        <section>
-          <Header>
-            <DynamicHeading mb="0">
-              {text('Heading Text', 'Section Header')}
-            </DynamicHeading>
-            {buttonCount > 1 && <Button variant="secondary">Secondary</Button>}
-            {buttonCount > 0 && <Button variant="primary">Primary</Button>}
-          </Header>
-        </section>
-      </Grid>
-    );
-  },
-  { notes: { markdown: notes } }
-);
+export const Default = () => {
+  const DynamicHeading = Heading[select('Heading Tag', headingOptions, 'H1')];
+  const buttonCount = select('Button Count', buttonOptions, 2);
+
+  return (
+    <Grid gridGap="large">
+      <section>
+        <Header>
+          <DynamicHeading mb="0">
+            {text('Heading Text', 'Section Header')}
+          </DynamicHeading>
+          {buttonCount > 1 && <Button variant="secondary">Secondary</Button>}
+          {buttonCount > 0 && <Button variant="primary">Primary</Button>}
+        </Header>
+      </section>
+    </Grid>
+  );
+};
+
+Default.story = {
+  name: 'default',
+  parameters: { notes: { markdown: notes } }
+};
