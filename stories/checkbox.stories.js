@@ -28,10 +28,8 @@ export const Default = () => (
   </Box>
 );
 
-Default.story = {
-  name: 'default',
-  parameters: { notes: { markdown: notes } }
-};
+Default.storyName = 'default';
+Default.parameters = { notes: { markdown: notes } };
 
 export const WithIcon = () => (
   <Box p="larger">
@@ -73,7 +71,5 @@ export const WithIcon = () => (
   </Box>
 );
 
-WithIcon.story = {
-  name: 'with icon',
-  parameters: { notes: { markdown: notes } }
-};
+WithIcon.storyName = 'with icon';
+WithIcon.parameters = { notes: { markdown: notes } };

@@ -155,10 +155,8 @@ export const Default = () => (
   </Box>
 );
 
-Default.story = {
-  name: 'default',
-  parameters: { notes: { markdown: notes } }
-};
+Default.storyName = 'default';
+Default.parameters = { notes: { markdown: notes } };
 
 export const CustomMenuItems = () => (
   <Box as="section" p="regular">
@@ -171,7 +169,5 @@ export const CustomMenuItems = () => (
   </Box>
 );
 
-CustomMenuItems.story = {
-  name: 'custom menu items',
-  parameters: { notes: { markdown: notes } }
-};
+CustomMenuItems.storyName = 'custom menu items';
+CustomMenuItems.parameters = { notes: { markdown: notes } };

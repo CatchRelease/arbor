@@ -48,7 +48,5 @@ class DateTimePickerStories extends Component {
 
 export const Default = () => <DateTimePickerStories />;
 
-Default.story = {
-  name: 'default',
-  parameters: { notes: { markdown: notes } }
-};
+Default.storyName = 'default';
+Default.parameters = { notes: { markdown: notes } };

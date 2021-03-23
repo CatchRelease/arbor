@@ -48,10 +48,8 @@ export const Default = () => (
   </Flex>
 );
 
-Default.story = {
-  name: 'default',
-  parameters: { notes: { markdown: notes } }
-};
+Default.storyName = 'default';
+Default.parameters = { notes: { markdown: notes } };
 
 export const Small = () => (
   <Flex mt="100px" justifyContent="center">
@@ -59,10 +57,8 @@ export const Small = () => (
   </Flex>
 );
 
-Small.story = {
-  name: 'small',
-  parameters: { notes: { markdown: notes } }
-};
+Small.storyName = 'small';
+Small.parameters = { notes: { markdown: notes } };
 
 export const Medium = () => (
   <Flex mt="100px" justifyContent="center">
@@ -70,7 +66,5 @@ export const Medium = () => (
   </Flex>
 );
 
-Medium.story = {
-  name: 'medium',
-  parameters: { notes: { markdown: notes } }
-};
+Medium.storyName = 'medium';
+Medium.parameters = { notes: { markdown: notes } };

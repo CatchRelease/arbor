@@ -34,9 +34,7 @@ export const Banner = () => (
   </Box>
 );
 
-Banner.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Banner.parameters = { notes: { markdown: notes } };
 
 export const Card = () => (
   <Box as="section" p="regular">
@@ -57,9 +55,7 @@ export const Card = () => (
   </Box>
 );
 
-Card.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Card.parameters = { notes: { markdown: notes } };
 
 export const Inline = () => (
   <Box as="section" p="regular">
@@ -77,9 +73,7 @@ export const Inline = () => (
   </Box>
 );
 
-Inline.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Inline.parameters = { notes: { markdown: notes } };
 
 export const Pane = () => (
   <Box as="section" p="regular">
@@ -100,9 +94,7 @@ export const Pane = () => (
   </Box>
 );
 
-Pane.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Pane.parameters = { notes: { markdown: notes } };
 
 export const Toast = () => (
   <Box as="section" p="regular">
@@ -123,6 +115,4 @@ export const Toast = () => (
   </Box>
 );
 
-Toast.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Toast.parameters = { notes: { markdown: notes } };

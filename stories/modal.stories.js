@@ -117,10 +117,8 @@ export const Default = () => (
   </ModalStory>
 );
 
-Default.story = {
-  name: 'default',
-  parameters: { notes: { markdown: notes } }
-};
+Default.storyName = 'default';
+Default.parameters = { notes: { markdown: notes } };
 
 export const ScrollingPage = () => (
   <Box height="3000px">
@@ -135,7 +133,5 @@ export const ScrollingPage = () => (
   </Box>
 );
 
-ScrollingPage.story = {
-  name: 'scrolling page',
-  parameters: { notes: { markdown: notes } }
-};
+ScrollingPage.storyName = 'scrolling page';
+ScrollingPage.parameters = { notes: { markdown: notes } };

@@ -38,9 +38,7 @@ export const Default = () => (
   </Box>
 );
 
-Default.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Default.parameters = { notes: { markdown: notes } };
 
 export const IconEnd = () => (
   <Box as="section" p="regular">
@@ -70,9 +68,7 @@ export const IconEnd = () => (
   </Box>
 );
 
-IconEnd.story = {
-  parameters: { notes: { markdown: notes } }
-};
+IconEnd.parameters = { notes: { markdown: notes } };
 
 export const IconStart = () => (
   <Box as="section" p="regular">
@@ -102,9 +98,7 @@ export const IconStart = () => (
   </Box>
 );
 
-IconStart.story = {
-  parameters: { notes: { markdown: notes } }
-};
+IconStart.parameters = { notes: { markdown: notes } };
 
 export const IconStartIconEnd = () => (
   <Box as="section" p="regular">
@@ -136,7 +130,5 @@ export const IconStartIconEnd = () => (
   </Box>
 );
 
-IconStartIconEnd.story = {
-  name: 'Icon Start & Icon End',
-  parameters: { notes: { markdown: notes } }
-};
+IconStartIconEnd.storyName = 'Icon Start & Icon End';
+IconStartIconEnd.parameters = { notes: { markdown: notes } };
