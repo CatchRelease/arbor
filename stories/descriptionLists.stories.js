@@ -61,6 +61,4 @@ export const Default = () => (
   </Box>
 );
 
-Default.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Default.parameters = { notes: { markdown: notes } };

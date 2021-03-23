@@ -21,10 +21,8 @@ export const GridGap = () => {
   );
 };
 
-GridGap.story = {
-  name: 'grid gap',
-  parameters: { notes: { markdown: notes } }
-};
+GridGap.storyName = 'grid gap';
+GridGap.parameters = { notes: { markdown: notes } };
 
 export const GridRow = () => {
   return (
@@ -42,7 +40,5 @@ export const GridRow = () => {
   );
 };
 
-GridRow.story = {
-  name: 'grid row',
-  parameters: { notes: { markdown: notes } }
-};
+GridRow.storyName = 'grid row';
+GridRow.parameters = { notes: { markdown: notes } };

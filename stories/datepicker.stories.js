@@ -118,7 +118,5 @@ export default {
 
 export const Default = () => <ControlledDatePickers />;
 
-Default.story = {
-  name: 'default',
-  parameters: { notes: { markdown: notes } }
-};
+Default.storyName = 'default';
+Default.parameters = { notes: { markdown: notes } };

@@ -178,10 +178,8 @@ export const Default = () => (
   </div>
 );
 
-Default.story = {
-  name: 'default',
-  parameters: { notes: { markdown: notes } }
-};
+Default.storyName = 'default';
+Default.parameters = { notes: { markdown: notes } };
 
 const variantOptions = ['primary', 'secondary', 'minimal'];
 
@@ -398,7 +396,5 @@ export const IconButton = () => {
   );
 };
 
-IconButton.story = {
-  name: 'Icon button',
-  parameters: { notes: { markdown: notes } }
-};
+IconButton.storyName = 'Icon button';
+IconButton.parameters = { notes: { markdown: notes } };

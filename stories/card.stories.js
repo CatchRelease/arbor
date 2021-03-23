@@ -82,10 +82,8 @@ export const Default = () => (
   </Grid>
 );
 
-Default.story = {
-  name: 'default',
-  parameters: { notes: { markdown: notes } }
-};
+Default.storyName = 'default';
+Default.parameters = { notes: { markdown: notes } };
 
 const exampleCards = [
   {
@@ -203,6 +201,4 @@ export const ShotCardExample = () => (
   </Box>
 );
 
-ShotCardExample.story = {
-  parameters: { notes: { markdown: notes } }
-};
+ShotCardExample.parameters = { notes: { markdown: notes } };

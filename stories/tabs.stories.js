@@ -60,9 +60,7 @@ export const Default = () => (
   </Box>
 );
 
-Default.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Default.parameters = { notes: { markdown: notes } };
 
 export const Controlled = () => {
   const [activeTabId, setActiveTabId] = useState('tab-1');
@@ -117,6 +115,4 @@ export const Controlled = () => {
   );
 };
 
-Controlled.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Controlled.parameters = { notes: { markdown: notes } };

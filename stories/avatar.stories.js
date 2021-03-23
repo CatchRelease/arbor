@@ -64,10 +64,8 @@ export const Default = () => (
   </Flex>
 );
 
-Default.story = {
-  name: 'default',
-  parameters: { notes: { markdown: notes } }
-};
+Default.storyName = 'default';
+Default.parameters = { notes: { markdown: notes } };
 
 export const CustomColor = () => (
   <Flex justifyContent="space-around" mt="100px">
@@ -92,7 +90,5 @@ export const CustomColor = () => (
   </Flex>
 );
 
-CustomColor.story = {
-  name: 'custom color',
-  parameters: { notes: { markdown: notes } }
-};
+CustomColor.storyName = 'custom color';
+CustomColor.parameters = { notes: { markdown: notes } };

@@ -140,10 +140,8 @@ export const Default = () => (
   </Box>
 );
 
-Default.story = {
-  name: 'default',
-  parameters: { notes: { markdown: notes } }
-};
+Default.storyName = 'default';
+Default.parameters = { notes: { markdown: notes } };
 
 export const CustomTrigger = () => (
   <Box as="section" p="regular">
@@ -156,7 +154,5 @@ export const CustomTrigger = () => (
   </Box>
 );
 
-CustomTrigger.story = {
-  name: 'custom trigger',
-  parameters: { notes: { markdown: notes } }
-};
+CustomTrigger.storyName = 'custom trigger';
+CustomTrigger.parameters = { notes: { markdown: notes } };

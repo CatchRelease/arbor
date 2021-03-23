@@ -135,9 +135,7 @@ export const Background = () => (
   />
 );
 
-Background.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Background.parameters = { notes: { markdown: notes } };
 
 export const Border = () => (
   <Swatches
@@ -147,9 +145,7 @@ export const Border = () => (
   />
 );
 
-Border.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Border.parameters = { notes: { markdown: notes } };
 
 export const Icon = () => (
   <Swatches
@@ -159,17 +155,13 @@ export const Icon = () => (
   />
 );
 
-Icon.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Icon.parameters = { notes: { markdown: notes } };
 
 export const Intent = () => (
   <Swatches colorGroup="intent" palette={colors.intent} />
 );
 
-Intent.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Intent.parameters = { notes: { markdown: notes } };
 
 export const Monochrome = () => {
   const { black, white, ...greys } = colors.monochrome;
@@ -177,29 +169,21 @@ export const Monochrome = () => {
   return <Swatches palette={{ black, grey: greys, white }} />;
 };
 
-Monochrome.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Monochrome.parameters = { notes: { markdown: notes } };
 
 export const Palette = () => (
   <Swatches colorGroup="palette" palette={colors.palette} />
 );
 
-Palette.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Palette.parameters = { notes: { markdown: notes } };
 
 export const Primary = () => <Swatches palette={colors.primary} />;
 
-Primary.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Primary.parameters = { notes: { markdown: notes } };
 
 export const Secondary = () => <Swatches palette={colors.secondary} />;
 
-Secondary.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Secondary.parameters = { notes: { markdown: notes } };
 
 export const Text = () => (
   <Swatches
@@ -209,6 +193,4 @@ export const Text = () => (
   />
 );
 
-Text.story = {
-  parameters: { notes: { markdown: notes } }
-};
+Text.parameters = { notes: { markdown: notes } };
