@@ -1,6 +1,5 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { boolean, select } from '@storybook/addon-knobs';
 
 import notes from './buttons.md';
 import intent from '../src/theme/colors/intent';
@@ -23,10 +22,32 @@ const icon = <Icon name="lock" />;
 const icon2 = <Icon name="chevron-down" />;
 
 export default {
-  title: 'Buttons'
+  title: 'Buttons',
+  argTypes: {
+    intent: {
+      control: {
+        type: 'select',
+        options: INTENTS
+      }
+    },
+    paletteColor: {
+      name: 'paletteColor',
+      control: {
+        type: 'select',
+        options: PALETTES
+      }
+    },
+    variant: {
+      name: 'variant',
+      control: {
+        type: 'select',
+        options: ['primary', 'secondary', 'minimal']
+      }
+    }
+  }
 };
 
-export const Default = () => (
+export const Default = (args) => (
   <div style={{ padding: '10px', width: '90%' }}>
     <Heading.H1>Sizes</Heading.H1>
 
@@ -42,55 +63,35 @@ export const Default = () => (
       <div>
         <Heading.H5 as="h2">Small</Heading.H5>
 
-        <Button
-          intent={select('intent', INTENTS, 'brand')}
-          spin={boolean('spin', false)}
-          size="small"
-        >
+        <Button {...args} size="small">
           button label
         </Button>
       </div>
       <div>
         <Heading.H5 as="h2">Medium</Heading.H5>
 
-        <Button
-          intent={select('intent', INTENTS, 'brand')}
-          spin={boolean('spin', false)}
-          size="medium"
-        >
+        <Button {...args} size="medium">
           button label
         </Button>
       </div>
       <div>
         <Heading.H5 as="h2">Large</Heading.H5>
 
-        <Button
-          intent={select('intent', INTENTS, 'brand')}
-          spin={boolean('spin', false)}
-          size="large"
-        >
+        <Button {...args} size="large">
           button label
         </Button>
       </div>
       <div>
         <Heading.H5 as="h2">Jumbo</Heading.H5>
 
-        <Button
-          intent={select('intent', INTENTS, 'brand')}
-          spin={boolean('spin', false)}
-          size="jumbo"
-        >
+        <Button {...args} size="jumbo">
           button label
         </Button>
       </div>
       <div>
         <Heading.H5 as="h2">Responsive Size</Heading.H5>
 
-        <Button
-          intent={select('intent', INTENTS, 'brand')}
-          spin={boolean('spin', false)}
-          size={['small', 'medium', 'large', 'jumbo']}
-        >
+        <Button {...args} size={['small', 'medium', 'large', 'jumbo']}>
           button label
         </Button>
       </div>
@@ -106,90 +107,45 @@ export const Default = () => (
         'repeat(3, 1fr)'
       ]}
     >
-      <Button
-        intent={select('intent', INTENTS, 'brand')}
-        spin={boolean('spin', false)}
-        variant="primary"
-        whiteSpace="nowrap"
-      >
+      <Button {...args} variant="primary" whiteSpace="nowrap">
         primary
       </Button>
-      <Button
-        intent={select('intent', INTENTS, 'brand')}
-        spin={boolean('spin', false)}
-        variant="secondary"
-      >
+      <Button {...args} variant="secondary">
         secondary
       </Button>
-      <Button
-        intent={select('intent', INTENTS, 'brand')}
-        spin={boolean('spin', false)}
-        variant="minimal"
-      >
+      <Button {...args} variant="minimal">
         minimal
       </Button>
 
-      <Button
-        intent={select('intent', INTENTS, 'brand')}
-        spin={boolean('spin', false)}
-        variant="primary"
-        disabled
-      >
+      <Button {...args} variant="primary" disabled>
         primary
       </Button>
-      <Button
-        intent={select('intent', INTENTS, 'brand')}
-        spin={boolean('spin', false)}
-        variant="secondary"
-        disabled
-      >
+      <Button {...args} variant="secondary" disabled>
         secondary
       </Button>
-      <Button
-        intent={select('intent', INTENTS, 'brand')}
-        spin={boolean('spin', false)}
-        variant="minimal"
-        disabled
-      >
+      <Button {...args} variant="minimal" disabled>
         minimal
       </Button>
     </Grid>
 
     <Box width="500px" my="regular">
-      <Button
-        intent={select('intent', INTENTS, 'brand')}
-        spin={boolean('spin', false)}
-        fullWidth
-        variant="primary"
-      >
+      <Button {...args} fullWidth variant="primary">
         full width button
       </Button>
     </Box>
     <Box width="500px" my="regular">
-      <Button
-        intent={select('intent', INTENTS, 'brand')}
-        spin={boolean('spin', false)}
-        fullWidth={[true, true, false]}
-        variant="primary"
-      >
+      <Button {...args} fullWidth={[true, true, false]} variant="primary">
         responsive full width button
       </Button>
     </Box>
   </div>
 );
 
+Default.args = { intent: 'brand', spin: false };
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };
 
-const variantOptions = ['primary', 'secondary', 'minimal'];
-
-export const IconButton = () => {
-  const knobs = {
-    intent: select('intent', INTENTS, 'brand'),
-    spin: boolean('spin', false),
-    variant: select('variant', variantOptions),
-    paletteColor: select('palette color', PALETTES, '')
-  };
+export const IconButton = (args) => {
   return (
     <Box m="regular">
       <Box mb="large">
@@ -214,24 +170,19 @@ export const IconButton = () => {
           <tbody>
             <tr className={css({ marginBottom: '10px' })}>
               <td>
-                <Button iconStart={icon} size="small" {...knobs}>
+                <Button iconStart={icon} size="small" {...args}>
                   button label
                 </Button>
               </td>
 
               <td>
-                <Button size="small" iconEnd={icon2} {...knobs}>
+                <Button size="small" iconEnd={icon2} {...args}>
                   button label
                 </Button>
               </td>
 
               <td>
-                <Button
-                  iconStart={icon}
-                  size="small"
-                  iconEnd={icon2}
-                  {...knobs}
-                >
+                <Button iconStart={icon} size="small" iconEnd={icon2} {...args}>
                   button label
                 </Button>
               </td>
@@ -240,7 +191,7 @@ export const IconButton = () => {
                   iconStart={icon}
                   size="small"
                   aria-label="Edit"
-                  {...knobs}
+                  {...args}
                 />
               </td>
             </tr>
@@ -251,14 +202,14 @@ export const IconButton = () => {
                   iconStart={icon}
                   size="medium"
                   aria-label="Edit"
-                  {...knobs}
+                  {...args}
                 >
                   button label
                 </Button>
               </td>
 
               <td>
-                <Button size="medium" iconEnd={icon2} {...knobs}>
+                <Button size="medium" iconEnd={icon2} {...args}>
                   button label
                 </Button>
               </td>
@@ -268,7 +219,7 @@ export const IconButton = () => {
                   iconStart={icon}
                   size="medium"
                   iconEnd={icon2}
-                  {...knobs}
+                  {...args}
                 >
                   button label
                 </Button>
@@ -279,31 +230,26 @@ export const IconButton = () => {
                   iconStart={icon}
                   size="medium"
                   aria-label="Edit"
-                  {...knobs}
+                  {...args}
                 />
               </td>
             </tr>
 
             <tr className={css({ marginBottom: '10px' })}>
               <td>
-                <Button iconStart={icon} size="large" {...knobs}>
+                <Button iconStart={icon} size="large" {...args}>
                   button label
                 </Button>
               </td>
 
               <td>
-                <Button size="large" iconEnd={icon2} {...knobs}>
+                <Button size="large" iconEnd={icon2} {...args}>
                   button label
                 </Button>
               </td>
 
               <td>
-                <Button
-                  iconStart={icon}
-                  size="large"
-                  iconEnd={icon2}
-                  {...knobs}
-                >
+                <Button iconStart={icon} size="large" iconEnd={icon2} {...args}>
                   button label
                 </Button>
               </td>
@@ -313,31 +259,26 @@ export const IconButton = () => {
                   iconStart={icon}
                   size="large"
                   aria-label="Edit"
-                  {...knobs}
+                  {...args}
                 />
               </td>
             </tr>
 
             <tr className={css({ marginBottom: '10px' })}>
               <td>
-                <Button iconStart={icon} size="jumbo" {...knobs}>
+                <Button iconStart={icon} size="jumbo" {...args}>
                   button label
                 </Button>
               </td>
 
               <td>
-                <Button size="jumbo" iconEnd={icon2} {...knobs}>
+                <Button size="jumbo" iconEnd={icon2} {...args}>
                   button label
                 </Button>
               </td>
 
               <td>
-                <Button
-                  iconStart={icon}
-                  size="jumbo"
-                  iconEnd={icon2}
-                  {...knobs}
-                >
+                <Button iconStart={icon} size="jumbo" iconEnd={icon2} {...args}>
                   button label
                 </Button>
               </td>
@@ -347,7 +288,7 @@ export const IconButton = () => {
                   iconStart={icon}
                   size="jumbo"
                   aria-label="Edit"
-                  {...knobs}
+                  {...args}
                 />
               </td>
             </tr>
@@ -359,13 +300,13 @@ export const IconButton = () => {
         <Heading.H2>Full Width</Heading.H2>
 
         <Box mb="regular">
-          <Button iconStart={icon} fullWidth size="jumbo" {...knobs}>
+          <Button iconStart={icon} fullWidth size="jumbo" {...args}>
             button label
           </Button>
         </Box>
 
         <Box mb="regular">
-          <Button fullWidth iconEnd={icon2} size="jumbo" {...knobs}>
+          <Button fullWidth iconEnd={icon2} size="jumbo" {...args}>
             button label
           </Button>
         </Box>
@@ -376,7 +317,7 @@ export const IconButton = () => {
             iconEnd={icon2}
             iconStart={icon}
             size="jumbo"
-            {...knobs}
+            {...args}
           >
             button label
           </Button>
@@ -388,7 +329,7 @@ export const IconButton = () => {
             fullWidth
             iconStart={icon}
             size="jumbo"
-            {...knobs}
+            {...args}
           />
         </Box>
       </Box>
@@ -396,5 +337,6 @@ export const IconButton = () => {
   );
 };
 
+IconButton.args = { intent: 'brand', spin: false, paletteColor: '' };
 IconButton.storyName = 'Icon button';
 IconButton.parameters = { notes: { markdown: notes } };

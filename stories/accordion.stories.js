@@ -1,7 +1,6 @@
 import { css } from '@emotion/react';
 
 import { forceReRender } from '@storybook/react';
-import { boolean, select } from '@storybook/addon-knobs';
 
 import notes from './accordion.md';
 import {
@@ -43,17 +42,31 @@ const doAlert = (msg) => window.alert(msg); // eslint-disable-line no-alert, no-
 const variantOptions = ['default', 'minimal'];
 
 export default {
-  title: 'Accordion'
+  title: 'Accordion',
+  argTypes: {
+    size: {
+      control: {
+        type: 'select',
+        options: buttonOptions
+      }
+    },
+    variant: {
+      control: {
+        type: 'select',
+        options: variantOptions
+      }
+    }
+  }
 };
 
-export const Default = () => {
-  const sizeSelect = select('Size', buttonOptions, defaultButtonSize);
+export const Default = (args) => {
+  const { size, variant } = args;
 
   const noteWithButtons = (
     <Box my="smallest">
       <Button
         variant="minimal"
-        size={sizeSelect}
+        size={size}
         iconStart={annotationIcon}
         onClick={(e) => {
           doAlert('message');
@@ -64,7 +77,7 @@ export const Default = () => {
       </Button>
       <Button
         variant="minimal"
-        size={sizeSelect}
+        size={size}
         iconStart={trashIcon}
         aria-label="Delete"
         onClick={(e) => {
@@ -79,7 +92,7 @@ export const Default = () => {
     <Box my="smallest">
       <Button
         variant="secondary"
-        size={sizeSelect}
+        size={size}
         onClick={(e) => {
           doAlert('secondary');
           e.stopPropagation();
@@ -89,7 +102,7 @@ export const Default = () => {
       </Button>
       <Button
         variant="primary"
-        size={sizeSelect}
+        size={size}
         onClick={(e) => {
           doAlert('primary');
           e.stopPropagation();
@@ -104,7 +117,7 @@ export const Default = () => {
     <Box my="smallest">
       <Button
         variant="minimal"
-        size={sizeSelect}
+        size={size}
         onClick={(e) => {
           doAlert('minimal');
           e.stopPropagation();
@@ -114,7 +127,7 @@ export const Default = () => {
       </Button>
       <Button
         variant="secondary"
-        size={sizeSelect}
+        size={size}
         onClick={(e) => {
           doAlert('secondary');
           e.stopPropagation();
@@ -141,10 +154,10 @@ export const Default = () => {
             <AccordionSection
               header={<Box my="small">Header 1: Controlled</Box>}
               headerNote={note}
-              isOpen={boolean('isOpen', isOpen)}
+              isOpen={args.isOpen}
               onHeaderClick={onHeaderClick}
               panelId="header-1-controlled"
-              variant={select('Variant', variantOptions)}
+              variant={variant}
             >
               <Box p="regular">
                 <Text mb="regular">
@@ -165,7 +178,7 @@ export const Default = () => {
               header={<Box my="small">Header 2: Uncontrolled </Box>}
               headerNote={note}
               panelId="header-2-uncontrolled"
-              variant={select('Variant', variantOptions)}
+              variant={variant}
             >
               <Box p="regular">
                 <Text mb="regular">
@@ -187,7 +200,7 @@ export const Default = () => {
                 <Box my="small">Header 3: Multiple Sections of Content</Box>
               }
               panelId="header-3-uncontrolled"
-              variant={select('Variant', variantOptions)}
+              variant={variant}
             >
               <Box p="regular">
                 <Heading.H2>Section 1</Heading.H2>
@@ -259,7 +272,7 @@ export const Default = () => {
               header={<Box my="small">Header with minimal buttons</Box>}
               headerNote={noteWithButtons}
               panelId="minimal-button-notes-panel-1"
-              variant={select('Variant', variantOptions)}
+              variant={variant}
             >
               <Box p="regular">
                 <Text>
@@ -285,7 +298,7 @@ export const Default = () => {
               header={<Box my="small">Header with primary buttons</Box>}
               headerNote={noteWithPrimaryButtons}
               panelId="primary-buttons-panel-1"
-              variant={select('Variant', variantOptions)}
+              variant={variant}
             >
               <Box p="regular">
                 <Text>
@@ -311,7 +324,7 @@ export const Default = () => {
               header={<Box my="small">Header with secondary buttons</Box>}
               headerNote={noteWithSecondaryButtons}
               panelId="secondary-buttons-panel-1"
-              variant={select('Variant', variantOptions)}
+              variant={variant}
             >
               <Box p="regular">
                 <Text>
@@ -331,5 +344,6 @@ export const Default = () => {
   );
 };
 
+Default.args = { isOpen, size: defaultButtonSize, variant: variantOptions[0] };
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };

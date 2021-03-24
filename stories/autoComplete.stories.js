@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import { boolean, select } from '@storybook/addon-knobs';
 
 import { styledAutoCompleteComponents } from '../src/AutoComplete';
 import notes from './autoComplete.md';
@@ -89,17 +88,15 @@ class AutoCompleteExample extends Component {
 
   render() {
     const { selectedOption } = this.state;
+    const { isMulti } = this.props;
+
+    const caption = `Select one ${isMulti ? 'or more values' : 'value'}`;
 
     return (
       <Box mb="larger">
         <AutoComplete
           {...{
-            caption: `Select one ${
-              boolean('isMulti', true) ? 'or more values' : 'value'
-            }`,
-            hideDropdownIndicator: boolean('hideDropdownIndicator', false),
-            isMulti: boolean('isMulti', true),
-            isDisabled: boolean('isDisabled', false),
+            caption,
             onChange: this.handleChange,
             value: selectedOption,
             ...this.additionalProps,
@@ -112,6 +109,7 @@ class AutoCompleteExample extends Component {
 }
 
 AutoCompleteExample.propTypes = {
+  isMulti: PropTypes.bool.isRequired,
   options: PropTypes.arrayOf(PropTypes.object).isRequired,
   variant: PropTypes.string
 };
@@ -121,10 +119,18 @@ AutoCompleteExample.defaultProps = {
 };
 
 export default {
-  title: 'AutoComplete'
+  title: 'AutoComplete',
+  argTypes: {
+    variant: {
+      control: {
+        type: 'select',
+        options: variantOptions
+      }
+    }
+  }
 };
 
-export const Default = () => (
+export const Default = (args) => (
   <Box as="section" p="regular">
     <Heading.H1>AutoComplete</Heading.H1>
 
@@ -132,7 +138,7 @@ export const Default = () => (
       id="auto-complete-1"
       label="AutoComplete with unstyled badges"
       options={neutralOptions}
-      variant={select('Variant', variantOptions, 'default')}
+      {...args}
     />
 
     <AutoCompleteExample
@@ -142,21 +148,21 @@ export const Default = () => (
         ...option,
         variant: 'default'
       }))}
-      variant={select('Variant', variantOptions, 'default')}
+      {...args}
     />
 
     <AutoCompleteExample
       id="auto-complete-3"
       label="AutoComplete with color badges"
       options={colorOptions}
-      variant={select('Variant', variantOptions, 'default')}
+      {...args}
     />
 
     <AutoCompleteExample
       id="auto-complete-4"
       label="AutoComplete with subtle color badges"
       options={colorOptions.map((option) => ({ ...option, subtle: true }))}
-      variant={select('Variant', variantOptions, 'default')}
+      {...args}
     />
 
     <AutoCompleteExample
@@ -167,14 +173,14 @@ export const Default = () => (
         subtle: true,
         variant: 'default'
       }))}
-      variant={select('Variant', variantOptions, 'default')}
+      {...args}
     />
 
     <AutoCompleteExample
       id="auto-complete-6"
       label="AutoComplete with custom neutral badges"
       options={neutralOptions}
-      variant={select('Variant', variantOptions, 'default')}
+      {...args}
       components={{
         MultiValue: NeutralMultiValue
       }}
@@ -184,7 +190,7 @@ export const Default = () => (
       id="auto-complete-7"
       label="AutoComplete with read-only badges"
       options={neutralOptions}
-      variant={select('Variant', variantOptions, 'default')}
+      {...args}
       components={{
         MultiValue: ReadOnlyMultiValue
       }}
@@ -194,7 +200,7 @@ export const Default = () => (
       id="auto-complete-8"
       label="AutoComplete with pill-shaped badges"
       options={neutralOptions}
-      variant={select('Variant', variantOptions, 'default')}
+      {...args}
       components={{
         MultiValue: PillMultiValue
       }}
@@ -202,5 +208,11 @@ export const Default = () => (
   </Box>
 );
 
+Default.args = {
+  hideDropdownIndicator: false,
+  isDisabled: false,
+  isMulti: true,
+  variant: 'default'
+};
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };

@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { DateUtils } from 'react-day-picker';
-import { date } from '@storybook/addon-knobs';
+import PropTypes from 'prop-types';
 
 import 'react-day-picker/lib/style.css';
 
@@ -44,16 +44,15 @@ class ControlledDatePickers extends Component {
       caption: `Day: ${
         selectedDay ? selectedDay.toLocaleDateString() : 'Not Chosen'
       }`,
-      id: 'sotires-datepicker-input',
       label: 'Choose a Date'
     };
 
+    const { disableDaysBefore: before, disableDaysAfter: after } = this.props;
+    const disabledDays = { before, after };
+
     const SimpleDatePicker = () => (
       <DatePicker
-        disabledDays={{
-          before: new Date(date('Disable Days Before', defaultBefore)),
-          after: new Date(date('Disable Days After', defaultAfter))
-        }}
+        disabledDays={disabledDays}
         onDayClick={this.onDayClick}
         selectedDays={selectedDay}
       />
@@ -69,13 +68,8 @@ class ControlledDatePickers extends Component {
         <Box>
           <Heading.H1 mb="large">DatePickerInput</Heading.H1>
           <DatePickerInput
-            dayPickerProps={{
-              disabledDays: {
-                before: new Date(date('Disable Days Before', defaultBefore)),
-                after: new Date(date('Disable Days After', defaultAfter))
-              }
-            }}
-            inputProps={inputProps}
+            dayPickerProps={{ disabledDays }}
+            inputProps={{ ...inputProps, id: 'stories-datepicker-input-1' }}
             onDayChange={this.onDayChange}
             value={selectedDay}
           />
@@ -86,7 +80,7 @@ class ControlledDatePickers extends Component {
             DatePickerInput with Sibling (z-index check)
           </Heading.H1>
           <DatePickerInput
-            inputProps={inputProps}
+            inputProps={{ ...inputProps, id: 'stories-datepicker-input-2' }}
             onDayChange={this.onDayChange}
             value={selectedDay}
           />
@@ -112,11 +106,32 @@ class ControlledDatePickers extends Component {
   }
 }
 
-export default {
-  title: 'DatePicker'
+ControlledDatePickers.propTypes = {
+  disableDaysBefore: PropTypes.instanceOf(Date).isRequired,
+  disableDaysAfter: PropTypes.instanceOf(Date).isRequired
 };
 
-export const Default = () => <ControlledDatePickers />;
+export default {
+  title: 'DatePicker',
+  argTypes: {
+    disableDaysBefore: {
+      control: {
+        type: 'date'
+      }
+    },
+    disableDaysAfter: {
+      control: {
+        type: 'date'
+      }
+    }
+  }
+};
 
+export const Default = (args) => <ControlledDatePickers {...args} />;
+
+Default.args = {
+  disableDaysBefore: defaultBefore,
+  disableDaysAfter: defaultAfter
+};
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };

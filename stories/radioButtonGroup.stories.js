@@ -1,4 +1,3 @@
-import { boolean } from '@storybook/addon-knobs';
 import notes from './radioButtonGroup.md';
 import { Box, Flex, RadioButtonGroup } from '../src';
 
@@ -27,16 +26,21 @@ const groupOptions = [
 ];
 
 export default {
-  title: 'RadioButtonGroup'
+  title: 'RadioButtonGroup',
+  argTypes: {
+    disabled: {
+      name: 'disabled (group level)'
+    }
+  }
 };
 
-export const Default = () => (
+export const Default = (args) => (
   <Box p="larger">
     <RadioButtonGroup
       options={groupOptions}
       name="grouped"
       onChange={onChange}
-      disabled={boolean('Disabled (Group level)', false)}
+      {...args}
     />
 
     <Flex flexDirection="row">
@@ -44,12 +48,13 @@ export const Default = () => (
         options={groupOptions}
         name="grouped-across"
         onChange={onChange}
-        disabled={boolean('Disabled (Group level)', false)}
+        {...args}
         buttonProps={{ mr: 'small' }}
       />
     </Flex>
   </Box>
 );
 
+Default.args = { disabled: false };
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };

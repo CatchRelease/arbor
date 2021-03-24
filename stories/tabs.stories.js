@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { boolean } from '@storybook/addon-knobs';
 
 import notes from './tabs.md';
 import { Box, Heading, Icon, Tab, Tabs } from '../src';
@@ -22,11 +21,11 @@ export default {
   title: 'Tabs'
 };
 
-export const Default = () => (
+export const Default = (args) => (
   <Box as="section" p="regular">
     <Heading.H1>Tabs</Heading.H1>
 
-    <Tabs defaultTabId="tab-2" tabBarAside={boolean('aside', false) && aside}>
+    <Tabs defaultTabId="tab-2" tabBarAside={args.aside && aside}>
       {null /* see if we can handle null */}
       <Tab id="tab-1" title="Tab 1">
         <Box bg="palette.blue.lighter" p="largest">
@@ -60,6 +59,7 @@ export const Default = () => (
   </Box>
 );
 
+Default.args = { aside: false };
 Default.parameters = { notes: { markdown: notes } };
 
 export const Controlled = () => {
