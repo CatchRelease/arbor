@@ -60,7 +60,6 @@
     "@emotion/snapshot-serializer": "^0.8.2",
     "@storybook/addon-a11y": "^6.1.21",
     "@storybook/addon-essentials": "^6.1.21",
-    "@storybook/addon-knobs": "^6.1.21",
     "@storybook/addon-links": "^6.1.21",
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/addons": "^6.1.21",
