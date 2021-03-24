@@ -1,5 +1,3 @@
-import { select } from '@storybook/addon-knobs';
-
 import notes from './icons.md';
 import { Box, Grid, Icon, Text } from '../src';
 
@@ -40,10 +38,18 @@ const rotationOptions = {
 };
 
 export default {
-  title: 'Icons'
+  title: 'Icons',
+  argTypes: {
+    rotation: {
+      control: {
+        type: 'select',
+        options: rotationOptions
+      }
+    }
+  }
 };
 
-export const Default = () => (
+export const Default = (args) => (
   <Grid
     gridTemplateColumns={`repeat(${AVAILABLE_ICONS.length}, 1fr)`}
     gridGap="large"
@@ -54,17 +60,13 @@ export const Default = () => (
   >
     {AVAILABLE_ICONS.map((icon) => (
       <Box key={icon} textAlign="center">
-        <Icon
-          name={icon}
-          color="grey100"
-          fontSize="38px"
-          rotation={select('Rotation', rotationOptions, null)}
-        />
+        <Icon name={icon} color="grey100" fontSize="38px" {...args} />
         <Text variant="tiny">{icon}</Text>
       </Box>
     ))}
   </Grid>
 );
 
+Default.args = { rotation: null };
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };

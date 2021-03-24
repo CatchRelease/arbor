@@ -1,7 +1,6 @@
 import random from 'lodash/random';
 import shuffle from 'lodash/shuffle';
 import { readableColor } from 'polished';
-import { text } from '@storybook/addon-knobs';
 
 import notes from './masonry.md';
 import { colors, Box, Flex, Masonry, Text } from '../src';
@@ -16,17 +15,9 @@ export default {
   title: 'Masonry'
 };
 
-export const Default = () => (
+export const Default = (args) => (
   <Box height="100%" p="regular" width="100%">
-    <Masonry
-      columnCount={text('Column Count', '5')}
-      columnGap={text('Column Gap', 'regular')}
-      columnRuleColor={text('Column Rule Color', '')}
-      columnRuleStyle={text('Column Rule Style', '')}
-      columnRuleWidth={text('Column Rule Width', '')}
-      columnWidth={text('Column Width', '300px')}
-      rowGap={text('Row Gap', 'regular')}
-    >
+    <Masonry {...args}>
       {boxColors.map((color, key) => (
         <Flex
           alignItems="center"
@@ -44,5 +35,14 @@ export const Default = () => (
   </Box>
 );
 
+Default.args = {
+  columnCount: '5',
+  columnGap: 'regular',
+  columnRuleColor: '',
+  columnRuleStyle: '',
+  columnRuleWidth: '',
+  columnWidth: '300px',
+  rowGap: 'regular'
+};
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };

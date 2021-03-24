@@ -1,5 +1,3 @@
-import { boolean, number, text } from '@storybook/addon-knobs';
-
 import notes from './spinners.md';
 import { Box, Heading, Spinner } from '../src';
 
@@ -7,22 +5,22 @@ export default {
   title: 'Spinners'
 };
 
-export const Default = () => (
+export const Default = (args) => (
   <Box as="section" p="regular">
     <Heading.H1>Spinners</Heading.H1>
 
-    <Spinner
-      color={text('color', 'monochrome.black')}
-      left={text('left', '50%')}
-      opacity={number('opacity', 0.25)}
-      position={text('position', 'absolute')}
-      top={text('top', '50%')}
-      diameter={['20px', '40px', '80px', '100px']}
-      spin={boolean('spin', true)}
-    >
+    <Spinner {...args} diameter={['20px', '40px', '80px', '100px']}>
       I Loaded!
     </Spinner>
   </Box>
 );
 
+Default.args = {
+  color: 'monochrome.black',
+  left: '50%',
+  opacity: 0.25,
+  position: 'absolute',
+  spin: true,
+  top: '50%'
+};
 Default.parameters = { notes: { markdown: notes } };

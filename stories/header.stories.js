@@ -1,5 +1,3 @@
-import { select, text } from '@storybook/addon-knobs';
-
 import notes from './header.md';
 import { Button, Grid, Heading, Header } from '../src';
 
@@ -19,20 +17,33 @@ const buttonOptions = {
 };
 
 export default {
-  title: 'Header'
+  title: 'Header',
+  argTypes: {
+    buttonCount: {
+      control: {
+        type: 'select',
+        options: buttonOptions
+      }
+    },
+    headingTag: {
+      control: {
+        type: 'select',
+        options: headingOptions
+      }
+    }
+  }
 };
 
-export const Default = () => {
-  const DynamicHeading = Heading[select('Heading Tag', headingOptions, 'H1')];
-  const buttonCount = select('Button Count', buttonOptions, 2);
+export const Default = (args) => {
+  const { buttonCount, headingTag, headingText } = args;
+
+  const DynamicHeading = Heading[headingTag];
 
   return (
     <Grid gridGap="large">
       <section>
         <Header>
-          <DynamicHeading mb="0">
-            {text('Heading Text', 'Section Header')}
-          </DynamicHeading>
+          <DynamicHeading mb="0">{headingText}</DynamicHeading>
           {buttonCount > 1 && <Button variant="secondary">Secondary</Button>}
           {buttonCount > 0 && <Button variant="primary">Primary</Button>}
         </Header>
@@ -41,5 +52,10 @@ export const Default = () => {
   );
 };
 
+Default.args = {
+  buttonCount: 2,
+  headingTag: 'H1',
+  headingText: 'Section Header'
+};
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };

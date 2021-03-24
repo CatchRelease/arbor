@@ -1,4 +1,3 @@
-import { number, select, boolean } from '@storybook/addon-knobs';
 import notes from './progressBar.md';
 import { Box, ProgressBar } from '../src';
 
@@ -11,22 +10,26 @@ const AVAILABLE_ICONS = {
 };
 
 export default {
-  title: 'ProgressBar'
+  title: 'ProgressBar',
+  argTypes: {
+    iconEndName: {
+      control: {
+        type: 'select',
+        options: AVAILABLE_ICONS
+      }
+    }
+  }
 };
 
-export const Default = () => (
+export const Default = (args) => (
   <Box m="regular" id="skip" maxWidth="750px">
     <ProgressBar percentage={96} />
     <ProgressBar percentage={66.67} iconEndName="lock" />
     <ProgressBar mt="large" width="50%" percentage={25} showPercentage />
-    <ProgressBar
-      mt="large"
-      percentage={number('percentage', 33)}
-      showPercentage={boolean('showPercentage', false)}
-      iconEndName={select('iconEndName', AVAILABLE_ICONS, null)}
-    />
+    <ProgressBar mt="large" {...args} />
   </Box>
 );
 
+Default.args = { percentage: 33, showPercentage: false, iconEndName: null };
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };

@@ -1,5 +1,3 @@
-import { boolean } from '@storybook/addon-knobs';
-
 import notes from './descriptionLists.md';
 import {
   Box,
@@ -13,11 +11,11 @@ export default {
   title: 'Description Lists'
 };
 
-export const Default = () => (
+export const Default = (args) => (
   <Box as="section" p="regular">
     <Heading.H1>Description Lists</Heading.H1>
 
-    <DescriptionList inline={boolean('Inline', false)}>
+    <DescriptionList {...args}>
       <DescriptionTerm>Batman</DescriptionTerm>
       <DescriptionDetails>
         Batman is a fictional superhero appearing in American comic books
@@ -61,4 +59,5 @@ export const Default = () => (
   </Box>
 );
 
+Default.args = { inline: false };
 Default.parameters = { notes: { markdown: notes } };

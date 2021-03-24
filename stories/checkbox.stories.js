@@ -1,5 +1,3 @@
-import { text } from '@storybook/addon-knobs';
-
 import notes from './checkbox.md';
 import { Box, Checkbox } from '../src';
 
@@ -31,38 +29,21 @@ export const Default = () => (
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };
 
-export const WithIcon = () => (
+export const WithIcon = (args) => (
   <Box p="larger">
-    <Checkbox icon={text('Icon name', 'download')} label="Checkbox default" />
+    <Checkbox {...args} label="Checkbox default" />
+    <Checkbox {...args} checked label="Checkbox checked" />
+    <Checkbox {...args} disabled label="Checkbox disabled" />
+    <Checkbox {...args} disabled checked label="Checkbox checked disabled" />
+    <Checkbox {...args} indeterminate label="Checkbox indeterminate" />
     <Checkbox
-      icon={text('Icon name', 'download')}
-      checked
-      label="Checkbox checked"
-    />
-    <Checkbox
-      icon={text('Icon name', 'download')}
-      disabled
-      label="Checkbox disabled"
-    />
-    <Checkbox
-      icon={text('Icon name', 'download')}
-      disabled
-      checked
-      label="Checkbox checked disabled"
-    />
-    <Checkbox
-      icon={text('Icon name', 'download')}
-      indeterminate
-      label="Checkbox indeterminate"
-    />
-    <Checkbox
-      icon={text('Icon name', 'download')}
+      {...args}
       checked
       indeterminate
       label="Checkbox checked indeterminate"
     />
     <Checkbox
-      icon={text('Icon name', 'download')}
+      {...args}
       checked
       indeterminate
       disabled
@@ -71,5 +52,6 @@ export const WithIcon = () => (
   </Box>
 );
 
+WithIcon.args = { icon: 'download' };
 WithIcon.storyName = 'with icon';
 WithIcon.parameters = { notes: { markdown: notes } };

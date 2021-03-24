@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactModal from 'react-modal';
-import { number, text } from '@storybook/addon-knobs';
 
 import notes from './modal.md';
 import { Box, Button, Card, Grid, Heading, Icon, Modal } from '../src';
@@ -106,32 +105,28 @@ export default {
   title: 'Modal'
 };
 
-export const Default = () => (
-  <ModalStory
-    p="large"
-    numberOfLines={number('Lines of Content', 100)}
-    height={text('Height', 'calc(100% - 40px)')}
-    width={text('Modal Width', '500px')}
-  >
+export const Default = (args) => (
+  <ModalStory p="large" {...args}>
     Foo
   </ModalStory>
 );
 
+Default.args = {
+  height: 'calc(100% - 40px)',
+  numberOfLines: 100,
+  width: '500px'
+};
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };
 
-export const ScrollingPage = () => (
+export const ScrollingPage = (args) => (
   <Box height="3000px">
-    <ModalStory
-      p="large"
-      numberOfLines={number('Lines of Content', 100)}
-      height={text('Height', '300px')}
-      width={text('Modal Width', '500px')}
-    >
+    <ModalStory p="large" {...args}>
       Bar
     </ModalStory>
   </Box>
 );
 
+ScrollingPage.args = { height: '300px', numberOfLines: 100, width: '500px' };
 ScrollingPage.storyName = 'scrolling page';
 ScrollingPage.parameters = { notes: { markdown: notes } };
