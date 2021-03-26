@@ -1,5 +1,3 @@
-# RadioButtonGroup
-
 RadioButtonGroup is intended to handle the statefulness of groups of radio buttons,
 so that the buttons themselves only need to worry about rendering the props passed to them.
 

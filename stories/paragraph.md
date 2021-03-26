@@ -1,3 +1,1 @@
-# TODO -- Paragraph
-
-Add some information on how this component should be used.
+TODO -- Add some information on how this component should be used.
