@@ -1,17 +1,10 @@
 const path = require('path');
 
+const toPath = (relativePath) => path.join(process.cwd(), relativePath);
+
 module.exports = {
   stories: ['../stories/**/*.stories.js'],
-  addons: [
-    {
-      name: '@storybook/addon-essentials',
-      options: {
-        docs: false
-      }
-    },
-    '@storybook/addon-a11y',
-    '@storybook/addon-notes'
-  ],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-a11y'],
   babel: (config) => {
     const getEntryIndexByName = (type, name) => {
       return config[type].findIndex((entry) => {
@@ -40,10 +33,9 @@ module.exports = {
         ...config.resolve,
         alias: {
           ...config.alias,
-          '@emotion/styled': path.join(
-            process.cwd(),
-            'node_modules/@emotion/styled'
-          )
+          '@emotion/core': toPath('node_modules/@emotion/react'),
+          '@emotion/styled': toPath('node_modules/@emotion/styled'),
+          'emotion-theming': toPath('node_modules/@emotion/react')
         }
       }
     };
