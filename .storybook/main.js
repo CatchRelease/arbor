@@ -5,6 +5,9 @@ const toPath = (relativePath) => path.join(process.cwd(), relativePath);
 module.exports = {
   stories: ['../stories/**/*.stories.js'],
   addons: ['@storybook/addon-essentials', '@storybook/addon-a11y'],
+  features: {
+    postcss: false
+  },
   babel: (config) => {
     const getEntryIndexByName = (type, name) => {
       return config[type].findIndex((entry) => {

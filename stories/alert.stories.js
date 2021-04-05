@@ -10,23 +10,21 @@ import {
 } from '../src';
 import INTENTS from '../src/Alert/intents';
 
-const ON_CLOSE_OPTIONS = [null, () => alert('Close Me!')]; // eslint-disable-line no-alert, no-undef
-
 export default {
   title: 'Alerts',
   argTypes: {
     intent: {
       name: 'intent',
+      options: INTENTS,
       control: {
-        type: 'select',
-        options: INTENTS
+        type: 'select'
       }
     },
     onClose: {
       name: 'onClose',
+      options: [null, () => alert('Close Me!')], // eslint-disable-line no-alert, no-undef
       control: {
-        type: 'select',
-        options: ON_CLOSE_OPTIONS
+        type: 'select'
       }
     }
   }

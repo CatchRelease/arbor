@@ -7,9 +7,9 @@ export default {
   title: 'Avatar',
   argTypes: {
     size: {
+      options: sizes,
       control: {
-        type: 'select',
-        options: sizes
+        type: 'select'
       }
     }
   }

@@ -11,9 +11,9 @@ export default {
   argTypes: {
     variant: {
       name: 'variant',
+      options: variantOptions,
       control: {
-        type: 'select',
-        options: variantOptions
+        type: 'select'
       }
     }
   }
