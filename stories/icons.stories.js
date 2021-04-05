@@ -30,20 +30,16 @@ const AVAILABLE_ICONS = [
   'youtube'
 ];
 
-const rotationOptions = {
-  None: null,
-  90: '90',
-  180: '180',
-  270: '270'
-};
-
 export default {
   title: 'Icons',
   argTypes: {
     rotation: {
+      options: [null, '90', '180', '270'],
       control: {
         type: 'select',
-        options: rotationOptions
+        labels: {
+          null: 'None'
+        }
       }
     }
   }

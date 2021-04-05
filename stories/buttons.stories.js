@@ -25,23 +25,23 @@ export default {
   title: 'Buttons',
   argTypes: {
     intent: {
+      options: INTENTS,
       control: {
-        type: 'select',
-        options: INTENTS
+        type: 'select'
       }
     },
     paletteColor: {
       name: 'paletteColor',
+      options: PALETTES,
       control: {
-        type: 'select',
-        options: PALETTES
+        type: 'select'
       }
     },
     variant: {
       name: 'variant',
+      options: ['primary', 'secondary', 'minimal'],
       control: {
-        type: 'select',
-        options: ['primary', 'secondary', 'minimal']
+        type: 'select'
       }
     }
   }

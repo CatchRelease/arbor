@@ -122,9 +122,9 @@ export default {
   title: 'AutoComplete',
   argTypes: {
     variant: {
+      options: variantOptions,
       control: {
-        type: 'select',
-        options: variantOptions
+        type: 'select'
       }
     }
   }

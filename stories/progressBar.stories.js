@@ -1,21 +1,16 @@
 import notes from './progressBar.md';
 import { Box, ProgressBar } from '../src';
 
-const AVAILABLE_ICONS = {
-  '<disabled>': null,
-  annotation: 'annotation',
-  calendar: 'calendar',
-  'checkmark-in-circle': 'checkmark-in-circle',
-  error: 'error'
-};
-
 export default {
   title: 'ProgressBar',
   argTypes: {
     iconEndName: {
+      options: [null, 'annotation', 'calendar', 'checkmark-in-circle', 'error'],
       control: {
         type: 'select',
-        options: AVAILABLE_ICONS
+        labels: {
+          null: '<disabled>'
+        }
       }
     }
   }

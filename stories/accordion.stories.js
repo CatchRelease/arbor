@@ -13,6 +13,8 @@ import {
   Icon,
   Text
 } from '../src';
+import VARIANTS from '../src/AccordionSection/variants';
+import SIZES from '../src/Button/sizes';
 
 let isOpen = false;
 const onHeaderClick = () => {
@@ -20,13 +22,8 @@ const onHeaderClick = () => {
   forceReRender();
 };
 
-const buttonOptions = {
-  Small: 'small',
-  Medium: 'medium',
-  Large: 'large',
-  Jumbo: 'jumbo'
-};
-const defaultButtonSize = 'small';
+const sizeOptions = SIZES.slice().reverse();
+const defaultButtonSize = sizeOptions[0];
 
 const trashIcon = <Icon name="trash" />;
 const annotationIcon = <Icon name="annotation" />;
@@ -39,21 +36,19 @@ AccordionContainer.defaultProps = {
 
 const doAlert = (msg) => window.alert(msg); // eslint-disable-line no-alert, no-undef
 
-const variantOptions = ['default', 'minimal'];
-
 export default {
   title: 'Accordion',
   argTypes: {
     size: {
+      options: sizeOptions,
       control: {
-        type: 'select',
-        options: buttonOptions
+        type: 'select'
       }
     },
     variant: {
+      options: VARIANTS,
       control: {
-        type: 'select',
-        options: variantOptions
+        type: 'select'
       }
     }
   }
@@ -345,6 +340,6 @@ export const Default = (args) => {
   );
 };
 
-Default.args = { isOpen, size: defaultButtonSize, variant: variantOptions[0] };
+Default.args = { isOpen, size: defaultButtonSize, variant: VARIANTS[0] };
 Default.storyName = 'default';
 Default.parameters = { notes: { markdown: notes } };
