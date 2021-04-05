@@ -25,6 +25,7 @@ export const Default = (args) => (
   <Box as="section" p="regular">
     <Heading.H1>Tabs</Heading.H1>
 
+    {/* eslint-disable-next-line react/destructuring-assignment */}
     <Tabs defaultTabId="tab-2" tabBarAside={args.aside && aside}>
       {null /* see if we can handle null */}
       <Tab id="tab-1" title="Tab 1">

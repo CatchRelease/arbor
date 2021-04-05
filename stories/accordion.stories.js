@@ -154,6 +154,7 @@ export const Default = (args) => {
             <AccordionSection
               header={<Box my="small">Header 1: Controlled</Box>}
               headerNote={note}
+              // eslint-disable-next-line react/destructuring-assignment
               isOpen={args.isOpen}
               onHeaderClick={onHeaderClick}
               panelId="header-1-controlled"
