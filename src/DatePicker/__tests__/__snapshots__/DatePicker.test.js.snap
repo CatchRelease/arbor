@@ -278,6 +278,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
         role="grid"
       >
         <div
+          aria-live="polite"
           className="DayPicker-Caption"
           role="heading"
         >
