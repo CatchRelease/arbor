@@ -110,7 +110,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  bg: '',
+  bg: null,
   children: undefined,
   disabled: false,
   fullWidth: false,
