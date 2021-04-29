@@ -1,5 +1,6 @@
 import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
+import { propType } from '@styled-system/prop-types';
 
 import ButtonContent from './ButtonContent';
 import ButtonSpinner from './ButtonSpinner';
@@ -40,6 +41,8 @@ const Button = forwardRef(
 );
 
 Button.propTypes = {
+  bg: propType,
+
   /**
    * Content to render inside the button.
    */
@@ -107,6 +110,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  bg: null,
   children: undefined,
   disabled: false,
   fullWidth: false,

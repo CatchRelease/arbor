@@ -138,6 +138,30 @@ export const Default = (args) => (
         responsive full width button
       </Button>
     </Box>
+
+    <Heading.H1>Custom Colors</Heading.H1>
+
+    <Grid
+      gridGap="10px 138px"
+      gridTemplateColumns={[
+        'repeat(1, 0fr)',
+        'repeat(1, 0fr)',
+        'repeat(4, 1fr)'
+      ]}
+    >
+      <Button {...args} variant="primary" bg="teal">
+        primary w/ teal background
+      </Button>
+      <Button {...args} variant="primary" paletteColor="yellow">
+        primary w/ yellow color
+      </Button>
+      <Button {...args} variant="secondary" bg="palette.blue.lighter">
+        secondary w/ lighter blue background
+      </Button>
+      <Button {...args} variant="secondary" bg="red">
+        secondary w/ red color
+      </Button>
+    </Grid>
   </div>
 );
 

@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import {
   borders,
   borderColor,
+  color,
   display,
   fontWeight,
   fontSize,
@@ -72,12 +73,14 @@ const StyledButton = styled.button`
   ${whiteSpace};
   ${borders};
   ${borderColor};
+  ${color};
   ${display};
 `;
 
 StyledButton.propTypes = {
   ...borders.propTypes,
   ...borderColor.propTypes,
+  ...color.propTypes,
   ...fontWeight.propTypes,
   ...fontSize.propTypes,
   ...lineHeight.propTypes,
