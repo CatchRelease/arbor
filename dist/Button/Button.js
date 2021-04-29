@@ -9,6 +9,8 @@ var _react = require("react");
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
+var _propTypes2 = require("@styled-system/prop-types");
+
 var _ButtonContent = _interopRequireDefault(require("./ButtonContent"));
 
 var _ButtonSpinner = _interopRequireDefault(require("./ButtonSpinner"));
@@ -85,6 +87,8 @@ var Button = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
   }));
 });
 Button.propTypes = {
+  bg: _propTypes2.propType,
+
   /**
    * Content to render inside the button.
    */
@@ -142,6 +146,7 @@ Button.propTypes = {
   variant: _propTypes["default"].oneOf(_variants["default"])
 };
 Button.defaultProps = {
+  bg: null,
   children: undefined,
   disabled: false,
   fullWidth: false,

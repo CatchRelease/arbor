@@ -113,7 +113,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-2 {
@@ -295,7 +295,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-2 {

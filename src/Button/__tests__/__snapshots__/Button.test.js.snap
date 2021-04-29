@@ -101,7 +101,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 <button
@@ -147,7 +147,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-6 {
@@ -357,7 +357,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 <button
@@ -403,7 +403,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-6 {
@@ -613,7 +613,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr 1fr 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 <button
@@ -662,7 +662,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr 1fr 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-8 {
@@ -875,7 +875,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr 1fr 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 <button
@@ -924,7 +924,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr 1fr 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-8 {
@@ -1135,7 +1135,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 
@@ -1181,7 +1181,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 
@@ -1391,7 +1391,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 
@@ -1437,7 +1437,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 
@@ -1558,7 +1558,7 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -1763,7 +1763,7 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -1804,7 +1804,7 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -1927,7 +1927,7 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -2050,7 +2050,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -2270,7 +2270,7 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -2311,7 +2311,7 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -2441,7 +2441,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -2661,7 +2661,7 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -2702,7 +2702,7 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -2832,7 +2832,7 @@ exports[`<Button /> fontSize properly renders a button with custom font preset s
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -2957,7 +2957,7 @@ exports[`<Button /> fontSize properly renders a button with custom pixel font si
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {
@@ -3082,7 +3082,7 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {

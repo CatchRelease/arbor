@@ -934,7 +934,7 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with dange
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-6 {
@@ -1148,7 +1148,7 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with info 
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-6 {
@@ -1389,7 +1389,7 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with no in
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-2 {
@@ -1560,7 +1560,7 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with succe
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-6 {
@@ -1774,7 +1774,7 @@ exports[`<ToastAlert /> with onClose property renders a banner alert, with warni
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-6 {

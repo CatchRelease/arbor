@@ -179,7 +179,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-0 {

@@ -919,7 +919,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with danger
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-6 {
@@ -1131,7 +1131,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with info i
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-6 {
@@ -1368,7 +1368,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with no int
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-2 {
@@ -1539,7 +1539,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with succes
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-6 {
@@ -1751,7 +1751,7 @@ exports[`<PaneAlert /> with onClose property renders a banner alert, with warnin
   -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 0fr;
-  visibility: visible;
+  visibility: inherit;
 }
 
 .emotion-6 {
