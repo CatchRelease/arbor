@@ -10,19 +10,22 @@
     "production": {
       "plugins": [
         ["@emotion", { "hoist": true }],
-        ["@babel/plugin-proposal-class-properties", { "loose": true }]
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        ["@babel/plugin-proposal-private-methods", { "loose": true }]
       ]
     },
     "development": {
       "plugins": [
         ["@emotion", { "sourceMap": true, "autoLabel": "always" }],
-        ["@babel/plugin-proposal-class-properties", { "loose": true }]
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        ["@babel/plugin-proposal-private-methods", { "loose": true }]
       ]
     },
     "test": {
       "plugins": [
         ["@emotion", { "sourceMap": false, "autoLabel": "always" }],
-        ["@babel/plugin-proposal-class-properties", { "loose": true }]
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        ["@babel/plugin-proposal-private-methods", { "loose": true }]
       ]
     }
   }
