@@ -82,7 +82,7 @@ Array [
       disabled={true}
       id="radio-button-group-test:foo"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="foo"
     />
@@ -179,7 +179,7 @@ Array [
       disabled={true}
       id="radio-button-group-test:bar"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="bar"
     />
@@ -271,7 +271,7 @@ Array [
       disabled={true}
       id="radio-button-group-test:baz"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="baz"
     />
@@ -363,7 +363,7 @@ Array [
       disabled={true}
       id="radio-button-group-test:quux"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="quux"
     />
@@ -464,7 +464,7 @@ Array [
       disabled={false}
       id="radio-button-group-test:foo"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="foo"
     />
@@ -560,7 +560,7 @@ Array [
       disabled={false}
       id="radio-button-group-test:bar"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="bar"
     />
@@ -653,7 +653,7 @@ Array [
       disabled={true}
       id="radio-button-group-test:baz"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="baz"
     />
@@ -744,7 +744,7 @@ Array [
       disabled={false}
       id="radio-button-group-test:quux"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="quux"
     />
@@ -844,7 +844,7 @@ Array [
       disabled={false}
       id="radio-button-group-test:foo"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="foo"
     />
@@ -939,7 +939,7 @@ Array [
       disabled={false}
       id="radio-button-group-test:bar"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="bar"
     />
@@ -1031,7 +1031,7 @@ Array [
       disabled={true}
       id="radio-button-group-test:baz"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="baz"
     />
@@ -1121,7 +1121,7 @@ Array [
       disabled={false}
       id="radio-button-group-test:quux"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="quux"
     />
@@ -1221,7 +1221,7 @@ Array [
       disabled={false}
       id="radio-button-group-test:foo"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="foo"
     />
@@ -1316,7 +1316,7 @@ Array [
       disabled={false}
       id="radio-button-group-test:bar"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="bar"
     />
@@ -1408,7 +1408,7 @@ Array [
       disabled={true}
       id="radio-button-group-test:baz"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="baz"
     />
@@ -1498,7 +1498,7 @@ Array [
       disabled={false}
       id="radio-button-group-test:quux"
       name="radio-button-group-test"
-      onChange={[Function]}
+      onChange={[MockFunction]}
       type="radio"
       value="quux"
     />

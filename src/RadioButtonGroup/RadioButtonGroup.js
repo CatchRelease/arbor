@@ -1,15 +1,7 @@
-import { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import RadioButton from '../RadioButton';
-
-const groupOnChange = (e, setCheckedValueState, onChange) => {
-  const {
-    target: { value }
-  } = e;
-  setCheckedValueState(value);
-  onChange(e);
-};
 
 const RadioButtonGroup = ({
   name,
@@ -19,12 +11,6 @@ const RadioButtonGroup = ({
   disabled,
   buttonProps
 }) => {
-  const [checkedValueState, setCheckedValueState] = useState(checkedValue);
-
-  const buttonOnChange = (e) => {
-    groupOnChange(e, setCheckedValueState, onChange);
-  };
-
   return (
     <>
       {options.map(({ label, value, disabled: optionDisabled }, idx) => (
@@ -36,10 +22,8 @@ const RadioButtonGroup = ({
             disabled: disabled || optionDisabled,
             label,
             value,
-            onChange: buttonOnChange,
-            checked: checkedValueState
-              ? checkedValueState === value
-              : idx === 0,
+            onChange,
+            checked: checkedValue ? checkedValue === value : idx === 0,
             ...buttonProps
           }}
         />
