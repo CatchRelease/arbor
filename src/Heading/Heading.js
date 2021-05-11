@@ -27,13 +27,16 @@ Heading.defaultProps = {
   lineheight: 'small'
 };
 
-const createHeading = (h) => (
-  { children, ...props } // eslint-disable-line react/prop-types
-) => (
-  <Heading as={h} {...props}>
-    {children}
-  </Heading>
-);
+const createHeading =
+  (h) =>
+  (
+    { children, ...props } // eslint-disable-line react/prop-types
+  ) =>
+    (
+      <Heading as={h} {...props}>
+        {children}
+      </Heading>
+    );
 
 Heading.H1 = createHeading('h1');
 Heading.H1.defaultProps = {
