@@ -20,6 +20,7 @@ const AccordionHeader = ({
   onClick,
   panelId,
   text,
+  chevronRight,
   ...props
 }) => (
   <StyledAccordionHeader
@@ -37,8 +38,17 @@ const AccordionHeader = ({
         aria-controls={panelId}
         aria-expanded={isOpen}
       >
-        <AccordionHeaderIcon isOpen={isOpen} />
-        {text}
+        {chevronRight ? (
+          <>
+            {text}
+            <AccordionHeaderIcon isOpen={isOpen} />
+          </>
+        ) : (
+          <>
+            <AccordionHeaderIcon isOpen={isOpen} />
+            {text}
+          </>
+        )}
       </StyledAccordionHeadingText>
     </StyledAccordionHeading>
     {note}
@@ -75,12 +85,18 @@ AccordionHeader.propTypes = {
   /**
    * Link variant for styling. See storybook for examples.
    */
-  variant: PropTypes.oneOf(VARIANTS).isRequired
+  variant: PropTypes.oneOf(VARIANTS).isRequired,
+
+  /**
+   * Optional flag to position icon to right of header text
+   */
+  chevronRight: PropTypes.bool
 };
 
 AccordionHeader.defaultProps = {
   note: null,
-  onClick: () => {}
+  onClick: () => {},
+  chevronRight: false
 };
 
 export default AccordionHeader;
