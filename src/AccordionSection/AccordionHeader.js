@@ -6,8 +6,8 @@ import StyledAccordionHeadingText from './StyledAccordionHeadingText';
 import Icon from '../Icon';
 import VARIANTS from './variants';
 
-const AccordionHeaderIcon = ({ isOpen }) => (
-  <Icon mr="small" name="chevron" rotation={isOpen ? null : '270'} />
+const AccordionHeaderIcon = ({ isOpen, ml }) => (
+  <Icon mr="small" name="chevron" rotation={isOpen ? null : '270'} ml={ml} />
 );
 
 AccordionHeaderIcon.propTypes = {
@@ -41,7 +41,7 @@ const AccordionHeader = ({
         {chevronRight ? (
           <>
             {text}
-            <AccordionHeaderIcon isOpen={isOpen} />
+            <AccordionHeaderIcon isOpen={isOpen} ml="smallest" />
           </>
         ) : (
           <>

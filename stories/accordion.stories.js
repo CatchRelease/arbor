@@ -336,6 +336,34 @@ export const Default = (args) => {
           </Card>
         </Flex>
       </AccordionContainer>
+
+      <AccordionContainer>
+        <Heading.H2>Accordion with chevron on the right</Heading.H2>
+
+        <Flex justifyContent="center" width="500px">
+          <Card>
+            <AccordionSection
+              header={<Box my="small">Header text</Box>}
+              panelId="chevron-right-header"
+              chevronRight={true}
+            >
+              <Box p="regular">
+                <Text mb="regular">
+                  You can change the position of the chevron.
+                </Text>
+                <Text>
+                  Lorem ipsum dolor sit amet, an hinc honestatis his, an his
+                  tota aperiam intellegebat. Mel delenit delectus et, veniam
+                  soleat pericula vix et. Aeque accumsan quo ex, albucius
+                  pericula expetendis quo ei. Debitis oporteat at eos, mei justo
+                  eruditi periculis te. Sed no mazim liber dicunt, aeque viris
+                  animal te quo, ius lorem feugiat veritus id.
+                </Text>
+              </Box>
+            </AccordionSection>
+          </Card>
+        </Flex>
+      </AccordionContainer>
     </>
   );
 };
