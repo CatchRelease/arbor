@@ -344,8 +344,8 @@ export const Default = (args) => {
           <Card>
             <AccordionSection
               header={<Box my="small">Header text</Box>}
-              panelId="chevron-right-header"
-              chevronRight="true"
+              panelId="icon-right-header"
+              iconRight="true"
             >
               <Box p="regular">
                 <Text mb="regular">

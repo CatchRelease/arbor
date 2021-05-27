@@ -6,17 +6,12 @@ import StyledAccordionHeadingText from './StyledAccordionHeadingText';
 import Icon from '../Icon';
 import VARIANTS from './variants';
 
-const AccordionHeaderIcon = ({ isOpen, ml }) => (
-  <Icon mr="small" name="chevron" rotation={isOpen ? null : '270'} ml={ml} />
+const AccordionHeaderIcon = ({ isOpen, ...props }) => (
+  <Icon mr="small" name="chevron" rotation={isOpen ? null : '270'} {...props} />
 );
 
 AccordionHeaderIcon.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
-  ml: PropTypes.string
-};
-
-AccordionHeaderIcon.defaultProps = {
-  ml: null
+  isOpen: PropTypes.bool.isRequired
 };
 
 const AccordionHeader = ({
@@ -25,7 +20,7 @@ const AccordionHeader = ({
   onClick,
   panelId,
   text,
-  chevronRight,
+  iconRight,
   ...props
 }) => (
   <StyledAccordionHeader
@@ -43,7 +38,7 @@ const AccordionHeader = ({
         aria-controls={panelId}
         aria-expanded={isOpen}
       >
-        {chevronRight ? (
+        {iconRight ? (
           <>
             {text}
             <AccordionHeaderIcon isOpen={isOpen} ml="smallest" />
@@ -95,13 +90,13 @@ AccordionHeader.propTypes = {
   /**
    * Optional flag to position icon to right of header text
    */
-  chevronRight: PropTypes.bool
+  iconRight: PropTypes.bool
 };
 
 AccordionHeader.defaultProps = {
   note: null,
   onClick: () => {},
-  chevronRight: false
+  iconRight: false
 };
 
 export default AccordionHeader;
