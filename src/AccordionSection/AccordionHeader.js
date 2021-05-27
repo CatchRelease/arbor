@@ -11,7 +11,12 @@ const AccordionHeaderIcon = ({ isOpen, ml }) => (
 );
 
 AccordionHeaderIcon.propTypes = {
-  isOpen: PropTypes.bool.isRequired
+  isOpen: PropTypes.bool.isRequired,
+  ml: PropTypes.string
+};
+
+AccordionHeaderIcon.defaultProps = {
+  ml: null
 };
 
 const AccordionHeader = ({

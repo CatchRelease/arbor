@@ -345,7 +345,7 @@ export const Default = (args) => {
             <AccordionSection
               header={<Box my="small">Header text</Box>}
               panelId="chevron-right-header"
-              chevronRight={true}
+              chevronRight="true"
             >
               <Box p="regular">
                 <Text mb="regular">
