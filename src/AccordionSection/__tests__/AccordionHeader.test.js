@@ -39,4 +39,10 @@ describe('<AccordionHeader />', () => {
 
     expect(tree).toMatchSnapshot();
   });
+
+  it('renders with chevron postion', () => {
+    const tree = createTree({ iconRight: true });
+
+    expect(tree).toMatchSnapshot();
+  });
 });

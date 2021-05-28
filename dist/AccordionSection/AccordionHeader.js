@@ -32,12 +32,14 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 var AccordionHeaderIcon = function AccordionHeaderIcon(_ref) {
-  var isOpen = _ref.isOpen;
-  return (0, _jsxRuntime.jsx)(_Icon["default"], {
+  var isOpen = _ref.isOpen,
+      props = _objectWithoutProperties(_ref, ["isOpen"]);
+
+  return (0, _jsxRuntime.jsx)(_Icon["default"], _objectSpread({
     mr: "small",
     name: "chevron",
     rotation: isOpen ? null : '270'
-  });
+  }, props));
 };
 
 AccordionHeaderIcon.propTypes = {
@@ -50,7 +52,8 @@ var AccordionHeader = function AccordionHeader(_ref2) {
       onClick = _ref2.onClick,
       panelId = _ref2.panelId,
       text = _ref2.text,
-      props = _objectWithoutProperties(_ref2, ["isOpen", "note", "onClick", "panelId", "text"]);
+      iconRight = _ref2.iconRight,
+      props = _objectWithoutProperties(_ref2, ["isOpen", "note", "onClick", "panelId", "text", "iconRight"]);
 
   return (0, _jsxRuntime.jsxs)(_StyledAccordionHeader["default"], _objectSpread(_objectSpread({
     alignItems: "center",
@@ -63,13 +66,20 @@ var AccordionHeader = function AccordionHeader(_ref2) {
     children: [(0, _jsxRuntime.jsx)(_StyledAccordionHeading["default"], {
       fontWeight: "medium",
       mr: "regular",
-      children: (0, _jsxRuntime.jsxs)(_StyledAccordionHeadingText["default"], {
+      children: (0, _jsxRuntime.jsx)(_StyledAccordionHeadingText["default"], {
         alignItems: "center",
         "aria-controls": panelId,
         "aria-expanded": isOpen,
-        children: [(0, _jsxRuntime.jsx)(AccordionHeaderIcon, {
-          isOpen: isOpen
-        }), text]
+        children: iconRight ? (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+          children: [text, (0, _jsxRuntime.jsx)(AccordionHeaderIcon, {
+            isOpen: isOpen,
+            ml: "smallest"
+          })]
+        }) : (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
+          children: [(0, _jsxRuntime.jsx)(AccordionHeaderIcon, {
+            isOpen: isOpen
+          }), text]
+        })
       })
     }), note]
   }));
@@ -105,11 +115,17 @@ AccordionHeader.propTypes = {
   /**
    * Link variant for styling. See storybook for examples.
    */
-  variant: _propTypes["default"].oneOf(_variants["default"]).isRequired
+  variant: _propTypes["default"].oneOf(_variants["default"]).isRequired,
+
+  /**
+   * Optional flag to position icon to right of header text
+   */
+  iconRight: _propTypes["default"].bool
 };
 AccordionHeader.defaultProps = {
   note: null,
-  onClick: function onClick() {}
+  onClick: function onClick() {},
+  iconRight: false
 };
 var _default = AccordionHeader;
 exports["default"] = _default;
