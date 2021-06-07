@@ -19,6 +19,9 @@ var _variants = _interopRequireDefault(require("./variants"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["isOpen"],
+    _excluded2 = ["isOpen", "note", "onClick", "panelId", "text", "iconRight"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -33,7 +36,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 var AccordionHeaderIcon = function AccordionHeaderIcon(_ref) {
   var isOpen = _ref.isOpen,
-      props = _objectWithoutProperties(_ref, ["isOpen"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   return (0, _jsxRuntime.jsx)(_Icon["default"], _objectSpread({
     mr: "small",
@@ -53,7 +56,7 @@ var AccordionHeader = function AccordionHeader(_ref2) {
       panelId = _ref2.panelId,
       text = _ref2.text,
       iconRight = _ref2.iconRight,
-      props = _objectWithoutProperties(_ref2, ["isOpen", "note", "onClick", "panelId", "text", "iconRight"]);
+      props = _objectWithoutProperties(_ref2, _excluded2);
 
   return (0, _jsxRuntime.jsxs)(_StyledAccordionHeader["default"], _objectSpread(_objectSpread({
     alignItems: "center",

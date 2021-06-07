@@ -17,6 +17,8 @@ var _Text = _interopRequireDefault(require("../Text"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["paletteColor", "children", "iconEnd", "iconStart", "subtle", "variant"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -72,7 +74,7 @@ var Badge = function Badge(_ref) {
       iconStart = _ref.iconStart,
       subtle = _ref.subtle,
       variant = _ref.variant,
-      props = _objectWithoutProperties(_ref, ["paletteColor", "children", "iconEnd", "iconStart", "subtle", "variant"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   var textColor = getTextColor(paletteColor, subtle);
   var gridTemplateColumns = getGridTemplateColumns(iconStart, iconEnd);

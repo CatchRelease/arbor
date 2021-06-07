@@ -29,6 +29,8 @@ var _Text = _interopRequireDefault(require("../Text"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["title", "content", "children", "render"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -70,7 +72,7 @@ var Tooltip = function Tooltip(_ref2) {
       content = _ref2.content,
       children = _ref2.children,
       render = _ref2.render,
-      props = _objectWithoutProperties(_ref2, ["title", "content", "children", "render"]);
+      props = _objectWithoutProperties(_ref2, _excluded);
 
   var _useState = (0, _react.useState)(false),
       _useState2 = _slicedToArray(_useState, 2),

@@ -11,6 +11,8 @@ var _StyledMenuItem = _interopRequireDefault(require("./StyledMenuItem"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["innerRef", "children"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -26,7 +28,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 var MenuItem = function MenuItem(_ref) {
   var innerRef = _ref.innerRef,
       children = _ref.children,
-      props = _objectWithoutProperties(_ref, ["innerRef", "children"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   return (0, _jsxRuntime.jsx)(_StyledMenuItem["default"], _objectSpread(_objectSpread({
     ref: innerRef

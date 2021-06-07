@@ -15,6 +15,8 @@ var _Input = require("../Input");
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["cx", "innerRef", "innerProps", "children"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -37,7 +39,7 @@ var StyledAutoCompleteControl = function StyledAutoCompleteControl(_ref) {
       innerRef = _ref.innerRef,
       innerProps = _ref.innerProps,
       children = _ref.children,
-      props = _objectWithoutProperties(_ref, ["cx", "innerRef", "innerProps", "children"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   return (0, _jsxRuntime.jsx)(StyledFlex, _objectSpread(_objectSpread({
     ref: innerRef

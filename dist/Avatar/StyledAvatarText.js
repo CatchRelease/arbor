@@ -15,6 +15,8 @@ var _avatars = require("../theme/avatars");
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["baseColor", "size", "subtle", "theme"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -32,7 +34,7 @@ var StyledAvatarText = function StyledAvatarText(_ref) {
       size = _ref.size,
       subtle = _ref.subtle,
       avatarFontSizes = _ref.theme.avatarFontSizes,
-      props = _objectWithoutProperties(_ref, ["baseColor", "size", "subtle", "theme"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   var color = subtle ? baseColor : 'monochrome.white';
   var fontSize = avatarFontSizes[size];

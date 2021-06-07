@@ -13,6 +13,8 @@ var _Flex = _interopRequireDefault(require("../Flex"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["cx", "getStyles", "innerProps", "innerRef", "isDisabled", "isHidden", "selectProps", "theme"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -45,7 +47,7 @@ var StyledAutoCompleteInput = function StyledAutoCompleteInput(_ref3) {
       isHidden = _ref3.isHidden,
       selectProps = _ref3.selectProps,
       theme = _ref3.theme,
-      props = _objectWithoutProperties(_ref3, ["cx", "getStyles", "innerProps", "innerRef", "isDisabled", "isHidden", "selectProps", "theme"]);
+      props = _objectWithoutProperties(_ref3, _excluded);
 
   return (0, _jsxRuntime.jsx)(StyledFlex, _objectSpread({
     as: "input",

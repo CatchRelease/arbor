@@ -15,6 +15,8 @@ var _buildModalCss = _interopRequireDefault(require("./buildModalCss"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["children", "modalCss", "overlayCss", "theme"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -32,7 +34,7 @@ var Modal = function Modal(_ref) {
       modalCss = _ref.modalCss,
       overlayCss = _ref.overlayCss,
       theme = _ref.theme,
-      props = _objectWithoutProperties(_ref, ["children", "modalCss", "overlayCss", "theme"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   var combinedModalCss = (0, _buildModalCss["default"])({
     theme: theme,
