@@ -15,6 +15,8 @@ var _StyledInput = _interopRequireDefault(require("./StyledInput"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["caption", "label", "labelAside", "id", "onBlur", "onChange", "validate", "value"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -48,7 +50,7 @@ var Input = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
       onChange = _ref.onChange,
       validate = _ref.validate,
       propValue = _ref.value,
-      props = _objectWithoutProperties(_ref, ["caption", "label", "labelAside", "id", "onBlur", "onChange", "validate", "value"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   var _useState = (0, _react.useState)(false),
       _useState2 = _slicedToArray(_useState, 2),

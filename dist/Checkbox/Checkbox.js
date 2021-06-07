@@ -21,6 +21,8 @@ var _StyledCheckbox = _interopRequireDefault(require("./StyledCheckbox"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["id", "name", "label", "disabled", "isInvalid", "checked", "onChange", "value", "indeterminate", "icon"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -44,7 +46,7 @@ var Checkbox = function Checkbox(_ref) {
       value = _ref.value,
       indeterminate = _ref.indeterminate,
       icon = _ref.icon,
-      props = _objectWithoutProperties(_ref, ["id", "name", "label", "disabled", "isInvalid", "checked", "onChange", "value", "indeterminate", "icon"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   return (0, _jsxRuntime.jsxs)(_CheckboxLabel["default"], _objectSpread(_objectSpread({
     alignItems: "center",

@@ -19,6 +19,8 @@ var _Box = _interopRequireDefault(require("../Box"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["children", "color", "spin"];
+
 var _templateObject;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -67,7 +69,7 @@ var Spinner = function Spinner(_ref) {
   var children = _ref.children,
       color = _ref.color,
       spin = _ref.spin,
-      props = _objectWithoutProperties(_ref, ["children", "color", "spin"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   var themedColor = (0, _themeGet.themeGet)("colors.".concat(color), color)(props);
 

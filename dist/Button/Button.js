@@ -29,6 +29,8 @@ var _palette = _interopRequireDefault(require("../theme/colors/palette"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["children", "iconStart", "iconEnd", "spin", "variant", "type"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -61,7 +63,7 @@ var Button = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
       spin = _ref.spin,
       variant = _ref.variant,
       type = _ref.type,
-      props = _objectWithoutProperties(_ref, ["children", "iconStart", "iconEnd", "spin", "variant", "type"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   return (0, _jsxRuntime.jsxs)(_StyledButton["default"], _objectSpread(_objectSpread({}, _objectSpread({
     className: "button--".concat(variant),

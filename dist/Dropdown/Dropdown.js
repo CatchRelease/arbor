@@ -23,6 +23,8 @@ var _constants = require("../constants");
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["MenuItemComponent", "TriggerComponent", "children", "menuItems", "popoverProps", "selected"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -121,7 +123,7 @@ var Dropdown = /*#__PURE__*/function (_Component) {
           menuItems = _this$props.menuItems,
           popoverProps = _this$props.popoverProps,
           selected = _this$props.selected,
-          props = _objectWithoutProperties(_this$props, ["MenuItemComponent", "TriggerComponent", "children", "menuItems", "popoverProps", "selected"]);
+          props = _objectWithoutProperties(_this$props, _excluded);
 
       var isOpen = this.popover.current && this.popover.current.state.isOpen;
       var menu = (0, _jsxRuntime.jsx)(_Menu["default"], {

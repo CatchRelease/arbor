@@ -17,6 +17,8 @@ var _PopoverContent = _interopRequireDefault(require("./PopoverContent"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["children", "content", "contentProps", "preferPlace", "place"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -163,7 +165,7 @@ var Popover = /*#__PURE__*/function (_Component) {
           contentProps = _this$props.contentProps,
           preferPlace = _this$props.preferPlace,
           place = _this$props.place,
-          popoverProps = _objectWithoutProperties(_this$props, ["children", "content", "contentProps", "preferPlace", "place"]);
+          popoverProps = _objectWithoutProperties(_this$props, _excluded);
 
       var isOpen = this.state.isOpen;
       var styledContent = (0, _jsxRuntime.jsx)(_PopoverContent["default"], _objectSpread(_objectSpread({}, contentProps), {}, {

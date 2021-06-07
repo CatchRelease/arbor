@@ -19,6 +19,8 @@ var _variants = _interopRequireDefault(require("./variants"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["children", "header", "headerNote", "panelId", "onHeaderClick", "isOpen", "variant"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -112,7 +114,7 @@ var AccordionSection = /*#__PURE__*/function (_Component) {
           onHeaderClick = _this$props.onHeaderClick,
           isOpen = _this$props.isOpen,
           variant = _this$props.variant,
-          props = _objectWithoutProperties(_this$props, ["children", "header", "headerNote", "panelId", "onHeaderClick", "isOpen", "variant"]);
+          props = _objectWithoutProperties(_this$props, _excluded);
 
       return (0, _jsxRuntime.jsxs)("section", {
         children: [(0, _jsxRuntime.jsx)(_AccordionHeader["default"], _objectSpread({

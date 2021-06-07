@@ -13,6 +13,8 @@ var _Grid = _interopRequireDefault(require("../Grid"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["innerRef"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -27,7 +29,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 var Pane = function Pane(_ref) {
   var innerRef = _ref.innerRef,
-      props = _objectWithoutProperties(_ref, ["innerRef"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   return (0, _jsxRuntime.jsx)(_Grid["default"], _objectSpread({
     ref: innerRef

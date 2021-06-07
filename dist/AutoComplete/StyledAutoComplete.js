@@ -23,6 +23,8 @@ var _styledAutoCompleteComponents = _interopRequireDefault(require("./styledAuto
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["components", "theme", "variant"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -55,7 +57,7 @@ var StyledAutoComplete = function StyledAutoComplete(_ref) {
   var components = _ref.components,
       _theme = _ref.theme,
       variant = _ref.variant,
-      props = _objectWithoutProperties(_ref, ["components", "theme", "variant"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   var SelectComponent = getReactSelectComponent(variant);
 

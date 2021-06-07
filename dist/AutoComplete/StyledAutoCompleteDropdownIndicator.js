@@ -11,6 +11,8 @@ var _Icon = _interopRequireDefault(require("../Icon"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
+var _excluded = ["cx", "innerProps", "selectProps"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
@@ -27,7 +29,7 @@ var StyledAutoCompleteDropdownIndicator = function StyledAutoCompleteDropdownInd
   var cx = _ref.cx,
       innerProps = _ref.innerProps,
       hideDropdownIndicator = _ref.selectProps.hideDropdownIndicator,
-      props = _objectWithoutProperties(_ref, ["cx", "innerProps", "selectProps"]);
+      props = _objectWithoutProperties(_ref, _excluded);
 
   return (0, _jsxRuntime.jsx)(_Icon["default"], _objectSpread({
     display: hideDropdownIndicator ? 'none' : 'block',
