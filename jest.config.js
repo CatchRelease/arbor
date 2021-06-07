@@ -1,4 +1,5 @@
 module.exports = {
+  testEnvironment: 'jsdom',
   verbose: true,
   snapshotSerializers: ['@emotion/snapshot-serializer'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
