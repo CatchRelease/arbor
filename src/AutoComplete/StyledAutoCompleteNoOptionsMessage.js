@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import Text from '../Text';
 
-const StyledAutoCompleteNoOption = ({
+const StyledAutoCompleteNoOptionsMessage = ({
   cx,
   innerRef,
   innerProps,
@@ -19,7 +19,7 @@ const StyledAutoCompleteNoOption = ({
   </Text>
 );
 
-StyledAutoCompleteNoOption.propTypes = {
+StyledAutoCompleteNoOptionsMessage.propTypes = {
   cx: PropTypes.func.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.node,
@@ -29,4 +29,4 @@ StyledAutoCompleteNoOption.propTypes = {
   innerRef: PropTypes.func.isRequired
 };
 
-export default StyledAutoCompleteNoOption;
+export default StyledAutoCompleteNoOptionsMessage;
