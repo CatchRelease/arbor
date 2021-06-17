@@ -25,8 +25,13 @@ StyledAutoCompleteNoOptionsMessage.propTypes = {
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node)
   ]).isRequired,
-  innerProps: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
-  innerRef: PropTypes.func.isRequired
+  innerProps: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  innerRef: PropTypes.func
+};
+
+StyledAutoCompleteNoOptionsMessage.defaultProps = {
+  innerProps: {},
+  innerRef: undefined
 };
 
 export default StyledAutoCompleteNoOptionsMessage;
