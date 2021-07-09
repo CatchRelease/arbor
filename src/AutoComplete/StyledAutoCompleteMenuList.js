@@ -4,6 +4,7 @@ import { withTheme } from '@emotion/react';
 import Box from '../Box';
 
 const StyledAutoCompleteMenuList = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   cx,
   innerRef,
   innerProps,

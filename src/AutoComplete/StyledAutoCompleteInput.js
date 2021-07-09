@@ -13,13 +13,18 @@ const StyledFlex = styled(Flex)`
 `;
 
 const StyledAutoCompleteInput = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   cx,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   getStyles,
   innerProps,
   innerRef,
   isDisabled,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   isHidden,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   selectProps,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   theme,
   ...props
 }) => {

@@ -1,4 +1,4 @@
-import { css } from '@emotion/react';
+import { css, Theme } from '@emotion/react';
 import styled from '@emotion/styled';
 import {
   color,
@@ -16,11 +16,16 @@ import textTransform from '../utils/textTransform';
 import textOverflow from '../utils/textOverflow';
 import whiteSpace from '../utils/whiteSpace';
 
-const baseStyles = ({ theme }) => css`
+const baseStyles = ({ theme }: { theme: Theme }) => css`
   font-family: ${theme.brandFont};
 `;
 
-const Text = styled.p`
+type Props = {
+  fontSize?: string;
+  lineHeight?: string;
+};
+
+const Text = styled.p<Props>`
   ${baseStyles};
 
   ${color};
@@ -37,28 +42,10 @@ const Text = styled.p`
   ${whiteSpace};
 `;
 
-Text.propTypes = {
-  ...color.propTypes,
-  ...fontSize.propTypes,
-  ...fontWeight.propTypes,
-  ...lineHeight.propTypes,
-  ...maxWidth.propTypes,
-  ...minWidth.propTypes,
-  ...overflow.propTypes,
-  ...space.propTypes,
-  ...textAlign.propTypes,
-  ...textTransform.propTypes,
-  ...textOverflow.propTypes,
-  ...whiteSpace.propTypes
-};
-
 Text.defaultProps = {
   color: 'text.default',
   fontSize: 'size4',
   lineHeight: 'small'
 };
-
-// Deprecated -- use <Text as="span"></Text>
-Text.Span = (props) => <Text as="span" {...props} />;
 
 export default Text;

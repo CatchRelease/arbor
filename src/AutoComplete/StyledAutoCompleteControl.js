@@ -9,6 +9,7 @@ const StyledFlex = styled(Flex)`
 `;
 
 const StyledAutoCompleteControl = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   cx,
   innerRef,
   innerProps,

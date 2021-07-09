@@ -3,7 +3,20 @@ import { shade, tint } from 'polished';
 import primary from './primary';
 import brandColors from './brand';
 
-const generateColorModifiers = (color) => ({
+export type PaletteColor = 'brand' | keyof typeof primary;
+
+type Palette = Record<
+  string,
+  {
+    lighter: string;
+    light: string;
+    default: string;
+    dark: string;
+    darker: string;
+  }
+>;
+
+const generateColorModifiers = (color: string) => ({
   lighter: tint(0.9, color),
   light: tint(0.7, color),
   default: color,
@@ -11,7 +24,7 @@ const generateColorModifiers = (color) => ({
   darker: shade(0.8, color)
 });
 
-const paletteReducer = (palette, [color, value]) =>
+const paletteReducer = (palette: Palette, [color, value]: [string, string]) =>
   Object.assign(palette, {
     [color]: generateColorModifiers(value)
   });
