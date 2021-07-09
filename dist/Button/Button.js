@@ -7,43 +7,19 @@ exports["default"] = void 0;
 
 var _react = require("react");
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _propTypes2 = require("@styled-system/prop-types");
-
 var _ButtonContent = _interopRequireDefault(require("./ButtonContent"));
 
 var _ButtonSpinner = _interopRequireDefault(require("./ButtonSpinner"));
-
-var _sizes = _interopRequireDefault(require("./sizes"));
 
 var _StyledButton = _interopRequireDefault(require("./StyledButton"));
 
 var _Text = _interopRequireDefault(require("../Text"));
 
-var _variants = _interopRequireDefault(require("./variants"));
-
-var _intent = _interopRequireDefault(require("../theme/colors/intent"));
-
-var _palette = _interopRequireDefault(require("../theme/colors/palette"));
-
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
-var _excluded = ["children", "iconStart", "iconEnd", "spin", "variant", "type"];
+var _excluded = ["bg", "children", "disabled", "fullWidth", "iconEnd", "iconStart", "intent", "paletteColor", "size", "spin", "type", "variant"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
@@ -55,27 +31,49 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-var INTENTS = Object.keys(_intent["default"]);
 var Button = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
-  var children = _ref.children,
-      iconStart = _ref.iconStart,
+  var _ref$bg = _ref.bg,
+      bg = _ref$bg === void 0 ? null : _ref$bg,
+      children = _ref.children,
+      _ref$disabled = _ref.disabled,
+      disabled = _ref$disabled === void 0 ? false : _ref$disabled,
+      _ref$fullWidth = _ref.fullWidth,
+      fullWidth = _ref$fullWidth === void 0 ? false : _ref$fullWidth,
       iconEnd = _ref.iconEnd,
-      spin = _ref.spin,
-      variant = _ref.variant,
+      iconStart = _ref.iconStart,
+      _ref$intent = _ref.intent,
+      intent = _ref$intent === void 0 ? 'brand' : _ref$intent,
+      _ref$paletteColor = _ref.paletteColor,
+      paletteColor = _ref$paletteColor === void 0 ? '' : _ref$paletteColor,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 'large' : _ref$size,
+      _ref$spin = _ref.spin,
+      spin = _ref$spin === void 0 ? false : _ref$spin,
       type = _ref.type,
+      _ref$variant = _ref.variant,
+      variant = _ref$variant === void 0 ? 'primary' : _ref$variant,
       props = _objectWithoutProperties(_ref, _excluded);
 
   return (0, _jsxRuntime.jsxs)(_StyledButton["default"], _objectSpread(_objectSpread({}, _objectSpread({
+    bg: bg,
     className: "button--".concat(variant),
+    disabled: disabled,
+    fullWidth: fullWidth,
     iconEnd: iconEnd,
     iconStart: iconStart,
+    intent: intent,
+    paletteColor: paletteColor,
     ref: ref,
+    size: size,
     type: type,
     variant: variant
   }, props)), {}, {
-    children: [spin && (0, _jsxRuntime.jsx)(_ButtonSpinner["default"], _objectSpread({}, _objectSpread({
+    children: [spin && (0, _jsxRuntime.jsx)(_ButtonSpinner["default"], {
+      disabled: disabled,
+      intent: intent,
+      size: size,
       variant: variant
-    }, props))), (0, _jsxRuntime.jsxs)(_ButtonContent["default"], {
+    }), (0, _jsxRuntime.jsxs)(_ButtonContent["default"], {
       hasText: !!children,
       iconStart: iconStart,
       iconEnd: iconEnd,
@@ -88,78 +86,5 @@ var Button = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
     })]
   }));
 });
-Button.propTypes = {
-  bg: _propTypes2.propType,
-
-  /**
-   * Content to render inside the button.
-   */
-  children: _propTypes["default"].oneOfType([_propTypes["default"].node, _propTypes["default"].arrayOf(_propTypes["default"].node)]),
-
-  /**
-   * Disabled state of button
-   * */
-  disabled: _propTypes["default"].bool,
-
-  /**
-   * Property to set for a button to take the full width of it's parent
-   * container.
-   * */
-  fullWidth: _propTypes["default"].oneOfType([_propTypes["default"].arrayOf(_propTypes["default"].bool), _propTypes["default"].bool]),
-
-  /**
-   * Icon to render after the button text.
-   */
-  iconEnd: _propTypes["default"].element,
-
-  /**
-   * Icon to render before the button text.
-   */
-  iconStart: _propTypes["default"].element,
-
-  /**
-   * Intent color to use in conjunction with variant
-   * */
-  intent: _propTypes["default"].oneOf(INTENTS),
-
-  /**
-   * Button color as a key of the theme's color palette, for overriding variant styles.
-   * */
-  paletteColor: _propTypes["default"].oneOf([''].concat(_toConsumableArray(Object.keys(_palette["default"])))),
-
-  /**
-   * Indicate if the spinner should display.
-   */
-  spin: _propTypes["default"].bool,
-
-  /**
-   * Button size
-   * */
-  size: _propTypes["default"].oneOfType([_propTypes["default"].arrayOf(_propTypes["default"].oneOf(_sizes["default"])), _propTypes["default"].oneOf(_sizes["default"])]),
-
-  /**
-   * Button type.
-   */
-  type: _propTypes["default"].string,
-
-  /**
-   * Button variant.
-   * */
-  variant: _propTypes["default"].oneOf(_variants["default"])
-};
-Button.defaultProps = {
-  bg: null,
-  children: undefined,
-  disabled: false,
-  fullWidth: false,
-  iconEnd: undefined,
-  iconStart: undefined,
-  intent: 'brand',
-  paletteColor: '',
-  size: 'large',
-  spin: false,
-  type: undefined,
-  variant: 'primary'
-};
 var _default = Button;
 exports["default"] = _default;

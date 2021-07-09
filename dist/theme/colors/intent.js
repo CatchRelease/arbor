@@ -19,11 +19,12 @@ var success = _palette.green;
 exports.success = success;
 var warning = _palette.orange;
 exports.warning = warning;
-var _default = {
+var intent = {
   brand: _brand["default"],
   danger: danger,
   info: info,
   success: success,
   warning: warning
 };
+var _default = intent;
 exports["default"] = _default;
