@@ -1,6 +1,7 @@
-declare namespace _default {
-    const regular: number;
-    const medium: number;
-    const bold: number;
-}
-export default _default;
+declare const fontWeights: {
+    regular: number;
+    medium: number;
+    bold: number;
+};
+export declare type FontWeight = keyof typeof fontWeights;
+export default fontWeights;

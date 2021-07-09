@@ -1,18 +1,28 @@
-declare namespace _default {
-    namespace input {
-        export default fontSizes.size4;
-        import mobile = fontSizes.size5;
-        export { mobile };
-    }
-    const size1: string;
-    const size2: string;
-    const size3: string;
-    const size4: string;
-    const size5: string;
-    const size6: string;
-    const size7: string;
-    const size8: string;
-    const size9: string;
-}
+declare const fontSizes: {
+    size1: string;
+    size2: string;
+    size3: string;
+    size4: string;
+    size5: string;
+    size6: string;
+    size7: string;
+    size8: string;
+    size9: string;
+};
+export declare type FontSize = keyof typeof fontSizes;
+declare const _default: {
+    input: {
+        default: string;
+        mobile: string;
+    };
+    size1: string;
+    size2: string;
+    size3: string;
+    size4: string;
+    size5: string;
+    size6: string;
+    size7: string;
+    size8: string;
+    size9: string;
+};
 export default _default;
-declare namespace fontSizes { }

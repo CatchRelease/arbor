@@ -12,6 +12,8 @@ const fontSizes = {
   size9: rem('34px')
 };
 
+export type FontSize = keyof typeof fontSizes;
+
 const inputSizes = {
   default: fontSizes.size4,
   mobile: fontSizes.size5
