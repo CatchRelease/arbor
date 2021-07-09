@@ -28,12 +28,12 @@ class DateTimePickerStories extends Component {
     return (
       <>
         <Box mb="large">
-          <Text.Span>Selected:</Text.Span>
-          <Text.Span>
+          <Text as="span">Selected:</Text>
+          <Text as="span">
             {selectedTime && selectedTime.format
               ? selectedTime.format()
               : 'Nothing'}
-          </Text.Span>
+          </Text>
         </Box>
         <Box width="200px">
           <Heading.H1 mb="large">TimePicker</Heading.H1>

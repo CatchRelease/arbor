@@ -2,7 +2,12 @@ import PropTypes from 'prop-types';
 
 import Flex from '../Flex';
 
-const StyledAutoCompletePlaceholder = ({ cx, children, ...props }) => (
+const StyledAutoCompletePlaceholder = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  cx,
+  children,
+  ...props
+}) => (
   <Flex
     alignSelf="center"
     color="text.placeholder"
