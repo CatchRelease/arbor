@@ -2,28 +2,45 @@ import { css, Theme } from '@emotion/react';
 import styled from '@emotion/styled';
 import {
   color,
+  ColorProps,
   fontSize,
+  FontSizeProps,
   fontWeight,
+  FontWeightProps,
   lineHeight,
+  LineHeightProps,
   maxWidth,
+  MaxWidthProps,
   minWidth,
+  MinWidthProps,
   overflow,
+  OverflowProps,
   space,
-  textAlign
+  SpaceProps,
+  textAlign,
+  TextAlignProps
 } from 'styled-system';
 
-import textTransform from '../utils/textTransform';
-import textOverflow from '../utils/textOverflow';
-import whiteSpace from '../utils/whiteSpace';
+import textOverflow, { TextOverflowProps } from '../utils/textOverflow';
+import textTransform, { TextTransformProps } from '../utils/textTransform';
+import whiteSpace, { WhitespaceProps } from '../utils/whiteSpace';
 
 const baseStyles = ({ theme }: { theme: Theme }) => css`
   font-family: ${theme.brandFont};
 `;
 
-type Props = {
-  fontSize?: string;
-  lineHeight?: string;
-};
+export type Props = ColorProps &
+  FontSizeProps &
+  FontWeightProps &
+  LineHeightProps &
+  MaxWidthProps &
+  MinWidthProps &
+  OverflowProps &
+  SpaceProps &
+  TextAlignProps &
+  TextTransformProps &
+  TextOverflowProps &
+  WhitespaceProps;
 
 const Text = styled.p<Props>`
   ${baseStyles};

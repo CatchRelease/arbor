@@ -9,7 +9,7 @@ declare namespace ButtonSpinner {
     namespace propTypes {
         const disabled: PropTypes.Validator<boolean>;
         const intent: PropTypes.Validator<string>;
-        const size: PropTypes.Validator<"small" | "medium" | "large" | "jumbo" | ("small" | "medium" | "large" | "jumbo" | null | undefined)[]>;
+        const size: PropTypes.Validator<"large" | "medium" | "small" | "jumbo" | ("large" | "medium" | "small" | "jumbo" | null | undefined)[]>;
         const variant: PropTypes.Validator<string>;
     }
 }
