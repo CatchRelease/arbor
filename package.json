@@ -35,6 +35,7 @@
     "@styled-system/prop-types": "^5.1.5",
     "@styled-system/theme-get": "^5.1.2",
     "@tippyjs/react": "^4.2.5",
+    "csstype": "^3.0.8",
     "framer-motion": "^4.1.17",
     "lodash": "^4.17.21",
     "moment": "^2.25.3",

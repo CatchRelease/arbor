@@ -1,11 +1,12 @@
 /// <reference types="react" />
 import { Theme } from '@emotion/react';
-declare type Props = {
-    fontSize?: string;
-    lineHeight?: string;
-};
+import { ColorProps, FontSizeProps, FontWeightProps, LineHeightProps, MaxWidthProps, MinWidthProps, OverflowProps, SpaceProps, TextAlignProps } from 'styled-system';
+import { TextOverflowProps } from '../utils/textOverflow';
+import { TextTransformProps } from '../utils/textTransform';
+import { WhitespaceProps } from '../utils/whiteSpace';
+export declare type Props = ColorProps & FontSizeProps & FontWeightProps & LineHeightProps & MaxWidthProps & MinWidthProps & OverflowProps & SpaceProps & TextAlignProps & TextTransformProps & TextOverflowProps & WhitespaceProps;
 declare const Text: import("@emotion/styled").StyledComponent<{
     theme?: Theme | undefined;
     as?: import("react").ElementType<any> | undefined;
-} & Props, import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>, {}>;
+} & ColorProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & FontSizeProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & FontWeightProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & LineHeightProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & MaxWidthProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, import("csstype").Property.MaxWidth<import("styled-system").TLengthStyledSystem>> & MinWidthProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, import("csstype").Property.MinWidth<import("styled-system").TLengthStyledSystem>> & OverflowProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & SpaceProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & TextAlignProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & TextTransformProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & TextOverflowProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & WhitespaceProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>>, import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLParagraphElement>, HTMLParagraphElement>, {}>;
 export default Text;

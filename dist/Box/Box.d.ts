@@ -1,12 +1,13 @@
-export default Box;
+/// <reference types="react" />
+import { BordersProps, BoxShadowProps, DisplayProps, GridAreaProps, HeightProps, PositionProps, WidthProps } from 'styled-system';
+import { TextProps } from '../Text';
+export declare type Props = TextProps & BordersProps & BoxShadowProps & DisplayProps & HeightProps & GridAreaProps & PositionProps & WidthProps;
 declare const Box: import("@emotion/styled").StyledComponent<{
     theme?: import("@emotion/react").Theme | undefined;
     as?: import("react").ElementType<any> | undefined;
-} & {
-    fontSize?: string | undefined;
-    lineHeight?: string | undefined;
-} & import("react").ClassAttributes<HTMLDivElement> & import("react").HTMLAttributes<HTMLDivElement> & {
+} & import("styled-system").ColorProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & import("styled-system").FontSizeProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & import("styled-system").FontWeightProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & import("styled-system").LineHeightProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & import("styled-system").MaxWidthProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, import("csstype").Property.MaxWidth<import("styled-system").TLengthStyledSystem>> & import("styled-system").MinWidthProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, import("csstype").Property.MinWidth<import("styled-system").TLengthStyledSystem>> & import("styled-system").OverflowProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & import("styled-system").SpaceProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & import("styled-system").TextAlignProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & import("../utils/textTransform").TextTransformProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & import("../utils/textOverflow").TextOverflowProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & import("../utils/whiteSpace").WhitespaceProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & import("react").ClassAttributes<HTMLDivElement> & import("react").HTMLAttributes<HTMLDivElement> & {
     children?: import("react").ReactNode;
 } & {
     theme?: import("@emotion/react").Theme | undefined;
-}, {}, {}>;
+} & BordersProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & BoxShadowProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & DisplayProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & HeightProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, import("csstype").Property.Height<import("styled-system").TLengthStyledSystem>> & GridAreaProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & PositionProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & WidthProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, import("csstype").Property.Width<import("styled-system").TLengthStyledSystem>>, {}, {}>;
+export default Box;
