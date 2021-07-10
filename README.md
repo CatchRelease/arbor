@@ -25,6 +25,10 @@ or
 yarn add @catchandrelease/arbor
 ```
 
+### To Start
+From the root directory of arbor run `yarn storybook`, then navigate to `localhost:6006` to see Arbor's documentation.
+
+
 ### Usage
 
 ```jsx
