@@ -46,7 +46,9 @@ class AccordionSection extends Component {
       header,
       headerNote,
       panelId,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       onHeaderClick,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       isOpen,
       variant,
       ...props

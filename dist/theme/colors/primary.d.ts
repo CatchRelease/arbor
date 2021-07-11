@@ -1,0 +1,23 @@
+export declare const blue = "#4263EB";
+export declare const cyan = "#0D7F91";
+export declare const green = "#29863A";
+export declare const neutral = "#0F0F10";
+export declare const orange = "#C55205";
+export declare const pink = "#D6336C";
+export declare const purple = "#7048E8";
+export declare const red = "#D93838";
+export declare const teal = "#098562";
+export declare const yellow = "#A36900";
+declare const _default: {
+    blue: string;
+    cyan: string;
+    green: string;
+    neutral: string;
+    orange: string;
+    pink: string;
+    purple: string;
+    red: string;
+    teal: string;
+    yellow: string;
+};
+export default _default;

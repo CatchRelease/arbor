@@ -9,7 +9,15 @@ Object.defineProperty(exports, "default", {
     return _Button["default"];
   }
 });
+Object.defineProperty(exports, "ButtonVariant", {
+  enumerable: true,
+  get: function get() {
+    return _variants.Variant;
+  }
+});
 
 var _Button = _interopRequireDefault(require("./Button"));
+
+var _variants = require("./variants");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }

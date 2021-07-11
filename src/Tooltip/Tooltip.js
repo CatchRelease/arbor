@@ -11,7 +11,14 @@ import Grid from '../Grid';
 import Heading from '../Heading';
 import Text from '../Text';
 
-const Tooltip = ({ title, content, children, render, ...props }) => {
+const Tooltip = ({
+  title,
+  content,
+  children,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  render,
+  ...props
+}) => {
   const [mounted, setMounted] = useState(false);
 
   const lazyPlugin = {

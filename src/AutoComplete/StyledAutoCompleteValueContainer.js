@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Flex from '../Flex';
 
 const StyledAutoCompleteValueContainer = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   cx,
   innerProps,
   children,

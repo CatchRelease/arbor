@@ -2,12 +2,19 @@ module.exports = {
   env: {
     jest: true
   },
-  extends: ['airbnb', 'plugin:prettier/recommended'],
-  parser: 'babel-eslint',
-  plugins: ['@emotion', 'jest'],
+  extends: [
+    'airbnb',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/typescript',
+    'plugin:prettier/recommended'
+  ],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@emotion', '@typescript-eslint', 'jest'],
   rules: {
     '@emotion/pkg-renaming': 'error',
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    'import/extensions': [2, 'never'],
     'import/no-extraneous-dependencies': [
       'error',
       {
@@ -22,6 +29,10 @@ module.exports = {
     ],
     'import/no-named-as-default': 0,
     'react/forbid-foreign-prop-types': 0,
+    'react/jsx-filename-extension': [
+      1,
+      { extensions: ['.js', '.jsx', '.tsx'] }
+    ],
     'react/jsx-props-no-spreading': 0,
     'react/react-in-jsx-scope': 'off'
   },
@@ -30,6 +41,12 @@ module.exports = {
       files: ['src/**/*.js'],
       globals: {
         document: true
+      }
+    },
+    {
+      files: ['src/**/*.tsx'],
+      rules: {
+        'react/prop-types': 'off'
       }
     },
     {

@@ -172,7 +172,6 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
             iconRef={null}
             ml="smaller"
             name="calendar"
-            rotation={null}
             theme={
               Object {
                 "avatarFontSizes": Object {
@@ -752,7 +751,6 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
             iconRef={null}
             ml="smaller"
             name="calendar"
-            rotation={null}
             theme={
               Object {
                 "avatarFontSizes": Object {

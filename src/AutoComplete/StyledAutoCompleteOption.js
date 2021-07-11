@@ -3,7 +3,13 @@ import PropTypes from 'prop-types';
 import MenuItem from '../MenuItem';
 import Text from '../Text';
 
-const StyledAutoCompleteOption = ({ cx, innerProps, children, ...props }) => (
+const StyledAutoCompleteOption = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  cx,
+  innerProps,
+  children,
+  ...props
+}) => (
   <MenuItem as="li" {...{ ...innerProps, ...props }}>
     <Text>{children}</Text>
   </MenuItem>

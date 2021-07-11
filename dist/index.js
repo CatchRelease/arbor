@@ -15,6 +15,7 @@ var _exportNames = {
   Badge: true,
   Box: true,
   Button: true,
+  ButtonVariant: true,
   Card: true,
   CardActions: true,
   CardPreview: true,
@@ -106,6 +107,12 @@ Object.defineProperty(exports, "Button", {
   enumerable: true,
   get: function get() {
     return _Button["default"];
+  }
+});
+Object.defineProperty(exports, "ButtonVariant", {
+  enumerable: true,
+  get: function get() {
+    return _Button.ButtonVariant;
   }
 });
 Object.defineProperty(exports, "Card", {
@@ -375,7 +382,7 @@ var _Badge = _interopRequireDefault(require("./Badge"));
 
 var _Box = _interopRequireDefault(require("./Box"));
 
-var _Button = _interopRequireDefault(require("./Button"));
+var _Button = _interopRequireWildcard(require("./Button"));
 
 var _Card = _interopRequireDefault(require("./Card"));
 

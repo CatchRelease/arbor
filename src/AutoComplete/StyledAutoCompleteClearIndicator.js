@@ -2,7 +2,12 @@ import PropTypes from 'prop-types';
 
 import Icon from '../Icon';
 
-const StyledAutoCompleteClearIndicator = ({ innerProps, cx, ...props }) => (
+const StyledAutoCompleteClearIndicator = ({
+  innerProps,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  cx,
+  ...props
+}) => (
   <Icon
     aria-label="clear selection"
     fontSize="size4"

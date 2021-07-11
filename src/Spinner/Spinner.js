@@ -111,7 +111,13 @@ const StyledSpinnerDot = styled(Box)`
   }
 `;
 
-const Spinner = ({ children, color, spin, ...props }) => {
+const Spinner = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  children,
+  color,
+  spin,
+  ...props
+}) => {
   const themedColor = themeGet(`colors.${color}`, color)(props);
 
   if (!spin) {

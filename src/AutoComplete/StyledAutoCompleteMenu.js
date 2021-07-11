@@ -3,7 +3,13 @@ import { withTheme } from '@emotion/react';
 
 import Card from '../Card';
 
-const StyledAutoCompleteMenu = ({ cx, innerProps, children, ...props }) => (
+const StyledAutoCompleteMenu = ({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  cx,
+  innerProps,
+  children,
+  ...props
+}) => (
   <Card
     mt="smaller"
     position="absolute"
