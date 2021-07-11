@@ -355,6 +355,17 @@ declare namespace ProgressBar {
         bottom?: import("styled-system").ResponsiveValue<import("csstype").Property.Bottom<import("styled-system").TLengthStyledSystem>, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
         left?: import("styled-system").ResponsiveValue<import("csstype").Property.Left<import("styled-system").TLengthStyledSystem>, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
         width?: import("styled-system").ResponsiveValue<import("csstype").Property.Width<import("styled-system").TLengthStyledSystem>, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
+        alignContent?: import("styled-system").ResponsiveValue<import("csstype").Property.AlignContent, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
+        alignItems?: import("styled-system").ResponsiveValue<import("csstype").Property.AlignItems, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
+        alignSelf?: import("styled-system").ResponsiveValue<import("csstype").Property.AlignSelf, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
+        flex?: import("styled-system").ResponsiveValue<import("csstype").Property.Flex<import("styled-system").TLengthStyledSystem>, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
+        flexDirection?: import("styled-system").ResponsiveValue<import("csstype").Property.FlexDirection, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
+        flexWrap?: import("styled-system").ResponsiveValue<import("csstype").Property.FlexWrap, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
+        gridGap?: import("styled-system").ResponsiveValue<import("csstype").Property.GridGap<import("styled-system").TLengthStyledSystem>, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
+        justifyContent?: import("styled-system").ResponsiveValue<import("csstype").Property.JustifyContent, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
+        justifyItems?: import("styled-system").ResponsiveValue<import("csstype").Property.JustifyItems, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
+        justifySelf?: import("styled-system").ResponsiveValue<import("csstype").Property.JustifySelf, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
+        order?: import("styled-system").ResponsiveValue<import("csstype").Property.Order, Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> | undefined;
     };
 }
 import PropTypes from "prop-types";

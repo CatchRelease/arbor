@@ -1,10 +1,10 @@
-import { css } from '@emotion/react';
+import { css, Theme } from '@emotion/react';
 import styled from '@emotion/styled';
 import { rem } from 'polished';
 
 import Flex from '../Flex';
 
-const baseStyles = ({ theme }) => css`
+const baseStyles = ({ theme }: { theme: Theme }) => css`
   background-color: ${theme.colors.monochrome.white};
   border-radius: ${theme.radii.small};
   border: 1px solid ${theme.colors.grey60};
@@ -14,7 +14,15 @@ const baseStyles = ({ theme }) => css`
   width: ${rem('16px')};
 `;
 
-const checkedStyles = ({ theme, checked, indeterminate }) =>
+const checkedStyles = ({
+  theme,
+  checked,
+  indeterminate
+}: {
+  theme: Theme;
+  checked: boolean;
+  indeterminate: boolean;
+}) =>
   checked &&
   css`
     background-color: ${indeterminate
@@ -26,7 +34,15 @@ const checkedStyles = ({ theme, checked, indeterminate }) =>
       : theme.colors.intent.brand.light};
   `;
 
-const disabledStyles = ({ theme, checked, disabled }) =>
+const disabledStyles = ({
+  theme,
+  checked,
+  disabled
+}: {
+  theme: Theme;
+  checked: boolean;
+  disabled: boolean;
+}) =>
   disabled &&
   css`
     background: ${checked
@@ -37,7 +53,13 @@ const disabledStyles = ({ theme, checked, disabled }) =>
     cursor: not-allowed;
   `;
 
-const StyledCheckbox = styled(Flex)`
+type Props = {
+  checked: boolean;
+  disabled: boolean;
+  indeterminate: boolean;
+};
+
+const StyledCheckbox = styled(Flex)<Props>`
   ${baseStyles};
   ${checkedStyles};
   ${disabledStyles};

@@ -5,8 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
 var _Icon = _interopRequireDefault(require("../Icon"));
 
 var _Text = _interopRequireDefault(require("../Text"));
@@ -21,7 +19,7 @@ var _StyledCheckbox = _interopRequireDefault(require("./StyledCheckbox"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
-var _excluded = ["id", "name", "label", "disabled", "isInvalid", "checked", "onChange", "value", "indeterminate", "icon"];
+var _excluded = ["checked", "disabled", "icon", "id", "indeterminate", "isInvalid", "label", "name", "onChange", "value"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -36,16 +34,22 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 var Checkbox = function Checkbox(_ref) {
-  var id = _ref.id,
-      name = _ref.name,
-      label = _ref.label,
-      disabled = _ref.disabled,
-      isInvalid = _ref.isInvalid,
-      checked = _ref.checked,
-      onChange = _ref.onChange,
-      value = _ref.value,
-      indeterminate = _ref.indeterminate,
+  var _ref$checked = _ref.checked,
+      checked = _ref$checked === void 0 ? false : _ref$checked,
+      _ref$disabled = _ref.disabled,
+      disabled = _ref$disabled === void 0 ? false : _ref$disabled,
       icon = _ref.icon,
+      id = _ref.id,
+      _ref$indeterminate = _ref.indeterminate,
+      indeterminate = _ref$indeterminate === void 0 ? false : _ref$indeterminate,
+      _ref$isInvalid = _ref.isInvalid,
+      isInvalid = _ref$isInvalid === void 0 ? false : _ref$isInvalid,
+      label = _ref.label,
+      name = _ref.name,
+      _ref$onChange = _ref.onChange,
+      onChange = _ref$onChange === void 0 ? function () {} : _ref$onChange,
+      _ref$value = _ref.value,
+      value = _ref$value === void 0 ? '' : _ref$value,
       props = _objectWithoutProperties(_ref, _excluded);
 
   return (0, _jsxRuntime.jsxs)(_CheckboxLabel["default"], _objectSpread(_objectSpread({
@@ -84,67 +88,5 @@ var Checkbox = function Checkbox(_ref) {
   }));
 };
 
-Checkbox.propTypes = {
-  /**
-   * The checked attribute of the checkbox.
-   */
-  checked: _propTypes["default"].bool,
-
-  /**
-   * When true, the checkbox is disabled.
-   */
-  disabled: _propTypes["default"].bool,
-
-  /**
-   * The icon to display alongside the label.
-   */
-  icon: _propTypes["default"].elementType,
-
-  /**
-   * The id attribute of the checkbox.
-   */
-  id: _propTypes["default"].string.isRequired,
-
-  /**
-   * State in addition to "checked" and "unchecked".
-   * When true, the checkbox displays a "minus" icon.
-   */
-  indeterminate: _propTypes["default"].bool,
-
-  /**
-   * When true, the aria-invalid attribute is true.
-   * Used for accessibility.
-   */
-  isInvalid: _propTypes["default"].bool,
-
-  /**
-   * Label of the checkbox.
-   */
-  label: _propTypes["default"].node.isRequired,
-
-  /**
-   * The name attribute of the checkbox.
-   */
-  name: _propTypes["default"].string.isRequired,
-
-  /**
-   * Function called when state changes.
-   */
-  onChange: _propTypes["default"].func,
-
-  /**
-   * The value attribute of the checkbox.
-   */
-  value: _propTypes["default"].string
-};
-Checkbox.defaultProps = {
-  checked: false,
-  disabled: false,
-  icon: undefined,
-  indeterminate: false,
-  isInvalid: false,
-  onChange: function onChange() {},
-  value: ''
-};
 var _default = Checkbox;
 exports["default"] = _default;
