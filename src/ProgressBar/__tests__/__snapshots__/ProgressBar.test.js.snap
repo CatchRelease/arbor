@@ -71,7 +71,7 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
                 "__emotion_forwardProp": undefined,
                 "__emotion_real": [Circular],
                 "__emotion_styles": Array [
-                  "label:Box;",
+                  "label:TextDiv;",
                   "label:Text;",
                   [Function],
                   ";",
@@ -650,7 +650,7 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
                 "__emotion_forwardProp": undefined,
                 "__emotion_real": [Circular],
                 "__emotion_styles": Array [
-                  "label:Box;",
+                  "label:TextDiv;",
                   "label:Text;",
                   [Function],
                   ";",

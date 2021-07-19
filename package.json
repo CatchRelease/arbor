@@ -14,7 +14,7 @@
     "deploy-storybook": "yarn storybook-to-ghpages",
     "build": "yarn typecheck && yarn build:clean && yarn build:ts && yarn build:js",
     "build:clean": "rm -rf dist/*",
-    "build:js": "babel src -d dist --extensions \".js,.ts,.tsx\" --ignore '**/*.test.js'",
+    "build:js": "babel src -d dist --extensions \".js,.ts,.tsx\" --ignore '**/*.test.js','**/*.test.tsx'",
     "build:ts": "tsc --emitDeclarationOnly --noEmit false",
     "typecheck": "tsc",
     "prepare": "husky install"
@@ -69,6 +69,8 @@
     "@storybook/addons": "^6.3.4",
     "@storybook/react": "^6.3.4",
     "@storybook/storybook-deployer": "^2.8.10",
+    "@types/enzyme": "^3.10.9",
+    "@types/jest": "^26.0.24",
     "@types/react": "^17.0.14",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
