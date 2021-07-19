@@ -8,7 +8,7 @@ expect.extend(matchers);
 describe('<Paragraph />', () => {
   describe('props', () => {
     describe('variant', () => {
-      ['ui', 'longForm', 'tiny'].forEach((variant) => {
+      (['ui', 'longForm', 'tiny'] as const).forEach((variant) => {
         it(`renders a ${variant} variant`, () => {
           const tree = createWithTheme(
             <Paragraph variant={variant}>Hello World</Paragraph>
