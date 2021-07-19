@@ -3,7 +3,7 @@ import Link from '../Link';
 
 describe('<Link />', () => {
   describe('Variants', () => {
-    ['default', 'muted'].forEach((variant) => {
+    (['default', 'muted'] as const).forEach((variant) => {
       it(`properly renders a ${variant} Link`, () => {
         const link = createWithTheme(
           <Link href="#test" variant={variant}>

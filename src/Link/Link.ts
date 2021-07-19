@@ -1,7 +1,9 @@
-import { css } from '@emotion/react';
+import { css, Theme } from '@emotion/react';
 import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
-import { color } from 'styled-system';
+import { color, ColorProps } from 'styled-system';
+
+import { WithColorPropFix } from '../colorPropFix';
+import { PolyComponent } from '../polyComponent';
 
 import Text from '../Text';
 
@@ -22,7 +24,15 @@ const baseStyles = css`
   }
 `;
 
-const variantStyles = ({ variant, theme: { colors } }) => {
+type Variant = 'default' | 'muted' | 'brandLight' | 'brandDark';
+
+const variantStyles = ({
+  variant = 'default',
+  theme: { colors }
+}: {
+  variant?: Variant;
+  theme: Theme;
+}) => {
   const variantMapping = {
     brandDark: {
       color: colors.intent.brand.dark,
@@ -89,22 +99,20 @@ const variantStyles = ({ variant, theme: { colors } }) => {
   return variantMapping[variant];
 };
 
-const Link = styled(Text)`
+type Props = ColorProps & {
+  variant?: Variant;
+};
+
+const TextAnchor = Text.withComponent('a');
+const TextAnchorWithColorPropFix: WithColorPropFix<typeof TextAnchor> =
+  TextAnchor;
+
+const Link: PolyComponent<'a', Props> = styled(
+  TextAnchorWithColorPropFix
+)<Props>`
   ${baseStyles};
   ${variantStyles};
   ${color};
 `;
-
-Link.propTypes = {
-  /**
-   * Link variant for styling of link. See storybook for examples.
-   */
-  variant: PropTypes.oneOf(['default', 'muted', 'brandLight', 'brandDark'])
-};
-
-Link.defaultProps = {
-  as: 'a',
-  variant: 'default'
-};
 
 export default Link;
