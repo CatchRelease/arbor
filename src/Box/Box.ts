@@ -18,7 +18,10 @@ import {
   WidthProps
 } from 'styled-system';
 
+import { PolyComponent } from '../polyComponent';
+
 import Text, { TextProps } from '../Text';
+import { WithColorPropFix } from '../colorPropFix';
 
 export type Props = TextProps &
   BordersProps &
@@ -29,7 +32,10 @@ export type Props = TextProps &
   PositionProps &
   WidthProps;
 
-const Box = styled(Text.withComponent('div'))<Props>`
+const TextDiv = Text.withComponent('div');
+const TextDivWithColorPropFix: WithColorPropFix<typeof TextDiv> = TextDiv;
+
+const Box: PolyComponent<'div', Props> = styled(TextDivWithColorPropFix)<Props>`
   box-sizing: border-box;
   ${borders};
   ${boxShadow};
