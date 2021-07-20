@@ -1,7 +1,5 @@
+import { FC } from 'react';
+import { Props as StyledInputProps } from '../Input/StyledInput';
+export declare type Props = StyledInputProps;
+declare const StyledTextarea: FC<Props>;
 export default StyledTextarea;
-declare function StyledTextarea(props: any): JSX.Element;
-declare namespace StyledTextarea {
-    namespace defaultProps {
-        const as: string;
-    }
-}

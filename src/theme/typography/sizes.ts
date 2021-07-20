@@ -12,6 +12,8 @@ const fontSizes = {
   size9: rem('34px')
 };
 
+export const fontSizeKeys = Object.keys(fontSizes);
+
 export type FontSize = keyof typeof fontSizes;
 
 const inputSizes = {

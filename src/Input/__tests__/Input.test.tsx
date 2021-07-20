@@ -51,7 +51,7 @@ describe('<Input />', () => {
   });
 
   context('with a validate function', () => {
-    const render = (props) =>
+    const render = (props = {}) =>
       mount(
         <ThemeProvider theme={theme}>
           <Input

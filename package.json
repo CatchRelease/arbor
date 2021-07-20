@@ -71,6 +71,7 @@
     "@storybook/storybook-deployer": "^2.8.10",
     "@types/enzyme": "^3.10.9",
     "@types/jest": "^26.0.24",
+    "@types/jest-plugin-context": "^2.9.4",
     "@types/react": "^17.0.14",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",

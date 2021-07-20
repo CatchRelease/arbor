@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports["default"] = exports.fontSizeKeys = void 0;
 
 var _polished = require("polished");
 
@@ -24,6 +24,8 @@ var fontSizes = {
   size8: (0, _polished.rem)('28px'),
   size9: (0, _polished.rem)('34px')
 };
+var fontSizeKeys = Object.keys(fontSizes);
+exports.fontSizeKeys = fontSizeKeys;
 var inputSizes = {
   "default": fontSizes.size4,
   mobile: fontSizes.size5
