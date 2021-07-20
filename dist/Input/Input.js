@@ -7,15 +7,13 @@ exports["default"] = void 0;
 
 var _react = require("react");
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
 var _FormField = _interopRequireDefault(require("../FormField"));
 
 var _StyledInput = _interopRequireDefault(require("./StyledInput"));
 
 var _jsxRuntime = require("@emotion/react/jsx-runtime");
 
-var _excluded = ["caption", "label", "labelAside", "id", "onBlur", "onChange", "validate", "value"];
+var _excluded = ["caption", "label", "labelAside", "id", "onBlur", "onChange", "type", "validate", "value"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -42,13 +40,21 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 var Input = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
-  var caption = _ref.caption,
-      label = _ref.label,
-      labelAside = _ref.labelAside,
+  var _ref$caption = _ref.caption,
+      caption = _ref$caption === void 0 ? '' : _ref$caption,
+      _ref$label = _ref.label,
+      label = _ref$label === void 0 ? '' : _ref$label,
+      _ref$labelAside = _ref.labelAside,
+      labelAside = _ref$labelAside === void 0 ? null : _ref$labelAside,
       id = _ref.id,
       onBlur = _ref.onBlur,
       onChange = _ref.onChange,
-      validate = _ref.validate,
+      _ref$type = _ref.type,
+      type = _ref$type === void 0 ? 'text' : _ref$type,
+      _ref$validate = _ref.validate,
+      validate = _ref$validate === void 0 ? function () {
+    return undefined;
+  } : _ref$validate,
       propValue = _ref.value,
       props = _objectWithoutProperties(_ref, _excluded);
 
@@ -87,7 +93,8 @@ var Input = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
     labelAside: labelAside,
     children: (0, _jsxRuntime.jsx)(_StyledInput["default"], _objectSpread(_objectSpread({}, _objectSpread(_objectSpread({}, props), {}, {
       id: id,
-      ref: ref
+      ref: ref,
+      type: type
     })), {}, {
       value: propValue ? propValue.toString() : propValue,
       isInvalid: !!errorMessage,
@@ -96,70 +103,5 @@ var Input = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
     }))
   });
 });
-Input.propTypes = {
-  /**
-   * The actualy HTML element tag to use when rendering.
-   */
-  as: _propTypes["default"].string,
-
-  /**
-   * Optional text to be displayed underneath the input.
-   */
-  caption: _propTypes["default"].string,
-
-  /**
-   * HTML ID for the input to be used in conjunction with the label for
-   * accessiblity.
-   */
-  id: _propTypes["default"].string.isRequired,
-
-  /**
-   * Label text for the form field
-   */
-  label: _propTypes["default"].string,
-
-  /**
-   * Component that goes to the right of the label. Does not have to only be text.
-   */
-  labelAside: _propTypes["default"].node,
-
-  /**
-   * Function called when input loses focus.
-   */
-  onBlur: _propTypes["default"].func,
-
-  /**
-   * Function called when state changes.
-   */
-  onChange: _propTypes["default"].func,
-
-  /**
-   * HTML Input type
-   */
-  type: _propTypes["default"].string,
-
-  /**
-   * Optional validate function.
-   */
-  validate: _propTypes["default"].func,
-
-  /**
-   * HTML Input value
-   */
-  value: _propTypes["default"].oneOfType([_propTypes["default"].string, _propTypes["default"].number, _propTypes["default"].bool])
-};
-Input.defaultProps = {
-  as: 'input',
-  caption: '',
-  label: '',
-  labelAside: null,
-  onBlur: undefined,
-  onChange: undefined,
-  type: 'text',
-  validate: function validate() {
-    return undefined;
-  },
-  value: undefined
-};
 var _default = Input;
 exports["default"] = _default;

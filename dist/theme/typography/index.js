@@ -41,6 +41,12 @@ Object.defineProperty(exports, "FontSize", {
     return _sizes.FontSize;
   }
 });
+Object.defineProperty(exports, "fontSizeKeys", {
+  enumerable: true,
+  get: function get() {
+    return _sizes.fontSizeKeys;
+  }
+});
 
 var _brandFont = _interopRequireDefault(require("./brandFont"));
 

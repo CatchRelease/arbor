@@ -7,8 +7,6 @@ exports["default"] = void 0;
 
 var _react = require("react");
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
 var _FormField = _interopRequireDefault(require("../FormField"));
 
 var _StyledTextarea = _interopRequireDefault(require("./StyledTextarea"));
@@ -30,9 +28,12 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 var Textarea = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
-  var caption = _ref.caption,
-      label = _ref.label,
-      labelAside = _ref.labelAside,
+  var _ref$caption = _ref.caption,
+      caption = _ref$caption === void 0 ? '' : _ref$caption,
+      _ref$label = _ref.label,
+      label = _ref$label === void 0 ? '' : _ref$label,
+      _ref$labelAside = _ref.labelAside,
+      labelAside = _ref$labelAside === void 0 ? null : _ref$labelAside,
       id = _ref.id,
       props = _objectWithoutProperties(_ref, _excluded);
 
@@ -47,31 +48,5 @@ var Textarea = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
     })))
   });
 });
-Textarea.propTypes = {
-  /**
-   * Optional help text to be rendered within the FormField component
-   */
-  caption: _propTypes["default"].string,
-
-  /**
-   * HTML ID attribute for the inpt
-   */
-  id: _propTypes["default"].string.isRequired,
-
-  /**
-   * Label text for the input
-   */
-  label: _propTypes["default"].string,
-
-  /**
-   * Component that goes to the right of the label. Does not have to only be text.
-   */
-  labelAside: _propTypes["default"].node
-};
-Textarea.defaultProps = {
-  caption: '',
-  label: '',
-  labelAside: null
-};
 var _default = Textarea;
 exports["default"] = _default;

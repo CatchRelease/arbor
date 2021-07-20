@@ -9,6 +9,7 @@ declare const fontSizes: {
     size8: string;
     size9: string;
 };
+export declare const fontSizeKeys: string[];
 export declare type FontSize = keyof typeof fontSizes;
 declare const _default: {
     input: {

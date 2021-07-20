@@ -7,8 +7,6 @@ exports["default"] = void 0;
 
 var _react = require("react");
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
 var _FormField = _interopRequireDefault(require("../FormField"));
 
 var _StyledSelect = _interopRequireDefault(require("./StyledSelect"));
@@ -30,10 +28,13 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 var Select = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
-  var caption = _ref.caption,
+  var _ref$caption = _ref.caption,
+      caption = _ref$caption === void 0 ? '' : _ref$caption,
       children = _ref.children,
-      label = _ref.label,
-      labelAside = _ref.labelAside,
+      _ref$label = _ref.label,
+      label = _ref$label === void 0 ? '' : _ref$label,
+      _ref$labelAside = _ref.labelAside,
+      labelAside = _ref$labelAside === void 0 ? null : _ref$labelAside,
       id = _ref.id,
       props = _objectWithoutProperties(_ref, _excluded);
 
@@ -51,37 +52,5 @@ var Select = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
     children: select
   }) : select;
 });
-Select.propTypes = {
-  /**
-   * Help text to be displayed in the FormField for the Select.
-   */
-  caption: _propTypes["default"].string,
-
-  /**
-   * Select options to be displayed within the menu
-   */
-  children: _propTypes["default"].oneOfType([_propTypes["default"].node, _propTypes["default"].arrayOf(_propTypes["default"].node)]).isRequired,
-
-  /**
-   * HTML ID for the select
-   */
-  id: _propTypes["default"].string,
-
-  /**
-   * Label text for the select
-   */
-  label: _propTypes["default"].oneOfType([_propTypes["default"].node, _propTypes["default"].string]),
-
-  /**
-   * Component that goes to the right of the label. Does not have to only be text.
-   */
-  labelAside: _propTypes["default"].node
-};
-Select.defaultProps = {
-  id: undefined,
-  caption: '',
-  label: '',
-  labelAside: null
-};
 var _default = Select;
 exports["default"] = _default;

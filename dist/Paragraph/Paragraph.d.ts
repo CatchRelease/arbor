@@ -1,9 +1,10 @@
 /// <reference types="react" />
 import { Theme } from '@emotion/react';
+import { LiteralUnion } from 'type-fest';
 import { FontSize } from '../theme/typography';
 declare type Variant = 'ui' | 'longForm' | 'tiny';
 declare type Props = {
-    fontSize?: FontSize;
+    fontSize?: LiteralUnion<FontSize, string>;
     variant: Variant;
 };
 declare const Paragraph: import("@emotion/styled").StyledComponent<{

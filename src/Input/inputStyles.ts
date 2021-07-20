@@ -1,17 +1,17 @@
-import { css } from '@emotion/react';
+import { css, Theme } from '@emotion/react';
 import { transparentize } from 'polished';
 
-const disabledStyles = (theme) => css`
+const disabledStyles = (theme: Theme) => css`
   background: ${theme.colors.background.default};
 `;
 
-const focusedStyles = (theme) => css`
+const focusedStyles = (theme: Theme) => css`
   border: ${theme.borderWidth.small} solid ${theme.colors.intent.brand.dark};
   box-shadow: 0 0 8px ${transparentize(0.9, theme.colors.intent.brand.light)};
   outline: none;
 `;
 
-const invalidStyles = (theme) => css`
+const invalidStyles = (theme: Theme) => css`
   border: ${theme.borderWidth.small} solid ${theme.colors.palette.red.default};
   background: ${theme.colors.palette.red.lighter};
 `;
@@ -27,12 +27,21 @@ const hideArrowsStyles = css`
 `;
 /* stylelint-enable property-no-vendor-prefix */
 
+export type InputStylesProps = {
+  hideArrows?: boolean;
+  isDisabled?: boolean;
+  isFocused?: boolean;
+  isInvalid?: boolean;
+};
+
 const inputStyles = ({
   hideArrows,
   isDisabled,
   isFocused,
   isInvalid,
   theme
+}: InputStylesProps & {
+  theme: Theme;
 }) => css`
   border-radius: ${theme.radii.small};
   border: ${theme.borderWidth.small} solid ${theme.colors.border.default};

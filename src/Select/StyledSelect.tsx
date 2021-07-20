@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 import styled from '@emotion/styled';
 
 import StyledInput from '../Input/StyledInput';
@@ -35,26 +35,12 @@ const StyledSelectWrapper = styled.div`
   }
 `;
 
-const StyledSelect = ({ children, ...props }) => {
-  const { large } = props;
-
+const StyledSelect: FC = ({ children, ...props }) => {
   return (
-    <StyledSelectWrapper large={large}>
+    <StyledSelectWrapper>
       <StyledSelectInput {...props}>{children}</StyledSelectInput>
     </StyledSelectWrapper>
   );
-};
-
-StyledSelect.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]).isRequired,
-  large: PropTypes.bool
-};
-
-StyledSelect.defaultProps = {
-  large: false
 };
 
 export default StyledSelect;

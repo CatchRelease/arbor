@@ -1,8 +1,9 @@
 import { css, Theme } from '@emotion/react';
 import styled from '@emotion/styled';
+import { LiteralUnion } from 'type-fest';
 
 import Text from '../Text';
-import { FontSize } from '../theme/typography';
+import { FontSize, fontSizeKeys } from '../theme/typography';
 
 const VARIANT_MAPPING = {
   ui: 'size4',
@@ -12,6 +13,9 @@ const VARIANT_MAPPING = {
 
 type Variant = 'ui' | 'longForm' | 'tiny';
 
+const isFontSize = (value: string): value is FontSize =>
+  fontSizeKeys.includes(value);
+
 const variantStyles = ({
   theme,
   variant,
@@ -19,10 +23,10 @@ const variantStyles = ({
 }: {
   theme: Theme;
   variant: Variant;
-  fontSize?: FontSize;
+  fontSize?: LiteralUnion<FontSize, string>;
 }) => {
   const fontSizeOverride =
-    fontSize && theme.fontSizes[fontSize]
+    fontSize && isFontSize(fontSize) && theme.fontSizes[fontSize]
       ? theme.fontSizes[fontSize]
       : fontSize;
 
@@ -32,7 +36,7 @@ const variantStyles = ({
 };
 
 type Props = {
-  fontSize?: FontSize;
+  fontSize?: LiteralUnion<FontSize, string>;
   variant: Variant;
 };
 

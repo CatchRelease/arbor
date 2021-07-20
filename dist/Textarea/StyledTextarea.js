@@ -18,11 +18,10 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var StyledTextarea = function StyledTextarea(props) {
-  return (0, _jsxRuntime.jsx)(_StyledInput["default"], _objectSpread({}, props));
+  return (0, _jsxRuntime.jsx)(_StyledInput["default"], _objectSpread({
+    as: "textarea"
+  }, props));
 };
 
-StyledTextarea.defaultProps = {
-  as: 'textarea'
-};
 var _default = StyledTextarea;
 exports["default"] = _default;
