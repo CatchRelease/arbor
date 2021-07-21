@@ -15,6 +15,8 @@ var _exportNames = {
   Badge: true,
   Box: true,
   Button: true,
+  ButtonProps: true,
+  ButtonSize: true,
   ButtonVariant: true,
   Card: true,
   CardActions: true,
@@ -107,6 +109,18 @@ Object.defineProperty(exports, "Button", {
   enumerable: true,
   get: function get() {
     return _Button["default"];
+  }
+});
+Object.defineProperty(exports, "ButtonProps", {
+  enumerable: true,
+  get: function get() {
+    return _Button.ButtonProps;
+  }
+});
+Object.defineProperty(exports, "ButtonSize", {
+  enumerable: true,
+  get: function get() {
+    return _Button.ButtonSize;
   }
 });
 Object.defineProperty(exports, "ButtonVariant", {
