@@ -4,7 +4,7 @@ import { Size } from './sizes';
 import { Variant } from './variants';
 import { Intent } from '../theme/colors/intent';
 import { PaletteColor } from '../theme/colors/palette';
-declare type Props = ButtonHTMLAttributes<HTMLButtonElement> & BackgroundColorProps & {
+export declare type Props = ButtonHTMLAttributes<HTMLButtonElement> & BackgroundColorProps & {
     fullWidth?: boolean | boolean[];
     iconStart?: ReactNode;
     iconEnd?: ReactNode;

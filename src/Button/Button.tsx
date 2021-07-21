@@ -10,7 +10,7 @@ import { Variant } from './variants';
 import { Intent } from '../theme/colors/intent';
 import { PaletteColor } from '../theme/colors/palette';
 
-type Props = ButtonHTMLAttributes<HTMLButtonElement> &
+export type Props = ButtonHTMLAttributes<HTMLButtonElement> &
   BackgroundColorProps & {
     fullWidth?: boolean | boolean[];
     iconStart?: ReactNode;
