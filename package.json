@@ -10,7 +10,7 @@
     "build-storybook": "build-storybook",
     "lint": "yarn eslint && stylelint src",
     "eslint": "eslint src stories .storybook",
-    "test:ci": "yarn typecheck && yarn test && yarn lint",
+    "test:ci": "yarn test && yarn lint",
     "deploy-storybook": "yarn storybook-to-ghpages",
     "build": "yarn typecheck && yarn build:clean && yarn build:ts && yarn build:js",
     "build:clean": "rm -rf dist/*",
