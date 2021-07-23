@@ -3,16 +3,6 @@
 exports[`<Header /> renders with heading and a button 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.25;
-  line-height: 1.25;
-  margin-bottom: calc(1.5rem * 0.5);
-}
-
-.emotion-8 {
-  font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
   -webkit-align-items: end;
@@ -23,7 +13,17 @@ exports[`<Header /> renders with heading and a button 1`] = `
   grid-template-columns: minmax(auto, 100%) repeat(1, auto);
 }
 
-.emotion-6 {
+.emotion-1 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  line-height: 1.25;
+  margin-bottom: calc(1.5rem * 0.5);
+}
+
+.emotion-2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -43,65 +43,63 @@ exports[`<Header /> renders with heading and a button 1`] = `
   border-radius: 3px;
 }
 
-.emotion-6:disabled {
+.emotion-2:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-6:enabled {
+.emotion-2:enabled {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.emotion-6 i {
+.emotion-2 i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
 }
 
-.emotion-6 i {
+.emotion-2 i {
   width: 2.5rem;
   font-size: 0.875rem;
 }
 
-.emotion-6 i:first-child {
+.emotion-2 i:first-child {
   margin-left: -1.25rem;
 }
 
-.emotion-6 i:last-child {
+.emotion-2 i:last-child {
   margin-right: -1.25rem;
 }
 
-
-
-.emotion-6:enabled:active {
+.emotion-2:enabled:active {
   background-color: #061813;
 }
 
-.emotion-6:enabled:focus {
+.emotion-2:enabled:focus {
   box-shadow: 0 0 0 3px #B6EFD0;
 }
 
-.emotion-6:enabled:hover {
+.emotion-2:enabled:hover {
   background-color: #2f413c;
 }
 
-.emotion-6::-moz-focus-inner {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-6:focus {
+.emotion-2:focus {
   border: 1px solid transparent;
 }
 
-.emotion-6:focus:hover {
+.emotion-2:focus:hover {
   border: 1px solid transparent;
 }
 
-.emotion-6 i {
+.emotion-2 i {
   color: inherit;
 }
 
@@ -117,7 +115,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
   visibility: inherit;
 }
 
-.emotion-2 {
+.emotion-6 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -125,11 +123,11 @@ exports[`<Header /> renders with heading and a button 1`] = `
 }
 
 <header
-  className="emotion-8 emotion-9"
+  className="emotion-0"
   display="grid"
 >
   <h1
-    className="emotion-0 emotion-1"
+    className="emotion-1"
     color="text.dark"
     fontSize="size7"
     fontWeight="bold"
@@ -137,7 +135,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
     My Heading
   </h1>
   <button
-    className="button--primary emotion-6 emotion-7"
+    className="button--primary emotion-2 emotion-3"
     disabled={false}
     fontWeight="medium"
     size="large"
@@ -147,7 +145,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
       display="inline-grid"
     >
       <p
-        className="emotion-2 emotion-3"
+        className="emotion-6"
         color="inherit"
         fontSize="inherit"
       >
@@ -159,7 +157,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
 `;
 
 exports[`<Header /> renders with heading and no buttons 1`] = `
-.emotion-2 {
+.emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -171,7 +169,7 @@ exports[`<Header /> renders with heading and no buttons 1`] = `
   grid-template-columns: minmax(auto, 100%);
 }
 
-.emotion-0 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 1.5rem;
@@ -182,11 +180,11 @@ exports[`<Header /> renders with heading and no buttons 1`] = `
 }
 
 <header
-  className="emotion-2 emotion-3"
+  className="emotion-0"
   display="grid"
 >
   <h1
-    className="emotion-0 emotion-1"
+    className="emotion-1"
     color="text.dark"
     fontSize="size7"
     fontWeight="bold"
@@ -199,117 +197,6 @@ exports[`<Header /> renders with heading and no buttons 1`] = `
 exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.25;
-  line-height: 1.25;
-  margin-bottom: calc(1.5rem * 0.5);
-}
-
-.emotion-12 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: none;
-  position: relative;
-  text-align: center;
-  font-size: 0.875rem;
-  height: 2.5rem;
-  padding: 0 1.25rem;
-  background-color: #081D17;
-  color: #C0F9DA;
-  font-weight: 500;
-  width: auto;
-  line-height: 1;
-  border: 1px solid transparent;
-  border-radius: 3px;
-}
-
-.emotion-12:disabled {
-  background: #EBECEC;
-  border: 1px solid transparent;
-  color: rgba(120,121,125,0.7);
-  cursor: not-allowed;
-}
-
-.emotion-12:enabled {
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.emotion-12 i {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  vertical-align: middle;
-}
-
-.emotion-12 i {
-  width: 2.5rem;
-  font-size: 0.875rem;
-}
-
-.emotion-12 i:first-child {
-  margin-left: -1.25rem;
-}
-
-.emotion-12 i:last-child {
-  margin-right: -1.25rem;
-}
-
-
-
-.emotion-12:enabled:active {
-  background-color: #061813;
-}
-
-.emotion-12:enabled:focus {
-  box-shadow: 0 0 0 3px #B6EFD0;
-}
-
-.emotion-12:enabled:hover {
-  background-color: #2f413c;
-}
-
-.emotion-12::-moz-focus-inner {
-  border: 0;
-}
-
-.emotion-12:focus {
-  border: 1px solid transparent;
-}
-
-.emotion-12:focus:hover {
-  border: 1px solid transparent;
-}
-
-.emotion-12 i {
-  color: inherit;
-}
-
-.emotion-4 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-  display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: 1fr;
-  visibility: inherit;
-}
-
-.emotion-2 {
-  font-family: Motiva Sans;
-  color: inherit;
-  font-size: inherit;
-  line-height: 1.25;
-}
-
-.emotion-14 {
-  font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
   -webkit-align-items: end;
@@ -320,7 +207,17 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   grid-template-columns: minmax(auto, 100%) repeat(2, auto);
 }
 
-.emotion-6 {
+.emotion-1 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  line-height: 1.25;
+  margin-bottom: calc(1.5rem * 0.5);
+}
+
+.emotion-2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -340,81 +237,180 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   border-radius: 3px;
 }
 
-.emotion-6:disabled {
+.emotion-2:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-6:enabled {
+.emotion-2:enabled {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.emotion-6 i {
+.emotion-2 i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
 }
 
-.emotion-6 i {
+.emotion-2 i {
   width: 2.5rem;
   font-size: 0.875rem;
 }
 
-.emotion-6 i:first-child {
+.emotion-2 i:first-child {
   margin-left: -1.25rem;
 }
 
-.emotion-6 i:last-child {
+.emotion-2 i:last-child {
   margin-right: -1.25rem;
 }
 
-.emotion-6:enabled {
+.emotion-2:enabled {
   border: 1px solid #E0E1E2;
 }
 
-.emotion-6:enabled:active {
+.emotion-2:enabled:active {
   color: #061813;
   background-color: #F8F9F9;
 }
 
-.emotion-6:enabled:focus {
+.emotion-2:enabled:focus {
   box-shadow: 0 0 0 3px #B6EFD0;
 }
 
-.emotion-6:enabled:hover {
+.emotion-2:enabled:hover {
   border: 1px solid #2f413c;
 }
 
-.emotion-6:enabled:hover i {
+.emotion-2:enabled:hover i {
   color: #081D17;
 }
 
-.emotion-6::-moz-focus-inner {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-6:focus {
+.emotion-2:focus {
   border: 1px solid transparent;
 }
 
-.emotion-6:focus:hover {
+.emotion-2:focus:hover {
   border: 1px solid transparent;
 }
 
-.emotion-6 i {
+.emotion-2 i {
   color: #989A9C;
 }
 
+.emotion-4 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  visibility: inherit;
+}
+
+.emotion-6 {
+  font-family: Motiva Sans;
+  color: inherit;
+  font-size: inherit;
+  line-height: 1.25;
+}
+
+.emotion-7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: none;
+  position: relative;
+  text-align: center;
+  font-size: 0.875rem;
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  background-color: #081D17;
+  color: #C0F9DA;
+  font-weight: 500;
+  width: auto;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.emotion-7:disabled {
+  background: #EBECEC;
+  border: 1px solid transparent;
+  color: rgba(120,121,125,0.7);
+  cursor: not-allowed;
+}
+
+.emotion-7:enabled {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.emotion-7 i {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+}
+
+.emotion-7 i {
+  width: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.emotion-7 i:first-child {
+  margin-left: -1.25rem;
+}
+
+.emotion-7 i:last-child {
+  margin-right: -1.25rem;
+}
+
+.emotion-7:enabled:active {
+  background-color: #061813;
+}
+
+.emotion-7:enabled:focus {
+  box-shadow: 0 0 0 3px #B6EFD0;
+}
+
+.emotion-7:enabled:hover {
+  background-color: #2f413c;
+}
+
+.emotion-7::-moz-focus-inner {
+  border: 0;
+}
+
+.emotion-7:focus {
+  border: 1px solid transparent;
+}
+
+.emotion-7:focus:hover {
+  border: 1px solid transparent;
+}
+
+.emotion-7 i {
+  color: inherit;
+}
+
 <header
-  className="emotion-14 emotion-15"
+  className="emotion-0"
   display="grid"
 >
   <h1
-    className="emotion-0 emotion-1"
+    className="emotion-1"
     color="text.dark"
     fontSize="size7"
     fontWeight="bold"
@@ -422,7 +418,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
     My Heading
   </h1>
   <button
-    className="button--secondary emotion-6 emotion-7"
+    className="button--secondary emotion-2 emotion-3"
     disabled={false}
     fontWeight="medium"
     size="large"
@@ -432,7 +428,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
       display="inline-grid"
     >
       <p
-        className="emotion-2 emotion-3"
+        className="emotion-6"
         color="inherit"
         fontSize="inherit"
       >
@@ -441,7 +437,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
     </div>
   </button>
   <button
-    className="button--primary emotion-12 emotion-7"
+    className="button--primary emotion-7 emotion-3"
     disabled={false}
     fontWeight="medium"
     size="large"
@@ -451,7 +447,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
       display="inline-grid"
     >
       <p
-        className="emotion-2 emotion-3"
+        className="emotion-6"
         color="inherit"
         fontSize="inherit"
       >

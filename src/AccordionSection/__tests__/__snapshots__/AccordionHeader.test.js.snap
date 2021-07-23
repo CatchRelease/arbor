@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AccordionHeader /> properly renders an accordion header 1`] = `
-.emotion-7 {
+.emotion-0 {
   font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -22,24 +22,24 @@ exports[`<AccordionHeader /> properly renders an accordion header 1`] = `
   border-bottom: 1px solid #E0E1E2;
 }
 
-.emotion-7 .button--minimal:last-of-type {
+.emotion-0 .button--minimal:last-of-type {
   margin-right: -0.25rem;
 }
 
-.emotion-7 .button--minimal:last-of-type +:not(object) {
+.emotion-0 .button--minimal:last-of-type+:not(object) {
   margin-left: 0.25rem;
 }
 
-.emotion-7 button+.button--secondary,
-.emotion-7 button+.button--primary {
+.emotion-0 button+.button--secondary,
+.emotion-0 button+.button--primary {
   margin-left: 0.5rem;
 }
 
-section:last-child .emotion-7 {
+section:last-child .emotion-0 {
   border-bottom: none;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -62,7 +62,7 @@ section:last-child .emotion-7 {
   margin-bottom: 0;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -80,7 +80,7 @@ section:last-child .emotion-7 {
   padding: 0;
 }
 
-.emotion-0 {
+.emotion-6 {
   margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -91,11 +91,11 @@ section:last-child .emotion-7 {
 <header
   aria-controls="my-accordion-1"
   aria-expanded={false}
-  className="emotion-7 emotion-8"
+  className="emotion-0 emotion-1"
   onClick={[Function]}
 >
   <h1
-    className="emotion-4 emotion-5 emotion-6"
+    className="emotion-2 emotion-3"
     color="text.dark"
     fontSize="size4"
     fontWeight="medium"
@@ -103,10 +103,10 @@ section:last-child .emotion-7 {
     <span
       aria-controls="my-accordion-1"
       aria-expanded={false}
-      className="emotion-2 emotion-3"
+      className="emotion-4 emotion-5"
     >
       <i
-        className="ar ar-chevron emotion-0 emotion-1"
+        className="ar ar-chevron emotion-6"
       />
       My Heading
     </span>
@@ -115,7 +115,7 @@ section:last-child .emotion-7 {
 `;
 
 exports[`<AccordionHeader /> renders with a note 1`] = `
-.emotion-7 {
+.emotion-0 {
   font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -136,24 +136,24 @@ exports[`<AccordionHeader /> renders with a note 1`] = `
   border-bottom: 1px solid #E0E1E2;
 }
 
-.emotion-7 .button--minimal:last-of-type {
+.emotion-0 .button--minimal:last-of-type {
   margin-right: -0.25rem;
 }
 
-.emotion-7 .button--minimal:last-of-type +:not(object) {
+.emotion-0 .button--minimal:last-of-type+:not(object) {
   margin-left: 0.25rem;
 }
 
-.emotion-7 button+.button--secondary,
-.emotion-7 button+.button--primary {
+.emotion-0 button+.button--secondary,
+.emotion-0 button+.button--primary {
   margin-left: 0.5rem;
 }
 
-section:last-child .emotion-7 {
+section:last-child .emotion-0 {
   border-bottom: none;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -176,7 +176,7 @@ section:last-child .emotion-7 {
   margin-bottom: 0;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -194,7 +194,7 @@ section:last-child .emotion-7 {
   padding: 0;
 }
 
-.emotion-0 {
+.emotion-6 {
   margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -205,11 +205,11 @@ section:last-child .emotion-7 {
 <header
   aria-controls="my-accordion-1"
   aria-expanded={false}
-  className="emotion-7 emotion-8"
+  className="emotion-0 emotion-1"
   onClick={[Function]}
 >
   <h1
-    className="emotion-4 emotion-5 emotion-6"
+    className="emotion-2 emotion-3"
     color="text.dark"
     fontSize="size4"
     fontWeight="medium"
@@ -217,10 +217,10 @@ section:last-child .emotion-7 {
     <span
       aria-controls="my-accordion-1"
       aria-expanded={false}
-      className="emotion-2 emotion-3"
+      className="emotion-4 emotion-5"
     >
       <i
-        className="ar ar-chevron emotion-0 emotion-1"
+        className="ar ar-chevron emotion-6"
       />
       My Heading
     </span>
@@ -230,7 +230,7 @@ section:last-child .emotion-7 {
 `;
 
 exports[`<AccordionHeader /> renders with an on click 1`] = `
-.emotion-7 {
+.emotion-0 {
   font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -251,24 +251,24 @@ exports[`<AccordionHeader /> renders with an on click 1`] = `
   border-bottom: 1px solid #E0E1E2;
 }
 
-.emotion-7 .button--minimal:last-of-type {
+.emotion-0 .button--minimal:last-of-type {
   margin-right: -0.25rem;
 }
 
-.emotion-7 .button--minimal:last-of-type +:not(object) {
+.emotion-0 .button--minimal:last-of-type+:not(object) {
   margin-left: 0.25rem;
 }
 
-.emotion-7 button+.button--secondary,
-.emotion-7 button+.button--primary {
+.emotion-0 button+.button--secondary,
+.emotion-0 button+.button--primary {
   margin-left: 0.5rem;
 }
 
-section:last-child .emotion-7 {
+section:last-child .emotion-0 {
   border-bottom: none;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -291,7 +291,7 @@ section:last-child .emotion-7 {
   margin-bottom: 0;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -309,7 +309,7 @@ section:last-child .emotion-7 {
   padding: 0;
 }
 
-.emotion-0 {
+.emotion-6 {
   margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -320,11 +320,11 @@ section:last-child .emotion-7 {
 <header
   aria-controls="my-accordion-1"
   aria-expanded={false}
-  className="emotion-7 emotion-8"
+  className="emotion-0 emotion-1"
   onClick={[MockFunction]}
 >
   <h1
-    className="emotion-4 emotion-5 emotion-6"
+    className="emotion-2 emotion-3"
     color="text.dark"
     fontSize="size4"
     fontWeight="medium"
@@ -332,10 +332,10 @@ section:last-child .emotion-7 {
     <span
       aria-controls="my-accordion-1"
       aria-expanded={false}
-      className="emotion-2 emotion-3"
+      className="emotion-4 emotion-5"
     >
       <i
-        className="ar ar-chevron emotion-0 emotion-1"
+        className="ar ar-chevron emotion-6"
       />
       My Heading
     </span>
@@ -344,7 +344,7 @@ section:last-child .emotion-7 {
 `;
 
 exports[`<AccordionHeader /> renders with chevron postion 1`] = `
-.emotion-7 {
+.emotion-0 {
   font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -365,24 +365,24 @@ exports[`<AccordionHeader /> renders with chevron postion 1`] = `
   border-bottom: 1px solid #E0E1E2;
 }
 
-.emotion-7 .button--minimal:last-of-type {
+.emotion-0 .button--minimal:last-of-type {
   margin-right: -0.25rem;
 }
 
-.emotion-7 .button--minimal:last-of-type +:not(object) {
+.emotion-0 .button--minimal:last-of-type+:not(object) {
   margin-left: 0.25rem;
 }
 
-.emotion-7 button+.button--secondary,
-.emotion-7 button+.button--primary {
+.emotion-0 button+.button--secondary,
+.emotion-0 button+.button--primary {
   margin-left: 0.5rem;
 }
 
-section:last-child .emotion-7 {
+section:last-child .emotion-0 {
   border-bottom: none;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -405,7 +405,7 @@ section:last-child .emotion-7 {
   margin-bottom: 0;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -423,7 +423,7 @@ section:last-child .emotion-7 {
   padding: 0;
 }
 
-.emotion-0 {
+.emotion-6 {
   margin-right: 0.75rem;
   margin-left: 0.25rem;
   -webkit-transform: rotate(270deg);
@@ -435,11 +435,11 @@ section:last-child .emotion-7 {
 <header
   aria-controls="my-accordion-1"
   aria-expanded={false}
-  className="emotion-7 emotion-8"
+  className="emotion-0 emotion-1"
   onClick={[Function]}
 >
   <h1
-    className="emotion-4 emotion-5 emotion-6"
+    className="emotion-2 emotion-3"
     color="text.dark"
     fontSize="size4"
     fontWeight="medium"
@@ -447,11 +447,11 @@ section:last-child .emotion-7 {
     <span
       aria-controls="my-accordion-1"
       aria-expanded={false}
-      className="emotion-2 emotion-3"
+      className="emotion-4 emotion-5"
     >
       My Heading
       <i
-        className="ar ar-chevron emotion-0 emotion-1"
+        className="ar ar-chevron emotion-6"
       />
     </span>
   </h1>
@@ -459,7 +459,7 @@ section:last-child .emotion-7 {
 `;
 
 exports[`<AccordionHeader /> renders with the panel visible 1`] = `
-.emotion-7 {
+.emotion-0 {
   font-family: Motiva Sans;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -480,24 +480,24 @@ exports[`<AccordionHeader /> renders with the panel visible 1`] = `
   border-bottom: 1px solid #E0E1E2;
 }
 
-.emotion-7 .button--minimal:last-of-type {
+.emotion-0 .button--minimal:last-of-type {
   margin-right: -0.25rem;
 }
 
-.emotion-7 .button--minimal:last-of-type +:not(object) {
+.emotion-0 .button--minimal:last-of-type+:not(object) {
   margin-left: 0.25rem;
 }
 
-.emotion-7 button+.button--secondary,
-.emotion-7 button+.button--primary {
+.emotion-0 button+.button--secondary,
+.emotion-0 button+.button--primary {
   margin-left: 0.5rem;
 }
 
-section:last-child .emotion-7 {
+section:last-child .emotion-0 {
   border-bottom: none;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -520,7 +520,7 @@ section:last-child .emotion-7 {
   margin-bottom: 0;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -538,18 +538,18 @@ section:last-child .emotion-7 {
   padding: 0;
 }
 
-.emotion-0 {
+.emotion-6 {
   margin-right: 0.75rem;
 }
 
 <header
   aria-controls="my-accordion-1"
   aria-expanded={true}
-  className="emotion-7 emotion-8"
+  className="emotion-0 emotion-1"
   onClick={[Function]}
 >
   <h1
-    className="emotion-4 emotion-5 emotion-6"
+    className="emotion-2 emotion-3"
     color="text.dark"
     fontSize="size4"
     fontWeight="medium"
@@ -557,10 +557,10 @@ section:last-child .emotion-7 {
     <span
       aria-controls="my-accordion-1"
       aria-expanded={true}
-      className="emotion-2 emotion-3"
+      className="emotion-4 emotion-5"
     >
       <i
-        className="ar ar-chevron emotion-0 emotion-1"
+        className="ar ar-chevron emotion-6"
       />
       My Heading
     </span>

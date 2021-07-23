@@ -5,6 +5,10 @@ declare type Rotation = '90' | '180' | '270' | null;
 declare type RotationProps = {
     rotation?: Rotation;
 };
+export declare const StyledIcon: import("@emotion/styled").StyledComponent<{
+    theme?: Theme | undefined;
+    as?: import("react").ElementType<any> | undefined;
+} & ColorProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & DisplayProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & FontSizeProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & SpaceProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & TextAlignProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & RotationProps & TextShadowProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>> & OpacityProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>>, import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLElement>, HTMLElement>, {}>;
 declare const _default: import("react").ForwardRefExoticComponent<Pick<Pick<{
     theme?: Theme | undefined;
     as?: import("react").ElementType<any> | undefined;

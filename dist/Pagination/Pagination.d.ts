@@ -4,9 +4,9 @@ declare class Pagination extends Component<any, any, any> {
     constructor(props: any, context: any);
     getPaginationOptions: () => (string | number)[];
     paginate: (newPage: any) => void;
-    renderPaginationItem: (item: any, index: any) => JSX.Element;
-    renderPreviousItem: () => JSX.Element;
-    renderNextItem: () => JSX.Element;
+    renderPaginationItem: (item: any, index: any) => import("@emotion/react/jsx-runtime").JSX.Element;
+    renderPreviousItem: () => import("@emotion/react/jsx-runtime").JSX.Element;
+    renderNextItem: () => import("@emotion/react/jsx-runtime").JSX.Element;
 }
 declare namespace Pagination {
     namespace propTypes {

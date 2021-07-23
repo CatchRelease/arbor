@@ -10,7 +10,7 @@ declare function RadioButton({ id, name, label, disabled, isInvalid, checked, on
     onChange: any;
     value: any;
     icon: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace RadioButton {
     namespace propTypes {
         const checked: PropTypes.Requireable<boolean>;

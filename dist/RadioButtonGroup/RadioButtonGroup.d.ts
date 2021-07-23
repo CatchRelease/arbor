@@ -6,7 +6,7 @@ declare function RadioButtonGroup({ name, options, onChange, checkedValue, disab
     checkedValue: any;
     disabled: any;
     buttonProps: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace RadioButtonGroup {
     namespace propTypes {
         const name: PropTypes.Validator<string>;

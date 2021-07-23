@@ -1,2 +1,2 @@
 export default DateTimePicker;
-declare function DateTimePicker(props: any): JSX.Element;
+declare function DateTimePicker(props: any): import("@emotion/react/jsx-runtime").JSX.Element;

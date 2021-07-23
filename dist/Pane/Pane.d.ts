@@ -2,7 +2,7 @@ export default Pane;
 declare function Pane({ innerRef, ...props }: {
     [x: string]: any;
     innerRef: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace Pane {
     namespace propTypes {
         export { propType as bg };

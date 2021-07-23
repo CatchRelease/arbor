@@ -7,7 +7,7 @@ declare function StyledAutoCompleteMultiValue({ data, data: { label }, paletteCo
     variant: any;
     readOnly: any;
     removeProps: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace StyledAutoCompleteMultiValue {
     namespace propTypes {
         const data: PropTypes.Validator<PropTypes.InferProps<{

@@ -13,7 +13,7 @@ exports[`<Card /> renders a Card properly 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   display="grid"
   overflow="hidden"
   width="100%"

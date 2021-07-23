@@ -24,6 +24,6 @@ exports[`<CardRow /> renders a CardRow properly 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
 />
 `;

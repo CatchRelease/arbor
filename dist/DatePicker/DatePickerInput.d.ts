@@ -3,7 +3,7 @@ declare function DatePickerInput({ dayPickerProps, inputProps, ...props }: {
     [x: string]: any;
     dayPickerProps: any;
     inputProps: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace DatePickerInput {
     namespace propTypes {
         const dayPickerProps: PropTypes.Requireable<object>;

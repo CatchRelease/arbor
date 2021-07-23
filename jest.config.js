@@ -1,7 +1,8 @@
 module.exports = {
+  preset: 'ts-jest/presets/js-with-babel',
   testEnvironment: 'jsdom',
   verbose: true,
-  snapshotSerializers: ['@emotion/snapshot-serializer'],
+  snapshotSerializers: ['@emotion/jest/enzyme-serializer'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   setupFiles: ['jest-plugin-context/setup'],
   testMatch: ['**/__tests__/**/*.test.[jt]s?(x)'],

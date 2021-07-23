@@ -2,7 +2,7 @@ export default Tab;
 declare function Tab({ children, ...props }: {
     [x: string]: any;
     children: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace Tab {
     namespace propTypes {
         const active: PropTypes.Requireable<boolean>;

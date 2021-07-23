@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import createWithTheme from '../../../utils/createWithTheme';
 import theme from '../../theme';
 import { sizes } from '../../theme/avatars';
+import Flex from '../../Flex';
 import StyledAvatarWithTheme, { StyledAvatar } from '../StyledAvatar';
 
 describe('<StyledAvatar />', () => {
@@ -19,7 +20,7 @@ describe('<StyledAvatar />', () => {
           />
         );
 
-        expect(avatar.find('Flex')).toHaveProp({
+        expect(avatar.find(Flex)).toHaveProp({
           bg: 'palette.blue.default',
           borderColor: 'palette.blue.default'
         });
@@ -39,7 +40,7 @@ describe('<StyledAvatar />', () => {
           />
         );
 
-        expect(avatar.find('Flex')).toHaveProp({
+        expect(avatar.find(Flex)).toHaveProp({
           bg: 'monochrome.white',
           borderColor: 'palette.blue.default'
         });

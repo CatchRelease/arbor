@@ -5,7 +5,7 @@ declare function FormField({ caption, children, label, labelAside, id }: {
     label: any;
     labelAside: any;
     id: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace FormField {
     namespace propTypes {
         const caption: PropTypes.Requireable<string>;

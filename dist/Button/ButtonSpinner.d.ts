@@ -4,7 +4,7 @@ declare function ButtonSpinner({ disabled, intent, size, variant }: {
     intent: any;
     size: any;
     variant: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace ButtonSpinner {
     namespace propTypes {
         const disabled: PropTypes.Validator<boolean>;

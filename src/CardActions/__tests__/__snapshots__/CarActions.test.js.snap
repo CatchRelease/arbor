@@ -1,23 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<CardActions renders the CardActions component properly 1`] = `
-.emotion-4 {
+.emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   grid-gap: 0.5rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
-
-
 <div
-  className="emotion-4 emotion-5"
+  className="emotion-0 emotion-1"
 >
   <i
-    className="ar ar-download emotion-0 emotion-1"
+    className="ar ar-download emotion-2"
   />
   <i
-    className="ar ar-chat-bubble-outline emotion-0 emotion-1"
+    className="ar ar-chat-bubble-outline emotion-2"
   />
 </div>
 `;

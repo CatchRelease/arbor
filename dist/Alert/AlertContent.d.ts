@@ -6,7 +6,7 @@ declare function AlertContent({ details, intent, message, oneLine, onClose, ...p
     message: any;
     oneLine: any;
     onClose: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace AlertContent {
     namespace propTypes {
         const details: PropTypes.Requireable<string | number | boolean | {} | PropTypes.ReactElementLike | PropTypes.ReactNodeArray>;

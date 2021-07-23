@@ -3,7 +3,7 @@ declare function Masonry({ children, rowGap, ...props }: {
     [x: string]: any;
     children: any;
     rowGap: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace Masonry {
     namespace propTypes {
         const children: PropTypes.Validator<string | number | boolean | {} | PropTypes.ReactElementLike | PropTypes.ReactNodeArray>;

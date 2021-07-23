@@ -3,7 +3,7 @@ declare function DatePickerNavbar({ onPreviousClick, onNextClick, className }: {
     onPreviousClick: any;
     onNextClick: any;
     className: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace DatePickerNavbar {
     namespace propTypes {
         const className: PropTypes.Validator<string>;

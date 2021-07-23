@@ -3,7 +3,7 @@ declare function StyledAutoCompleteClearIndicator({ innerProps, cx, ...props }: 
     [x: string]: any;
     innerProps: any;
     cx: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace StyledAutoCompleteClearIndicator {
     namespace propTypes {
         const cx: PropTypes.Validator<(...args: any[]) => any>;

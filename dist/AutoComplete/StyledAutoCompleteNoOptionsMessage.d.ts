@@ -5,7 +5,7 @@ declare function StyledAutoCompleteNoOptionsMessage({ cx, innerRef, innerProps, 
     innerRef: any;
     innerProps: any;
     children: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace StyledAutoCompleteNoOptionsMessage {
     namespace propTypes {
         const cx: PropTypes.Validator<(...args: any[]) => any>;

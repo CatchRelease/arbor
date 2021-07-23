@@ -3,7 +3,7 @@ declare function PaneAlert({ boxShadow, intent, ...props }: {
     [x: string]: any;
     boxShadow: any;
     intent: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace PaneAlert {
     namespace propTypes {
         const boxShadow: PropTypes.Requireable<string>;

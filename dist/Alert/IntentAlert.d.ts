@@ -4,7 +4,7 @@ declare function IntentAlert({ intent, children, Component, ...props }: {
     intent: any;
     children: any;
     Component: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace IntentAlert {
     namespace propTypes {
         const intent: PropTypes.Requireable<string>;

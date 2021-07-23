@@ -5,7 +5,7 @@ declare function Tooltip({ title, content, children, render, ...props }: {
     content: any;
     children: any;
     render: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace Tooltip {
     namespace propTypes {
         const children: PropTypes.Validator<PropTypes.ReactElementLike>;

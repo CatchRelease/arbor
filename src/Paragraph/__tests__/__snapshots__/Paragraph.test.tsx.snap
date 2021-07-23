@@ -9,7 +9,7 @@ exports[`<Paragraph /> fontSize properly renders a paragraph with custom font pr
 }
 
 <p
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   fontSize="size6"
 >
   This is a paragraph
@@ -25,7 +25,7 @@ exports[`<Paragraph /> fontSize properly renders a paragraph with custom pixel f
 }
 
 <p
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   fontSize="100"
 >
   Size Button
@@ -40,7 +40,7 @@ exports[`<Paragraph /> props variant renders a longForm variant 1`] = `
 }
 
 <p
-  className="emotion-0 emotion-1"
+  className="emotion-0"
 >
   Hello World
 </p>
@@ -54,7 +54,7 @@ exports[`<Paragraph /> props variant renders a tiny variant 1`] = `
 }
 
 <p
-  className="emotion-0 emotion-1"
+  className="emotion-0"
 >
   Hello World
 </p>
@@ -68,7 +68,7 @@ exports[`<Paragraph /> props variant renders a ui variant 1`] = `
 }
 
 <p
-  className="emotion-0 emotion-1"
+  className="emotion-0"
 >
   Hello World
 </p>

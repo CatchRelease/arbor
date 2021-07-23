@@ -11,7 +11,7 @@ declare class Menu extends Component<any, any, any> {
     focusPreviousMenuItem(): void;
     focusMenuItem(menuItem: any): void;
     renderMenuItems(): any;
-    renderMenuItem(menuItem: any, index: any): JSX.Element;
+    renderMenuItem(menuItem: any, index: any): import("@emotion/react/jsx-runtime").JSX.Element;
 }
 declare namespace Menu {
     namespace propTypes {

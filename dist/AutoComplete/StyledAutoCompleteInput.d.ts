@@ -9,7 +9,7 @@ declare function StyledAutoCompleteInput({ cx, getStyles, innerProps, innerRef, 
     isHidden: any;
     selectProps: any;
     theme: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace StyledAutoCompleteInput {
     namespace propTypes {
         const cx: PropTypes.Validator<(...args: any[]) => any>;

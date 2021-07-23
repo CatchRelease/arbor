@@ -6,7 +6,7 @@ export function StyledAvatarText({ baseColor, size, subtle, theme: { avatarFontS
     theme: {
         avatarFontSizes: any;
     };
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 export namespace StyledAvatarText {
     namespace propTypes {
         const baseColor: PropTypes.Validator<string>;

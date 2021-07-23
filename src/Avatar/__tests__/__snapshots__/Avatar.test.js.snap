@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Avatar /> renders properly 1`] = `
-.emotion-2 {
+.emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: 1px solid;
@@ -22,7 +22,7 @@ exports[`<Avatar /> renders properly 1`] = `
   justify-content: center;
 }
 
-.emotion-2 backgroundColor {
+.emotion-0 backgroundColor {
   lighter: #e9f2eb;
   light: #bedac3;
   default: #29863A;
@@ -30,7 +30,7 @@ exports[`<Avatar /> renders properly 1`] = `
   darker: #081a0b;
 }
 
-.emotion-2 borderColor {
+.emotion-0 borderColor {
   lighter: #e9f2eb;
   light: #bedac3;
   default: #29863A;
@@ -38,7 +38,7 @@ exports[`<Avatar /> renders properly 1`] = `
   darker: #081a0b;
 }
 
-.emotion-0 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.6875rem;
@@ -46,12 +46,12 @@ exports[`<Avatar /> renders properly 1`] = `
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-0"
   height="24px"
   width="24px"
 >
   <p
-    className="emotion-0 emotion-1"
+    className="emotion-1"
     color="monochrome.white"
     fontSize="0.6875rem"
   >

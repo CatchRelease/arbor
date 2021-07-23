@@ -2,7 +2,7 @@ export default CheckboxIcon;
 declare function CheckboxIcon({ checked, indeterminate }: {
     checked: any;
     indeterminate: any;
-}): JSX.Element | null;
+}): import("@emotion/react/jsx-runtime").JSX.Element | null;
 declare namespace CheckboxIcon {
     namespace propTypes {
         const checked: PropTypes.Requireable<boolean>;

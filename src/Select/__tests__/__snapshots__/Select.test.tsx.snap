@@ -1,11 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Select /> renders a Select with a caption correctly 1`] = `
-.emotion-4 {
+.emotion-0 {
+  margin-bottom: 0.5rem;
+}
+
+.emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-3 {
   position: relative;
 }
 
-.emotion-4:after {
+.emotion-3:after {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -25,7 +42,7 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
   top: 0;
 }
 
-.emotion-2 {
+.emotion-4 {
   border-radius: 3px;
   border: 1px solid #E0E1E2;
   box-sizing: border-box;
@@ -44,64 +61,47 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-2 {
+  .emotion-4 {
     font-size: 1rem;
   }
 }
 
-.emotion-2::-webkit-input-placeholder {
+.emotion-4::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-2::-moz-placeholder {
+.emotion-4::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-2:-ms-input-placeholder {
+.emotion-4:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-2::placeholder {
+.emotion-4::placeholder {
   color: #989A9C;
 }
 
-.emotion-2:focus {
+.emotion-4:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-2:disabled {
+.emotion-4:disabled {
   background: #F2F2F2;
 }
 
-.emotion-2:required {
+.emotion-4:required {
   box-shadow: none;
 }
 
-.emotion-2:-moz-focusring {
+.emotion-4:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
 
-.emotion-8 {
-  margin-bottom: 0.5rem;
-}
-
-.emotion-0 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-6 {
+.emotion-5 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -109,18 +109,18 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
 }
 
 <div
-  className="emotion-8 emotion-9"
+  className="emotion-0 emotion-1"
 >
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2"
   >
     
   </div>
   <div
-    className="emotion-4 emotion-5"
+    className="emotion-3"
   >
     <select
-      className="emotion-2 emotion-3"
+      className="emotion-4"
       id="example"
     >
       <option>
@@ -129,7 +129,7 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
     </select>
   </div>
   <span
-    className="emotion-6 emotion-7"
+    className="emotion-5"
     color="palette.red.default"
   >
     I am a caption
@@ -138,107 +138,24 @@ exports[`<Select /> renders a Select with a caption correctly 1`] = `
 `;
 
 exports[`<Select /> renders a Select with a label correctly 1`] = `
-.emotion-8 {
-  position: relative;
-}
-
-.emotion-8:after {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  bottom: 0;
-  color: #989A9C;
-  content: '037';
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Arbor;
-  font-size: 1rem;
-  pointer-events: none;
-  position: absolute;
-  right: 0.5rem;
-  top: 0;
-}
-
-.emotion-6 {
-  border-radius: 3px;
-  border: 1px solid #E0E1E2;
-  box-sizing: border-box;
-  color: #25272D;
-  font-family: Motiva Sans;
-  font-size: 0.875rem;
-  line-height: 1.25;
-  margin: 0.25rem 0;
-  padding: 0.5rem;
-  width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  background: #FFFFFF;
-}
-
-@media (max-width: 768px) {
-  .emotion-6 {
-    font-size: 1rem;
-  }
-}
-
-.emotion-6::-webkit-input-placeholder {
-  color: #989A9C;
-}
-
-.emotion-6::-moz-placeholder {
-  color: #989A9C;
-}
-
-.emotion-6:-ms-input-placeholder {
-  color: #989A9C;
-}
-
-.emotion-6::placeholder {
-  color: #989A9C;
-}
-
-.emotion-6:focus {
-  border: 1px solid #081D17;
-  box-shadow: 0 0 8px rgba(182,239,208,0.1);
-  outline: none;
-}
-
-.emotion-6:disabled {
-  background: #F2F2F2;
-}
-
-.emotion-6:required {
-  box-shadow: none;
-}
-
-.emotion-6:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #000;
-}
-
-.emotion-4 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.emotion-10 {
+.emotion-0 {
   margin-bottom: 1rem;
 }
 
 .emotion-2 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -254,7 +171,7 @@ exports[`<Select /> renders a Select with a label correctly 1`] = `
   flex: 1;
 }
 
-.emotion-0 {
+.emotion-4 {
   color: #5B5D61;
   display: block;
   font-family: Motiva Sans;
@@ -262,45 +179,11 @@ exports[`<Select /> renders a Select with a label correctly 1`] = `
   line-height: 1.5;
 }
 
-<div
-  className="emotion-10 emotion-11"
->
-  <div
-    className="emotion-4 emotion-3"
-  >
-    <div
-      className="emotion-2 emotion-3"
-    >
-      <label
-        className="emotion-0 emotion-1"
-        htmlFor="example"
-      >
-        My Select
-      </label>
-    </div>
-  </div>
-  <div
-    className="emotion-8 emotion-9"
-  >
-    <select
-      className="emotion-6 emotion-7"
-      id="example"
-    >
-      <option>
-        Some Option
-      </option>
-    </select>
-  </div>
-  
-</div>
-`;
-
-exports[`<Select /> renders a Select with a labelAside correctly 1`] = `
-.emotion-2 {
+.emotion-6 {
   position: relative;
 }
 
-.emotion-2:after {
+.emotion-6:after {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -320,7 +203,7 @@ exports[`<Select /> renders a Select with a labelAside correctly 1`] = `
   top: 0;
 }
 
-.emotion-0 {
+.emotion-7 {
   border-radius: 3px;
   border: 1px solid #E0E1E2;
   box-sizing: border-box;
@@ -339,66 +222,85 @@ exports[`<Select /> renders a Select with a labelAside correctly 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-0 {
+  .emotion-7 {
     font-size: 1rem;
   }
 }
 
-.emotion-0::-webkit-input-placeholder {
+.emotion-7::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-0::-moz-placeholder {
+.emotion-7::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-0:-ms-input-placeholder {
+.emotion-7:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-0::placeholder {
+.emotion-7::placeholder {
   color: #989A9C;
 }
 
-.emotion-0:focus {
+.emotion-7:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-0:disabled {
+.emotion-7:disabled {
   background: #F2F2F2;
 }
 
-.emotion-0:required {
+.emotion-7:required {
   box-shadow: none;
 }
 
-.emotion-0:-moz-focusring {
+.emotion-7:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-0 emotion-1"
 >
-  <select
-    className="emotion-0 emotion-1"
-    id="example"
+  <div
+    className="emotion-2"
   >
-    <option>
-      Some Option
-    </option>
-  </select>
+    <div
+      className="emotion-3"
+    >
+      <label
+        className="emotion-4 emotion-5"
+        htmlFor="example"
+      >
+        My Select
+      </label>
+    </div>
+  </div>
+  <div
+    className="emotion-6"
+  >
+    <select
+      className="emotion-7"
+      id="example"
+    >
+      <option>
+        Some Option
+      </option>
+    </select>
+  </div>
+  
 </div>
 `;
 
-exports[`<Select /> renders a large Select correctly 1`] = `
-.emotion-2 {
+exports[`<Select /> renders a Select with a labelAside correctly 1`] = `
+.emotion-0 {
   position: relative;
 }
 
-.emotion-2:after {
+.emotion-0:after {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -418,7 +320,105 @@ exports[`<Select /> renders a large Select correctly 1`] = `
   top: 0;
 }
 
+.emotion-1 {
+  border-radius: 3px;
+  border: 1px solid #E0E1E2;
+  box-sizing: border-box;
+  color: #25272D;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+  .emotion-1 {
+    font-size: 1rem;
+  }
+}
+
+.emotion-1::-webkit-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-1::-moz-placeholder {
+  color: #989A9C;
+}
+
+.emotion-1:-ms-input-placeholder {
+  color: #989A9C;
+}
+
+.emotion-1::placeholder {
+  color: #989A9C;
+}
+
+.emotion-1:focus {
+  border: 1px solid #081D17;
+  box-shadow: 0 0 8px rgba(182,239,208,0.1);
+  outline: none;
+}
+
+.emotion-1:disabled {
+  background: #F2F2F2;
+}
+
+.emotion-1:required {
+  box-shadow: none;
+}
+
+.emotion-1:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+<div
+  className="emotion-0"
+>
+  <select
+    className="emotion-1"
+    id="example"
+  >
+    <option>
+      Some Option
+    </option>
+  </select>
+</div>
+`;
+
+exports[`<Select /> renders a large Select correctly 1`] = `
 .emotion-0 {
+  position: relative;
+}
+
+.emotion-0:after {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  color: #989A9C;
+  content: '037';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Arbor;
+  font-size: 1rem;
+  pointer-events: none;
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+}
+
+.emotion-1 {
   border-radius: 3px;
   border: 1px solid #E0E1E2;
   box-sizing: border-box;
@@ -438,51 +438,51 @@ exports[`<Select /> renders a large Select correctly 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-0 {
+  .emotion-1 {
     font-size: 1rem;
   }
 }
 
-.emotion-0::-webkit-input-placeholder {
+.emotion-1::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-0::-moz-placeholder {
+.emotion-1::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-0:-ms-input-placeholder {
+.emotion-1:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-0::placeholder {
+.emotion-1::placeholder {
   color: #989A9C;
 }
 
-.emotion-0:focus {
+.emotion-1:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-0:disabled {
+.emotion-1:disabled {
   background: #F2F2F2;
 }
 
-.emotion-0:required {
+.emotion-1:required {
   box-shadow: none;
 }
 
-.emotion-0:-moz-focusring {
+.emotion-1:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-0"
 >
   <select
-    className="emotion-0 emotion-1"
+    className="emotion-1"
     id="example"
   >
     <option>
@@ -493,11 +493,11 @@ exports[`<Select /> renders a large Select correctly 1`] = `
 `;
 
 exports[`<Select /> renders an Select correctly 1`] = `
-.emotion-2 {
+.emotion-0 {
   position: relative;
 }
 
-.emotion-2:after {
+.emotion-0:after {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -517,7 +517,7 @@ exports[`<Select /> renders an Select correctly 1`] = `
   top: 0;
 }
 
-.emotion-0 {
+.emotion-1 {
   border-radius: 3px;
   border: 1px solid #E0E1E2;
   box-sizing: border-box;
@@ -536,51 +536,51 @@ exports[`<Select /> renders an Select correctly 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-0 {
+  .emotion-1 {
     font-size: 1rem;
   }
 }
 
-.emotion-0::-webkit-input-placeholder {
+.emotion-1::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-0::-moz-placeholder {
+.emotion-1::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-0:-ms-input-placeholder {
+.emotion-1:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-0::placeholder {
+.emotion-1::placeholder {
   color: #989A9C;
 }
 
-.emotion-0:focus {
+.emotion-1:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-0:disabled {
+.emotion-1:disabled {
   background: #F2F2F2;
 }
 
-.emotion-0:required {
+.emotion-1:required {
   box-shadow: none;
 }
 
-.emotion-0:-moz-focusring {
+.emotion-1:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
 
 <div
-  className="emotion-2 emotion-3"
+  className="emotion-0"
 >
   <select
-    className="emotion-0 emotion-1"
+    className="emotion-1"
     id="example"
   >
     <option>

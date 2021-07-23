@@ -4,7 +4,7 @@ declare function ProgressBar({ percentage, iconEndName, showPercentage, ...props
     percentage: any;
     iconEndName: any;
     showPercentage: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace ProgressBar {
     namespace propTypes {
         const showPercentage: PropTypes.Requireable<boolean>;

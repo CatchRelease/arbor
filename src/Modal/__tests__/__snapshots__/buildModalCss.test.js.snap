@@ -1,8 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`buildModalCss modalCss is provided renders properly 1`] = `
-
-
 .emotion-0 .ArborModalOverlay {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -52,8 +50,6 @@ exports[`buildModalCss modalCss is provided renders properly 1`] = `
 `;
 
 exports[`buildModalCss no additional css provided renders properly 1`] = `
-
-
 .emotion-0 .ArborModalOverlay {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -102,8 +98,6 @@ exports[`buildModalCss no additional css provided renders properly 1`] = `
 `;
 
 exports[`buildModalCss overlayCss is provided renders properly 1`] = `
-
-
 .emotion-0 .ArborModalOverlay {
   -webkit-align-items: center;
   -webkit-box-align: center;

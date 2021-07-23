@@ -4,7 +4,7 @@ declare function CardAlert({ boxShadow, details, intent, ...props }: {
     boxShadow: any;
     details: any;
     intent: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace CardAlert {
     namespace propTypes {
         const boxShadow: PropTypes.Requireable<string>;

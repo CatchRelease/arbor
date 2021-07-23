@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Checkbox /> properly renders a checkbox 1`] = `
-.emotion-6 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -18,7 +18,7 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -31,7 +31,7 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
   width: 1px;
 }
 
-.emotion-2 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -66,12 +66,12 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
 }
 
 <label
-  className="emotion-6 emotion-7"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={false}
-    className="emotion-0 emotion-1"
+    className="emotion-2"
     disabled={false}
     id="example"
     name="example"
@@ -81,11 +81,11 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
   />
   <div
     checked={false}
-    className="emotion-2 emotion-3"
+    className="emotion-3"
     disabled={false}
   />
   <span
-    className="emotion-4 emotion-5"
+    className="emotion-4"
     color="text.default"
     fontSize="size4"
   >
@@ -95,7 +95,7 @@ exports[`<Checkbox /> properly renders a checkbox 1`] = `
 `;
 
 exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
-.emotion-8 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -112,7 +112,7 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -125,7 +125,7 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
   width: 1px;
 }
 
-.emotion-2 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -157,7 +157,7 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
   margin-left: 0.5rem;
 }
 
-.emotion-6 {
+.emotion-5 {
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
@@ -166,12 +166,12 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
 }
 
 <label
-  className="emotion-8 emotion-9"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={false}
-    className="emotion-0 emotion-1"
+    className="emotion-2"
     disabled={false}
     id="example"
     name="example"
@@ -181,16 +181,16 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
   />
   <div
     checked={false}
-    className="emotion-2 emotion-3"
+    className="emotion-3"
     disabled={false}
   />
   <i
-    className="ar ar-cr-logo emotion-4 emotion-5"
+    className="ar ar-cr-logo emotion-4"
     color="icon.default"
     fontSize="24px"
   />
   <span
-    className="emotion-6 emotion-7"
+    className="emotion-5"
     color="text.default"
     fontSize="size4"
   >
@@ -200,7 +200,7 @@ exports[`<Checkbox /> properly renders a checkbox with an icon 1`] = `
 `;
 
 exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] = `
-.emotion-8 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -217,7 +217,7 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -230,19 +230,7 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
   width: 1px;
 }
 
-.emotion-6 {
-  font-family: Motiva Sans;
-  color: #25272D;
-  font-size: 0.875rem;
-  line-height: 1.25;
-  margin-left: 0.5rem;
-}
-
-.emotion-2 {
-  font-size: 16px;
-}
-
-.emotion-4 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -271,13 +259,25 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
   color: #081D17;
 }
 
+.emotion-4 {
+  font-size: 16px;
+}
+
+.emotion-5 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
 <label
-  className="emotion-8 emotion-9"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={true}
-    className="emotion-0 emotion-1"
+    className="emotion-2"
     disabled={false}
     id="example"
     name="example"
@@ -287,16 +287,16 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
   />
   <div
     checked={true}
-    className="emotion-4 emotion-5"
+    className="emotion-3"
     disabled={false}
   >
     <i
-      className="ar ar-checkbox-indeterminate emotion-2 emotion-3"
+      className="ar ar-checkbox-indeterminate emotion-4"
       fontSize="16px"
     />
   </div>
   <span
-    className="emotion-6 emotion-7"
+    className="emotion-5"
     color="text.default"
     fontSize="size4"
   >
@@ -306,7 +306,7 @@ exports[`<Checkbox /> properly renders a checked and indeterminate checkbox 1`] 
 `;
 
 exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
-.emotion-8 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -323,7 +323,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -336,15 +336,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   width: 1px;
 }
 
-.emotion-6 {
-  font-family: Motiva Sans;
-  color: #25272D;
-  font-size: 0.875rem;
-  line-height: 1.25;
-  margin-left: 0.5rem;
-}
-
-.emotion-4 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -373,17 +365,25 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   color: #B6EFD0;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-size: 16px;
 }
 
+.emotion-5 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
 <label
-  className="emotion-8 emotion-9"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={true}
-    className="emotion-0 emotion-1"
+    className="emotion-2"
     disabled={false}
     id="example"
     name="example"
@@ -393,16 +393,16 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
   />
   <div
     checked={true}
-    className="emotion-4 emotion-5"
+    className="emotion-3"
     disabled={false}
   >
     <i
-      className="ar ar-checkbox-checked emotion-2 emotion-3"
+      className="ar ar-checkbox-checked emotion-4"
       fontSize="16px"
     />
   </div>
   <span
-    className="emotion-6 emotion-7"
+    className="emotion-5"
     color="text.default"
     fontSize="size4"
   >
@@ -412,7 +412,7 @@ exports[`<Checkbox /> properly renders a checked checkbox 1`] = `
 `;
 
 exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
-.emotion-6 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -429,7 +429,7 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -442,7 +442,7 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
   width: 1px;
 }
 
-.emotion-2 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -481,12 +481,12 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
 }
 
 <label
-  className="emotion-6 emotion-7"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={false}
-    className="emotion-0 emotion-1"
+    className="emotion-2"
     disabled={true}
     id="example"
     name="example"
@@ -496,11 +496,11 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
   />
   <div
     checked={false}
-    className="emotion-2 emotion-3"
+    className="emotion-3"
     disabled={true}
   />
   <span
-    className="emotion-4 emotion-5"
+    className="emotion-4"
     color="text.disabled"
     fontSize="size4"
   >
@@ -510,7 +510,7 @@ exports[`<Checkbox /> properly renders a disabled checkbox 1`] = `
 `;
 
 exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
-.emotion-8 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -527,7 +527,7 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -540,11 +540,7 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   width: 1px;
 }
 
-.emotion-2 {
-  font-size: 16px;
-}
-
-.emotion-4 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -574,7 +570,11 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   cursor: not-allowed;
 }
 
-.emotion-6 {
+.emotion-4 {
+  font-size: 16px;
+}
+
+.emotion-5 {
   font-family: Motiva Sans;
   color: rgba(120,121,125,0.7);
   font-size: 0.875rem;
@@ -583,12 +583,12 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
 }
 
 <label
-  className="emotion-8 emotion-9"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={true}
-    className="emotion-0 emotion-1"
+    className="emotion-2"
     disabled={true}
     id="example"
     name="example"
@@ -598,16 +598,16 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
   />
   <div
     checked={false}
-    className="emotion-4 emotion-5"
+    className="emotion-3"
     disabled={true}
   >
     <i
-      className="ar ar-checkbox-indeterminate emotion-2 emotion-3"
+      className="ar ar-checkbox-indeterminate emotion-4"
       fontSize="16px"
     />
   </div>
   <span
-    className="emotion-6 emotion-7"
+    className="emotion-5"
     color="text.disabled"
     fontSize="size4"
   >
@@ -617,7 +617,7 @@ exports[`<Checkbox /> properly renders a disabled indeterminate checkbox 1`] = `
 `;
 
 exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
-.emotion-8 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -634,7 +634,7 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -647,7 +647,7 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
   width: 1px;
 }
 
-.emotion-4 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -673,7 +673,11 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
   width: 1rem;
 }
 
-.emotion-6 {
+.emotion-4 {
+  font-size: 16px;
+}
+
+.emotion-5 {
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
@@ -681,17 +685,13 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
   margin-left: 0.5rem;
 }
 
-.emotion-2 {
-  font-size: 16px;
-}
-
 <label
-  className="emotion-8 emotion-9"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={true}
-    className="emotion-0 emotion-1"
+    className="emotion-2"
     disabled={false}
     id="example"
     name="example"
@@ -701,16 +701,16 @@ exports[`<Checkbox /> properly renders an indeterminate checkbox 1`] = `
   />
   <div
     checked={false}
-    className="emotion-4 emotion-5"
+    className="emotion-3"
     disabled={false}
   >
     <i
-      className="ar ar-checkbox-indeterminate emotion-2 emotion-3"
+      className="ar ar-checkbox-indeterminate emotion-4"
       fontSize="16px"
     />
   </div>
   <span
-    className="emotion-6 emotion-7"
+    className="emotion-5"
     color="text.default"
     fontSize="size4"
   >
