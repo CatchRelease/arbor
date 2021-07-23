@@ -2,19 +2,19 @@
 
 exports[`<Icon /> applies a class based off the icon name using the theme prefix 1`] = `
 <i
-  className="super super-example-icon emotion-0 emotion-1"
+  className="super super-example-icon emotion-0"
 />
 `;
 
 exports[`<Icon /> applies a class of just the icon font prefix 1`] = `
 <i
-  className="super super-example-icon emotion-0 emotion-1"
+  className="super super-example-icon emotion-0"
 />
 `;
 
 exports[`<Icon /> renders an icon properly 1`] = `
 <i
-  className="ar ar-my-icon emotion-0 emotion-1"
+  className="ar ar-my-icon emotion-0"
 />
 `;
 
@@ -27,7 +27,7 @@ exports[`<Icon /> supports 90 degree rotation 1`] = `
 }
 
 <i
-  className="ar ar-my-icon emotion-0 emotion-1"
+  className="ar ar-my-icon emotion-0"
 />
 `;
 
@@ -40,7 +40,7 @@ exports[`<Icon /> supports 180 degree rotation 1`] = `
 }
 
 <i
-  className="ar ar-my-icon emotion-0 emotion-1"
+  className="ar ar-my-icon emotion-0"
 />
 `;
 
@@ -53,6 +53,6 @@ exports[`<Icon /> supports 270 degree rotation 1`] = `
 }
 
 <i
-  className="ar ar-my-icon emotion-0 emotion-1"
+  className="ar ar-my-icon emotion-0"
 />
 `;

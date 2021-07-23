@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Input /> renders a large Input correctly 1`] = `
-.emotion-4 {
+.emotion-0 {
   margin-bottom: 1rem;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -18,7 +18,7 @@ exports[`<Input /> renders a large Input correctly 1`] = `
   align-items: center;
 }
 
-.emotion-2 {
+.emotion-3 {
   border-radius: 3px;
   border: 1px solid #E0E1E2;
   box-sizing: border-box;
@@ -33,51 +33,51 @@ exports[`<Input /> renders a large Input correctly 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-2 {
+  .emotion-3 {
     font-size: 1rem;
   }
 }
 
-.emotion-2::-webkit-input-placeholder {
+.emotion-3::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-2::-moz-placeholder {
+.emotion-3::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-2:-ms-input-placeholder {
+.emotion-3:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-2::placeholder {
+.emotion-3::placeholder {
   color: #989A9C;
 }
 
-.emotion-2:focus {
+.emotion-3:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background: #F2F2F2;
 }
 
-.emotion-2:required {
+.emotion-3:required {
   box-shadow: none;
 }
 
 <div
-  className="emotion-4 emotion-5"
+  className="emotion-0 emotion-1"
 >
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2"
   >
     
   </div>
   <input
-    className="emotion-2 emotion-3"
+    className="emotion-3"
     id="example"
     onBlur={[Function]}
     onChange={[Function]}
@@ -88,11 +88,11 @@ exports[`<Input /> renders a large Input correctly 1`] = `
 `;
 
 exports[`<Input /> renders an Input correctly 1`] = `
-.emotion-4 {
+.emotion-0 {
   margin-bottom: 1rem;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -105,7 +105,7 @@ exports[`<Input /> renders an Input correctly 1`] = `
   align-items: center;
 }
 
-.emotion-2 {
+.emotion-3 {
   border-radius: 3px;
   border: 1px solid #E0E1E2;
   box-sizing: border-box;
@@ -119,51 +119,51 @@ exports[`<Input /> renders an Input correctly 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-2 {
+  .emotion-3 {
     font-size: 1rem;
   }
 }
 
-.emotion-2::-webkit-input-placeholder {
+.emotion-3::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-2::-moz-placeholder {
+.emotion-3::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-2:-ms-input-placeholder {
+.emotion-3:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-2::placeholder {
+.emotion-3::placeholder {
   color: #989A9C;
 }
 
-.emotion-2:focus {
+.emotion-3:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background: #F2F2F2;
 }
 
-.emotion-2:required {
+.emotion-3:required {
   box-shadow: none;
 }
 
 <div
-  className="emotion-4 emotion-5"
+  className="emotion-0 emotion-1"
 >
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2"
   >
     
   </div>
   <input
-    className="emotion-2 emotion-3"
+    className="emotion-3"
     id="example"
     onBlur={[Function]}
     onChange={[Function]}
@@ -175,6 +175,10 @@ exports[`<Input /> renders an Input correctly 1`] = `
 
 exports[`<Input /> renders an Input with a caption correctly 1`] = `
 .emotion-0 {
+  margin-bottom: 0.5rem;
+}
+
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -187,7 +191,7 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
   align-items: center;
 }
 
-.emotion-2 {
+.emotion-3 {
   border-radius: 3px;
   border: 1px solid #E0E1E2;
   box-sizing: border-box;
@@ -201,43 +205,39 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-2 {
+  .emotion-3 {
     font-size: 1rem;
   }
 }
 
-.emotion-2::-webkit-input-placeholder {
+.emotion-3::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-2::-moz-placeholder {
+.emotion-3::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-2:-ms-input-placeholder {
+.emotion-3:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-2::placeholder {
+.emotion-3::placeholder {
   color: #989A9C;
 }
 
-.emotion-2:focus {
+.emotion-3:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background: #F2F2F2;
 }
 
-.emotion-2:required {
+.emotion-3:required {
   box-shadow: none;
-}
-
-.emotion-6 {
-  margin-bottom: 0.5rem;
 }
 
 .emotion-4 {
@@ -248,22 +248,22 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
 }
 
 <div
-  className="emotion-6 emotion-7"
+  className="emotion-0 emotion-1"
 >
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2"
   >
     
   </div>
   <input
-    className="emotion-2 emotion-3"
+    className="emotion-3"
     id="example"
     onBlur={[Function]}
     onChange={[Function]}
     type="text"
   />
   <span
-    className="emotion-4 emotion-5"
+    className="emotion-4"
     color="palette.red.default"
   >
     I am a caption
@@ -272,11 +272,11 @@ exports[`<Input /> renders an Input with a caption correctly 1`] = `
 `;
 
 exports[`<Input /> renders an Input with a label correctly 1`] = `
-.emotion-8 {
+.emotion-0 {
   margin-bottom: 1rem;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -287,6 +287,30 @@ exports[`<Input /> renders an Input with a label correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.emotion-3 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.emotion-4 {
+  color: #5B5D61;
+  display: block;
+  font-family: Motiva Sans;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .emotion-6 {
@@ -338,41 +362,17 @@ exports[`<Input /> renders an Input with a label correctly 1`] = `
   box-shadow: none;
 }
 
-.emotion-2 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.emotion-0 {
-  color: #5B5D61;
-  display: block;
-  font-family: Motiva Sans;
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
 <div
-  className="emotion-8 emotion-9"
+  className="emotion-0 emotion-1"
 >
   <div
-    className="emotion-4 emotion-3"
+    className="emotion-2"
   >
     <div
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <label
-        className="emotion-0 emotion-1"
+        className="emotion-4 emotion-5"
         htmlFor="example"
       >
         My Input
@@ -380,7 +380,7 @@ exports[`<Input /> renders an Input with a label correctly 1`] = `
     </div>
   </div>
   <input
-    className="emotion-6 emotion-7"
+    className="emotion-6"
     id="example"
     onBlur={[Function]}
     onChange={[Function]}
@@ -391,11 +391,11 @@ exports[`<Input /> renders an Input with a label correctly 1`] = `
 `;
 
 exports[`<Input /> renders an Input with a type correctly 1`] = `
-.emotion-4 {
+.emotion-0 {
   margin-bottom: 1rem;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -408,7 +408,7 @@ exports[`<Input /> renders an Input with a type correctly 1`] = `
   align-items: center;
 }
 
-.emotion-2 {
+.emotion-3 {
   border-radius: 3px;
   border: 1px solid #E0E1E2;
   box-sizing: border-box;
@@ -422,51 +422,51 @@ exports[`<Input /> renders an Input with a type correctly 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-2 {
+  .emotion-3 {
     font-size: 1rem;
   }
 }
 
-.emotion-2::-webkit-input-placeholder {
+.emotion-3::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-2::-moz-placeholder {
+.emotion-3::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-2:-ms-input-placeholder {
+.emotion-3:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-2::placeholder {
+.emotion-3::placeholder {
   color: #989A9C;
 }
 
-.emotion-2:focus {
+.emotion-3:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-2:disabled {
+.emotion-3:disabled {
   background: #F2F2F2;
 }
 
-.emotion-2:required {
+.emotion-3:required {
   box-shadow: none;
 }
 
 <div
-  className="emotion-4 emotion-5"
+  className="emotion-0 emotion-1"
 >
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2"
   >
     
   </div>
   <input
-    className="emotion-2 emotion-3"
+    className="emotion-3"
     id="example"
     onBlur={[Function]}
     onChange={[Function]}
@@ -477,7 +477,7 @@ exports[`<Input /> renders an Input with a type correctly 1`] = `
 `;
 
 exports[`<Input /> renders as Input with a labelAside correctly 1`] = `
-.emotion-6 {
+.emotion-0 {
   margin-bottom: 1rem;
 }
 
@@ -492,6 +492,17 @@ exports[`<Input /> renders as Input with a labelAside correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.emotion-3 {
+  font-family: Motiva Sans;
+  color: #5B5D61;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .emotion-4 {
@@ -543,26 +554,15 @@ exports[`<Input /> renders as Input with a labelAside correctly 1`] = `
   box-shadow: none;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: #5B5D61;
-  font-size: 0.875rem;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 <div
-  className="emotion-6 emotion-7"
+  className="emotion-0 emotion-1"
 >
   <div
-    className="emotion-2 emotion-1"
+    className="emotion-2"
   >
     
     <div
-      className="emotion-0 emotion-1"
+      className="emotion-3"
       color="text.muted"
       fontSize="size4"
     >
@@ -572,7 +572,7 @@ exports[`<Input /> renders as Input with a labelAside correctly 1`] = `
     </div>
   </div>
   <input
-    className="emotion-4 emotion-5"
+    className="emotion-4"
     id="example"
     onBlur={[Function]}
     onChange={[Function]}

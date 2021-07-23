@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioButton /> properly renders a checked radio button 1`] = `
-.emotion-8 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -18,7 +18,7 @@ exports[`<RadioButton /> properly renders a checked radio button 1`] = `
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -29,14 +29,6 @@ exports[`<RadioButton /> properly renders a checked radio button 1`] = `
   position: absolute;
   white-space: nowrap;
   width: 1px;
-}
-
-.emotion-6 {
-  font-family: Motiva Sans;
-  color: #25272D;
-  font-size: 0.875rem;
-  line-height: 1.25;
-  margin-left: 0.5rem;
 }
 
 .emotion-4 {
@@ -65,17 +57,25 @@ exports[`<RadioButton /> properly renders a checked radio button 1`] = `
   color: #081D17;
 }
 
-.emotion-2 {
+.emotion-6 {
   font-size: 16px;
 }
 
+.emotion-7 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
 <label
-  className="emotion-8 emotion-9"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={true}
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     disabled={false}
     id="example"
     name="example"
@@ -89,12 +89,12 @@ exports[`<RadioButton /> properly renders a checked radio button 1`] = `
     disabled={false}
   >
     <i
-      className="ar ar-radio-checked emotion-2 emotion-3"
+      className="ar ar-radio-checked emotion-6"
       fontSize="16px"
     />
   </div>
   <span
-    className="emotion-6 emotion-7"
+    className="emotion-7"
     color="text.default"
     fontSize="size4"
   >
@@ -104,7 +104,7 @@ exports[`<RadioButton /> properly renders a checked radio button 1`] = `
 `;
 
 exports[`<RadioButton /> properly renders a disabled checkbox 1`] = `
-.emotion-6 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -121,7 +121,7 @@ exports[`<RadioButton /> properly renders a disabled checkbox 1`] = `
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -134,7 +134,7 @@ exports[`<RadioButton /> properly renders a disabled checkbox 1`] = `
   width: 1px;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -161,7 +161,7 @@ exports[`<RadioButton /> properly renders a disabled checkbox 1`] = `
   color: #FFFFFF;
 }
 
-.emotion-4 {
+.emotion-6 {
   font-family: Motiva Sans;
   color: rgba(120,121,125,0.7);
   font-size: 0.875rem;
@@ -170,12 +170,12 @@ exports[`<RadioButton /> properly renders a disabled checkbox 1`] = `
 }
 
 <label
-  className="emotion-6 emotion-7"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={false}
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     disabled={true}
     id="example"
     name="example"
@@ -185,11 +185,11 @@ exports[`<RadioButton /> properly renders a disabled checkbox 1`] = `
   />
   <div
     checked={false}
-    className="emotion-2 emotion-3"
+    className="emotion-4 emotion-5"
     disabled={true}
   />
   <span
-    className="emotion-4 emotion-5"
+    className="emotion-6"
     color="text.disabled"
     fontSize="size4"
   >
@@ -199,7 +199,7 @@ exports[`<RadioButton /> properly renders a disabled checkbox 1`] = `
 `;
 
 exports[`<RadioButton /> properly renders a disabled checked radio button 1`] = `
-.emotion-8 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -216,7 +216,7 @@ exports[`<RadioButton /> properly renders a disabled checked radio button 1`] = 
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -227,18 +227,6 @@ exports[`<RadioButton /> properly renders a disabled checked radio button 1`] = 
   position: absolute;
   white-space: nowrap;
   width: 1px;
-}
-
-.emotion-2 {
-  font-size: 16px;
-}
-
-.emotion-6 {
-  font-family: Motiva Sans;
-  color: rgba(120,121,125,0.7);
-  font-size: 0.875rem;
-  line-height: 1.25;
-  margin-left: 0.5rem;
 }
 
 .emotion-4 {
@@ -269,13 +257,25 @@ exports[`<RadioButton /> properly renders a disabled checked radio button 1`] = 
   color: #989A9C;
 }
 
+.emotion-6 {
+  font-size: 16px;
+}
+
+.emotion-7 {
+  font-family: Motiva Sans;
+  color: rgba(120,121,125,0.7);
+  font-size: 0.875rem;
+  line-height: 1.25;
+  margin-left: 0.5rem;
+}
+
 <label
-  className="emotion-8 emotion-9"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={true}
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     disabled={true}
     id="example"
     name="example"
@@ -289,12 +289,12 @@ exports[`<RadioButton /> properly renders a disabled checked radio button 1`] = 
     disabled={true}
   >
     <i
-      className="ar ar-radio-checked emotion-2 emotion-3"
+      className="ar ar-radio-checked emotion-6"
       fontSize="16px"
     />
   </div>
   <span
-    className="emotion-6 emotion-7"
+    className="emotion-7"
     color="text.disabled"
     fontSize="size4"
   >
@@ -304,7 +304,7 @@ exports[`<RadioButton /> properly renders a disabled checked radio button 1`] = 
 `;
 
 exports[`<RadioButton /> properly renders a radio button 1`] = `
-.emotion-6 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -321,7 +321,7 @@ exports[`<RadioButton /> properly renders a radio button 1`] = `
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -334,7 +334,7 @@ exports[`<RadioButton /> properly renders a radio button 1`] = `
   width: 1px;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -359,7 +359,7 @@ exports[`<RadioButton /> properly renders a radio button 1`] = `
   width: 1rem;
 }
 
-.emotion-4 {
+.emotion-6 {
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
@@ -368,12 +368,12 @@ exports[`<RadioButton /> properly renders a radio button 1`] = `
 }
 
 <label
-  className="emotion-6 emotion-7"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={false}
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     disabled={false}
     id="example"
     name="example"
@@ -383,11 +383,11 @@ exports[`<RadioButton /> properly renders a radio button 1`] = `
   />
   <div
     checked={false}
-    className="emotion-2 emotion-3"
+    className="emotion-4 emotion-5"
     disabled={false}
   />
   <span
-    className="emotion-4 emotion-5"
+    className="emotion-6"
     color="text.default"
     fontSize="size4"
   >
@@ -397,7 +397,7 @@ exports[`<RadioButton /> properly renders a radio button 1`] = `
 `;
 
 exports[`<RadioButton /> properly renders a radio button with an icon 1`] = `
-.emotion-8 {
+.emotion-0 {
   font-family: Motiva Sans;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -414,7 +414,7 @@ exports[`<RadioButton /> properly renders a radio button with an icon 1`] = `
   line-height: 1.25;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   clip: rect(1px, 1px, 1px, 1px);
@@ -427,7 +427,7 @@ exports[`<RadioButton /> properly renders a radio button with an icon 1`] = `
   width: 1px;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -452,13 +452,13 @@ exports[`<RadioButton /> properly renders a radio button with an icon 1`] = `
   width: 1rem;
 }
 
-.emotion-4 {
+.emotion-6 {
   color: #989A9C;
   font-size: 24px;
   margin-left: 0.5rem;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
@@ -467,12 +467,12 @@ exports[`<RadioButton /> properly renders a radio button with an icon 1`] = `
 }
 
 <label
-  className="emotion-8 emotion-9"
+  className="emotion-0 emotion-1"
 >
   <input
     aria-invalid={false}
     checked={false}
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     disabled={false}
     id="example"
     name="example"
@@ -482,16 +482,16 @@ exports[`<RadioButton /> properly renders a radio button with an icon 1`] = `
   />
   <div
     checked={false}
-    className="emotion-2 emotion-3"
+    className="emotion-4 emotion-5"
     disabled={false}
   />
   <i
-    className="ar ar-cr-logo emotion-4 emotion-5"
+    className="ar ar-cr-logo emotion-6"
     color="icon.default"
     fontSize="24px"
   />
   <span
-    className="emotion-6 emotion-7"
+    className="emotion-7"
     color="text.default"
     fontSize="size4"
   >

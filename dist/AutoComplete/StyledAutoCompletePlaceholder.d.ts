@@ -3,7 +3,7 @@ declare function StyledAutoCompletePlaceholder({ cx, children, ...props }: {
     [x: string]: any;
     cx: any;
     children: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace StyledAutoCompletePlaceholder {
     namespace propTypes {
         const cx: PropTypes.Validator<(...args: any[]) => any>;

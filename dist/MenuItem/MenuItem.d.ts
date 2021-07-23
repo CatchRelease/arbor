@@ -3,7 +3,7 @@ declare function MenuItem({ innerRef, children, ...props }: {
     [x: string]: any;
     innerRef: any;
     children: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace MenuItem {
     namespace propTypes {
         const children: PropTypes.Validator<string | number | boolean | {} | PropTypes.ReactElementLike | PropTypes.ReactNodeArray>;

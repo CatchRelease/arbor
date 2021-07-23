@@ -2,8 +2,9 @@ import { shallow } from 'enzyme';
 
 import theme from '../../theme';
 import { StyledAvatarText } from '../StyledAvatarText';
+import Text from '../../Text';
 
-describe('<StyledAvatar />', () => {
+describe('<StyledAvatarText />', () => {
   describe('colors', () => {
     context('subtle is false', () => {
       it('renders with default colors calculated by the name string', () => {
@@ -16,7 +17,7 @@ describe('<StyledAvatar />', () => {
           />
         );
 
-        expect(avatar.find('Text')).toHaveProp({
+        expect(avatar.find(Text)).toHaveProp({
           color: 'monochrome.white'
         });
       });
@@ -33,7 +34,7 @@ describe('<StyledAvatar />', () => {
           />
         );
 
-        expect(avatar.find('Text')).toHaveProp({
+        expect(avatar.find(Text)).toHaveProp({
           color: 'palette.blue.default'
         });
       });

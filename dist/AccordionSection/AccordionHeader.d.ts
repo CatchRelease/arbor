@@ -7,7 +7,7 @@ declare function AccordionHeader({ isOpen, note, onClick, panelId, text, iconRig
     panelId: any;
     text: any;
     iconRight: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace AccordionHeader {
     namespace propTypes {
         const isOpen: PropTypes.Validator<boolean>;

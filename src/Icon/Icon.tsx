@@ -30,7 +30,7 @@ type RotationProps = {
   rotation?: Rotation;
 };
 
-const StyledIcon = styled.i<
+export const StyledIcon = styled.i<
   ColorProps &
     DisplayProps &
     FontSizeProps &

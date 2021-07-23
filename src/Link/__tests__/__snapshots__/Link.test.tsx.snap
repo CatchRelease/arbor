@@ -39,7 +39,7 @@ exports[`<Link /> Variants properly renders a default Link 1`] = `
 }
 
 <a
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   href="#test"
 >
   Link
@@ -85,7 +85,7 @@ exports[`<Link /> Variants properly renders a muted Link 1`] = `
 }
 
 <a
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   href="#test"
 >
   Link

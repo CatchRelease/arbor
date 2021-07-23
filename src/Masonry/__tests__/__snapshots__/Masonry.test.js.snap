@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Masonry /> renders properly 1`] = `
-.emotion-18 {
+.emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   -webkit-column-count: 3;
@@ -18,7 +18,7 @@ exports[`<Masonry /> renders properly 1`] = `
   column-width: 300px;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   margin-bottom: 1rem;
   box-sizing: border-box;
@@ -30,10 +30,10 @@ exports[`<Masonry /> renders properly 1`] = `
 }
 
 <div
-  className="emotion-18 emotion-19"
+  className="emotion-0 emotion-1"
 >
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     display="block"
     width="100%"
   >
@@ -42,7 +42,7 @@ exports[`<Masonry /> renders properly 1`] = `
     </div>
   </div>
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     display="block"
     width="100%"
   >
@@ -51,7 +51,7 @@ exports[`<Masonry /> renders properly 1`] = `
     </div>
   </div>
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     display="block"
     width="100%"
   >
@@ -60,7 +60,7 @@ exports[`<Masonry /> renders properly 1`] = `
     </div>
   </div>
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     display="block"
     width="100%"
   >
@@ -69,7 +69,7 @@ exports[`<Masonry /> renders properly 1`] = `
     </div>
   </div>
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     display="block"
     width="100%"
   >
@@ -78,7 +78,7 @@ exports[`<Masonry /> renders properly 1`] = `
     </div>
   </div>
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     display="block"
     width="100%"
   >
@@ -87,7 +87,7 @@ exports[`<Masonry /> renders properly 1`] = `
     </div>
   </div>
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     display="block"
     width="100%"
   >
@@ -96,7 +96,7 @@ exports[`<Masonry /> renders properly 1`] = `
     </div>
   </div>
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     display="block"
     width="100%"
   >
@@ -105,7 +105,7 @@ exports[`<Masonry /> renders properly 1`] = `
     </div>
   </div>
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-2 emotion-3"
     display="block"
     width="100%"
   >

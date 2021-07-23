@@ -3,7 +3,7 @@ import { ThemeProvider } from '@emotion/react';
 
 import createWithTheme from '../../../utils/createWithTheme';
 import mountWithTheme from '../../../utils/mountWithTheme';
-import Icon from '../Icon';
+import Icon, { StyledIcon } from '../Icon';
 
 describe('<Icon />', () => {
   it('renders an icon properly', () => {
@@ -39,7 +39,7 @@ describe('<Icon />', () => {
     expect(icon).toMatchSnapshot();
   });
 
-  ['90', '180', '270'].forEach((rotation) => {
+  (['90', '180', '270'] as const).forEach((rotation) => {
     it(`supports ${rotation} degree rotation`, () => {
       const tree = createWithTheme(<Icon {...{ rotation, name: 'my-icon' }} />);
 
@@ -50,7 +50,7 @@ describe('<Icon />', () => {
   it('sets arbor icon class names', () => {
     const wrapper = mountWithTheme(<Icon name="test-icon-name" />);
 
-    expect(wrapper.find('StyledIcon')).toHaveClassName('ar ar-test-icon-name');
+    expect(wrapper.find(StyledIcon)).toHaveClassName('ar ar-test-icon-name');
   });
 
   it('does not clobber arbor icon class names when passing css prop', () => {
@@ -58,14 +58,14 @@ describe('<Icon />', () => {
       <Icon css={{ cursor: 'pointer' }} name="test-icon-name" />
     );
 
-    expect(wrapper.find('StyledIcon')).toHaveClassName('ar ar-test-icon-name');
+    expect(wrapper.find(StyledIcon)).toHaveClassName('ar ar-test-icon-name');
   });
 
   it('forwards ref', () => {
-    const ref = createRef();
+    const ref = createRef<HTMLElement>();
 
     const wrapper = mountWithTheme(<Icon name="test-icon-name" ref={ref} />);
 
-    expect(ref.current).toBe(wrapper.find('StyledIcon').getDOMNode());
+    expect(ref.current).toBe(wrapper.find(StyledIcon).getDOMNode());
   });
 });

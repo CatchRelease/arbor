@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DescriptionList /> renders the description list properly 1`] = `
-.emotion-12 {
+.emotion-0 {
   font-family: Motiva Sans;
   box-sizing: border-box;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #5B5D61;
   font-size: 0.8125rem;
@@ -15,7 +15,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
   box-sizing: border-box;
 }
 
-.emotion-2 {
+.emotion-4 {
   font-family: Motiva Sans;
   color: #25272D;
   font-size: 0.875rem;
@@ -28,7 +28,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
   inline={false}
 >
   <dl
-    className="emotion-12 emotion-13"
+    className="emotion-0 emotion-1"
   >
     <DescriptionTerm
       color="text.muted"
@@ -37,7 +37,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       mb="smallest"
     >
       <dt
-        className="emotion-0 emotion-1"
+        className="emotion-2 emotion-3"
         color="text.muted"
         fontSize="size3"
       >
@@ -51,7 +51,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       mb="regular"
     >
       <dd
-        className="emotion-2 emotion-3"
+        className="emotion-4 emotion-5"
         color="text.default"
         fontSize="size4"
       >
@@ -65,7 +65,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       mb="smallest"
     >
       <dt
-        className="emotion-0 emotion-1"
+        className="emotion-2 emotion-3"
         color="text.muted"
         fontSize="size3"
       >
@@ -79,7 +79,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       mb="regular"
     >
       <dd
-        className="emotion-2 emotion-3"
+        className="emotion-4 emotion-5"
         color="text.default"
         fontSize="size4"
       >
@@ -93,7 +93,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       mb="smallest"
     >
       <dt
-        className="emotion-0 emotion-1"
+        className="emotion-2 emotion-3"
         color="text.muted"
         fontSize="size3"
       >
@@ -107,7 +107,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       mb="regular"
     >
       <dd
-        className="emotion-2 emotion-3"
+        className="emotion-4 emotion-5"
         color="text.default"
         fontSize="size4"
       >

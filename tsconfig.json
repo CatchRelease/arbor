@@ -6,9 +6,12 @@
     "declarationDir": "dist",
     "esModuleInterop": true,
     "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "lib": ["dom", "es2017"],
     "noEmit": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "types": ["jest", "jest-enzyme", "jest-plugin-context"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"]

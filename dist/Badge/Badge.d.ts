@@ -7,7 +7,7 @@ declare function Badge({ paletteColor, children, iconEnd, iconStart, subtle, var
     iconStart: any;
     subtle: any;
     variant: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace Badge {
     namespace propTypes {
         const children: PropTypes.Validator<string>;

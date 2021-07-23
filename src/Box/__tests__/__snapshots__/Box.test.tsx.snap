@@ -7,7 +7,7 @@ exports[`Box supports appropriate element props based on "as" prop 1`] = `
 }
 
 <a
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   href="lol"
 />
 `;
@@ -19,7 +19,7 @@ exports[`Box supports appropriate element props based on "as" prop 2`] = `
 }
 
 <img
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   src="lol"
 />
 `;
@@ -32,7 +32,7 @@ exports[`Box supports generic style props such as borderTop with or without "as"
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
 />
 `;
 
@@ -44,6 +44,6 @@ exports[`Box supports generic style props such as borderTop with or without "as"
 }
 
 <a
-  className="emotion-0 emotion-1"
+  className="emotion-0"
 />
 `;

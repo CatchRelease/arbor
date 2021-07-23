@@ -1,7 +1,7 @@
 export default RadioButtonIcon;
 declare function RadioButtonIcon({ checked }: {
     checked: any;
-}): JSX.Element | null;
+}): import("@emotion/react/jsx-runtime").JSX.Element | null;
 declare namespace RadioButtonIcon {
     namespace propTypes {
         const checked: PropTypes.Requireable<boolean>;

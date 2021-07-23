@@ -1,66 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DatePicker /> properly renders a DatePicker 1`] = `
-.emotion-18 {
+.emotion-0 {
   color: #25272D;
   font-family: Motiva Sans;
   font-size: 0.8125rem;
 }
 
-.emotion-18 .DayPicker-Caption {
+.emotion-0 .DayPicker-Caption {
   font-size: 0.875rem;
   font-weight: 400;
   margin-bottom: 1rem;
   padding-top: 0.25rem;
 }
 
-.emotion-18 .DayPicker-Month {
+.emotion-0 .DayPicker-Month {
   border-collapse: separate;
   border-spacing: 5px;
   margin: 0;
 }
 
-.emotion-18 .DayPicker-Weekday {
+.emotion-0 .DayPicker-Weekday {
   color: #25272D;
   font-size: 0.8125rem;
 }
 
-.emotion-18 .DayPicker-Day {
+.emotion-0 .DayPicker-Day {
   border-radius: 3px;
   height: 28px;
   padding: 0;
   width: 28px;
 }
 
-.emotion-18 .DayPicker-Day--today {
+.emotion-0 .DayPicker-Day--today {
   background-color: #F2F2F2;
   color: #0F0F10;
   font-weight: 400;
 }
 
-.emotion-18 .DayPicker-Day--outside,
-.emotion-18 .DayPicker-Day--disabled {
+.emotion-0 .DayPicker-Day--outside,
+.emotion-0 .DayPicker-Day--disabled {
   color: rgba(152,154,156,0.3);
 }
 
-.emotion-18 .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+.emotion-0 .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
   background-color: #081D17;
   color: #B6EFD0;
   font-weight: 400;
 }
 
-.emotion-18:not(.DayPicker--interactionDisabled) .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
+.emotion-0:not(.DayPicker--interactionDisabled) .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
   background-color: #B6EFD0;
   color: #081D17;
 }
 
-.emotion-18 .DayPicker-NavBar {
+.emotion-0 .DayPicker-NavBar {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.emotion-16 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -73,7 +73,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   align-items: center;
 }
 
-.emotion-4 {
+.emotion-3 {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -94,83 +94,81 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   border-radius: 3px;
 }
 
-.emotion-4:disabled {
+.emotion-3:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-4:enabled {
+.emotion-3:enabled {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.emotion-4 i {
+.emotion-3 i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
 }
 
-.emotion-4 i {
+.emotion-3 i {
   width: 1.5rem;
   font-size: 0.6875rem;
 }
 
-.emotion-4 i:first-child {
+.emotion-3 i:first-child {
   margin-left: -0.75rem;
 }
 
-.emotion-4 i:last-child {
+.emotion-3 i:last-child {
   margin-right: -0.75rem;
 }
 
-.emotion-4:disabled {
+.emotion-3:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
 }
 
-.emotion-4:disabled i {
+.emotion-3:disabled i {
   color: rgba(190,190,192,0.7);
 }
 
-
-
-.emotion-4:enabled:active {
+.emotion-3:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
 }
 
-.emotion-4:enabled:focus {
+.emotion-3:enabled:focus {
   box-shadow: 0 0 0 3px #B6EFD0;
 }
 
-.emotion-4:enabled:hover {
+.emotion-3:enabled:hover {
   background-color: #F8F9F9;
 }
 
-.emotion-4:enabled:hover i {
+.emotion-3:enabled:hover i {
   color: #081D17;
 }
 
-.emotion-4::-moz-focus-inner {
+.emotion-3::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-4:focus {
+.emotion-3:focus {
   border: 1px solid transparent;
 }
 
-.emotion-4:focus:hover {
+.emotion-3:focus:hover {
   border: 1px solid transparent;
 }
 
-.emotion-4 i {
+.emotion-3 i {
   color: #989A9C;
 }
 
-.emotion-2 {
+.emotion-5 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -182,7 +180,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   visibility: inherit;
 }
 
-.emotion-0 {
+.emotion-7 {
   color: #989A9C;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -197,12 +195,12 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   box-sizing: border-box;
 }
 
-.emotion-6 {
+.emotion-9 {
   color: #989A9C;
   font-size: 1rem;
 }
 
-.emotion-10 {
+.emotion-14 {
   color: #989A9C;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -211,7 +209,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 <div
-  className="DayPicker DayPicker--interactionDisabled emotion-18 emotion-19"
+  className="DayPicker DayPicker--interactionDisabled emotion-0 emotion-1"
   lang="en"
 >
   <div
@@ -220,11 +218,11 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
     tabIndex={0}
   >
     <div
-      className="DayPicker-NavBar emotion-16 emotion-17"
+      className="DayPicker-NavBar emotion-2"
     >
       <button
         aria-label="Previous Month"
-        className="button--minimal emotion-4 emotion-5"
+        className="button--minimal emotion-3 emotion-4"
         disabled={false}
         fontWeight="medium"
         onClick={[Function]}
@@ -232,27 +230,27 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
         type="button"
       >
         <div
-          className="emotion-2 emotion-3"
+          className="emotion-5 emotion-6"
           display="inline-grid"
         >
           <i
-            className="ar ar-chevron emotion-0 emotion-1"
+            className="ar ar-chevron emotion-7"
             color="icon.default"
           />
         </div>
       </button>
       <div
-        className="emotion-8 emotion-9"
+        className="emotion-8"
       >
         <i
-          className="ar ar-symbol-circle emotion-6 emotion-1"
+          className="ar ar-symbol-circle emotion-9"
           color="icon.default"
           fontSize="size5"
         />
       </div>
       <button
         aria-label="Next Month"
-        className="button--minimal emotion-4 emotion-5"
+        className="button--minimal emotion-3 emotion-4"
         disabled={false}
         fontWeight="medium"
         onClick={[Function]}
@@ -260,11 +258,11 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
         type="button"
       >
         <div
-          className="emotion-2 emotion-3"
+          className="emotion-5 emotion-6"
           display="inline-grid"
         >
           <i
-            className="ar ar-chevron emotion-10 emotion-1"
+            className="ar ar-chevron emotion-14"
             color="icon.default"
           />
         </div>

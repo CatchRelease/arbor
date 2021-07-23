@@ -1,19 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BannerAlert /> property renders a banner alert with danger intent 1`] = `
-.emotion-4 {
+.emotion-0 {
   font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.emotion-2 {
-  font-family: Motiva Sans;
+  background-color: #fbebeb;
+  text-align: center;
   box-sizing: border-box;
+  border-left: 3px solid;
+  border-color: #D93838;
 }
 
-.emotion-6 {
+.emotion-1 {
   font-family: Motiva Sans;
   padding: 1rem;
   box-sizing: border-box;
@@ -27,39 +24,42 @@ exports[`<BannerAlert /> property renders a banner alert with danger intent 1`] 
   grid-template-columns: 0fr 1fr;
 }
 
-.emotion-8 {
+.emotion-3 {
   font-family: Motiva Sans;
-  background-color: #fbebeb;
-  text-align: center;
   box-sizing: border-box;
-  border-left: 3px solid;
-  border-color: #D93838;
 }
 
-.emotion-0 {
+.emotion-4 {
   color: #D93838;
   font-size: 0.875rem;
 }
 
+.emotion-5 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
 <div
-  className="emotion-8 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-1 emotion-2"
     display="grid"
   >
     <div
       aria-label="danger"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-error emotion-0 emotion-1"
+        className="ar ar-error emotion-4"
         color="intent.danger.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
@@ -71,19 +71,7 @@ exports[`<BannerAlert /> property renders a banner alert with danger intent 1`] 
 `;
 
 exports[`<BannerAlert /> property renders a banner alert with info intent 1`] = `
-.emotion-4 {
-  font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.emotion-2 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-}
-
-.emotion-8 {
+.emotion-0 {
   font-family: Motiva Sans;
   background-color: #eceffd;
   text-align: center;
@@ -92,7 +80,7 @@ exports[`<BannerAlert /> property renders a banner alert with info intent 1`] = 
   border-color: #4263EB;
 }
 
-.emotion-6 {
+.emotion-1 {
   font-family: Motiva Sans;
   padding: 1rem;
   box-sizing: border-box;
@@ -106,30 +94,42 @@ exports[`<BannerAlert /> property renders a banner alert with info intent 1`] = 
   grid-template-columns: 0fr 1fr;
 }
 
-.emotion-0 {
+.emotion-3 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+}
+
+.emotion-4 {
   color: #4263EB;
   font-size: 0.875rem;
 }
 
+.emotion-5 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
 <div
-  className="emotion-8 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-1 emotion-2"
     display="grid"
   >
     <div
       aria-label="info"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-info-sign emotion-0 emotion-1"
+        className="ar ar-info-sign emotion-4"
         color="intent.info.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
@@ -141,14 +141,14 @@ exports[`<BannerAlert /> property renders a banner alert with info intent 1`] = 
 `;
 
 exports[`<BannerAlert /> property renders a banner alert with no intent 1`] = `
-.emotion-4 {
+.emotion-0 {
   font-family: Motiva Sans;
   text-align: center;
   box-sizing: border-box;
   border-color: intent.undefined.default;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   padding: 1rem;
   box-sizing: border-box;
@@ -162,7 +162,7 @@ exports[`<BannerAlert /> property renders a banner alert with no intent 1`] = `
   grid-template-columns: ;
 }
 
-.emotion-0 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -170,14 +170,14 @@ exports[`<BannerAlert /> property renders a banner alert with no intent 1`] = `
 }
 
 <div
-  className="emotion-4 emotion-5"
+  className="emotion-0"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1 emotion-2"
     display="grid"
   >
     <div
-      className="emotion-0 emotion-1"
+      className="emotion-3 emotion-4"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
@@ -189,19 +189,16 @@ exports[`<BannerAlert /> property renders a banner alert with no intent 1`] = `
 `;
 
 exports[`<BannerAlert /> property renders a banner alert with success intent 1`] = `
-.emotion-4 {
+.emotion-0 {
   font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.emotion-2 {
-  font-family: Motiva Sans;
+  background-color: #e9f2eb;
+  text-align: center;
   box-sizing: border-box;
+  border-left: 3px solid;
+  border-color: #29863A;
 }
 
-.emotion-6 {
+.emotion-1 {
   font-family: Motiva Sans;
   padding: 1rem;
   box-sizing: border-box;
@@ -215,39 +212,42 @@ exports[`<BannerAlert /> property renders a banner alert with success intent 1`]
   grid-template-columns: 0fr 1fr;
 }
 
-.emotion-8 {
+.emotion-3 {
   font-family: Motiva Sans;
-  background-color: #e9f2eb;
-  text-align: center;
   box-sizing: border-box;
-  border-left: 3px solid;
-  border-color: #29863A;
 }
 
-.emotion-0 {
+.emotion-4 {
   color: #29863A;
   font-size: 0.875rem;
 }
 
+.emotion-5 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
 <div
-  className="emotion-8 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-1 emotion-2"
     display="grid"
   >
     <div
       aria-label="success"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-tick-circle emotion-0 emotion-1"
+        className="ar ar-tick-circle emotion-4"
         color="intent.success.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
@@ -259,19 +259,16 @@ exports[`<BannerAlert /> property renders a banner alert with success intent 1`]
 `;
 
 exports[`<BannerAlert /> property renders a banner alert with warning intent 1`] = `
-.emotion-4 {
+.emotion-0 {
   font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.emotion-2 {
-  font-family: Motiva Sans;
+  background-color: #f9ede6;
+  text-align: center;
   box-sizing: border-box;
+  border-left: 3px solid;
+  border-color: #C55205;
 }
 
-.emotion-6 {
+.emotion-1 {
   font-family: Motiva Sans;
   padding: 1rem;
   box-sizing: border-box;
@@ -285,39 +282,42 @@ exports[`<BannerAlert /> property renders a banner alert with warning intent 1`]
   grid-template-columns: 0fr 1fr;
 }
 
-.emotion-8 {
+.emotion-3 {
   font-family: Motiva Sans;
-  background-color: #f9ede6;
-  text-align: center;
   box-sizing: border-box;
-  border-left: 3px solid;
-  border-color: #C55205;
 }
 
-.emotion-0 {
+.emotion-4 {
   color: #C55205;
   font-size: 0.875rem;
 }
 
+.emotion-5 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
 <div
-  className="emotion-8 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-6 emotion-7"
+    className="emotion-1 emotion-2"
     display="grid"
   >
     <div
       aria-label="warning"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-warning-sign emotion-0 emotion-1"
+        className="ar ar-warning-sign emotion-4"
         color="intent.warning.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
@@ -329,26 +329,16 @@ exports[`<BannerAlert /> property renders a banner alert with warning intent 1`]
 `;
 
 exports[`<BannerAlert /> with details property renders a banner alert, with danger intent, with details 1`] = `
-.emotion-6 {
+.emotion-0 {
   font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.emotion-4 {
-  font-family: Motiva Sans;
-  color: #5B5D61;
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
-.emotion-2 {
-  font-family: Motiva Sans;
+  background-color: #fbebeb;
+  text-align: center;
   box-sizing: border-box;
+  border-left: 3px solid;
+  border-color: #D93838;
 }
 
-.emotion-8 {
+.emotion-1 {
   font-family: Motiva Sans;
   padding: 1rem;
   box-sizing: border-box;
@@ -362,46 +352,56 @@ exports[`<BannerAlert /> with details property renders a banner alert, with dang
   grid-template-columns: 0fr 1fr;
 }
 
-.emotion-10 {
+.emotion-3 {
   font-family: Motiva Sans;
-  background-color: #fbebeb;
-  text-align: center;
   box-sizing: border-box;
-  border-left: 3px solid;
-  border-color: #D93838;
 }
 
-.emotion-0 {
+.emotion-4 {
   color: #D93838;
   font-size: 0.875rem;
 }
 
+.emotion-5 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.emotion-7 {
+  font-family: Motiva Sans;
+  color: #5B5D61;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
 <div
-  className="emotion-10 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-8 emotion-9"
+    className="emotion-1 emotion-2"
     display="grid"
   >
     <div
       aria-label="danger"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-error emotion-0 emotion-1"
+        className="ar ar-error emotion-4"
         color="intent.danger.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-6 emotion-7"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
     >
       Hey look, an alert!
       <span
-        className="emotion-4 emotion-5"
+        className="emotion-7 emotion-8"
         color="monochrome.grey80"
         fontSize="size4"
       >
@@ -414,26 +414,7 @@ exports[`<BannerAlert /> with details property renders a banner alert, with dang
 `;
 
 exports[`<BannerAlert /> with details property renders a banner alert, with info intent, with details 1`] = `
-.emotion-6 {
-  font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.emotion-4 {
-  font-family: Motiva Sans;
-  color: #5B5D61;
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
-.emotion-2 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-}
-
-.emotion-10 {
+.emotion-0 {
   font-family: Motiva Sans;
   background-color: #eceffd;
   text-align: center;
@@ -442,7 +423,7 @@ exports[`<BannerAlert /> with details property renders a banner alert, with info
   border-color: #4263EB;
 }
 
-.emotion-8 {
+.emotion-1 {
   font-family: Motiva Sans;
   padding: 1rem;
   box-sizing: border-box;
@@ -456,37 +437,56 @@ exports[`<BannerAlert /> with details property renders a banner alert, with info
   grid-template-columns: 0fr 1fr;
 }
 
-.emotion-0 {
+.emotion-3 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+}
+
+.emotion-4 {
   color: #4263EB;
   font-size: 0.875rem;
 }
 
+.emotion-5 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.emotion-7 {
+  font-family: Motiva Sans;
+  color: #5B5D61;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
 <div
-  className="emotion-10 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-8 emotion-9"
+    className="emotion-1 emotion-2"
     display="grid"
   >
     <div
       aria-label="info"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-info-sign emotion-0 emotion-1"
+        className="ar ar-info-sign emotion-4"
         color="intent.info.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-6 emotion-7"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
     >
       Hey look, an alert!
       <span
-        className="emotion-4 emotion-5"
+        className="emotion-7 emotion-8"
         color="monochrome.grey80"
         fontSize="size4"
       >
@@ -499,14 +499,14 @@ exports[`<BannerAlert /> with details property renders a banner alert, with info
 `;
 
 exports[`<BannerAlert /> with details property renders a banner alert, with no intent, with details 1`] = `
-.emotion-6 {
+.emotion-0 {
   font-family: Motiva Sans;
   text-align: center;
   box-sizing: border-box;
   border-color: intent.undefined.default;
 }
 
-.emotion-4 {
+.emotion-1 {
   font-family: Motiva Sans;
   padding: 1rem;
   box-sizing: border-box;
@@ -520,14 +520,14 @@ exports[`<BannerAlert /> with details property renders a banner alert, with no i
   grid-template-columns: ;
 }
 
-.emotion-2 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
   font-weight: 500;
 }
 
-.emotion-0 {
+.emotion-5 {
   font-family: Motiva Sans;
   color: #5B5D61;
   font-size: 0.875rem;
@@ -535,21 +535,21 @@ exports[`<BannerAlert /> with details property renders a banner alert, with no i
 }
 
 <div
-  className="emotion-6 emotion-7"
+  className="emotion-0"
 >
   <div
-    className="emotion-4 emotion-5"
+    className="emotion-1 emotion-2"
     display="grid"
   >
     <div
-      className="emotion-2 emotion-3"
+      className="emotion-3 emotion-4"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
     >
       Hey look, an alert!
       <span
-        className="emotion-0 emotion-1"
+        className="emotion-5 emotion-6"
         color="monochrome.grey80"
         fontSize="size4"
       >
@@ -562,26 +562,16 @@ exports[`<BannerAlert /> with details property renders a banner alert, with no i
 `;
 
 exports[`<BannerAlert /> with details property renders a banner alert, with success intent, with details 1`] = `
-.emotion-6 {
+.emotion-0 {
   font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.emotion-4 {
-  font-family: Motiva Sans;
-  color: #5B5D61;
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
-.emotion-2 {
-  font-family: Motiva Sans;
+  background-color: #e9f2eb;
+  text-align: center;
   box-sizing: border-box;
+  border-left: 3px solid;
+  border-color: #29863A;
 }
 
-.emotion-8 {
+.emotion-1 {
   font-family: Motiva Sans;
   padding: 1rem;
   box-sizing: border-box;
@@ -595,46 +585,56 @@ exports[`<BannerAlert /> with details property renders a banner alert, with succ
   grid-template-columns: 0fr 1fr;
 }
 
-.emotion-10 {
+.emotion-3 {
   font-family: Motiva Sans;
-  background-color: #e9f2eb;
-  text-align: center;
   box-sizing: border-box;
-  border-left: 3px solid;
-  border-color: #29863A;
 }
 
-.emotion-0 {
+.emotion-4 {
   color: #29863A;
   font-size: 0.875rem;
 }
 
+.emotion-5 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.emotion-7 {
+  font-family: Motiva Sans;
+  color: #5B5D61;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
 <div
-  className="emotion-10 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-8 emotion-9"
+    className="emotion-1 emotion-2"
     display="grid"
   >
     <div
       aria-label="success"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-tick-circle emotion-0 emotion-1"
+        className="ar ar-tick-circle emotion-4"
         color="intent.success.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-6 emotion-7"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
     >
       Hey look, an alert!
       <span
-        className="emotion-4 emotion-5"
+        className="emotion-7 emotion-8"
         color="monochrome.grey80"
         fontSize="size4"
       >
@@ -647,26 +647,16 @@ exports[`<BannerAlert /> with details property renders a banner alert, with succ
 `;
 
 exports[`<BannerAlert /> with details property renders a banner alert, with warning intent, with details 1`] = `
-.emotion-6 {
+.emotion-0 {
   font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.emotion-4 {
-  font-family: Motiva Sans;
-  color: #5B5D61;
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
-.emotion-2 {
-  font-family: Motiva Sans;
+  background-color: #f9ede6;
+  text-align: center;
   box-sizing: border-box;
+  border-left: 3px solid;
+  border-color: #C55205;
 }
 
-.emotion-8 {
+.emotion-1 {
   font-family: Motiva Sans;
   padding: 1rem;
   box-sizing: border-box;
@@ -680,46 +670,56 @@ exports[`<BannerAlert /> with details property renders a banner alert, with warn
   grid-template-columns: 0fr 1fr;
 }
 
-.emotion-10 {
+.emotion-3 {
   font-family: Motiva Sans;
-  background-color: #f9ede6;
-  text-align: center;
   box-sizing: border-box;
-  border-left: 3px solid;
-  border-color: #C55205;
 }
 
-.emotion-0 {
+.emotion-4 {
   color: #C55205;
   font-size: 0.875rem;
 }
 
+.emotion-5 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.emotion-7 {
+  font-family: Motiva Sans;
+  color: #5B5D61;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
 <div
-  className="emotion-10 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-8 emotion-9"
+    className="emotion-1 emotion-2"
     display="grid"
   >
     <div
       aria-label="warning"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-warning-sign emotion-0 emotion-1"
+        className="ar ar-warning-sign emotion-4"
         color="intent.warning.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-6 emotion-7"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
     >
       Hey look, an alert!
       <span
-        className="emotion-4 emotion-5"
+        className="emotion-7 emotion-8"
         color="monochrome.grey80"
         fontSize="size4"
       >
@@ -732,19 +732,47 @@ exports[`<BannerAlert /> with details property renders a banner alert, with warn
 `;
 
 exports[`<BannerAlert /> with onClose property renders a banner alert, with danger intent, with an on close 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  background-color: #fbebeb;
+  text-align: center;
+  box-sizing: border-box;
+  border-left: 3px solid;
+  border-color: #D93838;
+}
+
+.emotion-1 {
+  font-family: Motiva Sans;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0.5rem;
+  grid-template-columns: 0fr 1fr 0fr;
+}
+
+.emotion-3 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+}
+
 .emotion-4 {
+  color: #D93838;
+  font-size: 0.875rem;
+}
+
+.emotion-5 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
   font-weight: 500;
 }
 
-.emotion-2 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-}
-
-.emotion-10 {
+.emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -765,83 +793,81 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with dang
   border-radius: 3px;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-10:enabled {
+.emotion-8:enabled {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   width: 1.5rem;
   font-size: 0.6875rem;
 }
 
-.emotion-10 i:first-child {
+.emotion-8 i:first-child {
   margin-left: -0.75rem;
 }
 
-.emotion-10 i:last-child {
+.emotion-8 i:last-child {
   margin-right: -0.75rem;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
 }
 
-.emotion-10:disabled i {
+.emotion-8:disabled i {
   color: rgba(190,190,192,0.7);
 }
 
-
-
-.emotion-10:enabled:active {
+.emotion-8:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
 }
 
-.emotion-10:enabled:focus {
+.emotion-8:enabled:focus {
   box-shadow: 0 0 0 3px #B6EFD0;
 }
 
-.emotion-10:enabled:hover {
+.emotion-8:enabled:hover {
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
+.emotion-8:enabled:hover i {
   color: #081D17;
 }
 
-.emotion-10::-moz-focus-inner {
+.emotion-8::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-10:focus {
+.emotion-8:focus {
   border: 1px solid transparent;
 }
 
-.emotion-10:focus:hover {
+.emotion-8:focus:hover {
   border: 1px solid transparent;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   color: #989A9C;
 }
 
-.emotion-8 {
+.emotion-10 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -853,58 +879,30 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with dang
   visibility: inherit;
 }
 
-.emotion-6 {
+.emotion-12 {
   font-size: larger;
 }
 
-.emotion-14 {
-  font-family: Motiva Sans;
-  padding: 1rem;
-  box-sizing: border-box;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-column-gap: 1rem;
-  grid-row-gap: 0.5rem;
-  grid-template-columns: 0fr 1fr 0fr;
-}
-
-.emotion-16 {
-  font-family: Motiva Sans;
-  background-color: #fbebeb;
-  text-align: center;
-  box-sizing: border-box;
-  border-left: 3px solid;
-  border-color: #D93838;
-}
-
-.emotion-0 {
-  color: #D93838;
-  font-size: 0.875rem;
-}
-
 <div
-  className="emotion-16 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-14 emotion-15"
+    className="emotion-1 emotion-2"
     display="grid"
     onClose={[Function]}
   >
     <div
       aria-label="danger"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-error emotion-0 emotion-1"
+        className="ar ar-error emotion-4"
         color="intent.danger.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
@@ -912,22 +910,22 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with dang
       Hey look, an alert!
     </div>
     <div
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <button
         aria-label="close"
-        className="button--minimal emotion-10 emotion-11"
+        className="button--minimal emotion-8 emotion-9"
         disabled={false}
         fontWeight="medium"
         onClick={[Function]}
         size="small"
       >
         <div
-          className="emotion-8 emotion-9"
+          className="emotion-10 emotion-11"
           display="inline-grid"
         >
           <i
-            className="ar ar-cross emotion-6 emotion-1"
+            className="ar ar-cross emotion-12"
             fontSize="larger"
           />
         </div>
@@ -938,19 +936,47 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with dang
 `;
 
 exports[`<BannerAlert /> with onClose property renders a banner alert, with info intent, with an on close 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  background-color: #eceffd;
+  text-align: center;
+  box-sizing: border-box;
+  border-left: 3px solid;
+  border-color: #4263EB;
+}
+
+.emotion-1 {
+  font-family: Motiva Sans;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0.5rem;
+  grid-template-columns: 0fr 1fr 0fr;
+}
+
+.emotion-3 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+}
+
 .emotion-4 {
+  color: #4263EB;
+  font-size: 0.875rem;
+}
+
+.emotion-5 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
   font-weight: 500;
 }
 
-.emotion-2 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-}
-
-.emotion-10 {
+.emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -971,83 +997,81 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with info
   border-radius: 3px;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-10:enabled {
+.emotion-8:enabled {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   width: 1.5rem;
   font-size: 0.6875rem;
 }
 
-.emotion-10 i:first-child {
+.emotion-8 i:first-child {
   margin-left: -0.75rem;
 }
 
-.emotion-10 i:last-child {
+.emotion-8 i:last-child {
   margin-right: -0.75rem;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
 }
 
-.emotion-10:disabled i {
+.emotion-8:disabled i {
   color: rgba(190,190,192,0.7);
 }
 
-
-
-.emotion-10:enabled:active {
+.emotion-8:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
 }
 
-.emotion-10:enabled:focus {
+.emotion-8:enabled:focus {
   box-shadow: 0 0 0 3px #B6EFD0;
 }
 
-.emotion-10:enabled:hover {
+.emotion-8:enabled:hover {
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
+.emotion-8:enabled:hover i {
   color: #081D17;
 }
 
-.emotion-10::-moz-focus-inner {
+.emotion-8::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-10:focus {
+.emotion-8:focus {
   border: 1px solid transparent;
 }
 
-.emotion-10:focus:hover {
+.emotion-8:focus:hover {
   border: 1px solid transparent;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   color: #989A9C;
 }
 
-.emotion-8 {
+.emotion-10 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1059,58 +1083,30 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with info
   visibility: inherit;
 }
 
-.emotion-6 {
+.emotion-12 {
   font-size: larger;
 }
 
-.emotion-16 {
-  font-family: Motiva Sans;
-  background-color: #eceffd;
-  text-align: center;
-  box-sizing: border-box;
-  border-left: 3px solid;
-  border-color: #4263EB;
-}
-
-.emotion-0 {
-  color: #4263EB;
-  font-size: 0.875rem;
-}
-
-.emotion-14 {
-  font-family: Motiva Sans;
-  padding: 1rem;
-  box-sizing: border-box;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-column-gap: 1rem;
-  grid-row-gap: 0.5rem;
-  grid-template-columns: 0fr 1fr 0fr;
-}
-
 <div
-  className="emotion-16 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-14 emotion-15"
+    className="emotion-1 emotion-2"
     display="grid"
     onClose={[Function]}
   >
     <div
       aria-label="info"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-info-sign emotion-0 emotion-1"
+        className="ar ar-info-sign emotion-4"
         color="intent.info.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
@@ -1118,22 +1114,22 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with info
       Hey look, an alert!
     </div>
     <div
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <button
         aria-label="close"
-        className="button--minimal emotion-10 emotion-11"
+        className="button--minimal emotion-8 emotion-9"
         disabled={false}
         fontWeight="medium"
         onClick={[Function]}
         size="small"
       >
         <div
-          className="emotion-8 emotion-9"
+          className="emotion-10 emotion-11"
           display="inline-grid"
         >
           <i
-            className="ar ar-cross emotion-6 emotion-1"
+            className="ar ar-cross emotion-12"
             fontSize="larger"
           />
         </div>
@@ -1144,21 +1140,14 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with info
 `;
 
 exports[`<BannerAlert /> with onClose property renders a banner alert, with no intent, with an on close 1`] = `
-.emotion-12 {
+.emotion-0 {
   font-family: Motiva Sans;
   text-align: center;
   box-sizing: border-box;
   border-color: intent.undefined.default;
 }
 
-.emotion-0 {
-  font-family: Motiva Sans;
-  color: #0F0F10;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
-
-.emotion-10 {
+.emotion-1 {
   font-family: Motiva Sans;
   padding: 1rem;
   box-sizing: border-box;
@@ -1172,7 +1161,14 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with no i
   grid-template-columns: 1fr 0fr;
 }
 
-.emotion-8 {
+.emotion-3 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.emotion-5 {
   font-family: Motiva Sans;
   box-sizing: border-box;
 }
@@ -1239,8 +1235,6 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with no i
   color: rgba(190,190,192,0.7);
 }
 
-
-
 .emotion-6:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
@@ -1274,7 +1268,7 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with no i
   color: #989A9C;
 }
 
-.emotion-4 {
+.emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1286,20 +1280,20 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with no i
   visibility: inherit;
 }
 
-.emotion-2 {
+.emotion-10 {
   font-size: larger;
 }
 
 <div
-  className="emotion-12 emotion-9"
+  className="emotion-0"
 >
   <div
-    className="emotion-10 emotion-11"
+    className="emotion-1 emotion-2"
     display="grid"
     onClose={[Function]}
   >
     <div
-      className="emotion-0 emotion-1"
+      className="emotion-3 emotion-4"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
@@ -1307,7 +1301,7 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with no i
       Hey look, an alert!
     </div>
     <div
-      className="emotion-8 emotion-9"
+      className="emotion-5"
     >
       <button
         aria-label="close"
@@ -1318,11 +1312,11 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with no i
         size="small"
       >
         <div
-          className="emotion-4 emotion-5"
+          className="emotion-8 emotion-9"
           display="inline-grid"
         >
           <i
-            className="ar ar-cross emotion-2 emotion-3"
+            className="ar ar-cross emotion-10"
             fontSize="larger"
           />
         </div>
@@ -1333,19 +1327,47 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with no i
 `;
 
 exports[`<BannerAlert /> with onClose property renders a banner alert, with success intent, with an on close 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  background-color: #e9f2eb;
+  text-align: center;
+  box-sizing: border-box;
+  border-left: 3px solid;
+  border-color: #29863A;
+}
+
+.emotion-1 {
+  font-family: Motiva Sans;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0.5rem;
+  grid-template-columns: 0fr 1fr 0fr;
+}
+
+.emotion-3 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+}
+
 .emotion-4 {
+  color: #29863A;
+  font-size: 0.875rem;
+}
+
+.emotion-5 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
   font-weight: 500;
 }
 
-.emotion-2 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-}
-
-.emotion-10 {
+.emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -1366,83 +1388,81 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with succ
   border-radius: 3px;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-10:enabled {
+.emotion-8:enabled {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   width: 1.5rem;
   font-size: 0.6875rem;
 }
 
-.emotion-10 i:first-child {
+.emotion-8 i:first-child {
   margin-left: -0.75rem;
 }
 
-.emotion-10 i:last-child {
+.emotion-8 i:last-child {
   margin-right: -0.75rem;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
 }
 
-.emotion-10:disabled i {
+.emotion-8:disabled i {
   color: rgba(190,190,192,0.7);
 }
 
-
-
-.emotion-10:enabled:active {
+.emotion-8:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
 }
 
-.emotion-10:enabled:focus {
+.emotion-8:enabled:focus {
   box-shadow: 0 0 0 3px #B6EFD0;
 }
 
-.emotion-10:enabled:hover {
+.emotion-8:enabled:hover {
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
+.emotion-8:enabled:hover i {
   color: #081D17;
 }
 
-.emotion-10::-moz-focus-inner {
+.emotion-8::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-10:focus {
+.emotion-8:focus {
   border: 1px solid transparent;
 }
 
-.emotion-10:focus:hover {
+.emotion-8:focus:hover {
   border: 1px solid transparent;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   color: #989A9C;
 }
 
-.emotion-8 {
+.emotion-10 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1454,58 +1474,30 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with succ
   visibility: inherit;
 }
 
-.emotion-6 {
+.emotion-12 {
   font-size: larger;
 }
 
-.emotion-14 {
-  font-family: Motiva Sans;
-  padding: 1rem;
-  box-sizing: border-box;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-column-gap: 1rem;
-  grid-row-gap: 0.5rem;
-  grid-template-columns: 0fr 1fr 0fr;
-}
-
-.emotion-16 {
-  font-family: Motiva Sans;
-  background-color: #e9f2eb;
-  text-align: center;
-  box-sizing: border-box;
-  border-left: 3px solid;
-  border-color: #29863A;
-}
-
-.emotion-0 {
-  color: #29863A;
-  font-size: 0.875rem;
-}
-
 <div
-  className="emotion-16 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-14 emotion-15"
+    className="emotion-1 emotion-2"
     display="grid"
     onClose={[Function]}
   >
     <div
       aria-label="success"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-tick-circle emotion-0 emotion-1"
+        className="ar ar-tick-circle emotion-4"
         color="intent.success.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
@@ -1513,22 +1505,22 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with succ
       Hey look, an alert!
     </div>
     <div
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <button
         aria-label="close"
-        className="button--minimal emotion-10 emotion-11"
+        className="button--minimal emotion-8 emotion-9"
         disabled={false}
         fontWeight="medium"
         onClick={[Function]}
         size="small"
       >
         <div
-          className="emotion-8 emotion-9"
+          className="emotion-10 emotion-11"
           display="inline-grid"
         >
           <i
-            className="ar ar-cross emotion-6 emotion-1"
+            className="ar ar-cross emotion-12"
             fontSize="larger"
           />
         </div>
@@ -1539,19 +1531,47 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with succ
 `;
 
 exports[`<BannerAlert /> with onClose property renders a banner alert, with warning intent, with an on close 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  background-color: #f9ede6;
+  text-align: center;
+  box-sizing: border-box;
+  border-left: 3px solid;
+  border-color: #C55205;
+}
+
+.emotion-1 {
+  font-family: Motiva Sans;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0.5rem;
+  grid-template-columns: 0fr 1fr 0fr;
+}
+
+.emotion-3 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+}
+
 .emotion-4 {
+  color: #C55205;
+  font-size: 0.875rem;
+}
+
+.emotion-5 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
   font-weight: 500;
 }
 
-.emotion-2 {
-  font-family: Motiva Sans;
-  box-sizing: border-box;
-}
-
-.emotion-10 {
+.emotion-8 {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -1572,83 +1592,81 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with warn
   border-radius: 3px;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-10:enabled {
+.emotion-8:enabled {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   width: 1.5rem;
   font-size: 0.6875rem;
 }
 
-.emotion-10 i:first-child {
+.emotion-8 i:first-child {
   margin-left: -0.75rem;
 }
 
-.emotion-10 i:last-child {
+.emotion-8 i:last-child {
   margin-right: -0.75rem;
 }
 
-.emotion-10:disabled {
+.emotion-8:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
 }
 
-.emotion-10:disabled i {
+.emotion-8:disabled i {
   color: rgba(190,190,192,0.7);
 }
 
-
-
-.emotion-10:enabled:active {
+.emotion-8:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
 }
 
-.emotion-10:enabled:focus {
+.emotion-8:enabled:focus {
   box-shadow: 0 0 0 3px #B6EFD0;
 }
 
-.emotion-10:enabled:hover {
+.emotion-8:enabled:hover {
   background-color: #F8F9F9;
 }
 
-.emotion-10:enabled:hover i {
+.emotion-8:enabled:hover i {
   color: #081D17;
 }
 
-.emotion-10::-moz-focus-inner {
+.emotion-8::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-10:focus {
+.emotion-8:focus {
   border: 1px solid transparent;
 }
 
-.emotion-10:focus:hover {
+.emotion-8:focus:hover {
   border: 1px solid transparent;
 }
 
-.emotion-10 i {
+.emotion-8 i {
   color: #989A9C;
 }
 
-.emotion-8 {
+.emotion-10 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1660,58 +1678,30 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with warn
   visibility: inherit;
 }
 
-.emotion-6 {
+.emotion-12 {
   font-size: larger;
 }
 
-.emotion-14 {
-  font-family: Motiva Sans;
-  padding: 1rem;
-  box-sizing: border-box;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-column-gap: 1rem;
-  grid-row-gap: 0.5rem;
-  grid-template-columns: 0fr 1fr 0fr;
-}
-
-.emotion-16 {
-  font-family: Motiva Sans;
-  background-color: #f9ede6;
-  text-align: center;
-  box-sizing: border-box;
-  border-left: 3px solid;
-  border-color: #C55205;
-}
-
-.emotion-0 {
-  color: #C55205;
-  font-size: 0.875rem;
-}
-
 <div
-  className="emotion-16 emotion-3"
+  className="emotion-0"
 >
   <div
-    className="emotion-14 emotion-15"
+    className="emotion-1 emotion-2"
     display="grid"
     onClose={[Function]}
   >
     <div
       aria-label="warning"
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <i
-        className="ar ar-warning-sign emotion-0 emotion-1"
+        className="ar ar-warning-sign emotion-4"
         color="intent.warning.default"
         fontSize="size4"
       />
     </div>
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-5 emotion-6"
       color="monochrome.grey100"
       fontSize="size4"
       fontWeight="medium"
@@ -1719,22 +1709,22 @@ exports[`<BannerAlert /> with onClose property renders a banner alert, with warn
       Hey look, an alert!
     </div>
     <div
-      className="emotion-2 emotion-3"
+      className="emotion-3"
     >
       <button
         aria-label="close"
-        className="button--minimal emotion-10 emotion-11"
+        className="button--minimal emotion-8 emotion-9"
         disabled={false}
         fontWeight="medium"
         onClick={[Function]}
         size="small"
       >
         <div
-          className="emotion-8 emotion-9"
+          className="emotion-10 emotion-11"
           display="inline-grid"
         >
           <i
-            className="ar ar-cross emotion-6 emotion-1"
+            className="ar ar-cross emotion-12"
             fontSize="larger"
           />
         </div>

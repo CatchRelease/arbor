@@ -4,7 +4,7 @@ export function Modal({ children, modalCss, overlayCss, theme, ...props }: {
     modalCss: any;
     overlayCss: any;
     theme: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 export namespace Modal {
     namespace propTypes {
         const children: PropTypes.Validator<string | number | boolean | {} | PropTypes.ReactElementLike | PropTypes.ReactNodeArray>;

@@ -4,7 +4,7 @@ declare function StyledAutoCompleteValueContainer({ cx, innerProps, children, ..
     cx: any;
     innerProps: any;
     children: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace StyledAutoCompleteValueContainer {
     namespace propTypes {
         const cx: PropTypes.Validator<(...args: any[]) => any>;

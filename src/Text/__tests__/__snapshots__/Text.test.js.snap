@@ -9,7 +9,7 @@ exports[`<Text /> properly renders a Text component 1`] = `
 }
 
 <p
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   color="text.default"
   fontSize="size4"
 >

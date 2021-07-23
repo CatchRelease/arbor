@@ -5,7 +5,7 @@ declare function AutoComplete({ caption, id, label, labelAside, ...props }: {
     id: any;
     label: any;
     labelAside: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace AutoComplete {
     namespace propTypes {
         const caption: PropTypes.Requireable<string>;

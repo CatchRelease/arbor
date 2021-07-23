@@ -2,7 +2,7 @@ export default BannerAlert;
 declare function BannerAlert({ intent, ...props }: {
     [x: string]: any;
     intent: any;
-}): JSX.Element;
+}): import("@emotion/react/jsx-runtime").JSX.Element;
 declare namespace BannerAlert {
     namespace propTypes {
         const intent: PropTypes.Requireable<string>;
