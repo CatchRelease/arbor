@@ -1,15 +1,4 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -24,24 +13,24 @@ var __rest = (this && this.__rest) || function (s, e) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-exports.__esModule = true;
-var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-var prop_types_1 = __importDefault(require("prop-types"));
-var Icon_1 = __importDefault(require("../Icon"));
-var StyledAutoCompleteDropdownIndicator = function (_a) {
-    var 
+Object.defineProperty(exports, "__esModule", { value: true });
+const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+const prop_types_1 = __importDefault(require("prop-types"));
+const Icon_1 = __importDefault(require("../Icon"));
+const StyledAutoCompleteDropdownIndicator = (_a) => {
+    var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    cx = _a.cx, innerProps = _a.innerProps, hideDropdownIndicator = _a.selectProps.hideDropdownIndicator, props = __rest(_a, ["cx", "innerProps", "selectProps"]);
-    return (jsx_runtime_1.jsx(Icon_1["default"], __assign({ display: hideDropdownIndicator ? 'none' : 'block', "aria-label": "show options", name: "chevron" }, __assign(__assign({}, innerProps), props)), void 0));
+    cx, innerProps, selectProps: { hideDropdownIndicator } } = _a, props = __rest(_a, ["cx", "innerProps", "selectProps"]);
+    return (jsx_runtime_1.jsx(Icon_1.default, Object.assign({ display: hideDropdownIndicator ? 'none' : 'block', "aria-label": "show options", name: "chevron" }, Object.assign(Object.assign({}, innerProps), props)), void 0));
 };
 StyledAutoCompleteDropdownIndicator.propTypes = {
-    cx: prop_types_1["default"].func.isRequired,
-    innerProps: prop_types_1["default"].object,
-    selectProps: prop_types_1["default"].shape({
-        hideDropdownIndicator: prop_types_1["default"].bool
+    cx: prop_types_1.default.func.isRequired,
+    innerProps: prop_types_1.default.object,
+    selectProps: prop_types_1.default.shape({
+        hideDropdownIndicator: prop_types_1.default.bool
     }).isRequired
 };
 StyledAutoCompleteDropdownIndicator.defaultProps = {
     innerProps: {}
 };
-exports["default"] = StyledAutoCompleteDropdownIndicator;
+exports.default = StyledAutoCompleteDropdownIndicator;

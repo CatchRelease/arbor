@@ -1,7 +1,7 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.columns = exports.columnWidth = exports.columnRuleWidth = exports.columnRuleStyle = exports.columnRuleColor = exports.columnRule = exports.columnGap = exports.columnCount = void 0;
-var styled_system_1 = require("styled-system");
+const styled_system_1 = require("styled-system");
 exports.columnCount = styled_system_1.style({
     prop: 'columnCount'
 });

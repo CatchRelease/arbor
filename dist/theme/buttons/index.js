@@ -1,13 +1,9 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-exports.__esModule = true;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.sizes = void 0;
 // eslint-disable-next-line import/prefer-default-export
 var sizes_1 = require("./sizes");
-__createBinding(exports, sizes_1, "default", "sizes");
+Object.defineProperty(exports, "sizes", { enumerable: true, get: function () { return __importDefault(sizes_1).default; } });

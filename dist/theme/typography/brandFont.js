@@ -1,3 +1,3 @@
 "use strict";
-exports.__esModule = true;
-exports["default"] = 'Motiva Sans';
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = 'Motiva Sans';

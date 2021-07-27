@@ -1,4 +1,4 @@
 "use strict";
-exports.__esModule = true;
-var VARIANTS = ['default', 'minimal'];
-exports["default"] = VARIANTS;
+Object.defineProperty(exports, "__esModule", { value: true });
+const VARIANTS = ['default', 'minimal'];
+exports.default = VARIANTS;

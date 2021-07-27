@@ -1,15 +1,4 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -24,19 +13,19 @@ var __rest = (this && this.__rest) || function (s, e) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-exports.__esModule = true;
-var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-var prop_types_1 = __importDefault(require("prop-types"));
-var prop_types_2 = require("@styled-system/prop-types");
-var Grid_1 = __importDefault(require("../Grid"));
-var Pane = function (_a) {
-    var innerRef = _a.innerRef, props = __rest(_a, ["innerRef"]);
-    return jsx_runtime_1.jsx(Grid_1["default"], __assign({ ref: innerRef }, props), void 0);
+Object.defineProperty(exports, "__esModule", { value: true });
+const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+const prop_types_1 = __importDefault(require("prop-types"));
+const prop_types_2 = require("@styled-system/prop-types");
+const Grid_1 = __importDefault(require("../Grid"));
+const Pane = (_a) => {
+    var { innerRef } = _a, props = __rest(_a, ["innerRef"]);
+    return jsx_runtime_1.jsx(Grid_1.default, Object.assign({ ref: innerRef }, props), void 0);
 };
 Pane.propTypes = {
     bg: prop_types_2.propType,
     boxShadow: prop_types_2.propType,
-    innerRef: prop_types_1["default"].func,
+    innerRef: prop_types_1.default.func,
     overflow: prop_types_2.propType,
     width: prop_types_2.propType
 };
@@ -47,4 +36,4 @@ Pane.defaultProps = {
     overflow: 'hidden',
     width: '100%'
 };
-exports["default"] = Pane;
+exports.default = Pane;

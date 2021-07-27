@@ -1,9 +1,9 @@
 "use strict";
-exports.__esModule = true;
-var dateTimePickerDefaults = {
+Object.defineProperty(exports, "__esModule", { value: true });
+const dateTimePickerDefaults = {
     closeOnSelect: true,
     inputProps: {
         readOnly: true
     }
 };
-exports["default"] = dateTimePickerDefaults;
+exports.default = dateTimePickerDefaults;

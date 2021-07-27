@@ -1,16 +1,12 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-exports.__esModule = true;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.DescriptionTerm = exports.DescriptionList = exports.DescriptionDetails = void 0;
 var DescriptionDetails_1 = require("./DescriptionDetails");
-__createBinding(exports, DescriptionDetails_1, "default", "DescriptionDetails");
+Object.defineProperty(exports, "DescriptionDetails", { enumerable: true, get: function () { return __importDefault(DescriptionDetails_1).default; } });
 var DescriptionList_1 = require("./DescriptionList");
-__createBinding(exports, DescriptionList_1, "default", "DescriptionList");
+Object.defineProperty(exports, "DescriptionList", { enumerable: true, get: function () { return __importDefault(DescriptionList_1).default; } });
 var DescriptionTerm_1 = require("./DescriptionTerm");
-__createBinding(exports, DescriptionTerm_1, "default", "DescriptionTerm");
+Object.defineProperty(exports, "DescriptionTerm", { enumerable: true, get: function () { return __importDefault(DescriptionTerm_1).default; } });

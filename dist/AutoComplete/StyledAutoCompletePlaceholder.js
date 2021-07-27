@@ -1,15 +1,4 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -24,21 +13,21 @@ var __rest = (this && this.__rest) || function (s, e) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-exports.__esModule = true;
-var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-var prop_types_1 = __importDefault(require("prop-types"));
-var Flex_1 = __importDefault(require("../Flex"));
-var StyledAutoCompletePlaceholder = function (_a) {
-    var 
+Object.defineProperty(exports, "__esModule", { value: true });
+const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+const prop_types_1 = __importDefault(require("prop-types"));
+const Flex_1 = __importDefault(require("../Flex"));
+const StyledAutoCompletePlaceholder = (_a) => {
+    var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    cx = _a.cx, children = _a.children, props = __rest(_a, ["cx", "children"]);
-    return (jsx_runtime_1.jsx(Flex_1["default"], __assign({ alignSelf: "center", color: "text.placeholder", position: "absolute" }, props, { children: children }), void 0));
+    cx, children } = _a, props = __rest(_a, ["cx", "children"]);
+    return (jsx_runtime_1.jsx(Flex_1.default, Object.assign({ alignSelf: "center", color: "text.placeholder", position: "absolute" }, props, { children: children }), void 0));
 };
 StyledAutoCompletePlaceholder.propTypes = {
-    cx: prop_types_1["default"].func.isRequired,
-    children: prop_types_1["default"].oneOfType([
-        prop_types_1["default"].node,
-        prop_types_1["default"].arrayOf(prop_types_1["default"].node)
+    cx: prop_types_1.default.func.isRequired,
+    children: prop_types_1.default.oneOfType([
+        prop_types_1.default.node,
+        prop_types_1.default.arrayOf(prop_types_1.default.node)
     ]).isRequired
 };
-exports["default"] = StyledAutoCompletePlaceholder;
+exports.default = StyledAutoCompletePlaceholder;

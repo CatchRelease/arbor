@@ -1,14 +1,10 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-exports.__esModule = true;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Tabs = exports.Tab = void 0;
 var Tab_1 = require("./Tab");
-__createBinding(exports, Tab_1, "default", "Tab");
+Object.defineProperty(exports, "Tab", { enumerable: true, get: function () { return __importDefault(Tab_1).default; } });
 var Tabs_1 = require("./Tabs");
-__createBinding(exports, Tabs_1, "default", "Tabs");
+Object.defineProperty(exports, "Tabs", { enumerable: true, get: function () { return __importDefault(Tabs_1).default; } });

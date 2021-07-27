@@ -1,32 +1,28 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-exports.__esModule = true;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.text = exports.shadow = exports.secondary = exports.primary = exports.palette = exports.monochrome = exports.intent = exports.icon = exports.brand = exports.border = exports.background = void 0;
 var background_1 = require("./background");
-__createBinding(exports, background_1, "default", "background");
+Object.defineProperty(exports, "background", { enumerable: true, get: function () { return __importDefault(background_1).default; } });
 var border_1 = require("./border");
-__createBinding(exports, border_1, "default", "border");
+Object.defineProperty(exports, "border", { enumerable: true, get: function () { return __importDefault(border_1).default; } });
 var brand_1 = require("./brand");
-__createBinding(exports, brand_1, "default", "brand");
+Object.defineProperty(exports, "brand", { enumerable: true, get: function () { return __importDefault(brand_1).default; } });
 var icon_1 = require("./icon");
-__createBinding(exports, icon_1, "default", "icon");
+Object.defineProperty(exports, "icon", { enumerable: true, get: function () { return __importDefault(icon_1).default; } });
 var intent_1 = require("./intent");
-__createBinding(exports, intent_1, "default", "intent");
+Object.defineProperty(exports, "intent", { enumerable: true, get: function () { return __importDefault(intent_1).default; } });
 var monochrome_1 = require("./monochrome");
-__createBinding(exports, monochrome_1, "default", "monochrome");
+Object.defineProperty(exports, "monochrome", { enumerable: true, get: function () { return __importDefault(monochrome_1).default; } });
 var palette_1 = require("./palette");
-__createBinding(exports, palette_1, "default", "palette");
+Object.defineProperty(exports, "palette", { enumerable: true, get: function () { return __importDefault(palette_1).default; } });
 var primary_1 = require("./primary");
-__createBinding(exports, primary_1, "default", "primary");
+Object.defineProperty(exports, "primary", { enumerable: true, get: function () { return __importDefault(primary_1).default; } });
 var secondary_1 = require("./secondary");
-__createBinding(exports, secondary_1, "default", "secondary");
+Object.defineProperty(exports, "secondary", { enumerable: true, get: function () { return __importDefault(secondary_1).default; } });
 var shadow_1 = require("./shadow");
-__createBinding(exports, shadow_1, "default", "shadow");
+Object.defineProperty(exports, "shadow", { enumerable: true, get: function () { return __importDefault(shadow_1).default; } });
 var text_1 = require("./text");
-__createBinding(exports, text_1, "default", "text");
+Object.defineProperty(exports, "text", { enumerable: true, get: function () { return __importDefault(text_1).default; } });

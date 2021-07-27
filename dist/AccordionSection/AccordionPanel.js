@@ -1,15 +1,4 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -24,20 +13,20 @@ var __rest = (this && this.__rest) || function (s, e) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-exports.__esModule = true;
-var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-var prop_types_1 = __importDefault(require("prop-types"));
-var StyledAccordionPanel_1 = __importDefault(require("./StyledAccordionPanel"));
-var AccordionPanel = function (_a) {
-    var isOpen = _a.isOpen, panelProps = __rest(_a, ["isOpen"]);
-    var display = isOpen ? 'block' : 'none';
-    return jsx_runtime_1.jsx(StyledAccordionPanel_1["default"], __assign({}, __assign(__assign({}, panelProps), { display: display })), void 0);
+Object.defineProperty(exports, "__esModule", { value: true });
+const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+const prop_types_1 = __importDefault(require("prop-types"));
+const StyledAccordionPanel_1 = __importDefault(require("./StyledAccordionPanel"));
+const AccordionPanel = (_a) => {
+    var { isOpen } = _a, panelProps = __rest(_a, ["isOpen"]);
+    const display = isOpen ? 'block' : 'none';
+    return jsx_runtime_1.jsx(StyledAccordionPanel_1.default, Object.assign({}, Object.assign(Object.assign({}, panelProps), { display })), void 0);
 };
 AccordionPanel.propTypes = {
     /**
      * Whether or not the panel is open or not. When the panel is closed, the
      * content will be rendered with display none.
      */
-    isOpen: prop_types_1["default"].bool.isRequired
+    isOpen: prop_types_1.default.bool.isRequired
 };
-exports["default"] = AccordionPanel;
+exports.default = AccordionPanel;
