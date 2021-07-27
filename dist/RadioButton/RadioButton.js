@@ -1,140 +1,87 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _Icon = _interopRequireDefault(require("../Icon"));
-
-var _Text = _interopRequireDefault(require("../Text"));
-
-var _RadioButtonIcon = _interopRequireDefault(require("./RadioButtonIcon"));
-
-var _RadioButtonInput = _interopRequireDefault(require("./RadioButtonInput"));
-
-var _RadioButtonLabel = _interopRequireDefault(require("./RadioButtonLabel"));
-
-var _StyledRadioButton = _interopRequireDefault(require("./StyledRadioButton"));
-
-var _jsxRuntime = require("@emotion/react/jsx-runtime");
-
-var _excluded = ["id", "name", "label", "disabled", "isInvalid", "checked", "onChange", "value", "icon"];
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-var RadioButton = function RadioButton(_ref) {
-  var id = _ref.id,
-      name = _ref.name,
-      label = _ref.label,
-      disabled = _ref.disabled,
-      isInvalid = _ref.isInvalid,
-      checked = _ref.checked,
-      onChange = _ref.onChange,
-      value = _ref.value,
-      icon = _ref.icon,
-      props = _objectWithoutProperties(_ref, _excluded);
-
-  return (0, _jsxRuntime.jsxs)(_RadioButtonLabel["default"], _objectSpread(_objectSpread({
-    alignItems: "center",
-    my: "regular"
-  }, props), {}, {
-    children: [(0, _jsxRuntime.jsx)(_RadioButtonInput["default"], {
-      id: id,
-      type: "radio",
-      name: name,
-      value: value,
-      checked: checked,
-      onChange: onChange,
-      disabled: disabled,
-      "aria-invalid": isInvalid
-    }), (0, _jsxRuntime.jsx)(_StyledRadioButton["default"], {
-      disabled: disabled,
-      checked: checked,
-      children: (0, _jsxRuntime.jsx)(_RadioButtonIcon["default"], {
-        checked: checked
-      })
-    }), icon && (0, _jsxRuntime.jsx)(_Icon["default"], {
-      fontSize: "24px",
-      name: icon,
-      color: disabled ? 'icon.disabled' : 'icon.default',
-      ml: "smaller"
-    }), (0, _jsxRuntime.jsx)(_Text["default"], {
-      as: "span",
-      fontSize: "size4",
-      color: disabled ? 'text.disabled' : 'text.default',
-      ml: icon ? 'smallest' : 'smaller',
-      children: label
-    })]
-  }));
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
-
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+var prop_types_1 = __importDefault(require("prop-types"));
+var Icon_1 = __importDefault(require("../Icon"));
+var Text_1 = __importDefault(require("../Text"));
+var RadioButtonIcon_1 = __importDefault(require("./RadioButtonIcon"));
+var RadioButtonInput_1 = __importDefault(require("./RadioButtonInput"));
+var RadioButtonLabel_1 = __importDefault(require("./RadioButtonLabel"));
+var StyledRadioButton_1 = __importDefault(require("./StyledRadioButton"));
+var RadioButton = function (_a) {
+    var id = _a.id, name = _a.name, label = _a.label, disabled = _a.disabled, isInvalid = _a.isInvalid, checked = _a.checked, onChange = _a.onChange, value = _a.value, icon = _a.icon, props = __rest(_a, ["id", "name", "label", "disabled", "isInvalid", "checked", "onChange", "value", "icon"]);
+    return (jsx_runtime_1.jsxs(RadioButtonLabel_1["default"], __assign({ alignItems: "center", my: "regular" }, props, { children: [jsx_runtime_1.jsx(RadioButtonInput_1["default"], { id: id, type: "radio", name: name, value: value, checked: checked, onChange: onChange, disabled: disabled, "aria-invalid": isInvalid }, void 0), jsx_runtime_1.jsx(StyledRadioButton_1["default"], __assign({}, { disabled: disabled, checked: checked }, { children: jsx_runtime_1.jsx(RadioButtonIcon_1["default"], __assign({}, { checked: checked }), void 0) }), void 0), icon && (jsx_runtime_1.jsx(Icon_1["default"], { fontSize: "24px", name: icon, color: disabled ? 'icon.disabled' : 'icon.default', ml: "smaller" }, void 0)), jsx_runtime_1.jsx(Text_1["default"], __assign({ as: "span", fontSize: "size4", color: disabled ? 'text.disabled' : 'text.default', ml: icon ? 'smallest' : 'smaller' }, { children: label }), void 0)] }), void 0));
+};
 RadioButton.propTypes = {
-  /**
-   * The checked attribute of the checkbox.
-   */
-  checked: _propTypes["default"].bool,
-
-  /**
-   * When true, the checkbox is disabled.
-   */
-  disabled: _propTypes["default"].bool,
-
-  /**
-   * The icon to display alongside the label.
-   */
-  icon: _propTypes["default"].elementType,
-
-  /**
-   * The id attribute of the checkbox.
-   */
-  id: _propTypes["default"].string.isRequired,
-
-  /**
-   * When true, the aria-invalid attribute is true.
-   * Used for accessibility.
-   */
-  isInvalid: _propTypes["default"].bool,
-
-  /**
-   * Label of the checkbox.
-   */
-  label: _propTypes["default"].node.isRequired,
-
-  /**
-   * The name attribute of the checkbox.
-   */
-  name: _propTypes["default"].string.isRequired,
-
-  /**
-   * Function called when state changes.
-   */
-  onChange: _propTypes["default"].func,
-
-  /**
-   * The value attribute of the checkbox.
-   */
-  value: _propTypes["default"].string
+    /**
+     * The checked attribute of the checkbox.
+     */
+    checked: prop_types_1["default"].bool,
+    /**
+     * When true, the checkbox is disabled.
+     */
+    disabled: prop_types_1["default"].bool,
+    /**
+     * The icon to display alongside the label.
+     */
+    icon: prop_types_1["default"].elementType,
+    /**
+     * The id attribute of the checkbox.
+     */
+    id: prop_types_1["default"].string.isRequired,
+    /**
+     * When true, the aria-invalid attribute is true.
+     * Used for accessibility.
+     */
+    isInvalid: prop_types_1["default"].bool,
+    /**
+     * Label of the checkbox.
+     */
+    label: prop_types_1["default"].node.isRequired,
+    /**
+     * The name attribute of the checkbox.
+     */
+    name: prop_types_1["default"].string.isRequired,
+    /**
+     * Function called when state changes.
+     */
+    onChange: prop_types_1["default"].func,
+    /**
+     * The value attribute of the checkbox.
+     */
+    value: prop_types_1["default"].string
 };
 RadioButton.defaultProps = {
-  checked: false,
-  disabled: false,
-  icon: undefined,
-  isInvalid: false,
-  onChange: function onChange() {},
-  value: ''
+    checked: false,
+    disabled: false,
+    icon: undefined,
+    isInvalid: false,
+    onChange: function () { },
+    value: ''
 };
-var _default = RadioButton;
-exports["default"] = _default;
+exports["default"] = RadioButton;

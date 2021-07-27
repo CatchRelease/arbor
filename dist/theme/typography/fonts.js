@@ -1,16 +1,10 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _brandFont = _interopRequireDefault(require("./brandFont"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var _default = {
-  "default": _brandFont["default"],
-  icon: 'Arbor'
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-exports["default"] = _default;
+exports.__esModule = true;
+var brandFont_1 = __importDefault(require("./brandFont"));
+exports["default"] = {
+    "default": brandFont_1["default"],
+    icon: 'Arbor'
+};

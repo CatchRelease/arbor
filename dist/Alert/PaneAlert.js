@@ -1,58 +1,46 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _AlertContent = _interopRequireDefault(require("./AlertContent"));
-
-var _IntentAlert = _interopRequireDefault(require("./IntentAlert"));
-
-var _Pane = _interopRequireDefault(require("../Pane"));
-
-var _intents = _interopRequireDefault(require("./intents"));
-
-var _jsxRuntime = require("@emotion/react/jsx-runtime");
-
-var _excluded = ["boxShadow", "intent"];
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-var PaneAlert = function PaneAlert(_ref) {
-  var boxShadow = _ref.boxShadow,
-      intent = _ref.intent,
-      props = _objectWithoutProperties(_ref, _excluded);
-
-  return (0, _jsxRuntime.jsx)(_IntentAlert["default"], {
-    Component: _Pane["default"],
-    boxShadow: boxShadow,
-    intent: intent,
-    children: (0, _jsxRuntime.jsx)(_AlertContent["default"], _objectSpread({}, _objectSpread({
-      intent: intent
-    }, props)))
-  });
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
-
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+var prop_types_1 = __importDefault(require("prop-types"));
+var AlertContent_1 = __importDefault(require("./AlertContent"));
+var IntentAlert_1 = __importDefault(require("./IntentAlert"));
+var Pane_1 = __importDefault(require("../Pane"));
+var intents_1 = __importDefault(require("./intents"));
+var PaneAlert = function (_a) {
+    var boxShadow = _a.boxShadow, intent = _a.intent, props = __rest(_a, ["boxShadow", "intent"]);
+    return (jsx_runtime_1.jsx(IntentAlert_1["default"], __assign({ Component: Pane_1["default"], boxShadow: boxShadow, intent: intent }, { children: jsx_runtime_1.jsx(AlertContent_1["default"], __assign({}, __assign({ intent: intent }, props)), void 0) }), void 0));
+};
 PaneAlert.propTypes = {
-  boxShadow: _propTypes["default"].string,
-  intent: _propTypes["default"].oneOf(_intents["default"])
+    boxShadow: prop_types_1["default"].string,
+    intent: prop_types_1["default"].oneOf(intents_1["default"])
 };
 PaneAlert.defaultProps = {
-  boxShadow: 'elevation0',
-  intent: undefined
+    boxShadow: 'elevation0',
+    intent: undefined
 };
-var _default = PaneAlert;
-exports["default"] = _default;
+exports["default"] = PaneAlert;

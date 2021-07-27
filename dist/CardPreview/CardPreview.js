@@ -1,42 +1,35 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _base = _interopRequireDefault(require("@emotion/styled/base"));
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _utils = require("../utils");
-
-var _Box = _interopRequireDefault(require("../Box"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var CardPreview = ( /*#__PURE__*/0, _base["default"])(_Box["default"], {
-  target: "e181cw5e0",
-  label: "CardPreview"
-})("background:url(", function (props) {
-  return props.image;
-}, ") center center no-repeat ", function (props) {
-  return props.theme.colors.monochrome.black;
-}, ";background-size:contain;", _utils.ratio, ";" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9DYXJkUHJldmlldy9DYXJkUHJldmlldy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFNK0IiLCJmaWxlIjoiLi4vLi4vc3JjL0NhcmRQcmV2aWV3L0NhcmRQcmV2aWV3LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xuaW1wb3J0IFByb3BUeXBlcyBmcm9tICdwcm9wLXR5cGVzJztcbmltcG9ydCB7IHJhdGlvIH0gZnJvbSAnLi4vdXRpbHMnO1xuXG5pbXBvcnQgQm94IGZyb20gJy4uL0JveCc7XG5cbmNvbnN0IENhcmRQcmV2aWV3ID0gc3R5bGVkKEJveClgXG4gIGJhY2tncm91bmQ6IHVybCgkeyhwcm9wcykgPT4gcHJvcHMuaW1hZ2V9KSBjZW50ZXIgY2VudGVyIG5vLXJlcGVhdFxuICAgICR7KHByb3BzKSA9PiBwcm9wcy50aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ibGFja307XG4gIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcbiAgJHtyYXRpb307XG5gO1xuXG5DYXJkUHJldmlldy5wcm9wVHlwZXMgPSB7XG4gIC8qKlxuICAgKiBJbWFnZSB0byBiZSByZW5kZXJlZCBhcyB0aGUgYmFja2dyb3VuZCBvZiB0aGUgQ2FyZFByZXZpZXdcbiAgICovXG4gIGltYWdlOiBQcm9wVHlwZXMuc3RyaW5nLmlzUmVxdWlyZWQsXG4gIC4uLnJhdGlvLnByb3BUeXBlc1xufTtcblxuQ2FyZFByZXZpZXcuZGVmYXVsdFByb3BzID0ge1xuICByYXRpbzogOSAvIDE2XG59O1xuXG5leHBvcnQgZGVmYXVsdCBDYXJkUHJldmlldztcbiJdfQ== */"));
-CardPreview.propTypes = _objectSpread({
-  /**
-   * Image to be rendered as the background of the CardPreview
-   */
-  image: _propTypes["default"].string.isRequired
-}, _utils.ratio.propTypes);
-CardPreview.defaultProps = {
-  ratio: 9 / 16
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
 };
-var _default = CardPreview;
-exports["default"] = _default;
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var styled_1 = __importDefault(require("@emotion/styled"));
+var prop_types_1 = __importDefault(require("prop-types"));
+var utils_1 = require("../utils");
+var Box_1 = __importDefault(require("../Box"));
+var CardPreview = styled_1["default"](Box_1["default"])(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background: url(", ") center center no-repeat\n    ", ";\n  background-size: contain;\n  ", ";\n"], ["\n  background: url(", ") center center no-repeat\n    ", ";\n  background-size: contain;\n  ", ";\n"])), function (props) { return props.image; }, function (props) { return props.theme.colors.monochrome.black; }, utils_1.ratio);
+CardPreview.propTypes = __assign({ 
+    /**
+     * Image to be rendered as the background of the CardPreview
+     */
+    image: prop_types_1["default"].string.isRequired }, utils_1.ratio.propTypes);
+CardPreview.defaultProps = {
+    ratio: 9 / 16
+};
+exports["default"] = CardPreview;
+var templateObject_1;

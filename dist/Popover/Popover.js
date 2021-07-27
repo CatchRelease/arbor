@@ -1,249 +1,192 @@
 "use strict";
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = require("react");
-
-var _reactPopover = _interopRequireDefault(require("react-popover"));
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _PopoverContent = _interopRequireDefault(require("./PopoverContent"));
-
-var _jsxRuntime = require("@emotion/react/jsx-runtime");
-
-var _excluded = ["children", "content", "contentProps", "preferPlace", "place"];
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-var Popover = /*#__PURE__*/function (_Component) {
-  _inherits(Popover, _Component);
-
-  var _super = _createSuper(Popover);
-
-  function Popover(props) {
-    var _this;
-
-    _classCallCheck(this, Popover);
-
-    _this = _super.call(this, props);
-
-    _this.handleOutsideClick = function (e) {
-      var isOpen = _this.state.isOpen;
-
-      if (!isOpen) {
-        return;
-      }
-
-      var currentRef = _this.node.current;
-
-      if (!currentRef.containerEl.contains(e.target) && !currentRef.targetEl.contains(e.target)) {
-        _this.close();
-      }
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
     };
-
-    _this.handleKeyboard = function (e) {
-      if (e.key === 'Escape') {
-        _this.close();
-      }
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
-
-    _this.toggle = function (e) {
-      var isOpen = _this.state.isOpen;
-
-      if (e) {
-        if (typeof e.preventDefault === 'function') {
-          e.preventDefault();
+})();
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
         }
-
-        if (typeof e.stopPropagation === 'function') {
-          e.stopPropagation();
-        }
-      }
-
-      if (isOpen) {
-        _this.close();
-      } else {
-        _this.open();
-      }
+        return t;
     };
-
-    _this.state = {
-      isOpen: false
-    };
-    _this.node = /*#__PURE__*/(0, _react.createRef)();
-    return _this;
-  }
-
-  _createClass(Popover, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      document.addEventListener('click', this.handleOutsideClick, true);
-      document.addEventListener('keypress', this.handleKeyboard, true);
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      document.removeEventListener('click', this.handleOutsideClick, true);
-      document.removeEventListener('keypress', this.handleKeyboard, true);
-    }
-  }, {
-    key: "open",
-    value: function open(callback) {
-      var onOpen = this.props.onOpen;
-      var isOpen = this.state.isOpen;
-
-      if (isOpen) {
-        return;
-      }
-
-      this.setState({
-        isOpen: true
-      }, function () {
-        if (callback) {
-          callback();
+    return __assign.apply(this, arguments);
+};
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
         }
-
-        onOpen();
-      });
+    return t;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+var react_1 = require("react");
+var react_popover_1 = __importDefault(require("react-popover"));
+var prop_types_1 = __importDefault(require("prop-types"));
+var PopoverContent_1 = __importDefault(require("./PopoverContent"));
+var Popover = /** @class */ (function (_super) {
+    __extends(Popover, _super);
+    function Popover(props) {
+        var _this = _super.call(this, props) || this;
+        _this.handleOutsideClick = function (e) {
+            var isOpen = _this.state.isOpen;
+            if (!isOpen) {
+                return;
+            }
+            var currentRef = _this.node.current;
+            if (!currentRef.containerEl.contains(e.target) &&
+                !currentRef.targetEl.contains(e.target)) {
+                _this.close();
+            }
+        };
+        _this.handleKeyboard = function (e) {
+            if (e.key === 'Escape') {
+                _this.close();
+            }
+        };
+        _this.toggle = function (e) {
+            var isOpen = _this.state.isOpen;
+            if (e) {
+                if (typeof e.preventDefault === 'function') {
+                    e.preventDefault();
+                }
+                if (typeof e.stopPropagation === 'function') {
+                    e.stopPropagation();
+                }
+            }
+            if (isOpen) {
+                _this.close();
+            }
+            else {
+                _this.open();
+            }
+        };
+        _this.state = {
+            isOpen: false
+        };
+        _this.node = react_1.createRef();
+        return _this;
     }
-  }, {
-    key: "close",
-    value: function close() {
-      var onClose = this.props.onClose;
-      var isOpen = this.state.isOpen;
-
-      if (!isOpen) {
-        return;
-      }
-
-      this.setState({
-        isOpen: false
-      }, onClose);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          children = _this$props.children,
-          content = _this$props.content,
-          contentProps = _this$props.contentProps,
-          preferPlace = _this$props.preferPlace,
-          place = _this$props.place,
-          popoverProps = _objectWithoutProperties(_this$props, _excluded);
-
-      var isOpen = this.state.isOpen;
-      var styledContent = (0, _jsxRuntime.jsx)(_PopoverContent["default"], _objectSpread(_objectSpread({}, contentProps), {}, {
-        children: content
-      }));
-      var trigger = /*#__PURE__*/(0, _react.cloneElement)(children, {
-        onClick: this.toggle
-      });
-      return (0, _jsxRuntime.jsx)(_reactPopover["default"], _objectSpread(_objectSpread({
-        ref: this.node,
-        isOpen: isOpen,
-        body: styledContent,
-        preferPlace: preferPlace,
-        place: place,
-        tipSize: 0.01,
-        enterExitTransitionDurationMs: 0
-      }, popoverProps), {}, {
-        children: trigger
-      }));
-    }
-  }]);
-
-  return Popover;
-}(_react.Component);
-
+    Popover.prototype.componentDidMount = function () {
+        document.addEventListener('click', this.handleOutsideClick, true);
+        document.addEventListener('keypress', this.handleKeyboard, true);
+    };
+    Popover.prototype.componentWillUnmount = function () {
+        document.removeEventListener('click', this.handleOutsideClick, true);
+        document.removeEventListener('keypress', this.handleKeyboard, true);
+    };
+    Popover.prototype.open = function (callback) {
+        var onOpen = this.props.onOpen;
+        var isOpen = this.state.isOpen;
+        if (isOpen) {
+            return;
+        }
+        this.setState({ isOpen: true }, function () {
+            if (callback) {
+                callback();
+            }
+            onOpen();
+        });
+    };
+    Popover.prototype.close = function () {
+        var onClose = this.props.onClose;
+        var isOpen = this.state.isOpen;
+        if (!isOpen) {
+            return;
+        }
+        this.setState({ isOpen: false }, onClose);
+    };
+    Popover.prototype.render = function () {
+        var _a = this.props, children = _a.children, content = _a.content, contentProps = _a.contentProps, preferPlace = _a.preferPlace, place = _a.place, popoverProps = __rest(_a, ["children", "content", "contentProps", "preferPlace", "place"]);
+        var isOpen = this.state.isOpen;
+        var styledContent = (jsx_runtime_1.jsx(PopoverContent_1["default"], __assign({}, contentProps, { children: content }), void 0));
+        var trigger = react_1.cloneElement(children, {
+            onClick: this.toggle
+        });
+        return (jsx_runtime_1.jsx(react_popover_1["default"], __assign({ ref: this.node, isOpen: isOpen, body: styledContent, preferPlace: preferPlace, place: place, tipSize: 0.01, enterExitTransitionDurationMs: 0 }, popoverProps, { children: trigger }), void 0));
+    };
+    return Popover;
+}(react_1.Component));
 Popover.propTypes = {
-  /**
-   * Content to display within the Popover
-   */
-  content: _propTypes["default"].node.isRequired,
-
-  /**
-   * Props to be passed to the PopoverContent component
-   */
-  contentProps: _propTypes["default"].object,
-  // eslint-disable-line react/forbid-prop-types
-
-  /**
-   * The trigger which will open the popover when it is clicked. By default,
-   * the child will be cloned and an onClick handler will be attached to open
-   * the popover when it is clicked.
-   */
-  children: _propTypes["default"].node.isRequired,
-
-  /**
-   * Optional callback that will be fired once the Popover's state is set to opened
-   */
-  onOpen: _propTypes["default"].func,
-
-  /**
-   * Optional callback that will be fired once the Popover's state is set to closed
-   */
-  onClose: _propTypes["default"].func,
-
-  /**
-   * Preferred location to place the popover when it's opened in the event that
-   * there are multiple available areas where the popover would fit. This list
-   * is based off the supported places provided by [littlebits/react-popover](https://github.com/littlebits/react-popover#preferplace--enum-string--null)
-   */
-  preferPlace: _propTypes["default"].oneOf(['above', 'right', 'below', 'left', 'row', 'column', 'start', 'end']),
-
-  /**
-   * Required location or scope to place the popover when it's opened in the event that
-   * there are multiple available areas where the popover would fit. This list
-   * is based off the supported places provided by [littlebits/react-popover](https://github.com/littlebits/react-popover#code-place-string-null-code)
-   */
-  place: _propTypes["default"].oneOf(['above', 'right', 'below', 'left', 'row', 'column', 'start', 'end'])
+    /**
+     * Content to display within the Popover
+     */
+    content: prop_types_1["default"].node.isRequired,
+    /**
+     * Props to be passed to the PopoverContent component
+     */
+    contentProps: prop_types_1["default"].object,
+    /**
+     * The trigger which will open the popover when it is clicked. By default,
+     * the child will be cloned and an onClick handler will be attached to open
+     * the popover when it is clicked.
+     */
+    children: prop_types_1["default"].node.isRequired,
+    /**
+     * Optional callback that will be fired once the Popover's state is set to opened
+     */
+    onOpen: prop_types_1["default"].func,
+    /**
+     * Optional callback that will be fired once the Popover's state is set to closed
+     */
+    onClose: prop_types_1["default"].func,
+    /**
+     * Preferred location to place the popover when it's opened in the event that
+     * there are multiple available areas where the popover would fit. This list
+     * is based off the supported places provided by [littlebits/react-popover](https://github.com/littlebits/react-popover#preferplace--enum-string--null)
+     */
+    preferPlace: prop_types_1["default"].oneOf([
+        'above',
+        'right',
+        'below',
+        'left',
+        'row',
+        'column',
+        'start',
+        'end'
+    ]),
+    /**
+     * Required location or scope to place the popover when it's opened in the event that
+     * there are multiple available areas where the popover would fit. This list
+     * is based off the supported places provided by [littlebits/react-popover](https://github.com/littlebits/react-popover#code-place-string-null-code)
+     */
+    place: prop_types_1["default"].oneOf([
+        'above',
+        'right',
+        'below',
+        'left',
+        'row',
+        'column',
+        'start',
+        'end'
+    ])
 };
 Popover.defaultProps = {
-  contentProps: {},
-  preferPlace: 'below',
-  place: 'column',
-  onOpen: function onOpen() {
-    return null;
-  },
-  onClose: function onClose() {
-    return null;
-  }
+    contentProps: {},
+    preferPlace: 'below',
+    place: 'column',
+    onOpen: function () { return null; },
+    onClose: function () { return null; }
 };
-var _default = Popover;
-exports["default"] = _default;
+exports["default"] = Popover;

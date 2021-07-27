@@ -1,28 +1,20 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _Text = _interopRequireDefault(require("../Text"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var StyledAlertDetails = _Text["default"].withComponent('div', {
-  target: "e13ujyyr0",
-  label: "StyledAlertDetails"
-});
-
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var prop_types_1 = __importDefault(require("prop-types"));
+var Text_1 = __importDefault(require("../Text"));
+var StyledAlertDetails = Text_1["default"].withComponent('div');
 StyledAlertDetails.propTypes = {
-  children: _propTypes["default"].oneOfType([_propTypes["default"].node, _propTypes["default"].arrayOf(_propTypes["default"].node)]).isRequired
+    children: prop_types_1["default"].oneOfType([
+        prop_types_1["default"].node,
+        prop_types_1["default"].arrayOf(prop_types_1["default"].node)
+    ]).isRequired
 };
 StyledAlertDetails.defaultProps = {
-  color: 'monochrome.grey80',
-  fontSize: 'size4',
-  lineHeight: 'large'
+    color: 'monochrome.grey80',
+    fontSize: 'size4',
+    lineHeight: 'large'
 };
-var _default = StyledAlertDetails;
-exports["default"] = _default;
+exports["default"] = StyledAlertDetails;

@@ -1,56 +1,47 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.StyledAvatarText = void 0;
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _react = require("@emotion/react");
-
-var _Text = _interopRequireDefault(require("../Text"));
-
-var _avatars = require("../theme/avatars");
-
-var _jsxRuntime = require("@emotion/react/jsx-runtime");
-
-var _excluded = ["baseColor", "size", "subtle", "theme"];
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-var StyledAvatarText = function StyledAvatarText(_ref) {
-  var baseColor = _ref.baseColor,
-      size = _ref.size,
-      subtle = _ref.subtle,
-      avatarFontSizes = _ref.theme.avatarFontSizes,
-      props = _objectWithoutProperties(_ref, _excluded);
-
-  var color = subtle ? baseColor : 'monochrome.white';
-  var fontSize = avatarFontSizes[size];
-  return (0, _jsxRuntime.jsx)(_Text["default"], _objectSpread({}, _objectSpread({
-    color: color,
-    fontSize: fontSize
-  }, props)));
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
-
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+exports.StyledAvatarText = void 0;
+var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+var prop_types_1 = __importDefault(require("prop-types"));
+var react_1 = require("@emotion/react");
+var Text_1 = __importDefault(require("../Text"));
+var avatars_1 = require("../theme/avatars");
+var StyledAvatarText = function (_a) {
+    var baseColor = _a.baseColor, size = _a.size, subtle = _a.subtle, avatarFontSizes = _a.theme.avatarFontSizes, // eslint-disable-line react/prop-types
+    props = __rest(_a, ["baseColor", "size", "subtle", "theme"]);
+    var color = subtle ? baseColor : 'monochrome.white';
+    var fontSize = avatarFontSizes[size];
+    return jsx_runtime_1.jsx(Text_1["default"], __assign({}, __assign({ color: color, fontSize: fontSize }, props)), void 0);
+};
 exports.StyledAvatarText = StyledAvatarText;
-StyledAvatarText.propTypes = {
-  baseColor: _propTypes["default"].string.isRequired,
-  size: _propTypes["default"].oneOf(Object.keys(_avatars.sizes)).isRequired,
-  subtle: _propTypes["default"].bool.isRequired
+exports.StyledAvatarText.propTypes = {
+    baseColor: prop_types_1["default"].string.isRequired,
+    size: prop_types_1["default"].oneOf(Object.keys(avatars_1.sizes)).isRequired,
+    subtle: prop_types_1["default"].bool.isRequired
 };
-
-var _default = (0, _react.withTheme)(StyledAvatarText);
-
-exports["default"] = _default;
+exports["default"] = react_1.withTheme(exports.StyledAvatarText);

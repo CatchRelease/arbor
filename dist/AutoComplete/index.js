@@ -1,31 +1,16 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function get() {
-    return _AutoComplete["default"];
-  }
-});
-Object.defineProperty(exports, "styledAutoCompleteComponents", {
-  enumerable: true,
-  get: function get() {
-    return _styledAutoCompleteComponents["default"];
-  }
-});
-Object.defineProperty(exports, "StyledAutoComplete", {
-  enumerable: true,
-  get: function get() {
-    return _StyledAutoComplete["default"];
-  }
-});
-
-var _AutoComplete = _interopRequireDefault(require("./AutoComplete"));
-
-var _styledAutoCompleteComponents = _interopRequireDefault(require("./styledAutoCompleteComponents"));
-
-var _StyledAutoComplete = _interopRequireDefault(require("./StyledAutoComplete"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+exports.__esModule = true;
+exports.StyledAutoComplete = exports.styledAutoCompleteComponents = exports["default"] = void 0;
+var AutoComplete_1 = require("./AutoComplete");
+__createBinding(exports, AutoComplete_1, "default");
+var styledAutoCompleteComponents_1 = require("./styledAutoCompleteComponents");
+__createBinding(exports, styledAutoCompleteComponents_1, "default", "styledAutoCompleteComponents");
+var StyledAutoComplete_1 = require("./StyledAutoComplete");
+__createBinding(exports, StyledAutoComplete_1, "default", "StyledAutoComplete");

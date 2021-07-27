@@ -1,68 +1,24 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var _exportNames = {
-  colorForString: true,
-  ratio: true,
-  textTransform: true,
-  textOverflow: true,
-  whiteSpace: true
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
-Object.defineProperty(exports, "colorForString", {
-  enumerable: true,
-  get: function get() {
-    return _colorForString["default"];
-  }
-});
-Object.defineProperty(exports, "ratio", {
-  enumerable: true,
-  get: function get() {
-    return _ratio["default"];
-  }
-});
-Object.defineProperty(exports, "textTransform", {
-  enumerable: true,
-  get: function get() {
-    return _textTransform["default"];
-  }
-});
-Object.defineProperty(exports, "textOverflow", {
-  enumerable: true,
-  get: function get() {
-    return _textOverflow["default"];
-  }
-});
-Object.defineProperty(exports, "whiteSpace", {
-  enumerable: true,
-  get: function get() {
-    return _whiteSpace["default"];
-  }
-});
-
-var _columns = require("./columns");
-
-Object.keys(_columns).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  if (key in exports && exports[key] === _columns[key]) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _columns[key];
-    }
-  });
-});
-
-var _colorForString = _interopRequireDefault(require("./colorForString"));
-
-var _ratio = _interopRequireDefault(require("./ratio"));
-
-var _textTransform = _interopRequireDefault(require("./textTransform"));
-
-var _textOverflow = _interopRequireDefault(require("./textOverflow"));
-
-var _whiteSpace = _interopRequireDefault(require("./whiteSpace"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+exports.__esModule = true;
+exports.whiteSpace = exports.textOverflow = exports.textTransform = exports.ratio = exports.colorForString = void 0;
+__exportStar(require("./columns"), exports);
+var colorForString_1 = require("./colorForString");
+__createBinding(exports, colorForString_1, "default", "colorForString");
+var ratio_1 = require("./ratio");
+__createBinding(exports, ratio_1, "default", "ratio");
+var textTransform_1 = require("./textTransform");
+__createBinding(exports, textTransform_1, "default", "textTransform");
+var textOverflow_1 = require("./textOverflow");
+__createBinding(exports, textOverflow_1, "default", "textOverflow");
+var whiteSpace_1 = require("./whiteSpace");
+__createBinding(exports, whiteSpace_1, "default", "whiteSpace");

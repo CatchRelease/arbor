@@ -1,38 +1,32 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.fontSizeKeys = void 0;
-
-var _polished = require("polished");
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+exports.__esModule = true;
+exports.fontSizeKeys = void 0;
+var polished_1 = require("polished");
 var fontSizes = {
-  size1: (0, _polished.rem)('11px'),
-  size2: (0, _polished.rem)('12px'),
-  size3: (0, _polished.rem)('13px'),
-  size4: (0, _polished.rem)('14px'),
-  size5: (0, _polished.rem)('16px'),
-  size6: (0, _polished.rem)('20px'),
-  size7: (0, _polished.rem)('24px'),
-  size8: (0, _polished.rem)('28px'),
-  size9: (0, _polished.rem)('34px')
+    size1: polished_1.rem('11px'),
+    size2: polished_1.rem('12px'),
+    size3: polished_1.rem('13px'),
+    size4: polished_1.rem('14px'),
+    size5: polished_1.rem('16px'),
+    size6: polished_1.rem('20px'),
+    size7: polished_1.rem('24px'),
+    size8: polished_1.rem('28px'),
+    size9: polished_1.rem('34px')
 };
-var fontSizeKeys = Object.keys(fontSizes);
-exports.fontSizeKeys = fontSizeKeys;
+exports.fontSizeKeys = Object.keys(fontSizes);
 var inputSizes = {
-  "default": fontSizes.size4,
-  mobile: fontSizes.size5
+    "default": fontSizes.size4,
+    mobile: fontSizes.size5
 };
-
-var _default = _objectSpread(_objectSpread({}, fontSizes), {}, {
-  input: _objectSpread({}, inputSizes)
-});
-
-exports["default"] = _default;
+exports["default"] = __assign(__assign({}, fontSizes), { input: __assign({}, inputSizes) });

@@ -1,146 +1,106 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _palette = _interopRequireDefault(require("../theme/colors/palette"));
-
-var _Grid = _interopRequireDefault(require("../Grid"));
-
-var _StyledBadge = _interopRequireDefault(require("./StyledBadge"));
-
-var _Text = _interopRequireDefault(require("../Text"));
-
-var _jsxRuntime = require("@emotion/react/jsx-runtime");
-
-var _excluded = ["paletteColor", "children", "iconEnd", "iconStart", "subtle", "variant"];
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-var getTextColor = function getTextColor(color, subtle) {
-  if (color) {
-    return subtle ? "palette.".concat(color, ".dark") : 'monochrome.white';
-  }
-
-  return subtle ? 'monochrome.grey80' : 'monochrome.white';
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
-
-var getGridTemplateColumns = function getGridTemplateColumns(iconStart, iconEnd) {
-  if (iconStart && iconEnd) {
-    return '0fr 1fr 0fr';
-  }
-
-  if (iconStart) {
-    return '0fr 1fr';
-  }
-
-  if (iconEnd) {
-    return '1fr 0fr';
-  }
-
-  return '1fr';
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
 };
-
-var Badge = function Badge(_ref) {
-  var paletteColor = _ref.paletteColor,
-      children = _ref.children,
-      iconEnd = _ref.iconEnd,
-      iconStart = _ref.iconStart,
-      subtle = _ref.subtle,
-      variant = _ref.variant,
-      props = _objectWithoutProperties(_ref, _excluded);
-
-  var textColor = getTextColor(paletteColor, subtle);
-  var gridTemplateColumns = getGridTemplateColumns(iconStart, iconEnd);
-  return (0, _jsxRuntime.jsx)(_StyledBadge["default"], _objectSpread(_objectSpread({}, _objectSpread({
-    paletteColor: paletteColor,
-    subtle: subtle,
-    variant: variant
-  }, props)), {}, {
-    children: (0, _jsxRuntime.jsxs)(_Grid["default"], {
-      color: textColor,
-      alignItems: "center",
-      gridTemplateColumns: gridTemplateColumns,
-      gridGap: "smallest",
-      children: [iconStart, (0, _jsxRuntime.jsx)(_Text["default"], {
-        as: 'span',
-        color: textColor,
-        fontSize: 'size3',
-        fontWeight: 'medium',
-        iconStart: undefined,
-        lineHeight: 'large',
-        overflow: 'hidden',
-        textOverflow: 'ellipsis',
-        whiteSpace: 'nowrap',
-        children: children
-      }), iconEnd]
-    })
-  }));
+var __spreadArray = (this && this.__spreadArray) || function (to, from) {
+    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
+        to[j] = from[i];
+    return to;
 };
-
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+var prop_types_1 = __importDefault(require("prop-types"));
+var palette_1 = __importDefault(require("../theme/colors/palette"));
+var Grid_1 = __importDefault(require("../Grid"));
+var StyledBadge_1 = __importDefault(require("./StyledBadge"));
+var Text_1 = __importDefault(require("../Text"));
+var getTextColor = function (color, subtle) {
+    if (color) {
+        return subtle ? "palette." + color + ".dark" : 'monochrome.white';
+    }
+    return subtle ? 'monochrome.grey80' : 'monochrome.white';
+};
+var getGridTemplateColumns = function (iconStart, iconEnd) {
+    if (iconStart && iconEnd) {
+        return '0fr 1fr 0fr';
+    }
+    if (iconStart) {
+        return '0fr 1fr';
+    }
+    if (iconEnd) {
+        return '1fr 0fr';
+    }
+    return '1fr';
+};
+var Badge = function (_a) {
+    var paletteColor = _a.paletteColor, children = _a.children, iconEnd = _a.iconEnd, iconStart = _a.iconStart, subtle = _a.subtle, variant = _a.variant, props = __rest(_a, ["paletteColor", "children", "iconEnd", "iconStart", "subtle", "variant"]);
+    var textColor = getTextColor(paletteColor, subtle);
+    var gridTemplateColumns = getGridTemplateColumns(iconStart, iconEnd);
+    return (jsx_runtime_1.jsx(StyledBadge_1["default"], __assign({}, __assign({ paletteColor: paletteColor, subtle: subtle, variant: variant }, props), { children: jsx_runtime_1.jsxs(Grid_1["default"], __assign({ color: textColor, alignItems: "center", gridTemplateColumns: gridTemplateColumns, gridGap: "smallest" }, { children: [iconStart, jsx_runtime_1.jsx(Text_1["default"], __assign({}, {
+                    as: 'span',
+                    color: textColor,
+                    fontSize: 'size3',
+                    fontWeight: 'medium',
+                    iconStart: undefined,
+                    lineHeight: 'large',
+                    overflow: 'hidden',
+                    textOverflow: 'ellipsis',
+                    whiteSpace: 'nowrap'
+                }, { children: children }), void 0), iconEnd] }), void 0) }), void 0));
+};
 Badge.propTypes = {
-  /**
-   * Content to render within the badge
-   */
-  children: _propTypes["default"].string.isRequired,
-
-  /**
-   * Badge color as a key of the theme's color palette.
-   * */
-  paletteColor: _propTypes["default"].oneOf(_toConsumableArray(Object.keys(_palette["default"]))),
-
-  /**
-   * Arbor icon to insert after badge text.
-   * */
-  iconEnd: _propTypes["default"].node,
-
-  /**
-   * Arbor icon to insert before badge text.
-   * */
-  iconStart: _propTypes["default"].node,
-
-  /**
-   * Use a subtle version of the badge's color styling.
-   * */
-  subtle: _propTypes["default"].bool,
-
-  /**
-   * Badge variant.
-   * */
-  variant: _propTypes["default"].oneOf(['default', 'pill'])
+    /**
+     * Content to render within the badge
+     */
+    children: prop_types_1["default"].string.isRequired,
+    /**
+     * Badge color as a key of the theme's color palette.
+     * */
+    paletteColor: prop_types_1["default"].oneOf(__spreadArray([], Object.keys(palette_1["default"]))),
+    /**
+     * Arbor icon to insert after badge text.
+     * */
+    iconEnd: prop_types_1["default"].node,
+    /**
+     * Arbor icon to insert before badge text.
+     * */
+    iconStart: prop_types_1["default"].node,
+    /**
+     * Use a subtle version of the badge's color styling.
+     * */
+    subtle: prop_types_1["default"].bool,
+    /**
+     * Badge variant.
+     * */
+    variant: prop_types_1["default"].oneOf(['default', 'pill'])
 };
 Badge.defaultProps = {
-  paletteColor: 'neutral',
-  subtle: false,
-  iconEnd: undefined,
-  iconStart: undefined,
-  variant: 'default'
+    paletteColor: 'neutral',
+    subtle: false,
+    iconEnd: undefined,
+    iconStart: undefined,
+    variant: 'default'
 };
-var _default = Badge;
-exports["default"] = _default;
+exports["default"] = Badge;

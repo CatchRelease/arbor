@@ -1,9 +1,4 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
+exports.__esModule = true;
 var INTENTS = ['info', 'danger', 'success', 'warning'];
-var _default = INTENTS;
-exports["default"] = _default;
+exports["default"] = INTENTS;
