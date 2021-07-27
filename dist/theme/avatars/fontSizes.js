@@ -1,14 +1,7 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _typography = require("../typography");
-
-var _default = {
-  "default": _typography.sizes.size1,
-  medium: _typography.sizes.size2
+exports.__esModule = true;
+var typography_1 = require("../typography");
+exports["default"] = {
+    "default": typography_1.sizes.size1,
+    medium: typography_1.sizes.size2
 };
-exports["default"] = _default;

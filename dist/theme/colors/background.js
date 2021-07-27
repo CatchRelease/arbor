@@ -1,19 +1,10 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _monochrome = require("./monochrome");
-
-var grey10 = _monochrome.greys.grey10,
-    grey20 = _monochrome.greys.grey20,
-    grey30 = _monochrome.greys.grey30;
-var _default = {
-  "default": grey20,
-  disabled: grey30,
-  muted: grey10,
-  white: _monochrome.white
+exports.__esModule = true;
+var monochrome_1 = require("./monochrome");
+var grey10 = monochrome_1.greys.grey10, grey20 = monochrome_1.greys.grey20, grey30 = monochrome_1.greys.grey30;
+exports["default"] = {
+    "default": grey20,
+    disabled: grey30,
+    muted: grey10,
+    white: monochrome_1.white
 };
-exports["default"] = _default;

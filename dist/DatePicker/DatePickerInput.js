@@ -1,62 +1,49 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _DayPickerInput = _interopRequireDefault(require("react-day-picker/DayPickerInput"));
-
-var _datePickerDefaults = _interopRequireDefault(require("./datePickerDefaults"));
-
-var _DatePickerInputOverlay = _interopRequireDefault(require("./DatePickerInputOverlay"));
-
-var _Input = _interopRequireDefault(require("../Input"));
-
-var _jsxRuntime = require("@emotion/react/jsx-runtime");
-
-var _excluded = ["dayPickerProps", "inputProps"];
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+var prop_types_1 = __importDefault(require("prop-types"));
+var DayPickerInput_1 = __importDefault(require("react-day-picker/DayPickerInput"));
+var datePickerDefaults_1 = __importDefault(require("./datePickerDefaults"));
+var DatePickerInputOverlay_1 = __importDefault(require("./DatePickerInputOverlay"));
+var Input_1 = __importDefault(require("../Input"));
 var defaultInputProps = {
-  autoComplete: 'off'
+    autoComplete: 'off'
 };
-
-var DatePickerInput = function DatePickerInput(_ref) {
-  var dayPickerProps = _ref.dayPickerProps,
-      inputProps = _ref.inputProps,
-      props = _objectWithoutProperties(_ref, _excluded);
-
-  return (0, _jsxRuntime.jsx)(_DayPickerInput["default"], _objectSpread({
-    component: _Input["default"],
-    overlayComponent: _DatePickerInputOverlay["default"],
-    dayPickerProps: _objectSpread(_objectSpread({}, _datePickerDefaults["default"]), dayPickerProps),
-    inputProps: _objectSpread(_objectSpread({}, defaultInputProps), inputProps)
-  }, props));
+var DatePickerInput = function (_a) {
+    var dayPickerProps = _a.dayPickerProps, inputProps = _a.inputProps, props = __rest(_a, ["dayPickerProps", "inputProps"]);
+    return (jsx_runtime_1.jsx(DayPickerInput_1["default"], __assign({ component: Input_1["default"], overlayComponent: DatePickerInputOverlay_1["default"], dayPickerProps: __assign(__assign({}, datePickerDefaults_1["default"]), dayPickerProps), inputProps: __assign(__assign({}, defaultInputProps), inputProps) }, props), void 0));
 };
-
 DatePickerInput.propTypes = {
-  dayPickerProps: _propTypes["default"].object,
-  // eslint-disable-line react/forbid-prop-types
-  inputProps: _propTypes["default"].object // eslint-disable-line react/forbid-prop-types
-
+    dayPickerProps: prop_types_1["default"].object,
+    inputProps: prop_types_1["default"].object // eslint-disable-line react/forbid-prop-types
 };
 DatePickerInput.defaultProps = {
-  dayPickerProps: {},
-  inputProps: {}
+    dayPickerProps: {},
+    inputProps: {}
 };
-var _default = DatePickerInput;
-exports["default"] = _default;
+exports["default"] = DatePickerInput;

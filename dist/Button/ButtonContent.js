@@ -1,70 +1,52 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _base = _interopRequireDefault(require("@emotion/styled/base"));
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _Grid = _interopRequireDefault(require("../Grid"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var gridTemplateColumns = function gridTemplateColumns(_ref) {
-  var hasText = _ref.hasText,
-      iconStart = _ref.iconStart,
-      iconEnd = _ref.iconEnd;
-
-  if (hasText) {
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var prop_types_1 = __importDefault(require("prop-types"));
+var styled_1 = __importDefault(require("@emotion/styled"));
+var Grid_1 = __importDefault(require("../Grid"));
+var gridTemplateColumns = function (_a) {
+    var hasText = _a.hasText, iconStart = _a.iconStart, iconEnd = _a.iconEnd;
+    if (hasText) {
+        if (iconStart && iconEnd) {
+            return '0fr 1fr 0fr';
+        }
+        if (iconStart) {
+            return '0fr 1fr';
+        }
+        if (iconEnd) {
+            return '1fr 0fr';
+        }
+        return '1fr';
+    }
     if (iconStart && iconEnd) {
-      return '0fr 1fr 0fr';
+        return '0fr 0fr';
     }
-
-    if (iconStart) {
-      return '0fr 1fr';
-    }
-
-    if (iconEnd) {
-      return '1fr 0fr';
-    }
-
-    return '1fr';
-  }
-
-  if (iconStart && iconEnd) {
-    return '0fr 0fr';
-  }
-
-  return '0fr';
+    return '0fr';
 };
-
-var ButtonContent = ( /*#__PURE__*/0, _base["default"])(_Grid["default"], {
-  target: "ejoqakm0",
-  label: "ButtonContent"
-})("grid-template-columns:", gridTemplateColumns, ";visibility:", function (props) {
-  return props.spin ? 'hidden' : 'inherit';
-}, ";" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9CdXR0b24vQnV0dG9uQ29udGVudC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QmtDIiwiZmlsZSI6Ii4uLy4uL3NyYy9CdXR0b24vQnV0dG9uQ29udGVudC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcyc7XG5pbXBvcnQgc3R5bGVkIGZyb20gJ0BlbW90aW9uL3N0eWxlZCc7XG5cbmltcG9ydCBHcmlkIGZyb20gJy4uL0dyaWQnO1xuXG5jb25zdCBncmlkVGVtcGxhdGVDb2x1bW5zID0gKHsgaGFzVGV4dCwgaWNvblN0YXJ0LCBpY29uRW5kIH0pID0+IHtcbiAgaWYgKGhhc1RleHQpIHtcbiAgICBpZiAoaWNvblN0YXJ0ICYmIGljb25FbmQpIHtcbiAgICAgIHJldHVybiAnMGZyIDFmciAwZnInO1xuICAgIH1cblxuICAgIGlmIChpY29uU3RhcnQpIHtcbiAgICAgIHJldHVybiAnMGZyIDFmcic7XG4gICAgfVxuXG4gICAgaWYgKGljb25FbmQpIHtcbiAgICAgIHJldHVybiAnMWZyIDBmcic7XG4gICAgfVxuXG4gICAgcmV0dXJuICcxZnInO1xuICB9XG5cbiAgaWYgKGljb25TdGFydCAmJiBpY29uRW5kKSB7XG4gICAgcmV0dXJuICcwZnIgMGZyJztcbiAgfVxuXG4gIHJldHVybiAnMGZyJztcbn07XG5cbmNvbnN0IEJ1dHRvbkNvbnRlbnQgPSBzdHlsZWQoR3JpZClgXG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogJHtncmlkVGVtcGxhdGVDb2x1bW5zfTtcbiAgdmlzaWJpbGl0eTogJHsocHJvcHMpID0+IChwcm9wcy5zcGluID8gJ2hpZGRlbicgOiAnaW5oZXJpdCcpfTtcbmA7XG5cbkJ1dHRvbkNvbnRlbnQucHJvcFR5cGVzID0ge1xuICBoYXNUZXh0OiBQcm9wVHlwZXMuYm9vbCxcbiAgaWNvbkVuZDogUHJvcFR5cGVzLmVsZW1lbnQsXG4gIGljb25TdGFydDogUHJvcFR5cGVzLmVsZW1lbnQsXG4gIHNwaW46IFByb3BUeXBlcy5ib29sLmlzUmVxdWlyZWRcbn07XG5cbkJ1dHRvbkNvbnRlbnQuZGVmYXVsdFByb3BzID0ge1xuICAuLi5HcmlkLmRlZmF1bHRQcm9wcyxcbiAgZGlzcGxheTogJ2lubGluZS1ncmlkJyxcbiAgYWxpZ25JdGVtczogJ2NlbnRlcicsXG4gIGhhc1RleHQ6IGZhbHNlLFxuICBpY29uRW5kOiB1bmRlZmluZWQsXG4gIGljb25TdGFydDogdW5kZWZpbmVkXG59O1xuXG5leHBvcnQgZGVmYXVsdCBCdXR0b25Db250ZW50O1xuIl19 */"));
+var ButtonContent = styled_1["default"](Grid_1["default"])(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  grid-template-columns: ", ";\n  visibility: ", ";\n"], ["\n  grid-template-columns: ", ";\n  visibility: ", ";\n"])), gridTemplateColumns, function (props) { return (props.spin ? 'hidden' : 'inherit'); });
 ButtonContent.propTypes = {
-  hasText: _propTypes["default"].bool,
-  iconEnd: _propTypes["default"].element,
-  iconStart: _propTypes["default"].element,
-  spin: _propTypes["default"].bool.isRequired
+    hasText: prop_types_1["default"].bool,
+    iconEnd: prop_types_1["default"].element,
+    iconStart: prop_types_1["default"].element,
+    spin: prop_types_1["default"].bool.isRequired
 };
-ButtonContent.defaultProps = _objectSpread(_objectSpread({}, _Grid["default"].defaultProps), {}, {
-  display: 'inline-grid',
-  alignItems: 'center',
-  hasText: false,
-  iconEnd: undefined,
-  iconStart: undefined
-});
-var _default = ButtonContent;
-exports["default"] = _default;
+ButtonContent.defaultProps = __assign(__assign({}, Grid_1["default"].defaultProps), { display: 'inline-grid', alignItems: 'center', hasText: false, iconEnd: undefined, iconStart: undefined });
+exports["default"] = ButtonContent;
+var templateObject_1;

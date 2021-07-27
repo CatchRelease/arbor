@@ -3,12 +3,11 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
-    "declarationDir": "dist",
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
     "lib": ["dom", "es2017"],
-    "noEmit": true,
+    "outDir": "dist",
     "skipLibCheck": true,
     "strict": true,
     "types": ["jest", "jest-enzyme", "jest-plugin-context"]

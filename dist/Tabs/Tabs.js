@@ -1,217 +1,165 @@
 "use strict";
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = require("react");
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _Box = _interopRequireDefault(require("../Box"));
-
-var _Flex = _interopRequireDefault(require("../Flex"));
-
-var _StyledTabs = _interopRequireDefault(require("./StyledTabs"));
-
-var _Tab = _interopRequireDefault(require("./Tab"));
-
-var _constants = require("../constants");
-
-var _jsxRuntime = require("@emotion/react/jsx-runtime");
-
-var _excluded = ["children", "tabBarAside"];
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-var getTabContentId = function getTabContentId(_ref) {
-  var _ref$props = _ref.props,
-      children = _ref$props.children,
-      id = _ref$props.id;
-  return children.props.id || "".concat(id, "-tab-content");
-};
-
-var Tabs = /*#__PURE__*/function (_Component) {
-  _inherits(Tabs, _Component);
-
-  var _super = _createSuper(Tabs);
-
-  function Tabs(props) {
-    var _this;
-
-    _classCallCheck(this, Tabs);
-
-    _this = _super.call(this, props);
-
-    _this.activateTab = function (tab) {
-      _this.setState({
-        activeTabId: tab.props.id
-      });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
     };
-
-    _this.handleKeyPress = function (key, onClick) {
-      if (key === _constants.ENTER_KEY || key === _constants.SPACEBAR) {
-        onClick();
-      }
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
-
-    _this.handleTabClick = function (tab, originalOnClick) {
-      var callback = _this.isControlled ? function () {} : function () {
-        return _this.activateTab(tab);
-      };
-
-      if (originalOnClick) {
-        originalOnClick(callback);
-      } else {
-        callback();
-      }
-    };
-
-    var _this$props = _this.props,
-        activeTabId = _this$props.activeTabId,
-        defaultTabId = _this$props.defaultTabId,
-        children = _this$props.children;
-    _this.state = activeTabId ? {} : {
-      activeTabId: defaultTabId || children.find(function (tab) {
-        return !!tab;
-      }).props.id
-    };
-    return _this;
-  }
-
-  _createClass(Tabs, [{
-    key: "activeTab",
-    get: function get() {
-      var activeTabId = this.activeTabId;
-      var children = this.props.children;
-      return children.find(function (tab) {
-        if (!tab) {
-          return false;
+})();
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
         }
-
-        var id = tab.props.id;
-        return id === activeTabId;
-      });
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+var react_1 = require("react");
+var prop_types_1 = __importDefault(require("prop-types"));
+var Box_1 = __importDefault(require("../Box"));
+var Flex_1 = __importDefault(require("../Flex"));
+var StyledTabs_1 = __importDefault(require("./StyledTabs"));
+var Tab_1 = __importDefault(require("./Tab"));
+var constants_1 = require("../constants");
+var getTabContentId = function (_a) {
+    var _b = _a.props, children = _b.children, id = _b.id;
+    return children.props.id || id + "-tab-content";
+};
+var Tabs = /** @class */ (function (_super) {
+    __extends(Tabs, _super);
+    function Tabs(props) {
+        var _this = _super.call(this, props) || this;
+        _this.activateTab = function (tab) {
+            _this.setState({ activeTabId: tab.props.id });
+        };
+        _this.handleKeyPress = function (key, onClick) {
+            if (key === constants_1.ENTER_KEY || key === constants_1.SPACEBAR) {
+                onClick();
+            }
+        };
+        _this.handleTabClick = function (tab, originalOnClick) {
+            var callback = _this.isControlled ? function () { } : function () { return _this.activateTab(tab); };
+            if (originalOnClick) {
+                originalOnClick(callback);
+            }
+            else {
+                callback();
+            }
+        };
+        var _a = _this.props, activeTabId = _a.activeTabId, defaultTabId = _a.defaultTabId, children = _a.children;
+        _this.state = activeTabId
+            ? {}
+            : { activeTabId: defaultTabId || children.find(function (tab) { return !!tab; }).props.id };
+        return _this;
     }
-  }, {
-    key: "activeTabId",
-    get: function get() {
-      var activeTabIdProp = this.props.activeTabId;
-      var activeTabIdFromState = this.state.activeTabId;
-      return activeTabIdProp || activeTabIdFromState;
-    }
-  }, {
-    key: "activeTabContent",
-    get: function get() {
-      var activeTab = this.activeTab;
-      return /*#__PURE__*/(0, _react.cloneElement)(activeTab.props.children, {
-        id: getTabContentId(activeTab)
-      });
-    }
-  }, {
-    key: "isControlled",
-    get: function get() {
-      var activeTabId = this.props.activeTabId;
-      return !!activeTabId;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this2 = this;
-
-      var activeTabId = this.activeTabId;
-
-      var _this$props2 = this.props,
-          children = _this$props2.children,
-          tabBarAside = _this$props2.tabBarAside,
-          props = _objectWithoutProperties(_this$props2, _excluded);
-
-      return (0, _jsxRuntime.jsxs)(_jsxRuntime.Fragment, {
-        children: [(0, _jsxRuntime.jsxs)(_StyledTabs["default"], _objectSpread(_objectSpread({}, props), {}, {
-          children: [(0, _jsxRuntime.jsx)(_Box["default"], {
-            children: children.map(function (tab) {
-              if (!tab) {
-                return tab;
-              }
-
-              var _tab$props = tab.props,
-                  id = _tab$props.id,
-                  title = _tab$props.title,
-                  originalOnClick = _tab$props.onClick;
-              var active = activeTabId === id;
-              var tabContentId = getTabContentId(tab);
-
-              var onClick = function onClick() {
-                return _this2.handleTabClick(tab, originalOnClick);
-              };
-
-              return /*#__PURE__*/(0, _react.cloneElement)(tab, {
-                'aria-controls': tabContentId,
-                'aria-selected': active ? 'true' : 'false',
-                active: active,
-                key: id,
-                onClick: onClick,
-                onKeyPress: function onKeyPress(_ref2) {
-                  var key = _ref2.key;
-                  return _this2.handleKeyPress(key, onClick);
+    Object.defineProperty(Tabs.prototype, "activeTab", {
+        get: function () {
+            var activeTabId = this.activeTabId;
+            var children = this.props.children;
+            return children.find(function (tab) {
+                if (!tab) {
+                    return false;
                 }
-              }, title);
-            })
-          }), tabBarAside && (0, _jsxRuntime.jsx)(_Flex["default"], {
-            alignItems: "center",
-            children: tabBarAside
-          })]
-        })), this.activeTabContent]
-      });
-    }
-  }]);
-
-  return Tabs;
-}(_react.Component);
-
+                var id = tab.props.id;
+                return id === activeTabId;
+            });
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Tabs.prototype, "activeTabId", {
+        get: function () {
+            var activeTabIdProp = this.props.activeTabId;
+            var activeTabIdFromState = this.state.activeTabId;
+            return activeTabIdProp || activeTabIdFromState;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Tabs.prototype, "activeTabContent", {
+        get: function () {
+            var activeTab = this.activeTab;
+            return react_1.cloneElement(activeTab.props.children, {
+                id: getTabContentId(activeTab)
+            });
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Tabs.prototype, "isControlled", {
+        get: function () {
+            var activeTabId = this.props.activeTabId;
+            return !!activeTabId;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Tabs.prototype.render = function () {
+        var _this = this;
+        var activeTabId = this.activeTabId;
+        var _a = this.props, children = _a.children, tabBarAside = _a.tabBarAside, props = __rest(_a, ["children", "tabBarAside"]);
+        return (jsx_runtime_1.jsxs(jsx_runtime_1.Fragment, { children: [jsx_runtime_1.jsxs(StyledTabs_1["default"], __assign({}, props, { children: [jsx_runtime_1.jsx(Box_1["default"], { children: children.map(function (tab) {
+                                if (!tab) {
+                                    return tab;
+                                }
+                                var _a = tab.props, id = _a.id, title = _a.title, originalOnClick = _a.onClick;
+                                var active = activeTabId === id;
+                                var tabContentId = getTabContentId(tab);
+                                var onClick = function () { return _this.handleTabClick(tab, originalOnClick); };
+                                return react_1.cloneElement(tab, {
+                                    'aria-controls': tabContentId,
+                                    'aria-selected': active ? 'true' : 'false',
+                                    active: active,
+                                    key: id,
+                                    onClick: onClick,
+                                    onKeyPress: function (_a) {
+                                        var key = _a.key;
+                                        return _this.handleKeyPress(key, onClick);
+                                    }
+                                }, title);
+                            }) }, void 0), tabBarAside && jsx_runtime_1.jsx(Flex_1["default"], __assign({ alignItems: "center" }, { children: tabBarAside }), void 0)] }), void 0), this.activeTabContent] }, void 0));
+    };
+    return Tabs;
+}(react_1.Component));
 Tabs.propTypes = {
-  activeTabId: _propTypes["default"].string,
-  defaultTabId: _propTypes["default"].string,
-  children: _propTypes["default"].oneOfType([_propTypes["default"].arrayOf(_Tab["default"]), _propTypes["default"].objectOf(_Tab["default"])]).isRequired,
-  tabBarAside: _propTypes["default"].node
+    activeTabId: prop_types_1["default"].string,
+    defaultTabId: prop_types_1["default"].string,
+    children: prop_types_1["default"].oneOfType([
+        prop_types_1["default"].arrayOf(Tab_1["default"]),
+        prop_types_1["default"].objectOf(Tab_1["default"])
+    ]).isRequired,
+    tabBarAside: prop_types_1["default"].node
 };
 Tabs.defaultProps = {
-  activeTabId: undefined,
-  defaultTabId: undefined,
-  tabBarAside: undefined
+    activeTabId: undefined,
+    defaultTabId: undefined,
+    tabBarAside: undefined
 };
-var _default = Tabs;
-exports["default"] = _default;
+exports["default"] = Tabs;

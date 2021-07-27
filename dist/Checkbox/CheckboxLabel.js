@@ -1,27 +1,20 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _base = _interopRequireDefault(require("@emotion/styled/base"));
-
-var _Flex = _interopRequireDefault(require("../Flex"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var CheckboxLabel = ( /*#__PURE__*/0, _base["default"])(_Flex["default"], {
-  target: "eqny7xp0",
-  label: "CheckboxLabel"
-})("cursor:", function (props) {
-  return props.disabled ? 'not-allowed' : 'pointer';
-}, ";line-height:", function (_ref) {
-  var theme = _ref.theme;
-  return theme.lineHeights.small;
-}, ";" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9DaGVja2JveC9DaGVja2JveExhYmVsLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlrQyIsImZpbGUiOiIuLi8uLi9zcmMvQ2hlY2tib3gvQ2hlY2tib3hMYWJlbC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBzdHlsZWQgZnJvbSAnQGVtb3Rpb24vc3R5bGVkJztcblxuaW1wb3J0IEZsZXggZnJvbSAnLi4vRmxleCc7XG5cbmNvbnN0IENoZWNrYm94TGFiZWwgPSBzdHlsZWQoRmxleClgXG4gIGN1cnNvcjogJHsocHJvcHMpID0+IChwcm9wcy5kaXNhYmxlZCA/ICdub3QtYWxsb3dlZCcgOiAncG9pbnRlcicpfTtcbiAgbGluZS1oZWlnaHQ6ICR7KHsgdGhlbWUgfSkgPT4gdGhlbWUubGluZUhlaWdodHMuc21hbGx9O1xuYDtcblxuQ2hlY2tib3hMYWJlbC5kZWZhdWx0UHJvcHMgPSB7XG4gIGFzOiAnbGFiZWwnXG59O1xuXG5leHBvcnQgZGVmYXVsdCBDaGVja2JveExhYmVsO1xuIl19 */"));
-CheckboxLabel.defaultProps = {
-  as: 'label'
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
 };
-var _default = CheckboxLabel;
-exports["default"] = _default;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var styled_1 = __importDefault(require("@emotion/styled"));
+var Flex_1 = __importDefault(require("../Flex"));
+var CheckboxLabel = styled_1["default"](Flex_1["default"])(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  cursor: ", ";\n  line-height: ", ";\n"], ["\n  cursor: ", ";\n  line-height: ", ";\n"])), function (props) { return (props.disabled ? 'not-allowed' : 'pointer'); }, function (_a) {
+    var theme = _a.theme;
+    return theme.lineHeights.small;
+});
+CheckboxLabel.defaultProps = {
+    as: 'label'
+};
+exports["default"] = CheckboxLabel;
+var templateObject_1;

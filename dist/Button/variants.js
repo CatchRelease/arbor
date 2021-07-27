@@ -1,9 +1,4 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
+exports.__esModule = true;
 var VARIANTS = ['minimal', 'primary', 'secondary'];
-var _default = VARIANTS;
-exports["default"] = _default;
+exports["default"] = VARIANTS;

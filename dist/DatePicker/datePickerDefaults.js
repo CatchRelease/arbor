@@ -1,18 +1,12 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _DatePickerNavbar = _interopRequireDefault(require("./DatePickerNavbar"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var dayPickerDefaults = {
-  navbarElement: _DatePickerNavbar["default"],
-  showOutsideDays: true,
-  weekdaysShort: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-var _default = dayPickerDefaults;
-exports["default"] = _default;
+exports.__esModule = true;
+var DatePickerNavbar_1 = __importDefault(require("./DatePickerNavbar"));
+var dayPickerDefaults = {
+    navbarElement: DatePickerNavbar_1["default"],
+    showOutsideDays: true,
+    weekdaysShort: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+};
+exports["default"] = dayPickerDefaults;

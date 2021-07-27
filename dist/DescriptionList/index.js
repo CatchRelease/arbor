@@ -1,31 +1,16 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "DescriptionDetails", {
-  enumerable: true,
-  get: function get() {
-    return _DescriptionDetails["default"];
-  }
-});
-Object.defineProperty(exports, "DescriptionList", {
-  enumerable: true,
-  get: function get() {
-    return _DescriptionList["default"];
-  }
-});
-Object.defineProperty(exports, "DescriptionTerm", {
-  enumerable: true,
-  get: function get() {
-    return _DescriptionTerm["default"];
-  }
-});
-
-var _DescriptionDetails = _interopRequireDefault(require("./DescriptionDetails"));
-
-var _DescriptionList = _interopRequireDefault(require("./DescriptionList"));
-
-var _DescriptionTerm = _interopRequireDefault(require("./DescriptionTerm"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+exports.__esModule = true;
+exports.DescriptionTerm = exports.DescriptionList = exports.DescriptionDetails = void 0;
+var DescriptionDetails_1 = require("./DescriptionDetails");
+__createBinding(exports, DescriptionDetails_1, "default", "DescriptionDetails");
+var DescriptionList_1 = require("./DescriptionList");
+__createBinding(exports, DescriptionList_1, "default", "DescriptionList");
+var DescriptionTerm_1 = require("./DescriptionTerm");
+__createBinding(exports, DescriptionTerm_1, "default", "DescriptionTerm");

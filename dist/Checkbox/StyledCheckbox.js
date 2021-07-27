@@ -1,46 +1,38 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _base = _interopRequireDefault(require("@emotion/styled/base"));
-
-var _react = require("@emotion/react");
-
-var _polished = require("polished");
-
-var _Flex = _interopRequireDefault(require("../Flex"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var baseStyles = function baseStyles(_ref) {
-  var theme = _ref.theme;
-  return /*#__PURE__*/(0, _react.css)("background-color:", theme.colors.monochrome.white, ";border-radius:", theme.radii.small, ";border:1px solid ", theme.colors.grey60, ";color:", theme.colors.monochrome.white, ";flex-shrink:0;height:", (0, _polished.rem)('16px'), ";width:", (0, _polished.rem)('16px'), ";;label:baseStyles;" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9DaGVja2JveC9TdHlsZWRDaGVja2JveC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFNdUQiLCJmaWxlIjoiLi4vLi4vc3JjL0NoZWNrYm94L1N0eWxlZENoZWNrYm94LnRzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY3NzLCBUaGVtZSB9IGZyb20gJ0BlbW90aW9uL3JlYWN0JztcbmltcG9ydCBzdHlsZWQgZnJvbSAnQGVtb3Rpb24vc3R5bGVkJztcbmltcG9ydCB7IHJlbSB9IGZyb20gJ3BvbGlzaGVkJztcblxuaW1wb3J0IEZsZXggZnJvbSAnLi4vRmxleCc7XG5cbmNvbnN0IGJhc2VTdHlsZXMgPSAoeyB0aGVtZSB9OiB7IHRoZW1lOiBUaGVtZSB9KSA9PiBjc3NgXG4gIGJhY2tncm91bmQtY29sb3I6ICR7dGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICBib3JkZXItcmFkaXVzOiAke3RoZW1lLnJhZGlpLnNtYWxsfTtcbiAgYm9yZGVyOiAxcHggc29saWQgJHt0aGVtZS5jb2xvcnMuZ3JleTYwfTtcbiAgY29sb3I6ICR7dGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICBmbGV4LXNocmluazogMDtcbiAgaGVpZ2h0OiAke3JlbSgnMTZweCcpfTtcbiAgd2lkdGg6ICR7cmVtKCcxNnB4Jyl9O1xuYDtcblxuY29uc3QgY2hlY2tlZFN0eWxlcyA9ICh7XG4gIHRoZW1lLFxuICBjaGVja2VkLFxuICBpbmRldGVybWluYXRlXG59OiB7XG4gIHRoZW1lOiBUaGVtZTtcbiAgY2hlY2tlZDogYm9vbGVhbjtcbiAgaW5kZXRlcm1pbmF0ZTogYm9vbGVhbjtcbn0pID0+XG4gIGNoZWNrZWQgJiZcbiAgY3NzYFxuICAgIGJhY2tncm91bmQtY29sb3I6ICR7aW5kZXRlcm1pbmF0ZVxuICAgICAgPyB0aGVtZS5jb2xvcnMubW9ub2Nocm9tZS53aGl0ZVxuICAgICAgOiB0aGVtZS5jb2xvcnMuaW50ZW50LmJyYW5kLmRhcmt9O1xuICAgIGJvcmRlci1jb2xvcjogJHt0aGVtZS5jb2xvcnMuaW50ZW50LmJyYW5kLmRhcmt9O1xuICAgIGNvbG9yOiAke2luZGV0ZXJtaW5hdGVcbiAgICAgID8gdGhlbWUuY29sb3JzLmludGVudC5icmFuZC5kYXJrXG4gICAgICA6IHRoZW1lLmNvbG9ycy5pbnRlbnQuYnJhbmQubGlnaHR9O1xuICBgO1xuXG5jb25zdCBkaXNhYmxlZFN0eWxlcyA9ICh7XG4gIHRoZW1lLFxuICBjaGVja2VkLFxuICBkaXNhYmxlZFxufToge1xuICB0aGVtZTogVGhlbWU7XG4gIGNoZWNrZWQ6IGJvb2xlYW47XG4gIGRpc2FibGVkOiBib29sZWFuO1xufSkgPT5cbiAgZGlzYWJsZWQgJiZcbiAgY3NzYFxuICAgIGJhY2tncm91bmQ6ICR7Y2hlY2tlZFxuICAgICAgPyB0aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5NDBcbiAgICAgIDogdGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICAgIGJvcmRlci1jb2xvcjogJHt0aGVtZS5jb2xvcnMuYm9yZGVyLmRlZmF1bHR9O1xuICAgIGNvbG9yOiAke2NoZWNrZWQgPyB0aGVtZS5jb2xvcnMuZ3JleTYwIDogdGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICAgIGN1cnNvcjogbm90LWFsbG93ZWQ7XG4gIGA7XG5cbnR5cGUgUHJvcHMgPSB7XG4gIGNoZWNrZWQ6IGJvb2xlYW47XG4gIGRpc2FibGVkOiBib29sZWFuO1xuICBpbmRldGVybWluYXRlOiBib29sZWFuO1xufTtcblxuY29uc3QgU3R5bGVkQ2hlY2tib3ggPSBzdHlsZWQoRmxleCk8UHJvcHM+YFxuICAke2Jhc2VTdHlsZXN9O1xuICAke2NoZWNrZWRTdHlsZXN9O1xuICAke2Rpc2FibGVkU3R5bGVzfTtcbmA7XG5cblN0eWxlZENoZWNrYm94LmRlZmF1bHRQcm9wcyA9IHtcbiAgYWxpZ25JdGVtczogJ2NlbnRlcicsXG4gIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJ1xufTtcblxuZXhwb3J0IGRlZmF1bHQgU3R5bGVkQ2hlY2tib3g7XG4iXX0= */"));
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
 };
-
-var checkedStyles = function checkedStyles(_ref2) {
-  var theme = _ref2.theme,
-      checked = _ref2.checked,
-      indeterminate = _ref2.indeterminate;
-  return checked && /*#__PURE__*/(0, _react.css)("background-color:", indeterminate ? theme.colors.monochrome.white : theme.colors.intent.brand.dark, ";border-color:", theme.colors.intent.brand.dark, ";color:", indeterminate ? theme.colors.intent.brand.dark : theme.colors.intent.brand.light, ";;label:checkedStyles;" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9DaGVja2JveC9TdHlsZWRDaGVja2JveC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEwQksiLCJmaWxlIjoiLi4vLi4vc3JjL0NoZWNrYm94L1N0eWxlZENoZWNrYm94LnRzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY3NzLCBUaGVtZSB9IGZyb20gJ0BlbW90aW9uL3JlYWN0JztcbmltcG9ydCBzdHlsZWQgZnJvbSAnQGVtb3Rpb24vc3R5bGVkJztcbmltcG9ydCB7IHJlbSB9IGZyb20gJ3BvbGlzaGVkJztcblxuaW1wb3J0IEZsZXggZnJvbSAnLi4vRmxleCc7XG5cbmNvbnN0IGJhc2VTdHlsZXMgPSAoeyB0aGVtZSB9OiB7IHRoZW1lOiBUaGVtZSB9KSA9PiBjc3NgXG4gIGJhY2tncm91bmQtY29sb3I6ICR7dGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICBib3JkZXItcmFkaXVzOiAke3RoZW1lLnJhZGlpLnNtYWxsfTtcbiAgYm9yZGVyOiAxcHggc29saWQgJHt0aGVtZS5jb2xvcnMuZ3JleTYwfTtcbiAgY29sb3I6ICR7dGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICBmbGV4LXNocmluazogMDtcbiAgaGVpZ2h0OiAke3JlbSgnMTZweCcpfTtcbiAgd2lkdGg6ICR7cmVtKCcxNnB4Jyl9O1xuYDtcblxuY29uc3QgY2hlY2tlZFN0eWxlcyA9ICh7XG4gIHRoZW1lLFxuICBjaGVja2VkLFxuICBpbmRldGVybWluYXRlXG59OiB7XG4gIHRoZW1lOiBUaGVtZTtcbiAgY2hlY2tlZDogYm9vbGVhbjtcbiAgaW5kZXRlcm1pbmF0ZTogYm9vbGVhbjtcbn0pID0+XG4gIGNoZWNrZWQgJiZcbiAgY3NzYFxuICAgIGJhY2tncm91bmQtY29sb3I6ICR7aW5kZXRlcm1pbmF0ZVxuICAgICAgPyB0aGVtZS5jb2xvcnMubW9ub2Nocm9tZS53aGl0ZVxuICAgICAgOiB0aGVtZS5jb2xvcnMuaW50ZW50LmJyYW5kLmRhcmt9O1xuICAgIGJvcmRlci1jb2xvcjogJHt0aGVtZS5jb2xvcnMuaW50ZW50LmJyYW5kLmRhcmt9O1xuICAgIGNvbG9yOiAke2luZGV0ZXJtaW5hdGVcbiAgICAgID8gdGhlbWUuY29sb3JzLmludGVudC5icmFuZC5kYXJrXG4gICAgICA6IHRoZW1lLmNvbG9ycy5pbnRlbnQuYnJhbmQubGlnaHR9O1xuICBgO1xuXG5jb25zdCBkaXNhYmxlZFN0eWxlcyA9ICh7XG4gIHRoZW1lLFxuICBjaGVja2VkLFxuICBkaXNhYmxlZFxufToge1xuICB0aGVtZTogVGhlbWU7XG4gIGNoZWNrZWQ6IGJvb2xlYW47XG4gIGRpc2FibGVkOiBib29sZWFuO1xufSkgPT5cbiAgZGlzYWJsZWQgJiZcbiAgY3NzYFxuICAgIGJhY2tncm91bmQ6ICR7Y2hlY2tlZFxuICAgICAgPyB0aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5NDBcbiAgICAgIDogdGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICAgIGJvcmRlci1jb2xvcjogJHt0aGVtZS5jb2xvcnMuYm9yZGVyLmRlZmF1bHR9O1xuICAgIGNvbG9yOiAke2NoZWNrZWQgPyB0aGVtZS5jb2xvcnMuZ3JleTYwIDogdGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICAgIGN1cnNvcjogbm90LWFsbG93ZWQ7XG4gIGA7XG5cbnR5cGUgUHJvcHMgPSB7XG4gIGNoZWNrZWQ6IGJvb2xlYW47XG4gIGRpc2FibGVkOiBib29sZWFuO1xuICBpbmRldGVybWluYXRlOiBib29sZWFuO1xufTtcblxuY29uc3QgU3R5bGVkQ2hlY2tib3ggPSBzdHlsZWQoRmxleCk8UHJvcHM+YFxuICAke2Jhc2VTdHlsZXN9O1xuICAke2NoZWNrZWRTdHlsZXN9O1xuICAke2Rpc2FibGVkU3R5bGVzfTtcbmA7XG5cblN0eWxlZENoZWNrYm94LmRlZmF1bHRQcm9wcyA9IHtcbiAgYWxpZ25JdGVtczogJ2NlbnRlcicsXG4gIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJ1xufTtcblxuZXhwb3J0IGRlZmF1bHQgU3R5bGVkQ2hlY2tib3g7XG4iXX0= */"));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-
-var disabledStyles = function disabledStyles(_ref3) {
-  var theme = _ref3.theme,
-      checked = _ref3.checked,
-      disabled = _ref3.disabled;
-  return disabled && /*#__PURE__*/(0, _react.css)("background:", checked ? theme.colors.monochrome.grey40 : theme.colors.monochrome.white, ";border-color:", theme.colors.border["default"], ";color:", checked ? theme.colors.grey60 : theme.colors.monochrome.white, ";cursor:not-allowed;;label:disabledStyles;" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9DaGVja2JveC9TdHlsZWRDaGVja2JveC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE4Q0siLCJmaWxlIjoiLi4vLi4vc3JjL0NoZWNrYm94L1N0eWxlZENoZWNrYm94LnRzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY3NzLCBUaGVtZSB9IGZyb20gJ0BlbW90aW9uL3JlYWN0JztcbmltcG9ydCBzdHlsZWQgZnJvbSAnQGVtb3Rpb24vc3R5bGVkJztcbmltcG9ydCB7IHJlbSB9IGZyb20gJ3BvbGlzaGVkJztcblxuaW1wb3J0IEZsZXggZnJvbSAnLi4vRmxleCc7XG5cbmNvbnN0IGJhc2VTdHlsZXMgPSAoeyB0aGVtZSB9OiB7IHRoZW1lOiBUaGVtZSB9KSA9PiBjc3NgXG4gIGJhY2tncm91bmQtY29sb3I6ICR7dGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICBib3JkZXItcmFkaXVzOiAke3RoZW1lLnJhZGlpLnNtYWxsfTtcbiAgYm9yZGVyOiAxcHggc29saWQgJHt0aGVtZS5jb2xvcnMuZ3JleTYwfTtcbiAgY29sb3I6ICR7dGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICBmbGV4LXNocmluazogMDtcbiAgaGVpZ2h0OiAke3JlbSgnMTZweCcpfTtcbiAgd2lkdGg6ICR7cmVtKCcxNnB4Jyl9O1xuYDtcblxuY29uc3QgY2hlY2tlZFN0eWxlcyA9ICh7XG4gIHRoZW1lLFxuICBjaGVja2VkLFxuICBpbmRldGVybWluYXRlXG59OiB7XG4gIHRoZW1lOiBUaGVtZTtcbiAgY2hlY2tlZDogYm9vbGVhbjtcbiAgaW5kZXRlcm1pbmF0ZTogYm9vbGVhbjtcbn0pID0+XG4gIGNoZWNrZWQgJiZcbiAgY3NzYFxuICAgIGJhY2tncm91bmQtY29sb3I6ICR7aW5kZXRlcm1pbmF0ZVxuICAgICAgPyB0aGVtZS5jb2xvcnMubW9ub2Nocm9tZS53aGl0ZVxuICAgICAgOiB0aGVtZS5jb2xvcnMuaW50ZW50LmJyYW5kLmRhcmt9O1xuICAgIGJvcmRlci1jb2xvcjogJHt0aGVtZS5jb2xvcnMuaW50ZW50LmJyYW5kLmRhcmt9O1xuICAgIGNvbG9yOiAke2luZGV0ZXJtaW5hdGVcbiAgICAgID8gdGhlbWUuY29sb3JzLmludGVudC5icmFuZC5kYXJrXG4gICAgICA6IHRoZW1lLmNvbG9ycy5pbnRlbnQuYnJhbmQubGlnaHR9O1xuICBgO1xuXG5jb25zdCBkaXNhYmxlZFN0eWxlcyA9ICh7XG4gIHRoZW1lLFxuICBjaGVja2VkLFxuICBkaXNhYmxlZFxufToge1xuICB0aGVtZTogVGhlbWU7XG4gIGNoZWNrZWQ6IGJvb2xlYW47XG4gIGRpc2FibGVkOiBib29sZWFuO1xufSkgPT5cbiAgZGlzYWJsZWQgJiZcbiAgY3NzYFxuICAgIGJhY2tncm91bmQ6ICR7Y2hlY2tlZFxuICAgICAgPyB0aGVtZS5jb2xvcnMubW9ub2Nocm9tZS5ncmV5NDBcbiAgICAgIDogdGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICAgIGJvcmRlci1jb2xvcjogJHt0aGVtZS5jb2xvcnMuYm9yZGVyLmRlZmF1bHR9O1xuICAgIGNvbG9yOiAke2NoZWNrZWQgPyB0aGVtZS5jb2xvcnMuZ3JleTYwIDogdGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGV9O1xuICAgIGN1cnNvcjogbm90LWFsbG93ZWQ7XG4gIGA7XG5cbnR5cGUgUHJvcHMgPSB7XG4gIGNoZWNrZWQ6IGJvb2xlYW47XG4gIGRpc2FibGVkOiBib29sZWFuO1xuICBpbmRldGVybWluYXRlOiBib29sZWFuO1xufTtcblxuY29uc3QgU3R5bGVkQ2hlY2tib3ggPSBzdHlsZWQoRmxleCk8UHJvcHM+YFxuICAke2Jhc2VTdHlsZXN9O1xuICAke2NoZWNrZWRTdHlsZXN9O1xuICAke2Rpc2FibGVkU3R5bGVzfTtcbmA7XG5cblN0eWxlZENoZWNrYm94LmRlZmF1bHRQcm9wcyA9IHtcbiAgYWxpZ25JdGVtczogJ2NlbnRlcicsXG4gIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJ1xufTtcblxuZXhwb3J0IGRlZmF1bHQgU3R5bGVkQ2hlY2tib3g7XG4iXX0= */"));
+exports.__esModule = true;
+var react_1 = require("@emotion/react");
+var styled_1 = __importDefault(require("@emotion/styled"));
+var polished_1 = require("polished");
+var Flex_1 = __importDefault(require("../Flex"));
+var baseStyles = function (_a) {
+    var theme = _a.theme;
+    return react_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: ", ";\n  border: 1px solid ", ";\n  color: ", ";\n  flex-shrink: 0;\n  height: ", ";\n  width: ", ";\n"], ["\n  background-color: ", ";\n  border-radius: ", ";\n  border: 1px solid ", ";\n  color: ", ";\n  flex-shrink: 0;\n  height: ", ";\n  width: ", ";\n"])), theme.colors.monochrome.white, theme.radii.small, theme.colors.grey60, theme.colors.monochrome.white, polished_1.rem('16px'), polished_1.rem('16px'));
 };
-
-var StyledCheckbox = ( /*#__PURE__*/0, _base["default"])(_Flex["default"], {
-  target: "e1msufai0",
-  label: "StyledCheckbox"
-})(baseStyles, ";", checkedStyles, ";", disabledStyles, ";" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9DaGVja2JveC9TdHlsZWRDaGVja2JveC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2RDBDIiwiZmlsZSI6Ii4uLy4uL3NyYy9DaGVja2JveC9TdHlsZWRDaGVja2JveC50cyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNzcywgVGhlbWUgfSBmcm9tICdAZW1vdGlvbi9yZWFjdCc7XG5pbXBvcnQgc3R5bGVkIGZyb20gJ0BlbW90aW9uL3N0eWxlZCc7XG5pbXBvcnQgeyByZW0gfSBmcm9tICdwb2xpc2hlZCc7XG5cbmltcG9ydCBGbGV4IGZyb20gJy4uL0ZsZXgnO1xuXG5jb25zdCBiYXNlU3R5bGVzID0gKHsgdGhlbWUgfTogeyB0aGVtZTogVGhlbWUgfSkgPT4gY3NzYFxuICBiYWNrZ3JvdW5kLWNvbG9yOiAke3RoZW1lLmNvbG9ycy5tb25vY2hyb21lLndoaXRlfTtcbiAgYm9yZGVyLXJhZGl1czogJHt0aGVtZS5yYWRpaS5zbWFsbH07XG4gIGJvcmRlcjogMXB4IHNvbGlkICR7dGhlbWUuY29sb3JzLmdyZXk2MH07XG4gIGNvbG9yOiAke3RoZW1lLmNvbG9ycy5tb25vY2hyb21lLndoaXRlfTtcbiAgZmxleC1zaHJpbms6IDA7XG4gIGhlaWdodDogJHtyZW0oJzE2cHgnKX07XG4gIHdpZHRoOiAke3JlbSgnMTZweCcpfTtcbmA7XG5cbmNvbnN0IGNoZWNrZWRTdHlsZXMgPSAoe1xuICB0aGVtZSxcbiAgY2hlY2tlZCxcbiAgaW5kZXRlcm1pbmF0ZVxufToge1xuICB0aGVtZTogVGhlbWU7XG4gIGNoZWNrZWQ6IGJvb2xlYW47XG4gIGluZGV0ZXJtaW5hdGU6IGJvb2xlYW47XG59KSA9PlxuICBjaGVja2VkICYmXG4gIGNzc2BcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAke2luZGV0ZXJtaW5hdGVcbiAgICAgID8gdGhlbWUuY29sb3JzLm1vbm9jaHJvbWUud2hpdGVcbiAgICAgIDogdGhlbWUuY29sb3JzLmludGVudC5icmFuZC5kYXJrfTtcbiAgICBib3JkZXItY29sb3I6ICR7dGhlbWUuY29sb3JzLmludGVudC5icmFuZC5kYXJrfTtcbiAgICBjb2xvcjogJHtpbmRldGVybWluYXRlXG4gICAgICA/IHRoZW1lLmNvbG9ycy5pbnRlbnQuYnJhbmQuZGFya1xuICAgICAgOiB0aGVtZS5jb2xvcnMuaW50ZW50LmJyYW5kLmxpZ2h0fTtcbiAgYDtcblxuY29uc3QgZGlzYWJsZWRTdHlsZXMgPSAoe1xuICB0aGVtZSxcbiAgY2hlY2tlZCxcbiAgZGlzYWJsZWRcbn06IHtcbiAgdGhlbWU6IFRoZW1lO1xuICBjaGVja2VkOiBib29sZWFuO1xuICBkaXNhYmxlZDogYm9vbGVhbjtcbn0pID0+XG4gIGRpc2FibGVkICYmXG4gIGNzc2BcbiAgICBiYWNrZ3JvdW5kOiAke2NoZWNrZWRcbiAgICAgID8gdGhlbWUuY29sb3JzLm1vbm9jaHJvbWUuZ3JleTQwXG4gICAgICA6IHRoZW1lLmNvbG9ycy5tb25vY2hyb21lLndoaXRlfTtcbiAgICBib3JkZXItY29sb3I6ICR7dGhlbWUuY29sb3JzLmJvcmRlci5kZWZhdWx0fTtcbiAgICBjb2xvcjogJHtjaGVja2VkID8gdGhlbWUuY29sb3JzLmdyZXk2MCA6IHRoZW1lLmNvbG9ycy5tb25vY2hyb21lLndoaXRlfTtcbiAgICBjdXJzb3I6IG5vdC1hbGxvd2VkO1xuICBgO1xuXG50eXBlIFByb3BzID0ge1xuICBjaGVja2VkOiBib29sZWFuO1xuICBkaXNhYmxlZDogYm9vbGVhbjtcbiAgaW5kZXRlcm1pbmF0ZTogYm9vbGVhbjtcbn07XG5cbmNvbnN0IFN0eWxlZENoZWNrYm94ID0gc3R5bGVkKEZsZXgpPFByb3BzPmBcbiAgJHtiYXNlU3R5bGVzfTtcbiAgJHtjaGVja2VkU3R5bGVzfTtcbiAgJHtkaXNhYmxlZFN0eWxlc307XG5gO1xuXG5TdHlsZWRDaGVja2JveC5kZWZhdWx0UHJvcHMgPSB7XG4gIGFsaWduSXRlbXM6ICdjZW50ZXInLFxuICBqdXN0aWZ5Q29udGVudDogJ2NlbnRlcidcbn07XG5cbmV4cG9ydCBkZWZhdWx0IFN0eWxlZENoZWNrYm94O1xuIl19 */"));
+var checkedStyles = function (_a) {
+    var theme = _a.theme, checked = _a.checked, indeterminate = _a.indeterminate;
+    return checked && react_1.css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    background-color: ", ";\n    border-color: ", ";\n    color: ", ";\n  "], ["\n    background-color: ", ";\n    border-color: ", ";\n    color: ", ";\n  "])), indeterminate
+        ? theme.colors.monochrome.white
+        : theme.colors.intent.brand.dark, theme.colors.intent.brand.dark, indeterminate
+        ? theme.colors.intent.brand.dark
+        : theme.colors.intent.brand.light);
+};
+var disabledStyles = function (_a) {
+    var theme = _a.theme, checked = _a.checked, disabled = _a.disabled;
+    return disabled && react_1.css(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    background: ", ";\n    border-color: ", ";\n    color: ", ";\n    cursor: not-allowed;\n  "], ["\n    background: ", ";\n    border-color: ", ";\n    color: ", ";\n    cursor: not-allowed;\n  "])), checked
+        ? theme.colors.monochrome.grey40
+        : theme.colors.monochrome.white, theme.colors.border["default"], checked ? theme.colors.grey60 : theme.colors.monochrome.white);
+};
+var StyledCheckbox = styled_1["default"](Flex_1["default"])(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  ", ";\n  ", ";\n  ", ";\n"], ["\n  ", ";\n  ", ";\n  ", ";\n"])), baseStyles, checkedStyles, disabledStyles);
 StyledCheckbox.defaultProps = {
-  alignItems: 'center',
-  justifyContent: 'center'
+    alignItems: 'center',
+    justifyContent: 'center'
 };
-var _default = StyledCheckbox;
-exports["default"] = _default;
+exports["default"] = StyledCheckbox;
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4;

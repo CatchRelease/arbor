@@ -1,27 +1,21 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _StyledDateTimePicker = _interopRequireDefault(require("./StyledDateTimePicker"));
-
-var _dateTimePickerDefaults = _interopRequireDefault(require("./dateTimePickerDefaults"));
-
-var _jsxRuntime = require("@emotion/react/jsx-runtime");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var DateTimePicker = function DateTimePicker(props) {
-  return (0, _jsxRuntime.jsx)(_StyledDateTimePicker["default"], _objectSpread(_objectSpread({}, _dateTimePickerDefaults["default"]), props));
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
-
-var _default = DateTimePicker;
-exports["default"] = _default;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+var StyledDateTimePicker_1 = __importDefault(require("./StyledDateTimePicker"));
+var dateTimePickerDefaults_1 = __importDefault(require("./dateTimePickerDefaults"));
+var DateTimePicker = function (props) { return (jsx_runtime_1.jsx(StyledDateTimePicker_1["default"], __assign({}, dateTimePickerDefaults_1["default"], props), void 0)); };
+exports["default"] = DateTimePicker;

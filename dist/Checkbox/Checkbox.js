@@ -1,92 +1,39 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _Icon = _interopRequireDefault(require("../Icon"));
-
-var _Text = _interopRequireDefault(require("../Text"));
-
-var _CheckboxIcon = _interopRequireDefault(require("./CheckboxIcon"));
-
-var _CheckboxInput = _interopRequireDefault(require("./CheckboxInput"));
-
-var _CheckboxLabel = _interopRequireDefault(require("./CheckboxLabel"));
-
-var _StyledCheckbox = _interopRequireDefault(require("./StyledCheckbox"));
-
-var _jsxRuntime = require("@emotion/react/jsx-runtime");
-
-var _excluded = ["checked", "disabled", "icon", "id", "indeterminate", "isInvalid", "label", "name", "onChange", "value"];
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-var Checkbox = function Checkbox(_ref) {
-  var _ref$checked = _ref.checked,
-      checked = _ref$checked === void 0 ? false : _ref$checked,
-      _ref$disabled = _ref.disabled,
-      disabled = _ref$disabled === void 0 ? false : _ref$disabled,
-      icon = _ref.icon,
-      id = _ref.id,
-      _ref$indeterminate = _ref.indeterminate,
-      indeterminate = _ref$indeterminate === void 0 ? false : _ref$indeterminate,
-      _ref$isInvalid = _ref.isInvalid,
-      isInvalid = _ref$isInvalid === void 0 ? false : _ref$isInvalid,
-      label = _ref.label,
-      name = _ref.name,
-      _ref$onChange = _ref.onChange,
-      onChange = _ref$onChange === void 0 ? function () {} : _ref$onChange,
-      _ref$value = _ref.value,
-      value = _ref$value === void 0 ? '' : _ref$value,
-      props = _objectWithoutProperties(_ref, _excluded);
-
-  return (0, _jsxRuntime.jsxs)(_CheckboxLabel["default"], _objectSpread(_objectSpread({
-    alignItems: "center",
-    my: "regular"
-  }, props), {}, {
-    children: [(0, _jsxRuntime.jsx)(_CheckboxInput["default"], {
-      id: id,
-      type: "checkbox",
-      name: name,
-      value: value,
-      checked: checked || indeterminate,
-      onChange: onChange,
-      disabled: disabled,
-      "aria-invalid": isInvalid
-    }), (0, _jsxRuntime.jsx)(_StyledCheckbox["default"], {
-      disabled: disabled,
-      checked: checked,
-      indeterminate: indeterminate,
-      children: (0, _jsxRuntime.jsx)(_CheckboxIcon["default"], {
-        checked: checked,
-        indeterminate: indeterminate
-      })
-    }), icon && (0, _jsxRuntime.jsx)(_Icon["default"], {
-      fontSize: "24px",
-      name: icon,
-      color: disabled ? 'icon.disabled' : 'icon.default',
-      ml: "smaller"
-    }), (0, _jsxRuntime.jsx)(_Text["default"], {
-      as: "span",
-      fontSize: "size4",
-      color: disabled ? 'text.disabled' : 'text.default',
-      ml: icon ? 'smallest' : 'smaller',
-      children: label
-    })]
-  }));
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
-
-var _default = Checkbox;
-exports["default"] = _default;
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+var Icon_1 = __importDefault(require("../Icon"));
+var Text_1 = __importDefault(require("../Text"));
+var CheckboxIcon_1 = __importDefault(require("./CheckboxIcon"));
+var CheckboxInput_1 = __importDefault(require("./CheckboxInput"));
+var CheckboxLabel_1 = __importDefault(require("./CheckboxLabel"));
+var StyledCheckbox_1 = __importDefault(require("./StyledCheckbox"));
+var Checkbox = function (_a) {
+    var _b = _a.checked, checked = _b === void 0 ? false : _b, _c = _a.disabled, disabled = _c === void 0 ? false : _c, icon = _a.icon, id = _a.id, _d = _a.indeterminate, indeterminate = _d === void 0 ? false : _d, _e = _a.isInvalid, isInvalid = _e === void 0 ? false : _e, label = _a.label, name = _a.name, _f = _a.onChange, onChange = _f === void 0 ? function () { } : _f, _g = _a.value, value = _g === void 0 ? '' : _g, props = __rest(_a, ["checked", "disabled", "icon", "id", "indeterminate", "isInvalid", "label", "name", "onChange", "value"]);
+    return (jsx_runtime_1.jsxs(CheckboxLabel_1["default"], __assign({ alignItems: "center", my: "regular" }, props, { children: [jsx_runtime_1.jsx(CheckboxInput_1["default"], { id: id, type: "checkbox", name: name, value: value, checked: checked || indeterminate, onChange: onChange, disabled: disabled, "aria-invalid": isInvalid }, void 0), jsx_runtime_1.jsx(StyledCheckbox_1["default"], __assign({}, { disabled: disabled, checked: checked, indeterminate: indeterminate }, { children: jsx_runtime_1.jsx(CheckboxIcon_1["default"], __assign({}, { checked: checked, indeterminate: indeterminate }), void 0) }), void 0), icon && (jsx_runtime_1.jsx(Icon_1["default"], { fontSize: "24px", name: icon, color: disabled ? 'icon.disabled' : 'icon.default', ml: "smaller" }, void 0)), jsx_runtime_1.jsx(Text_1["default"], __assign({ as: "span", fontSize: "size4", color: disabled ? 'text.disabled' : 'text.default', ml: icon ? 'smallest' : 'smaller' }, { children: label }), void 0)] }), void 0));
+};
+exports["default"] = Checkbox;

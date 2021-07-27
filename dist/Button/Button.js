@@ -1,90 +1,38 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+var react_1 = require("react");
+var ButtonContent_1 = __importDefault(require("./ButtonContent"));
+var ButtonSpinner_1 = __importDefault(require("./ButtonSpinner"));
+var StyledButton_1 = __importDefault(require("./StyledButton"));
+var Text_1 = __importDefault(require("../Text"));
+var Button = react_1.forwardRef(function (_a, ref) {
+    var _b = _a.bg, bg = _b === void 0 ? null : _b, children = _a.children, _c = _a.disabled, disabled = _c === void 0 ? false : _c, _d = _a.fullWidth, fullWidth = _d === void 0 ? false : _d, iconEnd = _a.iconEnd, iconStart = _a.iconStart, _e = _a.intent, intent = _e === void 0 ? 'brand' : _e, _f = _a.paletteColor, paletteColor = _f === void 0 ? '' : _f, _g = _a.size, size = _g === void 0 ? 'large' : _g, _h = _a.spin, spin = _h === void 0 ? false : _h, type = _a.type, _j = _a.variant, variant = _j === void 0 ? 'primary' : _j, props = __rest(_a, ["bg", "children", "disabled", "fullWidth", "iconEnd", "iconStart", "intent", "paletteColor", "size", "spin", "type", "variant"]);
+    return (jsx_runtime_1.jsxs(StyledButton_1["default"], __assign({}, __assign({ bg: bg, className: "button--" + variant, disabled: disabled, fullWidth: fullWidth, iconEnd: iconEnd, iconStart: iconStart, intent: intent, paletteColor: paletteColor, ref: ref, size: size, type: type, variant: variant }, props), { children: [spin && jsx_runtime_1.jsx(ButtonSpinner_1["default"], __assign({}, { disabled: disabled, intent: intent, size: size, variant: variant }), void 0), jsx_runtime_1.jsxs(ButtonContent_1["default"], __assign({}, { hasText: !!children, iconStart: iconStart, iconEnd: iconEnd, spin: spin }, { children: [iconStart, children && (jsx_runtime_1.jsx(Text_1["default"], __assign({ color: "inherit", fontSize: "inherit" }, { children: children }), void 0)), iconEnd] }), void 0)] }), void 0));
 });
-exports["default"] = void 0;
-
-var _react = require("react");
-
-var _ButtonContent = _interopRequireDefault(require("./ButtonContent"));
-
-var _ButtonSpinner = _interopRequireDefault(require("./ButtonSpinner"));
-
-var _StyledButton = _interopRequireDefault(require("./StyledButton"));
-
-var _Text = _interopRequireDefault(require("../Text"));
-
-var _jsxRuntime = require("@emotion/react/jsx-runtime");
-
-var _excluded = ["bg", "children", "disabled", "fullWidth", "iconEnd", "iconStart", "intent", "paletteColor", "size", "spin", "type", "variant"];
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-var Button = /*#__PURE__*/(0, _react.forwardRef)(function (_ref, ref) {
-  var _ref$bg = _ref.bg,
-      bg = _ref$bg === void 0 ? null : _ref$bg,
-      children = _ref.children,
-      _ref$disabled = _ref.disabled,
-      disabled = _ref$disabled === void 0 ? false : _ref$disabled,
-      _ref$fullWidth = _ref.fullWidth,
-      fullWidth = _ref$fullWidth === void 0 ? false : _ref$fullWidth,
-      iconEnd = _ref.iconEnd,
-      iconStart = _ref.iconStart,
-      _ref$intent = _ref.intent,
-      intent = _ref$intent === void 0 ? 'brand' : _ref$intent,
-      _ref$paletteColor = _ref.paletteColor,
-      paletteColor = _ref$paletteColor === void 0 ? '' : _ref$paletteColor,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 'large' : _ref$size,
-      _ref$spin = _ref.spin,
-      spin = _ref$spin === void 0 ? false : _ref$spin,
-      type = _ref.type,
-      _ref$variant = _ref.variant,
-      variant = _ref$variant === void 0 ? 'primary' : _ref$variant,
-      props = _objectWithoutProperties(_ref, _excluded);
-
-  return (0, _jsxRuntime.jsxs)(_StyledButton["default"], _objectSpread(_objectSpread({}, _objectSpread({
-    bg: bg,
-    className: "button--".concat(variant),
-    disabled: disabled,
-    fullWidth: fullWidth,
-    iconEnd: iconEnd,
-    iconStart: iconStart,
-    intent: intent,
-    paletteColor: paletteColor,
-    ref: ref,
-    size: size,
-    type: type,
-    variant: variant
-  }, props)), {}, {
-    children: [spin && (0, _jsxRuntime.jsx)(_ButtonSpinner["default"], {
-      disabled: disabled,
-      intent: intent,
-      size: size,
-      variant: variant
-    }), (0, _jsxRuntime.jsxs)(_ButtonContent["default"], {
-      hasText: !!children,
-      iconStart: iconStart,
-      iconEnd: iconEnd,
-      spin: spin,
-      children: [iconStart, children && (0, _jsxRuntime.jsx)(_Text["default"], {
-        color: "inherit",
-        fontSize: "inherit",
-        children: children
-      }), iconEnd]
-    })]
-  }));
-});
-var _default = Button;
-exports["default"] = _default;
+exports["default"] = Button;

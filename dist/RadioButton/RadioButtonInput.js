@@ -1,32 +1,17 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _base = _interopRequireDefault(require("@emotion/styled/base"));
-
-var _Box = _interopRequireDefault(require("../Box"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
-
-var RadioButtonInput = ( /*#__PURE__*/0, _base["default"])(_Box["default"], {
-  target: "ees9q1r0",
-  label: "RadioButtonInput"
-})(process.env.NODE_ENV === "production" ? {
-  name: "1h9b6d0",
-  styles: "clip:rect(1px, 1px, 1px, 1px);height:1px;opacity:0;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px"
-} : {
-  name: "1h9b6d0",
-  styles: "clip:rect(1px, 1px, 1px, 1px);height:1px;opacity:0;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px",
-  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9SYWRpb0J1dHRvbi9SYWRpb0J1dHRvbklucHV0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlvQyIsImZpbGUiOiIuLi8uLi9zcmMvUmFkaW9CdXR0b24vUmFkaW9CdXR0b25JbnB1dC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBzdHlsZWQgZnJvbSAnQGVtb3Rpb24vc3R5bGVkJztcblxuaW1wb3J0IEJveCBmcm9tICcuLi9Cb3gnO1xuXG5jb25zdCBSYWRpb0J1dHRvbklucHV0ID0gc3R5bGVkKEJveClgXG4gIGNsaXA6IHJlY3QoMXB4LCAxcHgsIDFweCwgMXB4KTtcbiAgaGVpZ2h0OiAxcHg7XG4gIG9wYWNpdHk6IDA7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIHBhZGRpbmc6IDA7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgd2lkdGg6IDFweDtcbmA7XG5cblJhZGlvQnV0dG9uSW5wdXQuZGVmYXVsdFByb3BzID0ge1xuICBhczogJ2lucHV0J1xufTtcblxuZXhwb3J0IGRlZmF1bHQgUmFkaW9CdXR0b25JbnB1dDtcbiJdfQ== */",
-  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
-});
-RadioButtonInput.defaultProps = {
-  as: 'input'
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
 };
-var _default = RadioButtonInput;
-exports["default"] = _default;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var styled_1 = __importDefault(require("@emotion/styled"));
+var Box_1 = __importDefault(require("../Box"));
+var RadioButtonInput = styled_1["default"](Box_1["default"])(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  clip: rect(1px, 1px, 1px, 1px);\n  height: 1px;\n  opacity: 0;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  white-space: nowrap;\n  width: 1px;\n"], ["\n  clip: rect(1px, 1px, 1px, 1px);\n  height: 1px;\n  opacity: 0;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  white-space: nowrap;\n  width: 1px;\n"])));
+RadioButtonInput.defaultProps = {
+    as: 'input'
+};
+exports["default"] = RadioButtonInput;
+var templateObject_1;

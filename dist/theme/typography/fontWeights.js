@@ -1,13 +1,8 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
+exports.__esModule = true;
 var fontWeights = {
-  regular: 400,
-  medium: 500,
-  bold: 700
+    regular: 400,
+    medium: 500,
+    bold: 700
 };
-var _default = fontWeights;
-exports["default"] = _default;
+exports["default"] = fontWeights;

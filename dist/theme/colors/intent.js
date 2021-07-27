@@ -1,30 +1,20 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.warning = exports.success = exports.info = exports.danger = void 0;
-
-var _palette = require("./palette");
-
-var _brand = _interopRequireDefault(require("./brand"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var danger = _palette.red;
-exports.danger = danger;
-var info = _palette.blue;
-exports.info = info;
-var success = _palette.green;
-exports.success = success;
-var warning = _palette.orange;
-exports.warning = warning;
-var intent = {
-  brand: _brand["default"],
-  danger: danger,
-  info: info,
-  success: success,
-  warning: warning
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-var _default = intent;
-exports["default"] = _default;
+exports.__esModule = true;
+exports.warning = exports.success = exports.info = exports.danger = void 0;
+var palette_1 = require("./palette");
+var brand_1 = __importDefault(require("./brand"));
+exports.danger = palette_1.red;
+exports.info = palette_1.blue;
+exports.success = palette_1.green;
+exports.warning = palette_1.orange;
+var intent = {
+    brand: brand_1["default"],
+    danger: exports.danger,
+    info: exports.info,
+    success: exports.success,
+    warning: exports.warning
+};
+exports["default"] = intent;

@@ -1,15 +1,8 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
+exports.__esModule = true;
+var styled_system_1 = require("styled-system");
+var whiteSpace = styled_system_1.style({
+    prop: 'whiteSpace',
+    cssProperty: 'whiteSpace'
 });
-exports["default"] = void 0;
-
-var _styledSystem = require("styled-system");
-
-var whiteSpace = (0, _styledSystem.style)({
-  prop: 'whiteSpace',
-  cssProperty: 'whiteSpace'
-});
-var _default = whiteSpace;
-exports["default"] = _default;
+exports["default"] = whiteSpace;

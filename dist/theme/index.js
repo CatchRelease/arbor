@@ -1,186 +1,151 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.boxShadows = exports.borderWidth = exports.borderRadius = exports.spacings = exports.lineHeights = exports.icons = exports.colors = exports.bronzes = exports.black = exports.greens = exports.reds = exports.whites = exports.greys = exports.blues = exports.breakpoints = exports.breakpointsMap = void 0;
-
-var _polished = require("polished");
-
-var _colors = require("./colors");
-
-var _typography = require("./typography");
-
-var _avatars = require("./avatars");
-
-var _buttons = require("./buttons");
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var breakpointsMap = {
-  sm: '512px',
-  md: '768px',
-  lg: '1024px',
-  xl: '1600px'
-}; // Styled-System breakpoints
-
-exports.breakpointsMap = breakpointsMap;
-var breakpoints = Object.values(breakpointsMap);
-exports.breakpoints = breakpoints;
-breakpoints.sm = breakpointsMap.sm;
-breakpoints.md = breakpointsMap.md;
-breakpoints.lg = breakpointsMap.lg;
-breakpoints.xl = breakpointsMap.xl;
-var blues = {
-  blueLighter: '#6688FF',
-  blueLight: '#5577FF',
-  blue: '#4466EE',
-  blueDark: '#4455CC',
-  blueDarkest: '#2E374E'
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
-exports.blues = blues;
-var greys = {
-  grey10: '#F8F9F9',
-  grey20: '#F2F2F2',
-  grey30: '#EBECEC',
-  grey40: '#E0E1E2',
-  grey50: '#BEBEC0',
-  grey60: '#989A9C',
-  grey70: '#78797D',
-  grey80: '#5B5D61',
-  grey90: '#25272D',
-  grey100: '#0F0F10'
+exports.__esModule = true;
+exports.boxShadows = exports.borderWidth = exports.borderRadius = exports.spacings = exports.lineHeights = exports.icons = exports.colors = exports.bronzes = exports.black = exports.greens = exports.reds = exports.whites = exports.greys = exports.blues = exports.breakpoints = exports.breakpointsMap = void 0;
+var polished_1 = require("polished");
+var colors_1 = require("./colors");
+var typography_1 = require("./typography");
+var avatars_1 = require("./avatars");
+var buttons_1 = require("./buttons");
+exports.breakpointsMap = {
+    sm: '512px',
+    md: '768px',
+    lg: '1024px',
+    xl: '1600px'
 };
-exports.greys = greys;
-var whites = {
-  white: '#FFFFFF'
+// Styled-System breakpoints
+exports.breakpoints = Object.values(exports.breakpointsMap);
+exports.breakpoints.sm = exports.breakpointsMap.sm;
+exports.breakpoints.md = exports.breakpointsMap.md;
+exports.breakpoints.lg = exports.breakpointsMap.lg;
+exports.breakpoints.xl = exports.breakpointsMap.xl;
+exports.blues = {
+    blueLighter: '#6688FF',
+    blueLight: '#5577FF',
+    blue: '#4466EE',
+    blueDark: '#4455CC',
+    blueDarkest: '#2E374E'
 };
-exports.whites = whites;
-var reds = {
-  redLighter: '#FF6655',
-  redLight: '#FF4444',
-  red: '#EE2200',
-  redDark: '#DD1100'
+exports.greys = {
+    grey10: '#F8F9F9',
+    grey20: '#F2F2F2',
+    grey30: '#EBECEC',
+    grey40: '#E0E1E2',
+    grey50: '#BEBEC0',
+    grey60: '#989A9C',
+    grey70: '#78797D',
+    grey80: '#5B5D61',
+    grey90: '#25272D',
+    grey100: '#0F0F10'
 };
-exports.reds = reds;
-var greens = {
-  greenLighter: '#00CC66',
-  greenLight: '#00BB44',
-  green: '#00AA44',
-  greenDark: '#008833'
+exports.whites = {
+    white: '#FFFFFF'
 };
-exports.greens = greens;
-var black = '#000000';
-exports.black = black;
-var bronzes = {
-  bronzeLight: '#CC9900',
-  bronze: '#CC7700',
-  bronzeDark: '#AA5500'
+exports.reds = {
+    redLighter: '#FF6655',
+    redLight: '#FF4444',
+    red: '#EE2200',
+    redDark: '#DD1100'
 };
-exports.bronzes = bronzes;
-
-var colors = _objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSpread({
-  /* START: deprecated -- Color definition and variables are being revamped */
-  black: black
-}, blues), greys), whites), greens), reds), bronzes), {}, {
-  /* END: deprecated */
-  background: _colors.background,
-  border: _colors.border,
-  brand: _colors.brand,
-  icon: _colors.icon,
-  intent: _colors.intent,
-  monochrome: _colors.monochrome,
-  palette: _colors.palette,
-  primary: _colors.primary,
-  secondary: _colors.secondary,
-  shadow: _colors.shadow,
-  text: _colors.text
-});
-
-exports.colors = colors;
-var icons = {
-  annotation: '\f039',
-  calendar: '\f035',
-  caret: '\f037',
-  chatBubbleOutline: '\f003',
-  checkboxChecked: '\f030',
-  checkboxIndeterminate: '\f02f',
-  checkboxMarkedCircleOutline: '\f000',
-  chevron: '\f03a',
-  crLogo: '\f02e',
-  cross: '\f03b',
-  download: '\f004',
-  swap: '\f038',
-  symbolCircle: '\f034',
-  thumbDownOutline: '\f001',
-  thumbUpOutline: '\f002',
-  trash: '\f036'
+exports.greens = {
+    greenLighter: '#00CC66',
+    greenLight: '#00BB44',
+    green: '#00AA44',
+    greenDark: '#008833'
 };
-exports.icons = icons;
-var lineHeights = {
-  small: 1.25,
-  regular: 1,
-  large: 1.5
+exports.black = '#000000';
+exports.bronzes = {
+    bronzeLight: '#CC9900',
+    bronze: '#CC7700',
+    bronzeDark: '#AA5500'
 };
-exports.lineHeights = lineHeights;
-var spacings = {
-  smallest: (0, _polished.rem)('4px'),
-  smaller: (0, _polished.rem)('8px'),
-  small: (0, _polished.rem)('12px'),
-  regular: (0, _polished.rem)('16px'),
-  large: (0, _polished.rem)('24px'),
-  larger: (0, _polished.rem)('32px'),
-  largest: (0, _polished.rem)('64px')
+exports.colors = __assign(__assign(__assign(__assign(__assign(__assign(__assign({ 
+    /* START: deprecated -- Color definition and variables are being revamped */
+    black: exports.black }, exports.blues), exports.greys), exports.whites), exports.greens), exports.reds), exports.bronzes), { 
+    /* END: deprecated */
+    background: colors_1.background, border: colors_1.border, brand: colors_1.brand, icon: colors_1.icon, intent: colors_1.intent, monochrome: colors_1.monochrome, palette: colors_1.palette, primary: colors_1.primary, secondary: colors_1.secondary, shadow: colors_1.shadow, text: colors_1.text });
+exports.icons = {
+    annotation: '\f039',
+    calendar: '\f035',
+    caret: '\f037',
+    chatBubbleOutline: '\f003',
+    checkboxChecked: '\f030',
+    checkboxIndeterminate: '\f02f',
+    checkboxMarkedCircleOutline: '\f000',
+    chevron: '\f03a',
+    crLogo: '\f02e',
+    cross: '\f03b',
+    download: '\f004',
+    swap: '\f038',
+    symbolCircle: '\f034',
+    thumbDownOutline: '\f001',
+    thumbUpOutline: '\f002',
+    trash: '\f036'
 };
-exports.spacings = spacings;
-var borderRadius = {
-  small: '3px',
-  large: '6px',
-  larger: '12px'
+exports.lineHeights = {
+    small: 1.25,
+    regular: 1,
+    large: 1.5
 };
-exports.borderRadius = borderRadius;
-var borderWidth = {
-  small: '1px',
-  medium: '2px',
-  large: '4px'
+exports.spacings = {
+    smallest: polished_1.rem('4px'),
+    smaller: polished_1.rem('8px'),
+    small: polished_1.rem('12px'),
+    regular: polished_1.rem('16px'),
+    large: polished_1.rem('24px'),
+    larger: polished_1.rem('32px'),
+    largest: polished_1.rem('64px')
 };
-exports.borderWidth = borderWidth;
+exports.borderRadius = {
+    small: '3px',
+    large: '6px',
+    larger: '12px'
+};
+exports.borderWidth = {
+    small: '1px',
+    medium: '2px',
+    large: '4px'
+};
 var borders = {
-  "default": "".concat(borderWidth.small, " solid ").concat(colors.border["default"])
+    "default": exports.borderWidth.small + " solid " + exports.colors.border["default"]
 };
-var boxShadows = {
-  elevation0: "0 0 1px ".concat(colors.shadow.border),
-  elevation1: "0 0 1px ".concat(colors.shadow.border, ", 0 2px 4px -2px ").concat(colors.shadow.blurry),
-  elevation2: "0 0 1px ".concat(colors.shadow.border, ", 0 5px 8px -4px ").concat(colors.shadow.blurry),
-  elevation3: "0 0 1px ".concat(colors.shadow.border, ", 0 8px 10px -4px ").concat(colors.shadow.blurry),
-  elevation4: "0 0 1px ".concat(colors.shadow.border, ", 0 16px 24px -8px ").concat(colors.shadow.blurry)
+exports.boxShadows = {
+    elevation0: "0 0 1px " + exports.colors.shadow.border,
+    elevation1: "0 0 1px " + exports.colors.shadow.border + ", 0 2px 4px -2px " + exports.colors.shadow.blurry,
+    elevation2: "0 0 1px " + exports.colors.shadow.border + ", 0 5px 8px -4px " + exports.colors.shadow.blurry,
+    elevation3: "0 0 1px " + exports.colors.shadow.border + ", 0 8px 10px -4px " + exports.colors.shadow.blurry,
+    elevation4: "0 0 1px " + exports.colors.shadow.border + ", 0 16px 24px -8px " + exports.colors.shadow.blurry
 };
-exports.boxShadows = boxShadows;
 var buttons = {
-  sizes: _buttons.sizes
+    sizes: buttons_1.sizes
 };
-var _default = {
-  avatarSizes: _avatars.sizes,
-  avatarFontSizes: _avatars.fontSizes,
-  borderWidth: borderWidth,
-  borders: borders,
-  brandFont: _typography.brandFont,
-  breakpoints: breakpoints,
-  breakpointsMap: breakpointsMap,
-  buttons: buttons,
-  colors: colors,
-  fonts: _typography.fonts,
-  fontSizes: _typography.sizes,
-  fontWeights: _typography.fontWeights,
-  icons: icons,
-  iconFontPrefix: 'ar',
-  lineHeights: lineHeights,
-  radii: borderRadius,
-  shadows: boxShadows,
-  space: spacings
+exports["default"] = {
+    avatarSizes: avatars_1.sizes,
+    avatarFontSizes: avatars_1.fontSizes,
+    borderWidth: exports.borderWidth,
+    borders: borders,
+    brandFont: typography_1.brandFont,
+    breakpoints: exports.breakpoints,
+    breakpointsMap: exports.breakpointsMap,
+    buttons: buttons,
+    colors: exports.colors,
+    fonts: typography_1.fonts,
+    fontSizes: typography_1.sizes,
+    fontWeights: typography_1.fontWeights,
+    icons: exports.icons,
+    iconFontPrefix: 'ar',
+    lineHeights: exports.lineHeights,
+    radii: exports.borderRadius,
+    shadows: exports.boxShadows,
+    space: exports.spacings
 };
-exports["default"] = _default;

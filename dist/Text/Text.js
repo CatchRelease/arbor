@@ -1,37 +1,27 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _base = _interopRequireDefault(require("@emotion/styled/base"));
-
-var _react = require("@emotion/react");
-
-var _styledSystem = require("styled-system");
-
-var _textOverflow = _interopRequireDefault(require("../utils/textOverflow"));
-
-var _textTransform = _interopRequireDefault(require("../utils/textTransform"));
-
-var _whiteSpace = _interopRequireDefault(require("../utils/whiteSpace"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var baseStyles = function baseStyles(_ref) {
-  var theme = _ref.theme;
-  return /*#__PURE__*/(0, _react.css)("font-family:", theme.brandFont, ";;label:baseStyles;" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9UZXh0L1RleHQudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTJCdUQiLCJmaWxlIjoiLi4vLi4vc3JjL1RleHQvVGV4dC50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjc3MsIFRoZW1lIH0gZnJvbSAnQGVtb3Rpb24vcmVhY3QnO1xuaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xuaW1wb3J0IHtcbiAgY29sb3IsXG4gIENvbG9yUHJvcHMsXG4gIGZvbnRTaXplLFxuICBGb250U2l6ZVByb3BzLFxuICBmb250V2VpZ2h0LFxuICBGb250V2VpZ2h0UHJvcHMsXG4gIGxpbmVIZWlnaHQsXG4gIExpbmVIZWlnaHRQcm9wcyxcbiAgbWF4V2lkdGgsXG4gIE1heFdpZHRoUHJvcHMsXG4gIG1pbldpZHRoLFxuICBNaW5XaWR0aFByb3BzLFxuICBvdmVyZmxvdyxcbiAgT3ZlcmZsb3dQcm9wcyxcbiAgc3BhY2UsXG4gIFNwYWNlUHJvcHMsXG4gIHRleHRBbGlnbixcbiAgVGV4dEFsaWduUHJvcHNcbn0gZnJvbSAnc3R5bGVkLXN5c3RlbSc7XG5cbmltcG9ydCB0ZXh0T3ZlcmZsb3csIHsgVGV4dE92ZXJmbG93UHJvcHMgfSBmcm9tICcuLi91dGlscy90ZXh0T3ZlcmZsb3cnO1xuaW1wb3J0IHRleHRUcmFuc2Zvcm0sIHsgVGV4dFRyYW5zZm9ybVByb3BzIH0gZnJvbSAnLi4vdXRpbHMvdGV4dFRyYW5zZm9ybSc7XG5pbXBvcnQgd2hpdGVTcGFjZSwgeyBXaGl0ZXNwYWNlUHJvcHMgfSBmcm9tICcuLi91dGlscy93aGl0ZVNwYWNlJztcblxuY29uc3QgYmFzZVN0eWxlcyA9ICh7IHRoZW1lIH06IHsgdGhlbWU6IFRoZW1lIH0pID0+IGNzc2BcbiAgZm9udC1mYW1pbHk6ICR7dGhlbWUuYnJhbmRGb250fTtcbmA7XG5cbmV4cG9ydCB0eXBlIFByb3BzID0gQ29sb3JQcm9wcyAmXG4gIEZvbnRTaXplUHJvcHMgJlxuICBGb250V2VpZ2h0UHJvcHMgJlxuICBMaW5lSGVpZ2h0UHJvcHMgJlxuICBNYXhXaWR0aFByb3BzICZcbiAgTWluV2lkdGhQcm9wcyAmXG4gIE92ZXJmbG93UHJvcHMgJlxuICBTcGFjZVByb3BzICZcbiAgVGV4dEFsaWduUHJvcHMgJlxuICBUZXh0VHJhbnNmb3JtUHJvcHMgJlxuICBUZXh0T3ZlcmZsb3dQcm9wcyAmXG4gIFdoaXRlc3BhY2VQcm9wcztcblxuY29uc3QgVGV4dCA9IHN0eWxlZC5wPFByb3BzPmBcbiAgJHtiYXNlU3R5bGVzfTtcblxuICAke2NvbG9yfTtcbiAgJHtmb250U2l6ZX07XG4gICR7Zm9udFdlaWdodH07XG4gICR7bGluZUhlaWdodH07XG4gICR7bWF4V2lkdGh9O1xuICAke21pbldpZHRofTtcbiAgJHtvdmVyZmxvd307XG4gICR7c3BhY2V9O1xuICAke3RleHRBbGlnbn07XG4gICR7dGV4dFRyYW5zZm9ybX07XG4gICR7dGV4dE92ZXJmbG93fTtcbiAgJHt3aGl0ZVNwYWNlfTtcbmA7XG5cblRleHQuZGVmYXVsdFByb3BzID0ge1xuICBjb2xvcjogJ3RleHQuZGVmYXVsdCcsXG4gIGZvbnRTaXplOiAnc2l6ZTQnLFxuICBsaW5lSGVpZ2h0OiAnc21hbGwnXG59O1xuXG5leHBvcnQgZGVmYXVsdCBUZXh0O1xuIl19 */"));
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
 };
-
-var Text = (0, _base["default"])("p", {
-  target: "e1mef7x30",
-  label: "Text"
-})(baseStyles, ";", _styledSystem.color, ";", _styledSystem.fontSize, ";", _styledSystem.fontWeight, ";", _styledSystem.lineHeight, ";", _styledSystem.maxWidth, ";", _styledSystem.minWidth, ";", _styledSystem.overflow, ";", _styledSystem.space, ";", _styledSystem.textAlign, ";", _textTransform["default"], ";", _textOverflow["default"], ";", _whiteSpace["default"], ";" + (process.env.NODE_ENV === "production" ? "" : "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9UZXh0L1RleHQudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTRDNEIiLCJmaWxlIjoiLi4vLi4vc3JjL1RleHQvVGV4dC50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjc3MsIFRoZW1lIH0gZnJvbSAnQGVtb3Rpb24vcmVhY3QnO1xuaW1wb3J0IHN0eWxlZCBmcm9tICdAZW1vdGlvbi9zdHlsZWQnO1xuaW1wb3J0IHtcbiAgY29sb3IsXG4gIENvbG9yUHJvcHMsXG4gIGZvbnRTaXplLFxuICBGb250U2l6ZVByb3BzLFxuICBmb250V2VpZ2h0LFxuICBGb250V2VpZ2h0UHJvcHMsXG4gIGxpbmVIZWlnaHQsXG4gIExpbmVIZWlnaHRQcm9wcyxcbiAgbWF4V2lkdGgsXG4gIE1heFdpZHRoUHJvcHMsXG4gIG1pbldpZHRoLFxuICBNaW5XaWR0aFByb3BzLFxuICBvdmVyZmxvdyxcbiAgT3ZlcmZsb3dQcm9wcyxcbiAgc3BhY2UsXG4gIFNwYWNlUHJvcHMsXG4gIHRleHRBbGlnbixcbiAgVGV4dEFsaWduUHJvcHNcbn0gZnJvbSAnc3R5bGVkLXN5c3RlbSc7XG5cbmltcG9ydCB0ZXh0T3ZlcmZsb3csIHsgVGV4dE92ZXJmbG93UHJvcHMgfSBmcm9tICcuLi91dGlscy90ZXh0T3ZlcmZsb3cnO1xuaW1wb3J0IHRleHRUcmFuc2Zvcm0sIHsgVGV4dFRyYW5zZm9ybVByb3BzIH0gZnJvbSAnLi4vdXRpbHMvdGV4dFRyYW5zZm9ybSc7XG5pbXBvcnQgd2hpdGVTcGFjZSwgeyBXaGl0ZXNwYWNlUHJvcHMgfSBmcm9tICcuLi91dGlscy93aGl0ZVNwYWNlJztcblxuY29uc3QgYmFzZVN0eWxlcyA9ICh7IHRoZW1lIH06IHsgdGhlbWU6IFRoZW1lIH0pID0+IGNzc2BcbiAgZm9udC1mYW1pbHk6ICR7dGhlbWUuYnJhbmRGb250fTtcbmA7XG5cbmV4cG9ydCB0eXBlIFByb3BzID0gQ29sb3JQcm9wcyAmXG4gIEZvbnRTaXplUHJvcHMgJlxuICBGb250V2VpZ2h0UHJvcHMgJlxuICBMaW5lSGVpZ2h0UHJvcHMgJlxuICBNYXhXaWR0aFByb3BzICZcbiAgTWluV2lkdGhQcm9wcyAmXG4gIE92ZXJmbG93UHJvcHMgJlxuICBTcGFjZVByb3BzICZcbiAgVGV4dEFsaWduUHJvcHMgJlxuICBUZXh0VHJhbnNmb3JtUHJvcHMgJlxuICBUZXh0T3ZlcmZsb3dQcm9wcyAmXG4gIFdoaXRlc3BhY2VQcm9wcztcblxuY29uc3QgVGV4dCA9IHN0eWxlZC5wPFByb3BzPmBcbiAgJHtiYXNlU3R5bGVzfTtcblxuICAke2NvbG9yfTtcbiAgJHtmb250U2l6ZX07XG4gICR7Zm9udFdlaWdodH07XG4gICR7bGluZUhlaWdodH07XG4gICR7bWF4V2lkdGh9O1xuICAke21pbldpZHRofTtcbiAgJHtvdmVyZmxvd307XG4gICR7c3BhY2V9O1xuICAke3RleHRBbGlnbn07XG4gICR7dGV4dFRyYW5zZm9ybX07XG4gICR7dGV4dE92ZXJmbG93fTtcbiAgJHt3aGl0ZVNwYWNlfTtcbmA7XG5cblRleHQuZGVmYXVsdFByb3BzID0ge1xuICBjb2xvcjogJ3RleHQuZGVmYXVsdCcsXG4gIGZvbnRTaXplOiAnc2l6ZTQnLFxuICBsaW5lSGVpZ2h0OiAnc21hbGwnXG59O1xuXG5leHBvcnQgZGVmYXVsdCBUZXh0O1xuIl19 */"));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var react_1 = require("@emotion/react");
+var styled_1 = __importDefault(require("@emotion/styled"));
+var styled_system_1 = require("styled-system");
+var textOverflow_1 = __importDefault(require("../utils/textOverflow"));
+var textTransform_1 = __importDefault(require("../utils/textTransform"));
+var whiteSpace_1 = __importDefault(require("../utils/whiteSpace"));
+var baseStyles = function (_a) {
+    var theme = _a.theme;
+    return react_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-family: ", ";\n"], ["\n  font-family: ", ";\n"])), theme.brandFont);
+};
+var Text = styled_1["default"].p(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  ", ";\n\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n"], ["\n  ", ";\n\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n  ", ";\n"])), baseStyles, styled_system_1.color, styled_system_1.fontSize, styled_system_1.fontWeight, styled_system_1.lineHeight, styled_system_1.maxWidth, styled_system_1.minWidth, styled_system_1.overflow, styled_system_1.space, styled_system_1.textAlign, textTransform_1["default"], textOverflow_1["default"], whiteSpace_1["default"]);
 Text.defaultProps = {
-  color: 'text.default',
-  fontSize: 'size4',
-  lineHeight: 'small'
+    color: 'text.default',
+    fontSize: 'size4',
+    lineHeight: 'small'
 };
-var _default = Text;
-exports["default"] = _default;
+exports["default"] = Text;
+var templateObject_1, templateObject_2;

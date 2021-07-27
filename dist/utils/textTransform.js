@@ -1,14 +1,7 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
+exports.__esModule = true;
+var styled_system_1 = require("styled-system");
+var textTransform = styled_system_1.style({
+    prop: 'textTransform'
 });
-exports["default"] = void 0;
-
-var _styledSystem = require("styled-system");
-
-var textTransform = (0, _styledSystem.style)({
-  prop: 'textTransform'
-});
-var _default = textTransform;
-exports["default"] = _default;
+exports["default"] = textTransform;

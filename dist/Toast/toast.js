@@ -1,43 +1,31 @@
 "use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _reactToastify = require("react-toastify");
-
-var _Alert = require("../Alert");
-
-var _intents = _interopRequireDefault(require("../Alert/intents"));
-
-var _jsxRuntime = require("@emotion/react/jsx-runtime");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var buildToast = function buildToast(intent) {
-  return function (message, details) {
-    var toastifyOptions = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-    var toastId = (0, _reactToastify.toast)((0, _jsxRuntime.jsx)(_Alert.ToastAlert, {
-      details: details,
-      intent: intent,
-      message: message,
-      onClose: function onClose() {
-        return _reactToastify.toast.dismiss(toastId);
-      }
-    }), toastifyOptions);
-  };
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
 };
-
-var toast = _intents["default"].reduce(function (memo, intent) {
-  return _objectSpread(_objectSpread({}, memo), {}, _defineProperty({}, intent, buildToast(intent)));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+exports.__esModule = true;
+var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+var react_toastify_1 = require("react-toastify");
+var Alert_1 = require("../Alert");
+var intents_1 = __importDefault(require("../Alert/intents"));
+var buildToast = function (intent) {
+    return function (message, details, toastifyOptions) {
+        if (toastifyOptions === void 0) { toastifyOptions = {}; }
+        var toastId = react_toastify_1.toast(jsx_runtime_1.jsx(Alert_1.ToastAlert, { details: details, intent: intent, message: message, onClose: function () { return react_toastify_1.toast.dismiss(toastId); } }, void 0), toastifyOptions);
+    };
+};
+var toast = intents_1["default"].reduce(function (memo, intent) {
+    var _a;
+    return (__assign(__assign({}, memo), (_a = {}, _a[intent] = buildToast(intent), _a)));
 }, {});
-
-var _default = toast;
-exports["default"] = _default;
+exports["default"] = toast;
