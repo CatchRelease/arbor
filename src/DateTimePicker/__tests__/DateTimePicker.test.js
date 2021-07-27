@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import mountWithTheme from '../../../utils/mountWithTheme';
 
 import DateTimePicker from '../DateTimePicker';
+import StyledDateTimePicker from '../StyledDateTimePicker';
 
 // Explicitly set the value of today to a specific date so tests don't fail every time the day, month, or year changes
 const today = new Date('2019-03-11T04:00:00.000Z');
@@ -21,7 +22,7 @@ describe('<DateTimePicker />', () => {
         { disableLifecycleMethods: true }
       );
 
-      expect(dateTimePicker.find('StyledDateTimePicker')).toHaveProp({
+      expect(dateTimePicker.find(StyledDateTimePicker)).toHaveProp({
         foo: 'bar'
       });
     });

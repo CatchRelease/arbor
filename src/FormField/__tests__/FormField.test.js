@@ -1,6 +1,7 @@
 import { shallow } from 'enzyme';
 
 import createWithTheme from '../../../utils/createWithTheme';
+import Label from '../../Label';
 import FormField from '../FormField';
 
 describe('<FormField />', () => {
@@ -40,7 +41,7 @@ describe('<FormField />', () => {
         </FormField>
       );
 
-      expect(formField.find('Label').props().htmlFor).toEqual('example');
+      expect(formField.find(Label).props().htmlFor).toEqual('example');
     });
   });
 

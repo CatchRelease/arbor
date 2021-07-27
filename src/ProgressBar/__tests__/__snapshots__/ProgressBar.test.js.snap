@@ -17,7 +17,7 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
   align-items: center;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   -webkit-flex: 1;
@@ -28,11 +28,11 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
   border-radius: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   width: 42%;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   height: 100%;
@@ -41,7 +41,7 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
   width: 42%;
 }
 
-.emotion-7 {
+.emotion-4 {
   color: #E0E1E2;
   font-size: 0.875rem;
   margin-left: 0.5rem;
@@ -52,29 +52,29 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
   percentage={42}
   showPercentage={false}
 >
-  <ProgressBarContainer>
+  <Styled(div)>
     <div
-      className="emotion-0 emotion-1"
+      className="emotion-0"
     >
-      <BarBackground
+      <Styled(div)
         className="bar-background"
       >
         <div
-          className="bar-background emotion-2 emotion-3"
+          className="bar-background emotion-1"
         >
-          <BarForeground
+          <Styled(div)
             css="unknown styles"
           >
-            <BarForeground
-              className="bar-foreground emotion-4"
+            <Styled(div)
+              className="bar-foreground emotion-2"
             >
               <div
-                className="bar-foreground emotion-5 emotion-6"
+                className="bar-foreground emotion-3"
               />
-            </BarForeground>
-          </BarForeground>
+            </Styled(div)>
+          </Styled(div)>
         </div>
-      </BarBackground>
+      </Styled(div)>
       <ForwardRef
         color="monochrome.grey40"
         flex="0"
@@ -490,7 +490,7 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
                 rotation={null}
               >
                 <i
-                  className="ar ar-calendar emotion-7"
+                  className="ar ar-calendar emotion-4"
                   color="monochrome.grey40"
                   fontSize="size4"
                 />
@@ -500,7 +500,7 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
         </WithTheme(Icon)>
       </ForwardRef>
     </div>
-  </ProgressBarContainer>
+  </Styled(div)>
 </ProgressBar>
 `;
 
@@ -521,7 +521,7 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
   align-items: center;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   -webkit-flex: 1;
@@ -532,11 +532,11 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
   border-radius: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   width: 100%;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   height: 100%;
@@ -545,7 +545,7 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
   width: 100%;
 }
 
-.emotion-7 {
+.emotion-4 {
   color: #25272D;
   font-size: 0.875rem;
   margin-left: 0.5rem;
@@ -556,29 +556,29 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
   percentage={100}
   showPercentage={false}
 >
-  <ProgressBarContainer>
+  <Styled(div)>
     <div
-      className="emotion-0 emotion-1"
+      className="emotion-0"
     >
-      <BarBackground
+      <Styled(div)
         className="bar-background"
       >
         <div
-          className="bar-background emotion-2 emotion-3"
+          className="bar-background emotion-1"
         >
-          <BarForeground
+          <Styled(div)
             css="unknown styles"
           >
-            <BarForeground
-              className="bar-foreground emotion-4"
+            <Styled(div)
+              className="bar-foreground emotion-2"
             >
               <div
-                className="bar-foreground emotion-5 emotion-6"
+                className="bar-foreground emotion-3"
               />
-            </BarForeground>
-          </BarForeground>
+            </Styled(div)>
+          </Styled(div)>
         </div>
-      </BarBackground>
+      </Styled(div)>
       <ForwardRef
         color="text.default"
         flex="0"
@@ -994,7 +994,7 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
                 rotation={null}
               >
                 <i
-                  className="ar ar-calendar emotion-7"
+                  className="ar ar-calendar emotion-4"
                   color="text.default"
                   fontSize="size4"
                 />
@@ -1004,6 +1004,6 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
         </WithTheme(Icon)>
       </ForwardRef>
     </div>
-  </ProgressBarContainer>
+  </Styled(div)>
 </ProgressBar>
 `;

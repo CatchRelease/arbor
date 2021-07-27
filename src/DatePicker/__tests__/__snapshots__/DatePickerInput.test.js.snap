@@ -5,7 +5,7 @@ exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
   margin-bottom: 1rem;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -18,7 +18,7 @@ exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
   align-items: center;
 }
 
-.emotion-3 {
+.emotion-2 {
   border-radius: 3px;
   border: 1px solid #E0E1E2;
   box-sizing: border-box;
@@ -32,38 +32,38 @@ exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-3 {
+  .emotion-2 {
     font-size: 1rem;
   }
 }
 
-.emotion-3::-webkit-input-placeholder {
+.emotion-2::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-3::-moz-placeholder {
+.emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-3:-ms-input-placeholder {
+.emotion-2:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-3::placeholder {
+.emotion-2::placeholder {
   color: #989A9C;
 }
 
-.emotion-3:focus {
+.emotion-2:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background: #F2F2F2;
 }
 
-.emotion-3:required {
+.emotion-2:required {
   box-shadow: none;
 }
 
@@ -71,16 +71,16 @@ exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
   className="DayPickerInput"
 >
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <div
-      className="emotion-2"
+      className="emotion-1"
     >
       
     </div>
     <input
       autoComplete="off"
-      className="emotion-3"
+      className="emotion-2"
       id="date-picker-input"
       onBlur={[Function]}
       onChange={[Function]}
@@ -102,7 +102,7 @@ exports[`<DatePickerInput /> props allows overriding autoComplete 1`] = `
   margin-bottom: 1rem;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -115,7 +115,7 @@ exports[`<DatePickerInput /> props allows overriding autoComplete 1`] = `
   align-items: center;
 }
 
-.emotion-3 {
+.emotion-2 {
   border-radius: 3px;
   border: 1px solid #E0E1E2;
   box-sizing: border-box;
@@ -129,38 +129,38 @@ exports[`<DatePickerInput /> props allows overriding autoComplete 1`] = `
 }
 
 @media (max-width: 768px) {
-  .emotion-3 {
+  .emotion-2 {
     font-size: 1rem;
   }
 }
 
-.emotion-3::-webkit-input-placeholder {
+.emotion-2::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-3::-moz-placeholder {
+.emotion-2::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-3:-ms-input-placeholder {
+.emotion-2:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-3::placeholder {
+.emotion-2::placeholder {
   color: #989A9C;
 }
 
-.emotion-3:focus {
+.emotion-2:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background: #F2F2F2;
 }
 
-.emotion-3:required {
+.emotion-2:required {
   box-shadow: none;
 }
 
@@ -168,16 +168,16 @@ exports[`<DatePickerInput /> props allows overriding autoComplete 1`] = `
   className="DayPickerInput"
 >
   <div
-    className="emotion-0 emotion-1"
+    className="emotion-0"
   >
     <div
-      className="emotion-2"
+      className="emotion-1"
     >
       
     </div>
     <input
       autoComplete="on"
-      className="emotion-3"
+      className="emotion-2"
       id="date-picker-input"
       onBlur={[Function]}
       onChange={[Function]}

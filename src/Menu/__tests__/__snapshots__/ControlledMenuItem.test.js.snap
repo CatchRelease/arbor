@@ -16,7 +16,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
   background: #F8F9F9;
 }
 
-.emotion-2 {
+.emotion-1 {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -28,7 +28,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
   width: 1px;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   width: 100%;
@@ -41,7 +41,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
   justify-content: space-between;
 }
 
-.emotion-4 {
+.emotion-3 {
   font-family: Motiva Sans;
   max-width: calc(100% - 120px - 8px);
   box-sizing: border-box;
@@ -54,7 +54,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
   flex: 1 0 auto;
 }
 
-.emotion-5 {
+.emotion-4 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: 0.875rem;
@@ -63,7 +63,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
   overflow: hidden;
 }
 
-.emotion-6 {
+.emotion-5 {
   font-family: Motiva Sans;
   overflow: hidden;
   padding-left: 8px;
@@ -77,7 +77,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
   flex: 0 1 auto;
 }
 
-.emotion-7 {
+.emotion-6 {
   font-family: Motiva Sans;
   color: #5B5D61;
   font-size: 0.8125rem;
@@ -88,7 +88,7 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
 
 <div
   aria-selected={false}
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   fontSize="size4"
   id="menu-item_clearance_state_ready_to_clear"
   label="Ready to Clear"
@@ -100,21 +100,21 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
   value="ready_to_clear"
 >
   <input
-    className="emotion-2"
+    className="emotion-1"
     id="menu-item_clearance_state_ready_to_clear"
     name="clearance_state"
     type="hidden"
     value="ready_to_clear"
   />
   <div
-    className="emotion-3"
+    className="emotion-2"
     width="100%"
   >
     <div
-      className="emotion-4"
+      className="emotion-3"
     >
       <span
-        className="emotion-5"
+        className="emotion-4"
         color="inherit"
         fontSize="size4"
         overflow="hidden"
@@ -123,11 +123,11 @@ exports[`<ControlledMenuItem /> renders a MenuItem properly 1`] = `
       </span>
     </div>
     <div
-      className="emotion-6"
+      className="emotion-5"
       overflow="hidden"
     >
       <span
-        className="emotion-7"
+        className="emotion-6"
         color="text.muted"
         fontSize="size3"
       >
@@ -154,7 +154,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
   background: #F8F9F9;
 }
 
-.emotion-2 {
+.emotion-1 {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -166,7 +166,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
   width: 1px;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   width: 100%;
@@ -179,7 +179,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
   justify-content: space-between;
 }
 
-.emotion-4 {
+.emotion-3 {
   font-family: Motiva Sans;
   max-width: calc(100% - 120px - 8px);
   box-sizing: border-box;
@@ -192,7 +192,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
   flex: 1 0 auto;
 }
 
-.emotion-5 {
+.emotion-4 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: 0.875rem;
@@ -201,7 +201,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
   overflow: hidden;
 }
 
-.emotion-6 {
+.emotion-5 {
   font-family: Motiva Sans;
   overflow: hidden;
   padding-left: 8px;
@@ -215,7 +215,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
   flex: 0 1 auto;
 }
 
-.emotion-7 {
+.emotion-6 {
   font-family: Motiva Sans;
   color: #5B5D61;
   font-size: 0.8125rem;
@@ -226,7 +226,7 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
 
 <div
   aria-selected={false}
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   fontSize="size4"
   id="menu-item_clearance_state_ready_to_clear"
   label="Ready to Clear"
@@ -239,21 +239,21 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
   value="ready_to_clear"
 >
   <input
-    className="emotion-2"
+    className="emotion-1"
     id="menu-item_clearance_state_ready_to_clear"
     name="clearance_state"
     type="hidden"
     value="ready_to_clear"
   />
   <div
-    className="emotion-3"
+    className="emotion-2"
     width="100%"
   >
     <div
-      className="emotion-4"
+      className="emotion-3"
     >
       <span
-        className="emotion-5"
+        className="emotion-4"
         color="inherit"
         fontSize="size4"
         overflow="hidden"
@@ -262,11 +262,11 @@ exports[`<ControlledMenuItem /> renders a selected MenuItem properly 1`] = `
       </span>
     </div>
     <div
-      className="emotion-6"
+      className="emotion-5"
       overflow="hidden"
     >
       <span
-        className="emotion-7"
+        className="emotion-6"
         color="text.muted"
         fontSize="size3"
       >

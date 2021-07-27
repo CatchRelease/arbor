@@ -64,7 +64,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
 <DateTimePicker
   value={2019-03-11T04:00:00.000Z}
 >
-  <StyledDateTimePicker
+  <Styled(n)
     closeOnClickOutside={true}
     closeOnSelect={true}
     closeOnTab={true}
@@ -92,7 +92,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
     value={2019-03-11T04:00:00.000Z}
   >
     <n
-      className=" emotion-0 emotion-1"
+      className=" emotion-0"
       closeOnClickOutside={true}
       closeOnSelect={true}
       closeOnTab={true}
@@ -120,7 +120,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
       value={2019-03-11T04:00:00.000Z}
     >
       <OnClickOutside(n)
-        className="rdt  emotion-0 emotion-1"
+        className="rdt  emotion-0"
         eventTypes={
           Array [
             "mousedown",
@@ -134,7 +134,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
         stopPropagation={false}
       >
         <n
-          className="rdt  emotion-0 emotion-1"
+          className="rdt  emotion-0"
           disableOnClickOutside={[Function]}
           enableOnClickOutside={[Function]}
           eventTypes={
@@ -149,7 +149,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
           stopPropagation={false}
         >
           <div
-            className="rdt  emotion-0 emotion-1"
+            className="rdt  emotion-0"
           >
             <input
               className="form-control"
@@ -728,6 +728,6 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
         </n>
       </OnClickOutside(n)>
     </n>
-  </StyledDateTimePicker>
+  </Styled(n)>
 </DateTimePicker>
 `;

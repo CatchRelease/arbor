@@ -81,7 +81,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -93,7 +93,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -101,24 +101,24 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 1`] 
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="small"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
     </p>
     <i
-      className="ar ar-cr-logo emotion-5"
+      className="ar ar-cr-logo emotion-3"
     />
   </div>
 </button>
@@ -205,7 +205,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -217,7 +217,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -225,24 +225,24 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 2`] 
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="medium"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
     </p>
     <i
-      className="ar ar-cr-logo emotion-5"
+      className="ar ar-cr-logo emotion-3"
     />
   </div>
 </button>
@@ -329,7 +329,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -341,7 +341,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -349,24 +349,24 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 3`] 
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
     </p>
     <i
-      className="ar ar-cr-logo emotion-5"
+      className="ar ar-cr-logo emotion-3"
     />
   </div>
 </button>
@@ -453,7 +453,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -465,7 +465,7 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -473,24 +473,24 @@ exports[`<Button /> Sizes iconEnd properly renders a button with an iconEnd 4`] 
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="jumbo"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
     </p>
     <i
-      className="ar ar-cr-logo emotion-5"
+      className="ar ar-cr-logo emotion-3"
     />
   </div>
 </button>
@@ -577,7 +577,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -589,7 +589,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   visibility: inherit;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -597,27 +597,27 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="small"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <i
-      className="ar ar-cr-logo emotion-4"
+      className="ar ar-cr-logo emotion-2"
     />
     <p
-      className="emotion-5"
+      className="emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
     </p>
     <i
-      className="ar ar-download emotion-4"
+      className="ar ar-download emotion-2"
     />
   </div>
 </button>
@@ -704,7 +704,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -716,7 +716,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   visibility: inherit;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -724,27 +724,27 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="medium"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <i
-      className="ar ar-cr-logo emotion-4"
+      className="ar ar-cr-logo emotion-2"
     />
     <p
-      className="emotion-5"
+      className="emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
     </p>
     <i
-      className="ar ar-download emotion-4"
+      className="ar ar-download emotion-2"
     />
   </div>
 </button>
@@ -831,7 +831,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -843,7 +843,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   visibility: inherit;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -851,27 +851,27 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <i
-      className="ar ar-cr-logo emotion-4"
+      className="ar ar-cr-logo emotion-2"
     />
     <p
-      className="emotion-5"
+      className="emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
     </p>
     <i
-      className="ar ar-download emotion-4"
+      className="ar ar-download emotion-2"
     />
   </div>
 </button>
@@ -958,7 +958,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -970,7 +970,7 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
   visibility: inherit;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -978,27 +978,27 @@ exports[`<Button /> Sizes iconStart and iconEnd properly renders a button with a
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="jumbo"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <i
-      className="ar ar-cr-logo emotion-4"
+      className="ar ar-cr-logo emotion-2"
     />
     <p
-      className="emotion-5"
+      className="emotion-3"
       color="inherit"
       fontSize="inherit"
     >
       Button with Icon
     </p>
     <i
-      className="ar ar-download emotion-4"
+      className="ar ar-download emotion-2"
     />
   </div>
 </button>
@@ -1085,7 +1085,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1097,7 +1097,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   visibility: inherit;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -1105,20 +1105,20 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="small"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <i
-      className="ar ar-cr-logo emotion-4"
+      className="ar ar-cr-logo emotion-2"
     />
     <p
-      className="emotion-5"
+      className="emotion-3"
       color="inherit"
       fontSize="inherit"
     >
@@ -1209,7 +1209,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1221,7 +1221,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   visibility: inherit;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -1229,20 +1229,20 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="medium"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <i
-      className="ar ar-cr-logo emotion-4"
+      className="ar ar-cr-logo emotion-2"
     />
     <p
-      className="emotion-5"
+      className="emotion-3"
       color="inherit"
       fontSize="inherit"
     >
@@ -1333,7 +1333,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1345,7 +1345,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   visibility: inherit;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -1353,20 +1353,20 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <i
-      className="ar ar-cr-logo emotion-4"
+      className="ar ar-cr-logo emotion-2"
     />
     <p
-      className="emotion-5"
+      className="emotion-3"
       color="inherit"
       fontSize="inherit"
     >
@@ -1457,7 +1457,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1469,7 +1469,7 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
   visibility: inherit;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -1477,20 +1477,20 @@ exports[`<Button /> Sizes iconStart properly renders a button with an iconStart 
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="jumbo"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <i
-      className="ar ar-cr-logo emotion-4"
+      className="ar ar-cr-logo emotion-2"
     />
     <p
-      className="emotion-5"
+      className="emotion-3"
       color="inherit"
       fontSize="inherit"
     >
@@ -1581,7 +1581,7 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1593,7 +1593,7 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -1601,17 +1601,17 @@ exports[`<Button /> Sizes properly renders a jumbo sized button 1`] = `
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="jumbo"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -1702,7 +1702,7 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1714,7 +1714,7 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -1722,17 +1722,17 @@ exports[`<Button /> Sizes properly renders a large sized button 1`] = `
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -1823,7 +1823,7 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1835,7 +1835,7 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -1843,17 +1843,17 @@ exports[`<Button /> Sizes properly renders a medium sized button 1`] = `
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="medium"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -1944,7 +1944,7 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -1956,7 +1956,7 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -1964,17 +1964,17 @@ exports[`<Button /> Sizes properly renders a small sized button 1`] = `
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="small"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -2080,7 +2080,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   color: #989A9C;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -2092,7 +2092,7 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -2100,17 +2100,17 @@ exports[`<Button /> Variants properly renders a disabled minimal button 1`] = `
 }
 
 <button
-  className="button--minimal emotion-0 emotion-1"
+  className="button--minimal emotion-0"
   disabled={true}
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -2201,7 +2201,7 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -2213,7 +2213,7 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -2221,17 +2221,17 @@ exports[`<Button /> Variants properly renders a disabled primary button 1`] = `
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={true}
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -2331,7 +2331,7 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
   color: #989A9C;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -2343,7 +2343,7 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -2351,17 +2351,17 @@ exports[`<Button /> Variants properly renders a disabled secondary button 1`] = 
 }
 
 <button
-  className="button--secondary emotion-0 emotion-1"
+  className="button--secondary emotion-0"
   disabled={true}
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -2467,7 +2467,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
   color: #989A9C;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -2479,7 +2479,7 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -2487,17 +2487,17 @@ exports[`<Button /> Variants properly renders a minimal button 1`] = `
 }
 
 <button
-  className="button--minimal emotion-0 emotion-1"
+  className="button--minimal emotion-0"
   disabled={false}
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -2588,7 +2588,7 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -2600,7 +2600,7 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -2608,17 +2608,17 @@ exports[`<Button /> Variants properly renders a primary button 1`] = `
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -2718,7 +2718,7 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
   color: #989A9C;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -2730,7 +2730,7 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -2738,17 +2738,17 @@ exports[`<Button /> Variants properly renders a secondary button 1`] = `
 }
 
 <button
-  className="button--secondary emotion-0 emotion-1"
+  className="button--secondary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -2840,7 +2840,7 @@ exports[`<Button /> fontSize properly renders a button with custom font preset s
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -2852,7 +2852,7 @@ exports[`<Button /> fontSize properly renders a button with custom font preset s
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -2860,18 +2860,18 @@ exports[`<Button /> fontSize properly renders a button with custom font preset s
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontSize="size6"
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -2963,7 +2963,7 @@ exports[`<Button /> fontSize properly renders a button with custom pixel font si
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -2975,7 +2975,7 @@ exports[`<Button /> fontSize properly renders a button with custom pixel font si
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -2983,18 +2983,18 @@ exports[`<Button /> fontSize properly renders a button with custom pixel font si
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontSize="100"
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >
@@ -3085,7 +3085,7 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
   color: inherit;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -3097,7 +3097,7 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
   visibility: inherit;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -3105,17 +3105,17 @@ exports[`<Button /> fullWidth properly renders a fullWidth button 1`] = `
 }
 
 <button
-  className="button--primary emotion-0 emotion-1"
+  className="button--primary emotion-0"
   disabled={false}
   fontWeight="medium"
   size="large"
 >
   <div
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     display="inline-grid"
   >
     <p
-      className="emotion-4"
+      className="emotion-2"
       color="inherit"
       fontSize="inherit"
     >

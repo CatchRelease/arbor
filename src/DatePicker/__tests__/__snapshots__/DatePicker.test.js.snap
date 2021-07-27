@@ -60,7 +60,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   top: 0;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -73,7 +73,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   align-items: center;
 }
 
-.emotion-3 {
+.emotion-2 {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -94,81 +94,81 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   border-radius: 3px;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-3:enabled {
+.emotion-2:enabled {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.emotion-3 i {
+.emotion-2 i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
 }
 
-.emotion-3 i {
+.emotion-2 i {
   width: 1.5rem;
   font-size: 0.6875rem;
 }
 
-.emotion-3 i:first-child {
+.emotion-2 i:first-child {
   margin-left: -0.75rem;
 }
 
-.emotion-3 i:last-child {
+.emotion-2 i:last-child {
   margin-right: -0.75rem;
 }
 
-.emotion-3:disabled {
+.emotion-2:disabled {
   background-color: transparent;
   color: rgba(120,121,125,0.7);
 }
 
-.emotion-3:disabled i {
+.emotion-2:disabled i {
   color: rgba(190,190,192,0.7);
 }
 
-.emotion-3:enabled:active {
+.emotion-2:enabled:active {
   background-color: #F8F9F9;
   color: #061813;
 }
 
-.emotion-3:enabled:focus {
+.emotion-2:enabled:focus {
   box-shadow: 0 0 0 3px #B6EFD0;
 }
 
-.emotion-3:enabled:hover {
+.emotion-2:enabled:hover {
   background-color: #F8F9F9;
 }
 
-.emotion-3:enabled:hover i {
+.emotion-2:enabled:hover i {
   color: #081D17;
 }
 
-.emotion-3::-moz-focus-inner {
+.emotion-2::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-3:focus {
+.emotion-2:focus {
   border: 1px solid transparent;
 }
 
-.emotion-3:focus:hover {
+.emotion-2:focus:hover {
   border: 1px solid transparent;
 }
 
-.emotion-3 i {
+.emotion-2 i {
   color: #989A9C;
 }
 
-.emotion-5 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -180,7 +180,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   visibility: inherit;
 }
 
-.emotion-7 {
+.emotion-4 {
   color: #989A9C;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -188,19 +188,19 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
   transform: rotate(90deg);
 }
 
-.emotion-8 {
+.emotion-5 {
   font-family: Motiva Sans;
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   box-sizing: border-box;
 }
 
-.emotion-9 {
+.emotion-6 {
   color: #989A9C;
   font-size: 1rem;
 }
 
-.emotion-14 {
+.emotion-9 {
   color: #989A9C;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -209,7 +209,7 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
 }
 
 <div
-  className="DayPicker DayPicker--interactionDisabled emotion-0 emotion-1"
+  className="DayPicker DayPicker--interactionDisabled emotion-0"
   lang="en"
 >
   <div
@@ -218,11 +218,11 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
     tabIndex={0}
   >
     <div
-      className="DayPicker-NavBar emotion-2"
+      className="DayPicker-NavBar emotion-1"
     >
       <button
         aria-label="Previous Month"
-        className="button--minimal emotion-3 emotion-4"
+        className="button--minimal emotion-2"
         disabled={false}
         fontWeight="medium"
         onClick={[Function]}
@@ -230,27 +230,27 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
         type="button"
       >
         <div
-          className="emotion-5 emotion-6"
+          className="emotion-3"
           display="inline-grid"
         >
           <i
-            className="ar ar-chevron emotion-7"
+            className="ar ar-chevron emotion-4"
             color="icon.default"
           />
         </div>
       </button>
       <div
-        className="emotion-8"
+        className="emotion-5"
       >
         <i
-          className="ar ar-symbol-circle emotion-9"
+          className="ar ar-symbol-circle emotion-6"
           color="icon.default"
           fontSize="size5"
         />
       </div>
       <button
         aria-label="Next Month"
-        className="button--minimal emotion-3 emotion-4"
+        className="button--minimal emotion-2"
         disabled={false}
         fontWeight="medium"
         onClick={[Function]}
@@ -258,11 +258,11 @@ exports[`<DatePicker /> properly renders a DatePicker 1`] = `
         type="button"
       >
         <div
-          className="emotion-5 emotion-6"
+          className="emotion-3"
           display="inline-grid"
         >
           <i
-            className="ar ar-chevron emotion-14"
+            className="ar ar-chevron emotion-9"
             color="icon.default"
           />
         </div>

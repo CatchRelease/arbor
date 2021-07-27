@@ -22,7 +22,7 @@ exports[`<Badge /> Colors properly renders a blue badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -35,7 +35,7 @@ exports[`<Badge /> Colors properly renders a blue badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -47,16 +47,16 @@ exports[`<Badge /> Colors properly renders a blue badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -90,7 +90,7 @@ exports[`<Badge /> Colors properly renders a brand badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -103,7 +103,7 @@ exports[`<Badge /> Colors properly renders a brand badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -115,16 +115,16 @@ exports[`<Badge /> Colors properly renders a brand badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -158,7 +158,7 @@ exports[`<Badge /> Colors properly renders a cyan badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -171,7 +171,7 @@ exports[`<Badge /> Colors properly renders a cyan badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -183,16 +183,16 @@ exports[`<Badge /> Colors properly renders a cyan badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -226,7 +226,7 @@ exports[`<Badge /> Colors properly renders a green badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -239,7 +239,7 @@ exports[`<Badge /> Colors properly renders a green badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -251,16 +251,16 @@ exports[`<Badge /> Colors properly renders a green badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -294,7 +294,7 @@ exports[`<Badge /> Colors properly renders a neutral badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -307,7 +307,7 @@ exports[`<Badge /> Colors properly renders a neutral badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -319,16 +319,16 @@ exports[`<Badge /> Colors properly renders a neutral badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -362,7 +362,7 @@ exports[`<Badge /> Colors properly renders a neutral badge 2`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -375,7 +375,7 @@ exports[`<Badge /> Colors properly renders a neutral badge 2`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -387,16 +387,16 @@ exports[`<Badge /> Colors properly renders a neutral badge 2`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -430,7 +430,7 @@ exports[`<Badge /> Colors properly renders a orange badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -443,7 +443,7 @@ exports[`<Badge /> Colors properly renders a orange badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -455,16 +455,16 @@ exports[`<Badge /> Colors properly renders a orange badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -498,7 +498,7 @@ exports[`<Badge /> Colors properly renders a pink badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -511,7 +511,7 @@ exports[`<Badge /> Colors properly renders a pink badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -523,16 +523,16 @@ exports[`<Badge /> Colors properly renders a pink badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -566,7 +566,7 @@ exports[`<Badge /> Colors properly renders a purple badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -579,7 +579,7 @@ exports[`<Badge /> Colors properly renders a purple badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -591,16 +591,16 @@ exports[`<Badge /> Colors properly renders a purple badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -634,7 +634,7 @@ exports[`<Badge /> Colors properly renders a red badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -647,7 +647,7 @@ exports[`<Badge /> Colors properly renders a red badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -659,16 +659,16 @@ exports[`<Badge /> Colors properly renders a red badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -702,7 +702,7 @@ exports[`<Badge /> Colors properly renders a teal badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -715,7 +715,7 @@ exports[`<Badge /> Colors properly renders a teal badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -727,16 +727,16 @@ exports[`<Badge /> Colors properly renders a teal badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -770,7 +770,7 @@ exports[`<Badge /> Colors properly renders a yellow badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -783,7 +783,7 @@ exports[`<Badge /> Colors properly renders a yellow badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -795,16 +795,16 @@ exports[`<Badge /> Colors properly renders a yellow badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -838,7 +838,7 @@ exports[`<Badge /> Subtle properly renders a subtle blue badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #213175;
   box-sizing: border-box;
@@ -851,7 +851,7 @@ exports[`<Badge /> Subtle properly renders a subtle blue badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #213175;
   font-size: 0.8125rem;
@@ -863,16 +863,16 @@ exports[`<Badge /> Subtle properly renders a subtle blue badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.blue.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.blue.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -906,7 +906,7 @@ exports[`<Badge /> Subtle properly renders a subtle brand badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #040e0b;
   box-sizing: border-box;
@@ -919,7 +919,7 @@ exports[`<Badge /> Subtle properly renders a subtle brand badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #040e0b;
   font-size: 0.8125rem;
@@ -931,16 +931,16 @@ exports[`<Badge /> Subtle properly renders a subtle brand badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.brand.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.brand.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -974,7 +974,7 @@ exports[`<Badge /> Subtle properly renders a subtle cyan badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #063f48;
   box-sizing: border-box;
@@ -987,7 +987,7 @@ exports[`<Badge /> Subtle properly renders a subtle cyan badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #063f48;
   font-size: 0.8125rem;
@@ -999,16 +999,16 @@ exports[`<Badge /> Subtle properly renders a subtle cyan badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.cyan.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.cyan.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -1042,7 +1042,7 @@ exports[`<Badge /> Subtle properly renders a subtle green badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #14431d;
   box-sizing: border-box;
@@ -1055,7 +1055,7 @@ exports[`<Badge /> Subtle properly renders a subtle green badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #14431d;
   font-size: 0.8125rem;
@@ -1067,16 +1067,16 @@ exports[`<Badge /> Subtle properly renders a subtle green badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.green.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.green.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -1110,7 +1110,7 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #070708;
   box-sizing: border-box;
@@ -1123,7 +1123,7 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #070708;
   font-size: 0.8125rem;
@@ -1135,16 +1135,16 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.neutral.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.neutral.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -1178,7 +1178,7 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 2`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #070708;
   box-sizing: border-box;
@@ -1191,7 +1191,7 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 2`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #070708;
   font-size: 0.8125rem;
@@ -1203,16 +1203,16 @@ exports[`<Badge /> Subtle properly renders a subtle neutral badge 2`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.neutral.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.neutral.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -1246,7 +1246,7 @@ exports[`<Badge /> Subtle properly renders a subtle orange badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #622902;
   box-sizing: border-box;
@@ -1259,7 +1259,7 @@ exports[`<Badge /> Subtle properly renders a subtle orange badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #622902;
   font-size: 0.8125rem;
@@ -1271,16 +1271,16 @@ exports[`<Badge /> Subtle properly renders a subtle orange badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.orange.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.orange.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -1314,7 +1314,7 @@ exports[`<Badge /> Subtle properly renders a subtle pink badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #6b1936;
   box-sizing: border-box;
@@ -1327,7 +1327,7 @@ exports[`<Badge /> Subtle properly renders a subtle pink badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #6b1936;
   font-size: 0.8125rem;
@@ -1339,16 +1339,16 @@ exports[`<Badge /> Subtle properly renders a subtle pink badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.pink.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.pink.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -1382,7 +1382,7 @@ exports[`<Badge /> Subtle properly renders a subtle purple badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #382474;
   box-sizing: border-box;
@@ -1395,7 +1395,7 @@ exports[`<Badge /> Subtle properly renders a subtle purple badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #382474;
   font-size: 0.8125rem;
@@ -1407,16 +1407,16 @@ exports[`<Badge /> Subtle properly renders a subtle purple badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.purple.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.purple.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -1450,7 +1450,7 @@ exports[`<Badge /> Subtle properly renders a subtle red badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #6c1c1c;
   box-sizing: border-box;
@@ -1463,7 +1463,7 @@ exports[`<Badge /> Subtle properly renders a subtle red badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #6c1c1c;
   font-size: 0.8125rem;
@@ -1475,16 +1475,16 @@ exports[`<Badge /> Subtle properly renders a subtle red badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.red.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.red.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -1518,7 +1518,7 @@ exports[`<Badge /> Subtle properly renders a subtle teal badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #044231;
   box-sizing: border-box;
@@ -1531,7 +1531,7 @@ exports[`<Badge /> Subtle properly renders a subtle teal badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #044231;
   font-size: 0.8125rem;
@@ -1543,16 +1543,16 @@ exports[`<Badge /> Subtle properly renders a subtle teal badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.teal.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.teal.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -1586,7 +1586,7 @@ exports[`<Badge /> Subtle properly renders a subtle yellow badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #513400;
   box-sizing: border-box;
@@ -1599,7 +1599,7 @@ exports[`<Badge /> Subtle properly renders a subtle yellow badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #513400;
   font-size: 0.8125rem;
@@ -1611,16 +1611,16 @@ exports[`<Badge /> Subtle properly renders a subtle yellow badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="palette.yellow.dark"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="palette.yellow.dark"
       fontSize="size3"
       fontWeight="medium"
@@ -1654,7 +1654,7 @@ exports[`<Badge /> Variants properly renders a default badge 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -1667,7 +1667,7 @@ exports[`<Badge /> Variants properly renders a default badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -1679,16 +1679,16 @@ exports[`<Badge /> Variants properly renders a default badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -1722,7 +1722,7 @@ exports[`<Badge /> Variants properly renders a pill badge 1`] = `
   border-radius: 999px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -1735,7 +1735,7 @@ exports[`<Badge /> Variants properly renders a pill badge 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -1747,16 +1747,16 @@ exports[`<Badge /> Variants properly renders a pill badge 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -1790,7 +1790,7 @@ exports[`<Badge /> iconEnd properly renders a badge with an ending icon 1`] = `
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -1803,7 +1803,7 @@ exports[`<Badge /> iconEnd properly renders a badge with an ending icon 1`] = `
   grid-gap: 0.25rem;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -1815,16 +1815,16 @@ exports[`<Badge /> iconEnd properly renders a badge with an ending icon 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <span
-      className="emotion-3"
+      className="emotion-2"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -1833,7 +1833,7 @@ exports[`<Badge /> iconEnd properly renders a badge with an ending icon 1`] = `
       Badge Text
     </span>
     <i
-      className="ar ar-cr-logo emotion-4"
+      className="ar ar-cr-logo emotion-3"
     />
   </div>
 </div>
@@ -1861,7 +1861,7 @@ exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a st
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -1874,7 +1874,7 @@ exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a st
   grid-gap: 0.25rem;
 }
 
-.emotion-4 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -1886,19 +1886,19 @@ exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a st
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <i
-      className="ar ar-cr-logo emotion-3"
+      className="ar ar-cr-logo emotion-2"
     />
     <span
-      className="emotion-4"
+      className="emotion-3"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
@@ -1907,7 +1907,7 @@ exports[`<Badge /> iconStart and iconEnd properly renders a badge with both a st
       Badge Text
     </span>
     <i
-      className="ar ar-cr-logo emotion-3"
+      className="ar ar-cr-logo emotion-2"
     />
   </div>
 </div>
@@ -1935,7 +1935,7 @@ exports[`<Badge /> iconStart properly renders a badge with a starting icon 1`] =
   border-radius: 2px;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   box-sizing: border-box;
@@ -1948,7 +1948,7 @@ exports[`<Badge /> iconStart properly renders a badge with a starting icon 1`] =
   grid-gap: 0.25rem;
 }
 
-.emotion-4 {
+.emotion-3 {
   font-family: Motiva Sans;
   color: #FFFFFF;
   font-size: 0.8125rem;
@@ -1960,19 +1960,19 @@ exports[`<Badge /> iconStart properly renders a badge with a starting icon 1`] =
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   height="24px"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
     color="monochrome.white"
     display="grid"
   >
     <i
-      className="ar ar-cr-logo emotion-3"
+      className="ar ar-cr-logo emotion-2"
     />
     <span
-      className="emotion-4"
+      className="emotion-3"
       color="monochrome.white"
       fontSize="size3"
       fontWeight="medium"
