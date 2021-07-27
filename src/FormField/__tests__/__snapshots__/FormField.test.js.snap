@@ -5,7 +5,7 @@ exports[`<FormField /> renders a FormField correctly 1`] = `
   margin-bottom: 1rem;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -19,10 +19,10 @@ exports[`<FormField /> renders a FormField correctly 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
   >
     
   </div>
@@ -36,7 +36,7 @@ exports[`<FormField /> renders a FormField with a caption correctly 1`] = `
   margin-bottom: 0.5rem;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -49,7 +49,7 @@ exports[`<FormField /> renders a FormField with a caption correctly 1`] = `
   align-items: center;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -57,16 +57,16 @@ exports[`<FormField /> renders a FormField with a caption correctly 1`] = `
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
   >
     
   </div>
   Field Child
   <span
-    className="emotion-3"
+    className="emotion-2"
     color="palette.red.default"
   >
     I am a caption
@@ -79,7 +79,7 @@ exports[`<FormField /> with label renders a FormField with a label correctly 1`]
   margin-bottom: 1rem;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -92,7 +92,7 @@ exports[`<FormField /> with label renders a FormField with a label correctly 1`]
   align-items: center;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -108,7 +108,7 @@ exports[`<FormField /> with label renders a FormField with a label correctly 1`]
   flex: 1;
 }
 
-.emotion-4 {
+.emotion-3 {
   color: #5B5D61;
   display: block;
   font-family: Motiva Sans;
@@ -117,16 +117,16 @@ exports[`<FormField /> with label renders a FormField with a label correctly 1`]
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
   >
     <div
-      className="emotion-3"
+      className="emotion-2"
     >
       <label
-        className="emotion-4 emotion-5"
+        className="emotion-3"
         htmlFor="example"
       >
         My label
@@ -143,7 +143,7 @@ exports[`<FormField /> with labelAside renders a FormField with a label correctl
   margin-bottom: 1rem;
 }
 
-.emotion-2 {
+.emotion-1 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -156,7 +156,7 @@ exports[`<FormField /> with labelAside renders a FormField with a label correctl
   align-items: center;
 }
 
-.emotion-3 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -172,7 +172,7 @@ exports[`<FormField /> with labelAside renders a FormField with a label correctl
   flex: 1;
 }
 
-.emotion-4 {
+.emotion-3 {
   color: #5B5D61;
   display: block;
   font-family: Motiva Sans;
@@ -180,7 +180,7 @@ exports[`<FormField /> with labelAside renders a FormField with a label correctl
   line-height: 1.5;
 }
 
-.emotion-6 {
+.emotion-4 {
   font-family: Motiva Sans;
   color: #5B5D61;
   font-size: 0.875rem;
@@ -192,23 +192,23 @@ exports[`<FormField /> with labelAside renders a FormField with a label correctl
 }
 
 <div
-  className="emotion-0 emotion-1"
+  className="emotion-0"
 >
   <div
-    className="emotion-2"
+    className="emotion-1"
   >
     <div
-      className="emotion-3"
+      className="emotion-2"
     >
       <label
-        className="emotion-4 emotion-5"
+        className="emotion-3"
         htmlFor="example"
       >
         My label
       </label>
     </div>
     <div
-      className="emotion-6"
+      className="emotion-4"
       color="text.muted"
       fontSize="size4"
     >

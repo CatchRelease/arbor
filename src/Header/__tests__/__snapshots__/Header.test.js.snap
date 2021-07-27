@@ -103,7 +103,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
   color: inherit;
 }
 
-.emotion-4 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -115,7 +115,7 @@ exports[`<Header /> renders with heading and a button 1`] = `
   visibility: inherit;
 }
 
-.emotion-6 {
+.emotion-4 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
@@ -135,17 +135,17 @@ exports[`<Header /> renders with heading and a button 1`] = `
     My Heading
   </h1>
   <button
-    className="button--primary emotion-2 emotion-3"
+    className="button--primary emotion-2"
     disabled={false}
     fontWeight="medium"
     size="large"
   >
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-3"
       display="inline-grid"
     >
       <p
-        className="emotion-6"
+        className="emotion-4"
         color="inherit"
         fontSize="inherit"
       >
@@ -306,7 +306,7 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   color: #989A9C;
 }
 
-.emotion-4 {
+.emotion-3 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: inline-grid;
@@ -318,14 +318,14 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   visibility: inherit;
 }
 
-.emotion-6 {
+.emotion-4 {
   font-family: Motiva Sans;
   color: inherit;
   font-size: inherit;
   line-height: 1.25;
 }
 
-.emotion-7 {
+.emotion-5 {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -345,63 +345,63 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
   border-radius: 3px;
 }
 
-.emotion-7:disabled {
+.emotion-5:disabled {
   background: #EBECEC;
   border: 1px solid transparent;
   color: rgba(120,121,125,0.7);
   cursor: not-allowed;
 }
 
-.emotion-7:enabled {
+.emotion-5:enabled {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.emotion-7 i {
+.emotion-5 i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   vertical-align: middle;
 }
 
-.emotion-7 i {
+.emotion-5 i {
   width: 2.5rem;
   font-size: 0.875rem;
 }
 
-.emotion-7 i:first-child {
+.emotion-5 i:first-child {
   margin-left: -1.25rem;
 }
 
-.emotion-7 i:last-child {
+.emotion-5 i:last-child {
   margin-right: -1.25rem;
 }
 
-.emotion-7:enabled:active {
+.emotion-5:enabled:active {
   background-color: #061813;
 }
 
-.emotion-7:enabled:focus {
+.emotion-5:enabled:focus {
   box-shadow: 0 0 0 3px #B6EFD0;
 }
 
-.emotion-7:enabled:hover {
+.emotion-5:enabled:hover {
   background-color: #2f413c;
 }
 
-.emotion-7::-moz-focus-inner {
+.emotion-5::-moz-focus-inner {
   border: 0;
 }
 
-.emotion-7:focus {
+.emotion-5:focus {
   border: 1px solid transparent;
 }
 
-.emotion-7:focus:hover {
+.emotion-5:focus:hover {
   border: 1px solid transparent;
 }
 
-.emotion-7 i {
+.emotion-5 i {
   color: inherit;
 }
 
@@ -418,17 +418,17 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
     My Heading
   </h1>
   <button
-    className="button--secondary emotion-2 emotion-3"
+    className="button--secondary emotion-2"
     disabled={false}
     fontWeight="medium"
     size="large"
   >
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-3"
       display="inline-grid"
     >
       <p
-        className="emotion-6"
+        className="emotion-4"
         color="inherit"
         fontSize="inherit"
       >
@@ -437,17 +437,17 @@ exports[`<Header /> renders with heaeding and multiple buttons 1`] = `
     </div>
   </button>
   <button
-    className="button--primary emotion-7 emotion-3"
+    className="button--primary emotion-5"
     disabled={false}
     fontWeight="medium"
     size="large"
   >
     <div
-      className="emotion-4 emotion-5"
+      className="emotion-3"
       display="inline-grid"
     >
       <p
-        className="emotion-6"
+        className="emotion-4"
         color="inherit"
         fontSize="inherit"
       >

@@ -39,7 +39,7 @@ section:last-child .emotion-0 {
   border-bottom: none;
 }
 
-.emotion-3 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -62,7 +62,7 @@ section:last-child .emotion-0 {
   margin-bottom: 0;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -80,7 +80,7 @@ section:last-child .emotion-0 {
   padding: 0;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -91,11 +91,11 @@ section:last-child .emotion-0 {
 <header
   aria-controls="my-accordion-1"
   aria-expanded={false}
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   onClick={[Function]}
 >
   <h1
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     color="text.dark"
     fontSize="size4"
     fontWeight="medium"
@@ -103,10 +103,10 @@ section:last-child .emotion-0 {
     <span
       aria-controls="my-accordion-1"
       aria-expanded={false}
-      className="emotion-4 emotion-5"
+      className="emotion-2"
     >
       <i
-        className="ar ar-chevron emotion-6"
+        className="ar ar-chevron emotion-3"
       />
       My Heading
     </span>
@@ -153,7 +153,7 @@ section:last-child .emotion-0 {
   border-bottom: none;
 }
 
-.emotion-3 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -176,7 +176,7 @@ section:last-child .emotion-0 {
   margin-bottom: 0;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -194,7 +194,7 @@ section:last-child .emotion-0 {
   padding: 0;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -205,11 +205,11 @@ section:last-child .emotion-0 {
 <header
   aria-controls="my-accordion-1"
   aria-expanded={false}
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   onClick={[Function]}
 >
   <h1
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     color="text.dark"
     fontSize="size4"
     fontWeight="medium"
@@ -217,10 +217,10 @@ section:last-child .emotion-0 {
     <span
       aria-controls="my-accordion-1"
       aria-expanded={false}
-      className="emotion-4 emotion-5"
+      className="emotion-2"
     >
       <i
-        className="ar ar-chevron emotion-6"
+        className="ar ar-chevron emotion-3"
       />
       My Heading
     </span>
@@ -268,7 +268,7 @@ section:last-child .emotion-0 {
   border-bottom: none;
 }
 
-.emotion-3 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -291,7 +291,7 @@ section:last-child .emotion-0 {
   margin-bottom: 0;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -309,7 +309,7 @@ section:last-child .emotion-0 {
   padding: 0;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin-right: 0.75rem;
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -320,11 +320,11 @@ section:last-child .emotion-0 {
 <header
   aria-controls="my-accordion-1"
   aria-expanded={false}
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   onClick={[MockFunction]}
 >
   <h1
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     color="text.dark"
     fontSize="size4"
     fontWeight="medium"
@@ -332,10 +332,10 @@ section:last-child .emotion-0 {
     <span
       aria-controls="my-accordion-1"
       aria-expanded={false}
-      className="emotion-4 emotion-5"
+      className="emotion-2"
     >
       <i
-        className="ar ar-chevron emotion-6"
+        className="ar ar-chevron emotion-3"
       />
       My Heading
     </span>
@@ -382,7 +382,7 @@ section:last-child .emotion-0 {
   border-bottom: none;
 }
 
-.emotion-3 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -405,7 +405,7 @@ section:last-child .emotion-0 {
   margin-bottom: 0;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -423,7 +423,7 @@ section:last-child .emotion-0 {
   padding: 0;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin-right: 0.75rem;
   margin-left: 0.25rem;
   -webkit-transform: rotate(270deg);
@@ -435,11 +435,11 @@ section:last-child .emotion-0 {
 <header
   aria-controls="my-accordion-1"
   aria-expanded={false}
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   onClick={[Function]}
 >
   <h1
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     color="text.dark"
     fontSize="size4"
     fontWeight="medium"
@@ -447,11 +447,11 @@ section:last-child .emotion-0 {
     <span
       aria-controls="my-accordion-1"
       aria-expanded={false}
-      className="emotion-4 emotion-5"
+      className="emotion-2"
     >
       My Heading
       <i
-        className="ar ar-chevron emotion-6"
+        className="ar ar-chevron emotion-3"
       />
     </span>
   </h1>
@@ -497,7 +497,7 @@ section:last-child .emotion-0 {
   border-bottom: none;
 }
 
-.emotion-3 {
+.emotion-1 {
   font-family: Motiva Sans;
   color: #0F0F10;
   font-size: 0.875rem;
@@ -520,7 +520,7 @@ section:last-child .emotion-0 {
   margin-bottom: 0;
 }
 
-.emotion-4 {
+.emotion-2 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -538,18 +538,18 @@ section:last-child .emotion-0 {
   padding: 0;
 }
 
-.emotion-6 {
+.emotion-3 {
   margin-right: 0.75rem;
 }
 
 <header
   aria-controls="my-accordion-1"
   aria-expanded={true}
-  className="emotion-0 emotion-1"
+  className="emotion-0"
   onClick={[Function]}
 >
   <h1
-    className="emotion-2 emotion-3"
+    className="emotion-1"
     color="text.dark"
     fontSize="size4"
     fontWeight="medium"
@@ -557,10 +557,10 @@ section:last-child .emotion-0 {
     <span
       aria-controls="my-accordion-1"
       aria-expanded={true}
-      className="emotion-4 emotion-5"
+      className="emotion-2"
     >
       <i
-        className="ar ar-chevron emotion-6"
+        className="ar ar-chevron emotion-3"
       />
       My Heading
     </span>

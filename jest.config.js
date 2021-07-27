@@ -1,5 +1,5 @@
 module.exports = {
-  preset: 'ts-jest/presets/js-with-babel',
+  preset: 'ts-jest/presets/js-with-ts',
   testEnvironment: 'jsdom',
   verbose: true,
   snapshotSerializers: ['@emotion/jest/enzyme-serializer'],
