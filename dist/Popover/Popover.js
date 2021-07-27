@@ -1,30 +1,4 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -39,34 +13,33 @@ var __rest = (this && this.__rest) || function (s, e) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-exports.__esModule = true;
-var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-var react_1 = require("react");
-var react_popover_1 = __importDefault(require("react-popover"));
-var prop_types_1 = __importDefault(require("prop-types"));
-var PopoverContent_1 = __importDefault(require("./PopoverContent"));
-var Popover = /** @class */ (function (_super) {
-    __extends(Popover, _super);
-    function Popover(props) {
-        var _this = _super.call(this, props) || this;
-        _this.handleOutsideClick = function (e) {
-            var isOpen = _this.state.isOpen;
+Object.defineProperty(exports, "__esModule", { value: true });
+const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+const react_1 = require("react");
+const react_popover_1 = __importDefault(require("react-popover"));
+const prop_types_1 = __importDefault(require("prop-types"));
+const PopoverContent_1 = __importDefault(require("./PopoverContent"));
+class Popover extends react_1.Component {
+    constructor(props) {
+        super(props);
+        this.handleOutsideClick = (e) => {
+            const { isOpen } = this.state;
             if (!isOpen) {
                 return;
             }
-            var currentRef = _this.node.current;
+            const currentRef = this.node.current;
             if (!currentRef.containerEl.contains(e.target) &&
                 !currentRef.targetEl.contains(e.target)) {
-                _this.close();
+                this.close();
             }
         };
-        _this.handleKeyboard = function (e) {
+        this.handleKeyboard = (e) => {
             if (e.key === 'Escape') {
-                _this.close();
+                this.close();
             }
         };
-        _this.toggle = function (e) {
-            var isOpen = _this.state.isOpen;
+        this.toggle = (e) => {
+            const { isOpen } = this.state;
             if (e) {
                 if (typeof e.preventDefault === 'function') {
                     e.preventDefault();
@@ -76,87 +49,85 @@ var Popover = /** @class */ (function (_super) {
                 }
             }
             if (isOpen) {
-                _this.close();
+                this.close();
             }
             else {
-                _this.open();
+                this.open();
             }
         };
-        _this.state = {
+        this.state = {
             isOpen: false
         };
-        _this.node = react_1.createRef();
-        return _this;
+        this.node = react_1.createRef();
     }
-    Popover.prototype.componentDidMount = function () {
+    componentDidMount() {
         document.addEventListener('click', this.handleOutsideClick, true);
         document.addEventListener('keypress', this.handleKeyboard, true);
-    };
-    Popover.prototype.componentWillUnmount = function () {
+    }
+    componentWillUnmount() {
         document.removeEventListener('click', this.handleOutsideClick, true);
         document.removeEventListener('keypress', this.handleKeyboard, true);
-    };
-    Popover.prototype.open = function (callback) {
-        var onOpen = this.props.onOpen;
-        var isOpen = this.state.isOpen;
+    }
+    open(callback) {
+        const { onOpen } = this.props;
+        const { isOpen } = this.state;
         if (isOpen) {
             return;
         }
-        this.setState({ isOpen: true }, function () {
+        this.setState({ isOpen: true }, () => {
             if (callback) {
                 callback();
             }
             onOpen();
         });
-    };
-    Popover.prototype.close = function () {
-        var onClose = this.props.onClose;
-        var isOpen = this.state.isOpen;
+    }
+    close() {
+        const { onClose } = this.props;
+        const { isOpen } = this.state;
         if (!isOpen) {
             return;
         }
         this.setState({ isOpen: false }, onClose);
-    };
-    Popover.prototype.render = function () {
-        var _a = this.props, children = _a.children, content = _a.content, contentProps = _a.contentProps, preferPlace = _a.preferPlace, place = _a.place, popoverProps = __rest(_a, ["children", "content", "contentProps", "preferPlace", "place"]);
-        var isOpen = this.state.isOpen;
-        var styledContent = (jsx_runtime_1.jsx(PopoverContent_1["default"], __assign({}, contentProps, { children: content }), void 0));
-        var trigger = react_1.cloneElement(children, {
+    }
+    render() {
+        const _a = this.props, { children, content, contentProps, preferPlace, place } = _a, popoverProps = __rest(_a, ["children", "content", "contentProps", "preferPlace", "place"]);
+        const { isOpen } = this.state;
+        const styledContent = (jsx_runtime_1.jsx(PopoverContent_1.default, Object.assign({}, contentProps, { children: content }), void 0));
+        const trigger = react_1.cloneElement(children, {
             onClick: this.toggle
         });
-        return (jsx_runtime_1.jsx(react_popover_1["default"], __assign({ ref: this.node, isOpen: isOpen, body: styledContent, preferPlace: preferPlace, place: place, tipSize: 0.01, enterExitTransitionDurationMs: 0 }, popoverProps, { children: trigger }), void 0));
-    };
-    return Popover;
-}(react_1.Component));
+        return (jsx_runtime_1.jsx(react_popover_1.default, Object.assign({ ref: this.node, isOpen: isOpen, body: styledContent, preferPlace: preferPlace, place: place, tipSize: 0.01, enterExitTransitionDurationMs: 0 }, popoverProps, { children: trigger }), void 0));
+    }
+}
 Popover.propTypes = {
     /**
      * Content to display within the Popover
      */
-    content: prop_types_1["default"].node.isRequired,
+    content: prop_types_1.default.node.isRequired,
     /**
      * Props to be passed to the PopoverContent component
      */
-    contentProps: prop_types_1["default"].object,
+    contentProps: prop_types_1.default.object,
     /**
      * The trigger which will open the popover when it is clicked. By default,
      * the child will be cloned and an onClick handler will be attached to open
      * the popover when it is clicked.
      */
-    children: prop_types_1["default"].node.isRequired,
+    children: prop_types_1.default.node.isRequired,
     /**
      * Optional callback that will be fired once the Popover's state is set to opened
      */
-    onOpen: prop_types_1["default"].func,
+    onOpen: prop_types_1.default.func,
     /**
      * Optional callback that will be fired once the Popover's state is set to closed
      */
-    onClose: prop_types_1["default"].func,
+    onClose: prop_types_1.default.func,
     /**
      * Preferred location to place the popover when it's opened in the event that
      * there are multiple available areas where the popover would fit. This list
      * is based off the supported places provided by [littlebits/react-popover](https://github.com/littlebits/react-popover#preferplace--enum-string--null)
      */
-    preferPlace: prop_types_1["default"].oneOf([
+    preferPlace: prop_types_1.default.oneOf([
         'above',
         'right',
         'below',
@@ -171,7 +142,7 @@ Popover.propTypes = {
      * there are multiple available areas where the popover would fit. This list
      * is based off the supported places provided by [littlebits/react-popover](https://github.com/littlebits/react-popover#code-place-string-null-code)
      */
-    place: prop_types_1["default"].oneOf([
+    place: prop_types_1.default.oneOf([
         'above',
         'right',
         'below',
@@ -186,7 +157,7 @@ Popover.defaultProps = {
     contentProps: {},
     preferPlace: 'below',
     place: 'column',
-    onOpen: function () { return null; },
-    onClose: function () { return null; }
+    onOpen: () => null,
+    onClose: () => null
 };
-exports["default"] = Popover;
+exports.default = Popover;

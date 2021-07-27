@@ -1,4 +1,4 @@
 "use strict";
-exports.__esModule = true;
-var SIZES = ['jumbo', 'large', 'medium', 'small'];
-exports["default"] = SIZES;
+Object.defineProperty(exports, "__esModule", { value: true });
+const SIZES = ['jumbo', 'large', 'medium', 'small'];
+exports.default = SIZES;

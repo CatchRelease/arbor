@@ -1,53 +1,26 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        if (typeof b !== "function" && b !== null)
-            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-exports.__esModule = true;
-var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-var react_1 = require("@emotion/react");
-var react_2 = require("react");
-var prop_types_1 = __importDefault(require("prop-types"));
-var Button_1 = __importDefault(require("../Button"));
-var DELTA = 2;
-var ELLIPSIS = '...';
-var Pagination = /** @class */ (function (_super) {
-    __extends(Pagination, _super);
-    function Pagination() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.getPaginationOptions = function () {
-            var _a = _this.props, currentPage = _a.currentPage, totalPages = _a.totalPages;
-            var left = currentPage <= 1 + DELTA * 2 ? 1 : currentPage - DELTA;
-            var right = currentPage >= totalPages - DELTA * 2
+Object.defineProperty(exports, "__esModule", { value: true });
+const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+const react_1 = require("@emotion/react");
+const react_2 = require("react");
+const prop_types_1 = __importDefault(require("prop-types"));
+const Button_1 = __importDefault(require("../Button"));
+const DELTA = 2;
+const ELLIPSIS = '...';
+class Pagination extends react_2.Component {
+    constructor() {
+        super(...arguments);
+        this.getPaginationOptions = () => {
+            const { currentPage, totalPages } = this.props;
+            const left = currentPage <= 1 + DELTA * 2 ? 1 : currentPage - DELTA;
+            const right = currentPage >= totalPages - DELTA * 2
                 ? totalPages
                 : currentPage + DELTA + 1;
-            var items = [];
-            for (var i = 1; i <= totalPages; i += 1) {
+            const items = [];
+            for (let i = 1; i <= totalPages; i += 1) {
                 if (i === 1 || i === totalPages || (i >= left && i < right)) {
                     items.push(i);
                 }
@@ -57,68 +30,66 @@ var Pagination = /** @class */ (function (_super) {
             }
             return items;
         };
-        _this.paginate = function (newPage) {
-            var paginate = _this.props.paginate;
+        this.paginate = (newPage) => {
+            const { paginate } = this.props;
             paginate(newPage);
         };
-        _this.renderPaginationItem = function (item, index) {
-            var _a = _this.props, currentPage = _a.currentPage, size = _a.size;
-            var paginationItem;
+        this.renderPaginationItem = (item, index) => {
+            const { currentPage, size } = this.props;
+            let paginationItem;
             if (item === ELLIPSIS) {
-                paginationItem = (react_1.createElement(Button_1["default"], __assign({}, { size: size }, { variant: "minimal", mx: "smallest", key: item + "-" + index, disabled: true }), item));
+                paginationItem = (react_1.createElement(Button_1.default, Object.assign({}, { size }, { variant: "minimal", mx: "smallest", key: `${item}-${index}`, disabled: true }), item));
             }
             else {
-                var variant = currentPage === item ? 'primary' : 'minimal';
-                paginationItem = (react_1.createElement(Button_1["default"], __assign({}, { size: size, variant: variant }, { mx: "smallest", key: item + "-" + index, onClick: function () { return _this.paginate(item); } }), item));
+                const variant = currentPage === item ? 'primary' : 'minimal';
+                paginationItem = (react_1.createElement(Button_1.default, Object.assign({}, { size, variant }, { mx: "smallest", key: `${item}-${index}`, onClick: () => this.paginate(item) }), item));
             }
             return paginationItem;
         };
-        _this.renderPreviousItem = function () {
-            var _a = _this.props, currentPage = _a.currentPage, previousText = _a.previousText, size = _a.size;
-            var previousDisabled = currentPage === 1;
-            return (react_1.createElement(Button_1["default"], __assign({}, { size: size }, { variant: "minimal", mr: "small", key: "pagination-previous", disabled: previousDisabled, onClick: function () { return _this.paginate(currentPage - 1); } }), previousText));
+        this.renderPreviousItem = () => {
+            const { currentPage, previousText, size } = this.props;
+            const previousDisabled = currentPage === 1;
+            return (react_1.createElement(Button_1.default, Object.assign({}, { size }, { variant: "minimal", mr: "small", key: "pagination-previous", disabled: previousDisabled, onClick: () => this.paginate(currentPage - 1) }), previousText));
         };
-        _this.renderNextItem = function () {
-            var _a = _this.props, currentPage = _a.currentPage, totalPages = _a.totalPages, nextText = _a.nextText, size = _a.size;
-            var nextDisabled = currentPage === totalPages;
-            return (react_1.createElement(Button_1["default"], __assign({}, { size: size }, { variant: "minimal", ml: "small", key: "pagination-next", disabled: nextDisabled, onClick: function () { return _this.paginate(currentPage + 1); } }), nextText));
+        this.renderNextItem = () => {
+            const { currentPage, totalPages, nextText, size } = this.props;
+            const nextDisabled = currentPage === totalPages;
+            return (react_1.createElement(Button_1.default, Object.assign({}, { size }, { variant: "minimal", ml: "small", key: "pagination-next", disabled: nextDisabled, onClick: () => this.paginate(currentPage + 1) }), nextText));
         };
-        return _this;
     }
-    Pagination.prototype.render = function () {
-        var _a = this.props, currentPage = _a.currentPage, totalPages = _a.totalPages;
+    render() {
+        const { currentPage, totalPages } = this.props;
         if (!currentPage || !totalPages || totalPages <= 1) {
             return null;
         }
         return (jsx_runtime_1.jsxs("div", { children: [this.renderPreviousItem(), this.getPaginationOptions().map(this.renderPaginationItem), this.renderNextItem()] }, void 0));
-    };
-    return Pagination;
-}(react_2.Component));
+    }
+}
 Pagination.propTypes = {
     /**
      * The current page that the user is on.
      */
-    currentPage: prop_types_1["default"].number,
+    currentPage: prop_types_1.default.number,
     /**
      * Text to display in the 'Next' button
      */
-    nextText: prop_types_1["default"].string,
+    nextText: prop_types_1.default.string,
     /**
      * Callback to perform pagination
      */
-    paginate: prop_types_1["default"].func.isRequired,
+    paginate: prop_types_1.default.func.isRequired,
     /**
      * Text to display in the 'Previous' button
      */
-    previousText: prop_types_1["default"].string,
+    previousText: prop_types_1.default.string,
     /**
      * Size variants for styling. See storybook for examples.
      */
-    size: prop_types_1["default"].oneOf(['small', 'medium']),
+    size: prop_types_1.default.oneOf(['small', 'medium']),
     /**
      * Total number of pages of content that exist.
      */
-    totalPages: prop_types_1["default"].number
+    totalPages: prop_types_1.default.number
 };
 Pagination.defaultProps = {
     currentPage: 0,
@@ -127,4 +98,4 @@ Pagination.defaultProps = {
     size: 'small',
     totalPages: 0
 };
-exports["default"] = Pagination;
+exports.default = Pagination;

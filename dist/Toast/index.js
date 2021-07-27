@@ -1,16 +1,12 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-exports.__esModule = true;
-exports.ToastContainer = exports.toast = exports["default"] = void 0;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ToastContainer = exports.toast = exports.default = void 0;
 var toast_1 = require("./toast");
-__createBinding(exports, toast_1, "default");
+Object.defineProperty(exports, "default", { enumerable: true, get: function () { return __importDefault(toast_1).default; } });
 var toast_2 = require("./toast");
-__createBinding(exports, toast_2, "default", "toast");
+Object.defineProperty(exports, "toast", { enumerable: true, get: function () { return __importDefault(toast_2).default; } });
 var ToastContainer_1 = require("./ToastContainer");
-__createBinding(exports, ToastContainer_1, "default", "ToastContainer");
+Object.defineProperty(exports, "ToastContainer", { enumerable: true, get: function () { return __importDefault(ToastContainer_1).default; } });

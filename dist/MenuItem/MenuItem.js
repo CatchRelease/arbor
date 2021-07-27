@@ -1,15 +1,4 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -24,25 +13,25 @@ var __rest = (this && this.__rest) || function (s, e) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-exports.__esModule = true;
-var jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-var prop_types_1 = __importDefault(require("prop-types"));
-var StyledMenuItem_1 = __importDefault(require("./StyledMenuItem"));
-var MenuItem = function (_a) {
-    var innerRef = _a.innerRef, children = _a.children, props = __rest(_a, ["innerRef", "children"]);
-    return (jsx_runtime_1.jsx(StyledMenuItem_1["default"], __assign({ ref: innerRef }, props, { children: children }), void 0));
+Object.defineProperty(exports, "__esModule", { value: true });
+const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+const prop_types_1 = __importDefault(require("prop-types"));
+const StyledMenuItem_1 = __importDefault(require("./StyledMenuItem"));
+const MenuItem = (_a) => {
+    var { innerRef, children } = _a, props = __rest(_a, ["innerRef", "children"]);
+    return (jsx_runtime_1.jsx(StyledMenuItem_1.default, Object.assign({ ref: innerRef }, props, { children: children }), void 0));
 };
 MenuItem.propTypes = {
     /**
      * Content to render inside the menu item
      * */
-    children: prop_types_1["default"].oneOfType([
-        prop_types_1["default"].node,
-        prop_types_1["default"].arrayOf(prop_types_1["default"].node)
+    children: prop_types_1.default.oneOfType([
+        prop_types_1.default.node,
+        prop_types_1.default.arrayOf(prop_types_1.default.node)
     ]).isRequired,
-    innerRef: prop_types_1["default"].func
+    innerRef: prop_types_1.default.func
 };
 MenuItem.defaultProps = {
     innerRef: undefined
 };
-exports["default"] = MenuItem;
+exports.default = MenuItem;

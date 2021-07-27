@@ -1,10 +1,66 @@
 "use strict";
-var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-exports.__esModule = true;
-var react_1 = require("@emotion/react");
-var toastCSS = react_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  .Toastify {\n    .arbor-toast-container {\n      display: grid;\n      height: 0;\n      justify-content: center;\n      left: 0;\n      position: fixed;\n      top: 0;\n      width: 100%;\n    }\n\n    .arbor-toast {\n      margin-top: 16px;\n      max-width: 90vw;\n    }\n  }\n\n  @keyframes toastSlideIn {\n    from {\n      opacity: 0;\n      transform: translate(0, -100px);\n    }\n\n    50% {\n      opacity: 0;\n    }\n\n    to {\n      opacity: 1;\n      transform: translate(0, 0);\n    }\n  }\n\n  .toastSlideIn {\n    animation-duration: 500ms;\n    animation-fill-mode: forwards;\n    animation-name: toastSlideIn;\n  }\n\n  @keyframes toastSlideOut {\n    from {\n      opacity: 1;\n      transform: translate(0, 0);\n    }\n\n    50% {\n      opacity: 0;\n    }\n\n    to {\n      opacity: 0;\n      transform: translate(0, -100px);\n    }\n  }\n\n  .toastSlideOut {\n    animation-duration: 500ms;\n    animation-fill-mode: forwards;\n    animation-name: toastSlideOut;\n  }\n"], ["\n  .Toastify {\n    .arbor-toast-container {\n      display: grid;\n      height: 0;\n      justify-content: center;\n      left: 0;\n      position: fixed;\n      top: 0;\n      width: 100%;\n    }\n\n    .arbor-toast {\n      margin-top: 16px;\n      max-width: 90vw;\n    }\n  }\n\n  @keyframes toastSlideIn {\n    from {\n      opacity: 0;\n      transform: translate(0, -100px);\n    }\n\n    50% {\n      opacity: 0;\n    }\n\n    to {\n      opacity: 1;\n      transform: translate(0, 0);\n    }\n  }\n\n  .toastSlideIn {\n    animation-duration: 500ms;\n    animation-fill-mode: forwards;\n    animation-name: toastSlideIn;\n  }\n\n  @keyframes toastSlideOut {\n    from {\n      opacity: 1;\n      transform: translate(0, 0);\n    }\n\n    50% {\n      opacity: 0;\n    }\n\n    to {\n      opacity: 0;\n      transform: translate(0, -100px);\n    }\n  }\n\n  .toastSlideOut {\n    animation-duration: 500ms;\n    animation-fill-mode: forwards;\n    animation-name: toastSlideOut;\n  }\n"])));
-exports["default"] = toastCSS;
-var templateObject_1;
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = require("@emotion/react");
+const toastCSS = react_1.css `
+  .Toastify {
+    .arbor-toast-container {
+      display: grid;
+      height: 0;
+      justify-content: center;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .arbor-toast {
+      margin-top: 16px;
+      max-width: 90vw;
+    }
+  }
+
+  @keyframes toastSlideIn {
+    from {
+      opacity: 0;
+      transform: translate(0, -100px);
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  .toastSlideIn {
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-name: toastSlideIn;
+  }
+
+  @keyframes toastSlideOut {
+    from {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 0;
+      transform: translate(0, -100px);
+    }
+  }
+
+  .toastSlideOut {
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-name: toastSlideOut;
+  }
+`;
+exports.default = toastCSS;

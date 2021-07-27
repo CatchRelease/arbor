@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.yellow = exports.teal = exports.red = exports.purple = exports.pink = exports.orange = exports.green = exports.cyan = exports.blue = void 0;
 exports.blue = '#4B9BFF';
 exports.cyan = '#5FC8FF';
@@ -10,7 +10,7 @@ exports.purple = '#AF78FF';
 exports.red = '#FF5F5F';
 exports.teal = '#50D2A0';
 exports.yellow = '#FFD76E';
-exports["default"] = {
+exports.default = {
     blue: exports.blue,
     cyan: exports.cyan,
     green: exports.green,

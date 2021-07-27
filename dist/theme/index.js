@@ -1,22 +1,11 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.boxShadows = exports.borderWidth = exports.borderRadius = exports.spacings = exports.lineHeights = exports.icons = exports.colors = exports.bronzes = exports.black = exports.greens = exports.reds = exports.whites = exports.greys = exports.blues = exports.breakpoints = exports.breakpointsMap = void 0;
-var polished_1 = require("polished");
-var colors_1 = require("./colors");
-var typography_1 = require("./typography");
-var avatars_1 = require("./avatars");
-var buttons_1 = require("./buttons");
+const polished_1 = require("polished");
+const colors_1 = require("./colors");
+const typography_1 = require("./typography");
+const avatars_1 = require("./avatars");
+const buttons_1 = require("./buttons");
 exports.breakpointsMap = {
     sm: '512px',
     md: '768px',
@@ -69,11 +58,21 @@ exports.bronzes = {
     bronze: '#CC7700',
     bronzeDark: '#AA5500'
 };
-exports.colors = __assign(__assign(__assign(__assign(__assign(__assign(__assign({ 
+exports.colors = Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({ 
     /* START: deprecated -- Color definition and variables are being revamped */
     black: exports.black }, exports.blues), exports.greys), exports.whites), exports.greens), exports.reds), exports.bronzes), { 
     /* END: deprecated */
-    background: colors_1.background, border: colors_1.border, brand: colors_1.brand, icon: colors_1.icon, intent: colors_1.intent, monochrome: colors_1.monochrome, palette: colors_1.palette, primary: colors_1.primary, secondary: colors_1.secondary, shadow: colors_1.shadow, text: colors_1.text });
+    background: colors_1.background,
+    border: colors_1.border,
+    brand: colors_1.brand,
+    icon: colors_1.icon,
+    intent: colors_1.intent,
+    monochrome: colors_1.monochrome,
+    palette: colors_1.palette,
+    primary: colors_1.primary,
+    secondary: colors_1.secondary,
+    shadow: colors_1.shadow,
+    text: colors_1.text });
 exports.icons = {
     annotation: '\f039',
     calendar: '\f035',
@@ -116,28 +115,28 @@ exports.borderWidth = {
     medium: '2px',
     large: '4px'
 };
-var borders = {
-    "default": exports.borderWidth.small + " solid " + exports.colors.border["default"]
+const borders = {
+    default: `${exports.borderWidth.small} solid ${exports.colors.border.default}`
 };
 exports.boxShadows = {
-    elevation0: "0 0 1px " + exports.colors.shadow.border,
-    elevation1: "0 0 1px " + exports.colors.shadow.border + ", 0 2px 4px -2px " + exports.colors.shadow.blurry,
-    elevation2: "0 0 1px " + exports.colors.shadow.border + ", 0 5px 8px -4px " + exports.colors.shadow.blurry,
-    elevation3: "0 0 1px " + exports.colors.shadow.border + ", 0 8px 10px -4px " + exports.colors.shadow.blurry,
-    elevation4: "0 0 1px " + exports.colors.shadow.border + ", 0 16px 24px -8px " + exports.colors.shadow.blurry
+    elevation0: `0 0 1px ${exports.colors.shadow.border}`,
+    elevation1: `0 0 1px ${exports.colors.shadow.border}, 0 2px 4px -2px ${exports.colors.shadow.blurry}`,
+    elevation2: `0 0 1px ${exports.colors.shadow.border}, 0 5px 8px -4px ${exports.colors.shadow.blurry}`,
+    elevation3: `0 0 1px ${exports.colors.shadow.border}, 0 8px 10px -4px ${exports.colors.shadow.blurry}`,
+    elevation4: `0 0 1px ${exports.colors.shadow.border}, 0 16px 24px -8px ${exports.colors.shadow.blurry}`
 };
-var buttons = {
+const buttons = {
     sizes: buttons_1.sizes
 };
-exports["default"] = {
+exports.default = {
     avatarSizes: avatars_1.sizes,
     avatarFontSizes: avatars_1.fontSizes,
     borderWidth: exports.borderWidth,
-    borders: borders,
+    borders,
     brandFont: typography_1.brandFont,
     breakpoints: exports.breakpoints,
     breakpointsMap: exports.breakpointsMap,
-    buttons: buttons,
+    buttons,
     colors: exports.colors,
     fonts: typography_1.fonts,
     fontSizes: typography_1.sizes,
