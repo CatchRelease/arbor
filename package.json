@@ -12,7 +12,9 @@
     "eslint": "eslint src stories .storybook",
     "test:ci": "yarn test && yarn lint",
     "deploy-storybook": "yarn storybook-to-ghpages",
-    "build": "tsc --noEmit && rm -rf dist/* && tsc",
+    "build": "yarn typecheck && yarn clean && tsc",
+    "clean": "rm -rf dist/*",
+    "typecheck": "tsc --noEmit",
     "prepare": "husky install"
   },
   "author": "Damian Galarza",
