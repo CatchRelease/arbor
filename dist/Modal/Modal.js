@@ -17,37 +17,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Modal = void 0;
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const react_modal_1 = __importDefault(require("react-modal"));
-const prop_types_1 = __importDefault(require("prop-types"));
 const react_1 = require("@emotion/react");
 const buildModalCss_1 = __importDefault(require("./buildModalCss"));
 const Modal = (_a) => {
-    var { children, modalCss, overlayCss, theme } = _a, // eslint-disable-line react/prop-types
-    props = __rest(_a, ["children", "modalCss", "overlayCss", "theme"]);
+    var { children, modalCss, overlayCss, theme } = _a, props = __rest(_a, ["children", "modalCss", "overlayCss", "theme"]);
     const combinedModalCss = buildModalCss_1.default({ theme, modalCss, overlayCss });
     return (jsx_runtime_1.jsxs(jsx_runtime_1.Fragment, { children: [jsx_runtime_1.jsx(react_1.Global, { styles: combinedModalCss }, void 0), jsx_runtime_1.jsx(react_modal_1.default, Object.assign({ overlayClassName: "ArborModalOverlay", className: "ArborModal" }, props, { children: children }), void 0)] }, void 0));
 };
 exports.Modal = Modal;
-exports.Modal.propTypes = {
-    /**
-     * Content to be displayed with the modal
-     */
-    children: prop_types_1.default.oneOfType([
-        prop_types_1.default.node,
-        prop_types_1.default.arrayOf(prop_types_1.default.node)
-    ]).isRequired,
-    /**
-     * Optional overrides of the modal css. This will be injected via emotion's
-     * Global style component.
-     */
-    modalCss: prop_types_1.default.oneOfType([prop_types_1.default.object, prop_types_1.default.func]),
-    /**
-     * Optional overrides to the overlay CSS. This will be injected via emotion's
-     * Global style component.
-     */
-    overlayCss: prop_types_1.default.oneOfType([prop_types_1.default.object, prop_types_1.default.func])
-};
-exports.Modal.defaultProps = {
-    modalCss: {},
-    overlayCss: {}
-};
 exports.default = react_1.withTheme(exports.Modal);

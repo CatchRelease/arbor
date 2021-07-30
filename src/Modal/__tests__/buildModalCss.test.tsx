@@ -5,7 +5,9 @@ import theme from '../../theme';
 import buildModalCss from '../buildModalCss';
 
 describe('buildModalCss', () => {
-  const MockComponent = (props) => <div {...props} />;
+  const MockComponent = (props: { [key: string]: unknown }) => (
+    <div {...props} />
+  );
 
   context('no additional css provided', () => {
     it('renders properly', () => {
