@@ -7,7 +7,7 @@ import Icon from '../../Icon';
 
 describe('<Button />', () => {
   describe('Variants', () => {
-    ['primary', 'secondary', 'minimal'].forEach((variant) => {
+    (['primary', 'secondary', 'minimal'] as const).forEach((variant) => {
       it(`properly renders a ${variant} button`, () => {
         const button = createWithTheme(
           <Button variant={variant}>Button Label</Button>
@@ -35,7 +35,7 @@ describe('<Button />', () => {
   });
 
   describe('Sizes', () => {
-    ['small', 'medium', 'large', 'jumbo'].forEach((size) => {
+    (['small', 'medium', 'large', 'jumbo'] as const).forEach((size) => {
       it(`properly renders a ${size} sized button`, () => {
         const button = createWithTheme(
           <Button size={size}>Button Label</Button>

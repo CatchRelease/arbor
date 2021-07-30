@@ -66,7 +66,6 @@ const StyledButton = styled_1.default.button `
   ${styled_system_1.color};
   ${styled_system_1.display};
 `;
-StyledButton.propTypes = Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, styled_system_1.borders.propTypes), styled_system_1.borderColor.propTypes), styled_system_1.color.propTypes), styled_system_1.fontWeight.propTypes), styled_system_1.fontSize.propTypes), styled_system_1.lineHeight.propTypes), styled_system_1.space.propTypes), textTransform_1.default.propTypes), whiteSpace_1.default.propTypes), styled_system_1.display.propTypes);
 StyledButton.defaultProps = {
     border: '1px solid transparent',
     borderRadius: 'small',

@@ -1,8 +1,10 @@
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 import { rem } from 'polished';
 import styled from '@emotion/styled';
-import SIZES from './sizes';
+import { Size } from './sizes';
 import Spinner from '../Spinner';
+import { Variant } from './variants';
+import { Intent } from '../theme/colors/intent';
 
 const StyledButtonSpinner = styled(Spinner)`
   position: absolute;
@@ -13,7 +15,7 @@ const StyledButtonSpinner = styled(Spinner)`
   bottom: 0;
 `;
 
-const spinnerColor = (disabled, variant, intent) => {
+const spinnerColor = (disabled: boolean, variant: Variant, intent: Intent) => {
   if (disabled) return 'text.muted';
 
   switch (variant) {
@@ -31,7 +33,14 @@ const spinnerDiameters = {
   jumbo: 24
 };
 
-const ButtonSpinner = ({ disabled, intent, size, variant }) => {
+type Props = {
+  disabled: boolean;
+  intent: Intent;
+  size: Size | Size[];
+  variant: Variant;
+};
+
+const ButtonSpinner: FC<Props> = ({ disabled, intent, size, variant }) => {
   const diameter = Array.isArray(size)
     ? size.map((value) => rem(`${spinnerDiameters[value]}px`))
     : rem(`${spinnerDiameters[size]}px`);
@@ -42,16 +51,6 @@ const ButtonSpinner = ({ disabled, intent, size, variant }) => {
       color={spinnerColor(disabled, variant, intent)}
     />
   );
-};
-
-ButtonSpinner.propTypes = {
-  disabled: PropTypes.bool.isRequired,
-  intent: PropTypes.string.isRequired,
-  size: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.oneOf(SIZES)),
-    PropTypes.oneOf(SIZES)
-  ]).isRequired,
-  variant: PropTypes.string.isRequired
 };
 
 export default ButtonSpinner;

@@ -1,9 +1,18 @@
+import { ReactNode } from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
 import Grid from '../Grid';
 
-const gridTemplateColumns = ({ hasText, iconStart, iconEnd }) => {
+const gridTemplateColumns = ({
+  hasText,
+  iconStart,
+  iconEnd
+}: {
+  hasText?: boolean;
+  iconStart?: ReactNode;
+  iconEnd?: ReactNode;
+}) => {
   if (hasText) {
     if (iconStart && iconEnd) {
       return '0fr 1fr 0fr';
