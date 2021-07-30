@@ -1,3 +1,4 @@
+import { ButtonHTMLAttributes } from 'react';
 import styled from '@emotion/styled';
 
 import {
@@ -9,12 +10,23 @@ import {
   fontSize,
   lineHeight,
   space,
-  variant
+  variant,
+  FontWeightProps,
+  FontSizeProps,
+  LineHeightProps,
+  SpaceProps,
+  BordersProps,
+  BorderColorProps,
+  ColorProps,
+  DisplayProps
 } from 'styled-system';
 
-import textTransform from '../utils/textTransform';
+import textTransform, { TextTransformProps } from '../utils/textTransform';
 import variantStyles from './variantStyles';
-import whiteSpace from '../utils/whiteSpace';
+import whiteSpace, { WhitespaceProps } from '../utils/whiteSpace';
+import { Intent } from '../theme/colors/intent';
+import { Variant } from './variants';
+import { PaletteColor } from '../theme/colors/palette';
 
 const fullWidth = variant({
   prop: 'fullWidth',
@@ -39,7 +51,23 @@ const size = variant({
   }
 });
 
-const StyledButton = styled.button`
+export type Props = ButtonHTMLAttributes<HTMLButtonElement> &
+  BordersProps &
+  BorderColorProps &
+  ColorProps &
+  DisplayProps &
+  FontWeightProps &
+  FontSizeProps &
+  LineHeightProps &
+  SpaceProps &
+  TextTransformProps &
+  WhitespaceProps & {
+    intent?: Intent;
+    paletteColor?: PaletteColor;
+    variant?: Variant;
+  };
+
+const StyledButton = styled.button<Props>`
   appearance: none;
   outline: none;
   position: relative;
@@ -76,19 +104,6 @@ const StyledButton = styled.button`
   ${color};
   ${display};
 `;
-
-StyledButton.propTypes = {
-  ...borders.propTypes,
-  ...borderColor.propTypes,
-  ...color.propTypes,
-  ...fontWeight.propTypes,
-  ...fontSize.propTypes,
-  ...lineHeight.propTypes,
-  ...space.propTypes,
-  ...textTransform.propTypes,
-  ...whiteSpace.propTypes,
-  ...display.propTypes
-};
 
 StyledButton.defaultProps = {
   border: '1px solid transparent',

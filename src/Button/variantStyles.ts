@@ -1,8 +1,20 @@
 import { css } from '@emotion/react';
 import { shade, tint } from 'polished';
 import { themeGet } from '@styled-system/theme-get';
+import { Intent } from '../theme/colors/intent';
+import { Variant } from './variants';
+import { PaletteColor } from '../theme/colors/palette';
 
-const variants = ({ intent, variant, paletteColor, ...props }) => {
+const variants = ({
+  intent,
+  variant,
+  paletteColor,
+  ...props
+}: {
+  intent?: Intent;
+  variant?: Variant;
+  paletteColor?: PaletteColor;
+}) => {
   const colorIntent = themeGet(`colors.intent.${intent}.default`)(props);
   const colorWhite = themeGet('colors.monochrome.white')(props);
   const colorGrey = themeGet(`colors.monochrome.grey10`)(props);

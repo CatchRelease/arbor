@@ -21,7 +21,7 @@ const ButtonSpinner_1 = __importDefault(require("./ButtonSpinner"));
 const StyledButton_1 = __importDefault(require("./StyledButton"));
 const Text_1 = __importDefault(require("../Text"));
 const Button = react_1.forwardRef((_a, ref) => {
-    var { bg = null, children, disabled = false, fullWidth = false, iconEnd, iconStart, intent = 'brand', paletteColor = '', size = 'large', spin = false, type, variant = 'primary' } = _a, props = __rest(_a, ["bg", "children", "disabled", "fullWidth", "iconEnd", "iconStart", "intent", "paletteColor", "size", "spin", "type", "variant"]);
+    var { bg = null, children, disabled = false, fullWidth = false, iconEnd, iconStart, intent = 'brand', paletteColor, size = 'large', spin = false, type, variant = 'primary' } = _a, props = __rest(_a, ["bg", "children", "disabled", "fullWidth", "iconEnd", "iconStart", "intent", "paletteColor", "size", "spin", "type", "variant"]);
     return (jsx_runtime_1.jsxs(StyledButton_1.default, Object.assign({}, Object.assign({ bg, className: `button--${variant}`, disabled,
         fullWidth,
         iconEnd,

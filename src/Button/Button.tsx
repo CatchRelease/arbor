@@ -1,16 +1,16 @@
-import { ButtonHTMLAttributes, FC, forwardRef, ReactNode } from 'react';
+import { FC, forwardRef, ReactNode } from 'react';
 import { BackgroundColorProps } from 'styled-system';
 
 import ButtonContent from './ButtonContent';
 import ButtonSpinner from './ButtonSpinner';
 import { Size } from './sizes';
-import StyledButton from './StyledButton';
+import StyledButton, { Props as StyledButtonProps } from './StyledButton';
 import Text from '../Text';
 import { Variant } from './variants';
 import { Intent } from '../theme/colors/intent';
 import { PaletteColor } from '../theme/colors/palette';
 
-export type Props = ButtonHTMLAttributes<HTMLButtonElement> &
+export type Props = StyledButtonProps &
   BackgroundColorProps & {
     fullWidth?: boolean | boolean[];
     iconStart?: ReactNode;
@@ -32,7 +32,7 @@ const Button: FC<Props> = forwardRef<HTMLButtonElement, Props>(
       iconEnd,
       iconStart,
       intent = 'brand',
-      paletteColor = '',
+      paletteColor,
       size = 'large',
       spin = false,
       type,

@@ -36,6 +36,7 @@
     "@tippyjs/react": "^4.2.5",
     "@types/react-modal": "^3.12.1",
     "@types/styled-system": "^5.1.12",
+    "@types/styled-system__theme-get": "^5.0.1",
     "csstype": "^3.0.8",
     "framer-motion": "^4.1.17",
     "lodash": "^4.17.21",
