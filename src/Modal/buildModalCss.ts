@@ -1,4 +1,5 @@
-import { css } from '@emotion/react';
+import { css, Theme } from '@emotion/react';
+import { CSSInterpolation } from '@emotion/serialize';
 import { transparentize } from 'polished';
 
 const baseModalCss = css`
@@ -9,7 +10,7 @@ const baseModalCss = css`
   outline: none;
 `;
 
-const baseOverlayCss = (theme) => css`
+const baseOverlayCss = (theme: Theme) => css`
   align-items: center;
   background: ${transparentize(0.5, theme.colors.grey90)};
   bottom: 0;
@@ -21,7 +22,17 @@ const baseOverlayCss = (theme) => css`
   top: 0;
 `;
 
-const buildModalCss = ({ theme, overlayCss, modalCss }) => css`
+export type Css = CSSInterpolation | ((theme: Theme) => CSSInterpolation);
+
+const buildModalCss = ({
+  theme,
+  overlayCss,
+  modalCss
+}: {
+  theme: Theme;
+  overlayCss?: Css;
+  modalCss?: Css;
+}) => css`
   .ArborModalOverlay {
     ${baseOverlayCss(theme)};
     ${typeof overlayCss === 'function' ? overlayCss(theme) : overlayCss};
