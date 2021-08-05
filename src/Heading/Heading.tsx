@@ -18,7 +18,7 @@ const calculatedMargin = ({
   theme
 }: {
   fontSize: FontSize;
-  mb: string;
+  mb?: string;
   theme: Theme;
 }) =>
   !mb &&
@@ -29,7 +29,7 @@ const calculatedMargin = ({
 type Props = {
   fontSize: FontSize;
   fontWeight?: FontWeight;
-  mb: string;
+  mb?: string;
 };
 
 const Heading = styled(Text)<Props>`
