@@ -4,7 +4,7 @@ import { FontSize, FontWeight } from '../theme/typography';
 declare type Props = {
     fontSize: FontSize;
     fontWeight?: FontWeight;
-    mb: string;
+    mb?: string;
 };
 declare const _default: import("@emotion/styled").StyledComponent<{
     theme?: Theme | undefined;
