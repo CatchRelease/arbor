@@ -1,2 +1,6 @@
+import { FC } from 'react';
+import { ToastContainerProps } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.minimal.css';
+declare type Props = ToastContainerProps;
+declare const ToastContainer: FC<Props>;
 export default ToastContainer;
-declare function ToastContainer(props: any): import("@emotion/react/jsx-runtime").JSX.Element;
