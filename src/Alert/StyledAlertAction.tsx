@@ -1,10 +1,14 @@
-import PropTypes from 'prop-types';
+import { FC, MouseEventHandler } from 'react';
 
 import Box from '../Box';
 import Button from '../Button';
 import Icon from '../Icon';
 
-const StyledAlertAction = ({ onClose }) => (
+type Props = {
+  onClose: MouseEventHandler<HTMLButtonElement>;
+};
+
+const StyledAlertAction: FC<Props> = ({ onClose }) => (
   <Box>
     <Button
       aria-label="close"
@@ -15,9 +19,5 @@ const StyledAlertAction = ({ onClose }) => (
     />
   </Box>
 );
-
-StyledAlertAction.propTypes = {
-  onClose: PropTypes.func.isRequired
-};
 
 export default StyledAlertAction;

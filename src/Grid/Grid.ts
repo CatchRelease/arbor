@@ -14,7 +14,7 @@ import {
 
 import Box, { BoxProps } from '../Box';
 
-type Props = BoxProps &
+export type Props = BoxProps &
   AlignContentProps &
   AlignItemsProps &
   GridProps &

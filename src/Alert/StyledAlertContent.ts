@@ -1,11 +1,18 @@
+import { MouseEventHandler } from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import Grid from '../Grid';
-import INTENTS from './intents';
+import Grid, { GridProps } from '../Grid';
+import INTENTS, { Intent } from './intents';
 
-const gridTemplateColumns = ({ intent, onClose }) => {
+const gridTemplateColumns = ({
+  intent,
+  onClose
+}: {
+  intent?: Intent;
+  onClose?: MouseEventHandler<HTMLButtonElement>;
+}) => {
   let columns;
 
   if (intent && onClose) {
@@ -21,7 +28,11 @@ const gridTemplateColumns = ({ intent, onClose }) => {
   `;
 };
 
-const StyledAlertContent = styled(Grid)`
+export type Props = GridProps & {
+  intent?: Intent;
+};
+
+const StyledAlertContent = styled(Grid)<Props>`
   ${gridTemplateColumns};
 `;
 

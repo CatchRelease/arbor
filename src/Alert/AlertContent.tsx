@@ -1,19 +1,27 @@
-import PropTypes from 'prop-types';
+import { FC, MouseEventHandler, ReactNode } from 'react';
 
-import StyledAlertContent from './StyledAlertContent';
+import StyledAlertContent, {
+  Props as StyledAlertContentProps
+} from './StyledAlertContent';
 import StyledAlertAction from './StyledAlertAction';
 import StyledAlertDetails from './StyledAlertDetails';
 import StyledAlertIntent from './StyledAlertIntent';
 import StyledAlertMessage from './StyledAlertMessage';
-import INTENTS from './intents';
 
 const gridPlaceholder = <span aria-hidden />;
 
-const AlertContent = ({
+export type Props = StyledAlertContentProps & {
+  details?: ReactNode;
+  message: ReactNode;
+  oneLine?: boolean;
+  onClose?: MouseEventHandler<HTMLButtonElement>;
+};
+
+const AlertContent: FC<Props> = ({
   details,
   intent,
   message,
-  oneLine,
+  oneLine = false,
   onClose,
   ...props
 }) => (
@@ -43,45 +51,5 @@ const AlertContent = ({
     )}
   </StyledAlertContent>
 );
-
-AlertContent.propTypes = {
-  /**
-   * More details about the alert.
-   * */
-  details: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ]),
-
-  /**
-   * Specify an intent to visualize meaning.
-   * */
-  intent: PropTypes.oneOf(INTENTS),
-
-  /**
-   * Main message of the alert.
-   * */
-  message: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ]).isRequired,
-
-  /**
-   * Callback for the alert close button.
-   * */
-  onClose: PropTypes.func,
-
-  /**
-   * Should the messages and details appear on one line
-   */
-  oneLine: PropTypes.bool
-};
-
-AlertContent.defaultProps = {
-  details: undefined,
-  intent: undefined,
-  onClose: undefined,
-  oneLine: false
-};
 
 export default AlertContent;
