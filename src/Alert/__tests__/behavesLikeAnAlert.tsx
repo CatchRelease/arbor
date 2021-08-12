@@ -1,9 +1,13 @@
+import { ComponentType, ReactNode } from 'react';
+
 import createWithTheme from '../../../utils/createWithTheme';
 import INTENTS from '../intents';
 
 const noop = () => null;
 
-const behavesLikeAnAlert = (Component) => {
+const behavesLikeAnAlert = (
+  Component: ComponentType<{ message: ReactNode }>
+) => {
   const render = (props = {}) =>
     createWithTheme(<Component message="Hey look, an alert!" {...props} />);
 

@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import Box from '../Box';
 import Icon from '../Icon';
-import INTENTS from './intents';
+import { Intent } from './intents';
 
-const getIconName = (intent) => {
+const getIconName = (intent: Intent) => {
   switch (intent) {
     case 'danger':
       return 'error';
@@ -19,7 +19,11 @@ const getIconName = (intent) => {
   }
 };
 
-const StyledAlertIntent = ({ intent }) => (
+type Props = {
+  intent: Intent;
+};
+
+const StyledAlertIntent: FC<Props> = ({ intent }) => (
   <Box aria-label={intent}>
     <Icon
       color={`intent.${intent}.default`}
@@ -28,9 +32,5 @@ const StyledAlertIntent = ({ intent }) => (
     />
   </Box>
 );
-
-StyledAlertIntent.propTypes = {
-  intent: PropTypes.oneOf(INTENTS).isRequired
-};
 
 export default StyledAlertIntent;
