@@ -1,15 +1,24 @@
+import { ReactElement, ReactNode } from 'react';
 import { shallow } from 'enzyme';
+import { mocked } from 'ts-jest/utils';
 
 import { toast as reactToastifyToast } from 'react-toastify';
 
 import toast from '../toast';
-import INTENTS from '../../Alert/intents';
+import INTENTS, { Intent } from '../../Alert/intents';
 
 jest.mock('react-toastify');
 
-const render = (intent, message, details, index) => {
+const mockReactToastifyToast = mocked(reactToastifyToast);
+
+const render = (
+  intent: Intent,
+  message: ReactNode,
+  details: ReactNode,
+  index: number
+) => {
   toast[intent](message, details);
-  return shallow(reactToastifyToast.mock.calls[index][0]);
+  return shallow(mockReactToastifyToast.mock.calls[index][0] as ReactElement);
 };
 
 describe('toast', () => {
