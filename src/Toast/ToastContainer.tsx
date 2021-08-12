@@ -1,7 +1,9 @@
 import { Global } from '@emotion/react';
+import { FC } from 'react';
 import {
   ToastContainer as ReactToastifyContainer,
-  cssTransition
+  cssTransition,
+  ToastContainerProps
 } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.minimal.css';
 
@@ -12,7 +14,9 @@ const transition = cssTransition({
   exit: 'toastSlideOut'
 });
 
-const ToastContainer = (props) => (
+type Props = ToastContainerProps;
+
+const ToastContainer: FC<Props> = (props) => (
   <>
     <Global styles={toastCSS} />
 
