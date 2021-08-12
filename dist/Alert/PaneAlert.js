@@ -15,21 +15,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-const prop_types_1 = __importDefault(require("prop-types"));
 const AlertContent_1 = __importDefault(require("./AlertContent"));
-const IntentAlert_1 = __importDefault(require("./IntentAlert"));
 const Pane_1 = __importDefault(require("../Pane"));
-const intents_1 = __importDefault(require("./intents"));
+const borderStyles_1 = __importDefault(require("./borderStyles"));
 const PaneAlert = (_a) => {
     var { boxShadow, intent } = _a, props = __rest(_a, ["boxShadow", "intent"]);
-    return (jsx_runtime_1.jsx(IntentAlert_1.default, Object.assign({ Component: Pane_1.default, boxShadow: boxShadow, intent: intent }, { children: jsx_runtime_1.jsx(AlertContent_1.default, Object.assign({}, Object.assign({ intent }, props)), void 0) }), void 0));
-};
-PaneAlert.propTypes = {
-    boxShadow: prop_types_1.default.string,
-    intent: prop_types_1.default.oneOf(intents_1.default)
+    return (jsx_runtime_1.jsx(Pane_1.default, Object.assign({ boxShadow: boxShadow }, borderStyles_1.default(intent), { children: jsx_runtime_1.jsx(AlertContent_1.default, Object.assign({}, Object.assign({ intent }, props)), void 0) }), void 0));
 };
 PaneAlert.defaultProps = {
-    boxShadow: 'elevation0',
-    intent: undefined
+    boxShadow: 'elevation0'
 };
 exports.default = PaneAlert;

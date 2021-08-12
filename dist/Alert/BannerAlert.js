@@ -15,11 +15,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-const prop_types_1 = __importDefault(require("prop-types"));
 const AlertContent_1 = __importDefault(require("./AlertContent"));
 const Box_1 = __importDefault(require("../Box"));
-const IntentAlert_1 = __importDefault(require("./IntentAlert"));
-const intents_1 = __importDefault(require("./intents"));
+const borderStyles_1 = __importDefault(require("./borderStyles"));
 const conditionalProps = (intent) => {
     const props = intent
         ? {
@@ -29,13 +27,7 @@ const conditionalProps = (intent) => {
     return props;
 };
 const BannerAlert = (_a) => {
-    var { intent } = _a, props = __rest(_a, ["intent"]);
-    return (jsx_runtime_1.jsx(IntentAlert_1.default, Object.assign({ Component: Box_1.default, intent: intent, textAlign: "center" }, conditionalProps(intent), { children: jsx_runtime_1.jsx(AlertContent_1.default, Object.assign({ oneLine: true }, Object.assign({ intent }, props)), void 0) }), void 0));
-};
-BannerAlert.propTypes = {
-    intent: prop_types_1.default.oneOf(intents_1.default)
-};
-BannerAlert.defaultProps = {
-    intent: undefined
+    var { intent, oneLine = true } = _a, props = __rest(_a, ["intent", "oneLine"]);
+    return (jsx_runtime_1.jsx(Box_1.default, Object.assign({ textAlign: "center" }, borderStyles_1.default(intent), conditionalProps(intent), { children: jsx_runtime_1.jsx(AlertContent_1.default, Object.assign({}, Object.assign({ intent, oneLine }, props)), void 0) }), void 0));
 };
 exports.default = BannerAlert;

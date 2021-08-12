@@ -1,1 +1,1 @@
-export { default } from "./Pane";
+export { default, Props as PaneProps } from './Pane';

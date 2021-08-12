@@ -15,11 +15,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-const prop_types_1 = __importDefault(require("prop-types"));
 const AlertContent_1 = __importDefault(require("./AlertContent"));
 const Card_1 = __importDefault(require("../Card"));
-const IntentAlert_1 = __importDefault(require("./IntentAlert"));
-const intents_1 = __importDefault(require("./intents"));
+const borderStyles_1 = __importDefault(require("./borderStyles"));
 const conditionalProps = (details) => {
     const props = !details
         ? {
@@ -30,19 +28,9 @@ const conditionalProps = (details) => {
 };
 const CardAlert = (_a) => {
     var { boxShadow, details, intent } = _a, props = __rest(_a, ["boxShadow", "details", "intent"]);
-    return (jsx_runtime_1.jsx(IntentAlert_1.default, Object.assign({ Component: Card_1.default, boxShadow: boxShadow, intent: intent }, conditionalProps(details), { children: jsx_runtime_1.jsx(AlertContent_1.default, Object.assign({}, Object.assign({ details, intent }, props)), void 0) }), void 0));
-};
-CardAlert.propTypes = {
-    boxShadow: prop_types_1.default.string,
-    details: prop_types_1.default.oneOfType([
-        prop_types_1.default.node,
-        prop_types_1.default.arrayOf(prop_types_1.default.node)
-    ]),
-    intent: prop_types_1.default.oneOf(intents_1.default)
+    return (jsx_runtime_1.jsx(Card_1.default, Object.assign({ boxShadow: boxShadow }, borderStyles_1.default(intent), conditionalProps(details), { children: jsx_runtime_1.jsx(AlertContent_1.default, Object.assign({}, Object.assign({ details, intent }, props)), void 0) }), void 0));
 };
 CardAlert.defaultProps = {
-    boxShadow: 'elevation1',
-    details: undefined,
-    intent: undefined
+    boxShadow: 'elevation1'
 };
 exports.default = CardAlert;
