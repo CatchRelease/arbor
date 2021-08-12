@@ -1,7 +1,5 @@
+import { FC } from 'react';
+import { Props as CardAlertProps } from './CardAlert';
+declare type Props = CardAlertProps;
+declare const ToastAlert: FC<Props>;
 export default ToastAlert;
-declare function ToastAlert(props: any): import("@emotion/react/jsx-runtime").JSX.Element;
-declare namespace ToastAlert {
-    namespace defaultProps {
-        const boxShadow: string;
-    }
-}
