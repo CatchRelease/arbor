@@ -29,4 +29,5 @@ const toast = INTENTS.reduce(
   {} as Record<Intent, ToastFunction>
 );
 
+export { ToastOptions };
 export default toast;
