@@ -1,8 +1,13 @@
 import { ReactNode } from 'react';
-import { toast as reactToastifyToast, ToastOptions } from 'react-toastify';
+import {
+  toast as reactToastifyToast,
+  ToastOptions as ReactToastifyToastOptions
+} from 'react-toastify';
 
 import { ToastAlert } from '../Alert';
 import INTENTS, { Intent } from '../Alert/intents';
+
+export type ToastOptions = ReactToastifyToastOptions;
 
 type ToastFunction = (
   message: ReactNode,
