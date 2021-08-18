@@ -7,10 +7,12 @@ import {
 import { ToastAlert } from '../Alert';
 import INTENTS, { Intent } from '../Alert/intents';
 
+export type ToastOptions = ReactToastifyToastOptions;
+
 type ToastFunction = (
   message: ReactNode,
   details?: ReactNode,
-  toastifyOptions?: ReactToastifyToastOptions
+  toastifyOptions?: ToastOptions
 ) => void;
 
 const buildToast: (intent: Intent) => ToastFunction =
@@ -32,5 +34,4 @@ const toast = INTENTS.reduce(
   {} as Record<Intent, ToastFunction>
 );
 
-export type ToastOptions = ReactToastifyToastOptions;
 export default toast;
