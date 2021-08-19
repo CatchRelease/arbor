@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tabs /> works with a single child tab 1`] = `
+<Fragment>
+  <Styled(div)
+    borderBottom="1px solid transparent"
+    borderColor="border.muted"
+    display="inline-flex"
+    width="100%"
+  >
+    <Styled(div)>
+      <Tab
+        active={true}
+        aria-controls="tab-1-tab-content"
+        aria-selected="true"
+        id="tab-1"
+        key="tab-1"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex={0}
+        title="Tab 1"
+      >
+        Tab 1
+      </Tab>
+    </Styled(div)>
+  </Styled(div)>
+  <Styled(div)
+    id="tab-1-tab-content"
+  >
+    Tab 1 Content
+  </Styled(div)>
+</Fragment>
+`;

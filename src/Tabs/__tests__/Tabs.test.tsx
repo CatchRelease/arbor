@@ -1,4 +1,4 @@
-import { shallow } from 'enzyme';
+import { shallow, ShallowWrapper } from 'enzyme';
 
 import Box from '../../Box';
 import Tab from '../Tab';
@@ -7,7 +7,7 @@ import { ENTER_KEY, SPACEBAR } from '../../constants';
 
 const render = (props = {}, tabProps = {}) =>
   shallow(
-    <Tabs {...props}>
+    <Tabs width="100%" {...props}>
       {null}
       <Tab id="tab-1" title="Tab 1" {...tabProps}>
         <Box>Tab 1 Content</Box>
@@ -19,6 +19,18 @@ const render = (props = {}, tabProps = {}) =>
   );
 
 describe('<Tabs />', () => {
+  it('works with a single child tab', () => {
+    const wrapper = shallow(
+      <Tabs>
+        <Tab id="tab-1" title="Tab 1">
+          <Box>Tab 1 Content</Box>
+        </Tab>
+      </Tabs>
+    );
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
   describe('controlled mode', () => {
     it('renders the active tab as active', () => {
       expect(render({ activeTabId: 'tab-1' }).text()).toContain(
@@ -31,10 +43,13 @@ describe('<Tabs />', () => {
     });
 
     describe('event handlers', () => {
-      const itBehavesLikeSelectingATab = (event, ...args) => {
+      const itBehavesLikeSelectingATab = (
+        event: string,
+        ...args: unknown[]
+      ) => {
         context('with an onClick prop', () => {
-          let onClick;
-          let tabs;
+          let onClick: jest.Mock;
+          let tabs: ShallowWrapper;
 
           beforeEach(() => {
             onClick = jest.fn();
@@ -97,7 +112,10 @@ describe('<Tabs />', () => {
     });
 
     describe('event handlers', () => {
-      const itBehavesLikeSelectingATab = (event, ...args) => {
+      const itBehavesLikeSelectingATab = (
+        event: string,
+        ...args: unknown[]
+      ) => {
         context('tab has no onClick set', () => {
           it('activates the selected tab', () => {
             const tabs = render({ defaultTabId: 'tab-1' });

@@ -15,25 +15,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-const prop_types_1 = __importDefault(require("prop-types"));
 const StyledTab_1 = __importDefault(require("./StyledTab"));
 const Tab = (_a) => {
     var { children } = _a, props = __rest(_a, ["children"]);
     return (jsx_runtime_1.jsx(StyledTab_1.default, Object.assign({}, props, { children: children }), void 0));
 };
-Tab.propTypes = {
-    active: prop_types_1.default.bool,
-    children: prop_types_1.default.oneOfType([
-        prop_types_1.default.node,
-        prop_types_1.default.arrayOf(prop_types_1.default.node)
-    ]).isRequired,
-    id: prop_types_1.default.string.isRequired,
-    onClick: prop_types_1.default.func,
-    tabIndex: prop_types_1.default.string
-};
 Tab.defaultProps = {
     active: false,
-    onClick: null,
-    tabIndex: '0'
+    tabIndex: 0
 };
 exports.default = Tab;

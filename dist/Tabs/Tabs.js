@@ -16,94 +16,79 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const react_1 = require("react");
-const prop_types_1 = __importDefault(require("prop-types"));
+const castArray_1 = __importDefault(require("lodash/castArray"));
 const Box_1 = __importDefault(require("../Box"));
 const Flex_1 = __importDefault(require("../Flex"));
 const StyledTabs_1 = __importDefault(require("./StyledTabs"));
-const Tab_1 = __importDefault(require("./Tab"));
 const constants_1 = require("../constants");
-const getTabContentId = ({ props: { children, id } }) => children.props.id || `${id}-tab-content`;
-class Tabs extends react_1.Component {
-    constructor(props) {
-        super(props);
-        this.activateTab = (tab) => {
-            this.setState({ activeTabId: tab.props.id });
-        };
-        this.handleKeyPress = (key, onClick) => {
-            if (key === constants_1.ENTER_KEY || key === constants_1.SPACEBAR) {
-                onClick();
-            }
-        };
-        this.handleTabClick = (tab, originalOnClick) => {
-            const callback = this.isControlled ? () => { } : () => this.activateTab(tab);
-            if (originalOnClick) {
-                originalOnClick(callback);
-            }
-            else {
-                callback();
-            }
-        };
-        const { activeTabId, defaultTabId, children } = this.props;
-        this.state = activeTabId
+const getActiveTab = (activeTabId, children) => children.find((tab) => {
+    if (!tab) {
+        return false;
+    }
+    const { props: { id } } = tab;
+    return id === activeTabId;
+});
+const getTabContentId = (tab) => {
+    if (!tab) {
+        return undefined;
+    }
+    const { props: { children, id } } = tab;
+    return (children === null || children === void 0 ? void 0 : children.props.id) || `${id}-tab-content`;
+};
+const Tabs = (_a) => {
+    var { activeTabId, children, defaultTabId, tabBarAside } = _a, props = __rest(_a, ["activeTabId", "children", "defaultTabId", "tabBarAside"]);
+    const childrenAsArray = castArray_1.default(children);
+    const [state, setState] = react_1.useState(() => {
+        var _a;
+        return activeTabId
             ? {}
-            : { activeTabId: defaultTabId || children.find((tab) => !!tab).props.id };
+            : {
+                activeTabId: defaultTabId || ((_a = childrenAsArray.find((tab) => !!tab)) === null || _a === void 0 ? void 0 : _a.props.id)
+            };
+    });
+    const currentTabId = activeTabId || state.activeTabId;
+    const activeTab = getActiveTab(currentTabId, childrenAsArray);
+    if (!activeTab) {
+        return null;
     }
-    get activeTab() {
-        const { activeTabId } = this;
-        const { children } = this.props;
-        return children.find((tab) => {
-            if (!tab) {
-                return false;
-            }
-            const { props: { id } } = tab;
-            return id === activeTabId;
-        });
-    }
-    get activeTabId() {
-        const { activeTabId: activeTabIdProp } = this.props;
-        const { activeTabId: activeTabIdFromState } = this.state;
-        return activeTabIdProp || activeTabIdFromState;
-    }
-    get activeTabContent() {
-        const { activeTab } = this;
-        return react_1.cloneElement(activeTab.props.children, {
-            id: getTabContentId(activeTab)
-        });
-    }
-    get isControlled() {
-        const { activeTabId } = this.props;
-        return !!activeTabId;
-    }
-    render() {
-        const { activeTabId } = this;
-        const _a = this.props, { children, tabBarAside } = _a, props = __rest(_a, ["children", "tabBarAside"]);
-        return (jsx_runtime_1.jsxs(jsx_runtime_1.Fragment, { children: [jsx_runtime_1.jsxs(StyledTabs_1.default, Object.assign({}, props, { children: [jsx_runtime_1.jsx(Box_1.default, { children: children.map((tab) => {
-                                if (!tab) {
-                                    return tab;
-                                }
-                                const { id, title, onClick: originalOnClick } = tab.props;
-                                const active = activeTabId === id;
-                                const tabContentId = getTabContentId(tab);
-                                const onClick = () => this.handleTabClick(tab, originalOnClick);
-                                return react_1.cloneElement(tab, {
-                                    'aria-controls': tabContentId,
-                                    'aria-selected': active ? 'true' : 'false',
-                                    active,
-                                    key: id,
-                                    onClick,
-                                    onKeyPress: ({ key }) => this.handleKeyPress(key, onClick)
-                                }, title);
-                            }) }, void 0), tabBarAside && jsx_runtime_1.jsx(Flex_1.default, Object.assign({ alignItems: "center" }, { children: tabBarAside }), void 0)] }), void 0), this.activeTabContent] }, void 0));
-    }
-}
-Tabs.propTypes = {
-    activeTabId: prop_types_1.default.string,
-    defaultTabId: prop_types_1.default.string,
-    children: prop_types_1.default.oneOfType([
-        prop_types_1.default.arrayOf(Tab_1.default),
-        prop_types_1.default.objectOf(Tab_1.default)
-    ]).isRequired,
-    tabBarAside: prop_types_1.default.node
+    const activeTabContent = react_1.cloneElement(activeTab.props.children, {
+        id: getTabContentId(activeTab)
+    });
+    const activateTab = (tab) => {
+        setState({ activeTabId: tab.props.id });
+    };
+    const handleKeyPress = (key, onClick) => {
+        if (key === constants_1.ENTER_KEY || key === constants_1.SPACEBAR) {
+            onClick();
+        }
+    };
+    const handleTabClick = (tab, originalOnClick) => {
+        const isControlled = !!activeTabId;
+        const callback = isControlled ? () => { } : () => activateTab(tab);
+        if (originalOnClick) {
+            originalOnClick(callback);
+        }
+        else {
+            callback();
+        }
+    };
+    return (jsx_runtime_1.jsxs(jsx_runtime_1.Fragment, { children: [jsx_runtime_1.jsxs(StyledTabs_1.default, Object.assign({}, props, { children: [jsx_runtime_1.jsx(Box_1.default, { children: childrenAsArray.map((tab) => {
+                            if (!tab) {
+                                return tab;
+                            }
+                            const { id, title, onClick: originalOnClick } = tab.props;
+                            const active = currentTabId === id;
+                            const tabContentId = getTabContentId(tab);
+                            const onClick = () => handleTabClick(tab, originalOnClick);
+                            return react_1.cloneElement(tab, {
+                                'aria-controls': tabContentId,
+                                'aria-selected': active ? 'true' : 'false',
+                                active,
+                                key: id,
+                                onClick,
+                                onKeyPress: ({ key }) => handleKeyPress(key, onClick)
+                            }, title);
+                        }) }, void 0), tabBarAside && jsx_runtime_1.jsx(Flex_1.default, Object.assign({ alignItems: "center" }, { children: tabBarAside }), void 0)] }), void 0), activeTabContent] }, void 0));
 };
 Tabs.defaultProps = {
     activeTabId: undefined,

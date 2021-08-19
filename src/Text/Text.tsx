@@ -1,3 +1,4 @@
+import { HTMLAttributes } from 'react';
 import { css, Theme } from '@emotion/react';
 import styled from '@emotion/styled';
 import {
@@ -29,7 +30,8 @@ const baseStyles = ({ theme }: { theme: Theme }) => css`
   font-family: ${theme.brandFont};
 `;
 
-export type Props = ColorProps &
+export type Props = Omit<HTMLAttributes<HTMLElement>, 'color'> &
+  ColorProps &
   FontSizeProps &
   FontWeightProps &
   LineHeightProps &

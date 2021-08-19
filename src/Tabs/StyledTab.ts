@@ -1,10 +1,15 @@
-import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
+import { css, Theme } from '@emotion/react';
 
-import Box from '../Box';
+import Box, { BoxProps } from '../Box';
 
-const activeStyles = ({ active, theme }) => {
+const activeStyles = ({
+  active,
+  theme
+}: {
+  active?: boolean;
+  theme: Theme;
+}) => {
   const color = theme.colors.intent.brand.dark;
 
   return (
@@ -22,7 +27,11 @@ const activeStyles = ({ active, theme }) => {
   );
 };
 
-const StyledTab = styled(Box)`
+export type Props = BoxProps & {
+  active?: boolean;
+};
+
+const StyledTab = styled(Box)<Props>`
   cursor: pointer;
   font-weight: ${(props) => props.theme.fontWeights.medium};
   line-height: ${(props) => props.theme.lineHeights.small};
@@ -41,11 +50,6 @@ const StyledTab = styled(Box)`
   ${activeStyles};
 `;
 
-StyledTab.propTypes = {
-  active: PropTypes.bool,
-  tabIndex: PropTypes.string
-};
-
 StyledTab.defaultProps = {
   active: false,
   alignItems: 'center',
@@ -58,7 +62,7 @@ StyledTab.defaultProps = {
   mr: 'large',
   overflow: 'hidden',
   py: 'regular',
-  tabIndex: '0',
+  tabIndex: 0,
   textOverflow: 'ellipsis',
   whiteSpace: 'nowrap'
 };

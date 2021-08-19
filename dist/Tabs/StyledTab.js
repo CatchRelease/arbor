@@ -3,7 +3,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const prop_types_1 = __importDefault(require("prop-types"));
 const styled_1 = __importDefault(require("@emotion/styled"));
 const react_1 = require("@emotion/react");
 const Box_1 = __importDefault(require("../Box"));
@@ -39,10 +38,6 @@ const StyledTab = styled_1.default(Box_1.default) `
 
   ${activeStyles};
 `;
-StyledTab.propTypes = {
-    active: prop_types_1.default.bool,
-    tabIndex: prop_types_1.default.string
-};
 StyledTab.defaultProps = {
     active: false,
     alignItems: 'center',
@@ -55,7 +50,7 @@ StyledTab.defaultProps = {
     mr: 'large',
     overflow: 'hidden',
     py: 'regular',
-    tabIndex: '0',
+    tabIndex: 0,
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap'
 };
