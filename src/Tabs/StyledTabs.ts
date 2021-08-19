@@ -1,12 +1,13 @@
 import styled from '@emotion/styled';
-import Box from '../Box';
+import Box, { BoxProps } from '../Box';
 
-const StyledTabs = styled(Box.withComponent('div'))`
+export type Props = BoxProps;
+
+const StyledTabs = styled(Box)<Props>`
   justify-content: space-between;
 `;
 
 StyledTabs.defaultProps = {
-  ...Box.defaultProps,
   borderBottom: '1px solid transparent',
   borderColor: 'border.muted',
   display: 'inline-flex',
