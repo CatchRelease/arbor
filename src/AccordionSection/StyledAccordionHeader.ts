@@ -3,8 +3,9 @@ import styled from '@emotion/styled';
 import { themeGet } from '@styled-system/theme-get';
 import { css } from '@emotion/react';
 import Flex from '../Flex';
+import { Variant } from './variants';
 
-const variantStyles = ({ variant, ...props }) => {
+const variantStyles = ({ variant, ...props }: { variant?: Variant }) => {
   const borderColor = themeGet('borders.default')(props);
   const backgroundColor = themeGet('colors.background.default')(props);
 

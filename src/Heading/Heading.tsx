@@ -26,7 +26,7 @@ const calculatedMargin = ({
     margin-bottom: calc(${theme.fontSizes[fontSize]} * ${lineHeightMultiplier});
   `;
 
-type Props = {
+export type Props = {
   fontSize: FontSize;
   fontWeight?: FontWeight;
   mb?: string;

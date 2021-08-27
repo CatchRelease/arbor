@@ -7,7 +7,7 @@ describe('<AccordionHeader />', () => {
     isOpen: false,
     panelId: 'my-accordion-1',
     text: 'My Heading'
-  };
+  } as const;
 
   const createTree = (additionalProps = {}) =>
     createWithTheme(
