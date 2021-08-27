@@ -1,1 +1,1 @@
-export { default } from './Heading';
+export { default, Props as HeadingProps } from './Heading';

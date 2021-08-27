@@ -1,11 +1,7 @@
+import { FC } from 'react';
+import { Props as StyledAccordionPanelProps } from './StyledAccordionPanel';
+declare type Props = StyledAccordionPanelProps & {
+    isOpen: boolean | undefined;
+};
+declare const AccordionPanel: FC<Props>;
 export default AccordionPanel;
-declare function AccordionPanel({ isOpen, ...panelProps }: {
-    [x: string]: any;
-    isOpen: any;
-}): import("@emotion/react/jsx-runtime").JSX.Element;
-declare namespace AccordionPanel {
-    namespace propTypes {
-        const isOpen: PropTypes.Validator<boolean>;
-    }
-}
-import PropTypes from "prop-types";

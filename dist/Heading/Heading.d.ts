@@ -1,7 +1,7 @@
 import { ElementType, FC } from 'react';
 import { Theme } from '@emotion/react';
 import { FontSize, FontWeight } from '../theme/typography';
-declare type Props = {
+export declare type Props = {
     fontSize: FontSize;
     fontWeight?: FontWeight;
     mb?: string;

@@ -15,10 +15,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-const StyledAccordionPanel_1 = __importDefault(require("./StyledAccordionPanel"));
-const AccordionPanel = (_a) => {
-    var { isOpen } = _a, panelProps = __rest(_a, ["isOpen"]);
-    const display = isOpen ? 'block' : 'none';
-    return jsx_runtime_1.jsx(StyledAccordionPanel_1.default, Object.assign({}, Object.assign(Object.assign({}, panelProps), { display })), void 0);
+const Icon_1 = __importDefault(require("../Icon"));
+const AccordionHeaderIcon = (_a) => {
+    var { isOpen } = _a, props = __rest(_a, ["isOpen"]);
+    return (jsx_runtime_1.jsx(Icon_1.default, Object.assign({ mr: "small", name: "chevron", rotation: isOpen ? null : '270' }, props), void 0));
 };
-exports.default = AccordionPanel;
+exports.default = AccordionHeaderIcon;
