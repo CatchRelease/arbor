@@ -40,6 +40,7 @@ const Icon = (_a) => {
     return (jsx_runtime_1.jsx(react_2.ClassNames, { children: ({ cx }) => (jsx_runtime_1.jsx(exports.StyledIcon, Object.assign({ className: cx(iconFontPrefix, `${iconFontPrefix}-${name}`, className), ref: iconRef, rotation: rotation }, props), void 0)) }, void 0));
 };
 const WithThemeIcon = react_2.withTheme(Icon);
-exports.default = react_1.forwardRef((props, ref) => {
+const ForwardRefWithThemeIcon = react_1.forwardRef((props, ref) => {
     return jsx_runtime_1.jsx(WithThemeIcon, Object.assign({}, props, { iconRef: ref }), void 0);
 });
+exports.default = ForwardRefWithThemeIcon;
