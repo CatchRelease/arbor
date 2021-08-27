@@ -2,9 +2,10 @@ import styled from '@emotion/styled';
 
 import { themeGet } from '@styled-system/theme-get';
 import { css } from '@emotion/react';
-import Box from '../Box';
+import Box, { BoxProps } from '../Box';
+import { Variant } from './variants';
 
-const variantStyles = ({ variant, ...props }) => {
+const variantStyles = ({ variant, ...props }: { variant?: Variant }) => {
   const borderColor = themeGet('borders.default')(props);
 
   switch (variant) {
@@ -25,7 +26,11 @@ const variantStyles = ({ variant, ...props }) => {
   }
 };
 
-const StyledAccordionPanel = styled(Box)`
+export type Props = BoxProps & {
+  variant?: Variant;
+};
+
+const StyledAccordionPanel = styled(Box)<Props>`
   ${variantStyles};
 `;
 

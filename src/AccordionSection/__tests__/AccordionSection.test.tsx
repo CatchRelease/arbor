@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 
 import createWithTheme from '../../../utils/createWithTheme';
-import AccordionSection from '../AccordionSection';
+import AccordionSection, { Props } from '../AccordionSection';
 
 describe('<AccordionSection />', () => {
   const baseProps = {
@@ -10,28 +10,13 @@ describe('<AccordionSection />', () => {
     panelId: 'my-accordion-1'
   };
 
-  const controlledProps = {
-    isOpen: false,
-    ...baseProps
-  };
-
-  const renderControlled = (additionalProps) => {
-    const props = { ...controlledProps, ...additionalProps };
-    return shallow(<AccordionSection {...{ ...props }} />);
-  };
-
-  const renderWithState = (...args) => {
-    const props = args.length === 1 ? baseProps : { ...baseProps, ...args[0] };
-    const state = args.length === 1 ? args[0] : args[1];
-
-    const rendered = shallow(<AccordionSection {...{ ...props }} />);
-    rendered.setState(state);
-
-    return rendered;
+  const render = (additionalProps?: Partial<Props>) => {
+    const props = { ...baseProps, ...additionalProps };
+    return shallow(<AccordionSection {...props} />);
   };
 
   describe('Variants', () => {
-    ['default', 'minimal'].forEach((variant) => {
+    (['default', 'minimal'] as const).forEach((variant) => {
       it(`properly renders a ${variant} accordion`, () => {
         const accordion = createWithTheme(
           <AccordionSection {...{ ...baseProps, variant }} />
@@ -69,23 +54,17 @@ describe('<AccordionSection />', () => {
     });
   });
 
-  it('has a default state', () => {
-    const section = renderControlled();
-
-    expect(section).toHaveState({ isOpen: false });
-  });
-
   describe('Children', () => {
     describe('AccordionHeader', () => {
       it('renders an AccordionHeader', () => {
-        const section = renderControlled();
+        const section = render();
 
         expect(section.find('AccordionHeader')).toExist();
       });
 
       it('passes a note to the accordion header', () => {
         const headerNote = 'cordions are fun';
-        const section = renderControlled({ headerNote });
+        const section = render({ headerNote });
 
         expect(section.find('AccordionHeader')).toHaveProp({
           note: headerNote
@@ -94,7 +73,7 @@ describe('<AccordionSection />', () => {
 
       it('passes a header to the accordion header', () => {
         const header = 'Accordion header';
-        const section = renderControlled({ header });
+        const section = render({ header });
 
         expect(section.find('AccordionHeader')).toHaveProp({ text: header });
       });
@@ -103,7 +82,7 @@ describe('<AccordionSection />', () => {
     context('Controlled accordion', () => {
       context('accordion is open', () => {
         it('opens the accordion', () => {
-          const section = renderControlled({ isOpen: true });
+          const section = render({ isOpen: true });
 
           expect(section.find('AccordionPanel')).toHaveProp({ isOpen: true });
         });
@@ -111,7 +90,7 @@ describe('<AccordionSection />', () => {
 
       context('accordion is closed', () => {
         it('does not render the accordion body', () => {
-          const section = renderControlled({ isOpen: false });
+          const section = render({ isOpen: false });
 
           expect(section.find('AccordionPanel')).toHaveProp({ isOpen: false });
         });
@@ -119,20 +98,10 @@ describe('<AccordionSection />', () => {
     });
 
     context('Uncontrolled accordion', () => {
-      context('accordion is open', () => {
-        it('renders the accordion body', () => {
-          const section = renderWithState({ isOpen: true });
+      it('does not render the accordion body', () => {
+        const section = render();
 
-          expect(section.find('AccordionPanel')).toHaveProp({ isOpen: true });
-        });
-      });
-
-      context('accordion is closed', () => {
-        it('does not render the accordion body', () => {
-          const section = renderWithState({ isOpen: false });
-
-          expect(section.find('AccordionPanel')).toHaveProp({ isOpen: false });
-        });
+        expect(section.find('AccordionPanel')).toHaveProp({ isOpen: false });
       });
     });
   });
@@ -140,42 +109,32 @@ describe('<AccordionSection />', () => {
   describe('event handlers', () => {
     describe('accordion header onClick', () => {
       context('uncontrolled accordion', () => {
-        context('accordion is closed', () => {
-          it('opens the accordion', () => {
-            const section = renderWithState({ isOpen: false });
+        it('opens and closes the accordion', () => {
+          const section = render();
 
-            section.find('AccordionHeader').simulate('click');
+          section.find('AccordionHeader').simulate('click');
 
-            expect(section).toHaveState({ isOpen: true });
-          });
-        });
+          expect(section.find('AccordionPanel')).toHaveProp({ isOpen: true });
 
-        context('accordion is open', () => {
-          it('closes the accordion', () => {
-            const section = renderWithState({ isOpen: true });
+          section.find('AccordionHeader').simulate('click');
 
-            section.find('AccordionHeader').simulate('click');
-
-            expect(section).toHaveState({ isOpen: false });
-          });
+          expect(section.find('AccordionPanel')).toHaveProp({ isOpen: false });
         });
       });
 
       context('controlled accordion', () => {
         it('does not change the accordion state', () => {
-          const section = renderWithState({ isOpen: false }, { isOpen: true });
+          const section = render({ isOpen: false });
 
           section.find('AccordionHeader').simulate('click');
 
-          expect(section).toHaveState({ isOpen: true });
+          expect(section.find('AccordionPanel')).toHaveProp({ isOpen: false });
         });
 
         it('calls the onHeaderClick prop', () => {
           const onHeaderClick = jest.fn();
-          const section = renderWithState(
-            { isOpen: false, onHeaderClick },
-            { isOpen: true }
-          );
+
+          const section = render({ isOpen: false, onHeaderClick });
 
           section.find('AccordionHeader').simulate('click');
 

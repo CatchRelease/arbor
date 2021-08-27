@@ -50,7 +50,7 @@ export const StyledIcon = styled.i<
   ${opacity};
 `;
 
-type Props = ComponentProps<typeof StyledIcon> & {
+type InternalProps = ComponentProps<typeof StyledIcon> & {
   className?: string;
   iconRef?: LegacyRef<HTMLElement>;
   name: string;
@@ -58,7 +58,7 @@ type Props = ComponentProps<typeof StyledIcon> & {
   theme: Theme;
 };
 
-const Icon: FC<Props> = ({
+const Icon: FC<InternalProps> = ({
   className,
   iconRef,
   name,
@@ -84,8 +84,13 @@ const Icon: FC<Props> = ({
 
 const WithThemeIcon = withTheme(Icon);
 
-export default forwardRef<HTMLElement, ComponentProps<typeof WithThemeIcon>>(
-  (props, ref) => {
-    return <WithThemeIcon {...props} iconRef={ref} />;
-  }
-);
+const ForwardRefWithThemeIcon = forwardRef<
+  HTMLElement,
+  ComponentProps<typeof WithThemeIcon>
+>((props, ref) => {
+  return <WithThemeIcon {...props} iconRef={ref} />;
+});
+
+export type Props = ComponentProps<typeof ForwardRefWithThemeIcon>;
+
+export default ForwardRefWithThemeIcon;
