@@ -1,29 +1,16 @@
-export function StyledAvatarText({ baseColor, size, subtle, theme: { avatarFontSizes }, ...props }: {
-    [x: string]: any;
-    baseColor: any;
-    size: any;
-    subtle: any;
-    theme: {
-        avatarFontSizes: any;
-    };
-}): import("@emotion/react/jsx-runtime").JSX.Element;
-export namespace StyledAvatarText {
-    namespace propTypes {
-        const baseColor: PropTypes.Validator<string>;
-        const size: PropTypes.Validator<string>;
-        const subtle: PropTypes.Validator<boolean>;
-    }
-}
-declare var _default: import("react").FC<Pick<{
-    [x: string]: any;
-    baseColor: any;
-    size: any;
-    subtle: any;
-    theme: {
-        avatarFontSizes: any;
-    };
-}, string | number> & {
-    theme?: import("@emotion/react").Theme | undefined;
+import { FC } from 'react';
+import { Theme } from '@emotion/react';
+import { Size } from '../theme/avatars';
+declare type Props = {
+    baseColor: string;
+    size: Size;
+    subtle: boolean;
+    theme: Theme;
+};
+export declare const StyledAvatarText: FC<Props>;
+declare const _default: FC<Pick<Props & {
+    children?: import("react").ReactNode;
+}, "children" | "size" | "baseColor" | "subtle"> & {
+    theme?: Theme | undefined;
 }>;
 export default _default;
-import PropTypes from "prop-types";
