@@ -1,7 +1,6 @@
 import { forwardRef } from 'react';
-import PropTypes from 'prop-types';
 
-import { sizes } from '../theme/avatars';
+import { Size } from '../theme/avatars';
 import { palette } from '../theme/colors';
 import { colorForString } from '../utils';
 import StyledAvatar from './StyledAvatar';
@@ -11,7 +10,7 @@ const AVATAR_COLORS = Object.keys(palette).map(
   (color) => `palette.${color}.default`
 );
 
-const getInitials = (name) => {
+const getInitials = (name: string) => {
   const [firstName, ...additionalNames] = name.split(' ');
   const firstInitial = firstName[0];
 
@@ -24,11 +23,27 @@ const getInitials = (name) => {
   return firstInitial;
 };
 
-const getText = (name) =>
+const getText = (name: string) =>
   name.match(/[A-Za-z]/) ? getInitials(name).toUpperCase() : name;
 
-const Avatar = forwardRef(
-  ({ name, subtle, size, baseColor: baseColorProp, ...props }, ref) => {
+type Props = {
+  baseColor?: string;
+  name: string;
+  size?: Size;
+  subtle?: boolean;
+};
+
+const Avatar = forwardRef<HTMLDivElement, Props>(
+  (
+    {
+      name,
+      subtle = false,
+      size = 'default',
+      baseColor: baseColorProp,
+      ...props
+    },
+    ref
+  ) => {
     const baseColor = baseColorProp || colorForString(name, AVATAR_COLORS);
 
     return (
@@ -52,37 +67,5 @@ const Avatar = forwardRef(
     );
   }
 );
-
-Avatar.propTypes = {
-  /**
-   * Base color to use for the avatar
-   */
-  baseColor: PropTypes.string,
-
-  /**
-   * The name for the user's avatar. The name is used to determine the color for
-   * the avatar component. See utils/colorForString.
-   *
-   * The initials for display will also be determined based of the name
-   * provided.
-   */
-  name: PropTypes.string.isRequired,
-
-  /**
-   * Visual size of the Avatar component
-   */
-  size: PropTypes.oneOf(Object.keys(sizes)),
-
-  /**
-   * Use a subtle version of the avatar's color styling.
-   * */
-  subtle: PropTypes.bool
-};
-
-Avatar.defaultProps = {
-  baseColor: undefined,
-  size: 'default',
-  subtle: false
-};
 
 export default Avatar;

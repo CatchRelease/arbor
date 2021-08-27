@@ -18,7 +18,6 @@ exports[`<StyledAvatar /> sizes renders default properly 1`] = `
 <div
   className="emotion-0"
   height="24px"
-  name="Bruce Wayne"
   width="24px"
 />
 `;
@@ -41,7 +40,6 @@ exports[`<StyledAvatar /> sizes renders medium properly 1`] = `
 <div
   className="emotion-0"
   height="32px"
-  name="Bruce Wayne"
   width="32px"
 />
 `;

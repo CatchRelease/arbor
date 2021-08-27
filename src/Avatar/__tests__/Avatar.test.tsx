@@ -1,4 +1,5 @@
 import { shallow } from 'enzyme';
+import { mocked } from 'ts-jest/utils';
 
 import Avatar from '../Avatar';
 import colorForString from '../../utils/colorForString';
@@ -6,9 +7,11 @@ import createWithTheme from '../../../utils/createWithTheme';
 
 jest.mock('../../utils/colorForString.js');
 
+const mockedColorForString = mocked(colorForString);
+
 describe('<Avatar />', () => {
   beforeEach(() => {
-    colorForString.mockReturnValue('palette.green');
+    mockedColorForString.mockReturnValue('palette.green');
   });
 
   it('renders properly', () => {

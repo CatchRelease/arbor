@@ -2,14 +2,13 @@ import { shallow } from 'enzyme';
 
 import createWithTheme from '../../../utils/createWithTheme';
 import theme from '../../theme';
-import { sizes } from '../../theme/avatars';
 import Flex from '../../Flex';
 import StyledAvatarWithTheme, { StyledAvatar } from '../StyledAvatar';
 
 describe('<StyledAvatar />', () => {
   describe('colors', () => {
     context('subtle is false', () => {
-      it('renders with default colors calculated by the name string', () => {
+      it('renders bg and border colors equal to baseColor', () => {
         const avatar = shallow(
           <StyledAvatar
             baseColor="palette.blue.default"
@@ -28,12 +27,11 @@ describe('<StyledAvatar />', () => {
     });
 
     context('subtle is true', () => {
-      it('renders with subtle colors calculated by the name string', () => {
+      it('renders a white bg and border color equal to baseColor', () => {
         const avatar = shallow(
           <StyledAvatar
             baseColor="palette.blue.default"
             border="1px solid"
-            name="Batman"
             size="default"
             subtle
             theme={theme}
@@ -49,13 +47,12 @@ describe('<StyledAvatar />', () => {
   });
 
   context('sizes', () => {
-    Object.keys(sizes).forEach((size) => {
+    (['default', 'medium'] as const).forEach((size) => {
       it(`renders ${size} properly`, () => {
         const tree = createWithTheme(
           <StyledAvatarWithTheme
             baseColor="palette.green.default"
             border="1px solid"
-            name="Bruce Wayne"
             size={size}
             subtle={false}
             theme={theme}
