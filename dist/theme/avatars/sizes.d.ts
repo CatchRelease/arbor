@@ -1,6 +1,6 @@
-declare namespace _default {
-    const _default: string;
-    export { _default as default };
-    export const medium: string;
-}
-export default _default;
+declare const sizes: {
+    default: string;
+    medium: string;
+};
+export declare type Size = keyof typeof sizes;
+export default sizes;

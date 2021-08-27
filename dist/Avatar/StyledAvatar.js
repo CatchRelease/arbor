@@ -18,12 +18,9 @@ exports.StyledAvatar = void 0;
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const react_1 = require("react");
 const react_2 = require("@emotion/react");
-const prop_types_1 = __importDefault(require("prop-types"));
 const Flex_1 = __importDefault(require("../Flex"));
-const avatars_1 = require("../theme/avatars");
 exports.StyledAvatar = react_1.forwardRef((_a, ref) => {
-    var { baseColor, border, size, subtle, theme: { avatarSizes } } = _a, // eslint-disable-line react/prop-types
-    props = __rest(_a, ["baseColor", "border", "size", "subtle", "theme"]);
+    var { baseColor, border, size, subtle, theme: { avatarSizes } } = _a, props = __rest(_a, ["baseColor", "border", "size", "subtle", "theme"]);
     const bg = subtle ? `monochrome.white` : baseColor;
     const borderColor = baseColor;
     return (jsx_runtime_1.jsx(Flex_1.default, Object.assign({}, Object.assign({ width: avatarSizes[size], height: avatarSizes[size], bg,
@@ -31,10 +28,4 @@ exports.StyledAvatar = react_1.forwardRef((_a, ref) => {
         borderColor,
         ref }, props)), void 0));
 });
-exports.StyledAvatar.propTypes = {
-    baseColor: prop_types_1.default.string.isRequired,
-    border: prop_types_1.default.string.isRequired,
-    size: prop_types_1.default.oneOf(Object.keys(avatars_1.sizes)).isRequired,
-    subtle: prop_types_1.default.bool.isRequired
-};
 exports.default = react_2.withTheme(exports.StyledAvatar);
