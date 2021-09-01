@@ -46,7 +46,8 @@ module.exports = {
     {
       files: ['src/**/*.tsx'],
       rules: {
-        'react/prop-types': 'off'
+        'react/prop-types': 'off',
+        'react/require-default-props': 'off'
       }
     },
     {
