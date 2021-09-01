@@ -7,7 +7,7 @@ const styled_1 = __importDefault(require("@emotion/styled"));
 const prop_types_1 = __importDefault(require("prop-types"));
 const utils_1 = require("../utils");
 const Box_1 = __importDefault(require("../Box"));
-const CardPreview = styled_1.default(Box_1.default) `
+const CardPreview = (0, styled_1.default)(Box_1.default) `
   background: url(${(props) => props.image}) center center no-repeat
     ${(props) => props.theme.colors.monochrome.black};
   background-size: contain;

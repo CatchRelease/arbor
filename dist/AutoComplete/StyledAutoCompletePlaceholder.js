@@ -21,7 +21,7 @@ const StyledAutoCompletePlaceholder = (_a) => {
     var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     cx, children } = _a, props = __rest(_a, ["cx", "children"]);
-    return (jsx_runtime_1.jsx(Flex_1.default, Object.assign({ alignSelf: "center", color: "text.placeholder", position: "absolute" }, props, { children: children }), void 0));
+    return ((0, jsx_runtime_1.jsx)(Flex_1.default, Object.assign({ alignSelf: "center", color: "text.placeholder", position: "absolute" }, props, { children: children }), void 0));
 };
 StyledAutoCompletePlaceholder.propTypes = {
     cx: prop_types_1.default.func.isRequired,

@@ -20,7 +20,7 @@ const AccordionHeader_1 = __importDefault(require("./AccordionHeader"));
 const AccordionPanel_1 = __importDefault(require("./AccordionPanel"));
 const AccordionSection = (_a) => {
     var { children, header, headerNote, isOpen: controlledIsOpen, onHeaderClick = () => { }, panelId, variant = 'default' } = _a, props = __rest(_a, ["children", "header", "headerNote", "isOpen", "onHeaderClick", "panelId", "variant"]);
-    const [internalIsOpen, setInternalIsOpen] = react_1.useState(false);
+    const [internalIsOpen, setInternalIsOpen] = (0, react_1.useState)(false);
     const isControlled = controlledIsOpen !== undefined;
     const isOpen = isControlled ? controlledIsOpen : internalIsOpen;
     const toggle = () => {
@@ -32,6 +32,6 @@ const AccordionSection = (_a) => {
         }
         onHeaderClick();
     };
-    return (jsx_runtime_1.jsxs("section", { children: [jsx_runtime_1.jsx(AccordionHeader_1.default, Object.assign({ isOpen: isOpen, note: headerNote, onClick: handleHeaderClick, panelId: panelId, text: header, variant: variant }, props), void 0), jsx_runtime_1.jsx(AccordionPanel_1.default, Object.assign({ id: panelId, isOpen: isOpen, variant: variant }, { children: children }), void 0)] }, void 0));
+    return ((0, jsx_runtime_1.jsxs)("section", { children: [(0, jsx_runtime_1.jsx)(AccordionHeader_1.default, Object.assign({ isOpen: isOpen, note: headerNote, onClick: handleHeaderClick, panelId: panelId, text: header, variant: variant }, props), void 0), (0, jsx_runtime_1.jsx)(AccordionPanel_1.default, Object.assign({ id: panelId, isOpen: isOpen, variant: variant }, { children: children }), void 0)] }, void 0));
 };
 exports.default = AccordionSection;

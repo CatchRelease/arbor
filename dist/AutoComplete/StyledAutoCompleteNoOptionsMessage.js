@@ -21,7 +21,7 @@ const StyledAutoCompleteNoOptionsMessage = (_a) => {
     var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     cx, innerRef, innerProps, children } = _a, props = __rest(_a, ["cx", "innerRef", "innerProps", "children"]);
-    return (jsx_runtime_1.jsx(Text_1.default, Object.assign({ p: "small", textAlign: "center", ref: innerRef }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
+    return ((0, jsx_runtime_1.jsx)(Text_1.default, Object.assign({ p: "small", textAlign: "center", ref: innerRef }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
 };
 StyledAutoCompleteNoOptionsMessage.propTypes = {
     cx: prop_types_1.default.func.isRequired,

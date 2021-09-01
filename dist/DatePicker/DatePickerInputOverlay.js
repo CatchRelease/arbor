@@ -21,7 +21,7 @@ const DatePicker_1 = __importDefault(require("./DatePicker"));
 const PopoverContent_1 = __importDefault(require("../Popover/PopoverContent"));
 const DatePickerInputOverlay = (_a) => {
     var { classNames, children } = _a, props = __rest(_a, ["classNames", "children"]);
-    return (jsx_runtime_1.jsx(Box_1.default, Object.assign({ position: "absolute", zIndex: "100" }, { children: jsx_runtime_1.jsx(PopoverContent_1.default, Object.assign({ className: classNames.overlayWrapper }, props, { children: jsx_runtime_1.jsx(DatePicker_1.default, Object.assign({}, children.props), void 0) }), void 0) }), void 0));
+    return ((0, jsx_runtime_1.jsx)(Box_1.default, Object.assign({ position: "absolute", zIndex: "100" }, { children: (0, jsx_runtime_1.jsx)(PopoverContent_1.default, Object.assign({ className: classNames.overlayWrapper }, props, { children: (0, jsx_runtime_1.jsx)(DatePicker_1.default, Object.assign({}, children.props), void 0) }), void 0) }), void 0));
 };
 DatePickerInputOverlay.propTypes = {
     children: prop_types_1.default.oneOfType([

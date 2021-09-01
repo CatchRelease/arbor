@@ -6,7 +6,7 @@ const { grey60, grey70, grey80, grey90, grey100 } = monochrome_1.greys;
 exports.default = {
     dark: grey100,
     default: grey90,
-    disabled: polished_1.transparentize(0.3, grey70),
+    disabled: (0, polished_1.transparentize)(0.3, grey70),
     muted: grey80,
     placeholder: grey60
 };

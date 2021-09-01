@@ -19,14 +19,14 @@ const prop_types_1 = __importDefault(require("prop-types"));
 const styled_1 = __importDefault(require("@emotion/styled"));
 const Flex_1 = __importDefault(require("../Flex"));
 const Input_1 = require("../Input");
-const StyledFlex = styled_1.default(Flex_1.default) `
+const StyledFlex = (0, styled_1.default)(Flex_1.default) `
   ${Input_1.inputStyles};
 `;
 const StyledAutoCompleteControl = (_a) => {
     var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     cx, innerRef, innerProps, children } = _a, props = __rest(_a, ["cx", "innerRef", "innerProps", "children"]);
-    return (jsx_runtime_1.jsx(StyledFlex, Object.assign({ ref: innerRef }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
+    return ((0, jsx_runtime_1.jsx)(StyledFlex, Object.assign({ ref: innerRef }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
 };
 StyledAutoCompleteControl.propTypes = {
     cx: prop_types_1.default.func.isRequired,

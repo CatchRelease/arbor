@@ -21,7 +21,7 @@ const StyledAutoCompleteValueContainer = (_a) => {
     var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     cx, innerProps, children } = _a, props = __rest(_a, ["cx", "innerProps", "children"]);
-    return (jsx_runtime_1.jsx(Flex_1.default, Object.assign({ flex: "1", flexWrap: "wrap", gridGap: "smallest" }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
+    return ((0, jsx_runtime_1.jsx)(Flex_1.default, Object.assign({ flex: "1", flexWrap: "wrap", gridGap: "smallest" }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
 };
 StyledAutoCompleteValueContainer.propTypes = {
     cx: prop_types_1.default.func.isRequired,

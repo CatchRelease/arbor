@@ -30,7 +30,7 @@ const Tooltip = (_a) => {
     var { title, content, children, 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     render } = _a, props = __rest(_a, ["title", "content", "children", "render"]);
-    const [mounted, setMounted] = react_1.useState(false);
+    const [mounted, setMounted] = (0, react_1.useState)(false);
     const lazyPlugin = {
         fn: () => ({
             onMount: () => setMounted(true),
@@ -48,10 +48,10 @@ const Tooltip = (_a) => {
         visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 0.5 }
     };
-    const renderTooltip = (attrs) => (jsx_runtime_1.jsx(Box_1.default, Object.assign({ as: framer_motion_1.motion.div, initial: "hidden", variants: variants, animate: mounted ? 'visible' : 'hidden', transition: springConfig }, attrs, { children: jsx_runtime_1.jsxs(Card_1.default, Object.assign({ bg: "monochrome.grey90", borderRadius: "small", boxShadow: "elevation1", color: "monochrome.white", gridGap: "smallest", fontSize: "size3", maxWidth: "200px", p: "smaller", css: react_2.css `
+    const renderTooltip = (attrs) => ((0, jsx_runtime_1.jsx)(Box_1.default, Object.assign({ as: framer_motion_1.motion.div, initial: "hidden", variants: variants, animate: mounted ? 'visible' : 'hidden', transition: springConfig }, attrs, { children: (0, jsx_runtime_1.jsxs)(Card_1.default, Object.assign({ bg: "monochrome.grey90", borderRadius: "small", boxShadow: "elevation1", color: "monochrome.white", gridGap: "smallest", fontSize: "size3", maxWidth: "200px", p: "smaller", css: (0, react_2.css) `
           word-break: break-word;
-        ` }, props, { children: [title && (jsx_runtime_1.jsx(Heading_1.default.H3, Object.assign({ mb: "0", fontSize: "inherit", color: "inherit", textAlign: "inherit" }, { children: title }), void 0)), content && (jsx_runtime_1.jsx(Text_1.default, Object.assign({ as: Grid_1.default, fontSize: "inherit", color: "inherit", textAlign: "inherit" }, { children: content }), void 0))] }), void 0) }), void 0));
-    return (jsx_runtime_1.jsx(headless_1.default, Object.assign({ render: (attrs) => (mounted ? renderTooltip(attrs) : ''), offset: [0, 4], plugins: [tippy_js_1.sticky, lazyPlugin], popperOptions: {
+        ` }, props, { children: [title && ((0, jsx_runtime_1.jsx)(Heading_1.default.H3, Object.assign({ mb: "0", fontSize: "inherit", color: "inherit", textAlign: "inherit" }, { children: title }), void 0)), content && ((0, jsx_runtime_1.jsx)(Text_1.default, Object.assign({ as: Grid_1.default, fontSize: "inherit", color: "inherit", textAlign: "inherit" }, { children: content }), void 0))] }), void 0) }), void 0));
+    return ((0, jsx_runtime_1.jsx)(headless_1.default, Object.assign({ render: (attrs) => (mounted ? renderTooltip(attrs) : ''), offset: [0, 4], plugins: [tippy_js_1.sticky, lazyPlugin], popperOptions: {
             modifiers: [
                 {
                     name: 'preventOverflow',

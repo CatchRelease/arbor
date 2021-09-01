@@ -22,7 +22,7 @@ const StyledAutoCompleteMenu = (_a) => {
     var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     cx, innerProps, children } = _a, props = __rest(_a, ["cx", "innerProps", "children"]);
-    return (jsx_runtime_1.jsx(Card_1.default, Object.assign({ mt: "smaller", position: "absolute", top: "100%", zIndex: "1" }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
+    return ((0, jsx_runtime_1.jsx)(Card_1.default, Object.assign({ mt: "smaller", position: "absolute", top: "100%", zIndex: "1" }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
 };
 StyledAutoCompleteMenu.propTypes = {
     cx: prop_types_1.default.func.isRequired,
@@ -32,4 +32,4 @@ StyledAutoCompleteMenu.propTypes = {
     ]).isRequired,
     innerProps: prop_types_1.default.object.isRequired // eslint-disable-line react/forbid-prop-types
 };
-exports.default = react_1.withTheme(StyledAutoCompleteMenu);
+exports.default = (0, react_1.withTheme)(StyledAutoCompleteMenu);

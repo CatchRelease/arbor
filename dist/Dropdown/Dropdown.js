@@ -44,9 +44,9 @@ class Dropdown extends react_1.Component {
             this.popover.current.close();
             onChange(value);
         };
-        this.popover = react_1.createRef();
-        this.button = react_1.createRef();
-        this.menu = react_1.createRef();
+        this.popover = (0, react_1.createRef)();
+        this.button = (0, react_1.createRef)();
+        this.menu = (0, react_1.createRef)();
     }
     componentDidMount() {
         document.addEventListener('keydown', this.onKeyDown, true);
@@ -57,8 +57,8 @@ class Dropdown extends react_1.Component {
     render() {
         const _a = this.props, { MenuItemComponent, TriggerComponent, children, menuItems, popoverProps, selected } = _a, props = __rest(_a, ["MenuItemComponent", "TriggerComponent", "children", "menuItems", "popoverProps", "selected"]);
         const isOpen = this.popover.current && this.popover.current.state.isOpen;
-        const menu = (jsx_runtime_1.jsx(Menu_1.default, Object.assign({ MenuItemComponent: MenuItemComponent, onChange: this.onChange, ref: this.menu }, { menuItems, name: props.name, selected }), void 0));
-        return (jsx_runtime_1.jsx(Popover_1.default, Object.assign({ ref: this.popover, content: menu }, popoverProps, { children: jsx_runtime_1.jsx(TriggerComponent, Object.assign({ ref: this.button, "aria-haspopup": true, "aria-expanded": isOpen }, props, { children: children }), void 0) }), void 0));
+        const menu = ((0, jsx_runtime_1.jsx)(Menu_1.default, Object.assign({ MenuItemComponent: MenuItemComponent, onChange: this.onChange, ref: this.menu }, { menuItems, name: props.name, selected }), void 0));
+        return ((0, jsx_runtime_1.jsx)(Popover_1.default, Object.assign({ ref: this.popover, content: menu }, popoverProps, { children: (0, jsx_runtime_1.jsx)(TriggerComponent, Object.assign({ ref: this.button, "aria-haspopup": true, "aria-expanded": isOpen }, props, { children: children }), void 0) }), void 0));
     }
 }
 Dropdown.propTypes = {

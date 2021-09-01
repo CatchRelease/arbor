@@ -18,7 +18,7 @@ const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const Grid_1 = __importDefault(require("../Grid"));
 const Pane = (_a) => {
     var { innerRef } = _a, props = __rest(_a, ["innerRef"]);
-    return (jsx_runtime_1.jsx(Grid_1.default, Object.assign({ ref: innerRef }, props), void 0));
+    return ((0, jsx_runtime_1.jsx)(Grid_1.default, Object.assign({ ref: innerRef }, props), void 0));
 };
 Pane.defaultProps = {
     bg: 'background.white',

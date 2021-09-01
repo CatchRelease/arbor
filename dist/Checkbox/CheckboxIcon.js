@@ -9,10 +9,10 @@ const Icon_1 = __importDefault(require("../Icon"));
 const iconFontSize = '16px';
 const CheckboxIcon = ({ checked, indeterminate }) => {
     if (indeterminate) {
-        return jsx_runtime_1.jsx(Icon_1.default, { name: "checkbox-indeterminate", fontSize: iconFontSize }, void 0);
+        return (0, jsx_runtime_1.jsx)(Icon_1.default, { name: "checkbox-indeterminate", fontSize: iconFontSize }, void 0);
     }
     if (checked) {
-        return jsx_runtime_1.jsx(Icon_1.default, { name: "checkbox-checked", fontSize: iconFontSize }, void 0);
+        return (0, jsx_runtime_1.jsx)(Icon_1.default, { name: "checkbox-checked", fontSize: iconFontSize }, void 0);
     }
     return null;
 };

@@ -21,7 +21,7 @@ const StyledAutoCompleteDropdownIndicator = (_a) => {
     var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     cx, innerProps, selectProps: { hideDropdownIndicator } } = _a, props = __rest(_a, ["cx", "innerProps", "selectProps"]);
-    return (jsx_runtime_1.jsx(Icon_1.default, Object.assign({ display: hideDropdownIndicator ? 'none' : 'block', "aria-label": "show options", name: "chevron" }, Object.assign(Object.assign({}, innerProps), props)), void 0));
+    return ((0, jsx_runtime_1.jsx)(Icon_1.default, Object.assign({ display: hideDropdownIndicator ? 'none' : 'block', "aria-label": "show options", name: "chevron" }, Object.assign(Object.assign({}, innerProps), props)), void 0));
 };
 StyledAutoCompleteDropdownIndicator.propTypes = {
     cx: prop_types_1.default.func.isRequired,

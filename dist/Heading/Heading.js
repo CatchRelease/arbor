@@ -19,14 +19,14 @@ const styled_1 = __importDefault(require("@emotion/styled"));
 const react_1 = require("@emotion/react");
 const Text_1 = __importDefault(require("../Text"));
 const lineHeightMultiplier = 0.5;
-const baseStyles = ({ theme }) => react_1.css `
+const baseStyles = ({ theme }) => (0, react_1.css) `
   line-height: ${theme.lineHeights.small};
 `;
 const calculatedMargin = ({ fontSize, mb, theme }) => !mb &&
-    react_1.css `
+    (0, react_1.css) `
     margin-bottom: calc(${theme.fontSizes[fontSize]} * ${lineHeightMultiplier});
   `;
-const Heading = styled_1.default(Text_1.default) `
+const Heading = (0, styled_1.default)(Text_1.default) `
   ${baseStyles};
   ${calculatedMargin};
 `;
@@ -38,19 +38,19 @@ Heading.defaultProps = {
 };
 const createHeading = (as, defaultFontSize) => (_a) => {
     var { children, fontSize = defaultFontSize } = _a, props = __rest(_a, ["children", "fontSize"]);
-    return (jsx_runtime_1.jsx(Heading, Object.assign({ as: as, fontSize: fontSize }, props, { children: children }), void 0));
+    return ((0, jsx_runtime_1.jsx)(Heading, Object.assign({ as: as, fontSize: fontSize }, props, { children: children }), void 0));
 };
 const H1 = createHeading('h1', 'size7');
 const H2 = createHeading('h2', 'size6');
 const H3 = createHeading('h3', 'size5');
 const H4 = createHeading('h4', 'size4');
-const H5 = styled_1.default(createHeading('h5', 'size4')) `
+const H5 = (0, styled_1.default)(createHeading('h5', 'size4')) `
   line-height: ${(props) => props.theme.lineHeights.large};
 `;
 H5.defaultProps = {
     fontWeight: 'medium'
 };
-const H6 = styled_1.default(createHeading('h6', 'size4')) `
+const H6 = (0, styled_1.default)(createHeading('h6', 'size4')) `
   line-height: ${(props) => props.theme.lineHeights.large};
 `;
 H6.defaultProps = {

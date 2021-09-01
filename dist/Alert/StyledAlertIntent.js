@@ -20,5 +20,5 @@ const getIconName = (intent) => {
             return '';
     }
 };
-const StyledAlertIntent = ({ intent }) => (jsx_runtime_1.jsx(Box_1.default, Object.assign({ "aria-label": intent }, { children: jsx_runtime_1.jsx(Icon_1.default, { color: `intent.${intent}.default`, fontSize: "size4", name: getIconName(intent) }, void 0) }), void 0));
+const StyledAlertIntent = ({ intent }) => ((0, jsx_runtime_1.jsx)(Box_1.default, Object.assign({ "aria-label": intent }, { children: (0, jsx_runtime_1.jsx)(Icon_1.default, { color: `intent.${intent}.default`, fontSize: "size4", name: getIconName(intent) }, void 0) }), void 0));
 exports.default = StyledAlertIntent;

@@ -20,11 +20,11 @@ const react_1 = require("@emotion/react");
 const Flex_1 = __importDefault(require("../Flex"));
 const variantStyles = (_a) => {
     var { variant } = _a, props = __rest(_a, ["variant"]);
-    const borderColor = theme_get_1.themeGet('borders.default')(props);
-    const backgroundColor = theme_get_1.themeGet('colors.background.default')(props);
+    const borderColor = (0, theme_get_1.themeGet)('borders.default')(props);
+    const backgroundColor = (0, theme_get_1.themeGet)('colors.background.default')(props);
     switch (variant) {
         case 'default':
-            return react_1.css `
+            return (0, react_1.css) `
         background: ${backgroundColor};
 
         border-bottom: ${borderColor};
@@ -39,7 +39,7 @@ const variantStyles = (_a) => {
             return '';
     }
 };
-const StyledHeader = styled_1.default(Flex_1.default) `
+const StyledHeader = (0, styled_1.default)(Flex_1.default) `
   .button--minimal:last-of-type {
     margin-right: -${(props) => props.theme.space.smallest};
 

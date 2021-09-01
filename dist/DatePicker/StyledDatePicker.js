@@ -7,7 +7,7 @@ const react_day_picker_1 = __importDefault(require("react-day-picker"));
 const styled_1 = __importDefault(require("@emotion/styled"));
 const polished_1 = require("polished");
 require("react-day-picker/lib/style.css");
-const StyledDatePicker = styled_1.default(react_day_picker_1.default) `
+const StyledDatePicker = (0, styled_1.default)(react_day_picker_1.default) `
   color: ${(props) => props.theme.colors.text.default};
   font-family: ${(props) => props.theme.brandFont};
   font-size: ${(props) => props.theme.fontSizes.size3};
@@ -45,7 +45,7 @@ const StyledDatePicker = styled_1.default(react_day_picker_1.default) `
 
   .DayPicker-Day--outside,
   .DayPicker-Day--disabled {
-    color: ${(props) => polished_1.transparentize(0.7, props.theme.colors.grey60)};
+    color: ${(props) => (0, polished_1.transparentize)(0.7, props.theme.colors.grey60)};
   }
 
   .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {

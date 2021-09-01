@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = require("@emotion/react");
-const toastCSS = react_1.css `
+const toastCSS = (0, react_1.css) `
   .Toastify {
     .arbor-toast-container {
       display: grid;

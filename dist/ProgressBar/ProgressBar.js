@@ -22,29 +22,29 @@ const Box_1 = __importDefault(require("../Box"));
 const Flex_1 = __importDefault(require("../Flex"));
 const Icon_1 = __importDefault(require("../Icon"));
 const Text_1 = __importDefault(require("../Text"));
-const ProgressBarContainer = styled_1.default(Flex_1.default) `
+const ProgressBarContainer = (0, styled_1.default)(Flex_1.default) `
   border-radius: ${(props) => props.theme.radii.large};
   height: 16px;
   max-width: 100%;
   align-items: center;
 `;
-const BarBackground = styled_1.default(Box_1.default) `
+const BarBackground = (0, styled_1.default)(Box_1.default) `
   flex: 1;
   background-color: ${(props) => props.theme.colors.monochrome.grey40};
   height: ${(props) => props.theme.space.smallest};
   border-radius: inherit;
 `;
-const BarForeground = styled_1.default(Box_1.default) `
+const BarForeground = (0, styled_1.default)(Box_1.default) `
   height: 100%;
   background-color: ${(props) => props.theme.colors.text.default};
   border-radius: inherit;
 `;
-const percentageText = (percentage) => (jsx_runtime_1.jsx(Text_1.default, Object.assign({ flex: "0", ml: "smaller", fontSize: "size3", fontWeight: "medium" }, { children: `${percentage}%` }), void 0));
+const percentageText = (percentage) => ((0, jsx_runtime_1.jsx)(Text_1.default, Object.assign({ flex: "0", ml: "smaller", fontSize: "size3", fontWeight: "medium" }, { children: `${percentage}%` }), void 0));
 const ProgressBar = (_a) => {
     var { percentage, iconEndName, showPercentage } = _a, props = __rest(_a, ["percentage", "iconEndName", "showPercentage"]);
-    return (jsx_runtime_1.jsxs(ProgressBarContainer, Object.assign({}, props, { children: [jsx_runtime_1.jsx(BarBackground, Object.assign({ className: "bar-background" }, { children: jsx_runtime_1.jsx(BarForeground, { className: "bar-foreground", css: react_1.css `
+    return ((0, jsx_runtime_1.jsxs)(ProgressBarContainer, Object.assign({}, props, { children: [(0, jsx_runtime_1.jsx)(BarBackground, Object.assign({ className: "bar-background" }, { children: (0, jsx_runtime_1.jsx)(BarForeground, { className: "bar-foreground", css: (0, react_1.css) `
           width: ${percentage}%;
-        ` }, void 0) }), void 0), iconEndName && (jsx_runtime_1.jsx(Icon_1.default, { ml: "smaller", flex: "0", fontSize: "size4", name: iconEndName, color: percentage < 100 ? 'monochrome.grey40' : 'text.default' }, void 0)), showPercentage && percentageText(percentage)] }), void 0));
+        ` }, void 0) }), void 0), iconEndName && ((0, jsx_runtime_1.jsx)(Icon_1.default, { ml: "smaller", flex: "0", fontSize: "size4", name: iconEndName, color: percentage < 100 ? 'monochrome.grey40' : 'text.default' }, void 0)), showPercentage && percentageText(percentage)] }), void 0));
 };
 ProgressBar.propTypes = {
     /* Show the percentage complete, or not */

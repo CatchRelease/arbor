@@ -8,7 +8,7 @@ const styled_1 = __importDefault(require("@emotion/styled"));
 const styled_system_1 = require("styled-system");
 const inputStyles_1 = __importDefault(require("./inputStyles"));
 const largeStyles = ({ theme, large }) => large &&
-    react_1.css `
+    (0, react_1.css) `
     padding: ${theme.space.small} ${theme.space.smaller};
   `;
 const StyledInput = styled_1.default.input `

@@ -7,7 +7,7 @@ const react_datetime_1 = __importDefault(require("react-datetime"));
 const styled_1 = __importDefault(require("@emotion/styled"));
 const inputStyles_1 = __importDefault(require("../Input/inputStyles"));
 require("react-datetime/css/react-datetime.css");
-const StyledDateTimePicker = styled_1.default(react_datetime_1.default) `
+const StyledDateTimePicker = (0, styled_1.default)(react_datetime_1.default) `
   color: ${(props) => props.theme.colors.text.default};
   font-family: ${(props) => props.theme.brandFont};
   font-size: ${(props) => props.theme.fontSizes.size4};

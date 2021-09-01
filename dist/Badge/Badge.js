@@ -42,7 +42,7 @@ const Badge = (_a) => {
     var { paletteColor, children, iconEnd, iconStart, subtle, variant } = _a, props = __rest(_a, ["paletteColor", "children", "iconEnd", "iconStart", "subtle", "variant"]);
     const textColor = getTextColor(paletteColor, subtle);
     const gridTemplateColumns = getGridTemplateColumns(iconStart, iconEnd);
-    return (jsx_runtime_1.jsx(StyledBadge_1.default, Object.assign({}, Object.assign({ paletteColor, subtle, variant }, props), { children: jsx_runtime_1.jsxs(Grid_1.default, Object.assign({ color: textColor, alignItems: "center", gridTemplateColumns: gridTemplateColumns, gridGap: "smallest" }, { children: [iconStart, jsx_runtime_1.jsx(Text_1.default, Object.assign({}, {
+    return ((0, jsx_runtime_1.jsx)(StyledBadge_1.default, Object.assign({}, Object.assign({ paletteColor, subtle, variant }, props), { children: (0, jsx_runtime_1.jsxs)(Grid_1.default, Object.assign({ color: textColor, alignItems: "center", gridTemplateColumns: gridTemplateColumns, gridGap: "smallest" }, { children: [iconStart, (0, jsx_runtime_1.jsx)(Text_1.default, Object.assign({}, {
                     as: 'span',
                     color: textColor,
                     fontSize: 'size3',

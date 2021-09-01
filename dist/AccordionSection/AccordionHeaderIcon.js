@@ -18,6 +18,6 @@ const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const Icon_1 = __importDefault(require("../Icon"));
 const AccordionHeaderIcon = (_a) => {
     var { isOpen } = _a, props = __rest(_a, ["isOpen"]);
-    return (jsx_runtime_1.jsx(Icon_1.default, Object.assign({ mr: "small", name: "chevron", rotation: isOpen ? null : '270' }, props), void 0));
+    return ((0, jsx_runtime_1.jsx)(Icon_1.default, Object.assign({ mr: "small", name: "chevron", rotation: isOpen ? null : '270' }, props), void 0));
 };
 exports.default = AccordionHeaderIcon;

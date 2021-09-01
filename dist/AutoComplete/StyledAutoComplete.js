@@ -38,8 +38,8 @@ const getReactSelectComponent = (variant) => {
 const StyledAutoComplete = (_a) => {
     var { components, theme, variant } = _a, props = __rest(_a, ["components", "theme", "variant"]);
     const SelectComponent = getReactSelectComponent(variant);
-    const reactSelectProps = Object.assign({ components: Object.assign(Object.assign({}, styledAutoCompleteComponents_1.default), components), theme: (reactSelectTheme) => (Object.assign(Object.assign(Object.assign({}, reactSelectTheme), buildReactSelectThemeOverrides_1.default(theme)), theme)) }, props);
-    return jsx_runtime_1.jsx(SelectComponent, Object.assign({}, Object.assign(Object.assign({}, reactSelectProps), props)), void 0);
+    const reactSelectProps = Object.assign({ components: Object.assign(Object.assign({}, styledAutoCompleteComponents_1.default), components), theme: (reactSelectTheme) => (Object.assign(Object.assign(Object.assign({}, reactSelectTheme), (0, buildReactSelectThemeOverrides_1.default)(theme)), theme)) }, props);
+    return (0, jsx_runtime_1.jsx)(SelectComponent, Object.assign({}, Object.assign(Object.assign({}, reactSelectProps), props)), void 0);
 };
 StyledAutoComplete.propTypes = {
     components: prop_types_1.default.objectOf(prop_types_1.default.elementType),
@@ -50,4 +50,4 @@ StyledAutoComplete.defaultProps = {
     components: {},
     variant: 'default'
 };
-exports.default = react_1.withTheme(StyledAutoComplete);
+exports.default = (0, react_1.withTheme)(StyledAutoComplete);

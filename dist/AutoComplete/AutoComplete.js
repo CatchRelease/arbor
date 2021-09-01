@@ -20,7 +20,7 @@ const FormField_1 = __importDefault(require("../FormField"));
 const StyledAutoComplete_1 = __importDefault(require("./StyledAutoComplete"));
 const AutoComplete = (_a) => {
     var { caption, id, label, labelAside } = _a, props = __rest(_a, ["caption", "id", "label", "labelAside"]);
-    return (jsx_runtime_1.jsx(FormField_1.default, Object.assign({ caption: caption, id: id, label: label, labelAside: labelAside }, { children: jsx_runtime_1.jsx(StyledAutoComplete_1.default, Object.assign({ "aria-label": label }, props), void 0) }), void 0));
+    return ((0, jsx_runtime_1.jsx)(FormField_1.default, Object.assign({ caption: caption, id: id, label: label, labelAside: labelAside }, { children: (0, jsx_runtime_1.jsx)(StyledAutoComplete_1.default, Object.assign({ "aria-label": label }, props), void 0) }), void 0));
 };
 AutoComplete.propTypes = {
     /**

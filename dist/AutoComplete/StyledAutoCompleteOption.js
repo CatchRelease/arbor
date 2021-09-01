@@ -22,7 +22,7 @@ const StyledAutoCompleteOption = (_a) => {
     var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     cx, innerProps, children } = _a, props = __rest(_a, ["cx", "innerProps", "children"]);
-    return (jsx_runtime_1.jsx(MenuItem_1.default, Object.assign({ as: "li" }, Object.assign(Object.assign({}, innerProps), props), { children: jsx_runtime_1.jsx(Text_1.default, { children: children }, void 0) }), void 0));
+    return ((0, jsx_runtime_1.jsx)(MenuItem_1.default, Object.assign({ as: "li" }, Object.assign(Object.assign({}, innerProps), props), { children: (0, jsx_runtime_1.jsx)(Text_1.default, { children: children }, void 0) }), void 0));
 };
 StyledAutoCompleteOption.propTypes = {
     cx: prop_types_1.default.func.isRequired,

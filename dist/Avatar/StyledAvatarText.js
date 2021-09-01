@@ -22,7 +22,7 @@ const StyledAvatarText = (_a) => {
     var { baseColor, size, subtle, theme: { avatarFontSizes } } = _a, props = __rest(_a, ["baseColor", "size", "subtle", "theme"]);
     const color = subtle ? baseColor : 'monochrome.white';
     const fontSize = avatarFontSizes[size];
-    return jsx_runtime_1.jsx(Text_1.default, Object.assign({}, Object.assign({ color, fontSize }, props)), void 0);
+    return (0, jsx_runtime_1.jsx)(Text_1.default, Object.assign({}, Object.assign({ color, fontSize }, props)), void 0);
 };
 exports.StyledAvatarText = StyledAvatarText;
-exports.default = react_1.withTheme(exports.StyledAvatarText);
+exports.default = (0, react_1.withTheme)(exports.StyledAvatarText);

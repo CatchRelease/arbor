@@ -22,7 +22,7 @@ const StyledAutoCompleteMenuList = (_a) => {
     var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     cx, innerRef, innerProps, children } = _a, props = __rest(_a, ["cx", "innerRef", "innerProps", "children"]);
-    return (jsx_runtime_1.jsx(Box_1.default, Object.assign({ as: "ul", overflow: "auto", ref: innerRef }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
+    return ((0, jsx_runtime_1.jsx)(Box_1.default, Object.assign({ as: "ul", overflow: "auto", ref: innerRef }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
 };
 StyledAutoCompleteMenuList.propTypes = {
     cx: prop_types_1.default.func.isRequired,
@@ -36,4 +36,4 @@ StyledAutoCompleteMenuList.propTypes = {
 StyledAutoCompleteMenuList.defaultProps = {
     innerProps: {}
 };
-exports.default = react_1.withTheme(StyledAutoCompleteMenuList);
+exports.default = (0, react_1.withTheme)(StyledAutoCompleteMenuList);

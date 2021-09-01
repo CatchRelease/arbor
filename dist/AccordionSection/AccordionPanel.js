@@ -19,6 +19,6 @@ const StyledAccordionPanel_1 = __importDefault(require("./StyledAccordionPanel")
 const AccordionPanel = (_a) => {
     var { isOpen } = _a, panelProps = __rest(_a, ["isOpen"]);
     const display = isOpen ? 'block' : 'none';
-    return jsx_runtime_1.jsx(StyledAccordionPanel_1.default, Object.assign({}, Object.assign(Object.assign({}, panelProps), { display })), void 0);
+    return (0, jsx_runtime_1.jsx)(StyledAccordionPanel_1.default, Object.assign({}, Object.assign(Object.assign({}, panelProps), { display })), void 0);
 };
 exports.default = AccordionPanel;

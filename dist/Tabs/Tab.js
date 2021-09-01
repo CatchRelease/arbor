@@ -18,7 +18,7 @@ const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const StyledTab_1 = __importDefault(require("./StyledTab"));
 const Tab = (_a) => {
     var { children } = _a, props = __rest(_a, ["children"]);
-    return (jsx_runtime_1.jsx(StyledTab_1.default, Object.assign({}, props, { children: children }), void 0));
+    return ((0, jsx_runtime_1.jsx)(StyledTab_1.default, Object.assign({}, props, { children: children }), void 0));
 };
 Tab.defaultProps = {
     active: false,

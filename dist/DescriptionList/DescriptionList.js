@@ -11,7 +11,7 @@ const inlineStyles = ({ inline, theme }) => {
     if (!inline) {
         return '';
     }
-    return react_1.css `
+    return (0, react_1.css) `
     white-space: nowrap;
     max-width: 100%;
     overflow: hidden;
@@ -33,7 +33,7 @@ const inlineStyles = ({ inline, theme }) => {
     }
   `;
 };
-const DescriptionList = styled_1.default(Box_1.default.withComponent('dl')) `
+const DescriptionList = (0, styled_1.default)(Box_1.default.withComponent('dl')) `
   ${inlineStyles};
 `;
 DescriptionList.propTypes = {

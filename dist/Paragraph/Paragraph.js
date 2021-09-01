@@ -17,11 +17,11 @@ const variantStyles = ({ theme, variant, fontSize }) => {
     const fontSizeOverride = fontSize && isFontSize(fontSize) && theme.fontSizes[fontSize]
         ? theme.fontSizes[fontSize]
         : fontSize;
-    return react_1.css `
+    return (0, react_1.css) `
     font-size: ${fontSizeOverride || theme.fontSizes[VARIANT_MAPPING[variant]]};
   `;
 };
-const Paragraph = styled_1.default(Text_1.default) `
+const Paragraph = (0, styled_1.default)(Text_1.default) `
   ${variantStyles};
 `;
 Paragraph.defaultProps = {

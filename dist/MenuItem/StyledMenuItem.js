@@ -10,7 +10,7 @@ const Box_1 = __importDefault(require("../Box"));
 const disabledStyles = ({ isDisabled, theme }) => {
     if (!isDisabled)
         return '';
-    return react_1.css `
+    return (0, react_1.css) `
     background: ${theme.colors.monochrome.white};
     color: ${theme.colors.text.disabled};
 
@@ -23,18 +23,18 @@ const disabledStyles = ({ isDisabled, theme }) => {
 const focusedStyles = ({ isFocused, theme }) => {
     if (!isFocused)
         return '';
-    return react_1.css `
+    return (0, react_1.css) `
     background: ${theme.colors.background.muted};
   `;
 };
 const selectedStyles = ({ isSelected, theme }) => {
     if (!isSelected)
         return '';
-    return react_1.css `
+    return (0, react_1.css) `
     font-weight: ${theme.fontWeights.medium};
   `;
 };
-const StyledMenuItem = styled_1.default(Box_1.default) `
+const StyledMenuItem = (0, styled_1.default)(Box_1.default) `
   background: ${({ theme }) => theme.colors.monochrome.white};
   color: ${({ theme }) => theme.colors.text.default};
   cursor: pointer;

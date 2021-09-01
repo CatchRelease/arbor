@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const styled_1 = __importDefault(require("@emotion/styled"));
 const Box_1 = __importDefault(require("../Box"));
-const StyledTabs = styled_1.default(Box_1.default) `
+const StyledTabs = (0, styled_1.default)(Box_1.default) `
   justify-content: space-between;
 `;
 StyledTabs.defaultProps = {
