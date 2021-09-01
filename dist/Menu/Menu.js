@@ -61,7 +61,7 @@ class Menu extends react_1.Component {
             return undefined;
         const { name } = this.props;
         const { label } = menuItem;
-        return `menu-item_${name}_${snakeCase_1.default(label)}`;
+        return `menu-item_${name}_${(0, snakeCase_1.default)(label)}`;
     }
     focusNextMenuItem() {
         const { menuItems } = this.props;
@@ -91,14 +91,14 @@ class Menu extends react_1.Component {
         const isSelected = menuItem.value === selected;
         const id = this.domIdForMenuItem(menuItem);
         const isFocused = index === currentlyFocused;
-        return (jsx_runtime_1.jsx(ControlledMenuItem_1.default, Object.assign({}, Object.assign({ id,
+        return ((0, jsx_runtime_1.jsx)(ControlledMenuItem_1.default, Object.assign({}, Object.assign({ id,
             isFocused,
             isSelected, key: id, MenuItemComponent,
             name, onSelect: this.onMenuItemSelect }, menuItem)), void 0));
     }
     render() {
         const { currentlyFocused } = this;
-        return (jsx_runtime_1.jsx(StyledMenu_1.default, Object.assign({ role: "listbox", "aria-activedescendant": currentlyFocused, flexDirection: "column" }, { children: this.renderMenuItems() }), void 0));
+        return ((0, jsx_runtime_1.jsx)(StyledMenu_1.default, Object.assign({ role: "listbox", "aria-activedescendant": currentlyFocused, flexDirection: "column" }, { children: this.renderMenuItems() }), void 0));
     }
 }
 Menu.propTypes = {

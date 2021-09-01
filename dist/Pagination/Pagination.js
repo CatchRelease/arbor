@@ -38,23 +38,23 @@ class Pagination extends react_2.Component {
             const { currentPage, size } = this.props;
             let paginationItem;
             if (item === ELLIPSIS) {
-                paginationItem = (react_1.createElement(Button_1.default, Object.assign({}, { size }, { variant: "minimal", mx: "smallest", key: `${item}-${index}`, disabled: true }), item));
+                paginationItem = ((0, react_1.createElement)(Button_1.default, Object.assign({}, { size }, { variant: "minimal", mx: "smallest", key: `${item}-${index}`, disabled: true }), item));
             }
             else {
                 const variant = currentPage === item ? 'primary' : 'minimal';
-                paginationItem = (react_1.createElement(Button_1.default, Object.assign({}, { size, variant }, { mx: "smallest", key: `${item}-${index}`, onClick: () => this.paginate(item) }), item));
+                paginationItem = ((0, react_1.createElement)(Button_1.default, Object.assign({}, { size, variant }, { mx: "smallest", key: `${item}-${index}`, onClick: () => this.paginate(item) }), item));
             }
             return paginationItem;
         };
         this.renderPreviousItem = () => {
             const { currentPage, previousText, size } = this.props;
             const previousDisabled = currentPage === 1;
-            return (react_1.createElement(Button_1.default, Object.assign({}, { size }, { variant: "minimal", mr: "small", key: "pagination-previous", disabled: previousDisabled, onClick: () => this.paginate(currentPage - 1) }), previousText));
+            return ((0, react_1.createElement)(Button_1.default, Object.assign({}, { size }, { variant: "minimal", mr: "small", key: "pagination-previous", disabled: previousDisabled, onClick: () => this.paginate(currentPage - 1) }), previousText));
         };
         this.renderNextItem = () => {
             const { currentPage, totalPages, nextText, size } = this.props;
             const nextDisabled = currentPage === totalPages;
-            return (react_1.createElement(Button_1.default, Object.assign({}, { size }, { variant: "minimal", ml: "small", key: "pagination-next", disabled: nextDisabled, onClick: () => this.paginate(currentPage + 1) }), nextText));
+            return ((0, react_1.createElement)(Button_1.default, Object.assign({}, { size }, { variant: "minimal", ml: "small", key: "pagination-next", disabled: nextDisabled, onClick: () => this.paginate(currentPage + 1) }), nextText));
         };
     }
     render() {
@@ -62,7 +62,7 @@ class Pagination extends react_2.Component {
         if (!currentPage || !totalPages || totalPages <= 1) {
             return null;
         }
-        return (jsx_runtime_1.jsxs("div", { children: [this.renderPreviousItem(), this.getPaginationOptions().map(this.renderPaginationItem), this.renderNextItem()] }, void 0));
+        return ((0, jsx_runtime_1.jsxs)("div", { children: [this.renderPreviousItem(), this.getPaginationOptions().map(this.renderPaginationItem), this.renderNextItem()] }, void 0));
     }
 }
 Pagination.propTypes = {

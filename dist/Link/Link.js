@@ -7,7 +7,7 @@ const react_1 = require("@emotion/react");
 const styled_1 = __importDefault(require("@emotion/styled"));
 const styled_system_1 = require("styled-system");
 const Text_1 = __importDefault(require("../Text"));
-const baseStyles = react_1.css `
+const baseStyles = (0, react_1.css) `
   text-decoration: none;
   cursor: pointer;
 
@@ -90,7 +90,7 @@ const variantStyles = ({ variant = 'default', theme: { colors } }) => {
 };
 const TextAnchor = Text_1.default.withComponent('a');
 const TextAnchorWithColorPropFix = TextAnchor;
-const Link = styled_1.default(TextAnchorWithColorPropFix) `
+const Link = (0, styled_1.default)(TextAnchorWithColorPropFix) `
   ${baseStyles};
   ${variantStyles};
   ${styled_system_1.color};

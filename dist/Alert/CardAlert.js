@@ -28,7 +28,7 @@ const conditionalProps = (details) => {
 };
 const CardAlert = (_a) => {
     var { boxShadow, details, intent } = _a, props = __rest(_a, ["boxShadow", "details", "intent"]);
-    return (jsx_runtime_1.jsx(Card_1.default, Object.assign({ boxShadow: boxShadow }, borderStyles_1.default(intent), conditionalProps(details), { children: jsx_runtime_1.jsx(AlertContent_1.default, Object.assign({}, Object.assign({ details, intent }, props)), void 0) }), void 0));
+    return ((0, jsx_runtime_1.jsx)(Card_1.default, Object.assign({ boxShadow: boxShadow }, (0, borderStyles_1.default)(intent), conditionalProps(details), { children: (0, jsx_runtime_1.jsx)(AlertContent_1.default, Object.assign({}, Object.assign({ details, intent }, props)), void 0) }), void 0));
 };
 CardAlert.defaultProps = {
     boxShadow: 'elevation1'

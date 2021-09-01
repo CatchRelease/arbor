@@ -17,7 +17,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const styled_1 = __importDefault(require("@emotion/styled"));
 const StyledInput_1 = __importDefault(require("../Input/StyledInput"));
-const StyledSelectInput = styled_1.default(StyledInput_1.default) `
+const StyledSelectInput = (0, styled_1.default)(StyledInput_1.default) `
   appearance: none;
   background: ${(props) => props.theme.colors.background.white};
 
@@ -48,6 +48,6 @@ const StyledSelectWrapper = styled_1.default.div `
 `;
 const StyledSelect = (_a) => {
     var { children } = _a, props = __rest(_a, ["children"]);
-    return (jsx_runtime_1.jsx(StyledSelectWrapper, { children: jsx_runtime_1.jsx(StyledSelectInput, Object.assign({}, props, { children: children }), void 0) }, void 0));
+    return ((0, jsx_runtime_1.jsx)(StyledSelectWrapper, { children: (0, jsx_runtime_1.jsx)(StyledSelectInput, Object.assign({}, props, { children: children }), void 0) }, void 0));
 };
 exports.default = StyledSelect;

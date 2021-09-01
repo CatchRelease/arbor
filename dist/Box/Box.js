@@ -8,7 +8,7 @@ const styled_system_1 = require("styled-system");
 const Text_1 = __importDefault(require("../Text"));
 const TextDiv = Text_1.default.withComponent('div');
 const TextDivWithColorPropFix = TextDiv;
-const Box = styled_1.default(TextDivWithColorPropFix) `
+const Box = (0, styled_1.default)(TextDivWithColorPropFix) `
   box-sizing: border-box;
   ${styled_system_1.borders};
   ${styled_system_1.boxShadow};

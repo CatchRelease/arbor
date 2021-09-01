@@ -21,7 +21,7 @@ const react_2 = require("@emotion/react");
 const styled_1 = __importDefault(require("@emotion/styled"));
 const styled_system_1 = require("styled-system");
 const rotationStyles = ({ rotation }) => rotation &&
-    react_2.css `
+    (0, react_2.css) `
     transform: rotate(${rotation}deg);
   `;
 exports.StyledIcon = styled_1.default.i `
@@ -37,10 +37,10 @@ exports.StyledIcon = styled_1.default.i `
 const Icon = (_a) => {
     var { className, iconRef, name, rotation = null, theme } = _a, props = __rest(_a, ["className", "iconRef", "name", "rotation", "theme"]);
     const { iconFontPrefix } = theme;
-    return (jsx_runtime_1.jsx(react_2.ClassNames, { children: ({ cx }) => (jsx_runtime_1.jsx(exports.StyledIcon, Object.assign({ className: cx(iconFontPrefix, `${iconFontPrefix}-${name}`, className), ref: iconRef, rotation: rotation }, props), void 0)) }, void 0));
+    return ((0, jsx_runtime_1.jsx)(react_2.ClassNames, { children: ({ cx }) => ((0, jsx_runtime_1.jsx)(exports.StyledIcon, Object.assign({ className: cx(iconFontPrefix, `${iconFontPrefix}-${name}`, className), ref: iconRef, rotation: rotation }, props), void 0)) }, void 0));
 };
-const WithThemeIcon = react_2.withTheme(Icon);
-const ForwardRefWithThemeIcon = react_1.forwardRef((props, ref) => {
-    return jsx_runtime_1.jsx(WithThemeIcon, Object.assign({}, props, { iconRef: ref }), void 0);
+const WithThemeIcon = (0, react_2.withTheme)(Icon);
+const ForwardRefWithThemeIcon = (0, react_1.forwardRef)((props, ref) => {
+    return (0, jsx_runtime_1.jsx)(WithThemeIcon, Object.assign({}, props, { iconRef: ref }), void 0);
 });
 exports.default = ForwardRefWithThemeIcon;

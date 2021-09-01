@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const Flex_1 = __importDefault(require("../Flex"));
-const CardRow = (props) => jsx_runtime_1.jsx(Flex_1.default, Object.assign({}, props), void 0);
+const CardRow = (props) => (0, jsx_runtime_1.jsx)(Flex_1.default, Object.assign({}, props), void 0);
 CardRow.defaultProps = {
     px: 'regular',
     py: 'smallest',

@@ -21,7 +21,7 @@ const StyledAutoCompleteIndicatorsContainer = (_a) => {
     var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     cx, innerProps, children } = _a, props = __rest(_a, ["cx", "innerProps", "children"]);
-    return (jsx_runtime_1.jsx(Grid_1.default, Object.assign({ alignItems: "center", gridAutoFlow: "column", gridGap: "smaller" }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
+    return ((0, jsx_runtime_1.jsx)(Grid_1.default, Object.assign({ alignItems: "center", gridAutoFlow: "column", gridGap: "smaller" }, Object.assign(Object.assign({}, innerProps), props), { children: children }), void 0));
 };
 StyledAutoCompleteIndicatorsContainer.propTypes = {
     cx: prop_types_1.default.func.isRequired,

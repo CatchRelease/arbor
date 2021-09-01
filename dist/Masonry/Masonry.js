@@ -20,7 +20,7 @@ const MasonryContainer_1 = __importDefault(require("./MasonryContainer"));
 const MasonryItem_1 = __importDefault(require("./MasonryItem"));
 const Masonry = (_a) => {
     var { children, rowGap } = _a, props = __rest(_a, ["children", "rowGap"]);
-    return (jsx_runtime_1.jsx(MasonryContainer_1.default, Object.assign({}, props, { children: [].concat(children).map((child) => (jsx_runtime_1.jsx(MasonryItem_1.default, Object.assign({ mb: rowGap }, { children: child }), child.key))) }), void 0));
+    return ((0, jsx_runtime_1.jsx)(MasonryContainer_1.default, Object.assign({}, props, { children: [].concat(children).map((child) => ((0, jsx_runtime_1.jsx)(MasonryItem_1.default, Object.assign({ mb: rowGap }, { children: child }), child.key))) }), void 0));
 };
 Masonry.propTypes = {
     children: prop_types_1.default.oneOfType([

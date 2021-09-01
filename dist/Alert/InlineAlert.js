@@ -18,6 +18,6 @@ const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const AlertContent_1 = __importDefault(require("./AlertContent"));
 const InlineAlert = (_a) => {
     var { oneLine = true } = _a, props = __rest(_a, ["oneLine"]);
-    return (jsx_runtime_1.jsx(AlertContent_1.default, Object.assign({ p: "0" }, Object.assign({ oneLine }, props)), void 0));
+    return ((0, jsx_runtime_1.jsx)(AlertContent_1.default, Object.assign({ p: "0" }, Object.assign({ oneLine }, props)), void 0));
 };
 exports.default = InlineAlert;

@@ -21,7 +21,7 @@ const StyledAutoCompleteContainer = (_a) => {
     var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     cx, innerRef, children } = _a, props = __rest(_a, ["cx", "innerRef", "children"]);
-    return (jsx_runtime_1.jsx(Box_1.default, Object.assign({ ref: innerRef }, Object.assign({}, props), { children: children }), void 0));
+    return ((0, jsx_runtime_1.jsx)(Box_1.default, Object.assign({ ref: innerRef }, Object.assign({}, props), { children: children }), void 0));
 };
 StyledAutoCompleteContainer.propTypes = {
     cx: prop_types_1.default.func.isRequired,

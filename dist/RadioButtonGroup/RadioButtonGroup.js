@@ -13,11 +13,11 @@ const groupOnChange = (e, setCheckedValueState, onChange) => {
     onChange(e);
 };
 const RadioButtonGroup = ({ name, options, onChange, checkedValue, disabled, buttonProps }) => {
-    const [checkedValueState, setCheckedValueState] = react_1.useState(checkedValue);
+    const [checkedValueState, setCheckedValueState] = (0, react_1.useState)(checkedValue);
     const buttonOnChange = (e) => {
         groupOnChange(e, setCheckedValueState, onChange);
     };
-    return (jsx_runtime_1.jsx(jsx_runtime_1.Fragment, { children: options.map(({ label, value, disabled: optionDisabled }, idx) => (jsx_runtime_1.jsx(RadioButton_1.default, Object.assign({}, Object.assign({ id: `${name}:${value}`, key: `${name}:${value}`, name, disabled: disabled || optionDisabled, label,
+    return ((0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, { children: options.map(({ label, value, disabled: optionDisabled }, idx) => ((0, jsx_runtime_1.jsx)(RadioButton_1.default, Object.assign({}, Object.assign({ id: `${name}:${value}`, key: `${name}:${value}`, name, disabled: disabled || optionDisabled, label,
             value, onChange: buttonOnChange, checked: checkedValueState
                 ? checkedValueState === value
                 : idx === 0 }, buttonProps)), void 0))) }, void 0));

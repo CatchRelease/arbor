@@ -27,7 +27,7 @@ const getColumns = (children = []) => {
 const Header = (_a) => {
     var { children } = _a, props = __rest(_a, ["children"]);
     const [headingText, ...remainingChildren] = react_1.Children.toArray(children);
-    return (jsx_runtime_1.jsxs(StyledHeader_1.default, Object.assign({ alignItems: "end", gridGap: "small", gridTemplateColumns: getColumns(remainingChildren) }, props, { children: [headingText, remainingChildren] }), void 0));
+    return ((0, jsx_runtime_1.jsxs)(StyledHeader_1.default, Object.assign({ alignItems: "end", gridGap: "small", gridTemplateColumns: getColumns(remainingChildren) }, props, { children: [headingText, remainingChildren] }), void 0));
 };
 Header.propTypes = {
     /**

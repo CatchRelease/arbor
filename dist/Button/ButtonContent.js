@@ -24,7 +24,7 @@ const gridTemplateColumns = ({ hasText, iconStart, iconEnd }) => {
     }
     return '0fr';
 };
-const ButtonContent = styled_1.default(Grid_1.default) `
+const ButtonContent = (0, styled_1.default)(Grid_1.default) `
   grid-template-columns: ${gridTemplateColumns};
   visibility: ${(props) => (props.spin ? 'hidden' : 'inherit')};
 `;

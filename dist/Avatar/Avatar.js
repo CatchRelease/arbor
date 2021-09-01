@@ -32,11 +32,11 @@ const getInitials = (name) => {
     return firstInitial;
 };
 const getText = (name) => name.match(/[A-Za-z]/) ? getInitials(name).toUpperCase() : name;
-const Avatar = react_1.forwardRef((_a, ref) => {
+const Avatar = (0, react_1.forwardRef)((_a, ref) => {
     var { name, subtle = false, size = 'default', baseColor: baseColorProp } = _a, props = __rest(_a, ["name", "subtle", "size", "baseColor"]);
-    const baseColor = baseColorProp || utils_1.colorForString(name, AVATAR_COLORS);
-    return (jsx_runtime_1.jsx(StyledAvatar_1.default, Object.assign({}, Object.assign({ alignItems: 'center', baseColor, border: '1px solid', borderRadius: '50%', justifyContent: 'center', size,
+    const baseColor = baseColorProp || (0, utils_1.colorForString)(name, AVATAR_COLORS);
+    return ((0, jsx_runtime_1.jsx)(StyledAvatar_1.default, Object.assign({}, Object.assign({ alignItems: 'center', baseColor, border: '1px solid', borderRadius: '50%', justifyContent: 'center', size,
         subtle,
-        ref }, props), { children: jsx_runtime_1.jsx(StyledAvatarText_1.default, Object.assign({}, { baseColor, size, subtle }, { children: getText(name) }), void 0) }), void 0));
+        ref }, props), { children: (0, jsx_runtime_1.jsx)(StyledAvatarText_1.default, Object.assign({}, { baseColor, size, subtle }, { children: getText(name) }), void 0) }), void 0));
 });
 exports.default = Avatar;

@@ -9,7 +9,7 @@ const Box_1 = __importDefault(require("../Box"));
 const activeStyles = ({ active, theme }) => {
     const color = theme.colors.intent.brand.dark;
     return (active &&
-        react_1.css `
+        (0, react_1.css) `
       color: ${color};
       border-color: ${color};
 
@@ -20,7 +20,7 @@ const activeStyles = ({ active, theme }) => {
       }
     `);
 };
-const StyledTab = styled_1.default(Box_1.default) `
+const StyledTab = (0, styled_1.default)(Box_1.default) `
   cursor: pointer;
   font-weight: ${(props) => props.theme.fontWeights.medium};
   line-height: ${(props) => props.theme.lineHeights.small};

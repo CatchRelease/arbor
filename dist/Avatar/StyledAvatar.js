@@ -19,13 +19,13 @@ const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const react_1 = require("react");
 const react_2 = require("@emotion/react");
 const Flex_1 = __importDefault(require("../Flex"));
-exports.StyledAvatar = react_1.forwardRef((_a, ref) => {
+exports.StyledAvatar = (0, react_1.forwardRef)((_a, ref) => {
     var { baseColor, border, size, subtle, theme: { avatarSizes } } = _a, props = __rest(_a, ["baseColor", "border", "size", "subtle", "theme"]);
     const bg = subtle ? `monochrome.white` : baseColor;
     const borderColor = baseColor;
-    return (jsx_runtime_1.jsx(Flex_1.default, Object.assign({}, Object.assign({ width: avatarSizes[size], height: avatarSizes[size], bg,
+    return ((0, jsx_runtime_1.jsx)(Flex_1.default, Object.assign({}, Object.assign({ width: avatarSizes[size], height: avatarSizes[size], bg,
         border,
         borderColor,
         ref }, props)), void 0));
 });
-exports.default = react_2.withTheme(exports.StyledAvatar);
+exports.default = (0, react_2.withTheme)(exports.StyledAvatar);

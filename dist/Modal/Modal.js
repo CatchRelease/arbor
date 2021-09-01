@@ -21,8 +21,8 @@ const react_1 = require("@emotion/react");
 const buildModalCss_1 = __importDefault(require("./buildModalCss"));
 const Modal = (_a) => {
     var { children, modalCss, overlayCss, theme } = _a, props = __rest(_a, ["children", "modalCss", "overlayCss", "theme"]);
-    const combinedModalCss = buildModalCss_1.default({ theme, modalCss, overlayCss });
-    return (jsx_runtime_1.jsxs(jsx_runtime_1.Fragment, { children: [jsx_runtime_1.jsx(react_1.Global, { styles: combinedModalCss }, void 0), jsx_runtime_1.jsx(react_modal_1.default, Object.assign({ overlayClassName: "ArborModalOverlay", className: "ArborModal" }, props, { children: children }), void 0)] }, void 0));
+    const combinedModalCss = (0, buildModalCss_1.default)({ theme, modalCss, overlayCss });
+    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(react_1.Global, { styles: combinedModalCss }, void 0), (0, jsx_runtime_1.jsx)(react_modal_1.default, Object.assign({ overlayClassName: "ArborModalOverlay", className: "ArborModal" }, props, { children: children }), void 0)] }, void 0));
 };
 exports.Modal = Modal;
-exports.default = react_1.withTheme(exports.Modal);
+exports.default = (0, react_1.withTheme)(exports.Modal);

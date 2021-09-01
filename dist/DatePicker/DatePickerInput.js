@@ -25,7 +25,7 @@ const defaultInputProps = {
 };
 const DatePickerInput = (_a) => {
     var { dayPickerProps, inputProps } = _a, props = __rest(_a, ["dayPickerProps", "inputProps"]);
-    return (jsx_runtime_1.jsx(DayPickerInput_1.default, Object.assign({ component: Input_1.default, overlayComponent: DatePickerInputOverlay_1.default, dayPickerProps: Object.assign(Object.assign({}, datePickerDefaults_1.default), dayPickerProps), inputProps: Object.assign(Object.assign({}, defaultInputProps), inputProps) }, props), void 0));
+    return ((0, jsx_runtime_1.jsx)(DayPickerInput_1.default, Object.assign({ component: Input_1.default, overlayComponent: DatePickerInputOverlay_1.default, dayPickerProps: Object.assign(Object.assign({}, datePickerDefaults_1.default), dayPickerProps), inputProps: Object.assign(Object.assign({}, defaultInputProps), inputProps) }, props), void 0));
 };
 DatePickerInput.propTypes = {
     dayPickerProps: prop_types_1.default.object,

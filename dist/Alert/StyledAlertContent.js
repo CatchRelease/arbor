@@ -19,11 +19,11 @@ const gridTemplateColumns = ({ intent, onClose }) => {
     else if (onClose) {
         columns = '1fr 0fr';
     }
-    return react_1.css `
+    return (0, react_1.css) `
     grid-template-columns: ${columns};
   `;
 };
-const StyledAlertContent = styled_1.default(Grid_1.default) `
+const StyledAlertContent = (0, styled_1.default)(Grid_1.default) `
   ${gridTemplateColumns};
 `;
 StyledAlertContent.propTypes = {

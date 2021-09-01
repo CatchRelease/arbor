@@ -16,33 +16,33 @@ const polished_1 = require("polished");
 const theme_get_1 = require("@styled-system/theme-get");
 const variants = (_a) => {
     var { intent, variant, paletteColor } = _a, props = __rest(_a, ["intent", "variant", "paletteColor"]);
-    const colorIntent = theme_get_1.themeGet(`colors.intent.${intent}.default`)(props);
-    const colorWhite = theme_get_1.themeGet('colors.monochrome.white')(props);
-    const colorGrey = theme_get_1.themeGet(`colors.monochrome.grey10`)(props);
+    const colorIntent = (0, theme_get_1.themeGet)(`colors.intent.${intent}.default`)(props);
+    const colorWhite = (0, theme_get_1.themeGet)('colors.monochrome.white')(props);
+    const colorGrey = (0, theme_get_1.themeGet)(`colors.monochrome.grey10`)(props);
     const color = () => {
         if (paletteColor) {
-            return theme_get_1.themeGet(`colors.palette.${paletteColor}.default`)(props);
+            return (0, theme_get_1.themeGet)(`colors.palette.${paletteColor}.default`)(props);
         }
         if (variant === 'primary') {
             return intent === 'brand'
-                ? theme_get_1.themeGet(`colors.intent.${intent}.lighter`)(props)
+                ? (0, theme_get_1.themeGet)(`colors.intent.${intent}.lighter`)(props)
                 : colorWhite;
         }
         return colorIntent;
     };
-    const colorActive = polished_1.shade(0.16, colorIntent);
-    const colorFocus = theme_get_1.themeGet(`colors.intent.${intent}.light`)(props);
-    const colorHover = polished_1.tint(0.16, colorIntent);
+    const colorActive = (0, polished_1.shade)(0.16, colorIntent);
+    const colorFocus = (0, theme_get_1.themeGet)(`colors.intent.${intent}.light`)(props);
+    const colorHover = (0, polished_1.tint)(0.16, colorIntent);
     const colorIcon = () => {
         if (paletteColor) {
-            return theme_get_1.themeGet(`colors.palette.${paletteColor}.default`)(props);
+            return (0, theme_get_1.themeGet)(`colors.palette.${paletteColor}.default`)(props);
         }
         if (variant !== 'primary' && intent === 'brand') {
-            return theme_get_1.themeGet(`colors.icon.default`)(props);
+            return (0, theme_get_1.themeGet)(`colors.icon.default`)(props);
         }
         return 'inherit';
     };
-    const common = react_1.css `
+    const common = (0, react_1.css) `
     &::-moz-focus-inner {
       border: 0;
     }
@@ -61,7 +61,7 @@ const variants = (_a) => {
   `;
     switch (variant) {
         case 'primary':
-            return react_1.css `
+            return (0, react_1.css) `
         background-color: ${colorIntent};
         color: ${color()};
 
@@ -82,12 +82,12 @@ const variants = (_a) => {
         ${common};
       `;
         case 'secondary':
-            return react_1.css `
+            return (0, react_1.css) `
         background-color: ${colorWhite};
         color: ${color()};
 
         &:enabled {
-          border: 1px solid ${theme_get_1.themeGet(`colors.border.default`)(props)};
+          border: 1px solid ${(0, theme_get_1.themeGet)(`colors.border.default`)(props)};
 
           &:active {
             color: ${colorActive};
@@ -110,19 +110,19 @@ const variants = (_a) => {
         ${common};
       `;
         case 'minimal':
-            return react_1.css `
+            return (0, react_1.css) `
         background-color: transparent;
         border: 1px solid transparent;
         color: ${color()};
 
         &:disabled {
           background-color: transparent;
-          color: ${theme_get_1.themeGet(`colors.text.disabled`)(props)};
+          color: ${(0, theme_get_1.themeGet)(`colors.text.disabled`)(props)};
 
           /* quiet an invalid lint error - button cannot be disabled and enabled at the same time */
           /* stylelint-disable-next-line no-descending-specificity */
           i {
-            color: ${theme_get_1.themeGet(`colors.icon.disabled`)(props)};
+            color: ${(0, theme_get_1.themeGet)(`colors.icon.disabled`)(props)};
           }
         }
 

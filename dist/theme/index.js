@@ -97,13 +97,13 @@ exports.lineHeights = {
     large: 1.5
 };
 exports.spacings = {
-    smallest: polished_1.rem('4px'),
-    smaller: polished_1.rem('8px'),
-    small: polished_1.rem('12px'),
-    regular: polished_1.rem('16px'),
-    large: polished_1.rem('24px'),
-    larger: polished_1.rem('32px'),
-    largest: polished_1.rem('64px')
+    smallest: (0, polished_1.rem)('4px'),
+    smaller: (0, polished_1.rem)('8px'),
+    small: (0, polished_1.rem)('12px'),
+    regular: (0, polished_1.rem)('16px'),
+    large: (0, polished_1.rem)('24px'),
+    larger: (0, polished_1.rem)('32px'),
+    largest: (0, polished_1.rem)('64px')
 };
 exports.borderRadius = {
     small: '3px',

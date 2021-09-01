@@ -8,11 +8,11 @@ const polished_1 = require("polished");
 const primary_1 = __importDefault(require("./primary"));
 const brand_1 = __importDefault(require("./brand"));
 const generateColorModifiers = (color) => ({
-    lighter: polished_1.tint(0.9, color),
-    light: polished_1.tint(0.7, color),
+    lighter: (0, polished_1.tint)(0.9, color),
+    light: (0, polished_1.tint)(0.7, color),
     default: color,
-    dark: polished_1.shade(0.5, color),
-    darker: polished_1.shade(0.8, color)
+    dark: (0, polished_1.shade)(0.5, color),
+    darker: (0, polished_1.shade)(0.8, color)
 });
 const paletteReducer = (palette, [color, value]) => Object.assign(palette, {
     [color]: generateColorModifiers(value)

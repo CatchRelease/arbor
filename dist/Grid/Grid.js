@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const styled_1 = __importDefault(require("@emotion/styled"));
 const styled_system_1 = require("styled-system");
 const Box_1 = __importDefault(require("../Box"));
-const Grid = styled_1.default(Box_1.default) `
+const Grid = (0, styled_1.default)(Box_1.default) `
   ${styled_system_1.alignContent};
   ${styled_system_1.alignItems};
   ${styled_system_1.grid};

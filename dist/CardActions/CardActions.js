@@ -6,10 +6,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = require("@emotion/react");
 const styled_1 = __importDefault(require("@emotion/styled"));
 const Grid_1 = __importDefault(require("../Grid"));
-const gridStyles = ({ children }) => react_1.css `
+const gridStyles = ({ children }) => (0, react_1.css) `
   grid-template-columns: repeat(${children.length}, 1fr);
 `;
-const CardActions = styled_1.default(Grid_1.default) `
+const CardActions = (0, styled_1.default)(Grid_1.default) `
   ${gridStyles};
 `;
 CardActions.defaultProps = {

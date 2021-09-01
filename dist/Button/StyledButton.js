@@ -8,7 +8,7 @@ const styled_system_1 = require("styled-system");
 const textTransform_1 = __importDefault(require("../utils/textTransform"));
 const variantStyles_1 = __importDefault(require("./variantStyles"));
 const whiteSpace_1 = __importDefault(require("../utils/whiteSpace"));
-const fullWidth = styled_system_1.variant({
+const fullWidth = (0, styled_system_1.variant)({
     prop: 'fullWidth',
     variants: {
         true: {
@@ -19,7 +19,7 @@ const fullWidth = styled_system_1.variant({
         }
     }
 });
-const size = styled_system_1.variant({
+const size = (0, styled_system_1.variant)({
     prop: 'size',
     scale: 'buttons.sizes',
     variants: {

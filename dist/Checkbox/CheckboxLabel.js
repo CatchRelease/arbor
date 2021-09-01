@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const styled_1 = __importDefault(require("@emotion/styled"));
 const Flex_1 = __importDefault(require("../Flex"));
-const CheckboxLabel = styled_1.default(Flex_1.default) `
+const CheckboxLabel = (0, styled_1.default)(Flex_1.default) `
   cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
   line-height: ${({ theme }) => theme.lineHeights.small};
 `;

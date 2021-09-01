@@ -11,10 +11,10 @@ const Badge_1 = __importDefault(require("../Badge"));
 const Icon_1 = __importDefault(require("../Icon"));
 const StyledAutoCompleteMultiValue = ({ data, data: { label }, paletteColor, variant, readOnly, removeProps }) => {
     const color = paletteColor === null
-        ? utils_1.colorForString(label, Object.keys(colors_1.palette))
+        ? (0, utils_1.colorForString)(label, Object.keys(colors_1.palette))
         : paletteColor;
-    const iconEnd = readOnly ? null : (jsx_runtime_1.jsx(Icon_1.default, Object.assign({ "aria-label": "remove", css: { cursor: 'pointer' }, fontSize: "size3", name: "cross" }, removeProps), void 0));
-    return (jsx_runtime_1.jsx(Badge_1.default, Object.assign({}, Object.assign({ iconEnd, paletteColor: color, subtle: true, variant }, data), { children: label }), void 0));
+    const iconEnd = readOnly ? null : ((0, jsx_runtime_1.jsx)(Icon_1.default, Object.assign({ "aria-label": "remove", css: { cursor: 'pointer' }, fontSize: "size3", name: "cross" }, removeProps), void 0));
+    return ((0, jsx_runtime_1.jsx)(Badge_1.default, Object.assign({}, Object.assign({ iconEnd, paletteColor: color, subtle: true, variant }, data), { children: label }), void 0));
 };
 StyledAutoCompleteMultiValue.propTypes = {
     data: prop_types_1.default.shape({

@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const styled_1 = __importDefault(require("@emotion/styled"));
 const Box_1 = __importDefault(require("../Box"));
 const columns_1 = require("../utils/columns");
-const MasonryContainer = styled_1.default(Box_1.default) `
+const MasonryContainer = (0, styled_1.default)(Box_1.default) `
   ${columns_1.columnCount};
   ${columns_1.columnGap};
   ${columns_1.columnRule};

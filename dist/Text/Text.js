@@ -9,7 +9,7 @@ const styled_system_1 = require("styled-system");
 const textOverflow_1 = __importDefault(require("../utils/textOverflow"));
 const textTransform_1 = __importDefault(require("../utils/textTransform"));
 const whiteSpace_1 = __importDefault(require("../utils/whiteSpace"));
-const baseStyles = ({ theme }) => react_1.css `
+const baseStyles = ({ theme }) => (0, react_1.css) `
   font-family: ${theme.brandFont};
 `;
 const Text = styled_1.default.p `

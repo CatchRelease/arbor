@@ -58,7 +58,7 @@ class Popover extends react_1.Component {
         this.state = {
             isOpen: false
         };
-        this.node = react_1.createRef();
+        this.node = (0, react_1.createRef)();
     }
     componentDidMount() {
         document.addEventListener('click', this.handleOutsideClick, true);
@@ -92,11 +92,11 @@ class Popover extends react_1.Component {
     render() {
         const _a = this.props, { children, content, contentProps, preferPlace, place } = _a, popoverProps = __rest(_a, ["children", "content", "contentProps", "preferPlace", "place"]);
         const { isOpen } = this.state;
-        const styledContent = (jsx_runtime_1.jsx(PopoverContent_1.default, Object.assign({}, contentProps, { children: content }), void 0));
-        const trigger = react_1.cloneElement(children, {
+        const styledContent = ((0, jsx_runtime_1.jsx)(PopoverContent_1.default, Object.assign({}, contentProps, { children: content }), void 0));
+        const trigger = (0, react_1.cloneElement)(children, {
             onClick: this.toggle
         });
-        return (jsx_runtime_1.jsx(react_popover_1.default, Object.assign({ ref: this.node, isOpen: isOpen, body: styledContent, preferPlace: preferPlace, place: place, tipSize: 0.01, enterExitTransitionDurationMs: 0 }, popoverProps, { children: trigger }), void 0));
+        return ((0, jsx_runtime_1.jsx)(react_popover_1.default, Object.assign({ ref: this.node, isOpen: isOpen, body: styledContent, preferPlace: preferPlace, place: place, tipSize: 0.01, enterExitTransitionDurationMs: 0 }, popoverProps, { children: trigger }), void 0));
     }
 }
 Popover.propTypes = {

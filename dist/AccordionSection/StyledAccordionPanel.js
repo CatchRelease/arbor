@@ -20,10 +20,10 @@ const react_1 = require("@emotion/react");
 const Box_1 = __importDefault(require("../Box"));
 const variantStyles = (_a) => {
     var { variant } = _a, props = __rest(_a, ["variant"]);
-    const borderColor = theme_get_1.themeGet('borders.default')(props);
+    const borderColor = (0, theme_get_1.themeGet)('borders.default')(props);
     switch (variant) {
         case 'default':
-            return react_1.css `
+            return (0, react_1.css) `
         border-bottom: ${borderColor};
 
         section:last-child & {
@@ -37,7 +37,7 @@ const variantStyles = (_a) => {
             return '';
     }
 };
-const StyledAccordionPanel = styled_1.default(Box_1.default) `
+const StyledAccordionPanel = (0, styled_1.default)(Box_1.default) `
   ${variantStyles};
 `;
 StyledAccordionPanel.defaultProps = {

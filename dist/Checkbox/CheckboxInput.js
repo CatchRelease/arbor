@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const styled_1 = __importDefault(require("@emotion/styled"));
 const Box_1 = __importDefault(require("../Box"));
-const CheckboxInput = styled_1.default(Box_1.default) `
+const CheckboxInput = (0, styled_1.default)(Box_1.default) `
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   opacity: 0;

@@ -18,7 +18,7 @@ const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const prop_types_1 = __importDefault(require("prop-types"));
 const styled_1 = __importDefault(require("@emotion/styled"));
 const Flex_1 = __importDefault(require("../Flex"));
-const StyledFlex = styled_1.default(Flex_1.default) `
+const StyledFlex = (0, styled_1.default)(Flex_1.default) `
   font-family: ${({ theme }) => theme.brandFont};
   font-size: ${({ theme }) => theme.fontSizes.size4};
 
@@ -38,7 +38,7 @@ const StyledAutoCompleteInput = (_a) => {
     selectProps, 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     theme } = _a, props = __rest(_a, ["cx", "getStyles", "innerProps", "innerRef", "isDisabled", "isHidden", "selectProps", "theme"]);
-    return (jsx_runtime_1.jsx(StyledFlex, Object.assign({ as: "input", border: "none", flex: "1", disabled: isDisabled, ref: innerRef }, Object.assign(Object.assign({}, innerProps), props)), void 0));
+    return ((0, jsx_runtime_1.jsx)(StyledFlex, Object.assign({ as: "input", border: "none", flex: "1", disabled: isDisabled, ref: innerRef }, Object.assign(Object.assign({}, innerProps), props)), void 0));
 };
 StyledAutoCompleteInput.propTypes = {
     cx: prop_types_1.default.func.isRequired,

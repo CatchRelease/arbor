@@ -21,8 +21,8 @@ const react_1 = require("@emotion/react");
 const styled_1 = __importDefault(require("@emotion/styled"));
 const styled_system_1 = require("styled-system");
 const Box_1 = __importDefault(require("../Box"));
-const StyledSpinner = styled_1.default(Box_1.default) `
-  ${styled_system_1.system({
+const StyledSpinner = (0, styled_1.default)(Box_1.default) `
+  ${(0, styled_system_1.system)({
     diameter: {
         properties: ['width', 'height']
     }
@@ -30,7 +30,7 @@ const StyledSpinner = styled_1.default(Box_1.default) `
 
   position: relative;
 `;
-const spinAnimation = react_1.keyframes `
+const spinAnimation = (0, react_1.keyframes) `
   0%, 39%, 100% {
     opacity: 0.5;
     transform: scale(0.6);
@@ -39,7 +39,7 @@ const spinAnimation = react_1.keyframes `
     transform: scale(1);
   }
 `;
-const StyledSpinnerDot = styled_1.default(Box_1.default) `
+const StyledSpinnerDot = (0, styled_1.default)(Box_1.default) `
   width: 100%;
   height: 100%;
   position: absolute;
@@ -127,11 +127,11 @@ const Spinner = (_a) => {
     var { 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     children, color, spin } = _a, props = __rest(_a, ["children", "color", "spin"]);
-    const themedColor = theme_get_1.themeGet(`colors.${color}`, color)(props);
+    const themedColor = (0, theme_get_1.themeGet)(`colors.${color}`, color)(props);
     if (!spin) {
         return null;
     }
-    return (jsx_runtime_1.jsx(StyledSpinner, Object.assign({}, Object.assign({ color: themedColor }, props), { children: [...Array(12).keys()].map((value) => (jsx_runtime_1.jsx(StyledSpinnerDot, { color: themedColor }, value))) }), void 0));
+    return ((0, jsx_runtime_1.jsx)(StyledSpinner, Object.assign({}, Object.assign({ color: themedColor }, props), { children: [...Array(12).keys()].map((value) => ((0, jsx_runtime_1.jsx)(StyledSpinnerDot, { color: themedColor }, value))) }), void 0));
 };
 Spinner.propTypes = {
     /**
@@ -164,4 +164,4 @@ Spinner.defaultProps = {
     spin: true,
     diameter: '40px'
 };
-exports.default = react_1.withTheme(Spinner);
+exports.default = (0, react_1.withTheme)(Spinner);

@@ -19,7 +19,7 @@ const prop_types_1 = __importDefault(require("prop-types"));
 const StyledMenuItem_1 = __importDefault(require("./StyledMenuItem"));
 const MenuItem = (_a) => {
     var { innerRef, children } = _a, props = __rest(_a, ["innerRef", "children"]);
-    return (jsx_runtime_1.jsx(StyledMenuItem_1.default, Object.assign({ ref: innerRef }, props, { children: children }), void 0));
+    return ((0, jsx_runtime_1.jsx)(StyledMenuItem_1.default, Object.assign({ ref: innerRef }, props, { children: children }), void 0));
 };
 MenuItem.propTypes = {
     /**

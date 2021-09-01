@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const polished_1 = require("polished");
 const typography_1 = require("../typography");
 const buttonSize = (rawHeight, textFontSize, iconFontSize) => {
-    const height = polished_1.rem(`${rawHeight}px`);
-    const padding = polished_1.rem(`${rawHeight * 0.5}px`);
+    const height = (0, polished_1.rem)(`${rawHeight}px`);
+    const padding = (0, polished_1.rem)(`${rawHeight * 0.5}px`);
     return {
         fontSize: textFontSize,
         height,

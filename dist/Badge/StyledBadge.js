@@ -20,7 +20,7 @@ const getBackground = ({ paletteColor, subtle, theme }) => {
 const getBorderColor = ({ paletteColor, theme }) => paletteColor
     ? theme.colors.palette[paletteColor].default
     : theme.colors.monochrome.grey100;
-const StyledBadge = styled_1.default(Flex_1.default) `
+const StyledBadge = (0, styled_1.default)(Flex_1.default) `
   background: ${getBackground};
   border-color: ${getBorderColor};
   border-radius: ${(props) => (props.variant === 'pill' ? '999px' : '2px')};

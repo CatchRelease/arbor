@@ -37,8 +37,8 @@ const getTabContentId = (tab) => {
 };
 const Tabs = (_a) => {
     var { activeTabId, children, defaultTabId, tabBarAside } = _a, props = __rest(_a, ["activeTabId", "children", "defaultTabId", "tabBarAside"]);
-    const childrenAsArray = castArray_1.default(children);
-    const [state, setState] = react_1.useState(() => {
+    const childrenAsArray = (0, castArray_1.default)(children);
+    const [state, setState] = (0, react_1.useState)(() => {
         var _a;
         return activeTabId
             ? {}
@@ -51,7 +51,7 @@ const Tabs = (_a) => {
     if (!activeTab) {
         return null;
     }
-    const activeTabContent = react_1.cloneElement(activeTab.props.children, {
+    const activeTabContent = (0, react_1.cloneElement)(activeTab.props.children, {
         id: getTabContentId(activeTab)
     });
     const activateTab = (tab) => {
@@ -72,7 +72,7 @@ const Tabs = (_a) => {
             callback();
         }
     };
-    return (jsx_runtime_1.jsxs(jsx_runtime_1.Fragment, { children: [jsx_runtime_1.jsxs(StyledTabs_1.default, Object.assign({}, props, { children: [jsx_runtime_1.jsx(Box_1.default, { children: childrenAsArray.map((tab) => {
+    return ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsxs)(StyledTabs_1.default, Object.assign({}, props, { children: [(0, jsx_runtime_1.jsx)(Box_1.default, { children: childrenAsArray.map((tab) => {
                             if (!tab) {
                                 return tab;
                             }
@@ -80,7 +80,7 @@ const Tabs = (_a) => {
                             const active = currentTabId === id;
                             const tabContentId = getTabContentId(tab);
                             const onClick = () => handleTabClick(tab, originalOnClick);
-                            return react_1.cloneElement(tab, {
+                            return (0, react_1.cloneElement)(tab, {
                                 'aria-controls': tabContentId,
                                 'aria-selected': active ? 'true' : 'false',
                                 active,
@@ -88,7 +88,7 @@ const Tabs = (_a) => {
                                 onClick,
                                 onKeyPress: ({ key }) => handleKeyPress(key, onClick)
                             }, title);
-                        }) }, void 0), tabBarAside && jsx_runtime_1.jsx(Flex_1.default, Object.assign({ alignItems: "center" }, { children: tabBarAside }), void 0)] }), void 0), activeTabContent] }, void 0));
+                        }) }, void 0), tabBarAside && (0, jsx_runtime_1.jsx)(Flex_1.default, Object.assign({ alignItems: "center" }, { children: tabBarAside }), void 0)] }), void 0), activeTabContent] }, void 0));
 };
 Tabs.defaultProps = {
     activeTabId: undefined,

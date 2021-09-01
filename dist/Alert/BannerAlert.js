@@ -28,6 +28,6 @@ const conditionalProps = (intent) => {
 };
 const BannerAlert = (_a) => {
     var { intent, oneLine = true } = _a, props = __rest(_a, ["intent", "oneLine"]);
-    return (jsx_runtime_1.jsx(Box_1.default, Object.assign({ textAlign: "center" }, borderStyles_1.default(intent), conditionalProps(intent), { children: jsx_runtime_1.jsx(AlertContent_1.default, Object.assign({}, Object.assign({ intent, oneLine }, props)), void 0) }), void 0));
+    return ((0, jsx_runtime_1.jsx)(Box_1.default, Object.assign({ textAlign: "center" }, (0, borderStyles_1.default)(intent), conditionalProps(intent), { children: (0, jsx_runtime_1.jsx)(AlertContent_1.default, Object.assign({}, Object.assign({ intent, oneLine }, props)), void 0) }), void 0));
 };
 exports.default = BannerAlert;

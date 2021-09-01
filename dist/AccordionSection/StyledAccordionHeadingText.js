@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.StyledText = void 0;
 const styled_1 = __importDefault(require("@emotion/styled"));
 const Flex_1 = __importDefault(require("../Flex"));
-exports.StyledText = styled_1.default(Flex_1.default) `
+exports.StyledText = (0, styled_1.default)(Flex_1.default) `
   background: none;
   border: none;
   font-size: inherit;

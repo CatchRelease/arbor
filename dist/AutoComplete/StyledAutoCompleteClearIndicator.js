@@ -21,7 +21,7 @@ const StyledAutoCompleteClearIndicator = (_a) => {
     var { innerProps, 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     cx } = _a, props = __rest(_a, ["innerProps", "cx"]);
-    return (jsx_runtime_1.jsx(Icon_1.default, Object.assign({ "aria-label": "clear selection", fontSize: "size4", name: "cross" }, Object.assign(Object.assign({}, innerProps), props)), void 0));
+    return ((0, jsx_runtime_1.jsx)(Icon_1.default, Object.assign({ "aria-label": "clear selection", fontSize: "size4", name: "cross" }, Object.assign(Object.assign({}, innerProps), props)), void 0));
 };
 StyledAutoCompleteClearIndicator.propTypes = {
     cx: prop_types_1.default.func.isRequired,
