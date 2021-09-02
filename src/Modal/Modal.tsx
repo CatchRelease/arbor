@@ -4,7 +4,7 @@ import { Global, Theme, withTheme } from '@emotion/react';
 
 import buildModalCss, { Css } from './buildModalCss';
 
-type Props = ReactModal.Props & {
+export type Props = ReactModal.Props & {
   modalCss?: Css;
   overlayCss?: Css;
   theme: Theme;
