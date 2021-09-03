@@ -5,12 +5,15 @@ import { Css } from './buildModalCss';
 export declare type Props = ReactModal.Props & {
     modalCss?: Css;
     overlayCss?: Css;
+};
+declare type InternalProps = Props & {
     theme: Theme;
 };
-export declare const Modal: FC<Props>;
+export declare const Modal: FC<InternalProps>;
 declare const _default: FC<Pick<ReactModal.Props & {
     modalCss?: Css;
     overlayCss?: Css;
+} & {
     theme: Theme;
 } & {
     children?: import("react").ReactNode;
