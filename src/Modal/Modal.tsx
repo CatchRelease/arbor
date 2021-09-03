@@ -7,10 +7,13 @@ import buildModalCss, { Css } from './buildModalCss';
 export type Props = ReactModal.Props & {
   modalCss?: Css;
   overlayCss?: Css;
+};
+
+type InternalProps = Props & {
   theme: Theme;
 };
 
-export const Modal: FC<Props> = ({
+export const Modal: FC<InternalProps> = ({
   children,
   modalCss,
   overlayCss,
