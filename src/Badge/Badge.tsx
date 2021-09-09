@@ -1,11 +1,12 @@
-import PropTypes from 'prop-types';
+import { FC, ReactNode } from 'react';
 
-import palette from '../theme/colors/palette';
+import { PaletteColor } from '../theme/colors/palette';
 import Grid from '../Grid';
 import StyledBadge from './StyledBadge';
 import Text from '../Text';
+import Variant from './variant';
 
-const getTextColor = (color, subtle) => {
+const getTextColor = (color?: PaletteColor, subtle?: boolean) => {
   if (color) {
     return subtle ? `palette.${color}.dark` : 'monochrome.white';
   }
@@ -13,7 +14,7 @@ const getTextColor = (color, subtle) => {
   return subtle ? 'monochrome.grey80' : 'monochrome.white';
 };
 
-const getGridTemplateColumns = (iconStart, iconEnd) => {
+const getGridTemplateColumns = (iconStart: ReactNode, iconEnd: ReactNode) => {
   if (iconStart && iconEnd) {
     return '0fr 1fr 0fr';
   }
@@ -26,7 +27,15 @@ const getGridTemplateColumns = (iconStart, iconEnd) => {
   return '1fr';
 };
 
-const Badge = ({
+type Props = {
+  iconEnd?: ReactNode;
+  iconStart?: ReactNode;
+  paletteColor?: PaletteColor;
+  subtle?: boolean;
+  variant?: Variant;
+};
+
+const Badge: FC<Props> = ({
   paletteColor,
   children,
   iconEnd,
@@ -66,39 +75,6 @@ const Badge = ({
       </Grid>
     </StyledBadge>
   );
-};
-
-Badge.propTypes = {
-  /**
-   * Content to render within the badge
-   */
-  children: PropTypes.string.isRequired,
-
-  /**
-   * Badge color as a key of the theme's color palette.
-   * */
-  paletteColor: PropTypes.oneOf([...Object.keys(palette)]),
-
-  /**
-   * Arbor icon to insert after badge text.
-   * */
-  iconEnd: PropTypes.node,
-
-  /**
-   * Arbor icon to insert before badge text.
-   * */
-  iconStart: PropTypes.node,
-
-  /**
-   * Use a subtle version of the badge's color styling.
-   * */
-
-  subtle: PropTypes.bool,
-
-  /**
-   * Badge variant.
-   * */
-  variant: PropTypes.oneOf(['default', 'pill'])
 };
 
 Badge.defaultProps = {
