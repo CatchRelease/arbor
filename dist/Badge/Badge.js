@@ -15,8 +15,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-const prop_types_1 = __importDefault(require("prop-types"));
-const palette_1 = __importDefault(require("../theme/colors/palette"));
 const Grid_1 = __importDefault(require("../Grid"));
 const StyledBadge_1 = __importDefault(require("./StyledBadge"));
 const Text_1 = __importDefault(require("../Text"));
@@ -53,32 +51,6 @@ const Badge = (_a) => {
                     textOverflow: 'ellipsis',
                     whiteSpace: 'nowrap'
                 }, { children: children }), void 0), iconEnd] }), void 0) }), void 0));
-};
-Badge.propTypes = {
-    /**
-     * Content to render within the badge
-     */
-    children: prop_types_1.default.string.isRequired,
-    /**
-     * Badge color as a key of the theme's color palette.
-     * */
-    paletteColor: prop_types_1.default.oneOf([...Object.keys(palette_1.default)]),
-    /**
-     * Arbor icon to insert after badge text.
-     * */
-    iconEnd: prop_types_1.default.node,
-    /**
-     * Arbor icon to insert before badge text.
-     * */
-    iconStart: prop_types_1.default.node,
-    /**
-     * Use a subtle version of the badge's color styling.
-     * */
-    subtle: prop_types_1.default.bool,
-    /**
-     * Badge variant.
-     * */
-    variant: prop_types_1.default.oneOf(['default', 'pill'])
 };
 Badge.defaultProps = {
     paletteColor: 'neutral',
