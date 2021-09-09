@@ -1,12 +1,16 @@
 import { style } from 'styled-system';
 
-const ratioPadding = style({
+const ratioPadding = style<number>({
   prop: 'ratio',
   cssProperty: 'paddingBottom',
   transformValue: (n) => `${n * 100}%`
 });
 
-const ratio = (props) => ({
+type RatioProps = {
+  ratio?: number;
+};
+
+const ratio = (props: RatioProps) => ({
   height: 0,
   ...ratioPadding(props)
 });

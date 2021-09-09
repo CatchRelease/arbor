@@ -14,4 +14,14 @@ describe('<CardActions', () => {
 
     expect(tree).toMatchSnapshot();
   });
+
+  it('renders the CardActions component properly with one child', () => {
+    const tree = createWithTheme(
+      <CardActions>
+        <Icon name="download" />
+      </CardActions>
+    );
+
+    expect(tree).toMatchSnapshot();
+  });
 });
