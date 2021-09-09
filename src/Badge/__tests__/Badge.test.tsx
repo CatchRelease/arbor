@@ -1,14 +1,14 @@
 import Badge from '../Badge';
 import Icon from '../../Icon';
 import createWithTheme from '../../../utils/createWithTheme';
-import palette from '../../theme/colors/palette';
+import palette, { PaletteColor } from '../../theme/colors/palette';
 
-const colors = Object.keys(palette);
+const colors = Object.keys(palette) as PaletteColor[];
 const icon = <Icon name="cr-logo" />;
 
 describe('<Badge />', () => {
   describe('Variants', () => {
-    ['default', 'pill'].forEach((variant) => {
+    (['default', 'pill'] as const).forEach((variant) => {
       it(`properly renders a ${variant} badge`, () => {
         const badge = createWithTheme(
           <Badge variant={variant}>Badge Text</Badge>
