@@ -1,2 +1,5 @@
+declare type RatioProps = {
+    ratio?: number;
+};
+declare const ratio: (props: RatioProps) => any;
 export default ratio;
-declare function ratio(props: any): any;

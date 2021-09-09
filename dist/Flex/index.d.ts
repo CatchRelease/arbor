@@ -1,1 +1,1 @@
-export { default } from "./Flex";
+export { default, Props as FlexProps } from './Flex';
