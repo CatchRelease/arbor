@@ -20,7 +20,7 @@ module.exports = {
       {
         devDependencies: [
           '.storybook/**',
-          'jest.setup.js',
+          'jest.setup.ts',
           'src/**/__tests__/**',
           'stories/**',
           'utils/**'

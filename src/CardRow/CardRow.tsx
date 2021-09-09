@@ -1,6 +1,6 @@
-import Flex from '../Flex';
+import Flex, { FlexProps } from '../Flex';
 
-const CardRow = (props) => <Flex {...props} />;
+const CardRow = (props: FlexProps) => <Flex {...props} />;
 
 CardRow.defaultProps = {
   px: 'regular',

@@ -1,23 +1,20 @@
 import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
+
 import { ratio } from '../utils';
 
 import Box from '../Box';
 
-const CardPreview = styled(Box)`
+type Props = {
+  image: string;
+  ratio?: number;
+};
+
+const CardPreview = styled(Box)<Props>`
   background: url(${(props) => props.image}) center center no-repeat
     ${(props) => props.theme.colors.monochrome.black};
   background-size: contain;
   ${ratio};
 `;
-
-CardPreview.propTypes = {
-  /**
-   * Image to be rendered as the background of the CardPreview
-   */
-  image: PropTypes.string.isRequired,
-  ...ratio.propTypes
-};
 
 CardPreview.defaultProps = {
   ratio: 9 / 16

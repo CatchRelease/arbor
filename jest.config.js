@@ -3,7 +3,7 @@ module.exports = {
   testEnvironment: 'jsdom',
   verbose: true,
   snapshotSerializers: ['@emotion/jest/enzyme-serializer'],
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   setupFiles: ['jest-plugin-context/setup'],
   testMatch: ['**/__tests__/**/*.test.[jt]s?(x)'],
   moduleNameMapper: {

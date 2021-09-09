@@ -19,3 +19,20 @@ exports[`<CardActions renders the CardActions component properly 1`] = `
   />
 </div>
 `;
+
+exports[`<CardActions renders the CardActions component properly with one child 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  box-sizing: border-box;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+<div
+  className="emotion-0"
+>
+  <i
+    className="ar ar-download emotion-1"
+  />
+</div>
+`;
