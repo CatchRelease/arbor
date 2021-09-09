@@ -10,7 +10,7 @@ declare type Props = {
 export declare const StyledAvatarText: FC<Props>;
 declare const _default: FC<Pick<Props & {
     children?: import("react").ReactNode;
-}, "children" | "size" | "baseColor" | "subtle"> & {
+}, "children" | "size" | "subtle" | "baseColor"> & {
     theme?: Theme | undefined;
 }>;
 export default _default;
