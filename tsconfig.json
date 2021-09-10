@@ -8,7 +8,7 @@
     "lib": ["dom", "es2017"],
     "noEmit": true,
     "outDir": "dist",
-    "types": ["jest", "jest-enzyme", "jest-plugin-context"]
+    "types": ["@emotion/jest", "jest", "jest-enzyme", "jest-plugin-context"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"]
 }
