@@ -1,44 +1,126 @@
 import notes from './grid.md';
-import { Box, Grid } from '../src';
+import { Box, Grid, Text } from '../src';
 
 export default {
   title: 'Grid'
 };
 
+export const Default = () => (
+  <>
+    <Text mb="small">
+      Grids are used for organizing components on a page. It is essentially a
+      Box with extra features
+    </Text>
+    <Grid>
+      <Box p="regular" backgroundColor="blue" />
+      <Box p="regular" backgroundColor="red" />
+      <Box p="regular" backgroundColor="blue" />
+    </Grid>
+  </>
+);
+
+Default.storyName = 'default';
+Default.parameters = { notes: { markdown: notes } };
+
 export const GridGap = () => {
   return (
-    <Grid gridGap={['smaller', 'regular', 'larger']}>
-      <Box p="regular" backgroundColor="blue">
-        1
-      </Box>
-      <Box p="regular" backgroundColor="red">
-        2
-      </Box>
-      <Box p="regular" backgroundColor="blue">
-        3
-      </Box>
-    </Grid>
+    <>
+      <Text>gridGap sets the gap size between Grid child components</Text>
+      <Grid mt="small" gridGap="regular">
+        <Box p="regular" backgroundColor="blue">
+          1
+        </Box>
+        <Box p="regular" backgroundColor="red">
+          2
+        </Box>
+        <Box p="regular" backgroundColor="blue">
+          3
+        </Box>
+      </Grid>
+      <Text mt="large">gridGap can also be responsive</Text>
+      <Grid mt="small" gridGap={['smaller', 'regular', 'larger']}>
+        <Box p="regular" backgroundColor="blue">
+          1
+        </Box>
+        <Box p="regular" backgroundColor="red">
+          2
+        </Box>
+        <Box p="regular" backgroundColor="blue">
+          3
+        </Box>
+      </Grid>
+    </>
   );
 };
-
-GridGap.storyName = 'grid gap';
-GridGap.parameters = { notes: { markdown: notes } };
 
 export const GridRow = () => {
   return (
-    <Grid>
-      <Grid gridRow={[1, 2, 3]} p="regular" backgroundColor="blue">
-        1
+    <>
+      <Text>gridRow specifies which row each item should be located in</Text>
+      <Text>
+        It can be used to order items differently depending on screen size
+      </Text>
+      <Grid mt="small">
+        <Grid gridRow={[1, 2, 3]} p="regular" backgroundColor="blue">
+          a
+        </Grid>
+        <Grid gridRow={[2, 3, 1]} p="regular" backgroundColor="yellow">
+          b
+        </Grid>
+        <Grid gridRow={[3, 1, 2]} p="regular" backgroundColor="red">
+          c
+        </Grid>
       </Grid>
-      <Grid gridRow={[2, 3, 1]} p="regular" backgroundColor="red">
-        2
+
+      <Text mt="regular">You can also place all items on the same row</Text>
+      <Grid mt="small">
+        <Grid gridRow={1} p="regular" backgroundColor="blue">
+          1
+        </Grid>
+        <Grid gridRow={1} p="regular" backgroundColor="red">
+          2
+        </Grid>
+        <Grid gridRow={1} p="regular" backgroundColor="blue">
+          3
+        </Grid>
       </Grid>
-      <Grid gridRow={[3, 1, 2]} p="regular" backgroundColor="blue">
-        3
+
+      <Text mt="regular">
+        Or have items shift from horizontal to vertical alignments responsively
+      </Text>
+      <Grid mt="small">
+        <Grid gridRow={[1, 1, 1]} p="regular" backgroundColor="blue">
+          1
+        </Grid>
+        <Grid gridRow={[1, 2, 1]} p="regular" backgroundColor="red">
+          2
+        </Grid>
+        <Grid gridRow={[1, 3, 1]} p="regular" backgroundColor="blue">
+          3
+        </Grid>
       </Grid>
-    </Grid>
+
+      <Text mt="regular">And arrange items to look like a grid layout</Text>
+      <Grid mt="small">
+        <Grid gridRow={1} p="regular" backgroundColor="blue">
+          1
+        </Grid>
+        <Grid gridRow={1} p="regular" backgroundColor="red">
+          2
+        </Grid>
+        <Grid gridRow={1} p="regular" backgroundColor="blue">
+          3
+        </Grid>
+        <Grid gridRow={2} p="regular" backgroundColor="red">
+          4
+        </Grid>
+        <Grid gridRow={2} p="regular" backgroundColor="blue">
+          5
+        </Grid>
+        <Grid gridRow={2} p="regular" backgroundColor="red">
+          6
+        </Grid>
+      </Grid>
+    </>
   );
 };
-
-GridRow.storyName = 'grid row';
-GridRow.parameters = { notes: { markdown: notes } };
