@@ -9,7 +9,7 @@ export const Default = () => (
   <>
     <Text mb="small">
       Grids are used for organizing components on a page. It is essentially a
-      Box with extra features
+      Box with extra features.
     </Text>
     <Grid>
       <Box p="regular" backgroundColor="blue" />
