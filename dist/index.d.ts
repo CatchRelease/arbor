@@ -4,7 +4,7 @@ export * from './Alert';
 export { default as AutoComplete, StyledAutoComplete, styledAutoCompleteComponents } from './AutoComplete';
 export { default as Avatar } from './Avatar';
 export { default as Badge } from './Badge';
-export { default as Box } from './Box';
+export { default as Box, BoxProps } from './Box';
 export { default as Button, ButtonProps, ButtonSize, ButtonVariant } from './Button';
 export { default as Card } from './Card';
 export { default as CardActions } from './CardActions';
