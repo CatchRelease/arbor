@@ -77,14 +77,12 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
       </Styled(div)>
       <ForwardRef
         color="monochrome.grey40"
-        flex="0"
         fontSize="size4"
         ml="smaller"
         name="calendar"
       >
         <WithTheme(Icon)
           color="monochrome.grey40"
-          flex="0"
           fontSize="size4"
           iconRef={null}
           ml="smaller"
@@ -92,7 +90,6 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
         >
           <Icon
             color="monochrome.grey40"
-            flex="0"
             fontSize="size4"
             iconRef={null}
             ml="smaller"
@@ -484,7 +481,6 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
               <Styled(i)
                 className="ar ar-calendar"
                 color="monochrome.grey40"
-                flex="0"
                 fontSize="size4"
                 ml="smaller"
                 rotation={null}
@@ -581,14 +577,12 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
       </Styled(div)>
       <ForwardRef
         color="text.default"
-        flex="0"
         fontSize="size4"
         ml="smaller"
         name="calendar"
       >
         <WithTheme(Icon)
           color="text.default"
-          flex="0"
           fontSize="size4"
           iconRef={null}
           ml="smaller"
@@ -596,7 +590,6 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
         >
           <Icon
             color="text.default"
-            flex="0"
             fontSize="size4"
             iconRef={null}
             ml="smaller"
@@ -988,7 +981,6 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
               <Styled(i)
                 className="ar ar-calendar"
                 color="text.default"
-                flex="0"
                 fontSize="size4"
                 ml="smaller"
                 rotation={null}

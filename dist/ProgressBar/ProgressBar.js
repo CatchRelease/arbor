@@ -17,7 +17,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const react_1 = require("@emotion/react");
 const styled_1 = __importDefault(require("@emotion/styled"));
-const prop_types_1 = __importDefault(require("prop-types"));
 const Box_1 = __importDefault(require("../Box"));
 const Flex_1 = __importDefault(require("../Flex"));
 const Icon_1 = __importDefault(require("../Icon"));
@@ -39,20 +38,11 @@ const BarForeground = (0, styled_1.default)(Box_1.default) `
   background-color: ${(props) => props.theme.colors.text.default};
   border-radius: inherit;
 `;
-const percentageText = (percentage) => ((0, jsx_runtime_1.jsx)(Text_1.default, Object.assign({ flex: "0", ml: "smaller", fontSize: "size3", fontWeight: "medium" }, { children: `${percentage}%` }), void 0));
+const percentageText = (percentage) => ((0, jsx_runtime_1.jsx)(Text_1.default, Object.assign({ ml: "smaller", fontSize: "size3", fontWeight: "medium" }, { children: `${percentage}%` }), void 0));
 const ProgressBar = (_a) => {
-    var { percentage, iconEndName, showPercentage } = _a, props = __rest(_a, ["percentage", "iconEndName", "showPercentage"]);
+    var { iconEndName, percentage, showPercentage = false } = _a, props = __rest(_a, ["iconEndName", "percentage", "showPercentage"]);
     return ((0, jsx_runtime_1.jsxs)(ProgressBarContainer, Object.assign({}, props, { children: [(0, jsx_runtime_1.jsx)(BarBackground, Object.assign({ className: "bar-background" }, { children: (0, jsx_runtime_1.jsx)(BarForeground, { className: "bar-foreground", css: (0, react_1.css) `
           width: ${percentage}%;
-        ` }, void 0) }), void 0), iconEndName && ((0, jsx_runtime_1.jsx)(Icon_1.default, { ml: "smaller", flex: "0", fontSize: "size4", name: iconEndName, color: percentage < 100 ? 'monochrome.grey40' : 'text.default' }, void 0)), showPercentage && percentageText(percentage)] }), void 0));
+        ` }, void 0) }), void 0), iconEndName && ((0, jsx_runtime_1.jsx)(Icon_1.default, { ml: "smaller", fontSize: "size4", name: iconEndName, color: percentage < 100 ? 'monochrome.grey40' : 'text.default' }, void 0)), showPercentage && percentageText(percentage)] }), void 0));
 };
-ProgressBar.propTypes = {
-    /* Show the percentage complete, or not */
-    showPercentage: prop_types_1.default.bool,
-    /* Name of the icon to use as the indicator, if desired. */
-    iconEndName: prop_types_1.default.string,
-    /* The actual current percentage completed */
-    percentage: prop_types_1.default.number.isRequired
-};
-ProgressBar.defaultProps = Object.assign(Object.assign({}, Flex_1.default.defaultProps), { showPercentage: false, iconEndName: null });
 exports.default = ProgressBar;
