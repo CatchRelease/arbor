@@ -15,7 +15,7 @@ export {
   ButtonSize,
   ButtonVariant
 } from './Button';
-export { default as Card } from './Card';
+export { default as Card, CardProps } from './Card';
 export { default as CardActions } from './CardActions';
 export { default as CardPreview } from './CardPreview';
 export { default as CardRow } from './CardRow';

@@ -6,7 +6,7 @@ export { default as Avatar } from './Avatar';
 export { default as Badge } from './Badge';
 export { default as Box, BoxProps } from './Box';
 export { default as Button, ButtonProps, ButtonSize, ButtonVariant } from './Button';
-export { default as Card } from './Card';
+export { default as Card, CardProps } from './Card';
 export { default as CardActions } from './CardActions';
 export { default as CardPreview } from './CardPreview';
 export { default as CardRow } from './CardRow';
