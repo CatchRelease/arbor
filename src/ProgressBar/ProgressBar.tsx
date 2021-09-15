@@ -1,6 +1,7 @@
+import { FC } from 'react';
+
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
 
 import Box from '../Box';
 import Flex from '../Flex';
@@ -26,13 +27,24 @@ const BarForeground = styled(Box)`
   border-radius: inherit;
 `;
 
-const percentageText = (percentage) => (
-  <Text flex="0" ml="smaller" fontSize="size3" fontWeight="medium">
+const percentageText = (percentage: number) => (
+  <Text ml="smaller" fontSize="size3" fontWeight="medium">
     {`${percentage}%`}
   </Text>
 );
 
-const ProgressBar = ({ percentage, iconEndName, showPercentage, ...props }) => (
+type Props = {
+  iconEndName?: string;
+  percentage: number;
+  showPercentage?: boolean;
+};
+
+const ProgressBar: FC<Props> = ({
+  iconEndName,
+  percentage,
+  showPercentage = false,
+  ...props
+}) => (
   <ProgressBarContainer {...props}>
     <BarBackground className="bar-background">
       <BarForeground
@@ -45,7 +57,6 @@ const ProgressBar = ({ percentage, iconEndName, showPercentage, ...props }) => (
     {iconEndName && (
       <Icon
         ml="smaller"
-        flex="0"
         fontSize="size4"
         name={iconEndName}
         color={percentage < 100 ? 'monochrome.grey40' : 'text.default'}
@@ -54,22 +65,5 @@ const ProgressBar = ({ percentage, iconEndName, showPercentage, ...props }) => (
     {showPercentage && percentageText(percentage)}
   </ProgressBarContainer>
 );
-
-ProgressBar.propTypes = {
-  /* Show the percentage complete, or not */
-  showPercentage: PropTypes.bool,
-
-  /* Name of the icon to use as the indicator, if desired. */
-  iconEndName: PropTypes.string,
-
-  /* The actual current percentage completed */
-  percentage: PropTypes.number.isRequired
-};
-
-ProgressBar.defaultProps = {
-  ...Flex.defaultProps,
-  showPercentage: false,
-  iconEndName: null
-};
 
 export default ProgressBar;
