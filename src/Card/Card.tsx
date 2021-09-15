@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Pane, { PaneProps } from '../Pane';
 
-type Props = PaneProps;
+export type Props = PaneProps;
 
 const Card: FC<Props> = (props) => <Pane {...props} />;
 

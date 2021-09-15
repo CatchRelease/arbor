@@ -1,1 +1,1 @@
-export { default } from './Card';
+export { default, Props as CardProps } from './Card';
