@@ -26,7 +26,8 @@ const calculatedMargin = ({ fontSize, mb, theme }) => !mb &&
     (0, react_1.css) `
     margin-bottom: calc(${theme.fontSizes[fontSize]} * ${lineHeightMultiplier});
   `;
-const Heading = (0, styled_1.default)(Text_1.default) `
+const TextWithColorPropFix = Text_1.default;
+const Heading = (0, styled_1.default)(TextWithColorPropFix) `
   ${baseStyles};
   ${calculatedMargin};
 `;

@@ -3,8 +3,9 @@ import { SetOptional } from 'type-fest';
 import styled from '@emotion/styled';
 import { css, Theme } from '@emotion/react';
 
+import { WithColorPropFix } from '../colorPropFix';
 import { FontSize, FontWeight } from '../theme/typography';
-import Text from '../Text';
+import Text, { TextProps } from '../Text';
 
 const lineHeightMultiplier = 0.5;
 
@@ -26,13 +27,15 @@ const calculatedMargin = ({
     margin-bottom: calc(${theme.fontSizes[fontSize]} * ${lineHeightMultiplier});
   `;
 
-export type Props = {
+export type Props = TextProps & {
   fontSize: FontSize;
   fontWeight?: FontWeight;
   mb?: string;
 };
 
-const Heading = styled(Text)<Props>`
+const TextWithColorPropFix: WithColorPropFix<typeof Text> = Text;
+
+const Heading = styled(TextWithColorPropFix)<Props>`
   ${baseStyles};
   ${calculatedMargin};
 `;
