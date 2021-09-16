@@ -1,1 +1,1 @@
-TODO -- Add some information on how this component should be used.
+Grid props correspond to existing css grid properties that are documented here: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout#css_properties
