@@ -253,18 +253,25 @@ export const GridTemplateRows = () => {
   );
 };
 
+// example with dots for spaces
 export const GridTemplateArea = () => {
   return (
     <>
-      <Text>gridTemplateArea</Text>
-      <Grid mt="small">
-        <Grid gridRow={[1, 2, 3]} p="regular" backgroundColor="blue">
+      <Text>
+        gridTemplateAreas with gridArea is great for more complex arrangements.
+        In this example the gridTemplateAreas value &quot;&apos;b a a&lsquo;
+        &apos;b c c&lsquo;&ldquo; represents a matrix where [b a a] is the top
+        row and [b c c] is the bottom row. The gridArea prop on each child
+        specifies the name for that child.
+      </Text>
+      <Grid mt="small" gridTemplateAreas="'b a a' 'b c c'">
+        <Grid gridArea="a" p="regular" backgroundColor="blue">
           a
         </Grid>
-        <Grid gridRow={[2, 3, 1]} p="regular" backgroundColor="yellow">
+        <Grid gridArea="b" p="regular" backgroundColor="yellow">
           b
         </Grid>
-        <Grid gridRow={[3, 1, 2]} p="regular" backgroundColor="red">
+        <Grid gridArea="c" p="regular" backgroundColor="red">
           c
         </Grid>
       </Grid>
