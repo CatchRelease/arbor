@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
 
 import notes from './card.md';
 
@@ -36,50 +35,49 @@ export default {
 };
 
 export const Default = () => (
-  <Grid
-    m="regular"
-    mt="largest"
-    gridTemplateColumns="repeat(5, 200px)"
-    gridColumnGap="40px"
-    gridRowGap="20px"
-    justifyContent="center"
-  >
-    <Box
-      css={css`
-        grid-column: 1/-1;
-      `}
+  <>
+    <Paragraph variant="ui">
+      Cards compose pane with a default border-radius provided.
+    </Paragraph>
+    <Grid
+      m="regular"
+      mt="largest"
+      gridTemplateColumns={[
+        'repeat(1, 200px)',
+        'repeat(2, 200px)',
+        'repeat(3, 200px)',
+        'repeat(4, 200px)'
+      ]}
+      gridColumnGap="40px"
+      gridRowGap="20px"
+      justifyContent="center"
     >
-      <Heading.H2>Cards</Heading.H2>
-      <Paragraph variant="ui">
-        Cards compose pane with a default border-radius provided.
-      </Paragraph>
-    </Box>
+      <ExampleCard>
+        <Heading.H6 as="h3">Card / Elevation 0</Heading.H6>
+        <Description>Flat Cards</Description>
+      </ExampleCard>
 
-    <ExampleCard>
-      <Heading.H6 as="h3">Card / Elevation 0</Heading.H6>
-      <Description>Flat Cards</Description>
-    </ExampleCard>
+      <ExampleCard boxShadow="elevation1">
+        <Heading.H6 as="h3">Card / Elevation 1</Heading.H6>
+        <Description>Floating Cards</Description>
+      </ExampleCard>
 
-    <ExampleCard boxShadow="elevation1">
-      <Heading.H6 as="h3">Card / Elevation 1</Heading.H6>
-      <Description>Floating Cards</Description>
-    </ExampleCard>
+      <ExampleCard boxShadow="elevation2">
+        <Heading.H6 as="h3">Card / Elevation 2</Heading.H6>
+        <Description>Top Bar</Description>
+      </ExampleCard>
 
-    <ExampleCard boxShadow="elevation2">
-      <Heading.H6 as="h3">Card / Elevation 2</Heading.H6>
-      <Description>Top Bar</Description>
-    </ExampleCard>
+      <ExampleCard boxShadow="elevation3">
+        <Heading.H6 as="h3">Card / Elevation 3</Heading.H6>
+        <Description>Side Sheet</Description>
+      </ExampleCard>
 
-    <ExampleCard boxShadow="elevation3">
-      <Heading.H6 as="h3">Card / Elevation 3</Heading.H6>
-      <Description>Side Sheet</Description>
-    </ExampleCard>
-
-    <ExampleCard boxShadow="elevation4">
-      <Heading.H6 as="h3">Card / Elevation 4</Heading.H6>
-      <Description>Unused</Description>
-    </ExampleCard>
-  </Grid>
+      <ExampleCard boxShadow="elevation4">
+        <Heading.H6 as="h3">Card / Elevation 4</Heading.H6>
+        <Description>Unused</Description>
+      </ExampleCard>
+    </Grid>
+  </>
 );
 
 Default.storyName = 'default';
