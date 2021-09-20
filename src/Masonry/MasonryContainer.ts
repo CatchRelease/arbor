@@ -12,7 +12,17 @@ import {
   columns
 } from '../utils/columns';
 
-const MasonryContainer = styled(Box)`
+export type Props = {
+  columnCount?: number;
+  columnGap?: string;
+  columnRuleColor?: string;
+  columnRuleStyle?: string;
+  columnRuleWidth?: string;
+  columnWidth?: string;
+  columns?: string;
+};
+
+const MasonryContainer = styled(Box)<Props>`
   ${columnCount};
   ${columnGap};
   ${columnRule};
@@ -22,16 +32,5 @@ const MasonryContainer = styled(Box)`
   ${columnWidth};
   ${columns};
 `;
-
-MasonryContainer.propTypes = {
-  ...columnCount.propTypes,
-  ...columnGap.propTypes,
-  ...columnRule.propTypes,
-  ...columnRuleColor.propTypes,
-  ...columnRuleStyle.propTypes,
-  ...columnRuleWidth.propTypes,
-  ...columnWidth.propTypes,
-  ...columns.propTypes
-};
 
 export default MasonryContainer;

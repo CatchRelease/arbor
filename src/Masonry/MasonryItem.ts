@@ -9,11 +9,6 @@ const MasonryItem = styled(Box)`
   ${width};
 `;
 
-MasonryItem.propTypes = {
-  ...display.propTypes,
-  ...width.propTypes
-};
-
 MasonryItem.defaultProps = {
   display: 'block',
   width: '100%'

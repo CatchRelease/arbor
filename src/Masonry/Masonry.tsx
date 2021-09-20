@@ -1,11 +1,19 @@
+import { ReactElement } from 'react';
 import PropTypes from 'prop-types';
 
-import MasonryContainer from './MasonryContainer';
+import MasonryContainer, {
+  Props as MasonryContainerProps
+} from './MasonryContainer';
 import MasonryItem from './MasonryItem';
 
-const Masonry = ({ children, rowGap, ...props }) => (
+type Props = MasonryContainerProps & {
+  children: ReactElement[];
+  rowGap?: string;
+};
+
+const Masonry = ({ children, rowGap, ...props }: Props) => (
   <MasonryContainer {...props}>
-    {[].concat(children).map((child) => (
+    {children.map((child) => (
       <MasonryItem key={child.key} mb={rowGap}>
         {child}
       </MasonryItem>
@@ -19,10 +27,6 @@ Masonry.propTypes = {
     PropTypes.arrayOf(PropTypes.node)
   ]).isRequired,
   rowGap: PropTypes.string
-};
-
-Masonry.defaultProps = {
-  rowGap: undefined
 };
 
 export default Masonry;

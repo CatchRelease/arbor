@@ -11,7 +11,6 @@ const MasonryItem = (0, styled_1.default)(Box_1.default) `
   ${styled_system_1.display};
   ${styled_system_1.width};
 `;
-MasonryItem.propTypes = Object.assign(Object.assign({}, styled_system_1.display.propTypes), styled_system_1.width.propTypes);
 MasonryItem.defaultProps = {
     display: 'block',
     width: '100%'
