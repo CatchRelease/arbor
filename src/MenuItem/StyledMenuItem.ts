@@ -1,10 +1,16 @@
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
+import { css, Theme } from '@emotion/react';
 
 import Box from '../Box';
 
-const disabledStyles = ({ isDisabled, theme }) => {
+const disabledStyles = ({
+  isDisabled,
+  theme
+}: {
+  isDisabled?: boolean;
+  theme: Theme;
+}) => {
   if (!isDisabled) return '';
 
   return css`
@@ -18,7 +24,13 @@ const disabledStyles = ({ isDisabled, theme }) => {
   `;
 };
 
-const focusedStyles = ({ isFocused, theme }) => {
+const focusedStyles = ({
+  isFocused,
+  theme
+}: {
+  isFocused?: boolean;
+  theme: Theme;
+}) => {
   if (!isFocused) return '';
 
   return css`
@@ -26,7 +38,13 @@ const focusedStyles = ({ isFocused, theme }) => {
   `;
 };
 
-const selectedStyles = ({ isSelected, theme }) => {
+const selectedStyles = ({
+  isSelected,
+  theme
+}: {
+  isSelected?: boolean;
+  theme: Theme;
+}) => {
   if (!isSelected) return '';
 
   return css`
@@ -34,7 +52,13 @@ const selectedStyles = ({ isSelected, theme }) => {
   `;
 };
 
-const StyledMenuItem = styled(Box)`
+type Props = {
+  isDisabled?: boolean;
+  isFocused?: boolean;
+  isSelected?: boolean;
+};
+
+const StyledMenuItem = styled(Box)<Props>`
   background: ${({ theme }) => theme.colors.monochrome.white};
   color: ${({ theme }) => theme.colors.text.default};
   cursor: pointer;

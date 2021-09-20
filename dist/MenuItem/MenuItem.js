@@ -15,23 +15,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-const prop_types_1 = __importDefault(require("prop-types"));
 const StyledMenuItem_1 = __importDefault(require("./StyledMenuItem"));
 const MenuItem = (_a) => {
     var { innerRef, children } = _a, props = __rest(_a, ["innerRef", "children"]);
     return ((0, jsx_runtime_1.jsx)(StyledMenuItem_1.default, Object.assign({ ref: innerRef }, props, { children: children }), void 0));
-};
-MenuItem.propTypes = {
-    /**
-     * Content to render inside the menu item
-     * */
-    children: prop_types_1.default.oneOfType([
-        prop_types_1.default.node,
-        prop_types_1.default.arrayOf(prop_types_1.default.node)
-    ]).isRequired,
-    innerRef: prop_types_1.default.func
-};
-MenuItem.defaultProps = {
-    innerRef: undefined
 };
 exports.default = MenuItem;
