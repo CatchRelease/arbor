@@ -5,7 +5,7 @@ describe('<Masonry />', () => {
   it('renders properly', () => {
     const tree = createWithTheme(
       <Masonry
-        columnCount="3"
+        columnCount={3}
         columnGap="regular"
         columnRuleColor="black"
         columnRuleStyle="solid"

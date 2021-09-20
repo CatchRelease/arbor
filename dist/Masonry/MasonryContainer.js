@@ -16,5 +16,4 @@ const MasonryContainer = (0, styled_1.default)(Box_1.default) `
   ${columns_1.columnWidth};
   ${columns_1.columns};
 `;
-MasonryContainer.propTypes = Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, columns_1.columnCount.propTypes), columns_1.columnGap.propTypes), columns_1.columnRule.propTypes), columns_1.columnRuleColor.propTypes), columns_1.columnRuleStyle.propTypes), columns_1.columnRuleWidth.propTypes), columns_1.columnWidth.propTypes), columns_1.columns.propTypes);
 exports.default = MasonryContainer;
