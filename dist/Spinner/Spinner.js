@@ -15,7 +15,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-const prop_types_1 = __importDefault(require("prop-types"));
 const theme_get_1 = require("@styled-system/theme-get");
 const react_1 = require("@emotion/react");
 const styled_1 = __importDefault(require("@emotion/styled"));
@@ -133,33 +132,7 @@ const Spinner = (_a) => {
     }
     return ((0, jsx_runtime_1.jsx)(StyledSpinner, Object.assign({}, Object.assign({ color: themedColor }, props), { children: [...Array(12).keys()].map((value) => ((0, jsx_runtime_1.jsx)(StyledSpinnerDot, { color: themedColor }, value))) }), void 0));
 };
-Spinner.propTypes = {
-    /**
-     * All Spin.js options are supported as props via react-loader
-     * https://www.npmjs.com/package/react-loader
-     */
-    /**
-     * Content to render inside the loader when loaded
-     * */
-    children: prop_types_1.default.oneOfType([
-        prop_types_1.default.node,
-        prop_types_1.default.arrayOf(prop_types_1.default.node)
-    ]),
-    /**
-     * Color for the spinner, supports colors from theme.
-     */
-    color: prop_types_1.default.string,
-    /**
-     * Whether or not to show the spinner.
-     */
-    spin: prop_types_1.default.bool,
-    diameter: prop_types_1.default.oneOfType([
-        prop_types_1.default.arrayOf(prop_types_1.default.string),
-        prop_types_1.default.string
-    ])
-};
 Spinner.defaultProps = {
-    children: undefined,
     color: 'monochrome.black',
     spin: true,
     diameter: '40px'

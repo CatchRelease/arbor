@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 import { themeGet } from '@styled-system/theme-get';
 import { withTheme, keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
@@ -26,7 +26,7 @@ const spinAnimation = keyframes`
   }
 `;
 
-const StyledSpinnerDot = styled(Box)`
+const StyledSpinnerDot = styled(Box)<{ color?: string }>`
   width: 100%;
   height: 100%;
   position: absolute;
@@ -111,7 +111,13 @@ const StyledSpinnerDot = styled(Box)`
   }
 `;
 
-const Spinner = ({
+type Props = {
+  color?: string;
+  diameter?: string | string[];
+  spin?: boolean;
+};
+
+const Spinner: FC<Props> = ({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   children,
   color,
@@ -133,38 +139,7 @@ const Spinner = ({
   );
 };
 
-Spinner.propTypes = {
-  /**
-   * All Spin.js options are supported as props via react-loader
-   * https://www.npmjs.com/package/react-loader
-   */
-
-  /**
-   * Content to render inside the loader when loaded
-   * */
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]),
-
-  /**
-   * Color for the spinner, supports colors from theme.
-   */
-  color: PropTypes.string,
-
-  /**
-   * Whether or not to show the spinner.
-   */
-  spin: PropTypes.bool,
-
-  diameter: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.string),
-    PropTypes.string
-  ])
-};
-
 Spinner.defaultProps = {
-  children: undefined,
   color: 'monochrome.black',
   spin: true,
   diameter: '40px'
