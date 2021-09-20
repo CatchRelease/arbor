@@ -1,10 +1,16 @@
-import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
+import { css, Theme } from '@emotion/react';
 
 import Box from '../Box';
+import { PolyComponent } from '../polyComponent';
 
-const inlineStyles = ({ inline, theme }) => {
+const inlineStyles = ({
+  inline,
+  theme
+}: {
+  inline?: boolean;
+  theme: Theme;
+}) => {
   if (!inline) {
     return '';
   }
@@ -32,17 +38,14 @@ const inlineStyles = ({ inline, theme }) => {
   `;
 };
 
-const DescriptionList = styled(Box.withComponent('dl'))`
+type Props = {
+  inline?: boolean;
+};
+
+const DescriptionList: PolyComponent<'dl', Props> = styled(
+  Box.withComponent('dl')
+)<Props>`
   ${inlineStyles};
 `;
-
-DescriptionList.propTypes = {
-  inline: PropTypes.bool
-};
-
-DescriptionList.defaultProps = {
-  ...Box.defaultProps,
-  inline: false
-};
 
 export default DescriptionList;

@@ -20,4 +20,7 @@ const Box = (0, styled_1.default)(TextDivWithColorPropFix) `
   ${styled_system_1.position};
   ${styled_system_1.width};
 `;
-exports.default = Box;
+const PolyBox = Box;
+exports.default = Object.assign(PolyBox, {
+    withComponent: Box.withComponent
+});
