@@ -10,7 +10,7 @@ import StyledCheckbox from './StyledCheckbox';
 
 type CheckboxLabelProps = ComponentProps<typeof CheckboxLabel>;
 
-type Props = CheckboxLabelProps & {
+export type Props = CheckboxLabelProps & {
   checked?: boolean;
   disabled?: boolean;
   icon?: string;

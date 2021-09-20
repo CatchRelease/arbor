@@ -1,7 +1,7 @@
 import { ChangeEventHandler, ComponentProps, FC, ReactNode } from 'react';
 import CheckboxLabel from './CheckboxLabel';
 declare type CheckboxLabelProps = ComponentProps<typeof CheckboxLabel>;
-declare type Props = CheckboxLabelProps & {
+export declare type Props = CheckboxLabelProps & {
     checked?: boolean;
     disabled?: boolean;
     icon?: string;
