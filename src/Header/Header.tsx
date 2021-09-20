@@ -1,9 +1,10 @@
-import { Children } from 'react';
-import PropTypes from 'prop-types';
+import { Children, FC } from 'react';
 
 import StyledHeader from './StyledHeader';
 
-const getColumns = (children = []) => {
+type Children = ReturnType<typeof Children.toArray>;
+
+const getColumns = (children: Children = []) => {
   const forHeading = 'minmax(auto, 100%)';
 
   if (!children.length) return forHeading;
@@ -11,7 +12,7 @@ const getColumns = (children = []) => {
   return `${forHeading} repeat(${children.length}, auto)`;
 };
 
-const Header = ({ children, ...props }) => {
+const Header: FC = ({ children, ...props }) => {
   const [headingText, ...remainingChildren] = Children.toArray(children);
 
   return (
@@ -25,18 +26,6 @@ const Header = ({ children, ...props }) => {
       {remainingChildren}
     </StyledHeader>
   );
-};
-
-Header.propTypes = {
-  /**
-   * Content to be displayed within the StyledHeader. gridTemplateColumns will
-   * be determined by the number of children passed in to properly distribute
-   * content.
-   */
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node)
-  ]).isRequired
 };
 
 export default Header;
