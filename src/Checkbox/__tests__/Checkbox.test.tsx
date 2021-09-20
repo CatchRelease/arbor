@@ -1,5 +1,5 @@
 import createWithTheme from '../../../utils/createWithTheme';
-import Checkbox from '../Checkbox';
+import Checkbox, { Props } from '../Checkbox';
 
 describe('<Checkbox />', () => {
   const baseProps = {
@@ -9,7 +9,7 @@ describe('<Checkbox />', () => {
     value: '1'
   };
 
-  const createWithProps = (additionalProps) => {
+  const createWithProps = (additionalProps?: Partial<Props>) => {
     const props = { ...baseProps, ...additionalProps };
 
     return createWithTheme(<Checkbox {...{ ...props }} />);
