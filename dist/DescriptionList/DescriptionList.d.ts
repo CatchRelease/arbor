@@ -1,4 +1,6 @@
+import { PolyComponent } from '../polyComponent';
+declare type Props = {
+    inline?: boolean;
+};
+declare const DescriptionList: PolyComponent<'dl', Props>;
 export default DescriptionList;
-declare const DescriptionList: import("@emotion/styled").StyledComponent<any, {}, {
-    ref?: import("react").Ref<any> | undefined;
-}>;

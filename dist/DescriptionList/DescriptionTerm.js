@@ -5,5 +5,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const Box_1 = __importDefault(require("../Box"));
 const DescriptionTerm = Box_1.default.withComponent('dt');
-DescriptionTerm.defaultProps = Object.assign(Object.assign({}, Box_1.default.defaultProps), { color: 'text.muted', fontSize: 'size3', lineHeight: 'small', mb: 'smallest' });
+DescriptionTerm.defaultProps = {
+    color: 'text.muted',
+    fontSize: 'size3',
+    lineHeight: 'small',
+    mb: 'smallest'
+};
 exports.default = DescriptionTerm;

@@ -35,7 +35,7 @@ export type Props = TextProps &
 const TextDiv = Text.withComponent('div');
 const TextDivWithColorPropFix: WithColorPropFix<typeof TextDiv> = TextDiv;
 
-const Box: PolyComponent<'div', Props> = styled(TextDivWithColorPropFix)<Props>`
+const Box = styled(TextDivWithColorPropFix)<Props>`
   box-sizing: border-box;
   ${borders};
   ${boxShadow};
@@ -48,4 +48,8 @@ const Box: PolyComponent<'div', Props> = styled(TextDivWithColorPropFix)<Props>`
   ${width};
 `;
 
-export default Box;
+const PolyBox: PolyComponent<'div', Props> = Box;
+
+export default Object.assign(PolyBox, {
+  withComponent: Box.withComponent
+});
