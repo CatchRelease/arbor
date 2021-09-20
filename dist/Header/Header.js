@@ -16,7 +16,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const react_1 = require("react");
-const prop_types_1 = __importDefault(require("prop-types"));
 const StyledHeader_1 = __importDefault(require("./StyledHeader"));
 const getColumns = (children = []) => {
     const forHeading = 'minmax(auto, 100%)';
@@ -28,16 +27,5 @@ const Header = (_a) => {
     var { children } = _a, props = __rest(_a, ["children"]);
     const [headingText, ...remainingChildren] = react_1.Children.toArray(children);
     return ((0, jsx_runtime_1.jsxs)(StyledHeader_1.default, Object.assign({ alignItems: "end", gridGap: "small", gridTemplateColumns: getColumns(remainingChildren) }, props, { children: [headingText, remainingChildren] }), void 0));
-};
-Header.propTypes = {
-    /**
-     * Content to be displayed within the StyledHeader. gridTemplateColumns will
-     * be determined by the number of children passed in to properly distribute
-     * content.
-     */
-    children: prop_types_1.default.oneOfType([
-        prop_types_1.default.node,
-        prop_types_1.default.arrayOf(prop_types_1.default.node)
-    ]).isRequired
 };
 exports.default = Header;
