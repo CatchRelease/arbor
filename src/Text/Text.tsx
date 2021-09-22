@@ -22,6 +22,7 @@ import {
   TextAlignProps
 } from 'styled-system';
 
+import textDecoration, { TextDecorationProps } from '../utils/textDecoration';
 import textOverflow, { TextOverflowProps } from '../utils/textOverflow';
 import textTransform, { TextTransformProps } from '../utils/textTransform';
 import whiteSpace, { WhitespaceProps } from '../utils/whiteSpace';
@@ -40,6 +41,7 @@ export type Props = Omit<HTMLAttributes<HTMLElement>, 'color'> &
   OverflowProps &
   SpaceProps &
   TextAlignProps &
+  TextDecorationProps &
   TextTransformProps &
   TextOverflowProps &
   WhitespaceProps;
@@ -56,6 +58,7 @@ const Text = styled.p<Props>`
   ${overflow};
   ${space};
   ${textAlign};
+  ${textDecoration};
   ${textTransform};
   ${textOverflow};
   ${whiteSpace};

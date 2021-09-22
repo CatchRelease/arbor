@@ -198,6 +198,9 @@ exports[`<DescriptionList /> supports polymorphic as prop 1`] = `
   ",
         [Function],
         ";
+  ",
+        [Function],
+        ";
 ",
         "
   box-sizing: border-box;
