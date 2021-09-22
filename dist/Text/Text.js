@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = require("@emotion/react");
 const styled_1 = __importDefault(require("@emotion/styled"));
 const styled_system_1 = require("styled-system");
+const textDecoration_1 = __importDefault(require("../utils/textDecoration"));
 const textOverflow_1 = __importDefault(require("../utils/textOverflow"));
 const textTransform_1 = __importDefault(require("../utils/textTransform"));
 const whiteSpace_1 = __importDefault(require("../utils/whiteSpace"));
@@ -24,6 +25,7 @@ const Text = styled_1.default.p `
   ${styled_system_1.overflow};
   ${styled_system_1.space};
   ${styled_system_1.textAlign};
+  ${textDecoration_1.default};
   ${textTransform_1.default};
   ${textOverflow_1.default};
   ${whiteSpace_1.default};
