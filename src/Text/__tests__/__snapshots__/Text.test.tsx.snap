@@ -16,3 +16,23 @@ exports[`<Text /> properly renders a Text component 1`] = `
   The quick brown fox jumps over the lazy dog
 </p>
 `;
+
+exports[`<Text /> supports textDecoration prop 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #25272D;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+<p
+  className="emotion-0"
+  color="text.default"
+  fontSize="size4"
+  textDecoration="line-through"
+>
+  The quick brown fox jumps over the lazy dog
+</p>
+`;
