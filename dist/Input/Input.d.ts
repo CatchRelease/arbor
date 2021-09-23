@@ -1,6 +1,6 @@
 import { ChangeEventHandler, FC, FocusEventHandler, InputHTMLAttributes, ReactNode } from 'react';
 import { Props as StyledInputProps } from './StyledInput';
-declare type Props = InputHTMLAttributes<HTMLInputElement> & StyledInputProps & {
+export declare type Props = InputHTMLAttributes<HTMLInputElement> & StyledInputProps & {
     caption?: string | null;
     id: string;
     label?: string;

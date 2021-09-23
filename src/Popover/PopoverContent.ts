@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 
-import Card from '../Card';
+import Card, { CardProps } from '../Card';
+
+export type Props = CardProps;
 
 const PopoverContent = styled(Card)`
   background: ${(props) => props.theme.colors.monochrome.white};

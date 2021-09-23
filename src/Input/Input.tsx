@@ -11,7 +11,7 @@ import {
 import FormField from '../FormField';
 import StyledInput, { Props as StyledInputProps } from './StyledInput';
 
-type Props = InputHTMLAttributes<HTMLInputElement> &
+export type Props = InputHTMLAttributes<HTMLInputElement> &
   StyledInputProps & {
     caption?: string | null;
     id: string;

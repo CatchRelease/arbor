@@ -1,11 +1,21 @@
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import Box from '../Box';
 import Button from '../Button';
 import Flex from '../Flex';
 import Icon from '../Icon';
 
-const DatePickerNavbar = ({ onPreviousClick, onNextClick, className }) => (
+type Props = {
+  className: string;
+  onNextClick: () => void;
+  onPreviousClick: () => void;
+};
+
+const DatePickerNavbar: FC<Props> = ({
+  className,
+  onPreviousClick,
+  onNextClick
+}) => (
   <Flex className={className} alignItems="center">
     <Button
       iconStart={<Icon color="icon.default" name="chevron" rotation="90" />}
@@ -28,22 +38,5 @@ const DatePickerNavbar = ({ onPreviousClick, onNextClick, className }) => (
     />
   </Flex>
 );
-
-DatePickerNavbar.propTypes = {
-  /**
-   * Classname to aply to the wrapping container of the DatePickerNavbar content
-   */
-  className: PropTypes.string.isRequired,
-
-  /**
-   * Callback called when the user clicks on the 'Next Month' button
-   */
-  onNextClick: PropTypes.func.isRequired,
-
-  /**
-   * Callback called when the user clicks on the 'Previous Month' button
-   */
-  onPreviousClick: PropTypes.func.isRequired
-};
 
 export default DatePickerNavbar;

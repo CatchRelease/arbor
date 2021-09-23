@@ -88,7 +88,7 @@ exports[`<DatePickerInput /> properly renders a DatePicker 1`] = `
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
-      placeholder="YYYY-M-D"
+      placeholder="lol"
       type="text"
       value=""
     />
@@ -185,7 +185,7 @@ exports[`<DatePickerInput /> props allows overriding autoComplete 1`] = `
       onFocus={[Function]}
       onKeyDown={[Function]}
       onKeyUp={[Function]}
-      placeholder="YYYY-M-D"
+      placeholder="lol"
       type="text"
       value=""
     />

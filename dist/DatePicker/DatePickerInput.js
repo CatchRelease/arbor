@@ -15,7 +15,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
-const prop_types_1 = __importDefault(require("prop-types"));
 const DayPickerInput_1 = __importDefault(require("react-day-picker/DayPickerInput"));
 const datePickerDefaults_1 = __importDefault(require("./datePickerDefaults"));
 const DatePickerInputOverlay_1 = __importDefault(require("./DatePickerInputOverlay"));
@@ -24,15 +23,7 @@ const defaultInputProps = {
     autoComplete: 'off'
 };
 const DatePickerInput = (_a) => {
-    var { dayPickerProps, inputProps } = _a, props = __rest(_a, ["dayPickerProps", "inputProps"]);
+    var { dayPickerProps = {}, inputProps = {} } = _a, props = __rest(_a, ["dayPickerProps", "inputProps"]);
     return ((0, jsx_runtime_1.jsx)(DayPickerInput_1.default, Object.assign({ component: Input_1.default, overlayComponent: DatePickerInputOverlay_1.default, dayPickerProps: Object.assign(Object.assign({}, datePickerDefaults_1.default), dayPickerProps), inputProps: Object.assign(Object.assign({}, defaultInputProps), inputProps) }, props), void 0));
-};
-DatePickerInput.propTypes = {
-    dayPickerProps: prop_types_1.default.object,
-    inputProps: prop_types_1.default.object // eslint-disable-line react/forbid-prop-types
-};
-DatePickerInput.defaultProps = {
-    dayPickerProps: {},
-    inputProps: {}
 };
 exports.default = DatePickerInput;

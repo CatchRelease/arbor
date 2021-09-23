@@ -1,7 +1,11 @@
+/// <reference types="react" />
+declare const dayPickerDefaults: {
+    navbarElement: import("react").FC<{
+        className: string;
+        onNextClick: () => void;
+        onPreviousClick: () => void;
+    }>;
+    showOutsideDays: boolean;
+    weekdaysShort: string[];
+};
 export default dayPickerDefaults;
-declare namespace dayPickerDefaults {
-    export { DatePickerNavbar as navbarElement };
-    export const showOutsideDays: boolean;
-    export const weekdaysShort: string[];
-}
-import DatePickerNavbar from "./DatePickerNavbar";

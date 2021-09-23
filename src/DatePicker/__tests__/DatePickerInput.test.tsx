@@ -1,4 +1,6 @@
 import { shallow } from 'enzyme';
+import { DayPickerInputProps } from 'react-day-picker';
+import DayPickerInput from 'react-day-picker/DayPickerInput';
 
 import createWithTheme from '../../../utils/createWithTheme';
 import DatePickerInput from '../DatePickerInput';
@@ -6,7 +8,10 @@ import DatePickerInput from '../DatePickerInput';
 describe('<DatePickerInput />', () => {
   it('properly renders a DatePicker', () => {
     const tree = createWithTheme(
-      <DatePickerInput foo="bar" inputProps={{ id: 'date-picker-input' }} />
+      <DatePickerInput
+        placeholder="lol"
+        inputProps={{ id: 'date-picker-input' }}
+      />
     );
 
     expect(tree).toMatchSnapshot();
@@ -15,31 +20,35 @@ describe('<DatePickerInput />', () => {
   describe('props', () => {
     it('passes props to the DayPickerInput', () => {
       const datePickerInput = shallow(
-        <DatePickerInput foo="bar" inputProps={{ id: 'date-picker-input' }} />
+        <DatePickerInput
+          placeholder="lol"
+          inputProps={{ id: 'date-picker-input' }}
+        />
       );
 
       expect(datePickerInput.find('DayPickerInput')).toHaveProp({
-        foo: 'bar'
+        placeholder: 'lol'
       });
     });
 
     it('passes dayPickerProps into the dayPickerProps prop', () => {
       const datePickerInput = shallow(
         <DatePickerInput
-          dayPickerProps={{ foo: 'bar' }}
+          dayPickerProps={{ className: 'foo' }}
           inputProps={{ id: 'date-picker-input' }}
         />
       );
 
       expect(
-        datePickerInput.find('DayPickerInput').props().dayPickerProps.foo
-      ).toEqual('bar');
+        datePickerInput.find<DayPickerInputProps>(DayPickerInput).props()
+          .dayPickerProps?.className
+      ).toEqual('foo');
     });
 
     it('allows overriding autoComplete', () => {
       const tree = createWithTheme(
         <DatePickerInput
-          foo="bar"
+          placeholder="lol"
           inputProps={{ id: 'date-picker-input', autoComplete: 'on' }}
         />
       );

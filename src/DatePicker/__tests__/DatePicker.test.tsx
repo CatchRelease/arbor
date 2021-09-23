@@ -20,11 +20,15 @@ describe('<DatePicker />', () => {
   describe('props', () => {
     it('passes props along to the StyledDatePicker', () => {
       const datePicker = shallow(
-        <DatePicker modifiers={modifiers} initialMonth={today} foo="bar" />
+        <DatePicker
+          modifiers={modifiers}
+          initialMonth={today}
+          className="lol"
+        />
       );
 
       expect(datePicker.find(StyledDatePicker)).toHaveProp({
-        foo: 'bar'
+        className: 'lol'
       });
     });
   });
