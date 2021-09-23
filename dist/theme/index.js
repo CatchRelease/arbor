@@ -13,11 +13,13 @@ exports.breakpointsMap = {
     xl: '1600px'
 };
 // Styled-System breakpoints
-exports.breakpoints = Object.values(exports.breakpointsMap);
-exports.breakpoints.sm = exports.breakpointsMap.sm;
-exports.breakpoints.md = exports.breakpointsMap.md;
-exports.breakpoints.lg = exports.breakpointsMap.lg;
-exports.breakpoints.xl = exports.breakpointsMap.xl;
+const breakpointValues = Object.values(exports.breakpointsMap);
+exports.breakpoints = Object.assign(breakpointValues, {
+    sm: exports.breakpointsMap.sm,
+    md: exports.breakpointsMap.md,
+    lg: exports.breakpointsMap.lg,
+    xl: exports.breakpointsMap.xl
+});
 exports.blues = {
     blueLighter: '#6688FF',
     blueLight: '#5577FF',

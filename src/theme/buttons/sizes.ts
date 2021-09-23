@@ -1,7 +1,11 @@
 import { rem } from 'polished';
 import { sizes as fontSizes } from '../typography';
 
-const buttonSize = (rawHeight, textFontSize, iconFontSize) => {
+const buttonSize = (
+  rawHeight: number,
+  textFontSize: string,
+  iconFontSize: string
+) => {
   const height = rem(`${rawHeight}px`);
   const padding = rem(`${rawHeight * 0.5}px`);
 

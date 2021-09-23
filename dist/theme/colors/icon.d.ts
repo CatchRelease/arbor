@@ -1,6 +1,5 @@
-declare namespace _default {
-    export const disabled: string;
-    export { grey60 as default };
-}
+declare const _default: {
+    disabled: string;
+    default: string;
+};
 export default _default;
-declare const grey60: string;
