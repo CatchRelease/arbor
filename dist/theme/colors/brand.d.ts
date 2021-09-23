@@ -1,9 +1,8 @@
-declare namespace _default {
-    export const lighter: string;
-    export const light: string;
-    const _default: string;
-    export { _default as default };
-    export const dark: string;
-    export const darker: string;
-}
+declare const _default: {
+    lighter: string;
+    light: string;
+    default: string;
+    dark: string;
+    darker: string;
+};
 export default _default;

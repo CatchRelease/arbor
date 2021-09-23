@@ -30,11 +30,13 @@ export const breakpointsMap = {
 };
 
 // Styled-System breakpoints
-export const breakpoints = Object.values(breakpointsMap);
-breakpoints.sm = breakpointsMap.sm;
-breakpoints.md = breakpointsMap.md;
-breakpoints.lg = breakpointsMap.lg;
-breakpoints.xl = breakpointsMap.xl;
+const breakpointValues = Object.values(breakpointsMap);
+export const breakpoints = Object.assign(breakpointValues, {
+  sm: breakpointsMap.sm,
+  md: breakpointsMap.md,
+  lg: breakpointsMap.lg,
+  xl: breakpointsMap.xl
+});
 
 export const blues = {
   blueLighter: '#6688FF',

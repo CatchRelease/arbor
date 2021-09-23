@@ -1,11 +1,11 @@
-declare namespace _default {
-    namespace small {
-        export { textFontSize as fontSize };
-        export { height };
-        export const p: string;
-        export const i: {
+declare const _default: {
+    small: {
+        fontSize: string;
+        height: string;
+        p: string;
+        i: {
             width: string;
-            fontSize: any;
+            fontSize: string;
             '&:first-child': {
                 ml: string;
             };
@@ -13,10 +13,51 @@ declare namespace _default {
                 mr: string;
             };
         };
-    }
-    namespace medium { }
-    namespace large { }
-    namespace jumbo { }
-}
+    };
+    medium: {
+        fontSize: string;
+        height: string;
+        p: string;
+        i: {
+            width: string;
+            fontSize: string;
+            '&:first-child': {
+                ml: string;
+            };
+            '&:last-child': {
+                mr: string;
+            };
+        };
+    };
+    large: {
+        fontSize: string;
+        height: string;
+        p: string;
+        i: {
+            width: string;
+            fontSize: string;
+            '&:first-child': {
+                ml: string;
+            };
+            '&:last-child': {
+                mr: string;
+            };
+        };
+    };
+    jumbo: {
+        fontSize: string;
+        height: string;
+        p: string;
+        i: {
+            width: string;
+            fontSize: string;
+            '&:first-child': {
+                ml: string;
+            };
+            '&:last-child': {
+                mr: string;
+            };
+        };
+    };
+};
 export default _default;
-declare const height: string;
