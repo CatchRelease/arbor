@@ -18,12 +18,12 @@ describe('<DateTimePicker />', () => {
   describe('props', () => {
     it('passes props along to the StyledDateTimePicker', () => {
       const dateTimePicker = shallow(
-        <DateTimePicker value={today} foo="bar" />,
+        <DateTimePicker value={today} className="lol" />,
         { disableLifecycleMethods: true }
       );
 
       expect(dateTimePicker.find(StyledDateTimePicker)).toHaveProp({
-        foo: 'bar'
+        className: 'lol'
       });
     });
   });
