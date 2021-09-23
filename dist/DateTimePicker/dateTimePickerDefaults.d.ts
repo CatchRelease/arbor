@@ -1,7 +1,7 @@
+declare const dateTimePickerDefaults: {
+    closeOnSelect: boolean;
+    inputProps: {
+        readOnly: boolean;
+    };
+};
 export default dateTimePickerDefaults;
-declare namespace dateTimePickerDefaults {
-    const closeOnSelect: boolean;
-    namespace inputProps {
-        const readOnly: boolean;
-    }
-}
