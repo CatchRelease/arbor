@@ -59,7 +59,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   white-space: nowrap;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -79,42 +79,42 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
 }
 
 @media (max-width: 768px) {
-  .emotion-6 {
+  .emotion-7 {
     font-size: 1rem;
   }
 }
 
-.emotion-6::-webkit-input-placeholder {
+.emotion-7::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::-moz-placeholder {
+.emotion-7::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-6:-ms-input-placeholder {
+.emotion-7:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::placeholder {
+.emotion-7::placeholder {
   color: #989A9C;
 }
 
-.emotion-6:focus {
+.emotion-7:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-6:disabled {
+.emotion-7:disabled {
   background: #F2F2F2;
 }
 
-.emotion-6:required {
+.emotion-7:required {
   box-shadow: none;
 }
 
-.emotion-7 {
+.emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -131,7 +131,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   grid-gap: 0.25rem;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -145,7 +145,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   align-self: center;
 }
 
-.emotion-9 {
+.emotion-10 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -160,11 +160,11 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   font-size: 0.875rem;
 }
 
-.emotion-9:focus {
+.emotion-10:focus {
   outline: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -176,7 +176,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   grid-gap: 0.5rem;
 }
 
-.emotion-11 {
+.emotion-12 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -186,11 +186,11 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
   box-sizing: border-box;
 }
 
-.emotion-12 {
+.emotion-13 {
   display: block;
 }
 
-.emotion-13 {
+.emotion-14 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -219,54 +219,64 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
     onKeyDown={[Function]}
   >
     <span
+      className="emotion-5"
+      id="react-select-2-live-region"
+    />
+    <span
       aria-atomic="false"
       aria-live="polite"
       aria-relevant="additions text"
       className="emotion-5"
     />
     <div
-      className="emotion-6"
+      className="emotion-7"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-7"
+        className="emotion-8"
       >
         <div
-          className="emotion-8"
+          className="emotion-9"
           color="text.placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-controls="react-select-2-listbox"
+          aria-describedby="react-select-2-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-label="AutoComplete Input"
+          aria-owns="react-select-2-listbox"
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-9"
+          className="emotion-10"
           disabled={false}
           id="react-select-2-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
+          role="combobox"
           spellCheck="false"
-          tabIndex="0"
+          tabIndex={0}
           type="text"
           value=""
         />
       </div>
       <div
-        className="emotion-10"
+        className="emotion-11"
         display="grid"
       >
         <span
-          className=" emotion-11"
+          className=" emotion-12"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-12"
+          className="ar ar-chevron emotion-13"
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -275,7 +285,7 @@ exports[`<AutoComplete /> Variants properly renders a async auto complete 1`] = 
     </div>
   </div>
   <span
-    className="emotion-13"
+    className="emotion-14"
     color="palette.red.default"
   >
     Test the auto complete input
@@ -342,7 +352,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   white-space: nowrap;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -362,42 +372,42 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
 }
 
 @media (max-width: 768px) {
-  .emotion-6 {
+  .emotion-7 {
     font-size: 1rem;
   }
 }
 
-.emotion-6::-webkit-input-placeholder {
+.emotion-7::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::-moz-placeholder {
+.emotion-7::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-6:-ms-input-placeholder {
+.emotion-7:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::placeholder {
+.emotion-7::placeholder {
   color: #989A9C;
 }
 
-.emotion-6:focus {
+.emotion-7:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-6:disabled {
+.emotion-7:disabled {
   background: #F2F2F2;
 }
 
-.emotion-6:required {
+.emotion-7:required {
   box-shadow: none;
 }
 
-.emotion-7 {
+.emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -414,7 +424,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   grid-gap: 0.25rem;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -428,7 +438,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   align-self: center;
 }
 
-.emotion-9 {
+.emotion-10 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -443,11 +453,11 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   font-size: 0.875rem;
 }
 
-.emotion-9:focus {
+.emotion-10:focus {
   outline: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -459,7 +469,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   grid-gap: 0.5rem;
 }
 
-.emotion-11 {
+.emotion-12 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -469,11 +479,11 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
   box-sizing: border-box;
 }
 
-.emotion-12 {
+.emotion-13 {
   display: block;
 }
 
-.emotion-13 {
+.emotion-14 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -502,54 +512,64 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
     onKeyDown={[Function]}
   >
     <span
+      className="emotion-5"
+      id="react-select-3-live-region"
+    />
+    <span
       aria-atomic="false"
       aria-live="polite"
       aria-relevant="additions text"
       className="emotion-5"
     />
     <div
-      className="emotion-6"
+      className="emotion-7"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-7"
+        className="emotion-8"
       >
         <div
-          className="emotion-8"
+          className="emotion-9"
           color="text.placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-controls="react-select-3-listbox"
+          aria-describedby="react-select-3-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-label="AutoComplete Input"
+          aria-owns="react-select-3-listbox"
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-9"
+          className="emotion-10"
           disabled={false}
           id="react-select-3-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
+          role="combobox"
           spellCheck="false"
-          tabIndex="0"
+          tabIndex={0}
           type="text"
           value=""
         />
       </div>
       <div
-        className="emotion-10"
+        className="emotion-11"
         display="grid"
       >
         <span
-          className=" emotion-11"
+          className=" emotion-12"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-12"
+          className="ar ar-chevron emotion-13"
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -558,7 +578,7 @@ exports[`<AutoComplete /> Variants properly renders a asyncCreatable auto comple
     </div>
   </div>
   <span
-    className="emotion-13"
+    className="emotion-14"
     color="palette.red.default"
   >
     Test the auto complete input
@@ -625,7 +645,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   white-space: nowrap;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -645,42 +665,42 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
 }
 
 @media (max-width: 768px) {
-  .emotion-6 {
+  .emotion-7 {
     font-size: 1rem;
   }
 }
 
-.emotion-6::-webkit-input-placeholder {
+.emotion-7::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::-moz-placeholder {
+.emotion-7::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-6:-ms-input-placeholder {
+.emotion-7:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::placeholder {
+.emotion-7::placeholder {
   color: #989A9C;
 }
 
-.emotion-6:focus {
+.emotion-7:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-6:disabled {
+.emotion-7:disabled {
   background: #F2F2F2;
 }
 
-.emotion-6:required {
+.emotion-7:required {
   box-shadow: none;
 }
 
-.emotion-7 {
+.emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -697,7 +717,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   grid-gap: 0.25rem;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -711,7 +731,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   align-self: center;
 }
 
-.emotion-9 {
+.emotion-10 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -726,11 +746,11 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   font-size: 0.875rem;
 }
 
-.emotion-9:focus {
+.emotion-10:focus {
   outline: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -742,7 +762,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   grid-gap: 0.5rem;
 }
 
-.emotion-11 {
+.emotion-12 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -752,11 +772,11 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
   box-sizing: border-box;
 }
 
-.emotion-12 {
+.emotion-13 {
   display: block;
 }
 
-.emotion-13 {
+.emotion-14 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -785,54 +805,64 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
     onKeyDown={[Function]}
   >
     <span
+      className="emotion-5"
+      id="react-select-4-live-region"
+    />
+    <span
       aria-atomic="false"
       aria-live="polite"
       aria-relevant="additions text"
       className="emotion-5"
     />
     <div
-      className="emotion-6"
+      className="emotion-7"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-7"
+        className="emotion-8"
       >
         <div
-          className="emotion-8"
+          className="emotion-9"
           color="text.placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-controls="react-select-4-listbox"
+          aria-describedby="react-select-4-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-label="AutoComplete Input"
+          aria-owns="react-select-4-listbox"
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-9"
+          className="emotion-10"
           disabled={false}
           id="react-select-4-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
+          role="combobox"
           spellCheck="false"
-          tabIndex="0"
+          tabIndex={0}
           type="text"
           value=""
         />
       </div>
       <div
-        className="emotion-10"
+        className="emotion-11"
         display="grid"
       >
         <span
-          className=" emotion-11"
+          className=" emotion-12"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-12"
+          className="ar ar-chevron emotion-13"
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -841,7 +871,7 @@ exports[`<AutoComplete /> Variants properly renders a creatable auto complete 1`
     </div>
   </div>
   <span
-    className="emotion-13"
+    className="emotion-14"
     color="palette.red.default"
   >
     Test the auto complete input
@@ -908,7 +938,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   white-space: nowrap;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -928,42 +958,42 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
 }
 
 @media (max-width: 768px) {
-  .emotion-6 {
+  .emotion-7 {
     font-size: 1rem;
   }
 }
 
-.emotion-6::-webkit-input-placeholder {
+.emotion-7::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::-moz-placeholder {
+.emotion-7::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-6:-ms-input-placeholder {
+.emotion-7:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::placeholder {
+.emotion-7::placeholder {
   color: #989A9C;
 }
 
-.emotion-6:focus {
+.emotion-7:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-6:disabled {
+.emotion-7:disabled {
   background: #F2F2F2;
 }
 
-.emotion-6:required {
+.emotion-7:required {
   box-shadow: none;
 }
 
-.emotion-7 {
+.emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -980,7 +1010,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   grid-gap: 0.25rem;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -994,7 +1024,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   align-self: center;
 }
 
-.emotion-9 {
+.emotion-10 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -1009,11 +1039,11 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   font-size: 0.875rem;
 }
 
-.emotion-9:focus {
+.emotion-10:focus {
   outline: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -1025,7 +1055,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   grid-gap: 0.5rem;
 }
 
-.emotion-11 {
+.emotion-12 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -1035,11 +1065,11 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
   box-sizing: border-box;
 }
 
-.emotion-12 {
+.emotion-13 {
   display: block;
 }
 
-.emotion-13 {
+.emotion-14 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -1068,54 +1098,64 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
     onKeyDown={[Function]}
   >
     <span
+      className="emotion-5"
+      id="react-select-5-live-region"
+    />
+    <span
       aria-atomic="false"
       aria-live="polite"
       aria-relevant="additions text"
       className="emotion-5"
     />
     <div
-      className="emotion-6"
+      className="emotion-7"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-7"
+        className="emotion-8"
       >
         <div
-          className="emotion-8"
+          className="emotion-9"
           color="text.placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-controls="react-select-5-listbox"
+          aria-describedby="react-select-5-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-label="AutoComplete Input"
+          aria-owns="react-select-5-listbox"
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-9"
+          className="emotion-10"
           disabled={false}
           id="react-select-5-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
+          role="combobox"
           spellCheck="false"
-          tabIndex="0"
+          tabIndex={0}
           type="text"
           value=""
         />
       </div>
       <div
-        className="emotion-10"
+        className="emotion-11"
         display="grid"
       >
         <span
-          className=" emotion-11"
+          className=" emotion-12"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-12"
+          className="ar ar-chevron emotion-13"
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -1124,7 +1164,7 @@ exports[`<AutoComplete /> Variants properly renders a default auto complete 1`] 
     </div>
   </div>
   <span
-    className="emotion-13"
+    className="emotion-14"
     color="palette.red.default"
   >
     Test the auto complete input
@@ -1191,7 +1231,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   white-space: nowrap;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1211,42 +1251,42 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
 }
 
 @media (max-width: 768px) {
-  .emotion-6 {
+  .emotion-7 {
     font-size: 1rem;
   }
 }
 
-.emotion-6::-webkit-input-placeholder {
+.emotion-7::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::-moz-placeholder {
+.emotion-7::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-6:-ms-input-placeholder {
+.emotion-7:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::placeholder {
+.emotion-7::placeholder {
   color: #989A9C;
 }
 
-.emotion-6:focus {
+.emotion-7:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-6:disabled {
+.emotion-7:disabled {
   background: #F2F2F2;
 }
 
-.emotion-6:required {
+.emotion-7:required {
   box-shadow: none;
 }
 
-.emotion-7 {
+.emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1263,7 +1303,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   grid-gap: 0.25rem;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -1277,7 +1317,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   align-self: center;
 }
 
-.emotion-9 {
+.emotion-10 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -1292,11 +1332,11 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   font-size: 0.875rem;
 }
 
-.emotion-9:focus {
+.emotion-10:focus {
   outline: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -1308,7 +1348,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   grid-gap: 0.5rem;
 }
 
-.emotion-11 {
+.emotion-12 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -1318,11 +1358,11 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
   box-sizing: border-box;
 }
 
-.emotion-12 {
+.emotion-13 {
   display: block;
 }
 
-.emotion-13 {
+.emotion-14 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -1351,54 +1391,64 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
     onKeyDown={[Function]}
   >
     <span
+      className="emotion-5"
+      id="react-select-6-live-region"
+    />
+    <span
       aria-atomic="false"
       aria-live="polite"
       aria-relevant="additions text"
       className="emotion-5"
     />
     <div
-      className="emotion-6"
+      className="emotion-7"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-7"
+        className="emotion-8"
       >
         <div
-          className="emotion-8"
+          className="emotion-9"
           color="text.placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-controls="react-select-6-listbox"
+          aria-describedby="react-select-6-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-label="AutoComplete Input"
+          aria-owns="react-select-6-listbox"
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-9"
+          className="emotion-10"
           disabled={false}
           id="react-select-6-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
+          role="combobox"
           spellCheck="false"
-          tabIndex="0"
+          tabIndex={0}
           type="text"
           value=""
         />
       </div>
       <div
-        className="emotion-10"
+        className="emotion-11"
         display="grid"
       >
         <span
-          className=" emotion-11"
+          className=" emotion-12"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-12"
+          className="ar ar-chevron emotion-13"
           display="block"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -1407,7 +1457,7 @@ exports[`<AutoComplete /> hideDropdownIndicator false renders the auto complete 
     </div>
   </div>
   <span
-    className="emotion-13"
+    className="emotion-14"
     color="palette.red.default"
   >
     Test the auto complete input
@@ -1474,7 +1524,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   white-space: nowrap;
 }
 
-.emotion-6 {
+.emotion-7 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1494,42 +1544,42 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
 }
 
 @media (max-width: 768px) {
-  .emotion-6 {
+  .emotion-7 {
     font-size: 1rem;
   }
 }
 
-.emotion-6::-webkit-input-placeholder {
+.emotion-7::-webkit-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::-moz-placeholder {
+.emotion-7::-moz-placeholder {
   color: #989A9C;
 }
 
-.emotion-6:-ms-input-placeholder {
+.emotion-7:-ms-input-placeholder {
   color: #989A9C;
 }
 
-.emotion-6::placeholder {
+.emotion-7::placeholder {
   color: #989A9C;
 }
 
-.emotion-6:focus {
+.emotion-7:focus {
   border: 1px solid #081D17;
   box-shadow: 0 0 8px rgba(182,239,208,0.1);
   outline: none;
 }
 
-.emotion-6:disabled {
+.emotion-7:disabled {
   background: #F2F2F2;
 }
 
-.emotion-6:required {
+.emotion-7:required {
   box-shadow: none;
 }
 
-.emotion-7 {
+.emotion-8 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1546,7 +1596,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   grid-gap: 0.25rem;
 }
 
-.emotion-8 {
+.emotion-9 {
   font-family: Motiva Sans;
   color: #989A9C;
   box-sizing: border-box;
@@ -1560,7 +1610,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   align-self: center;
 }
 
-.emotion-9 {
+.emotion-10 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   border: none;
@@ -1575,11 +1625,11 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   font-size: 0.875rem;
 }
 
-.emotion-9:focus {
+.emotion-10:focus {
   outline: none;
 }
 
-.emotion-10 {
+.emotion-11 {
   font-family: Motiva Sans;
   box-sizing: border-box;
   display: grid;
@@ -1591,7 +1641,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   grid-gap: 0.5rem;
 }
 
-.emotion-11 {
+.emotion-12 {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
@@ -1601,11 +1651,11 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
   box-sizing: border-box;
 }
 
-.emotion-12 {
+.emotion-13 {
   display: none;
 }
 
-.emotion-13 {
+.emotion-14 {
   font-family: Motiva Sans;
   color: #D93838;
   line-height: 1.5;
@@ -1634,54 +1684,64 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
     onKeyDown={[Function]}
   >
     <span
+      className="emotion-5"
+      id="react-select-7-live-region"
+    />
+    <span
       aria-atomic="false"
       aria-live="polite"
       aria-relevant="additions text"
       className="emotion-5"
     />
     <div
-      className="emotion-6"
+      className="emotion-7"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="emotion-7"
+        className="emotion-8"
       >
         <div
-          className="emotion-8"
+          className="emotion-9"
           color="text.placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-controls="react-select-7-listbox"
+          aria-describedby="react-select-7-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-label="AutoComplete Input"
+          aria-owns="react-select-7-listbox"
           autoCapitalize="none"
           autoComplete="off"
           autoCorrect="off"
-          className="emotion-9"
+          className="emotion-10"
           disabled={false}
           id="react-select-7-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
+          role="combobox"
           spellCheck="false"
-          tabIndex="0"
+          tabIndex={0}
           type="text"
           value=""
         />
       </div>
       <div
-        className="emotion-10"
+        className="emotion-11"
         display="grid"
       >
         <span
-          className=" emotion-11"
+          className=" emotion-12"
         />
         <i
           aria-hidden="true"
           aria-label="show options"
-          className="ar ar-chevron emotion-12"
+          className="ar ar-chevron emotion-13"
           display="none"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
@@ -1690,7 +1750,7 @@ exports[`<AutoComplete /> hideDropdownIndicator true renders the auto complete w
     </div>
   </div>
   <span
-    className="emotion-13"
+    className="emotion-14"
     color="palette.red.default"
   >
     Test the auto complete input
