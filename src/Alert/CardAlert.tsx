@@ -17,7 +17,12 @@ const conditionalProps = (details: ReactNode) => {
 
 export type Props = AlertContentProps & BoxShadowProps;
 
-const CardAlert: FC<Props> = ({ boxShadow, details, intent, ...props }) => (
+const CardAlert: FC<Props> = ({
+  boxShadow = 'elevation1',
+  details,
+  intent,
+  ...props
+}) => (
   <Card
     boxShadow={boxShadow}
     {...borderStyles(intent)}
@@ -26,9 +31,5 @@ const CardAlert: FC<Props> = ({ boxShadow, details, intent, ...props }) => (
     <AlertContent {...{ details, intent, ...props }} />
   </Card>
 );
-
-CardAlert.defaultProps = {
-  boxShadow: 'elevation1'
-};
 
 export default CardAlert;
