@@ -17,13 +17,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const Grid_1 = __importDefault(require("../Grid"));
 const Pane = (_a) => {
-    var { innerRef } = _a, props = __rest(_a, ["innerRef"]);
-    return ((0, jsx_runtime_1.jsx)(Grid_1.default, Object.assign({ ref: innerRef }, props), void 0));
-};
-Pane.defaultProps = {
-    bg: 'background.white',
-    boxShadow: 'elevation0',
-    overflow: 'hidden',
-    width: '100%'
+    var { bg = 'background.white', boxShadow = 'elevation0', innerRef, overflow = 'hidden', width = '100%' } = _a, props = __rest(_a, ["bg", "boxShadow", "innerRef", "overflow", "width"]);
+    return (0, jsx_runtime_1.jsx)(Grid_1.default, Object.assign({ ref: innerRef }, Object.assign({ bg, boxShadow, overflow, width }, props)), void 0);
 };
 exports.default = Pane;
