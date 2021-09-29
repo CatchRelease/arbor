@@ -19,10 +19,7 @@ const AlertContent_1 = __importDefault(require("./AlertContent"));
 const Pane_1 = __importDefault(require("../Pane"));
 const borderStyles_1 = __importDefault(require("./borderStyles"));
 const PaneAlert = (_a) => {
-    var { boxShadow, intent } = _a, props = __rest(_a, ["boxShadow", "intent"]);
+    var { boxShadow = 'elevation0', intent } = _a, props = __rest(_a, ["boxShadow", "intent"]);
     return ((0, jsx_runtime_1.jsx)(Pane_1.default, Object.assign({ boxShadow: boxShadow }, (0, borderStyles_1.default)(intent), { children: (0, jsx_runtime_1.jsx)(AlertContent_1.default, Object.assign({}, Object.assign({ intent }, props)), void 0) }), void 0));
-};
-PaneAlert.defaultProps = {
-    boxShadow: 'elevation0'
 };
 exports.default = PaneAlert;
