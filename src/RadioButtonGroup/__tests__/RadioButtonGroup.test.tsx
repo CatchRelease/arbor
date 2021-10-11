@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 
 import createWithTheme from '../../../utils/createWithTheme';
-import RadioButtonGroup from '../RadioButtonGroup';
+import RadioButtonGroup, { Props } from '../RadioButtonGroup';
 import RadioButton from '../../RadioButton';
 
 describe('<RadioButtonGroup />', () => {
@@ -33,7 +33,7 @@ describe('<RadioButtonGroup />', () => {
     onChange
   };
 
-  const createWithProps = (additionalProps) => {
+  const createWithProps = (additionalProps?: Partial<Props>) => {
     const props = { ...baseProps, ...additionalProps };
 
     return createWithTheme(<RadioButtonGroup {...{ ...props }} />);
