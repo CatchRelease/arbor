@@ -2,11 +2,17 @@ import createWithTheme from '../../../utils/createWithTheme';
 
 import Heading from '../Heading';
 
-(['H1', 'H2', 'H3', 'H4', 'H5', 'H6'] as const).forEach((variant) => {
-  test(`renders a ${variant}`, () => {
-    const Variant = Heading[variant];
-    const tree = createWithTheme(<Variant color="white">Hello World</Variant>);
+describe('Heading', () => {
+  (['H1', 'H2', 'H3', 'H4', 'H5', 'H6'] as const).forEach((variant) => {
+    describe(`Heading.${variant}`, () => {
+      it(`renders an ${variant}`, () => {
+        const Variant = Heading[variant];
+        const tree = createWithTheme(
+          <Variant color="white">Hello World</Variant>
+        );
 
-    expect(tree).toMatchSnapshot();
+        expect(tree).toMatchSnapshot();
+      });
+    });
   });
 });

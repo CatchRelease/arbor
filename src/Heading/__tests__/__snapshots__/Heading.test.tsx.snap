@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a H1 1`] = `
+exports[`Heading Heading.H1 renders an H1 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: #FFFFFF;
@@ -21,7 +21,7 @@ exports[`renders a H1 1`] = `
 </h1>
 `;
 
-exports[`renders a H2 1`] = `
+exports[`Heading Heading.H2 renders an H2 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: #FFFFFF;
@@ -42,7 +42,7 @@ exports[`renders a H2 1`] = `
 </h2>
 `;
 
-exports[`renders a H3 1`] = `
+exports[`Heading Heading.H3 renders an H3 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: #FFFFFF;
@@ -63,7 +63,7 @@ exports[`renders a H3 1`] = `
 </h3>
 `;
 
-exports[`renders a H4 1`] = `
+exports[`Heading Heading.H4 renders an H4 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: #FFFFFF;
@@ -84,7 +84,7 @@ exports[`renders a H4 1`] = `
 </h4>
 `;
 
-exports[`renders a H5 1`] = `
+exports[`Heading Heading.H5 renders an H5 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: #FFFFFF;
@@ -106,7 +106,7 @@ exports[`renders a H5 1`] = `
 </h5>
 `;
 
-exports[`renders a H6 1`] = `
+exports[`Heading Heading.H6 renders an H6 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;
   color: #FFFFFF;
