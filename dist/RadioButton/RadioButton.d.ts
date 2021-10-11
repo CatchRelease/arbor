@@ -1,5 +1,6 @@
-import { FormEventHandler, ReactNode, VFC } from 'react';
-declare type Props = {
+import { ChangeEventHandler, ReactNode, VFC } from 'react';
+import { Props as RadioButtonLabelProps } from './RadioButtonLabel';
+export declare type Props = RadioButtonLabelProps & {
     checked?: boolean;
     disabled?: boolean;
     icon?: string;
@@ -7,7 +8,7 @@ declare type Props = {
     isInvalid?: boolean;
     label: ReactNode;
     name: string;
-    onChange?: FormEventHandler<HTMLElement>;
+    onChange?: ChangeEventHandler<HTMLInputElement>;
     value?: string;
 };
 declare const RadioButton: VFC<Props>;
