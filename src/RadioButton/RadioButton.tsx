@@ -1,14 +1,16 @@
-import { FormEventHandler, ReactNode, VFC } from 'react';
+import { ChangeEventHandler, ReactNode, VFC } from 'react';
 
 import Icon from '../Icon';
 import Text from '../Text';
 
 import RadioButtonIcon from './RadioButtonIcon';
 import RadioButtonInput from './RadioButtonInput';
-import RadioButtonLabel from './RadioButtonLabel';
+import RadioButtonLabel, {
+  Props as RadioButtonLabelProps
+} from './RadioButtonLabel';
 import StyledRadioButton from './StyledRadioButton';
 
-type Props = {
+export type Props = RadioButtonLabelProps & {
   checked?: boolean;
   disabled?: boolean;
   icon?: string;
@@ -16,7 +18,7 @@ type Props = {
   isInvalid?: boolean;
   label: ReactNode;
   name: string;
-  onChange?: FormEventHandler<HTMLElement>;
+  onChange?: ChangeEventHandler<HTMLInputElement>;
   value?: string;
 };
 

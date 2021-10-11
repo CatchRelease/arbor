@@ -1,5 +1,5 @@
 import createWithTheme from '../../../utils/createWithTheme';
-import RadioButton from '../RadioButton';
+import RadioButton, { Props } from '../RadioButton';
 
 describe('<RadioButton />', () => {
   const baseProps = {
@@ -9,7 +9,7 @@ describe('<RadioButton />', () => {
     value: '1'
   };
 
-  const createWithProps = (additionalProps = {}) => {
+  const createWithProps = (additionalProps?: Partial<Props>) => {
     const props = { ...baseProps, ...additionalProps };
 
     return createWithTheme(<RadioButton {...{ ...props }} />);

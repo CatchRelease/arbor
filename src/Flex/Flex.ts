@@ -24,11 +24,12 @@ import {
   OrderProps
 } from 'styled-system';
 
-import Box from '../Box';
+import Box, { BoxProps } from '../Box';
 
 export type Props = AlignContentProps &
   AlignItemsProps &
   AlignSelfProps &
+  BoxProps &
   FlexProps &
   FlexDirectionProps &
   FlexWrapProps &

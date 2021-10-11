@@ -1,1 +1,1 @@
-export { default } from './RadioButton';
+export { default, Props as RadioButtonProps } from './RadioButton';
