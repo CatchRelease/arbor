@@ -9,7 +9,7 @@ describe('<RadioButton />', () => {
     value: '1'
   };
 
-  const createWithProps = (additionalProps) => {
+  const createWithProps = (additionalProps = {}) => {
     const props = { ...baseProps, ...additionalProps };
 
     return createWithTheme(<RadioButton {...{ ...props }} />);
