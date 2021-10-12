@@ -15,6 +15,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
+const styled_system_1 = require("styled-system");
 const styled_1 = __importDefault(require("@emotion/styled"));
 const react_1 = require("@emotion/react");
 const Text_1 = __importDefault(require("../Text"));
@@ -22,10 +23,15 @@ const lineHeightMultiplier = 0.5;
 const baseStyles = ({ theme }) => (0, react_1.css) `
   line-height: ${theme.lineHeights.small};
 `;
-const calculatedMargin = ({ fontSize, mb, theme }) => !mb &&
-    (0, react_1.css) `
-    margin-bottom: calc(${theme.fontSizes[fontSize]} * ${lineHeightMultiplier});
-  `;
+const calculatedMargin = ({ mb, theme }) => !mb &&
+    (0, styled_system_1.system)({
+        fontSize: {
+            property: 'marginBottom',
+            transform: (fontSize) => {
+                return `calc(${theme.fontSizes[fontSize]} * ${lineHeightMultiplier})`;
+            }
+        }
+    });
 const TextWithColorPropFix = Text_1.default;
 const Heading = (0, styled_1.default)(TextWithColorPropFix) `
   ${baseStyles};
