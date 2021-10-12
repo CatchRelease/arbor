@@ -1,4 +1,5 @@
 import { ElementType, FC } from 'react';
+import { system } from 'styled-system';
 import { SetOptional } from 'type-fest';
 import styled from '@emotion/styled';
 import { css, Theme } from '@emotion/react';
@@ -13,22 +14,18 @@ const baseStyles = ({ theme }: { theme: Theme }) => css`
   line-height: ${theme.lineHeights.small};
 `;
 
-const calculatedMargin = ({
-  fontSize,
-  mb,
-  theme
-}: {
-  fontSize: FontSize;
-  mb?: string;
-  theme: Theme;
-}) =>
+const calculatedMargin = ({ mb, theme }: { mb?: string; theme: Theme }) =>
   !mb &&
-  css`
-    margin-bottom: calc(${theme.fontSizes[fontSize]} * ${lineHeightMultiplier});
-  `;
+  system({
+    fontSize: {
+      property: 'marginBottom',
+      transform: (fontSize: FontSize) => {
+        return `calc(${theme.fontSizes[fontSize]} * ${lineHeightMultiplier})`;
+      }
+    }
+  });
 
 export type Props = TextProps & {
-  fontSize: FontSize;
   fontWeight?: FontWeight;
   mb?: string;
 };
