@@ -13,6 +13,9 @@ export const Default = () => (
     <Heading.H4>h4 Small Section Header</Heading.H4>
     <Heading.H5>h5 Caption - Strong</Heading.H5>
     <Heading.H6>h6 Caption - Light</Heading.H6>
+    <Heading fontSize={['size7', 'size6']}>
+      Heading with responsive font size
+    </Heading>
   </>
 );
 
