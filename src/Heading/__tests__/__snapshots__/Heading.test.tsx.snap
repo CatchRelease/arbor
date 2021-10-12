@@ -127,3 +127,73 @@ exports[`Heading Heading.H6 renders an H6 1`] = `
   Hello World
 </h6>
 `;
+
+exports[`Heading fontSize renders properly with mb 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 512px) {
+  .emotion-0 {
+    font-size: 0.6875rem;
+  }
+}
+
+<h1
+  className="emotion-0"
+  color="text.dark"
+  fontSize={
+    Array [
+      "size2",
+      "size1",
+    ]
+  }
+  fontWeight="bold"
+>
+  Yo
+</h1>
+`;
+
+exports[`Heading fontSize supports responsive values 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: #0F0F10;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  line-height: 1.25;
+  margin-bottom: calc(0.75rem * 0.5);
+}
+
+@media screen and (min-width: 512px) {
+  .emotion-0 {
+    font-size: 0.6875rem;
+  }
+}
+
+@media screen and (min-width: 512px) {
+  .emotion-0 {
+    margin-bottom: calc(0.6875rem * 0.5);
+  }
+}
+
+<h1
+  className="emotion-0"
+  color="text.dark"
+  fontSize={
+    Array [
+      "size2",
+      "size1",
+    ]
+  }
+  fontWeight="bold"
+>
+  Yo
+</h1>
+`;
