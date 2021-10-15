@@ -49,7 +49,7 @@ export { default as RadioButtonGroup } from './RadioButtonGroup';
 export { default as Select } from './Select';
 export { default as Spinner } from './Spinner';
 export * from './Tabs';
-export { default as Text } from './Text';
+export { default as Text, TextProps } from './Text';
 export { default as Textarea } from './Textarea';
 export * from './Toast';
 export { default as Tooltip } from './Tooltip';
