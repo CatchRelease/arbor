@@ -35,4 +35,5 @@ Text.defaultProps = {
     fontSize: 'size4',
     lineHeight: 'small'
 };
-exports.default = Text;
+const TextWithColorPropFix = Text;
+exports.default = TextWithColorPropFix;
