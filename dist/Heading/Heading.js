@@ -32,8 +32,7 @@ const calculatedMargin = ({ mb, theme }) => !mb &&
             }
         }
     });
-const TextWithColorPropFix = Text_1.default;
-const Heading = (0, styled_1.default)(TextWithColorPropFix) `
+const Heading = (0, styled_1.default)(Text_1.default) `
   ${baseStyles};
   ${calculatedMargin};
 `;
