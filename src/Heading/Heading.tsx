@@ -4,7 +4,6 @@ import { SetOptional } from 'type-fest';
 import styled from '@emotion/styled';
 import { css, Theme } from '@emotion/react';
 
-import { WithColorPropFix } from '../colorPropFix';
 import { FontSize, FontWeight } from '../theme/typography';
 import Text, { TextProps } from '../Text';
 
@@ -30,9 +29,7 @@ export type Props = TextProps & {
   mb?: string;
 };
 
-const TextWithColorPropFix: WithColorPropFix<typeof Text> = Text;
-
-const Heading = styled(TextWithColorPropFix)<Props>`
+const Heading = styled(Text)<Props>`
   ${baseStyles};
   ${calculatedMargin};
 `;

@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Text /> exports props compatible with itself 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  color: gray;
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+
+<p
+  className="emotion-0"
+  color="gray"
+  fontSize="size4"
+>
+  The quick brown fox jumps over the lazy dog
+</p>
+`;
+
 exports[`<Text /> properly renders a Text component 1`] = `
 .emotion-0 {
   font-family: Motiva Sans;

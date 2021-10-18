@@ -22,6 +22,7 @@ import {
   TextAlignProps
 } from 'styled-system';
 
+import { WithColorPropFix } from '../colorPropFix';
 import textDecoration, { TextDecorationProps } from '../utils/textDecoration';
 import textOverflow, { TextOverflowProps } from '../utils/textOverflow';
 import textTransform, { TextTransformProps } from '../utils/textTransform';
@@ -70,4 +71,6 @@ Text.defaultProps = {
   lineHeight: 'small'
 };
 
-export default Text;
+const TextWithColorPropFix: WithColorPropFix<typeof Text> = Text;
+
+export default TextWithColorPropFix;
