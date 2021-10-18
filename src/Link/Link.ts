@@ -104,8 +104,7 @@ type Props = ColorProps & {
 };
 
 const TextAnchor = Text.withComponent('a');
-const TextAnchorWithColorPropFix: WithColorPropFix<typeof TextAnchor> =
-  TextAnchor;
+const TextAnchorWithColorPropFix: WithColorPropFix<typeof Text> = TextAnchor;
 
 const Link: PolyComponent<'a', Props> = styled(
   TextAnchorWithColorPropFix
