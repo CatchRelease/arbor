@@ -17,7 +17,7 @@ declare const _default: FC<Pick<ReactModal.Props & {
     theme: Theme;
 } & {
     children?: import("react").ReactNode;
-}, "children" | "overlayCss" | "modalCss" | keyof ReactModal.Props> & {
+}, "overlayCss" | "modalCss" | keyof ReactModal.Props> & {
     theme?: Theme | undefined;
 }>;
 export default _default;

@@ -1,6 +1,6 @@
 import { ElementType, FC } from 'react';
 import { system } from 'styled-system';
-import { SetOptional } from 'type-fest';
+import type { SetOptional } from 'type-fest';
 import styled from '@emotion/styled';
 import { css, Theme } from '@emotion/react';
 

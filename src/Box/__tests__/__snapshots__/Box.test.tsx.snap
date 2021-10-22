@@ -2,7 +2,6 @@
 
 exports[`Box supports appropriate element props based on "as" prop 1`] = `
 .emotion-0 {
-  font-family: ;
   box-sizing: border-box;
 }
 
@@ -14,7 +13,6 @@ exports[`Box supports appropriate element props based on "as" prop 1`] = `
 
 exports[`Box supports appropriate element props based on "as" prop 2`] = `
 .emotion-0 {
-  font-family: ;
   box-sizing: border-box;
 }
 
@@ -26,7 +24,6 @@ exports[`Box supports appropriate element props based on "as" prop 2`] = `
 
 exports[`Box supports generic style props such as borderTop with or without "as" 1`] = `
 .emotion-0 {
-  font-family: ;
   box-sizing: border-box;
   border-top: 42;
 }
@@ -38,7 +35,6 @@ exports[`Box supports generic style props such as borderTop with or without "as"
 
 exports[`Box supports generic style props such as borderTop with or without "as" 2`] = `
 .emotion-0 {
-  font-family: ;
   box-sizing: border-box;
   border-top: 42;
 }

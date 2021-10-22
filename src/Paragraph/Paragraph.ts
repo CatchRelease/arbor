@@ -1,6 +1,6 @@
 import { css, Theme } from '@emotion/react';
 import styled from '@emotion/styled';
-import { LiteralUnion } from 'type-fest';
+import type { LiteralUnion } from 'type-fest';
 
 import Text from '../Text';
 import { FontSize, fontSizeKeys } from '../theme/typography';
