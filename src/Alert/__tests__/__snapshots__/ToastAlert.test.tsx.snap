@@ -181,7 +181,6 @@ exports[`<ToastAlert /> property renders a banner alert with no intent 1`] = `
   align-items: center;
   grid-column-gap: 1rem;
   grid-row-gap: 0.5rem;
-  grid-template-columns: ;
 }
 
 .emotion-2 {
@@ -581,7 +580,6 @@ exports[`<ToastAlert /> with details property renders a banner alert, with no in
   align-items: center;
   grid-column-gap: 1rem;
   grid-row-gap: 0.5rem;
-  grid-template-columns: ;
 }
 
 .emotion-2 {

@@ -1,4 +1,4 @@
-import * as CSS from 'csstype';
+import type * as CSS from 'csstype';
 import { RequiredTheme, ResponsiveValue, Theme } from 'styled-system';
 export declare type TextTransformProps<ThemeType extends Theme = RequiredTheme> = {
     textTransform?: ResponsiveValue<CSS.Property.TextTransform, ThemeType> | undefined;

@@ -63,6 +63,10 @@ class AutoCompleteExample extends Component {
     };
   }
 
+  handleChange = (selectedOption) => {
+    this.setState({ selectedOption });
+  };
+
   get additionalProps() {
     const { options, variant } = this.props;
 
@@ -81,10 +85,6 @@ class AutoCompleteExample extends Component {
         return {};
     }
   }
-
-  handleChange = (selectedOption) => {
-    this.setState({ selectedOption });
-  };
 
   render() {
     const { selectedOption } = this.state;
