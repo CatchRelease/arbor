@@ -1,3 +1,4 @@
+import { ComponentProps } from 'react';
 import styled from '@emotion/styled';
 import {
   borders,
@@ -23,7 +24,7 @@ import { PolyComponent } from '../polyComponent';
 import Text, { TextProps } from '../Text';
 import { WithColorPropFix } from '../colorPropFix';
 
-export type Props = TextProps &
+type InternalProps = TextProps &
   BordersProps &
   BoxShadowProps &
   DisplayProps &
@@ -35,7 +36,7 @@ export type Props = TextProps &
 const TextDiv = Text.withComponent('div');
 const TextDivWithColorPropFix: WithColorPropFix<typeof TextDiv> = TextDiv;
 
-const Box = styled(TextDivWithColorPropFix)<Props>`
+const Box = styled(TextDivWithColorPropFix)<InternalProps>`
   box-sizing: border-box;
   ${borders};
   ${boxShadow};
@@ -48,7 +49,9 @@ const Box = styled(TextDivWithColorPropFix)<Props>`
   ${width};
 `;
 
-const PolyBox: PolyComponent<'div', Props> = Box;
+const PolyBox: PolyComponent<'div', InternalProps> = Box;
+
+export type Props = ComponentProps<typeof PolyBox>;
 
 export default Object.assign(PolyBox, {
   withComponent: Box.withComponent
