@@ -95,4 +95,7 @@ const Link = (0, styled_1.default)(TextAnchorWithColorPropFix) `
   ${variantStyles};
   ${styled_system_1.color};
 `;
-exports.default = Link;
+const PolyLink = Link;
+exports.default = Object.assign(PolyLink, {
+    withComponent: Link.withComponent
+});
