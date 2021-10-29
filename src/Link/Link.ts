@@ -106,12 +106,14 @@ type Props = ColorProps & {
 const TextAnchor = Text.withComponent('a');
 const TextAnchorWithColorPropFix: WithColorPropFix<typeof Text> = TextAnchor;
 
-const Link: PolyComponent<'a', Props> = styled(
-  TextAnchorWithColorPropFix
-)<Props>`
+const Link = styled(TextAnchorWithColorPropFix)<Props>`
   ${baseStyles};
   ${variantStyles};
   ${color};
 `;
 
-export default Link;
+const PolyLink: PolyComponent<'a', Props> = Link;
+
+export default Object.assign(PolyLink, {
+  withComponent: Link.withComponent
+});
