@@ -15,4 +15,12 @@ describe('<Link />', () => {
       });
     });
   });
+
+  it('supports withComponent', () => {
+    const Component = Link.withComponent('div');
+
+    const link = createWithTheme(<Component>Link</Component>);
+
+    expect(link).toMatchSnapshot();
+  });
 });

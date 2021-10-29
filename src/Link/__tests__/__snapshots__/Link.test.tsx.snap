@@ -91,3 +91,48 @@ exports[`<Link /> Variants properly renders a muted Link 1`] = `
   Link
 </a>
 `;
+
+exports[`<Link /> supports withComponent 1`] = `
+.emotion-0 {
+  font-family: Motiva Sans;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #098562;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:focus {
+  outline-offset: 2px;
+}
+
+.emotion-0:disabled {
+  cursor: not-allowed;
+}
+
+.emotion-0:visited {
+  color: #098562;
+}
+
+.emotion-0:hover {
+  color: #044231;
+}
+
+.emotion-0:active {
+  color: #011a13;
+}
+
+.emotion-0:focus {
+  outline: 1px solid #098562;
+}
+
+<div
+  className="emotion-0"
+>
+  Link
+</div>
+`;
