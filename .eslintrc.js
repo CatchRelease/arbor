@@ -6,7 +6,8 @@ module.exports = {
     'airbnb',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:storybook/recommended'
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['@emotion', '@typescript-eslint', 'jest'],
@@ -28,7 +29,8 @@ module.exports = {
       }
     ],
     'import/no-named-as-default': 0,
-    'no-restricted-exports': 'off', // https://github.com/airbnb/javascript/issues/2500
+    // https://github.com/airbnb/javascript/issues/2500
+    'no-restricted-exports': 'off',
     'react/forbid-foreign-prop-types': 0,
     'react/function-component-definition': [
       'error',
