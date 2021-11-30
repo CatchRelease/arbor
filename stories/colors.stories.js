@@ -5,7 +5,7 @@ import { readableColor } from 'polished';
 import notes from './colors.md';
 import { colors, Flex, Heading, Grid, Text as TextComponent } from '../src';
 
-const getReadableColor = (color, hex, modifier = '', colorGroup) => {
+const getReadableColor = (color, hex, modifier, colorGroup) => {
   switch (modifier) {
     case 'lighter':
       return `${colorGroup}.${color}.dark`;

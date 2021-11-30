@@ -28,7 +28,12 @@ module.exports = {
       }
     ],
     'import/no-named-as-default': 0,
+    'no-restricted-exports': 'off', // https://github.com/airbnb/javascript/issues/2500
     'react/forbid-foreign-prop-types': 0,
+    'react/function-component-definition': [
+      'error',
+      { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' }
+    ],
     'react/jsx-filename-extension': [
       1,
       { extensions: ['.js', '.jsx', '.tsx'] }
