@@ -50,6 +50,7 @@ class ControlledDatePickers extends Component {
     const { disableDaysBefore: before, disableDaysAfter: after } = this.props;
     const disabledDays = { before, after };
 
+    // eslint-disable-next-line react/no-unstable-nested-components
     const SimpleDatePicker = () => (
       <DatePicker
         disabledDays={disabledDays}
