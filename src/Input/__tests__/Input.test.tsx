@@ -1,16 +1,10 @@
-import { ThemeProvider } from '@emotion/react';
-import { mount as enzymeMount } from 'enzyme';
-
 import { fireEvent, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import createWithTheme from '../../../utils/createWithTheme';
 import renderWithTheme from '../../../utils/renderWithTheme';
 import theme from '../../theme';
-import FormField from '../../FormField';
-import Input from '../Input';
-import StyledInput from '../StyledInput';
-import { InputProps } from '..';
+import Input, { Props as InputProps } from '../Input';
 
 describe('<Input />', () => {
   it('renders an Input correctly', () => {
@@ -56,19 +50,6 @@ describe('<Input />', () => {
   });
 
   context('with a validate function', () => {
-    const mount = (props = {}) =>
-      enzymeMount(
-        <ThemeProvider theme={theme}>
-          <Input
-            caption="The caption"
-            id="example"
-            validate={(value) => (value === '42' ? null : 'Value must be 42')}
-            value="42"
-            {...props}
-          />
-        </ThemeProvider>
-      );
-
     const render = (props?: Partial<InputProps>) =>
       renderWithTheme(
         <Input
@@ -80,14 +61,10 @@ describe('<Input />', () => {
         />
       );
 
-    it('displays the caption when valid', () => {
-      const wrapper = mount();
-
-      expect(wrapper.find(FormField)).toHaveProp('caption', 'The caption');
-    });
-
-    it('displays the caption when valid and blurred', () => {
+    it('displays the caption when valid both before and after blur', () => {
       render();
+
+      expect(screen.getByText('The caption')).toBeInTheDocument();
 
       fireEvent.blur(screen.getByRole('textbox'));
 
@@ -105,9 +82,21 @@ describe('<Input />', () => {
     });
 
     it('marks the input valid when valid', () => {
-      const wrapper = mount();
+      render();
 
-      expect(wrapper.find(StyledInput)).toHaveProp('isInvalid', false);
+      const input = screen.getByRole('textbox');
+
+      expect(input).not.toHaveStyleRule(
+        'background',
+        // eslint-disable-next-line import/no-named-as-default-member
+        theme.colors.palette.red.lighter
+      );
+
+      expect(input).not.toHaveStyleRule(
+        'border',
+        // eslint-disable-next-line import/no-named-as-default-member
+        `${theme.borderWidth.small} solid ${theme.colors.palette.red.default}`
+      );
     });
 
     it('marks the input invalid when invalid and blurred', () => {
