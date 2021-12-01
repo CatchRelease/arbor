@@ -66,6 +66,6 @@ describe('<Icon />', () => {
 
     const wrapper = mountWithTheme(<Icon name="test-icon-name" ref={ref} />);
 
-    expect(ref.current).toBe(wrapper.find(StyledIcon).getDOMNode());
+    expect(ref.current).toBe(wrapper.find('i').getDOMNode());
   });
 });

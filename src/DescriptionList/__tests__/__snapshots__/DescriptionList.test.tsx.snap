@@ -25,6 +25,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
 }
 
 <Styled(dl)>
+  <Noop />
   <dl
     className="emotion-0"
   >
@@ -34,6 +35,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       lineHeight="small"
       mb="smallest"
     >
+      <Noop />
       <dt
         className="emotion-1"
         color="text.muted"
@@ -48,6 +50,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       lineHeight="small"
       mb="regular"
     >
+      <Noop />
       <dd
         className="emotion-2"
         color="text.default"
@@ -62,6 +65,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       lineHeight="small"
       mb="smallest"
     >
+      <Noop />
       <dt
         className="emotion-1"
         color="text.muted"
@@ -76,6 +80,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       lineHeight="small"
       mb="regular"
     >
+      <Noop />
       <dd
         className="emotion-2"
         color="text.default"
@@ -90,6 +95,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       lineHeight="small"
       mb="smallest"
     >
+      <Noop />
       <dt
         className="emotion-1"
         color="text.muted"
@@ -104,6 +110,7 @@ exports[`<DescriptionList /> renders the description list properly 1`] = `
       lineHeight="small"
       mb="regular"
     >
+      <Noop />
       <dd
         className="emotion-2"
         color="text.default"
@@ -259,11 +266,13 @@ exports[`<DescriptionList /> supports polymorphic as prop 1`] = `
   }
   gridTemplateColumns="1fr"
 >
+  <Noop />
   <Styled(div)
     className="emotion-0"
     display="grid"
     gridTemplateColumns="1fr"
   >
+    <Noop />
     <div
       className="emotion-1"
       display="grid"
@@ -274,6 +283,7 @@ exports[`<DescriptionList /> supports polymorphic as prop 1`] = `
         lineHeight="small"
         mb="smallest"
       >
+        <Noop />
         <dt
           className="emotion-2"
           color="text.muted"
@@ -288,6 +298,7 @@ exports[`<DescriptionList /> supports polymorphic as prop 1`] = `
         lineHeight="small"
         mb="regular"
       >
+        <Noop />
         <dd
           className="emotion-3"
           color="text.default"

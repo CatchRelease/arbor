@@ -4,5 +4,5 @@
     "declaration": true,
     "noEmit": false
   },
-  "exclude": ["src/**/__tests__/**"]
+  "exclude": ["jest.setup.ts", "src/**/__tests__/**"]
 }
