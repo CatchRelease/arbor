@@ -92,6 +92,7 @@ exports[`<DateTimePicker /> properly renders a DateTimePicker 1`] = `
     utc={false}
     value={2019-03-11T04:00:00.000Z}
   >
+    <Noop />
     <n
       className=" emotion-0"
       closeOnClickOutside={true}

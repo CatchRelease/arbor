@@ -1352,6 +1352,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
         }
       }
     >
+      <Noop />
       <div
         className="emotion-0"
         color="#000000"
@@ -1360,6 +1361,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="0"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -1369,6 +1371,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="1"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -1378,6 +1381,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="2"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -1387,6 +1391,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="3"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -1396,6 +1401,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="4"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -1405,6 +1411,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="5"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -1414,6 +1421,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="6"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -1423,6 +1431,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="7"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -1432,6 +1441,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="8"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -1441,6 +1451,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="9"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -1450,6 +1461,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="10"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -1459,6 +1471,7 @@ exports[`<Spinner /> spinner is spinning properly renders a spinner 1`] = `
           color="#000000"
           key="11"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#000000"
@@ -2447,6 +2460,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
         }
       }
     >
+      <Noop />
       <div
         className="emotion-0"
         color="#4263EB"
@@ -2455,6 +2469,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="0"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"
@@ -2464,6 +2479,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="1"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"
@@ -2473,6 +2489,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="2"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"
@@ -2482,6 +2499,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="3"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"
@@ -2491,6 +2509,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="4"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"
@@ -2500,6 +2519,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="5"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"
@@ -2509,6 +2529,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="6"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"
@@ -2518,6 +2539,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="7"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"
@@ -2527,6 +2549,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="8"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"
@@ -2536,6 +2559,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="9"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"
@@ -2545,6 +2569,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="10"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"
@@ -2554,6 +2579,7 @@ exports[`<Spinner /> spinner is spinning theme color is provided properly render
           color="#4263EB"
           key="11"
         >
+          <Noop />
           <div
             className="emotion-1"
             color="#4263EB"

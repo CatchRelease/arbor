@@ -1,11 +1,16 @@
 import { ThemeProvider } from '@emotion/react';
-import { mount } from 'enzyme';
+import { mount as enzymeMount } from 'enzyme';
+
+import { fireEvent, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 import createWithTheme from '../../../utils/createWithTheme';
+import renderWithTheme from '../../../utils/renderWithTheme';
 import theme from '../../theme';
 import FormField from '../../FormField';
 import Input from '../Input';
 import StyledInput from '../StyledInput';
+import { InputProps } from '..';
 
 describe('<Input />', () => {
   it('renders an Input correctly', () => {
@@ -51,8 +56,8 @@ describe('<Input />', () => {
   });
 
   context('with a validate function', () => {
-    const render = (props = {}) =>
-      mount(
+    const mount = (props = {}) =>
+      enzymeMount(
         <ThemeProvider theme={theme}>
           <Input
             caption="The caption"
@@ -64,75 +69,94 @@ describe('<Input />', () => {
         </ThemeProvider>
       );
 
+    const render = (props?: Partial<InputProps>) =>
+      renderWithTheme(
+        <Input
+          caption="The caption"
+          id="example"
+          validate={(value) => (value === '42' ? null : 'Value must be 42')}
+          value="42"
+          {...props}
+        />
+      );
+
     it('displays the caption when valid', () => {
-      const wrapper = render();
+      const wrapper = mount();
 
       expect(wrapper.find(FormField)).toHaveProp('caption', 'The caption');
     });
 
     it('displays the caption when valid and blurred', () => {
-      const wrapper = render();
+      render();
 
-      wrapper.find(StyledInput).simulate('blur');
+      fireEvent.blur(screen.getByRole('textbox'));
 
-      expect(wrapper.find(FormField)).toHaveProp('caption', 'The caption');
+      expect(screen.getByText('The caption')).toBeInTheDocument();
     });
 
     it('displays the caption when invalid but not yet blurred', () => {
-      const wrapper = render();
-      const input = wrapper.find(StyledInput);
+      render();
 
-      input.simulate('change', { target: { value: '123' } });
+      const input = screen.getByRole('textbox');
 
-      expect(wrapper.find(FormField)).toHaveProp('caption', 'The caption');
-    });
+      userEvent.type(input, '123');
 
-    it('displays the error message when invalid and blurred', () => {
-      const wrapper = render();
-      const input = wrapper.find(StyledInput);
-
-      input.simulate('change', { target: { value: '123' } });
-      input.simulate('blur');
-
-      expect(wrapper.find(FormField)).toHaveProp('caption', 'Value must be 42');
+      expect(screen.getByText('The caption')).toBeInTheDocument();
     });
 
     it('marks the input valid when valid', () => {
-      const wrapper = render();
+      const wrapper = mount();
 
       expect(wrapper.find(StyledInput)).toHaveProp('isInvalid', false);
     });
 
-    it('marks the input invalid when invalid', () => {
-      const wrapper = render();
-      const input = wrapper.find(StyledInput);
+    it('marks the input invalid when invalid and blurred', () => {
+      render();
 
-      input.simulate('change', { target: { value: '123' } });
-      input.simulate('blur');
+      const input = screen.getByRole('textbox');
 
-      expect(wrapper.find(StyledInput)).toHaveProp('isInvalid', true);
+      userEvent.type(input, '123');
+      fireEvent.blur(input);
+
+      expect(screen.getByText('Value must be 42')).toBeInTheDocument();
+
+      expect(input).toHaveStyleRule(
+        'background',
+        // eslint-disable-next-line import/no-named-as-default-member
+        theme.colors.palette.red.lighter
+      );
+
+      expect(input).toHaveStyleRule(
+        'border',
+        // eslint-disable-next-line import/no-named-as-default-member
+        `${theme.borderWidth.small} solid ${theme.colors.palette.red.default}`
+      );
     });
 
     it('calls onBlur with the original event', () => {
       const onBlur = jest.fn();
-      const wrapper = render({ onBlur });
 
-      const fakeEvent = { id: 'fake-event' };
+      render({ onBlur });
 
-      wrapper.find(StyledInput).simulate('blur', fakeEvent);
+      const input = screen.getByRole('textbox');
+      fireEvent.blur(input);
 
-      expect(onBlur).toHaveBeenCalledWith(expect.objectContaining(fakeEvent));
+      expect(onBlur).toHaveBeenCalledWith(
+        expect.objectContaining({ target: input })
+      );
     });
 
     it('calls onChange', () => {
       const onChange = jest.fn();
-      const wrapper = render({ onChange });
 
-      const fakeEvent = { id: 'fake-event', target: { value: '42' } };
+      render({ onChange });
 
-      wrapper.find(StyledInput).simulate('change', fakeEvent);
+      const input = screen.getByRole('textbox');
+      userEvent.type(input, '42');
 
-      expect(onChange).toHaveBeenCalledWith(expect.objectContaining(fakeEvent));
+      expect(onChange).toHaveBeenCalledWith(
+        expect.objectContaining({ target: input })
+      );
     });
   });
 });

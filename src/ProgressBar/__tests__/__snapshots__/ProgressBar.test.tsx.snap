@@ -53,21 +53,25 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
   showPercentage={false}
 >
   <Styled(div)>
+    <Noop />
     <div
       className="emotion-0"
     >
       <Styled(div)
         className="bar-background"
       >
+        <Noop />
         <div
           className="bar-background emotion-1"
         >
           <Styled(div)
             css="unknown styles"
           >
+            <Noop />
             <Styled(div)
               className="bar-foreground emotion-2"
             >
+              <Noop />
               <div
                 className="bar-foreground emotion-3"
               />
@@ -478,6 +482,7 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
             }
           >
             <EmotionClassNames>
+              <Noop />
               <Styled(i)
                 className="ar ar-calendar"
                 color="monochrome.grey40"
@@ -485,6 +490,7 @@ exports[`<ProgressBar /> renders the progress bar properly 1`] = `
                 ml="smaller"
                 rotation={null}
               >
+                <Noop />
                 <i
                   className="ar ar-calendar emotion-4"
                   color="monochrome.grey40"
@@ -553,21 +559,25 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
   showPercentage={false}
 >
   <Styled(div)>
+    <Noop />
     <div
       className="emotion-0"
     >
       <Styled(div)
         className="bar-background"
       >
+        <Noop />
         <div
           className="bar-background emotion-1"
         >
           <Styled(div)
             css="unknown styles"
           >
+            <Noop />
             <Styled(div)
               className="bar-foreground emotion-2"
             >
+              <Noop />
               <div
                 className="bar-foreground emotion-3"
               />
@@ -978,6 +988,7 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
             }
           >
             <EmotionClassNames>
+              <Noop />
               <Styled(i)
                 className="ar ar-calendar"
                 color="text.default"
@@ -985,6 +996,7 @@ exports[`<ProgressBar /> renders the progress bar properly at 100% with an icon 
                 ml="smaller"
                 rotation={null}
               >
+                <Noop />
                 <i
                   className="ar ar-calendar emotion-4"
                   color="text.default"
