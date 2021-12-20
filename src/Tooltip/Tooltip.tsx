@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import { ComponentProps, ReactNode, useState, VFC } from 'react';
 import { css } from '@emotion/react';
-import PropTypes from 'prop-types';
 import Tippy from '@tippyjs/react/headless';
 import { sticky } from 'tippy.js';
 import { motion } from 'framer-motion';
@@ -11,14 +10,19 @@ import Grid from '../Grid';
 import Heading from '../Heading';
 import Text from '../Text';
 
-const Tooltip = ({
-  title,
-  content,
-  children,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  render,
-  ...props
-}) => {
+type TippyProps = ComponentProps<typeof Tippy>;
+
+type Props = {
+  children: TippyProps['children'];
+  content?: ReactNode;
+  title?: ReactNode;
+};
+
+type TippyRenderAttributes = Parameters<
+  Exclude<TippyProps['render'], undefined>
+>[0];
+
+const Tooltip: VFC<Props> = ({ children, content, title, ...props }) => {
   const [mounted, setMounted] = useState(false);
 
   const lazyPlugin = {
@@ -27,6 +31,7 @@ const Tooltip = ({
       onHide: () => setMounted(false)
     })
   };
+
   const springConfig = {
     type: 'spring',
     damping: 24,
@@ -40,7 +45,7 @@ const Tooltip = ({
     hidden: { opacity: 0, scale: 0.5 }
   };
 
-  const renderTooltip = (attrs) => (
+  const renderTooltip = (attrs: TippyRenderAttributes) => (
     <Box
       as={motion.div}
       initial="hidden"
@@ -63,16 +68,7 @@ const Tooltip = ({
         `}
         {...props}
       >
-        {title && (
-          <Heading.H3
-            mb="0"
-            fontSize="inherit"
-            color="inherit"
-            textAlign="inherit"
-          >
-            {title}
-          </Heading.H3>
-        )}
+        {title && <Heading.H3 mb="0">{title}</Heading.H3>}
         {content && (
           <Text
             as={Grid}
@@ -106,35 +102,6 @@ const Tooltip = ({
       {children}
     </Tippy>
   );
-};
-
-Tooltip.propTypes = {
-  /**
-   * Node which will trigger the tooltip. This should be either an Icon, Button,
-   * or Link.
-   * */
-  children: PropTypes.element.isRequired,
-
-  /**
-   * Content to display within the tooltip when it is displayed
-   * */
-  content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-
-  /**
-   * Title to display above the tooltip content
-   * */
-  title: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-
-  /**
-   * Render function for rendering tippy element from scratch
-   */
-  render: PropTypes.func
-};
-
-Tooltip.defaultProps = {
-  content: null,
-  title: null,
-  render: null
 };
 
 export default Tooltip;

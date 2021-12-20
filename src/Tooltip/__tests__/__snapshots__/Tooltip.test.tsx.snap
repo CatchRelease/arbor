@@ -3,8 +3,6 @@
 exports[`<Tooltip /> properly renders a tooltip 1`] = `
 <Tooltip
   content="Hello World"
-  render={null}
-  title={null}
 >
   <ForwardRef(TippyWrapper)
     offset={

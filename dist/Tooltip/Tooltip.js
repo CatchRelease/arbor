@@ -17,7 +17,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const jsx_runtime_1 = require("@emotion/react/jsx-runtime");
 const react_1 = require("react");
 const react_2 = require("@emotion/react");
-const prop_types_1 = __importDefault(require("prop-types"));
 const headless_1 = __importDefault(require("@tippyjs/react/headless"));
 const tippy_js_1 = require("tippy.js");
 const framer_motion_1 = require("framer-motion");
@@ -27,9 +26,7 @@ const Grid_1 = __importDefault(require("../Grid"));
 const Heading_1 = __importDefault(require("../Heading"));
 const Text_1 = __importDefault(require("../Text"));
 const Tooltip = (_a) => {
-    var { title, content, children, 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    render } = _a, props = __rest(_a, ["title", "content", "children", "render"]);
+    var { children, content, title } = _a, props = __rest(_a, ["children", "content", "title"]);
     const [mounted, setMounted] = (0, react_1.useState)(false);
     const lazyPlugin = {
         fn: () => ({
@@ -50,7 +47,7 @@ const Tooltip = (_a) => {
     };
     const renderTooltip = (attrs) => ((0, jsx_runtime_1.jsx)(Box_1.default, Object.assign({ as: framer_motion_1.motion.div, initial: "hidden", variants: variants, animate: mounted ? 'visible' : 'hidden', transition: springConfig }, attrs, { children: (0, jsx_runtime_1.jsxs)(Card_1.default, Object.assign({ bg: "monochrome.grey90", borderRadius: "small", boxShadow: "elevation1", color: "monochrome.white", gridGap: "smallest", fontSize: "size3", maxWidth: "200px", p: "smaller", css: (0, react_2.css) `
           word-break: break-word;
-        ` }, props, { children: [title && ((0, jsx_runtime_1.jsx)(Heading_1.default.H3, Object.assign({ mb: "0", fontSize: "inherit", color: "inherit", textAlign: "inherit" }, { children: title }), void 0)), content && ((0, jsx_runtime_1.jsx)(Text_1.default, Object.assign({ as: Grid_1.default, fontSize: "inherit", color: "inherit", textAlign: "inherit" }, { children: content }), void 0))] }), void 0) }), void 0));
+        ` }, props, { children: [title && (0, jsx_runtime_1.jsx)(Heading_1.default.H3, Object.assign({ mb: "0" }, { children: title }), void 0), content && ((0, jsx_runtime_1.jsx)(Text_1.default, Object.assign({ as: Grid_1.default, fontSize: "inherit", color: "inherit", textAlign: "inherit" }, { children: content }), void 0))] }), void 0) }), void 0));
     return ((0, jsx_runtime_1.jsx)(headless_1.default, Object.assign({ render: (attrs) => (mounted ? renderTooltip(attrs) : ''), offset: [0, 4], plugins: [tippy_js_1.sticky, lazyPlugin], popperOptions: {
             modifiers: [
                 {
@@ -61,29 +58,5 @@ const Tooltip = (_a) => {
                 }
             ]
         } }, { children: children }), void 0));
-};
-Tooltip.propTypes = {
-    /**
-     * Node which will trigger the tooltip. This should be either an Icon, Button,
-     * or Link.
-     * */
-    children: prop_types_1.default.element.isRequired,
-    /**
-     * Content to display within the tooltip when it is displayed
-     * */
-    content: prop_types_1.default.oneOfType([prop_types_1.default.string, prop_types_1.default.node]),
-    /**
-     * Title to display above the tooltip content
-     * */
-    title: prop_types_1.default.oneOfType([prop_types_1.default.string, prop_types_1.default.node]),
-    /**
-     * Render function for rendering tippy element from scratch
-     */
-    render: prop_types_1.default.func
-};
-Tooltip.defaultProps = {
-    content: null,
-    title: null,
-    render: null
 };
 exports.default = Tooltip;
