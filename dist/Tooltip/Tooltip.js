@@ -47,7 +47,7 @@ const Tooltip = (_a) => {
     };
     const renderTooltip = (attrs) => ((0, jsx_runtime_1.jsx)(Box_1.default, Object.assign({ as: framer_motion_1.motion.div, initial: "hidden", variants: variants, animate: mounted ? 'visible' : 'hidden', transition: springConfig }, attrs, { children: (0, jsx_runtime_1.jsxs)(Card_1.default, Object.assign({ bg: "monochrome.grey90", borderRadius: "small", boxShadow: "elevation1", color: "monochrome.white", gridGap: "smallest", fontSize: "size3", maxWidth: "200px", p: "smaller", css: (0, react_2.css) `
           word-break: break-word;
-        ` }, props, { children: [title && (0, jsx_runtime_1.jsx)(Heading_1.default.H3, Object.assign({ mb: "0" }, { children: title }), void 0), content && ((0, jsx_runtime_1.jsx)(Text_1.default, Object.assign({ as: Grid_1.default, fontSize: "inherit", color: "inherit", textAlign: "inherit" }, { children: content }), void 0))] }), void 0) }), void 0));
+        ` }, props, { children: [title && ((0, jsx_runtime_1.jsx)(Heading_1.default.H3, Object.assign({ color: "inherit", mb: "0" }, { children: title }), void 0)), content && ((0, jsx_runtime_1.jsx)(Text_1.default, Object.assign({ as: Grid_1.default, fontSize: "inherit", color: "inherit", textAlign: "inherit" }, { children: content }), void 0))] }), void 0) }), void 0));
     return ((0, jsx_runtime_1.jsx)(headless_1.default, Object.assign({ render: (attrs) => (mounted ? renderTooltip(attrs) : ''), offset: [0, 4], plugins: [tippy_js_1.sticky, lazyPlugin], popperOptions: {
             modifiers: [
                 {

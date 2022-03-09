@@ -68,7 +68,11 @@ const Tooltip: VFC<Props> = ({ children, content, title, ...props }) => {
         `}
         {...props}
       >
-        {title && <Heading.H3 mb="0">{title}</Heading.H3>}
+        {title && (
+          <Heading.H3 color="inherit" mb="0">
+            {title}
+          </Heading.H3>
+        )}
         {content && (
           <Text
             as={Grid}
